@@ -15,5 +15,10 @@
         android:icon="@drawable/selector_setting"
         android:title="Setting" />
 
+    <item
+        android:id="@+id/navigation_chat"
+        android:icon="@drawable/ic_chat_ai"
+        android:title="Chat" />
+
 
 </menu>

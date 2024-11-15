@@ -34,6 +34,18 @@ android {
         daoPackage 'com.test.sport.db.gen'// 项目包名.db.gen
         targetGenDir 'src/main/java'
     }
+
+    packagingOptions {
+        exclude 'META-INF/DEPENDENCIES'
+        exclude 'META-INF/LICENSE'
+        exclude 'META-INF/LICENSE.txt'
+        exclude 'META-INF/license.txt'
+        exclude 'META-INF/NOTICE'
+        exclude 'META-INF/NOTICE.txt'
+        exclude 'META-INF/notice.txt'
+        exclude 'META-INF/ASL2.0'
+        exclude("META-INF/*.kotlin_module")
+    }
 }
 
 dependencies {
@@ -56,6 +68,8 @@ dependencies {
     implementation 'org.greenrobot:greendao:3.3.0' //greendao
     implementation 'org.greenrobot:greendao-generator:3.3.0'
     implementation 'org.greenrobot:eventbus:3.3.1' // //eventbus
+
+    implementation 'com.baidubce:qianfan:0.1.1'
 
     def dialogx_version = "0.0.49"
     implementation "com.kongzue.dialogx:DialogX:${dialogx_version}"

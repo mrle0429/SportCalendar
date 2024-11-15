@@ -48,14 +48,15 @@ public class HomeFragment extends BaseFragment<FragmentHomeBinding> implements V
 
     private String address;
     private String jsonName;
-    private int index;
-    private boolean search;
-    private String date;
+    private int index;  //当前选择的运动索引
+    private boolean search; //是否搜索
+    private String date; //当前选择的日期
 
     @Override
     protected void initData() {
         super.initData();
         getBinding().calendarView.setOnCalendarSelectListener(this);
+        // 隐藏月视图，显示周视图
         getBinding().calendarView.getMonthViewPager().setVisibility(View.GONE);
         getBinding().calendarView.getWeekViewPager().setVisibility(View.VISIBLE);
         date = Tools.customFormat(new Date(), "yyyy-MM-dd");
@@ -84,15 +85,19 @@ public class HomeFragment extends BaseFragment<FragmentHomeBinding> implements V
     public void onClick(View view) {
         switch (view.getId()) {
             case R.id.tv_sport:
+                // 显示体育类型选择
                 showSport();
                 break;
             case R.id.tv_search:
+                // 显示搜索
                 search();
                 break;
         }
     }
 
+    // 搜索功能
     private void search() {
+
         String keyword = getBinding().etName.getText().toString();
         if (keyword.isEmpty()) {
             showToast("Please enter");
@@ -114,12 +119,13 @@ public class HomeFragment extends BaseFragment<FragmentHomeBinding> implements V
     }
 
     private void showSport() {
+        // 运动选择弹窗
         new XPopup.Builder(getActivity())
                 .hasShadowBg(false)// 是否有半透明的背景，默认为true
                 .isViewMode(true)
                 .offsetY(50) //弹窗在y方向的偏移量
                 .atView(getBinding().tvSport)  // 依附于所点击的View，内部会自动判断在上方或者下方显示
-                .asAttachList(new String[]{"Basketball", "Football", "Icehockey", "Tennis"},
+                .asAttachList(new String[]{"Basketball", "Football", "Icehockey", "Tennis", "Table Tennis", "Rugby"},
                         new int[]{},
                         (position, text) -> {
                             getBinding().tvSport.setText(text);
@@ -233,6 +239,7 @@ public class HomeFragment extends BaseFragment<FragmentHomeBinding> implements V
             @Override
             public void onResponse(@NonNull Call call, @NonNull Response response) throws IOException {
                 if (response.isSuccessful()) {
+                    // 解析响应请求
                     String responseBody = response.body().string();
                     Sport sport = JSON.parseObject(responseBody, Sport.class);
                     if (sport.getSummaries() != null) {

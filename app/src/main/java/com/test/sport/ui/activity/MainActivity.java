@@ -10,7 +10,7 @@ import com.test.nba.databinding.ActivityMainBinding;
 import com.test.sport.base.BaseActivity;
 import com.test.sport.ui.adapter.ViewPagerAdapter;
 
-// TODO:主页
+// 主页：按时间显示赛事
 public class MainActivity extends BaseActivity<ActivityMainBinding> {
 
     @Override
@@ -31,11 +31,12 @@ public class MainActivity extends BaseActivity<ActivityMainBinding> {
     }
 
     private void initNavigation() {
-
+        // 底部导航栏设置
         getBinding().navigation.setItemIconTintList(null);
         getBinding().navigation.setItemIconSize(90);//控制底部导航栏图标大小
         getBinding().navigation.setSelectedItemId(getBinding().navigation.getMenu().getItem(0).getItemId());
 
+        // 底部导航栏点击事件
         getBinding().navigation.setOnItemSelectedListener(item -> {
             switch (item.getItemId()) {
                 case R.id.navigation_home:
@@ -47,15 +48,20 @@ public class MainActivity extends BaseActivity<ActivityMainBinding> {
                 case R.id.navigation_setting:
                     getBinding().viewPager.setCurrentItem(2);
                     break;
+                case R.id.navigation_chat:
+                    getBinding().viewPager.setCurrentItem(3);
+                    break;
             }
             return false;
         });
     }
 
     private void initAdapter() {
+        // 设置适配器
         ViewPagerAdapter fragmentAdapter = new ViewPagerAdapter(this);
         getBinding().viewPager.setAdapter(fragmentAdapter);
         getBinding().viewPager.setUserInputEnabled(false);
+        // 页面切换事件
         getBinding().viewPager.registerOnPageChangeCallback(new ViewPager2.OnPageChangeCallback() {
             @Override
             public void onPageScrolled(int i, float v, int i1) {
