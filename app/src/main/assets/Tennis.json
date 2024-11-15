@@ -1,0 +1,3668 @@
+{
+  "generated_at": "2024-11-03T17:27:31+00:00",
+  "summaries": [
+    {
+      "sport_event": {
+        "id": "sr:sport_event:54854991",
+        "start_time": "2024-11-03T01:00:00+00:00",
+        "start_time_confirmed": true,
+        "resume_time": "2024-11-03T18:30:00+00:00",
+        "sport_event_context": {
+          "sport": {
+            "id": "sr:sport:5",
+            "name": "Tennis"
+          },
+          "category": {
+            "id": "sr:category:6",
+            "name": "WTA"
+          },
+          "competition": {
+            "id": "sr:competition:38683",
+            "name": "WTA Merida, Mexico Women Singles",
+            "parent_id": "sr:competition:38681",
+            "type": "singles",
+            "gender": "women",
+            "level": "wta_250"
+          },
+          "season": {
+            "id": "sr:season:113270",
+            "name": "WTA Merida, Mexico Women Singles 2024",
+            "start_date": "2024-10-26",
+            "end_date": "2024-11-04",
+            "year": "2024",
+            "competition_id": "sr:competition:38683"
+          },
+          "stage": {
+            "order": 2,
+            "type": "cup",
+            "phase": "stage_1_playoff",
+            "start_date": "2024-10-28",
+            "end_date": "2024-11-04",
+            "year": "2024"
+          },
+          "round": {
+            "name": "semifinal"
+          },
+          "groups": [
+            {
+              "id": "sr:cup:157604",
+              "name": "2024 Merida, Mexico"
+            }
+          ],
+          "mode": {
+            "best_of": 3
+          }
+        },
+        "coverage": {
+          "type": "sport_event",
+          "sport_event_properties": {
+            "enhanced_stats": false,
+            "scores": "live",
+            "detailed_serve_outcomes": true,
+            "play_by_play": true
+          }
+        },
+        "competitors": [
+          {
+            "id": "sr:competitor:261583",
+            "name": "Li, Ann",
+            "country": "USA",
+            "country_code": "USA",
+            "abbreviation": "ANN",
+            "qualifier": "home",
+            "bracket_number": 18
+          },
+          {
+            "id": "sr:competitor:467037",
+            "name": "Kudermetova, Polina",
+            "country": "Neutral",
+            "abbreviation": "KUD",
+            "qualifier": "away",
+            "bracket_number": 31
+          }
+        ],
+        "venue": {
+          "id": "sr:venue:69893",
+          "name": "Estadio Akron",
+          "city_name": "M\u00e9rida",
+          "country_name": "Mexico",
+          "country_code": "MEX",
+          "timezone": "America\/Merida"
+        },
+        "estimated": false
+      },
+      "sport_event_status": {
+        "status": "suspended",
+        "match_status": "suspended",
+        "home_score": 1,
+        "away_score": 1,
+        "period_scores": [
+          {
+            "home_score": 6,
+            "away_score": 3,
+            "type": "set",
+            "number": 1
+          },
+          {
+            "home_score": 4,
+            "away_score": 6,
+            "type": "set",
+            "number": 2
+          },
+          {
+            "home_score": 2,
+            "away_score": 1,
+            "type": "set",
+            "number": 3
+          }
+        ]
+      },
+      "statistics": {
+        "totals": {
+          "competitors": [
+            {
+              "id": "sr:competitor:261583",
+              "name": "Li, Ann",
+              "abbreviation": "ANN",
+              "qualifier": "home",
+              "statistics": {
+                "aces": 1,
+                "breakpoints_won": 5,
+                "double_faults": 2,
+                "first_serve_points_won": 27,
+                "first_serve_successful": 44,
+                "games_won": 12,
+                "max_games_in_a_row": 3,
+                "max_points_in_a_row": 8,
+                "points_won": 70,
+                "second_serve_points_won": 9,
+                "second_serve_successful": 18,
+                "service_games_won": 7,
+                "service_points_lost": 28,
+                "service_points_won": 36,
+                "tiebreaks_won": 0,
+                "total_breakpoints": 8
+              }
+            },
+            {
+              "id": "sr:competitor:467037",
+              "name": "Kudermetova, Polina",
+              "abbreviation": "KUD",
+              "qualifier": "away",
+              "statistics": {
+                "aces": 1,
+                "breakpoints_won": 4,
+                "double_faults": 2,
+                "first_serve_points_won": 27,
+                "first_serve_successful": 49,
+                "games_won": 10,
+                "max_games_in_a_row": 3,
+                "max_points_in_a_row": 9,
+                "points_won": 64,
+                "second_serve_points_won": 9,
+                "second_serve_successful": 19,
+                "service_games_won": 6,
+                "service_points_lost": 34,
+                "service_points_won": 36,
+                "tiebreaks_won": 0,
+                "total_breakpoints": 8
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "sport_event": {
+        "id": "sr:sport_event:54855031",
+        "start_time": "2024-11-03T02:00:00+00:00",
+        "start_time_confirmed": true,
+        "resume_time": "2024-11-03T17:00:00+00:00",
+        "sport_event_context": {
+          "sport": {
+            "id": "sr:sport:5",
+            "name": "Tennis"
+          },
+          "category": {
+            "id": "sr:category:6",
+            "name": "WTA"
+          },
+          "competition": {
+            "id": "sr:competition:38685",
+            "name": "WTA Merida, Mexico Women Doubles",
+            "parent_id": "sr:competition:38681",
+            "type": "doubles",
+            "gender": "women",
+            "level": "wta_250"
+          },
+          "season": {
+            "id": "sr:season:113272",
+            "name": "WTA Merida, Mexico Women Doubles 2024",
+            "start_date": "2024-10-28",
+            "end_date": "2024-11-04",
+            "year": "2024",
+            "competition_id": "sr:competition:38685"
+          },
+          "stage": {
+            "order": 1,
+            "type": "cup",
+            "phase": "stage_1_playoff",
+            "start_date": "2024-10-28",
+            "end_date": "2024-11-04",
+            "year": "2024"
+          },
+          "round": {
+            "name": "semifinal"
+          },
+          "groups": [
+            {
+              "id": "sr:cup:157608",
+              "name": "2024 Merida, Mexico, Doubles"
+            }
+          ],
+          "mode": {
+            "best_of": 3
+          }
+        },
+        "coverage": {
+          "type": "sport_event",
+          "sport_event_properties": {
+            "enhanced_stats": false,
+            "scores": "live",
+            "detailed_serve_outcomes": true,
+            "play_by_play": true
+          }
+        },
+        "competitors": [
+          {
+            "id": "sr:competitor:1198315",
+            "name": "Tikhonova A \/ Zarazua Ruckstuhl R",
+            "abbreviation": "T\/Z",
+            "qualifier": "home",
+            "players": [
+              {
+                "id": "sr:competitor:303814",
+                "name": "Tikhonova, Anastasia",
+                "country": "Neutral",
+                "abbreviation": "TIK"
+              },
+              {
+                "id": "sr:competitor:111189",
+                "name": "Zarazua, Renata",
+                "country": "Mexico",
+                "country_code": "MEX",
+                "abbreviation": "ZAR"
+              }
+            ],
+            "bracket_number": 12
+          },
+          {
+            "id": "sr:competitor:928289",
+            "name": "Kempen M \/ Salden L",
+            "abbreviation": "K\/S",
+            "qualifier": "away",
+            "players": [
+              {
+                "id": "sr:competitor:108621",
+                "name": "Kempen, Magali",
+                "country": "Belgium",
+                "country_code": "BEL",
+                "abbreviation": "KEM"
+              },
+              {
+                "id": "sr:competitor:161270",
+                "name": "Salden, Lara",
+                "country": "Belgium",
+                "country_code": "BEL",
+                "abbreviation": "SAL"
+              }
+            ],
+            "bracket_number": 13
+          }
+        ],
+        "venue": {
+          "id": "sr:venue:69803",
+          "name": "Cancha 1",
+          "city_name": "M\u00e9rida",
+          "country_name": "Mexico",
+          "country_code": "MEX",
+          "timezone": "America\/Merida"
+        },
+        "estimated": false
+      },
+      "sport_event_status": {
+        "status": "live",
+        "match_status": "1st_set",
+        "home_score": 0,
+        "away_score": 0,
+        "period_scores": [
+          {
+            "home_score": 4,
+            "away_score": 3,
+            "type": "set",
+            "number": 1
+          }
+        ],
+        "game_state": {
+          "home_score": 0,
+          "away_score": 0,
+          "serving": "home",
+          "last_point_result": "receiver_winner",
+          "tie_break": false
+        }
+      },
+      "statistics": {
+        "totals": {
+          "competitors": [
+            {
+              "id": "sr:competitor:1198315",
+              "name": "Tikhonova A \/ Zarazua Ruckstuhl R",
+              "abbreviation": "T\/Z",
+              "qualifier": "home",
+              "statistics": {
+                "aces": 0,
+                "breakpoints_won": 2,
+                "double_faults": 0,
+                "first_serve_points_won": 9,
+                "first_serve_successful": 12,
+                "games_won": 4,
+                "max_games_in_a_row": 4,
+                "max_points_in_a_row": 5,
+                "points_won": 25,
+                "second_serve_points_won": 2,
+                "second_serve_successful": 6,
+                "service_games_won": 2,
+                "service_points_lost": 7,
+                "service_points_won": 11,
+                "tiebreaks_won": 0,
+                "total_breakpoints": 5
+              }
+            },
+            {
+              "id": "sr:competitor:928289",
+              "name": "Kempen M \/ Salden L",
+              "abbreviation": "K\/S",
+              "qualifier": "away",
+              "statistics": {
+                "aces": 0,
+                "breakpoints_won": 1,
+                "double_faults": 0,
+                "first_serve_points_won": 11,
+                "first_serve_successful": 23,
+                "games_won": 3,
+                "max_games_in_a_row": 2,
+                "max_points_in_a_row": 3,
+                "points_won": 19,
+                "second_serve_points_won": 1,
+                "second_serve_successful": 3,
+                "service_games_won": 2,
+                "service_points_lost": 14,
+                "service_points_won": 12,
+                "tiebreaks_won": 0,
+                "total_breakpoints": 1
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "sport_event": {
+        "id": "sr:sport_event:55191187",
+        "start_time": "2024-11-03T15:00:00+00:00",
+        "start_time_confirmed": true,
+        "sport_event_context": {
+          "sport": {
+            "id": "sr:sport:5",
+            "name": "Tennis"
+          },
+          "category": {
+            "id": "sr:category:871",
+            "name": "WTA 125K"
+          },
+          "competition": {
+            "id": "sr:competition:35022",
+            "name": "WTA 125 Midland, USA Women Singles",
+            "parent_id": "sr:competition:35018",
+            "type": "singles",
+            "gender": "women",
+            "level": "wta_125"
+          },
+          "season": {
+            "id": "sr:season:122329",
+            "name": "WTA 125 Midland, USA Women Singles 2024",
+            "start_date": "2024-11-03",
+            "end_date": "2024-11-10",
+            "year": "2024",
+            "competition_id": "sr:competition:35022"
+          },
+          "stage": {
+            "order": 1,
+            "type": "cup",
+            "phase": "qualification",
+            "start_date": "2024-11-03",
+            "end_date": "2024-11-04",
+            "year": "2024"
+          },
+          "round": {
+            "number": 1,
+            "name": "qualification_round_1"
+          },
+          "groups": [
+            {
+              "id": "sr:cup:169737",
+              "name": "2024 Midland, USA, Qualifying"
+            }
+          ],
+          "mode": {
+            "best_of": 3
+          }
+        },
+        "coverage": {
+          "type": "sport_event",
+          "sport_event_properties": {
+            "enhanced_stats": false,
+            "scores": "live",
+            "detailed_serve_outcomes": true,
+            "play_by_play": true
+          }
+        },
+        "competitors": [
+          {
+            "id": "sr:competitor:194690",
+            "name": "Mateas, Maria",
+            "country": "USA",
+            "country_code": "USA",
+            "abbreviation": "MAT",
+            "qualifier": "home",
+            "seed": 1,
+            "bracket_number": 1
+          },
+          {
+            "id": "sr:competitor:143146",
+            "name": "Smith, Alana",
+            "country": "USA",
+            "country_code": "USA",
+            "abbreviation": "SMI",
+            "qualifier": "away",
+            "bracket_number": 2
+          }
+        ],
+        "venue": {
+          "id": "sr:venue:61397",
+          "name": "Meredith McGrath Stadium Court",
+          "city_name": "Midland, Michigan",
+          "country_name": "USA",
+          "country_code": "USA",
+          "timezone": "UTC"
+        },
+        "estimated": false
+      },
+      "sport_event_status": {
+        "status": "live",
+        "match_status": "3rd_set",
+        "home_score": 1,
+        "away_score": 1,
+        "period_scores": [
+          {
+            "home_score": 2,
+            "away_score": 6,
+            "type": "set",
+            "number": 1
+          },
+          {
+            "home_score": 7,
+            "away_score": 6,
+            "type": "set",
+            "number": 2,
+            "home_tiebreak_score": 8,
+            "away_tiebreak_score": 6
+          },
+          {
+            "home_score": 1,
+            "away_score": 3,
+            "type": "set",
+            "number": 3
+          }
+        ],
+        "game_state": {
+          "home_score": 0,
+          "away_score": 0,
+          "serving": "home",
+          "last_point_result": "receiver_winner",
+          "tie_break": false
+        }
+      },
+      "statistics": {
+        "totals": {
+          "competitors": [
+            {
+              "id": "sr:competitor:194690",
+              "name": "Mateas, Maria",
+              "abbreviation": "MAT",
+              "qualifier": "home",
+              "statistics": {
+                "aces": 2,
+                "breakpoints_won": 2,
+                "double_faults": 3,
+                "first_serve_points_won": 37,
+                "first_serve_successful": 67,
+                "games_won": 10,
+                "max_games_in_a_row": 2,
+                "max_points_in_a_row": 7,
+                "points_won": 81,
+                "second_serve_points_won": 9,
+                "second_serve_successful": 18,
+                "service_games_won": 7,
+                "service_points_lost": 42,
+                "service_points_won": 46,
+                "tiebreaks_won": 1,
+                "total_breakpoints": 7
+              }
+            },
+            {
+              "id": "sr:competitor:143146",
+              "name": "Smith, Alana",
+              "abbreviation": "SMI",
+              "qualifier": "away",
+              "statistics": {
+                "aces": 6,
+                "breakpoints_won": 5,
+                "double_faults": 7,
+                "first_serve_points_won": 38,
+                "first_serve_successful": 58,
+                "games_won": 15,
+                "max_games_in_a_row": 3,
+                "max_points_in_a_row": 7,
+                "points_won": 93,
+                "second_serve_points_won": 13,
+                "second_serve_successful": 21,
+                "service_games_won": 10,
+                "service_points_lost": 35,
+                "service_points_won": 51,
+                "tiebreaks_won": 0,
+                "total_breakpoints": 11
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "sport_event": {
+        "id": "sr:sport_event:55157893",
+        "start_time": "2024-11-03T15:45:00+00:00",
+        "start_time_confirmed": true,
+        "sport_event_context": {
+          "sport": {
+            "id": "sr:sport:5",
+            "name": "Tennis"
+          },
+          "category": {
+            "id": "sr:category:3",
+            "name": "ATP"
+          },
+          "competition": {
+            "id": "sr:competition:3001",
+            "name": "ATP Metz, France Men Singles",
+            "parent_id": "sr:competition:2999",
+            "type": "singles",
+            "gender": "men",
+            "level": "atp_250"
+          },
+          "season": {
+            "id": "sr:season:111550",
+            "name": "ATP Metz, France Men Singles 2024",
+            "start_date": "2024-11-02",
+            "end_date": "2024-11-09",
+            "year": "2024",
+            "competition_id": "sr:competition:3001"
+          },
+          "stage": {
+            "order": 2,
+            "type": "cup",
+            "phase": "stage_1_playoff",
+            "start_date": "2024-11-03",
+            "end_date": "2024-11-09",
+            "year": "2024"
+          },
+          "round": {
+            "name": "round_of_32"
+          },
+          "groups": [
+            {
+              "id": "sr:cup:155304",
+              "name": "2024 Metz, France"
+            }
+          ],
+          "mode": {
+            "best_of": 3
+          }
+        },
+        "coverage": {
+          "type": "sport_event",
+          "sport_event_properties": {
+            "enhanced_stats": false,
+            "scores": "live",
+            "detailed_serve_outcomes": true,
+            "play_by_play": true
+          }
+        },
+        "competitors": [
+          {
+            "id": "sr:competitor:871495",
+            "name": "Michelsen, Alex",
+            "country": "USA",
+            "country_code": "USA",
+            "abbreviation": "MIC",
+            "qualifier": "home",
+            "seed": 8,
+            "bracket_number": 17
+          },
+          {
+            "id": "sr:competitor:321667",
+            "name": "Mayot, Harold",
+            "country": "France",
+            "country_code": "FRA",
+            "abbreviation": "MAY",
+            "qualifier": "away",
+            "bracket_number": 18
+          }
+        ],
+        "venue": {
+          "id": "sr:venue:1339",
+          "name": "Center Court",
+          "city_name": "Metz",
+          "country_name": "France",
+          "country_code": "FRA",
+          "timezone": "Europe\/Paris"
+        },
+        "estimated": true
+      },
+      "sport_event_status": {
+        "status": "closed",
+        "match_status": "ended",
+        "home_score": 2,
+        "away_score": 0,
+        "winner_id": "sr:competitor:871495",
+        "period_scores": [
+          {
+            "home_score": 6,
+            "away_score": 3,
+            "type": "set",
+            "number": 1
+          },
+          {
+            "home_score": 6,
+            "away_score": 1,
+            "type": "set",
+            "number": 2
+          }
+        ]
+      },
+      "statistics": {
+        "totals": {
+          "competitors": [
+            {
+              "id": "sr:competitor:871495",
+              "name": "Michelsen, Alex",
+              "abbreviation": "MIC",
+              "qualifier": "home",
+              "statistics": {
+                "aces": 7,
+                "breakpoints_won": 3,
+                "double_faults": 2,
+                "first_serve_points_won": 35,
+                "first_serve_successful": 48,
+                "games_won": 12,
+                "max_games_in_a_row": 6,
+                "max_points_in_a_row": 7,
+                "points_won": 67,
+                "points_won_from_last_10": 7,
+                "second_serve_points_won": 8,
+                "second_serve_successful": 17,
+                "service_games_won": 9,
+                "service_points_lost": 24,
+                "service_points_won": 43,
+                "tiebreaks_won": 0,
+                "total_breakpoints": 4
+              }
+            },
+            {
+              "id": "sr:competitor:321667",
+              "name": "Mayot, Harold",
+              "abbreviation": "MAY",
+              "qualifier": "away",
+              "statistics": {
+                "aces": 2,
+                "breakpoints_won": 0,
+                "double_faults": 1,
+                "first_serve_points_won": 12,
+                "first_serve_successful": 24,
+                "games_won": 4,
+                "max_games_in_a_row": 2,
+                "max_points_in_a_row": 5,
+                "points_won": 50,
+                "points_won_from_last_10": 3,
+                "second_serve_points_won": 14,
+                "second_serve_successful": 24,
+                "service_games_won": 5,
+                "service_points_lost": 23,
+                "service_points_won": 26,
+                "tiebreaks_won": 0,
+                "total_breakpoints": 8
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "sport_event": {
+        "id": "sr:sport_event:55186667",
+        "start_time": "2024-11-03T15:55:00+00:00",
+        "start_time_confirmed": true,
+        "sport_event_context": {
+          "sport": {
+            "id": "sr:sport:5",
+            "name": "Tennis"
+          },
+          "category": {
+            "id": "sr:category:213",
+            "name": "ITF Women"
+          },
+          "competition": {
+            "id": "sr:competition:25103",
+            "name": "ITF USA 48A, Women Singles",
+            "parent_id": "sr:competition:25101",
+            "type": "singles",
+            "gender": "women"
+          },
+          "season": {
+            "id": "sr:season:125297",
+            "name": "ITF USA 48A, Women Singles 2024",
+            "start_date": "2024-10-28",
+            "end_date": "2024-11-03",
+            "year": "2024",
+            "competition_id": "sr:competition:25103"
+          },
+          "stage": {
+            "order": 2,
+            "type": "cup",
+            "phase": "stage_1_playoff",
+            "start_date": "2024-10-29",
+            "end_date": "2024-11-03",
+            "year": "2024"
+          },
+          "round": {
+            "name": "final"
+          },
+          "groups": [
+            {
+              "id": "sr:cup:173603",
+              "name": "2024 USA 48A, Women Singles"
+            }
+          ],
+          "mode": {
+            "best_of": 3
+          }
+        },
+        "coverage": {
+          "type": "sport_event",
+          "sport_event_properties": {
+            "enhanced_stats": false,
+            "scores": "live",
+            "detailed_serve_outcomes": true,
+            "play_by_play": true
+          }
+        },
+        "competitors": [
+          {
+            "id": "sr:competitor:448121",
+            "name": "Rogers, Anna",
+            "country": "USA",
+            "country_code": "USA",
+            "abbreviation": "ROG",
+            "qualifier": "home",
+            "seed": 3,
+            "bracket_number": 9
+          },
+          {
+            "id": "sr:competitor:983427",
+            "name": "Matushkina, Kira",
+            "country": "Neutral",
+            "abbreviation": "MAT",
+            "qualifier": "away",
+            "bracket_number": 19
+          }
+        ],
+        "venue": {
+          "id": "sr:venue:42096",
+          "name": "Court 1",
+          "city_name": "Norman",
+          "country_name": "USA",
+          "country_code": "USA",
+          "timezone": "America\/Chicago"
+        },
+        "estimated": false
+      },
+      "sport_event_status": {
+        "status": "live",
+        "match_status": "2nd_set",
+        "home_score": 1,
+        "away_score": 0,
+        "period_scores": [
+          {
+            "home_score": 6,
+            "away_score": 4,
+            "type": "set",
+            "number": 1
+          },
+          {
+            "home_score": 5,
+            "away_score": 2,
+            "type": "set",
+            "number": 2
+          }
+        ],
+        "game_state": {
+          "home_score": 30,
+          "away_score": 0,
+          "serving": "away",
+          "last_point_result": "receiver_winner",
+          "tie_break": false
+        }
+      },
+      "statistics": {
+        "totals": {
+          "competitors": [
+            {
+              "id": "sr:competitor:448121",
+              "name": "Rogers, Anna",
+              "abbreviation": "ROG",
+              "qualifier": "home",
+              "statistics": {
+                "aces": 2,
+                "breakpoints_won": 2,
+                "double_faults": 1,
+                "first_serve_points_won": 24,
+                "first_serve_successful": 30,
+                "games_won": 11,
+                "max_games_in_a_row": 5,
+                "max_points_in_a_row": 5,
+                "points_won": 62,
+                "second_serve_points_won": 12,
+                "second_serve_successful": 17,
+                "service_games_won": 9,
+                "service_points_lost": 12,
+                "service_points_won": 36,
+                "tiebreaks_won": 0,
+                "total_breakpoints": 8
+              }
+            },
+            {
+              "id": "sr:competitor:983427",
+              "name": "Matushkina, Kira",
+              "abbreviation": "MAT",
+              "qualifier": "away",
+              "statistics": {
+                "aces": 0,
+                "breakpoints_won": 0,
+                "double_faults": 3,
+                "first_serve_points_won": 18,
+                "first_serve_successful": 33,
+                "games_won": 6,
+                "max_games_in_a_row": 1,
+                "max_points_in_a_row": 4,
+                "points_won": 44,
+                "second_serve_points_won": 14,
+                "second_serve_successful": 22,
+                "service_games_won": 6,
+                "service_points_lost": 26,
+                "service_points_won": 32,
+                "tiebreaks_won": 0,
+                "total_breakpoints": 0
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "sport_event": {
+        "id": "sr:sport_event:54854769",
+        "start_time": "2024-11-03T16:00:00+00:00",
+        "start_time_confirmed": true,
+        "sport_event_context": {
+          "sport": {
+            "id": "sr:sport:5",
+            "name": "Tennis"
+          },
+          "category": {
+            "id": "sr:category:72",
+            "name": "Challenger"
+          },
+          "competition": {
+            "id": "sr:competition:3945",
+            "name": "ATP Challenger Guayaquil, Ecuador Men Singles",
+            "parent_id": "sr:competition:3943",
+            "type": "singles",
+            "gender": "men"
+          },
+          "season": {
+            "id": "sr:season:121713",
+            "name": "ATP Challenger Guayaquil, Ecuador Men Singles 2024",
+            "start_date": "2024-10-27",
+            "end_date": "2024-11-03",
+            "year": "2024",
+            "competition_id": "sr:competition:3945"
+          },
+          "stage": {
+            "order": 2,
+            "type": "cup",
+            "phase": "stage_1_playoff",
+            "start_date": "2024-10-28",
+            "end_date": "2024-11-03",
+            "year": "2024"
+          },
+          "round": {
+            "name": "final"
+          },
+          "groups": [
+            {
+              "id": "sr:cup:169025",
+              "name": "2024 Guayaquil, Ecuador"
+            }
+          ],
+          "mode": {
+            "best_of": 3
+          }
+        },
+        "coverage": {
+          "type": "sport_event",
+          "sport_event_properties": {
+            "enhanced_stats": false,
+            "scores": "live",
+            "detailed_serve_outcomes": true,
+            "play_by_play": true
+          }
+        },
+        "competitors": [
+          {
+            "id": "sr:competitor:146040",
+            "name": "Gomez, Federico Agustin",
+            "country": "Argentina",
+            "country_code": "ARG",
+            "abbreviation": "GOM",
+            "qualifier": "home",
+            "seed": 8,
+            "bracket_number": 8
+          },
+          {
+            "id": "sr:competitor:132834",
+            "name": "Barrios Vera, Marcelo Tomas",
+            "country": "Chile",
+            "country_code": "CHL",
+            "abbreviation": "BAR",
+            "qualifier": "away",
+            "bracket_number": 23
+          }
+        ],
+        "venue": {
+          "id": "sr:venue:15331",
+          "name": "Cancha Central",
+          "city_name": "Guayaquil",
+          "country_name": "Ecuador",
+          "country_code": "ECU",
+          "timezone": "America\/Guayaquil"
+        },
+        "estimated": false
+      },
+      "sport_event_status": {
+        "status": "live",
+        "match_status": "2nd_set",
+        "home_score": 1,
+        "away_score": 0,
+        "period_scores": [
+          {
+            "home_score": 6,
+            "away_score": 1,
+            "type": "set",
+            "number": 1
+          },
+          {
+            "home_score": 3,
+            "away_score": 2,
+            "type": "set",
+            "number": 2
+          }
+        ],
+        "game_state": {
+          "home_score": 30,
+          "away_score": 15,
+          "serving": "home",
+          "last_point_result": "server_winner",
+          "tie_break": false
+        }
+      },
+      "statistics": {
+        "totals": {
+          "competitors": [
+            {
+              "id": "sr:competitor:146040",
+              "name": "Gomez, Federico Agustin",
+              "abbreviation": "GOM",
+              "qualifier": "home",
+              "statistics": {
+                "aces": 4,
+                "breakpoints_won": 4,
+                "double_faults": 5,
+                "first_serve_points_won": 26,
+                "first_serve_successful": 37,
+                "games_won": 9,
+                "max_games_in_a_row": 6,
+                "max_points_in_a_row": 8,
+                "points_won": 57,
+                "points_won_from_last_10": 8,
+                "second_serve_points_won": 11,
+                "second_serve_successful": 21,
+                "service_games_won": 5,
+                "service_points_lost": 26,
+                "service_points_won": 37,
+                "tiebreaks_won": 0,
+                "total_breakpoints": 8
+              }
+            },
+            {
+              "id": "sr:competitor:132834",
+              "name": "Barrios Vera, Marcelo Tomas",
+              "abbreviation": "BAR",
+              "qualifier": "away",
+              "statistics": {
+                "aces": 0,
+                "breakpoints_won": 1,
+                "double_faults": 0,
+                "first_serve_points_won": 9,
+                "first_serve_successful": 22,
+                "games_won": 3,
+                "max_games_in_a_row": 2,
+                "max_points_in_a_row": 6,
+                "points_won": 40,
+                "points_won_from_last_10": 2,
+                "second_serve_points_won": 5,
+                "second_serve_successful": 12,
+                "service_games_won": 2,
+                "service_points_lost": 20,
+                "service_points_won": 14,
+                "tiebreaks_won": 0,
+                "total_breakpoints": 8
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "sport_event": {
+        "id": "sr:sport_event:55187295",
+        "start_time": "2024-11-03T16:15:00+00:00",
+        "start_time_confirmed": true,
+        "sport_event_context": {
+          "sport": {
+            "id": "sr:sport:5",
+            "name": "Tennis"
+          },
+          "category": {
+            "id": "sr:category:213",
+            "name": "ITF Women"
+          },
+          "competition": {
+            "id": "sr:competition:18600",
+            "name": "ITF Germany 15A, Women Singles",
+            "parent_id": "sr:competition:18690",
+            "type": "singles",
+            "gender": "women"
+          },
+          "season": {
+            "id": "sr:season:125483",
+            "name": "ITF Germany 15A, Women Singles 2024",
+            "start_date": "2024-11-03",
+            "end_date": "2024-11-10",
+            "year": "2024",
+            "competition_id": "sr:competition:18600"
+          },
+          "stage": {
+            "order": 1,
+            "type": "cup",
+            "phase": "qualification",
+            "start_date": "2024-11-03",
+            "end_date": "2024-11-04",
+            "year": "2024"
+          },
+          "round": {
+            "name": "qualification"
+          },
+          "groups": [
+            {
+              "id": "sr:cup:173837",
+              "name": "2024 Germany 15A, Women Singles Qualifying"
+            }
+          ],
+          "mode": {
+            "best_of": 3
+          }
+        },
+        "coverage": {
+          "type": "sport_event",
+          "sport_event_properties": {
+            "enhanced_stats": false,
+            "scores": "live",
+            "detailed_serve_outcomes": true,
+            "play_by_play": true
+          }
+        },
+        "competitors": [
+          {
+            "id": "sr:competitor:910881",
+            "name": "Lackova, Viktoria",
+            "country": "Slovakia",
+            "country_code": "SVK",
+            "abbreviation": "LAC",
+            "qualifier": "home",
+            "bracket_number": 31
+          },
+          {
+            "id": "sr:competitor:223862",
+            "name": "Laboutkova, Aneta",
+            "country": "Czechia",
+            "country_code": "CZE",
+            "abbreviation": "LAB",
+            "qualifier": "away",
+            "seed": 14,
+            "bracket_number": 32
+          }
+        ],
+        "venue": {
+          "id": "sr:venue:24336",
+          "name": "Court 1",
+          "city_name": "Ismaning",
+          "country_name": "Germany",
+          "country_code": "DEU",
+          "timezone": "Europe\/Berlin"
+        },
+        "estimated": true
+      },
+      "sport_event_status": {
+        "status": "live",
+        "match_status": "2nd_set",
+        "home_score": 0,
+        "away_score": 1,
+        "period_scores": [
+          {
+            "home_score": 2,
+            "away_score": 6,
+            "type": "set",
+            "number": 1
+          },
+          {
+            "home_score": 0,
+            "away_score": 4,
+            "type": "set",
+            "number": 2
+          }
+        ],
+        "game_state": {
+          "home_score": 30,
+          "away_score": 30,
+          "serving": "home",
+          "last_point_result": "server_winner",
+          "tie_break": false
+        }
+      },
+      "statistics": {
+        "totals": {
+          "competitors": [
+            {
+              "id": "sr:competitor:910881",
+              "name": "Lackova, Viktoria",
+              "abbreviation": "LAC",
+              "qualifier": "home",
+              "statistics": {
+                "aces": 4,
+                "breakpoints_won": 0,
+                "double_faults": 4,
+                "first_serve_points_won": 14,
+                "first_serve_successful": 26,
+                "games_won": 2,
+                "max_games_in_a_row": 1,
+                "max_points_in_a_row": 3,
+                "points_won": 34,
+                "second_serve_points_won": 10,
+                "second_serve_successful": 21,
+                "service_games_won": 2,
+                "service_points_lost": 27,
+                "service_points_won": 24,
+                "tiebreaks_won": 0,
+                "total_breakpoints": 0
+              }
+            },
+            {
+              "id": "sr:competitor:223862",
+              "name": "Laboutkova, Aneta",
+              "abbreviation": "LAB",
+              "qualifier": "away",
+              "statistics": {
+                "aces": 2,
+                "breakpoints_won": 4,
+                "double_faults": 0,
+                "first_serve_points_won": 18,
+                "first_serve_successful": 23,
+                "games_won": 10,
+                "max_games_in_a_row": 7,
+                "max_points_in_a_row": 5,
+                "points_won": 53,
+                "second_serve_points_won": 8,
+                "second_serve_successful": 13,
+                "service_games_won": 6,
+                "service_points_lost": 10,
+                "service_points_won": 26,
+                "tiebreaks_won": 0,
+                "total_breakpoints": 7
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "sport_event": {
+        "id": "sr:sport_event:55187445",
+        "start_time": "2024-11-03T16:20:00+00:00",
+        "start_time_confirmed": true,
+        "sport_event_context": {
+          "sport": {
+            "id": "sr:sport:5",
+            "name": "Tennis"
+          },
+          "category": {
+            "id": "sr:category:213",
+            "name": "ITF Women"
+          },
+          "competition": {
+            "id": "sr:competition:44779",
+            "name": "ITF Luxembourg 03A, Women Singles",
+            "parent_id": "sr:competition:44777",
+            "type": "singles",
+            "gender": "women"
+          },
+          "season": {
+            "id": "sr:season:125479",
+            "name": "ITF Luxembourg 02A, Women Singles 2024",
+            "start_date": "2024-11-03",
+            "end_date": "2024-11-10",
+            "year": "2024",
+            "competition_id": "sr:competition:44779"
+          },
+          "stage": {
+            "order": 1,
+            "type": "cup",
+            "phase": "qualification",
+            "start_date": "2024-11-03",
+            "end_date": "2024-11-04",
+            "year": "2024"
+          },
+          "round": {
+            "name": "qualification"
+          },
+          "groups": [
+            {
+              "id": "sr:cup:173831",
+              "name": "2024 Luxembourg 03A, Women Singles Qualifying"
+            }
+          ],
+          "mode": {
+            "best_of": 3
+          }
+        },
+        "coverage": {
+          "type": "sport_event",
+          "sport_event_properties": {
+            "enhanced_stats": false,
+            "scores": "live",
+            "detailed_serve_outcomes": true,
+            "play_by_play": true
+          }
+        },
+        "competitors": [
+          {
+            "id": "sr:competitor:98381",
+            "name": "Pahlett, Victoria",
+            "country": "Sweden",
+            "country_code": "SWE",
+            "abbreviation": "PAH",
+            "qualifier": "home",
+            "bracket_number": 23
+          },
+          {
+            "id": "sr:competitor:20001",
+            "name": "Ekshibarova, Vlada",
+            "country": "Uzbekistan",
+            "country_code": "UZB",
+            "abbreviation": "EKS",
+            "qualifier": "away",
+            "seed": 14,
+            "bracket_number": 24
+          }
+        ],
+        "venue": {
+          "id": "sr:venue:35520",
+          "name": "Kyotec",
+          "city_name": "Petange",
+          "country_name": "Luxembourg",
+          "country_code": "LUX",
+          "timezone": "Europe\/Luxembourg"
+        },
+        "estimated": true
+      },
+      "sport_event_status": {
+        "status": "live",
+        "match_status": "2nd_set",
+        "home_score": 0,
+        "away_score": 1,
+        "period_scores": [
+          {
+            "home_score": 0,
+            "away_score": 6,
+            "type": "set",
+            "number": 1
+          },
+          {
+            "home_score": 2,
+            "away_score": 3,
+            "type": "set",
+            "number": 2
+          }
+        ],
+        "game_state": {
+          "home_score": 15,
+          "away_score": 0,
+          "serving": "home",
+          "last_point_result": "server_winner",
+          "tie_break": false
+        }
+      },
+      "statistics": {
+        "totals": {
+          "competitors": [
+            {
+              "id": "sr:competitor:98381",
+              "name": "Pahlett, Victoria",
+              "abbreviation": "PAH",
+              "qualifier": "home",
+              "statistics": {
+                "aces": 1,
+                "breakpoints_won": 0,
+                "double_faults": 0,
+                "first_serve_points_won": 8,
+                "first_serve_successful": 18,
+                "games_won": 2,
+                "max_games_in_a_row": 1,
+                "max_points_in_a_row": 4,
+                "points_won": 33,
+                "second_serve_points_won": 7,
+                "second_serve_successful": 14,
+                "service_games_won": 2,
+                "service_points_lost": 17,
+                "service_points_won": 15,
+                "tiebreaks_won": 0,
+                "total_breakpoints": 4
+              }
+            },
+            {
+              "id": "sr:competitor:20001",
+              "name": "Ekshibarova, Vlada",
+              "abbreviation": "EKS",
+              "qualifier": "away",
+              "statistics": {
+                "aces": 1,
+                "breakpoints_won": 3,
+                "double_faults": 4,
+                "first_serve_points_won": 22,
+                "first_serve_successful": 29,
+                "games_won": 9,
+                "max_games_in_a_row": 7,
+                "max_points_in_a_row": 7,
+                "points_won": 49,
+                "second_serve_points_won": 10,
+                "second_serve_successful": 17,
+                "service_games_won": 6,
+                "service_points_lost": 18,
+                "service_points_won": 32,
+                "tiebreaks_won": 0,
+                "total_breakpoints": 4
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "sport_event": {
+        "id": "sr:sport_event:55191185",
+        "start_time": "2024-11-03T16:25:00+00:00",
+        "start_time_confirmed": true,
+        "sport_event_context": {
+          "sport": {
+            "id": "sr:sport:5",
+            "name": "Tennis"
+          },
+          "category": {
+            "id": "sr:category:871",
+            "name": "WTA 125K"
+          },
+          "competition": {
+            "id": "sr:competition:35022",
+            "name": "WTA 125 Midland, USA Women Singles",
+            "parent_id": "sr:competition:35018",
+            "type": "singles",
+            "gender": "women",
+            "level": "wta_125"
+          },
+          "season": {
+            "id": "sr:season:122329",
+            "name": "WTA 125 Midland, USA Women Singles 2024",
+            "start_date": "2024-11-03",
+            "end_date": "2024-11-10",
+            "year": "2024",
+            "competition_id": "sr:competition:35022"
+          },
+          "stage": {
+            "order": 1,
+            "type": "cup",
+            "phase": "qualification",
+            "start_date": "2024-11-03",
+            "end_date": "2024-11-04",
+            "year": "2024"
+          },
+          "round": {
+            "number": 1,
+            "name": "qualification_round_1"
+          },
+          "groups": [
+            {
+              "id": "sr:cup:169737",
+              "name": "2024 Midland, USA, Qualifying"
+            }
+          ],
+          "mode": {
+            "best_of": 3
+          }
+        },
+        "coverage": {
+          "type": "sport_event",
+          "sport_event_properties": {
+            "enhanced_stats": false,
+            "scores": "live",
+            "detailed_serve_outcomes": true,
+            "play_by_play": true
+          }
+        },
+        "competitors": [
+          {
+            "id": "sr:competitor:168526",
+            "name": "Appleton, Emily",
+            "country": "Great Britain",
+            "country_code": "GBR",
+            "abbreviation": "APP",
+            "qualifier": "home",
+            "bracket_number": 3
+          },
+          {
+            "id": "sr:competitor:319461",
+            "name": "Hu, Victoria",
+            "country": "USA",
+            "country_code": "USA",
+            "abbreviation": "VIC",
+            "qualifier": "away",
+            "seed": 5,
+            "bracket_number": 4
+          }
+        ],
+        "venue": {
+          "id": "sr:venue:67397",
+          "name": "Court 4",
+          "city_name": "Midland, Michigan",
+          "country_name": "USA",
+          "country_code": "USA",
+          "timezone": "UTC"
+        },
+        "estimated": true
+      },
+      "sport_event_status": {
+        "status": "live",
+        "match_status": "2nd_set",
+        "home_score": 1,
+        "away_score": 0,
+        "period_scores": [
+          {
+            "home_score": 6,
+            "away_score": 4,
+            "type": "set",
+            "number": 1
+          },
+          {
+            "home_score": 2,
+            "away_score": 0,
+            "type": "set",
+            "number": 2
+          }
+        ],
+        "game_state": {
+          "home_score": 40,
+          "away_score": 50,
+          "serving": "away",
+          "advantage": "away",
+          "last_point_result": "server_winner",
+          "tie_break": false
+        }
+      },
+      "statistics": {
+        "totals": {
+          "competitors": [
+            {
+              "id": "sr:competitor:168526",
+              "name": "Appleton, Emily",
+              "abbreviation": "APP",
+              "qualifier": "home",
+              "statistics": {
+                "aces": 0,
+                "breakpoints_won": 4,
+                "double_faults": 4,
+                "first_serve_points_won": 25,
+                "first_serve_successful": 39,
+                "games_won": 8,
+                "max_games_in_a_row": 5,
+                "max_points_in_a_row": 9,
+                "points_won": 49,
+                "second_serve_points_won": 0,
+                "second_serve_successful": 0,
+                "service_games_won": 4,
+                "service_points_lost": 18,
+                "service_points_won": 25,
+                "tiebreaks_won": 0,
+                "total_breakpoints": 7
+              }
+            },
+            {
+              "id": "sr:competitor:319461",
+              "name": "Hu, Victoria",
+              "abbreviation": "VIC",
+              "qualifier": "away",
+              "statistics": {
+                "aces": 1,
+                "breakpoints_won": 2,
+                "double_faults": 0,
+                "first_serve_points_won": 18,
+                "first_serve_successful": 42,
+                "games_won": 4,
+                "max_games_in_a_row": 3,
+                "max_points_in_a_row": 3,
+                "points_won": 36,
+                "second_serve_points_won": 0,
+                "second_serve_successful": 0,
+                "service_games_won": 2,
+                "service_points_lost": 24,
+                "service_points_won": 18,
+                "tiebreaks_won": 0,
+                "total_breakpoints": 4
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "sport_event": {
+        "id": "sr:sport_event:55191621",
+        "start_time": "2024-11-03T16:25:00+00:00",
+        "start_time_confirmed": true,
+        "sport_event_context": {
+          "sport": {
+            "id": "sr:sport:5",
+            "name": "Tennis"
+          },
+          "category": {
+            "id": "sr:category:72",
+            "name": "Challenger"
+          },
+          "competition": {
+            "id": "sr:competition:3951",
+            "name": "ATP Challenger Knoxville, USA Men Singles",
+            "parent_id": "sr:competition:3949",
+            "type": "singles",
+            "gender": "men"
+          },
+          "season": {
+            "id": "sr:season:123243",
+            "name": "ATP Challenger Knoxville, USA Men Singles 2024",
+            "start_date": "2024-11-03",
+            "end_date": "2024-11-10",
+            "year": "2024",
+            "competition_id": "sr:competition:3951"
+          },
+          "stage": {
+            "order": 1,
+            "type": "cup",
+            "phase": "qualification",
+            "start_date": "2024-11-03",
+            "end_date": "2024-11-04",
+            "year": "2024"
+          },
+          "round": {
+            "number": 1,
+            "name": "qualification_round_1"
+          },
+          "groups": [
+            {
+              "id": "sr:cup:170869",
+              "name": "2024 Knoxville, USA, Qualifying"
+            }
+          ],
+          "mode": {
+            "best_of": 3
+          }
+        },
+        "coverage": {
+          "type": "sport_event",
+          "sport_event_properties": {
+            "enhanced_stats": false,
+            "scores": "live",
+            "detailed_serve_outcomes": true,
+            "play_by_play": true
+          }
+        },
+        "competitors": [
+          {
+            "id": "sr:competitor:540271",
+            "name": "Mayo, Aidan",
+            "country": "USA",
+            "country_code": "USA",
+            "abbreviation": "MAY",
+            "qualifier": "home",
+            "seed": 2,
+            "bracket_number": 5
+          },
+          {
+            "id": "sr:competitor:810904",
+            "name": "Williams, Cooper",
+            "country": "USA",
+            "country_code": "USA",
+            "abbreviation": "WIL",
+            "qualifier": "away",
+            "bracket_number": 6
+          }
+        ],
+        "venue": {
+          "id": "sr:venue:15310",
+          "name": "Court 2",
+          "city_name": "Knoxville",
+          "country_name": "USA",
+          "country_code": "USA",
+          "timezone": "America\/Chicago"
+        },
+        "estimated": true
+      },
+      "sport_event_status": {
+        "status": "live",
+        "match_status": "2nd_set",
+        "home_score": 1,
+        "away_score": 0,
+        "period_scores": [
+          {
+            "home_score": 6,
+            "away_score": 3,
+            "type": "set",
+            "number": 1
+          },
+          {
+            "home_score": 1,
+            "away_score": 1,
+            "type": "set",
+            "number": 2
+          }
+        ],
+        "game_state": {
+          "home_score": 0,
+          "away_score": 0,
+          "serving": "home",
+          "last_point_result": "server_winner",
+          "tie_break": false
+        }
+      },
+      "statistics": {
+        "totals": {
+          "competitors": [
+            {
+              "id": "sr:competitor:540271",
+              "name": "Mayo, Aidan",
+              "abbreviation": "MAY",
+              "qualifier": "home",
+              "statistics": {
+                "aces": 3,
+                "breakpoints_won": 2,
+                "double_faults": 1,
+                "first_serve_points_won": 25,
+                "first_serve_successful": 31,
+                "games_won": 7,
+                "max_games_in_a_row": 3,
+                "max_points_in_a_row": 8,
+                "points_won": 45,
+                "points_won_from_last_10": 6,
+                "second_serve_points_won": 6,
+                "second_serve_successful": 16,
+                "service_games_won": 5,
+                "service_points_lost": 17,
+                "service_points_won": 31,
+                "tiebreaks_won": 0,
+                "total_breakpoints": 2
+              }
+            },
+            {
+              "id": "sr:competitor:810904",
+              "name": "Williams, Cooper",
+              "abbreviation": "WIL",
+              "qualifier": "away",
+              "statistics": {
+                "aces": 0,
+                "breakpoints_won": 0,
+                "double_faults": 1,
+                "first_serve_points_won": 12,
+                "first_serve_successful": 20,
+                "games_won": 4,
+                "max_games_in_a_row": 1,
+                "max_points_in_a_row": 5,
+                "points_won": 35,
+                "points_won_from_last_10": 4,
+                "second_serve_points_won": 6,
+                "second_serve_successful": 11,
+                "service_games_won": 4,
+                "service_points_lost": 14,
+                "service_points_won": 18,
+                "tiebreaks_won": 0,
+                "total_breakpoints": 5
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "sport_event": {
+        "id": "sr:sport_event:55187453",
+        "start_time": "2024-11-03T16:40:00+00:00",
+        "start_time_confirmed": true,
+        "sport_event_context": {
+          "sport": {
+            "id": "sr:sport:5",
+            "name": "Tennis"
+          },
+          "category": {
+            "id": "sr:category:213",
+            "name": "ITF Women"
+          },
+          "competition": {
+            "id": "sr:competition:44779",
+            "name": "ITF Luxembourg 03A, Women Singles",
+            "parent_id": "sr:competition:44777",
+            "type": "singles",
+            "gender": "women"
+          },
+          "season": {
+            "id": "sr:season:125479",
+            "name": "ITF Luxembourg 02A, Women Singles 2024",
+            "start_date": "2024-11-03",
+            "end_date": "2024-11-10",
+            "year": "2024",
+            "competition_id": "sr:competition:44779"
+          },
+          "stage": {
+            "order": 1,
+            "type": "cup",
+            "phase": "qualification",
+            "start_date": "2024-11-03",
+            "end_date": "2024-11-04",
+            "year": "2024"
+          },
+          "round": {
+            "name": "qualification"
+          },
+          "groups": [
+            {
+              "id": "sr:cup:173831",
+              "name": "2024 Luxembourg 03A, Women Singles Qualifying"
+            }
+          ],
+          "mode": {
+            "best_of": 3
+          }
+        },
+        "coverage": {
+          "type": "sport_event",
+          "sport_event_properties": {
+            "enhanced_stats": false,
+            "scores": "live",
+            "detailed_serve_outcomes": true,
+            "play_by_play": true
+          }
+        },
+        "competitors": [
+          {
+            "id": "sr:competitor:1204565",
+            "name": "Kaczmarek, Kamila",
+            "country": "Poland",
+            "country_code": "POL",
+            "abbreviation": "KAC",
+            "qualifier": "home",
+            "bracket_number": 11
+          },
+          {
+            "id": "sr:competitor:63238",
+            "name": "Morderger, Yana",
+            "country": "Germany",
+            "country_code": "DEU",
+            "abbreviation": "MOR",
+            "qualifier": "away",
+            "seed": 13,
+            "bracket_number": 12
+          }
+        ],
+        "venue": {
+          "id": "sr:venue:61505",
+          "name": "Hotel Threeland",
+          "city_name": "Petange",
+          "country_name": "Luxembourg",
+          "country_code": "LUX",
+          "timezone": "Europe\/Luxembourg"
+        },
+        "estimated": true
+      },
+      "sport_event_status": {
+        "status": "live",
+        "match_status": "2nd_set",
+        "home_score": 0,
+        "away_score": 1,
+        "period_scores": [
+          {
+            "home_score": 0,
+            "away_score": 6,
+            "type": "set",
+            "number": 1
+          },
+          {
+            "home_score": 0,
+            "away_score": 5,
+            "type": "set",
+            "number": 2
+          }
+        ],
+        "game_state": {
+          "home_score": 0,
+          "away_score": 0,
+          "serving": "home",
+          "last_point_result": "receiver_winner",
+          "tie_break": false
+        }
+      },
+      "statistics": {
+        "totals": {
+          "competitors": [
+            {
+              "id": "sr:competitor:1204565",
+              "name": "Kaczmarek, Kamila",
+              "abbreviation": "KAC",
+              "qualifier": "home",
+              "statistics": {
+                "aces": 0,
+                "breakpoints_won": 0,
+                "double_faults": 7,
+                "first_serve_points_won": 0,
+                "first_serve_successful": 8,
+                "max_points_in_a_row": 1,
+                "points_won": 6,
+                "second_serve_points_won": 1,
+                "second_serve_successful": 6,
+                "service_games_won": 0,
+                "service_points_lost": 20,
+                "service_points_won": 1,
+                "tiebreaks_won": 0,
+                "total_breakpoints": 0
+              }
+            },
+            {
+              "id": "sr:competitor:63238",
+              "name": "Morderger, Yana",
+              "abbreviation": "MOR",
+              "qualifier": "away",
+              "statistics": {
+                "aces": 1,
+                "breakpoints_won": 5,
+                "double_faults": 3,
+                "first_serve_points_won": 14,
+                "first_serve_successful": 15,
+                "games_won": 11,
+                "max_games_in_a_row": 11,
+                "max_points_in_a_row": 26,
+                "points_won": 44,
+                "second_serve_points_won": 10,
+                "second_serve_successful": 11,
+                "service_games_won": 6,
+                "service_points_lost": 5,
+                "service_points_won": 24,
+                "tiebreaks_won": 0,
+                "total_breakpoints": 5
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "sport_event": {
+        "id": "sr:sport_event:55191639",
+        "start_time": "2024-11-03T16:50:00+00:00",
+        "start_time_confirmed": true,
+        "sport_event_context": {
+          "sport": {
+            "id": "sr:sport:5",
+            "name": "Tennis"
+          },
+          "category": {
+            "id": "sr:category:72",
+            "name": "Challenger"
+          },
+          "competition": {
+            "id": "sr:competition:35422",
+            "name": "ATP Challenger Lima 2, Peru Men Singles",
+            "parent_id": "sr:competition:35418",
+            "type": "singles",
+            "gender": "men"
+          },
+          "season": {
+            "id": "sr:season:123247",
+            "name": "ATP Challenger Lima 2, Peru Men Singles 2024",
+            "start_date": "2024-11-03",
+            "end_date": "2024-11-10",
+            "year": "2024",
+            "competition_id": "sr:competition:35422"
+          },
+          "stage": {
+            "order": 1,
+            "type": "cup",
+            "phase": "qualification",
+            "start_date": "2024-11-03",
+            "end_date": "2024-11-04",
+            "year": "2024"
+          },
+          "round": {
+            "number": 1,
+            "name": "qualification_round_1"
+          },
+          "groups": [
+            {
+              "id": "sr:cup:170875",
+              "name": "2024 Lima 2, Peru, Qualifying"
+            }
+          ],
+          "mode": {
+            "best_of": 3
+          }
+        },
+        "coverage": {
+          "type": "sport_event",
+          "sport_event_properties": {
+            "enhanced_stats": false,
+            "scores": "live",
+            "detailed_serve_outcomes": true,
+            "play_by_play": true
+          }
+        },
+        "competitors": [
+          {
+            "id": "sr:competitor:202735",
+            "name": "Carou, Ignacio",
+            "country": "Uruguay",
+            "country_code": "URY",
+            "abbreviation": "CAR",
+            "qualifier": "home",
+            "bracket_number": 23
+          },
+          {
+            "id": "sr:competitor:787154",
+            "name": "Campana Lee, Gerard",
+            "country": "Republic of Korea",
+            "country_code": "KOR",
+            "abbreviation": "CAM",
+            "qualifier": "away",
+            "seed": 7,
+            "bracket_number": 24
+          }
+        ],
+        "venue": {
+          "id": "sr:venue:60878",
+          "name": "Cancha 11",
+          "city_name": "Lima",
+          "country_name": "Peru",
+          "country_code": "PER",
+          "timezone": "America\/Lima"
+        },
+        "estimated": true
+      },
+      "sport_event_status": {
+        "status": "live",
+        "match_status": "2nd_set",
+        "home_score": 0,
+        "away_score": 1,
+        "period_scores": [
+          {
+            "home_score": 2,
+            "away_score": 6,
+            "type": "set",
+            "number": 1
+          },
+          {
+            "home_score": 0,
+            "away_score": 0,
+            "type": "set",
+            "number": 2
+          }
+        ],
+        "game_state": {
+          "home_score": 0,
+          "away_score": 0,
+          "serving": "away",
+          "last_point_result": "receiver_winner",
+          "tie_break": false
+        }
+      },
+      "statistics": {
+        "totals": {
+          "competitors": [
+            {
+              "id": "sr:competitor:202735",
+              "name": "Carou, Ignacio",
+              "abbreviation": "CAR",
+              "qualifier": "home",
+              "statistics": {
+                "aces": 0,
+                "breakpoints_won": 0,
+                "double_faults": 1,
+                "first_serve_points_won": 9,
+                "first_serve_successful": 16,
+                "games_won": 2,
+                "max_games_in_a_row": 1,
+                "max_points_in_a_row": 2,
+                "points_won": 16,
+                "points_won_from_last_10": 3,
+                "second_serve_points_won": 4,
+                "second_serve_successful": 10,
+                "service_games_won": 2,
+                "service_points_lost": 14,
+                "service_points_won": 13,
+                "tiebreaks_won": 0,
+                "total_breakpoints": 0
+              }
+            },
+            {
+              "id": "sr:competitor:787154",
+              "name": "Campana Lee, Gerard",
+              "abbreviation": "CAM",
+              "qualifier": "away",
+              "statistics": {
+                "aces": 1,
+                "breakpoints_won": 2,
+                "double_faults": 0,
+                "first_serve_points_won": 10,
+                "first_serve_successful": 11,
+                "games_won": 6,
+                "max_games_in_a_row": 3,
+                "max_points_in_a_row": 7,
+                "points_won": 30,
+                "points_won_from_last_10": 7,
+                "second_serve_points_won": 6,
+                "second_serve_successful": 8,
+                "service_games_won": 4,
+                "service_points_lost": 3,
+                "service_points_won": 16,
+                "tiebreaks_won": 0,
+                "total_breakpoints": 5
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "sport_event": {
+        "id": "sr:sport_event:55191661",
+        "start_time": "2024-11-03T16:50:00+00:00",
+        "start_time_confirmed": true,
+        "sport_event_context": {
+          "sport": {
+            "id": "sr:sport:5",
+            "name": "Tennis"
+          },
+          "category": {
+            "id": "sr:category:72",
+            "name": "Challenger"
+          },
+          "competition": {
+            "id": "sr:competition:35422",
+            "name": "ATP Challenger Lima 2, Peru Men Singles",
+            "parent_id": "sr:competition:35418",
+            "type": "singles",
+            "gender": "men"
+          },
+          "season": {
+            "id": "sr:season:123247",
+            "name": "ATP Challenger Lima 2, Peru Men Singles 2024",
+            "start_date": "2024-11-03",
+            "end_date": "2024-11-10",
+            "year": "2024",
+            "competition_id": "sr:competition:35422"
+          },
+          "stage": {
+            "order": 1,
+            "type": "cup",
+            "phase": "qualification",
+            "start_date": "2024-11-03",
+            "end_date": "2024-11-04",
+            "year": "2024"
+          },
+          "round": {
+            "number": 1,
+            "name": "qualification_round_1"
+          },
+          "groups": [
+            {
+              "id": "sr:cup:170875",
+              "name": "2024 Lima 2, Peru, Qualifying"
+            }
+          ],
+          "mode": {
+            "best_of": 3
+          }
+        },
+        "coverage": {
+          "type": "sport_event",
+          "sport_event_properties": {
+            "enhanced_stats": false,
+            "scores": "live",
+            "detailed_serve_outcomes": true,
+            "play_by_play": true
+          }
+        },
+        "competitors": [
+          {
+            "id": "sr:competitor:574371",
+            "name": "Torres, Juan Bautista",
+            "country": "Argentina",
+            "country_code": "ARG",
+            "abbreviation": "TOR",
+            "qualifier": "home",
+            "seed": 1,
+            "bracket_number": 1
+          },
+          {
+            "id": "sr:competitor:170976",
+            "name": "Ribero, Franco",
+            "country": "Argentina",
+            "country_code": "ARG",
+            "abbreviation": "RIB",
+            "qualifier": "away",
+            "bracket_number": 2
+          }
+        ],
+        "venue": {
+          "id": "sr:venue:15355",
+          "name": "Cancha Central",
+          "city_name": "Lima",
+          "country_name": "Peru",
+          "country_code": "PER",
+          "timezone": "America\/Lima"
+        },
+        "estimated": true
+      },
+      "sport_event_status": {
+        "status": "live",
+        "match_status": "1st_set",
+        "home_score": 0,
+        "away_score": 0,
+        "period_scores": [
+          {
+            "home_score": 3,
+            "away_score": 1,
+            "type": "set",
+            "number": 1
+          }
+        ],
+        "game_state": {
+          "home_score": 40,
+          "away_score": 15,
+          "serving": "home",
+          "last_point_result": "server_winner",
+          "tie_break": false,
+          "point_type": "game"
+        }
+      },
+      "statistics": {
+        "totals": {
+          "competitors": [
+            {
+              "id": "sr:competitor:574371",
+              "name": "Torres, Juan Bautista",
+              "abbreviation": "TOR",
+              "qualifier": "home",
+              "statistics": {
+                "aces": 0,
+                "breakpoints_won": 1,
+                "double_faults": 1,
+                "first_serve_points_won": 14,
+                "first_serve_successful": 19,
+                "games_won": 4,
+                "max_games_in_a_row": 3,
+                "max_points_in_a_row": 5,
+                "points_won": 21,
+                "points_won_from_last_10": 5,
+                "second_serve_points_won": 2,
+                "second_serve_successful": 5,
+                "service_games_won": 3,
+                "service_points_lost": 9,
+                "service_points_won": 16,
+                "tiebreaks_won": 0,
+                "total_breakpoints": 2
+              }
+            },
+            {
+              "id": "sr:competitor:170976",
+              "name": "Ribero, Franco",
+              "abbreviation": "RIB",
+              "qualifier": "away",
+              "statistics": {
+                "aces": 0,
+                "breakpoints_won": 0,
+                "double_faults": 0,
+                "first_serve_points_won": 3,
+                "first_serve_successful": 8,
+                "games_won": 1,
+                "max_games_in_a_row": 1,
+                "max_points_in_a_row": 4,
+                "points_won": 14,
+                "points_won_from_last_10": 5,
+                "second_serve_points_won": 2,
+                "second_serve_successful": 2,
+                "service_games_won": 1,
+                "service_points_lost": 5,
+                "service_points_won": 5,
+                "tiebreaks_won": 0,
+                "total_breakpoints": 1
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "sport_event": {
+        "id": "sr:sport_event:55196051",
+        "start_time": "2024-11-03T16:50:00+00:00",
+        "start_time_confirmed": true,
+        "sport_event_context": {
+          "sport": {
+            "id": "sr:sport:5",
+            "name": "Tennis"
+          },
+          "category": {
+            "id": "sr:category:871",
+            "name": "WTA 125K"
+          },
+          "competition": {
+            "id": "sr:competition:9419",
+            "name": "WTA 125K Cali, Colombia Women Singles",
+            "parent_id": "sr:competition:9417",
+            "type": "singles",
+            "gender": "women",
+            "level": "wta_125"
+          },
+          "season": {
+            "id": "sr:season:122325",
+            "name": "WTA 125K Cali, Colombia Women Singles 2024",
+            "start_date": "2024-11-03",
+            "end_date": "2024-11-09",
+            "year": "2024",
+            "competition_id": "sr:competition:9419"
+          },
+          "stage": {
+            "order": 1,
+            "type": "cup",
+            "phase": "qualification",
+            "start_date": "2024-11-03",
+            "end_date": "2024-11-04",
+            "year": "2024"
+          },
+          "round": {
+            "number": 1,
+            "name": "qualification_round_1"
+          },
+          "groups": [
+            {
+              "id": "sr:cup:169731",
+              "name": "2024 Cali, Colombia, Qualifying"
+            }
+          ],
+          "mode": {
+            "best_of": 3
+          }
+        },
+        "coverage": {
+          "type": "sport_event",
+          "sport_event_properties": {
+            "enhanced_stats": false,
+            "scores": "live",
+            "detailed_serve_outcomes": true,
+            "play_by_play": true
+          }
+        },
+        "competitors": [
+          {
+            "id": "sr:competitor:78431",
+            "name": "Lodikova, Daria",
+            "country": "Neutral",
+            "abbreviation": "LOD",
+            "qualifier": "home",
+            "seed": 3,
+            "bracket_number": 9
+          },
+          {
+            "id": "sr:competitor:119216",
+            "name": "Herrero Linana, Alicia",
+            "country": "Spain",
+            "country_code": "ESP",
+            "abbreviation": "HER",
+            "qualifier": "away",
+            "bracket_number": 10
+          }
+        ],
+        "venue": {
+          "id": "sr:venue:13888",
+          "name": "Court 2",
+          "city_name": "Santiago de Cali",
+          "country_name": "Colombia",
+          "country_code": "COL",
+          "timezone": "America\/Bogota"
+        },
+        "estimated": true
+      },
+      "sport_event_status": {
+        "status": "live",
+        "match_status": "1st_set",
+        "home_score": 0,
+        "away_score": 0,
+        "period_scores": [
+          {
+            "home_score": 3,
+            "away_score": 2,
+            "type": "set",
+            "number": 1
+          }
+        ],
+        "game_state": {
+          "home_score": 15,
+          "away_score": 15,
+          "serving": "away",
+          "last_point_result": "server_winner",
+          "tie_break": false
+        }
+      },
+      "statistics": {
+        "totals": {
+          "competitors": [
+            {
+              "id": "sr:competitor:78431",
+              "name": "Lodikova, Daria",
+              "abbreviation": "LOD",
+              "qualifier": "home",
+              "statistics": {
+                "aces": 0,
+                "breakpoints_won": 1,
+                "double_faults": 0,
+                "first_serve_points_won": 10,
+                "first_serve_successful": 19,
+                "games_won": 3,
+                "max_games_in_a_row": 3,
+                "max_points_in_a_row": 5,
+                "points_won": 20,
+                "second_serve_points_won": 1,
+                "second_serve_successful": 1,
+                "service_games_won": 2,
+                "service_points_lost": 9,
+                "service_points_won": 11,
+                "tiebreaks_won": 0,
+                "total_breakpoints": 5
+              }
+            },
+            {
+              "id": "sr:competitor:119216",
+              "name": "Herrero Linana, Alicia",
+              "abbreviation": "HER",
+              "qualifier": "away",
+              "statistics": {
+                "aces": 0,
+                "breakpoints_won": 1,
+                "double_faults": 0,
+                "first_serve_points_won": 11,
+                "first_serve_successful": 20,
+                "games_won": 2,
+                "max_games_in_a_row": 2,
+                "max_points_in_a_row": 5,
+                "points_won": 20,
+                "second_serve_points_won": 0,
+                "second_serve_successful": 0,
+                "service_games_won": 1,
+                "service_points_lost": 9,
+                "service_points_won": 11,
+                "tiebreaks_won": 0,
+                "total_breakpoints": 3
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "sport_event": {
+        "id": "sr:sport_event:54855015",
+        "start_time": "2024-11-03T17:00:00+00:00",
+        "start_time_confirmed": true,
+        "sport_event_context": {
+          "sport": {
+            "id": "sr:sport:5",
+            "name": "Tennis"
+          },
+          "category": {
+            "id": "sr:category:6",
+            "name": "WTA"
+          },
+          "competition": {
+            "id": "sr:competition:38683",
+            "name": "WTA Merida, Mexico Women Singles",
+            "parent_id": "sr:competition:38681",
+            "type": "singles",
+            "gender": "women",
+            "level": "wta_250"
+          },
+          "season": {
+            "id": "sr:season:113270",
+            "name": "WTA Merida, Mexico Women Singles 2024",
+            "start_date": "2024-10-26",
+            "end_date": "2024-11-04",
+            "year": "2024",
+            "competition_id": "sr:competition:38683"
+          },
+          "stage": {
+            "order": 2,
+            "type": "cup",
+            "phase": "stage_1_playoff",
+            "start_date": "2024-10-28",
+            "end_date": "2024-11-04",
+            "year": "2024"
+          },
+          "round": {
+            "name": "semifinal"
+          },
+          "groups": [
+            {
+              "id": "sr:cup:157604",
+              "name": "2024 Merida, Mexico"
+            }
+          ],
+          "mode": {
+            "best_of": 3
+          }
+        },
+        "coverage": {
+          "type": "sport_event",
+          "sport_event_properties": {
+            "enhanced_stats": false,
+            "scores": "live",
+            "detailed_serve_outcomes": true,
+            "play_by_play": true
+          }
+        },
+        "competitors": [
+          {
+            "id": "sr:competitor:299310",
+            "name": "Sonmez, Zeynep",
+            "country": "Turkiye",
+            "country_code": "TUR",
+            "abbreviation": "SON",
+            "qualifier": "home",
+            "bracket_number": 7
+          },
+          {
+            "id": "sr:competitor:845268",
+            "name": "Korneeva, Alina",
+            "country": "Neutral",
+            "abbreviation": "KOR",
+            "qualifier": "away",
+            "bracket_number": 14
+          }
+        ],
+        "venue": {
+          "id": "sr:venue:69893",
+          "name": "Estadio Akron",
+          "city_name": "M\u00e9rida",
+          "country_name": "Mexico",
+          "country_code": "MEX",
+          "timezone": "America\/Merida"
+        },
+        "estimated": false
+      },
+      "sport_event_status": {
+        "status": "live",
+        "match_status": "1st_set",
+        "home_score": 0,
+        "away_score": 0,
+        "period_scores": [
+          {
+            "home_score": 1,
+            "away_score": 4,
+            "type": "set",
+            "number": 1
+          }
+        ],
+        "game_state": {
+          "home_score": 0,
+          "away_score": 0,
+          "serving": "home",
+          "last_point_result": "receiver_winner",
+          "tie_break": false
+        }
+      },
+      "statistics": {
+        "totals": {
+          "competitors": [
+            {
+              "id": "sr:competitor:299310",
+              "name": "Sonmez, Zeynep",
+              "abbreviation": "SON",
+              "qualifier": "home",
+              "statistics": {
+                "aces": 1,
+                "breakpoints_won": 0,
+                "double_faults": 2,
+                "first_serve_points_won": 7,
+                "first_serve_successful": 9,
+                "games_won": 1,
+                "max_games_in_a_row": 1,
+                "max_points_in_a_row": 3,
+                "points_won": 12,
+                "second_serve_points_won": 2,
+                "second_serve_successful": 6,
+                "service_games_won": 1,
+                "service_points_lost": 8,
+                "service_points_won": 9,
+                "tiebreaks_won": 0,
+                "total_breakpoints": 0
+              }
+            },
+            {
+              "id": "sr:competitor:845268",
+              "name": "Korneeva, Alina",
+              "abbreviation": "KOR",
+              "qualifier": "away",
+              "statistics": {
+                "aces": 1,
+                "breakpoints_won": 1,
+                "double_faults": 0,
+                "first_serve_points_won": 7,
+                "first_serve_successful": 8,
+                "games_won": 4,
+                "max_games_in_a_row": 3,
+                "max_points_in_a_row": 4,
+                "points_won": 20,
+                "second_serve_points_won": 5,
+                "second_serve_successful": 7,
+                "service_games_won": 3,
+                "service_points_lost": 3,
+                "service_points_won": 12,
+                "tiebreaks_won": 0,
+                "total_breakpoints": 2
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "sport_event": {
+        "id": "sr:sport_event:55187305",
+        "start_time": "2024-11-03T17:00:00+00:00",
+        "start_time_confirmed": true,
+        "sport_event_context": {
+          "sport": {
+            "id": "sr:sport:5",
+            "name": "Tennis"
+          },
+          "category": {
+            "id": "sr:category:213",
+            "name": "ITF Women"
+          },
+          "competition": {
+            "id": "sr:competition:18600",
+            "name": "ITF Germany 15A, Women Singles",
+            "parent_id": "sr:competition:18690",
+            "type": "singles",
+            "gender": "women"
+          },
+          "season": {
+            "id": "sr:season:125483",
+            "name": "ITF Germany 15A, Women Singles 2024",
+            "start_date": "2024-11-03",
+            "end_date": "2024-11-10",
+            "year": "2024",
+            "competition_id": "sr:competition:18600"
+          },
+          "stage": {
+            "order": 1,
+            "type": "cup",
+            "phase": "qualification",
+            "start_date": "2024-11-03",
+            "end_date": "2024-11-04",
+            "year": "2024"
+          },
+          "round": {
+            "name": "qualification"
+          },
+          "groups": [
+            {
+              "id": "sr:cup:173837",
+              "name": "2024 Germany 15A, Women Singles Qualifying"
+            }
+          ],
+          "mode": {
+            "best_of": 3
+          }
+        },
+        "coverage": {
+          "type": "sport_event",
+          "sport_event_properties": {
+            "enhanced_stats": false,
+            "scores": "live",
+            "detailed_serve_outcomes": true,
+            "play_by_play": true
+          }
+        },
+        "competitors": [
+          {
+            "id": "sr:competitor:1196867",
+            "name": "Bierhoff, Kate",
+            "country": "Germany",
+            "country_code": "DEU",
+            "abbreviation": "BIE",
+            "qualifier": "home",
+            "bracket_number": 11
+          },
+          {
+            "id": "sr:competitor:51736",
+            "name": "Sekulic, Sarah Rebecca",
+            "country": "Germany",
+            "country_code": "DEU",
+            "abbreviation": "SEK",
+            "qualifier": "away",
+            "seed": 16,
+            "bracket_number": 12
+          }
+        ],
+        "venue": {
+          "id": "sr:venue:24334",
+          "name": "Center Court",
+          "city_name": "Ismaning",
+          "country_name": "Germany",
+          "country_code": "DEU",
+          "timezone": "Europe\/Berlin"
+        },
+        "estimated": true
+      },
+      "sport_event_status": {
+        "status": "live",
+        "match_status": "1st_set",
+        "home_score": 0,
+        "away_score": 0,
+        "period_scores": [
+          {
+            "home_score": 2,
+            "away_score": 5,
+            "type": "set",
+            "number": 1
+          }
+        ],
+        "game_state": {
+          "home_score": 0,
+          "away_score": 30,
+          "serving": "away",
+          "last_point_result": "server_winner",
+          "tie_break": false
+        }
+      },
+      "statistics": {
+        "totals": {
+          "competitors": [
+            {
+              "id": "sr:competitor:1196867",
+              "name": "Bierhoff, Kate",
+              "abbreviation": "BIE",
+              "qualifier": "home",
+              "statistics": {
+                "aces": 0,
+                "breakpoints_won": 0,
+                "double_faults": 1,
+                "first_serve_points_won": 8,
+                "first_serve_successful": 14,
+                "games_won": 2,
+                "max_games_in_a_row": 1,
+                "max_points_in_a_row": 5,
+                "points_won": 17,
+                "second_serve_points_won": 5,
+                "second_serve_successful": 9,
+                "service_games_won": 2,
+                "service_points_lost": 11,
+                "service_points_won": 13,
+                "tiebreaks_won": 0,
+                "total_breakpoints": 0
+              }
+            },
+            {
+              "id": "sr:competitor:51736",
+              "name": "Sekulic, Sarah Rebecca",
+              "abbreviation": "SEK",
+              "qualifier": "away",
+              "statistics": {
+                "aces": 1,
+                "breakpoints_won": 2,
+                "double_faults": 1,
+                "first_serve_points_won": 11,
+                "first_serve_successful": 14,
+                "games_won": 5,
+                "max_games_in_a_row": 4,
+                "max_points_in_a_row": 5,
+                "points_won": 26,
+                "second_serve_points_won": 4,
+                "second_serve_successful": 4,
+                "service_games_won": 3,
+                "service_points_lost": 4,
+                "service_points_won": 15,
+                "tiebreaks_won": 0,
+                "total_breakpoints": 2
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "sport_event": {
+        "id": "sr:sport_event:55189609",
+        "start_time": "2024-11-03T17:00:00+00:00",
+        "start_time_confirmed": true,
+        "sport_event_context": {
+          "sport": {
+            "id": "sr:sport:5",
+            "name": "Tennis"
+          },
+          "category": {
+            "id": "sr:category:213",
+            "name": "ITF Women"
+          },
+          "competition": {
+            "id": "sr:competition:41250",
+            "name": "ITF Canada 08A, Women Singles",
+            "parent_id": "sr:competition:41248",
+            "type": "singles",
+            "gender": "women"
+          },
+          "season": {
+            "id": "sr:season:125289",
+            "name": "ITF Canada 08A, Women Singles 2024",
+            "start_date": "2024-10-27",
+            "end_date": "2024-11-03",
+            "year": "2024",
+            "competition_id": "sr:competition:41250"
+          },
+          "stage": {
+            "order": 2,
+            "type": "cup",
+            "phase": "stage_1_playoff",
+            "start_date": "2024-10-29",
+            "end_date": "2024-11-03",
+            "year": "2024"
+          },
+          "round": {
+            "name": "final"
+          },
+          "groups": [
+            {
+              "id": "sr:cup:173591",
+              "name": "2024 Canada 08A, Women Singles"
+            }
+          ],
+          "mode": {
+            "best_of": 3
+          }
+        },
+        "coverage": {
+          "type": "sport_event",
+          "sport_event_properties": {
+            "enhanced_stats": false,
+            "scores": "live",
+            "detailed_serve_outcomes": true,
+            "play_by_play": true
+          }
+        },
+        "competitors": [
+          {
+            "id": "sr:competitor:71484",
+            "name": "Chirico, Louisa",
+            "country": "USA",
+            "country_code": "USA",
+            "abbreviation": "CHI",
+            "qualifier": "home",
+            "seed": 5,
+            "bracket_number": 8
+          },
+          {
+            "id": "sr:competitor:805538",
+            "name": "Cross, Kayla",
+            "country": "Canada",
+            "country_code": "CAN",
+            "abbreviation": "CRO",
+            "qualifier": "away",
+            "bracket_number": 21
+          }
+        ],
+        "venue": {
+          "id": "sr:venue:1971",
+          "name": "Court 1",
+          "city_name": "Toronto",
+          "country_name": "Canada",
+          "country_code": "CAN",
+          "timezone": "Canada\/Eastern"
+        },
+        "estimated": false
+      },
+      "sport_event_status": {
+        "status": "interrupted",
+        "match_status": "interrupted",
+        "home_score": 0,
+        "away_score": 0,
+        "period_scores": [
+          {
+            "home_score": 2,
+            "away_score": 3,
+            "type": "set",
+            "number": 1
+          }
+        ]
+      },
+      "statistics": {
+        "totals": {
+          "competitors": [
+            {
+              "id": "sr:competitor:71484",
+              "name": "Chirico, Louisa",
+              "abbreviation": "CHI",
+              "qualifier": "home",
+              "statistics": {
+                "aces": 2,
+                "breakpoints_won": 0,
+                "double_faults": 2,
+                "first_serve_points_won": 10,
+                "first_serve_successful": 16,
+                "games_won": 2,
+                "max_games_in_a_row": 1,
+                "max_points_in_a_row": 3,
+                "points_won": 17,
+                "second_serve_points_won": 4,
+                "second_serve_successful": 7,
+                "service_games_won": 2,
+                "service_points_lost": 11,
+                "service_points_won": 14,
+                "tiebreaks_won": 0,
+                "total_breakpoints": 0
+              }
+            },
+            {
+              "id": "sr:competitor:805538",
+              "name": "Cross, Kayla",
+              "abbreviation": "CRO",
+              "qualifier": "away",
+              "statistics": {
+                "aces": 1,
+                "breakpoints_won": 1,
+                "double_faults": 1,
+                "first_serve_points_won": 5,
+                "first_serve_successful": 6,
+                "games_won": 3,
+                "max_games_in_a_row": 2,
+                "max_points_in_a_row": 6,
+                "points_won": 19,
+                "second_serve_points_won": 3,
+                "second_serve_successful": 4,
+                "service_games_won": 2,
+                "service_points_lost": 3,
+                "service_points_won": 8,
+                "tiebreaks_won": 0,
+                "total_breakpoints": 2
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "sport_event": {
+        "id": "sr:sport_event:55072231",
+        "start_time": "2024-11-03T17:05:00+00:00",
+        "start_time_confirmed": true,
+        "sport_event_context": {
+          "sport": {
+            "id": "sr:sport:5",
+            "name": "Tennis"
+          },
+          "category": {
+            "id": "sr:category:6",
+            "name": "WTA"
+          },
+          "competition": {
+            "id": "sr:competition:21424",
+            "name": "WTA Finals Women Doubles",
+            "parent_id": "sr:competition:21420",
+            "type": "doubles",
+            "gender": "women",
+            "level": "wta_championships"
+          },
+          "season": {
+            "id": "sr:season:113290",
+            "name": "WTA Finals Women Doubles 2024",
+            "start_date": "2024-11-02",
+            "end_date": "2024-11-09",
+            "year": "2024",
+            "competition_id": "sr:competition:21424"
+          },
+          "stage": {
+            "order": 1,
+            "type": "league",
+            "phase": "regular season",
+            "start_date": "2024-11-02",
+            "end_date": "2024-11-09",
+            "year": "2024"
+          },
+          "round": {
+            "number": 1
+          },
+          "groups": [
+            {
+              "id": "sr:league:80130",
+              "name": "WTA Finals 2024, Doubles, Group White",
+              "group_name": "Group B"
+            }
+          ],
+          "mode": {
+            "best_of": 3
+          }
+        },
+        "coverage": {
+          "type": "sport_event",
+          "sport_event_properties": {
+            "enhanced_stats": false,
+            "scores": "live",
+            "detailed_serve_outcomes": true,
+            "play_by_play": true
+          }
+        },
+        "competitors": [
+          {
+            "id": "sr:competitor:315497",
+            "name": "Errani S \/ Paolini J",
+            "country": "Italy",
+            "country_code": "ITA",
+            "abbreviation": "E\/P",
+            "qualifier": "home",
+            "players": [
+              {
+                "id": "sr:competitor:19202",
+                "name": "Errani, Sara",
+                "country": "Italy",
+                "country_code": "ITA",
+                "abbreviation": "ERR"
+              },
+              {
+                "id": "sr:competitor:69208",
+                "name": "Paolini, Jasmine",
+                "country": "Italy",
+                "country_code": "ITA",
+                "abbreviation": "PAO"
+              }
+            ],
+            "seed": 4
+          },
+          {
+            "id": "sr:competitor:1103105",
+            "name": "Dolehide CA \/ Krawczyk D",
+            "abbreviation": "D\/K",
+            "qualifier": "away",
+            "players": [
+              {
+                "id": "sr:competitor:123824",
+                "name": "Dolehide, Caroline",
+                "country": "USA",
+                "country_code": "USA",
+                "abbreviation": "DOL"
+              },
+              {
+                "id": "sr:competitor:64021",
+                "name": "Krawczyk, Desirae",
+                "country": "USA",
+                "country_code": "USA",
+                "abbreviation": "KRA"
+              }
+            ],
+            "seed": 5
+          }
+        ],
+        "venue": {
+          "id": "sr:venue:80847",
+          "name": "Center Court",
+          "city_name": "Riyadh",
+          "country_name": "Saudi Arabia",
+          "country_code": "SAU",
+          "timezone": "Asia\/Riyadh"
+        },
+        "estimated": true
+      },
+      "sport_event_status": {
+        "status": "live",
+        "match_status": "1st_set",
+        "home_score": 0,
+        "away_score": 0,
+        "period_scores": [
+          {
+            "home_score": 1,
+            "away_score": 2,
+            "type": "set",
+            "number": 1
+          }
+        ],
+        "game_state": {
+          "home_score": 0,
+          "away_score": 0,
+          "serving": "away",
+          "last_point_result": "server_winner",
+          "tie_break": false
+        }
+      },
+      "statistics": {
+        "totals": {
+          "competitors": [
+            {
+              "id": "sr:competitor:315497",
+              "name": "Errani S \/ Paolini J",
+              "abbreviation": "E\/P",
+              "qualifier": "home",
+              "statistics": {
+                "aces": 0,
+                "breakpoints_won": 0,
+                "double_faults": 0,
+                "first_serve_points_won": 5,
+                "first_serve_successful": 9,
+                "games_won": 1,
+                "max_games_in_a_row": 1,
+                "max_points_in_a_row": 4,
+                "points_won": 5,
+                "second_serve_points_won": 0,
+                "second_serve_successful": 0,
+                "service_games_won": 1,
+                "service_points_lost": 4,
+                "service_points_won": 5,
+                "tiebreaks_won": 0,
+                "total_breakpoints": 0
+              }
+            },
+            {
+              "id": "sr:competitor:1103105",
+              "name": "Dolehide CA \/ Krawczyk D",
+              "abbreviation": "D\/K",
+              "qualifier": "away",
+              "statistics": {
+                "aces": 0,
+                "breakpoints_won": 1,
+                "double_faults": 0,
+                "first_serve_points_won": 3,
+                "first_serve_successful": 3,
+                "games_won": 2,
+                "max_games_in_a_row": 2,
+                "max_points_in_a_row": 7,
+                "points_won": 8,
+                "second_serve_points_won": 1,
+                "second_serve_successful": 1,
+                "service_games_won": 1,
+                "service_points_lost": 0,
+                "service_points_won": 4,
+                "total_breakpoints": 2
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "sport_event": {
+        "id": "sr:sport_event:55191619",
+        "start_time": "2024-11-03T17:10:00+00:00",
+        "start_time_confirmed": true,
+        "sport_event_context": {
+          "sport": {
+            "id": "sr:sport:5",
+            "name": "Tennis"
+          },
+          "category": {
+            "id": "sr:category:72",
+            "name": "Challenger"
+          },
+          "competition": {
+            "id": "sr:competition:3951",
+            "name": "ATP Challenger Knoxville, USA Men Singles",
+            "parent_id": "sr:competition:3949",
+            "type": "singles",
+            "gender": "men"
+          },
+          "season": {
+            "id": "sr:season:123243",
+            "name": "ATP Challenger Knoxville, USA Men Singles 2024",
+            "start_date": "2024-11-03",
+            "end_date": "2024-11-10",
+            "year": "2024",
+            "competition_id": "sr:competition:3951"
+          },
+          "stage": {
+            "order": 1,
+            "type": "cup",
+            "phase": "qualification",
+            "start_date": "2024-11-03",
+            "end_date": "2024-11-04",
+            "year": "2024"
+          },
+          "round": {
+            "number": 1,
+            "name": "qualification_round_1"
+          },
+          "groups": [
+            {
+              "id": "sr:cup:170869",
+              "name": "2024 Knoxville, USA, Qualifying"
+            }
+          ],
+          "mode": {
+            "best_of": 3
+          }
+        },
+        "coverage": {
+          "type": "sport_event",
+          "sport_event_properties": {
+            "enhanced_stats": false,
+            "scores": "live",
+            "detailed_serve_outcomes": true,
+            "play_by_play": true
+          }
+        },
+        "competitors": [
+          {
+            "id": "sr:competitor:402317",
+            "name": "Dostanic, Stefan",
+            "country": "USA",
+            "country_code": "USA",
+            "abbreviation": "DOS",
+            "qualifier": "home",
+            "bracket_number": 7
+          },
+          {
+            "id": "sr:competitor:224936",
+            "name": "Nanda, Govind",
+            "country": "USA",
+            "country_code": "USA",
+            "abbreviation": "NAN",
+            "qualifier": "away",
+            "seed": 12,
+            "bracket_number": 8
+          }
+        ],
+        "venue": {
+          "id": "sr:venue:15312",
+          "name": "Court 3",
+          "city_name": "Knoxville",
+          "country_name": "USA",
+          "country_code": "USA",
+          "timezone": "America\/Chicago"
+        },
+        "estimated": true
+      },
+      "sport_event_status": {
+        "status": "live",
+        "match_status": "1st_set",
+        "home_score": 0,
+        "away_score": 0,
+        "period_scores": [
+          {
+            "home_score": 3,
+            "away_score": 1,
+            "type": "set",
+            "number": 1
+          }
+        ],
+        "game_state": {
+          "home_score": 0,
+          "away_score": 15,
+          "serving": "home",
+          "last_point_result": "receiver_winner",
+          "tie_break": false
+        }
+      },
+      "statistics": {
+        "totals": {
+          "competitors": [
+            {
+              "id": "sr:competitor:402317",
+              "name": "Dostanic, Stefan",
+              "abbreviation": "DOS",
+              "qualifier": "home",
+              "statistics": {
+                "aces": 2,
+                "breakpoints_won": 1,
+                "double_faults": 0,
+                "first_serve_points_won": 6,
+                "first_serve_successful": 7,
+                "games_won": 3,
+                "max_games_in_a_row": 2,
+                "max_points_in_a_row": 4,
+                "points_won": 14,
+                "points_won_from_last_10": 7,
+                "second_serve_points_won": 1,
+                "second_serve_successful": 3,
+                "service_games_won": 2,
+                "service_points_lost": 3,
+                "service_points_won": 7,
+                "tiebreaks_won": 0,
+                "total_breakpoints": 1
+              }
+            },
+            {
+              "id": "sr:competitor:224936",
+              "name": "Nanda, Govind",
+              "abbreviation": "NAN",
+              "qualifier": "away",
+              "statistics": {
+                "aces": 0,
+                "breakpoints_won": 0,
+                "double_faults": 0,
+                "first_serve_points_won": 5,
+                "first_serve_successful": 10,
+                "games_won": 1,
+                "max_games_in_a_row": 1,
+                "max_points_in_a_row": 3,
+                "points_won": 9,
+                "points_won_from_last_10": 3,
+                "second_serve_points_won": 1,
+                "second_serve_successful": 2,
+                "service_games_won": 1,
+                "service_points_lost": 6,
+                "service_points_won": 6,
+                "tiebreaks_won": 0,
+                "total_breakpoints": 0
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "sport_event": {
+        "id": "sr:sport_event:55196053",
+        "start_time": "2024-11-03T17:15:00+00:00",
+        "start_time_confirmed": true,
+        "sport_event_context": {
+          "sport": {
+            "id": "sr:sport:5",
+            "name": "Tennis"
+          },
+          "category": {
+            "id": "sr:category:871",
+            "name": "WTA 125K"
+          },
+          "competition": {
+            "id": "sr:competition:9419",
+            "name": "WTA 125K Cali, Colombia Women Singles",
+            "parent_id": "sr:competition:9417",
+            "type": "singles",
+            "gender": "women",
+            "level": "wta_125"
+          },
+          "season": {
+            "id": "sr:season:122325",
+            "name": "WTA 125K Cali, Colombia Women Singles 2024",
+            "start_date": "2024-11-03",
+            "end_date": "2024-11-09",
+            "year": "2024",
+            "competition_id": "sr:competition:9419"
+          },
+          "stage": {
+            "order": 1,
+            "type": "cup",
+            "phase": "qualification",
+            "start_date": "2024-11-03",
+            "end_date": "2024-11-04",
+            "year": "2024"
+          },
+          "round": {
+            "number": 1,
+            "name": "qualification_round_1"
+          },
+          "groups": [
+            {
+              "id": "sr:cup:169731",
+              "name": "2024 Cali, Colombia, Qualifying"
+            }
+          ],
+          "mode": {
+            "best_of": 3
+          }
+        },
+        "coverage": {
+          "type": "sport_event",
+          "sport_event_properties": {
+            "enhanced_stats": false,
+            "scores": "live",
+            "detailed_serve_outcomes": true,
+            "play_by_play": true
+          }
+        },
+        "competitors": [
+          {
+            "id": "sr:competitor:999197",
+            "name": "Sanchez Uribe, Maria Jose",
+            "country": "Colombia",
+            "country_code": "COL",
+            "abbreviation": "SAN",
+            "qualifier": "home",
+            "bracket_number": 7
+          },
+          {
+            "id": "sr:competitor:157368",
+            "name": "Kazionova, Ekaterina",
+            "country": "Neutral",
+            "abbreviation": "KAZ",
+            "qualifier": "away",
+            "seed": 8,
+            "bracket_number": 8
+          }
+        ],
+        "venue": {
+          "id": "sr:venue:13886",
+          "name": "Centre Court",
+          "city_name": "Santiago de Cali",
+          "country_name": "Colombia",
+          "country_code": "COL",
+          "timezone": "America\/Bogota"
+        },
+        "estimated": true
+      },
+      "sport_event_status": {
+        "status": "live",
+        "match_status": "1st_set",
+        "home_score": 0,
+        "away_score": 0,
+        "period_scores": [
+          {
+            "home_score": 0,
+            "away_score": 1,
+            "type": "set",
+            "number": 1
+          }
+        ],
+        "game_state": {
+          "home_score": 0,
+          "away_score": 0,
+          "serving": "away",
+          "last_point_result": "server_winner",
+          "tie_break": false
+        }
+      },
+      "statistics": {
+        "totals": {
+          "competitors": [
+            {
+              "id": "sr:competitor:999197",
+              "name": "Sanchez Uribe, Maria Jose",
+              "abbreviation": "SAN",
+              "qualifier": "home",
+              "statistics": {
+                "aces": 0,
+                "breakpoints_won": 0,
+                "double_faults": 0,
+                "first_serve_points_won": 2,
+                "first_serve_successful": 5,
+                "max_points_in_a_row": 1,
+                "points_won": 2,
+                "second_serve_points_won": 0,
+                "second_serve_successful": 1,
+                "service_games_won": 0,
+                "service_points_lost": 4,
+                "service_points_won": 2,
+                "tiebreaks_won": 0,
+                "total_breakpoints": 0
+              }
+            },
+            {
+              "id": "sr:competitor:157368",
+              "name": "Kazionova, Ekaterina",
+              "abbreviation": "KAZ",
+              "qualifier": "away",
+              "statistics": {
+                "aces": 0,
+                "breakpoints_won": 1,
+                "double_faults": 0,
+                "first_serve_points_won": 0,
+                "first_serve_successful": 0,
+                "games_won": 1,
+                "max_games_in_a_row": 1,
+                "max_points_in_a_row": 2,
+                "points_won": 4,
+                "second_serve_points_won": 0,
+                "second_serve_successful": 0,
+                "service_games_won": 0,
+                "service_points_lost": 0,
+                "service_points_won": 0,
+                "tiebreaks_won": 0,
+                "total_breakpoints": 1
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "sport_event": {
+        "id": "sr:sport_event:55158023",
+        "start_time": "2024-11-03T17:20:00+00:00",
+        "start_time_confirmed": true,
+        "sport_event_context": {
+          "sport": {
+            "id": "sr:sport:5",
+            "name": "Tennis"
+          },
+          "category": {
+            "id": "sr:category:3",
+            "name": "ATP"
+          },
+          "competition": {
+            "id": "sr:competition:3251",
+            "name": "ATP Belgrade, Serbia Men Singles",
+            "parent_id": "sr:competition:3249",
+            "type": "singles",
+            "gender": "men",
+            "level": "atp_250"
+          },
+          "season": {
+            "id": "sr:season:122703",
+            "name": "ATP Belgrade, Serbia Men Singles 2024",
+            "start_date": "2024-11-02",
+            "end_date": "2024-11-09",
+            "year": "2024",
+            "competition_id": "sr:competition:3251"
+          },
+          "stage": {
+            "order": 2,
+            "type": "cup",
+            "phase": "stage_1_playoff",
+            "start_date": "2024-11-03",
+            "end_date": "2024-11-09",
+            "year": "2024"
+          },
+          "round": {
+            "name": "round_of_32"
+          },
+          "groups": [
+            {
+              "id": "sr:cup:170201",
+              "name": "2024 Belgrade, Serbia"
+            }
+          ],
+          "mode": {
+            "best_of": 3
+          }
+        },
+        "coverage": {
+          "type": "sport_event",
+          "sport_event_properties": {
+            "enhanced_stats": false,
+            "scores": "live",
+            "detailed_serve_outcomes": true,
+            "play_by_play": true
+          }
+        },
+        "competitors": [
+          {
+            "id": "sr:competitor:601146",
+            "name": "Medjedovic, Hamad",
+            "country": "Serbia",
+            "country_code": "SRB",
+            "abbreviation": "MED",
+            "qualifier": "home",
+            "bracket_number": 15
+          },
+          {
+            "id": "sr:competitor:294300",
+            "name": "Nakashima, Brandon",
+            "country": "USA",
+            "country_code": "USA",
+            "abbreviation": "NAK",
+            "qualifier": "away",
+            "seed": 6,
+            "bracket_number": 16
+          }
+        ],
+        "venue": {
+          "id": "sr:venue:80873",
+          "name": "Centre Court",
+          "city_name": "Belgrade",
+          "country_name": "Serbia",
+          "country_code": "SRB",
+          "timezone": "Europe\/Belgrade"
+        },
+        "estimated": true
+      },
+      "sport_event_status": {
+        "status": "live",
+        "match_status": "match_about_to_start",
+        "period_scores": [
+          {
+            "home_score": 0,
+            "away_score": 0,
+            "type": "set"
+          }
+        ],
+        "game_state": {
+          "home_score": 0,
+          "away_score": 0,
+          "serving": "away",
+          "tie_break": false
+        }
+      }
+    },
+    {
+      "sport_event": {
+        "id": "sr:sport_event:55196055",
+        "start_time": "2024-11-03T17:20:00+00:00",
+        "start_time_confirmed": true,
+        "sport_event_context": {
+          "sport": {
+            "id": "sr:sport:5",
+            "name": "Tennis"
+          },
+          "category": {
+            "id": "sr:category:871",
+            "name": "WTA 125K"
+          },
+          "competition": {
+            "id": "sr:competition:9419",
+            "name": "WTA 125K Cali, Colombia Women Singles",
+            "parent_id": "sr:competition:9417",
+            "type": "singles",
+            "gender": "women",
+            "level": "wta_125"
+          },
+          "season": {
+            "id": "sr:season:122325",
+            "name": "WTA 125K Cali, Colombia Women Singles 2024",
+            "start_date": "2024-11-03",
+            "end_date": "2024-11-09",
+            "year": "2024",
+            "competition_id": "sr:competition:9419"
+          },
+          "stage": {
+            "order": 1,
+            "type": "cup",
+            "phase": "qualification",
+            "start_date": "2024-11-03",
+            "end_date": "2024-11-04",
+            "year": "2024"
+          },
+          "round": {
+            "number": 1,
+            "name": "qualification_round_1"
+          },
+          "groups": [
+            {
+              "id": "sr:cup:169731",
+              "name": "2024 Cali, Colombia, Qualifying"
+            }
+          ],
+          "mode": {
+            "best_of": 3
+          }
+        },
+        "coverage": {
+          "type": "sport_event",
+          "sport_event_properties": {
+            "enhanced_stats": false,
+            "scores": "live",
+            "detailed_serve_outcomes": true,
+            "play_by_play": true
+          }
+        },
+        "competitors": [
+          {
+            "id": "sr:competitor:299308",
+            "name": "Smith, Tina Nadine",
+            "country": "Australia",
+            "country_code": "AUS",
+            "abbreviation": "SMI",
+            "qualifier": "home",
+            "seed": 2,
+            "bracket_number": 5
+          },
+          {
+            "id": "sr:competitor:833468",
+            "name": "Alba Verastegui, Sara",
+            "country": "Colombia",
+            "country_code": "COL",
+            "abbreviation": "ALB",
+            "qualifier": "away",
+            "bracket_number": 6
+          }
+        ],
+        "venue": {
+          "id": "sr:venue:13890",
+          "name": "Court 3",
+          "city_name": "Santiago de Cali",
+          "country_name": "Colombia",
+          "country_code": "COL",
+          "timezone": "America\/Bogota"
+        },
+        "estimated": true
+      },
+      "sport_event_status": {
+        "status": "live",
+        "match_status": "match_about_to_start"
+      }
+    }
+  ]
+}

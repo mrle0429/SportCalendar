@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.test.sport.ui.fragment.ScheduleFragment">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="?android:actionBarSize"
+        android:background="@color/white">
+
+        <ImageView
+            android:id="@+id/iv_left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toStartOf="@+id/tv_calendar_title"
+            android:padding="13dp"
+            android:src="@drawable/bt_back_black" />
+
+        <TextView
+            android:id="@+id/tv_calendar_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="2024 年 2月"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:id="@+id/iv_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@+id/tv_calendar_title"
+            android:padding="13dp"
+            android:src="@drawable/ic_right" />
+    </RelativeLayout>
+
+    <com.haibin.calendarview.CalendarLayout
+        android:id="@+id/calendar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:calendar_content_view_id="@+id/ll_data"
+        app:default_status="expand">
+
+        <com.haibin.calendarview.CalendarView
+            android:id="@+id/calendarView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            app:calendar_height="50dp"
+            app:calendar_padding="2dp"
+            app:current_day_lunar_text_color="@color/text_now"
+            app:current_day_text_color="@color/text_now"
+            app:current_month_lunar_text_color="@color/black"
+            app:current_month_text_color="@color/black"
+            app:month_view="com.test.sport.ui.view.CustomMonthView"
+            app:scheme_lunar_text_color="#333"
+            app:scheme_text="S"
+            app:scheme_text_color="#333"
+            app:selected_lunar_text_color="@color/text_selected"
+            app:selected_text_color="@color/text_selected"
+            app:selected_theme_color="@color/bg_selected"
+            app:week_start_with="mon"
+            app:year_view_scheme_color="@color/flag_working"
+            app:year_view_select_text_color="#333" />
+
+        <LinearLayout
+            android:id="@+id/ll_data"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_data"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp" />
+
+            <TextView
+                android:id="@+id/tv_hint"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="30dp"
+                android:text="No schedule today"
+                android:textColor="@color/text_grey"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+    </com.haibin.calendarview.CalendarLayout>
+
+
+</LinearLayout>

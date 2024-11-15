@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <color name="text_grey">#b2b2b2</color>
+    <color name="line">#e5e5e5</color>
+    <color name="text_red">#fb2e18</color>
+    <color name="bg_search">#f5f5f5</color>
+    <color name="text_blue">#9FC6FF</color>
+
+    <color name="bg_start">#06175f</color>
+    <color name="bg_end">#662719</color>
+
+    <!--日历-->
+    <color name="bg_selected">#008df0</color>//选中背景色
+    <color name="text_selected">#ffffff</color>//选中字体颜色
+    <color name="text_now">#008df0</color>//今天字体颜色
+    <color name="text_unselected">#1a1a1a</color>//默认字体颜色
+    <color name="flag_working">#008df0</color>//日历标记颜色
+</resources>

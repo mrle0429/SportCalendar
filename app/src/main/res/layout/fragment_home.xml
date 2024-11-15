@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.test.sport.ui.fragment.HomeFragment">
+
+    <RelativeLayout
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="13dp"
+        android:paddingVertical="13dp">
+
+        <TextView
+            android:id="@+id/tv_sport"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:gravity="center"
+            android:text="Basketball"
+            android:drawablePadding="5dp"
+            android:drawableEnd="@drawable/bt_down"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+        <com.hjq.shape.view.ShapeEditText
+            android:id="@+id/et_name"
+            android:layout_width="170dp"
+            android:layout_height="40dp"
+            android:layout_toStartOf="@+id/tv_search"
+            android:gravity="center_vertical"
+            android:hint="competition"
+            android:paddingLeft="40dp"
+            android:textSize="15sp"
+            app:shape_radius="13dp"
+            app:shape_solidColor="@color/bg_search" />
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="-30dp"
+            android:layout_toStartOf="@+id/et_name"
+            android:src="@drawable/ic_search" />
+
+        <TextView
+            android:id="@+id/tv_search"
+            android:paddingStart="8dp"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_alignParentEnd="true"
+            android:gravity="center"
+            android:text="Search"
+            android:textColor="@color/text_blue"
+            android:textSize="13sp" />
+
+    </RelativeLayout>
+
+    <com.haibin.calendarview.CalendarView
+        android:id="@+id/calendarView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        app:calendar_height="50dp"
+        app:calendar_padding="2dp"
+        app:current_day_lunar_text_color="@color/text_now"
+        app:current_day_text_color="@color/text_now"
+        app:current_month_lunar_text_color="@color/black"
+        app:current_month_text_color="@color/black"
+        app:week_view="com.test.sport.ui.view.CustomWeekView"
+        app:scheme_lunar_text_color="#333"
+        app:scheme_text="S"
+        app:scheme_text_color="#333"
+        app:selected_lunar_text_color="@color/text_selected"
+        app:selected_text_color="@color/text_selected"
+        app:selected_theme_color="@color/bg_selected"
+        app:week_start_with="mon"
+        app:year_view_scheme_color="@color/flag_working"
+        app:year_view_select_text_color="#333" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_data"
+        android:layout_marginHorizontal="13dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/tv_show"
+        android:layout_marginTop="30dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="No data" />
+</LinearLayout>
