@@ -82,7 +82,7 @@ public class SportActivity extends BaseActivity<ActivitySportBinding> {
         getBinding().tvVenue.setText(game.getVenue_name());
         getBinding().tvCapacity.setText(game.getVenue_capacity() + "");
         getBinding().tvCity.setText(game.getCountry_name() + "-" + game.getCity_name());
-        getBinding().tvDate.setText(game.getStage_start_date() + " to " + game.getStage_end_date());
+        //getBinding().tvDate.setText(game.getStage_start_date() + " to " + game.getStage_end_date());
 
         if (game.getScore() != null && game.getScore().size() > 0) {
             for (Game.Score score : game.getScore()) {

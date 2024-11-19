@@ -17,8 +17,8 @@ import okhttp3.ResponseBody;
 public class OkHttpUtil {
 
     private static final String API_KEY = "sk-proj-1TC3ibKsouIWSoJez5ayT3BlbkFJarMV73oJVjDLCsE7K71v";
-    private static final String ACCESS_KEY = "ALTAKjmHZlNFn8lk6GzwAL8NhB";
-    private static final String SECRET_KEY = "4a335e52840143a99e307922d0e13566";
+    private static final String ACCESS_KEY = "ALTAKpjFQkgZDaC6wGmZyAOTeP";
+    private static final String SECRET_KEY = "56050c09b69443c4abeca47759683522";
     private static Qianfan qianfan;
 
     static {
