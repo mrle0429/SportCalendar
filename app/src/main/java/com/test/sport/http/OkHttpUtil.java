@@ -17,8 +17,8 @@ import okhttp3.ResponseBody;
 public class OkHttpUtil {
 
     private static final String API_KEY = "sk-proj-1TC3ibKsouIWSoJez5ayT3BlbkFJarMV73oJVjDLCsE7K71v";
-    private static final String ACCESS_KEY = "ALTAKpjFQkgZDaC6wGmZyAOTeP";
-    private static final String SECRET_KEY = "56050c09b69443c4abeca47759683522";
+    private static final String ACCESS_KEY = "ALTAKPscAps3SmNZHj7cSUJ5Qd";
+    private static final String SECRET_KEY = "d6bf44c6a7b54fb6a3ea4c2b982c9940";
     private static Qianfan qianfan;
 
     static {
@@ -41,7 +41,7 @@ public class OkHttpUtil {
         new Thread(() -> {
             try {
                 ChatResponse response = qianfan.chatCompletion()
-                        .model("ERNIE-4.0-8K")
+                        .model("ERNIE-3.5-8K")
                         .addMessage("user", message)
                         .temperature(0.7)
                         .execute();

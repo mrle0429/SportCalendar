@@ -12,27 +12,35 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import com.test.nba.R;
 import com.test.nba.databinding.FragmentChatBinding;
 import com.test.sport.base.BaseFragment;
+import com.test.sport.db.entity.Message;
 import com.test.sport.http.OkHttpUtil;
+import com.test.sport.ui.adapter.ChatAdapter;
 
 import org.json.JSONObject;
 
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.io.StringWriter;
+import java.util.ArrayList;
+import java.util.List;
 
 import okhttp3.Call;
 import okhttp3.Response;
 
 public class ChatFragment extends BaseFragment<FragmentChatBinding> implements View.OnClickListener{
+    private ChatAdapter chatAdapter;
+    private List<Message> messages = new ArrayList<>();
 
-    private StringBuilder chatHistory = new StringBuilder();
     @Override
     protected void initData() {
         super.initData();
 
-        chatHistory.append("AI Assistant: Hello, how can I assist you today?\n");
-        updateChatView();
+        chatAdapter = new ChatAdapter();
+        LinearLayoutManager layoutManager = new LinearLayoutManager(getContext());
+        getBinding().rvChatList.setLayoutManager(layoutManager);
+        getBinding().rvChatList.setAdapter(chatAdapter);
 
+        addMessage("Hello, I'm your assistant. How can I help you?", Message.TYPE_AI);
     }
 
     @Override
@@ -65,26 +73,18 @@ public class ChatFragment extends BaseFragment<FragmentChatBinding> implements V
 
     }
 
-    private void sendMessage(String message){
-        chatHistory.append("User: " + message + "\n");
-        updateChatView();
+    private void sendMessage(String message) {
+        if (message.trim().isEmpty()) return;
+        
+        // 添加用户消息
+        addMessage(message, Message.TYPE_USER);
 
-        //发送API请求
-        // 发送到API获取回复
+        // 发送API请求
         OkHttpUtil.sendChatRequest(message, new okhttp3.Callback() {
             @Override
             public void onFailure(@NonNull Call call, @NonNull IOException e) {
-                Log.e("ChatFragment", "Request failed", e);
-                // 获取完整的错误堆栈
-                StringWriter sw = new StringWriter();
-                e.printStackTrace(new PrintWriter(sw));
-                String errorDetails = sw.toString();
-                
                 getActivity().runOnUiThread(() -> {
-                    String errorMessage = "Error: " + e.getMessage() + "\n" + errorDetails;
-                    chatHistory.append("System: ").append(errorMessage).append("\n\n");
-                    updateChatView();
-                    showToast("Network error: " + e.getMessage());
+                    addMessage("Network error: " + e.getMessage(), Message.TYPE_AI);
                 });
             }
 
@@ -100,22 +100,30 @@ public class ChatFragment extends BaseFragment<FragmentChatBinding> implements V
                                 .getString("content");
 
                         getActivity().runOnUiThread(() -> {
-                            chatHistory.append("AI: ").append(content).append("\n\n");
-                            updateChatView();
+                            addMessage(content, Message.TYPE_AI);
                         });
                     } catch (Exception e) {
-                        e.printStackTrace();
                         getActivity().runOnUiThread(() -> {
-                            showToast("Response error");
+                            addMessage("Error processing response", Message.TYPE_AI);
                         });
                     }
                 }
             }
         });
-        
     }
-    private void updateChatView() {
-        // 更新聊天内容显示
-        getBinding().rvChatList.setText(chatHistory.toString());
+
+    
+
+
+    private void addMessage(String content, int type) {
+        Message message = new Message(content, type);
+        chatAdapter.addMessage(message);
+        scrollToBottom();
+    }
+
+    private void scrollToBottom() {
+        getBinding().rvChatList.post(() -> {
+            getBinding().rvChatList.scrollToPosition(chatAdapter.getItemCount() - 1);
+        });
     }
 }

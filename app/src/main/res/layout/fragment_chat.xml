@@ -2,13 +2,14 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#FFFFFF"
     android:orientation="vertical">
 
     <!-- 顶部标题栏 -->
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="56dp"
-        android:background="@color/white"
+        android:background="#FFFFFF"
         android:elevation="2dp">
 
         <TextView
@@ -16,31 +17,26 @@
             android:layout_height="wrap_content"
             android:layout_centerInParent="true"
             android:text="AI Assistant"
-            android:textColor="@color/black"
+            android:textColor="#000000"
             android:textSize="18sp"
             android:textStyle="bold" />
     </RelativeLayout>
 
-
-    <!-- 聊天内容显示区域 -->
-    <ScrollView
+    <!-- 聊天内容区域 -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_chat_list"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="1">
+        android:layout_weight="1"
+        android:padding="8dp"
+        android:clipToPadding="false" />
 
-        <TextView
-            android:id="@+id/rv_chat_list"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:padding="16dp"
-            android:textSize="16sp" />
-    </ScrollView>
-
-
-     <!-- 底部输入区域 -->
+    <!-- 底部输入区域 -->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+        android:elevation="2dp"
         android:orientation="horizontal"
         android:padding="8dp">
 
@@ -49,14 +45,20 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:hint="Type a message..."
-            android:padding="8dp" />
+            android:background="@drawable/input_bg"
+            android:hint="输入消息..."
+            android:maxLines="4"
+            android:minHeight="40dp"
+            android:padding="12dp"
+            android:textSize="16sp" />
 
-        <Button
+        <ImageButton
             android:id="@+id/btn_send"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Send" />
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="8dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:src="@drawable/input_bg"
+             />
     </LinearLayout>
-
 </LinearLayout>
