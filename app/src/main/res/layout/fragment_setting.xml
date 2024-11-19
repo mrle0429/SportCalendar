@@ -84,16 +84,32 @@
         <RelativeLayout
             android:id="@+id/rl_timezone"
             android:layout_width="match_parent"
-            android:layout_height="50dp"
-            android:paddingHorizontal="16dp">
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            android:clickable="true"
+            android:focusable="true">
 
             <TextView
+                android:id="@+id/tvTimezone"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_centerVertical="true"
                 android:text="Timezone"
                 android:textColor="@color/black"
                 android:textSize="15sp" />
+
+                
+                
+            <TextView
+                android:id="@+id/tvSelectedTimezone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@id/tvTimezone"
+                android:layout_marginStart="16dp"
+                android:layout_centerVertical="true"
+                android:textColor="@color/black"
+                android:textSize="15sp" />
+            
 
             <ImageView
                 android:layout_width="wrap_content"

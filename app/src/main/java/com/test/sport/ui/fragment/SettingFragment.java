@@ -3,6 +3,7 @@ package com.test.sport.ui.fragment;
 import android.app.NotificationChannel;
 import android.app.NotificationManager;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.net.Uri;
 import android.os.Build;
 import android.provider.Settings;
@@ -10,6 +11,8 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+
+import static android.app.Activity.RESULT_OK;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -30,6 +33,7 @@ import com.hjq.permissions.XXPermissions;
 import com.test.nba.R;
 import com.test.nba.databinding.FragmentSettingBinding;
 import com.test.sport.base.BaseFragment;
+import com.test.sport.ui.activity.TimezoneActivity;
 
 import java.util.List;
 
@@ -38,14 +42,17 @@ public class SettingFragment extends BaseFragment<FragmentSettingBinding> implem
     String location;
     private static final String CHANNEL_ID = "match_notifications";
     private AMapLocationClient mLocationClient = null;
+    private static final int REQUEST_CODE_TIMEZONE = 1;
     private static final String TAG = "SettingFragment";
+    private static final String PREFS_NAME = "SettingsPrefs";
+    private static final String PREF_SELECTED_TIMEZONE = "SelectedTimezone";
     private final AMapLocationListener mLocationListener = new AMapLocationListener() {
         @Override
         public void onLocationChanged(AMapLocation aMapLocation) {
             if (aMapLocation != null) {
                 if (aMapLocation.getErrorCode() == 0) {
                     Log.i(TAG, "onLocationChanged: 定位成功");
-                    Log.d(TAG, String.format("位置信息: 经度=%f, 纬度=%f, 地址=%s", 
+                    Log.d(TAG, String.format("位置信息: 经度=%f, 纬度=%f, 地址=%s",
                             aMapLocation.getLongitude(),
                             aMapLocation.getLatitude(),
                             aMapLocation.getAddress()));
@@ -58,18 +65,18 @@ public class SettingFragment extends BaseFragment<FragmentSettingBinding> implem
                             .append("经度: ").append(aMapLocation.getLongitude()).append("\n")
                             .append("纬度: ").append(aMapLocation.getLatitude()).append("\n")
                             .append("精确度: ").append(aMapLocation.getAccuracy()).append("米");
-                    
+
                     location = locationInfo.toString();
                     getActivity().runOnUiThread(() -> {
                         getBinding().tvLocationInfo.setText(location);
                     });
                 } else {
-                    Log.e(TAG, String.format("定位失败: code=%d, info=%s", 
-                    aMapLocation.getErrorCode(),
-                    aMapLocation.getErrorInfo()));
+                    Log.e(TAG, String.format("定位失败: code=%d, info=%s",
+                            aMapLocation.getErrorCode(),
+                            aMapLocation.getErrorInfo()));
                     // 定位失败
-                    String errText = "定位失败: " + aMapLocation.getErrorCode() + 
-                                   "\n错误信息: " + aMapLocation.getErrorInfo();
+                    String errText = "定位失败: " + aMapLocation.getErrorCode() +
+                            "\n错误信息: " + aMapLocation.getErrorInfo();
                     getActivity().runOnUiThread(() -> {
                         getBinding().tvLocationInfo.setText(errText);
                     });
@@ -85,7 +92,8 @@ public class SettingFragment extends BaseFragment<FragmentSettingBinding> implem
         super.initData();
         getBinding().titleBar.setTitle("Setting");
         initLocation();
-        
+        loadPreferences();
+
     }
 
     @Override
@@ -114,6 +122,8 @@ public class SettingFragment extends BaseFragment<FragmentSettingBinding> implem
             case R.id.rl_preferences:
                 break;
             case R.id.rl_timezone:
+                Intent intent = new Intent(getActivity(), TimezoneActivity.class);
+                startActivityForResult(intent, REQUEST_CODE_TIMEZONE);
                 break;
             case R.id.rl_time:
                 break;
@@ -128,7 +138,32 @@ public class SettingFragment extends BaseFragment<FragmentSettingBinding> implem
         }
     }
 
+    @Override
+    public void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
+        if (requestCode == REQUEST_CODE_TIMEZONE && resultCode == RESULT_OK && data != null) {
+            String selectedTimezone = data.getStringExtra(TimezoneActivity.EXTRA_SELECTED_TIMEZONE);
+            if (selectedTimezone != null) {
+                getBinding().tvSelectedTimezone.setText(selectedTimezone);
+                savePreference(PREF_SELECTED_TIMEZONE, selectedTimezone);
+                Log.d(TAG, "选择的时区: " + selectedTimezone);
+            }
+        }
+    }
 
+
+    private void loadPreferences() {
+        SharedPreferences preferences = getActivity().getSharedPreferences(PREFS_NAME, Context.MODE_PRIVATE);
+        String selectedTimezone = preferences.getString(PREF_SELECTED_TIMEZONE, null);
+        getBinding().tvSelectedTimezone.setText(selectedTimezone);
+    }
+
+    private void savePreference(String key, String value) {
+        SharedPreferences preferences = getActivity().getSharedPreferences(PREFS_NAME, Context.MODE_PRIVATE);
+        SharedPreferences.Editor editor = preferences.edit();
+        editor.putString(key, value);
+        editor.apply();
+    }
 
 
     // 初始化定位
@@ -137,7 +172,7 @@ public class SettingFragment extends BaseFragment<FragmentSettingBinding> implem
             Log.d(TAG, "initLocation: 开始初始化定位客户端");
             mLocationClient = new AMapLocationClient(getActivity().getApplicationContext());
             mLocationClient.setLocationListener(mLocationListener);
-            
+
             // 初始化定位参数
             AMapLocationClientOption option = new AMapLocationClientOption();
             // 设置定位模式为高精度模式
@@ -150,10 +185,10 @@ public class SettingFragment extends BaseFragment<FragmentSettingBinding> implem
             option.setMockEnable(false);
             // 单次定位
             option.setOnceLocation(true);
-            
+
             mLocationClient.setLocationOption(option);
             Log.d(TAG, "initLocation: 定位客户端配置完成");
-            
+
         } catch (Exception e) {
             e.printStackTrace();
             Log.e(TAG, "initLocation: 初始化定位客户端失败", e);
@@ -161,43 +196,41 @@ public class SettingFragment extends BaseFragment<FragmentSettingBinding> implem
     }
 
 
-private void checkLocationPermission() {
-    XXPermissions.with(this)
-            .permission(Permission.ACCESS_FINE_LOCATION)
-            .permission(Permission.ACCESS_COARSE_LOCATION)
-            .request(new OnPermissionCallback() {
-                @Override
-                public void onGranted(List<String> permissions, boolean all) {
-                    if (all) {
-                        startLocation();
+    private void checkLocationPermission() {
+        XXPermissions.with(this)
+                .permission(Permission.ACCESS_FINE_LOCATION)
+                .permission(Permission.ACCESS_COARSE_LOCATION)
+                .request(new OnPermissionCallback() {
+                    @Override
+                    public void onGranted(List<String> permissions, boolean all) {
+                        if (all) {
+                            startLocation();
+                        }
                     }
-                }
-                
-                @Override
-                public void onDenied(List<String> permissions, boolean never) {
-                    if (never) {
-                        // 用户选择了永久拒绝
-                        Toast.makeText(getContext(), "请在设置中授予定位权限", Toast.LENGTH_SHORT).show();
-                        XXPermissions.startPermissionActivity(getContext(), permissions);
-                    } else {
-                        Toast.makeText(getContext(), "获取定位权限失败", Toast.LENGTH_SHORT).show();
+
+                    @Override
+                    public void onDenied(List<String> permissions, boolean never) {
+                        if (never) {
+                            // 用户选择了永久拒绝
+                            Toast.makeText(getContext(), "请在设置中授予定位权限", Toast.LENGTH_SHORT).show();
+                            XXPermissions.startPermissionActivity(getContext(), permissions);
+                        } else {
+                            Toast.makeText(getContext(), "获取定位权限失败", Toast.LENGTH_SHORT).show();
+                        }
                     }
-                }
-            });
-}
+                });
+    }
 
 
-
-
-      // 请求通知权限
-      private void requestNotificationPermission() {
+    // 请求通知权限
+    private void requestNotificationPermission() {
         if (!isNotificationEnabled()) {
             // 提示用户在系统设置中启用通知
             Toast.makeText(getActivity(), "请在系统设置中启用通知权限", Toast.LENGTH_LONG).show();
             openNotificationSettings();
         } else {
             // 显示测试通知
-            Log.e("notify","a");
+            Log.e("notify", "a");
             showTestNotification();
         }
     }
@@ -235,8 +268,8 @@ private void checkLocationPermission() {
     }
 
 
-     // 打开通知设置界面
-     private void openNotificationSettings() {
+    // 打开通知设置界面
+    private void openNotificationSettings() {
         Intent intent = new Intent();
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
             intent.setAction(Settings.ACTION_APP_NOTIFICATION_SETTINGS);
