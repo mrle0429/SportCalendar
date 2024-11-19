@@ -1,12 +1,21 @@
 package com.test.sport.ui.fragment;
 
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+// Android 相关
+import android.content.Context;
+import android.widget.TextView;
+import android.widget.Toast;
 
+import com.amap.api.location.AMapLocationClient;
+import com.amap.api.location.AMapLocationClientOption;
+import com.amap.api.location.AMapLocationListener;
+import com.amap.api.location.AMapLocation;
 import com.hjq.permissions.OnPermissionCallback;
 import com.hjq.permissions.Permission;
 import com.hjq.permissions.XXPermissions;
@@ -18,11 +27,36 @@ import java.util.List;
 
 // TODO:设置
 public class SettingFragment extends BaseFragment<FragmentSettingBinding> implements View.OnClickListener {
+    String location;
+    private AMapLocationClient mLocationClient = null;
+    private AMapLocationListener mLocationListener = new AMapLocationListener() {
+        @Override
+        public void onLocationChanged(AMapLocation aMapLocation) {
+            if (aMapLocation != null && aMapLocation.getErrorCode() == 0) {
+                // 定位成功，更新位置
+
+                location = aMapLocation.getFloor();
+                Log.e("location1", "ErrorCode: " + aMapLocation.getErrorCode());
+                Log.e("location1", "Country: " + aMapLocation.getCountry());
+                Log.e("location1", "City: " + aMapLocation.getCity());
+                Log.e("location1", "Address: " + aMapLocation.getAddress());
+                Log.e("location1", "floor:" +aMapLocation.getFloor());
+                Log.e("location1", "floor:" +aMapLocation.getCityCode());
+                Log.e("location1", "floor:" +aMapLocation.getAccuracy());
+                getBinding().tvLocationInfo.setText("Location: " + location);
+            } else {
+                // 定位失败
+                String errText = "定位失败," + aMapLocation.getErrorCode() + ": " + aMapLocation.getErrorInfo();
+                Log.e("AmapError", errText);
+            }
+        }
+    };
 
     @Override
     protected void initData() {
         super.initData();
         getBinding().titleBar.setTitle("Setting");
+        getBinding().tvLocationInfo.setText("Location: " + location);
     }
 
     @Override
@@ -69,10 +103,16 @@ public class SettingFragment extends BaseFragment<FragmentSettingBinding> implem
         XXPermissions.with(this)
                 .permission(Permission.ACCESS_COARSE_LOCATION, Permission.ACCESS_FINE_LOCATION)
                 .request(new OnPermissionCallback() {
-
                     @Override
                     public void onGranted(@NonNull List<String> permissions, boolean allGranted) {
                         if (allGranted) {
+                            Log.e("location", "onGranted: 所有申请的权限都已通过");
+                            try {
+                                initLocation();
+                            } catch (Exception e) {
+                                throw new RuntimeException(e);
+                            }
+
 
                         }
                     }
@@ -83,4 +123,28 @@ public class SettingFragment extends BaseFragment<FragmentSettingBinding> implem
                     }
                 });
     }
+
+
+// 初始化定位
+private void initLocation() throws Exception {
+    Context context = getActivity().getApplicationContext();
+    // 设置隐私合规接口
+    AMapLocationClient.updatePrivacyShow(context,true,true);
+    AMapLocationClient.updatePrivacyAgree(context,true);
+
+    mLocationClient = new AMapLocationClient(context);
+    mLocationClient.setLocationListener(mLocationListener);
+    // 设置定位参数
+    AMapLocationClientOption mLocationOption = new AMapLocationClientOption();
+    mLocationOption.setLocationMode(AMapLocationClientOption.AMapLocationMode.Battery_Saving);
+    mLocationOption.setOnceLocation(true);
+    mLocationOption.setNeedAddress(true);
+    mLocationOption.setLocationCacheEnable(false); // 禁用缓存
+    mLocationClient.setLocationOption(mLocationOption);
+    // 启动定位
+    mLocationClient.startLocation();
+}
+
+
+
 }

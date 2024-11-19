@@ -74,32 +74,5 @@ public class OkHttpUtil {
             }
         }).start();
     }
-    // public static void sendChatRequest(String message, okhttp3.Callback callback) {
-    //     OkHttpClient client = new OkHttpClient();
-    //     // 构建请求体
-    //     // 构建请求体
-    //     String jsonBody = "{"
-    //             + "\"model\": \"gpt-4o-mini\","
-    //             + "\"messages\": ["
-    //             + "  {\"role\": \"user\", \"content\": \"" + message + "\"}"
-    //             + "],"
-    //             + "\"temperature\": 0.7"
-    //             + "}";
 
-    //     RequestBody body = RequestBody.create(
-    //             MediaType.parse("application/json"),
-    //             jsonBody
-    //     );
-
-    //     // 构建请求
-    //     Request request = new Request.Builder()
-    //             .url("https://api.openai.com/v1/chat/completions") // 这里填入实际的聊天 API 地址
-    //             .post(body)  // 使用 POST 请求方法
-    //             .addHeader("Content-Type", "application/json") // 设置请求头
-    //             .addHeader("Authorization", "Bearer" + API_KEY)
-    //             .build();
-
-    //     // 发送异步请求
-    //     client.newCall(request).enqueue(callback);
-    // }
 }
