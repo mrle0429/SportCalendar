@@ -49,6 +49,12 @@
                 android:value="" />
         </activity>
 
+        <meta-data
+            android:name="com.baidu.lbsapi.API_KEY"
+            android:value="wJrSDQcTm8QvMu7AwoBprzeSlpjWbljc" >
+        </meta-data>
+        <service android:name="com.baidu.location.f" android:enabled="true" android:process=":remote"> </service>
+
 
 
         <activity
@@ -68,11 +74,11 @@
 
         </activity>
 
-        <meta-data android:name="com.amap.api.v2.apikey" android:value="ef147f95a0f34e9d12f7b78b34bd978e">
+<!--        <meta-data android:name="com.amap.api.v2.apikey" android:value="ef147f95a0f34e9d12f7b78b34bd978e">-->
 
-        </meta-data>
+<!--        </meta-data>-->
 
-        <service android:name="com.amap.api.location.APSService"></service>
+<!--        <service android:name="com.amap.api.location.APSService"></service>-->
 
     </application>
 

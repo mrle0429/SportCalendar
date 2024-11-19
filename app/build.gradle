@@ -76,4 +76,7 @@ dependencies {
 
 
     implementation 'com.amap.api:location:latest.integration'
+
+    implementation 'com.baidu.lbsyun:BaiduMapSDK_Map:7.6.3' // 百度地图
+    implementation 'com.baidu.lbsyun:BaiduMapSDK_Location:9.6.4'  // 百度定位
 }

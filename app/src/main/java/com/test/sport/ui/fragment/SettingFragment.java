@@ -38,25 +38,44 @@ public class SettingFragment extends BaseFragment<FragmentSettingBinding> implem
     String location;
     private static final String CHANNEL_ID = "match_notifications";
     private AMapLocationClient mLocationClient = null;
-    private AMapLocationListener mLocationListener = new AMapLocationListener() {
+    private static final String TAG = "SettingFragment";
+    private final AMapLocationListener mLocationListener = new AMapLocationListener() {
         @Override
         public void onLocationChanged(AMapLocation aMapLocation) {
-            if (aMapLocation != null && aMapLocation.getErrorCode() == 0) {
-                // 定位成功，更新位置
-
-                location = aMapLocation.getFloor();
-                Log.e("location1", "ErrorCode: " + aMapLocation.getErrorCode());
-                Log.e("location1", "Country: " + aMapLocation.getCountry());
-                Log.e("location1", "City: " + aMapLocation.getCity());
-                Log.e("location1", "Address: " + aMapLocation.getAddress());
-                Log.e("location1", "floor:" +aMapLocation.getFloor());
-                Log.e("location1", "floor:" +aMapLocation.getCityCode());
-                Log.e("location1", "floor:" +aMapLocation.getAccuracy());
-                getBinding().tvLocationInfo.setText("Location: " + location);
+            if (aMapLocation != null) {
+                if (aMapLocation.getErrorCode() == 0) {
+                    Log.i(TAG, "onLocationChanged: 定位成功");
+                    Log.d(TAG, String.format("位置信息: 经度=%f, 纬度=%f, 地址=%s", 
+                            aMapLocation.getLongitude(),
+                            aMapLocation.getLatitude(),
+                            aMapLocation.getAddress()));
+                    // 定位成功
+                    StringBuilder locationInfo = new StringBuilder();
+                    locationInfo.append("位置信息:\n")
+                            .append("国家: ").append(aMapLocation.getCountry()).append("\n")
+                            .append("城市: ").append(aMapLocation.getCity()).append("\n")
+                            .append("地址: ").append(aMapLocation.getAddress()).append("\n")
+                            .append("经度: ").append(aMapLocation.getLongitude()).append("\n")
+                            .append("纬度: ").append(aMapLocation.getLatitude()).append("\n")
+                            .append("精确度: ").append(aMapLocation.getAccuracy()).append("米");
+                    
+                    location = locationInfo.toString();
+                    getActivity().runOnUiThread(() -> {
+                        getBinding().tvLocationInfo.setText(location);
+                    });
+                } else {
+                    Log.e(TAG, String.format("定位失败: code=%d, info=%s", 
+                    aMapLocation.getErrorCode(),
+                    aMapLocation.getErrorInfo()));
+                    // 定位失败
+                    String errText = "定位失败: " + aMapLocation.getErrorCode() + 
+                                   "\n错误信息: " + aMapLocation.getErrorInfo();
+                    getActivity().runOnUiThread(() -> {
+                        getBinding().tvLocationInfo.setText(errText);
+                    });
+                }
             } else {
-                // 定位失败
-                String errText = "定位失败," + aMapLocation.getErrorCode() + ": " + aMapLocation.getErrorInfo();
-                Log.e("AmapError", errText);
+                Log.e(TAG, "onLocationChanged: 定位结果为null");
             }
         }
     };
@@ -65,7 +84,8 @@ public class SettingFragment extends BaseFragment<FragmentSettingBinding> implem
     protected void initData() {
         super.initData();
         getBinding().titleBar.setTitle("Setting");
-        getBinding().tvLocationInfo.setText("Location: " + location);
+        initLocation();
+        
     }
 
     @Override
@@ -99,7 +119,7 @@ public class SettingFragment extends BaseFragment<FragmentSettingBinding> implem
                 break;
             case R.id.rl_location:
                 getBinding().ivLocation.setSelected(!getBinding().ivLocation.isSelected());
-                requestRPermission();
+                checkLocationPermission();
                 break;
             case R.id.rl_notification:
                 getBinding().ivNotification.setSelected(!getBinding().ivNotification.isSelected());
@@ -108,51 +128,62 @@ public class SettingFragment extends BaseFragment<FragmentSettingBinding> implem
         }
     }
 
-    // TODO:请求定位权限
-    private void requestRPermission() {
-        XXPermissions.with(this)
-                .permission(Permission.ACCESS_COARSE_LOCATION, Permission.ACCESS_FINE_LOCATION)
-                .request(new OnPermissionCallback() {
-                    @Override
-                    public void onGranted(@NonNull List<String> permissions, boolean allGranted) {
-                        if (allGranted) {
-                            Log.e("location", "onGranted: 所有申请的权限都已通过");
-                            try {
-                                initLocation();
-                            } catch (Exception e) {
-                                throw new RuntimeException(e);
-                            }
 
-
-                        }
-                    }
-
-                    @Override
-                    public void onDenied(@NonNull List<String> permissions, boolean doNotAskAgain) {
-
-                    }
-                });
-    }
 
 
     // 初始化定位
-    private void initLocation() throws Exception {
-    Context context = getActivity().getApplicationContext();
-    // 设置隐私合规接口
-    AMapLocationClient.updatePrivacyShow(context,true,true);
-    AMapLocationClient.updatePrivacyAgree(context,true);
+    private void initLocation() {
+        try {
+            Log.d(TAG, "initLocation: 开始初始化定位客户端");
+            mLocationClient = new AMapLocationClient(getActivity().getApplicationContext());
+            mLocationClient.setLocationListener(mLocationListener);
+            
+            // 初始化定位参数
+            AMapLocationClientOption option = new AMapLocationClientOption();
+            // 设置定位模式为高精度模式
+            option.setLocationMode(AMapLocationClientOption.AMapLocationMode.Hight_Accuracy);
+            // 设置定位间隔,单位毫秒,默认为2000ms
+            option.setInterval(2000);
+            // 设置是否返回地址信息
+            option.setNeedAddress(true);
+            // 设置是否允许模拟位置,默认为false
+            option.setMockEnable(false);
+            // 单次定位
+            option.setOnceLocation(true);
+            
+            mLocationClient.setLocationOption(option);
+            Log.d(TAG, "initLocation: 定位客户端配置完成");
+            
+        } catch (Exception e) {
+            e.printStackTrace();
+            Log.e(TAG, "initLocation: 初始化定位客户端失败", e);
+        }
+    }
 
-    mLocationClient = new AMapLocationClient(context);
-    mLocationClient.setLocationListener(mLocationListener);
-    // 设置定位参数
-    AMapLocationClientOption mLocationOption = new AMapLocationClientOption();
-    mLocationOption.setLocationMode(AMapLocationClientOption.AMapLocationMode.Battery_Saving);
-    mLocationOption.setOnceLocation(true);
-    mLocationOption.setNeedAddress(true);
-    mLocationOption.setLocationCacheEnable(false); // 禁用缓存
-    mLocationClient.setLocationOption(mLocationOption);
-    // 启动定位
-    mLocationClient.startLocation();
+
+private void checkLocationPermission() {
+    XXPermissions.with(this)
+            .permission(Permission.ACCESS_FINE_LOCATION)
+            .permission(Permission.ACCESS_COARSE_LOCATION)
+            .request(new OnPermissionCallback() {
+                @Override
+                public void onGranted(List<String> permissions, boolean all) {
+                    if (all) {
+                        startLocation();
+                    }
+                }
+                
+                @Override
+                public void onDenied(List<String> permissions, boolean never) {
+                    if (never) {
+                        // 用户选择了永久拒绝
+                        Toast.makeText(getContext(), "请在设置中授予定位权限", Toast.LENGTH_SHORT).show();
+                        XXPermissions.startPermissionActivity(getContext(), permissions);
+                    } else {
+                        Toast.makeText(getContext(), "获取定位权限失败", Toast.LENGTH_SHORT).show();
+                    }
+                }
+            });
 }
 
 
@@ -215,5 +246,21 @@ public class SettingFragment extends BaseFragment<FragmentSettingBinding> implem
             intent.setData(Uri.parse("package:" + getActivity().getPackageName()));
         }
         startActivity(intent);
+    }
+
+
+    private void startLocation() {
+        if (mLocationClient != null) {
+            mLocationClient.startLocation();
+        }
+    }
+
+    @Override
+    public void onDestroyView() {
+        super.onDestroyView();
+        if (mLocationClient != null) {
+            mLocationClient.onDestroy();
+            mLocationClient = null;
+        }
     }
 }
