@@ -4,6 +4,7 @@ import android.app.NotificationChannel;
 import android.app.NotificationManager;
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.icu.util.TimeZone;
 import android.net.Uri;
 import android.os.Build;
 import android.provider.Settings;
@@ -35,6 +36,7 @@ import com.test.nba.databinding.FragmentSettingBinding;
 import com.test.sport.base.BaseFragment;
 import com.test.sport.ui.activity.TimezoneActivity;
 
+import java.sql.Time;
 import java.util.List;
 
 // TODO:设置
@@ -142,11 +144,13 @@ public class SettingFragment extends BaseFragment<FragmentSettingBinding> implem
     public void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
         if (requestCode == REQUEST_CODE_TIMEZONE && resultCode == RESULT_OK && data != null) {
-            String selectedTimezone = data.getStringExtra(TimezoneActivity.EXTRA_SELECTED_TIMEZONE);
+            String selectedTimezone = data.getStringExtra(TimezoneActivity.PREF_SELECTED_TIMEZONE);
             if (selectedTimezone != null) {
                 getBinding().tvSelectedTimezone.setText(selectedTimezone);
-                savePreference(PREF_SELECTED_TIMEZONE, selectedTimezone);
                 Log.d(TAG, "选择的时区: " + selectedTimezone);
+
+                Intent intent = new Intent("com.test.sport.TIMEZONE_CHANGED");
+                getActivity().sendBroadcast(intent);
             }
         }
     }
@@ -154,16 +158,12 @@ public class SettingFragment extends BaseFragment<FragmentSettingBinding> implem
 
     private void loadPreferences() {
         SharedPreferences preferences = getActivity().getSharedPreferences(PREFS_NAME, Context.MODE_PRIVATE);
-        String selectedTimezone = preferences.getString(PREF_SELECTED_TIMEZONE, null);
+        String selectedTimezone = preferences.getString(PREF_SELECTED_TIMEZONE, TimeZone.getDefault().getID());
         getBinding().tvSelectedTimezone.setText(selectedTimezone);
+        Log.d(TAG, "加载偏好设置: SelectedTimeZone=" + selectedTimezone);
     }
 
-    private void savePreference(String key, String value) {
-        SharedPreferences preferences = getActivity().getSharedPreferences(PREFS_NAME, Context.MODE_PRIVATE);
-        SharedPreferences.Editor editor = preferences.edit();
-        editor.putString(key, value);
-        editor.apply();
-    }
+
 
 
     // 初始化定位

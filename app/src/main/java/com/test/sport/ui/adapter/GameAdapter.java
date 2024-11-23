@@ -83,7 +83,7 @@ public class GameAdapter extends RecyclerView.Adapter<GameAdapter.ViewHolder> {
         }
         holder.tvType.setText(game.getCompetition_name());
         try {
-            String time=Tools.getTime(game.getStart_time());
+            String time=game.getStart_time();
             holder.tvTime.setText(Tools.StringToDate(time, "yyyy-MM-dd HH:mm", " HH:mm"));
         } catch (Exception e) {
             e.printStackTrace();

@@ -20,7 +20,7 @@ public class Tools {
     /**
      * 转本地时区
      */
-    public static String getTime(String time) {
+    public static String getTime(String time, String timeZoneId) {
         // 定义输入时间的格式
         DateTimeFormatter inputFormatter = DateTimeFormatter.ofPattern("yyyy-MM-dd'T'HH:mm:ssXXX");
 
@@ -28,13 +28,13 @@ public class Tools {
         ZonedDateTime zonedDateTime = ZonedDateTime.parse(time, inputFormatter);
 
         // 转换为中国时间（东八区）
-        ZoneId chinaZoneId = ZoneId.of("Asia/Shanghai");
-        ZonedDateTime chinaTime = zonedDateTime.withZoneSameInstant(chinaZoneId);
+        ZoneId zoneId = ZoneId.of(timeZoneId);
+        ZonedDateTime localTime = zonedDateTime.withZoneSameInstant(zoneId);
 
         // 定义输出时间的格式
         DateTimeFormatter outputFormatter = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm");
         // 格式化输出时间字符串
-        return chinaTime.format(outputFormatter);
+        return localTime.format(outputFormatter);
     }
 
 

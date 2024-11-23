@@ -1,5 +1,7 @@
 package com.test.sport.ui.activity;
 
+import android.content.Context;
+import android.content.SharedPreferences;
 import android.os.Handler;
 import android.view.LayoutInflater;
 import android.widget.ArrayAdapter;
@@ -26,6 +28,7 @@ import org.greenrobot.eventbus.EventBus;
 import java.text.ParseException;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.TimeZone;
 
 // TODO:体育 
 public class SportActivity extends BaseActivity<ActivitySportBinding> {
@@ -34,10 +37,13 @@ public class SportActivity extends BaseActivity<ActivitySportBinding> {
     private List<Game> gameList=new ArrayList<>();
     private String remind;
     private Game game;
+    private String timeZoneId; //时区
 
     @Override
     protected void initData() {
         super.initData();
+
+
         Tools.setStatusBarColor(this);
         initGame();
     }
@@ -62,7 +68,7 @@ public class SportActivity extends BaseActivity<ActivitySportBinding> {
     private void initGame() {
         game = (Game) getIntent().getSerializableExtra("game");
         getBinding().tvStatus.setText(game.getStatus());
-        getBinding().tvTime.setText(Tools.getTime(game.getStart_time()).substring(5));
+        getBinding().tvTime.setText(game.getStart_time().substring(5));
 
         String status = game.getStatus();
         if (status.equals("live") || status.equals("closed") || status.equals("ended")|| status.equals("not_started")) {
@@ -148,7 +154,7 @@ public class SportActivity extends BaseActivity<ActivitySportBinding> {
         schedule.setTitle(getBinding().tvType.getText().toString());
         schedule.setRemindTime(remind);
         schedule.setLocation(getBinding().tvVenue.getText().toString());
-        String date=Tools.getTime(game.getStart_time());//2024-06-01 00:00
+        String date=game.getStart_time();//2024-06-01 00:00
         try {
             date=Tools.StringToDate(date, "yyyy-MM-dd HH:mm", "yyyy-M-d HH:mm");
         } catch (ParseException e) {

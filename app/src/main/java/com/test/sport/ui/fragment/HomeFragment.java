@@ -1,8 +1,14 @@
 package com.test.sport.ui.fragment;
 
+import android.content.BroadcastReceiver;
+import android.content.Context;
 import android.content.Intent;
+import android.content.IntentFilter;
+import android.content.SharedPreferences;
 import android.content.res.AssetManager;
+import android.os.Bundle;
 import android.os.Handler;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -31,12 +37,14 @@ import com.test.sport.utils.Tools;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
+import java.sql.Time;
 import java.text.ParseException;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.HashSet;
 import java.util.LinkedHashSet;
 import java.util.List;
+import java.util.TimeZone;
 import java.util.stream.Collectors;
 
 import okhttp3.Call;
@@ -51,10 +59,19 @@ public class HomeFragment extends BaseFragment<FragmentHomeBinding> implements V
     private int index;  //当前选择的运动索引
     private boolean search; //是否搜索
     private String date; //当前选择的日期
+    private String timeZoneId; //时区
+    private static final String PREFS_NAME = "SettingsPrefs";
+    private static final String PREF_SELECTED_TIMEZONE = "SelectedTimezone";
 
     @Override
     protected void initData() {
         super.initData();
+        //SharedPreferences preferences = getActivity().getSharedPreferences("SettingsPrefs", Context.MODE_PRIVATE);
+        //timeZoneId = preferences.getString("SelectedTimeZone", TimeZone.getDefault().getID());
+        SharedPreferences preferences = getActivity().getSharedPreferences(PREFS_NAME, Context.MODE_PRIVATE);
+        timeZoneId = preferences.getString(PREF_SELECTED_TIMEZONE, android.icu.util.TimeZone.getDefault().getID());
+        Log.d("HomeFragment1", "加载的时区: " + timeZoneId);
+        
         getBinding().calendarView.setOnCalendarSelectListener(this);
         // 隐藏月视图，显示周视图
         getBinding().calendarView.getMonthViewPager().setVisibility(View.GONE);
@@ -95,6 +112,35 @@ public class HomeFragment extends BaseFragment<FragmentHomeBinding> implements V
         }
     }
 
+    @Override
+public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
+    super.onViewCreated(view, savedInstanceState);
+    Log.d("HomeFragment1", "注册广播接收器");
+    IntentFilter filter = new IntentFilter("com.test.sport.TIMEZONE_CHANGED");
+    getActivity().registerReceiver(timezoneChangedReceiver, filter);
+}
+
+private final BroadcastReceiver timezoneChangedReceiver = new BroadcastReceiver() {
+    @Override
+    public void onReceive(Context context, Intent intent) {
+        if ("com.test.sport.TIMEZONE_CHANGED".equals(intent.getAction())) {
+            // 重新加载时区
+            SharedPreferences preferences = getActivity().getSharedPreferences(PREFS_NAME, Context.MODE_PRIVATE);
+            timeZoneId = preferences.getString(PREF_SELECTED_TIMEZONE, android.icu.util.TimeZone.getDefault().getID());
+            Log.d("HomeFragment1", "时区已更改，重新加载: " + timeZoneId);
+
+            // 重新请求数据
+            request(index);
+            //initLocalData(index);
+        }
+    }
+};
+
+@Override
+public void onDestroyView() {
+    super.onDestroyView();
+    getActivity().unregisterReceiver(timezoneChangedReceiver);
+}
     // 搜索功能
     private void search() {
 
@@ -248,7 +294,7 @@ public class HomeFragment extends BaseFragment<FragmentHomeBinding> implements V
                         for (Sport.SummariesDTO summariesDTO : sport.getSummaries()) {
                             Game game = new Game();
                             game.setSport_name(summariesDTO.getSportEvent().getSportEventContext().getSport().getName());
-                            game.setStart_time(summariesDTO.getSportEvent().getStartTime());
+                            game.setStart_time(Tools.getTime(summariesDTO.getSportEvent().getStartTime(), timeZoneId));
                             game.setStatus(summariesDTO.getSportEventStatus().getStatus());
                             game.setCountry_name(summariesDTO.getSportEvent().getSportEventContext().getCategory().getName());
                             game.setCompetition_name(summariesDTO.getSportEvent().getSportEventContext().getCompetition().getName());
@@ -409,5 +455,6 @@ public class HomeFragment extends BaseFragment<FragmentHomeBinding> implements V
             e.printStackTrace();
         }
         request(index);
+        //initLocalData(index);
     }
 }
