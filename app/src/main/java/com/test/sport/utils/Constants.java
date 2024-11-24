@@ -21,6 +21,9 @@ public class Constants {
 
     public static final String SUFFIX="/summaries.json";
 
+    // 足球
+    public static final String SOCCER_URL= "https://api.sportradar.com/soccer/trial/v4/en/schedules/";
+    public static final String SOCCER_KEY="W3rcQRsw9CDvtw2X5BtzEL2DtsGNESDQaZoeKoAU";
     // TODO:棒球
     public static final String BASE_BALL_URL = "https://api.sportradar.us/baseball/trial/v2/en/schedules/live/summaries.json";
     public static final String BASE_BALL_KEY = "b6qtVtA9ZIoTeXhVQp2FnENvG7pAbEbamCBkQ4bc";

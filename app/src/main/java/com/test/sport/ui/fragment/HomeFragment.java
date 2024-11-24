@@ -171,7 +171,7 @@ public void onDestroyView() {
                 .isViewMode(true)
                 .offsetY(50) //弹窗在y方向的偏移量
                 .atView(getBinding().tvSport)  // 依附于所点击的View，内部会自动判断在上方或者下方显示
-                .asAttachList(new String[]{"Basketball", "Football", "Icehockey", "Tennis", "Table Tennis", "Rugby"},
+                .asAttachList(new String[]{"Basketball", "Football", "Icehockey", "Tennis", "Soccer", "Rugby"},
                         new int[]{},
                         (position, text) -> {
                             getBinding().tvSport.setText(text);
@@ -278,6 +278,9 @@ public void onDestroyView() {
                 break;
             case 3:
                 address = Constants.TENNIS_URL + date + Constants.SUFFIX + "?api_key=" + Constants.TENNIS_KEY;
+                break;
+            case 4:
+                address = Constants.SOCCER_URL + date + Constants.SUFFIX + "?api_key=" + Constants.SOCCER_KEY;
                 break;
         }
 
