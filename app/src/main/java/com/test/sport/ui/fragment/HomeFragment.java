@@ -294,7 +294,14 @@ public void onDestroyView() {
                     if (sport.getSummaries() != null) {
                         gameList.clear();
 
+                        String selectedDate = date;
+
                         for (Sport.SummariesDTO summariesDTO : sport.getSummaries()) {
+                            // 比赛开始日期转换为用户时区时间
+                            String startTime = Tools.getTime(summariesDTO.getSportEvent().getStartTime(), timeZoneId);
+                            String gameDate = startTime.split(" ")[0];
+
+                            if (gameDate.equals(selectedDate)) {
                             Game game = new Game();
                             game.setSport_name(summariesDTO.getSportEvent().getSportEventContext().getSport().getName());
                             game.setStart_time(Tools.getTime(summariesDTO.getSportEvent().getStartTime(), timeZoneId));
@@ -351,6 +358,7 @@ public void onDestroyView() {
                                 game.setHome_score(summariesDTO.getSportEventStatus().getHomeScore() == null ? 0 : summariesDTO.getSportEventStatus().getHomeScore());
                             }
                             gameList.add(game);
+                            }
                         }
                         handler.sendEmptyMessage(1);
                     }
