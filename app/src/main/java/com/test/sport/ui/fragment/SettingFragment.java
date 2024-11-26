@@ -34,6 +34,7 @@ import com.hjq.permissions.XXPermissions;
 import com.test.nba.R;
 import com.test.nba.databinding.FragmentSettingBinding;
 import com.test.sport.base.BaseFragment;
+import com.test.sport.ui.activity.PreferenceActivity;
 import com.test.sport.ui.activity.TimezoneActivity;
 
 import java.sql.Time;
@@ -48,6 +49,16 @@ public class SettingFragment extends BaseFragment<FragmentSettingBinding> implem
     private static final String TAG = "SettingFragment";
     private static final String PREFS_NAME = "SettingsPrefs";
     private static final String PREF_SELECTED_TIMEZONE = "SelectedTimezone";
+    private static final String KEY_FAVORITE_TEAM = "favorite_team";
+    private static final String KEY_FAVORITE_LEAGUES = "favorite_leagues";
+    private static final String KEY_PREFRRED_TIMES = "preferred_times";
+
+
+
+
+
+
+
     private final AMapLocationListener mLocationListener = new AMapLocationListener() {
         @Override
         public void onLocationChanged(AMapLocation aMapLocation) {
@@ -122,6 +133,9 @@ public class SettingFragment extends BaseFragment<FragmentSettingBinding> implem
     public void onClick(View view) {
         switch (view.getId()) {
             case R.id.rl_preferences:
+                Intent intent1 = new Intent(getActivity(), PreferenceActivity.class);
+                
+                startActivity(intent1);
                 break;
             case R.id.rl_timezone:
                 Intent intent = new Intent(getActivity(), TimezoneActivity.class);

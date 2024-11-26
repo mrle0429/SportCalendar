@@ -76,6 +76,11 @@
 
         <activity android:name="com.test.sport.ui.activity.TimezoneActivity" />
 
+<activity
+    android:name="com.test.sport.ui.activity.PreferenceActivity"
+    android:screenOrientation="portrait"
+    android:exported="false"/>
+
 <!--        <meta-data android:name="com.amap.api.v2.apikey" android:value="ef147f95a0f34e9d12f7b78b34bd978e">-->
 
 <!--        </meta-data>-->
