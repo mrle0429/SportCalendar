@@ -80,7 +80,7 @@ public class PreferenceActivity extends BaseActivity<ActivityPreferenceBinding> 
         Set<String> savedLeagues = prefs.getStringSet(KEY_FAVORITE_LEAGUES, new HashSet<>());
         Set<String> savedTimes = prefs.getStringSet(KEY_PREFERRED_TIMES, new HashSet<>());
         
-        // 修改这行，使用 tvSelectedTeams 替换 etTeams
+
         if (savedTeams.isEmpty()) {
             getBinding().tvSelectedTeams.setText("未选择");
         } else {
@@ -101,8 +101,12 @@ public class PreferenceActivity extends BaseActivity<ActivityPreferenceBinding> 
         }
         
         new AlertDialog.Builder(this)
-            .setTitle("选择观赛时间")
-            .setMultiChoiceItems(TIME_PERIODS, checkedTimes, (dialog, which, isChecked) -> {
+            .setTitle("选择观赛时间")   // 设置对话框标题
+            // 设置多选项
+            .setMultiChoiceItems(
+                TIME_PERIODS,      // 字符串数组
+                checkedTimes,      // 布尔数组， 记录选项是否被选中
+                (dialog, which, isChecked) -> {   // 点击事件监听
                 checkedTimes[which] = isChecked;
             })
             .setPositiveButton("确定", (dialog, which) -> {
@@ -151,39 +155,55 @@ public class PreferenceActivity extends BaseActivity<ActivityPreferenceBinding> 
             JSONObject json = JSON.parseObject(jsonStr);
             List<Team> teams = JSON.parseArray(json.getString("teams"), Team.class);
             
-            // 设置运动类型并过滤球队
-            List<String> teamNames = teams.stream()
-                .peek(team -> team.setSportType(sport))
+            // 获取已保存的选择
+            SharedPreferences prefs = getSharedPreferences(PREFS_NAME, MODE_PRIVATE);
+            Set<String> savedTeams = new HashSet<>(prefs.getStringSet(KEY_FAVORITE_TEAMS, new HashSet<>()));
+            Log.d("PreferenceActivity", "已保存的球队: " + savedTeams);
+    
+            // 过滤并准备显示的球队列表
+            List<Team> filteredTeams = teams.stream()
                 .filter(team -> team.getAlias() != null && !team.getAlias().isEmpty())
-                .map(Team::getName)
-                .sorted()
+                .sorted((t1, t2) -> t1.getName().compareTo(t2.getName()))
                 .collect(Collectors.toList());
     
-            if (teamNames.isEmpty()) {
-                showToast("暂无可用球队");
-                return;
+            String[] teamDisplayNames = filteredTeams.stream()
+                .map(team -> team.getName())
+                .toArray(String[]::new);
+    
+            // 初始化选中状态
+            boolean[] checkedTeams = new boolean[teamDisplayNames.length];
+            for (int i = 0; i < teamDisplayNames.length; i++) {
+                checkedTeams[i] = savedTeams.contains(teamDisplayNames[i]);
+                Log.d("PreferenceActivity", "球队: " + teamDisplayNames[i] + 
+                      ", 是否在已保存列表中: " + checkedTeams[i]);
             }
-            
-            // 获取已保存的选择
-            Set<String> savedTeams = getSharedPreferences(PREFS_NAME, MODE_PRIVATE)
-                .getStringSet(KEY_FAVORITE_TEAMS, new HashSet<>());
-            
-            boolean[] checkedTeams = new boolean[teamNames.size()];
-            for (int i = 0; i < teamNames.size(); i++) {
-                checkedTeams[i] = savedTeams.contains(teamNames.get(i));
-            }
-            
+    
             new AlertDialog.Builder(this)
                 .setTitle("选择" + sport + "球队")
-                .setMultiChoiceItems(teamNames.toArray(new String[0]), checkedTeams, 
-                    (dialog, which, isChecked) -> checkedTeams[which] = isChecked)
+                .setMultiChoiceItems(teamDisplayNames, checkedTeams, (dialog, which, isChecked) -> {
+                    checkedTeams[which] = isChecked;
+                    Log.d("PreferenceActivity", "选择变更 - 球队: " + teamDisplayNames[which] + 
+                          ", 新状态: " + isChecked);
+                })
                 .setPositiveButton("确定", (dialog, which) -> {
-                    Set<String> selectedTeams = new HashSet<>();
-                    for (int i = 0; i < teamNames.size(); i++) {
+                    Set<String> selectedTeams = new HashSet<>(savedTeams); // 保留其他运动的选择
+                    
+                    // 更新当前运动的选择
+                    for (int i = 0; i < teamDisplayNames.length; i++) {
+                        String teamName = teamDisplayNames[i];
                         if (checkedTeams[i]) {
-                            selectedTeams.add(teamNames.get(i));
+                            selectedTeams.add(teamName);
+                        } else {
+                            selectedTeams.remove(teamName);
                         }
                     }
+                    
+                    // 保存选择
+                    SharedPreferences.Editor editor = prefs.edit();
+                    editor.putStringSet(KEY_FAVORITE_TEAMS, selectedTeams);
+                    editor.apply();
+                    
+                    // 更新显示
                     updateTeamsDisplay(selectedTeams);
                 })
                 .setNegativeButton("取消", null)
@@ -191,6 +211,15 @@ public class PreferenceActivity extends BaseActivity<ActivityPreferenceBinding> 
         } catch (Exception e) {
             Log.e("PreferenceActivity", "加载球队数据失败: " + e.getMessage(), e);
             showToast("加载球队数据失败");
+        }
+    }
+
+
+    private void updateTeamsDisplay(Set<String> selectedTeams) {
+        if (selectedTeams.isEmpty()) {
+            getBinding().tvSelectedTeams.setText("未选择");
+        } else {
+            getBinding().tvSelectedTeams.setText(String.join("\n", selectedTeams));
         }
     }
     
@@ -230,11 +259,5 @@ public class PreferenceActivity extends BaseActivity<ActivityPreferenceBinding> 
     }
 
 
-    private void updateTeamsDisplay(Set<String> selectedTeams) {
-        if (selectedTeams.isEmpty()) {
-            getBinding().tvSelectedTeams.setText("未选择");
-        } else {
-            getBinding().tvSelectedTeams.setText(String.join(", ", selectedTeams));
-        }
-    }
+
 }
