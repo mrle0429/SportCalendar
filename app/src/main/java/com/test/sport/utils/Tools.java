@@ -1,11 +1,16 @@
 package com.test.sport.utils;
 
 import android.app.Activity;
+import android.content.Context;
 import android.graphics.Color;
+import android.util.Log;
 import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
 
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.UnsupportedEncodingException;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.time.ZoneId;
@@ -128,6 +133,20 @@ public class Tools {
         SimpleDateFormat format1 = new SimpleDateFormat(newPattern, Locale.CHINA);
         String s = format1.format(date);
         return s;
+    }
+
+
+    public static String readAssetFile(Context context, String fileName) {
+        try {
+            InputStream is = context.getAssets().open(fileName);
+            byte[] buffer = new byte[is.available()];
+            is.read(buffer);
+            is.close();
+            return new String(buffer, "UTF-8");
+        } catch (IOException e) {
+            Log.e("Tools", "读取assets文件失败: " + fileName, e);
+            return null;
+        }
     }
 
 }
