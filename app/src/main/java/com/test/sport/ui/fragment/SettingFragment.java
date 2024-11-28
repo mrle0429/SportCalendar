@@ -17,6 +17,7 @@ import static android.app.Activity.RESULT_OK;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+import androidx.appcompat.app.AlertDialog;
 import androidx.core.app.NotificationCompat;
 import androidx.core.app.NotificationManagerCompat;
 // Android 相关
@@ -52,6 +53,9 @@ public class SettingFragment extends BaseFragment<FragmentSettingBinding> implem
     private static final String KEY_FAVORITE_TEAM = "favorite_team";
     private static final String KEY_FAVORITE_LEAGUES = "favorite_leagues";
     private static final String KEY_PREFRRED_TIMES = "preferred_times";
+
+    private static final String KEY_DEFAULT_SPORT = "default_sport";
+    private static final String[] SUPPORTED_SPORTS = new String[]{"Basketball", "Football", "Soccer", "Icehockey", "Tennis", "Rugby"};
 
 
 
@@ -107,6 +111,11 @@ public class SettingFragment extends BaseFragment<FragmentSettingBinding> implem
         initLocation();
         loadPreferences();
 
+        // 显示当前默认运动
+        SharedPreferences prefs = getActivity().getSharedPreferences(PREFS_NAME, Context.MODE_PRIVATE);
+        String defaultSport = prefs.getString(KEY_DEFAULT_SPORT, "Basketball");
+        getBinding().tvDefaultSport.setText(defaultSport);
+
     }
 
     @Override
@@ -117,6 +126,7 @@ public class SettingFragment extends BaseFragment<FragmentSettingBinding> implem
         getBinding().rlTimezone.setOnClickListener(this);
         getBinding().rlLocation.setOnClickListener(this);
         getBinding().rlNotification.setOnClickListener(this);
+        getBinding().rlDefaultSport.setOnClickListener(this);
     }
 
     @Override
@@ -150,6 +160,9 @@ public class SettingFragment extends BaseFragment<FragmentSettingBinding> implem
             case R.id.rl_notification:
                 getBinding().ivNotification.setSelected(!getBinding().ivNotification.isSelected());
                 requestNotificationPermission();
+                break;
+            case R.id.rl_default_sport:
+                showDefaultSportDialog();
                 break;
         }
     }
@@ -309,5 +322,43 @@ public class SettingFragment extends BaseFragment<FragmentSettingBinding> implem
             mLocationClient.onDestroy();
             mLocationClient = null;
         }
+    }
+
+    private void showDefaultSportDialog() {
+        SharedPreferences prefs = getActivity().getSharedPreferences(PREFS_NAME, Context.MODE_PRIVATE);
+        String currentDefault = prefs.getString(KEY_DEFAULT_SPORT, "Basketball");
+
+        // 找到当前选中的运动索引
+        int checkedItem = 0;
+        for (int i = 0; i < SUPPORTED_SPORTS.length; i++) {
+            if (SUPPORTED_SPORTS[i].equals(currentDefault)) {
+                checkedItem = i;
+                break;
+            }
+        }
+
+        new AlertDialog.Builder(getActivity())
+                .setTitle("选择默认运动")
+                .setSingleChoiceItems(SUPPORTED_SPORTS, checkedItem, (dialog, which) -> {
+                    String selectedSport = SUPPORTED_SPORTS[which];
+
+                    // 保存选择
+                    SharedPreferences.Editor editor = prefs.edit();
+                    editor.putString(KEY_DEFAULT_SPORT, selectedSport);
+                    editor.apply();
+
+                    // 更新显示
+                    getBinding().tvDefaultSport.setText(selectedSport);
+
+                    // 发送广播通知其他组件
+                    Intent intent = new Intent("com.test.sport.DEFAULT_SPORT_CHANGED");
+                    intent.putExtra("sport", selectedSport);
+                    getActivity().sendBroadcast(intent);
+
+                    dialog.dismiss();
+                    Toast.makeText(getActivity(), "已设置默认运动：" + selectedSport, Toast.LENGTH_SHORT).show();
+                })
+                .setNegativeButton("取消", null)
+                .show();
     }
 }

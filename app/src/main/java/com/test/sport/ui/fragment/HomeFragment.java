@@ -1,5 +1,7 @@
 package com.test.sport.ui.fragment;
 
+
+
 import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
@@ -62,6 +64,7 @@ public class HomeFragment extends BaseFragment<FragmentHomeBinding> implements V
     private String timeZoneId; //时区
     private static final String PREFS_NAME = "SettingsPrefs";
     private static final String PREF_SELECTED_TIMEZONE = "SelectedTimezone";
+    private static final String[] SUPPORTED_SPORTS = new String[]{"Basketball", "Football", "Soccer", "Icehockey", "Tennis", "Rugby"};
 
     @Override
     protected void initData() {
@@ -118,6 +121,23 @@ public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceStat
     Log.d("HomeFragment1", "注册广播接收器");
     IntentFilter filter = new IntentFilter("com.test.sport.TIMEZONE_CHANGED");
     getActivity().registerReceiver(timezoneChangedReceiver, filter);
+
+      // 注册默认运动变化广播
+      IntentFilter sportFilter = new IntentFilter("com.test.sport.DEFAULT_SPORT_CHANGED");
+      getActivity().registerReceiver(sportChangedReceiver, sportFilter);
+      
+      // 初始化默认运动
+      SharedPreferences prefs = getActivity().getSharedPreferences(PREFS_NAME, Context.MODE_PRIVATE);
+      String defaultSport = prefs.getString("default_sport", "Basketball");
+      getBinding().tvSport.setText(defaultSport);
+      // 设置对应的index
+      for (int i = 0; i < SUPPORTED_SPORTS.length; i++) {
+          if (SUPPORTED_SPORTS[i].equals(defaultSport)) {
+              index = i;
+              break;
+          }
+      }
+      request(index);
 }
 
 private final BroadcastReceiver timezoneChangedReceiver = new BroadcastReceiver() {
@@ -136,10 +156,35 @@ private final BroadcastReceiver timezoneChangedReceiver = new BroadcastReceiver(
     }
 };
 
+private final BroadcastReceiver sportChangedReceiver = new BroadcastReceiver() {
+    @Override
+    public void onReceive(Context context, Intent intent) {
+        if ("com.test.sport.DEFAULT_SPORT_CHANGED".equals(intent.getAction())) {
+            String newDefaultSport = intent.getStringExtra("sport");
+            // 更新显示
+            getBinding().tvSport.setText(newDefaultSport);
+            // 更新index并重新请求数据
+            for (int i = 0; i < SUPPORTED_SPORTS.length; i++) {
+                if (SUPPORTED_SPORTS[i].equals(newDefaultSport)) {
+                    index = i;
+                    break;
+                }
+            }
+            search = false;
+            request(index);
+        }
+    }
+};
+
 @Override
 public void onDestroyView() {
     super.onDestroyView();
-    getActivity().unregisterReceiver(timezoneChangedReceiver);
+    if (timezoneChangedReceiver != null) {
+        getActivity().unregisterReceiver(timezoneChangedReceiver);
+    }
+    if (sportChangedReceiver != null) {
+        getActivity().unregisterReceiver(sportChangedReceiver);
+    }
 }
     // 搜索功能
     private void search() {
@@ -165,6 +210,8 @@ public void onDestroyView() {
     }
 
     private void showSport() {
+        SharedPreferences prefs = getActivity().getSharedPreferences("SettingsPrefs", Context.MODE_PRIVATE);
+        String defaultSport = prefs.getString("default_sport", "Basketball");
         // 运动选择弹窗
         new XPopup.Builder(getActivity())
                 .hasShadowBg(false)// 是否有半透明的背景，默认为true
@@ -180,6 +227,17 @@ public void onDestroyView() {
                             handler.sendEmptyMessage(0);
                         })
                 .show();
+
+        // 设置默认选中的运动
+        getBinding().tvSport.setText(defaultSport);
+        for (int i = 0; i < SUPPORTED_SPORTS.length; i++) {
+            if (SUPPORTED_SPORTS[i].equals(defaultSport)) {
+            index = i;
+            break;
+        }
+    }
+    search = false;
+    handler.sendEmptyMessage(0);
     }
 
     private void initLocalData(int index) {
