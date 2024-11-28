@@ -144,17 +144,43 @@ public class PreferenceActivity extends BaseActivity<ActivityPreferenceBinding> 
     
     private void showTeamsDialog(String sport) {
         try {
-            String jsonFileName = "Basketball".equals(sport) ? "teams.json" : sport + ".json";
-            String jsonStr = Tools.readAssetFile(getApplicationContext(), jsonFileName);
-            if (jsonStr == null) {
-                showToast("暂不支持该运动");
+            String jsonFileName;
+        if ("Soccer".equals(sport)) {
+            jsonFileName = "Soccer_UEFA_Champions_League_Teams_24_25.json";
+        } else if ("Basketball".equals(sport)) {
+            jsonFileName = "teams.json";
+        } else {
+            jsonFileName = sport + ".json";
+        }
+        
+        String jsonStr = Tools.readAssetFile(getApplicationContext(), jsonFileName);
+        if (jsonStr == null) {
+            showToast("暂不支持该运动");
                 return;
             }
     
             // 使用Fastjson解析
             JSONObject json = JSON.parseObject(jsonStr);
-            List<Team> teams = JSON.parseArray(json.getString("teams"), Team.class);
-            
+            List<Team> teams;
+            //List<Team> teams = JSON.parseArray(json.getString("teams"), Team.class);
+            // 根据不同的JSON格式解析
+        if ("Soccer".equals(sport)) {
+            // 解析足球队伍数据
+            teams = json.getJSONArray("season_competitors").stream()
+                .map(obj -> {
+                    JSONObject teamObj = (JSONObject) obj;
+                    Team team = new Team();
+                    team.setId(teamObj.getString("id"));
+                    team.setName(teamObj.getString("name"));
+                    team.setAlias(teamObj.getString("short_name"));
+                    team.setSportType(sport);
+                    return team;
+                })
+                .collect(Collectors.toList());
+        } else {
+            // 解析其他运动队伍数据
+            teams = JSON.parseArray(json.getString("teams"), Team.class);
+        }
             // 获取已保存的选择
             SharedPreferences prefs = getSharedPreferences(PREFS_NAME, MODE_PRIVATE);
             Set<String> savedTeams = new HashSet<>(prefs.getStringSet(KEY_FAVORITE_TEAMS, new HashSet<>()));
