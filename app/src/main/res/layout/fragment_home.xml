@@ -7,104 +7,159 @@
     android:orientation="vertical"
     tools:context="com.test.sport.ui.fragment.HomeFragment">
 
-
-
+    <!-- 顶部搜索栏 -->
     <RelativeLayout
-    android:background="@color/white"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:paddingHorizontal="13dp"
-    android:paddingVertical="13dp">
-
-    <TextView
-        android:id="@+id/tv_sport"
-        android:layout_width="wrap_content"
-        android:layout_height="40dp"
-        android:gravity="center"
-        android:text="Basketball"
-        android:drawablePadding="5dp"
-        android:drawableEnd="@drawable/bt_down"
-        android:textColor="@color/black"
-        android:textSize="16sp" />
-
-    <TextView
-        android:id="@+id/tv_search"
-        android:paddingStart="8dp"
-        android:layout_width="wrap_content"
-        android:layout_height="40dp"
-        android:layout_toStartOf="@+id/iv_setting"
-        android:gravity="center"
-        android:text="Search"
-        android:textColor="@color/text_blue"
-        android:textSize="13sp" />
-
-    <!-- 使用 Material Design 设置图标 -->
-    <ImageView
-        android:id="@+id/iv_setting"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentEnd="true"
-        android:layout_centerVertical="true"
-        android:padding="13dp"
-        android:src="@drawable/ic_settings_24"/>
-
-    <com.hjq.shape.view.ShapeEditText
-        android:id="@+id/et_name"
-        android:layout_width="150dp"
-        android:layout_height="40dp"
-        android:layout_toStartOf="@+id/tv_search"
-        android:gravity="center_vertical"
-        android:hint="competition"
-        android:paddingLeft="40dp"
-        android:textSize="15sp"
-        app:shape_radius="13dp"
-        app:shape_solidColor="@color/bg_search" />
-
-    <ImageView
-        android:id="@+id/iv_search_icon"
-        android:layout_width="25dp"
-        android:layout_height="25dp"
-        android:layout_centerVertical="true"
-        android:layout_marginStart="5dp"
-        android:layout_marginEnd="-30dp"
-        android:layout_toStartOf="@+id/et_name"
-        android:src="@drawable/ic_search" />
-
-</RelativeLayout>
-
-    <com.haibin.calendarview.CalendarView
-        android:id="@+id/calendarView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@color/white"
-        app:calendar_height="50dp"
-        app:calendar_padding="2dp"
-        app:current_day_lunar_text_color="@color/text_now"
-        app:current_day_text_color="@color/text_now"
-        app:current_month_lunar_text_color="@color/black"
-        app:current_month_text_color="@color/black"
-        app:week_view="com.test.sport.ui.view.CustomWeekView"
-        app:scheme_lunar_text_color="#333"
-        app:scheme_text="S"
-        app:scheme_text_color="#333"
-        app:selected_lunar_text_color="@color/text_selected"
-        app:selected_text_color="@color/text_selected"
-        app:selected_theme_color="@color/bg_selected"
-        app:week_start_with="mon"
-        app:year_view_scheme_color="@color/flag_working"
-        app:year_view_select_text_color="#333" />
+        android:paddingHorizontal="13dp"
+        android:paddingVertical="13dp">
 
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/rv_data"
-        android:layout_marginHorizontal="13dp"
+        <TextView
+            android:id="@+id/tv_sport"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:drawableEnd="@drawable/bt_down"
+            android:drawablePadding="5dp"
+            android:gravity="center"
+            android:text="Basketball"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tv_search"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_toStartOf="@+id/iv_setting"
+            android:gravity="center"
+            android:paddingStart="8dp"
+            android:text="Search"
+            android:textColor="@color/text_blue"
+            android:textSize="13sp" />
+
+        <!-- 使用 Material Design 设置图标 -->
+        <ImageView
+            android:id="@+id/iv_setting"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:padding="13dp"
+            android:src="@drawable/ic_settings_24" />
+
+        <com.hjq.shape.view.ShapeEditText
+            android:id="@+id/et_name"
+            android:layout_width="150dp"
+            android:layout_height="40dp"
+            android:layout_toStartOf="@+id/tv_search"
+            android:gravity="center_vertical"
+            android:hint="competition"
+            android:paddingLeft="40dp"
+            android:textSize="15sp"
+            app:shape_radius="13dp"
+            app:shape_solidColor="@color/bg_search" />
+
+        <ImageView
+            android:id="@+id/iv_search_icon"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="-30dp"
+            android:layout_toStartOf="@+id/et_name"
+            android:src="@drawable/ic_search" />
+
+    </RelativeLayout>
+
+    <!-- 使用 NestedScrollView 包裹可滚动内容 -->
+    <androidx.core.widget.NestedScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+        android:layout_height="match_parent"
+        android:fillViewport="true">
 
-    <TextView
-        android:id="@+id/tv_show"
-        android:layout_marginTop="30dp"
-        android:layout_gravity="center_horizontal"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="No data" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- 日历视图 -->
+            <com.haibin.calendarview.CalendarView
+                android:id="@+id/calendarView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                app:calendar_height="50dp"
+                app:calendar_padding="2dp"
+                app:current_day_lunar_text_color="@color/text_now"
+                app:current_day_text_color="@color/text_now"
+                app:current_month_lunar_text_color="@color/black"
+                app:current_month_text_color="@color/black"
+                app:week_view="com.test.sport.ui.view.CustomWeekView"
+                app:scheme_lunar_text_color="#333"
+                app:scheme_text="S"
+                app:scheme_text_color="#333"
+                app:selected_lunar_text_color="@color/text_selected"
+                app:selected_text_color="@color/text_selected"
+                app:selected_theme_color="@color/bg_selected"
+                app:week_start_with="mon"
+                app:year_view_scheme_color="@color/flag_working"
+                app:year_view_select_text_color="#333" />
+
+            <!-- 推荐赛事标题 -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="今日推荐赛事"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:layout_marginStart="13dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="8dp"/>
+
+            <FrameLayout
+    android:id="@+id/recommendation_container"
+    android:layout_width="match_parent"
+    android:layout_height="120dp"
+    android:layout_marginBottom="8dp">
+    
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_recommended_games"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:paddingHorizontal="8dp"
+        android:clipToPadding="false"/>
+</FrameLayout>
+
+            <!-- 所有赛事标题 -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="所有赛事"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:layout_marginStart="13dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="8dp"/>
+
+            <!-- 比赛列表 -->
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_data"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="13dp"
+                android:nestedScrollingEnabled="false"/>
+
+            <TextView
+                android:id="@+id/tv_show"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="30dp"
+                android:text="No data" />
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
 </LinearLayout>

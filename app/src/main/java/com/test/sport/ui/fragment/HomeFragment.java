@@ -34,6 +34,7 @@ import com.test.sport.ui.activity.MainActivity;
 import com.test.sport.ui.activity.SettingActivity;
 import com.test.sport.ui.activity.SportActivity;
 import com.test.sport.ui.adapter.GameAdapter;
+import com.test.sport.ui.adapter.RecommendedGamesAdapter;
 import com.test.sport.utils.Constants;
 import com.test.sport.utils.LogUtils;
 import com.test.sport.utils.Tools;
@@ -48,6 +49,7 @@ import java.util.Date;
 import java.util.HashSet;
 import java.util.LinkedHashSet;
 import java.util.List;
+import java.util.Set;
 import java.util.TimeZone;
 import java.util.stream.Collectors;
 
@@ -66,6 +68,10 @@ public class HomeFragment extends BaseFragment<FragmentHomeBinding> implements V
     private String timeZoneId; //时区
     private static final String PREFS_NAME = "SettingsPrefs";
     private static final String PREF_SELECTED_TIMEZONE = "SelectedTimezone";
+    private RecommendedGamesAdapter recommendedAdapter;
+    private List<Game> recommendedGames = new ArrayList<>();
+    private static final String KEY_FAVORITE_TEAMS = "favorite_teams";
+    private static final String KEY_PREFERRED_TIMES = "preferred_times";
     private static final String[] SUPPORTED_SPORTS = new String[]{"Basketball", "Football", "Soccer", "Icehockey", "Tennis", "Rugby"};
 
     @Override
@@ -485,6 +491,7 @@ public void onDestroyView() {
             dataList.addAll(searchList);
         } else {
             dataList.addAll(gameList);
+            updateRecommendedGames();
         }
      //   LogUtils.showLog("dataList.size():" + dataList.size());
         if (dataList.size() == 0) {
@@ -541,5 +548,43 @@ public void onDestroyView() {
         }
         request(index);
         //initLocalData(index);
+    }
+
+    private void updateRecommendedGames() {
+        recommendedGames.clear();
+        // 获取收藏的球队
+        SharedPreferences prefs = requireContext().getSharedPreferences(PREFS_NAME, Context.MODE_PRIVATE);
+        Set<String> favoriteTeams = prefs.getStringSet(KEY_FAVORITE_TEAMS, new HashSet<>());
+
+        Log.d("RecommendDebug", "总比赛数量: " + gameList.size());
+        
+        // 临时：取前两场比赛作为推荐
+        if (gameList.size() > 0) {
+            recommendedGames.add(gameList.get(0));
+        }
+        if (gameList.size() > 1) {
+            recommendedGames.add(gameList.get(1));
+        }
+
+        Log.d("RecommendDebug", "推荐比赛数量: " + recommendedGames.size());
+        
+        // 更新推荐赛事适配器
+        if (recommendedAdapter == null) {
+            Log.d("RecommendDebug", "创建新的推荐适配器");
+            recommendedAdapter = new RecommendedGamesAdapter(getActivity(), recommendedGames, favoriteTeams);
+            LinearLayoutManager layoutManager = new LinearLayoutManager(getActivity(), 
+                    LinearLayoutManager.HORIZONTAL, false);
+            getBinding().rvRecommendedGames.setLayoutManager(layoutManager);
+            getBinding().rvRecommendedGames.setAdapter(recommendedAdapter);
+            
+            recommendedAdapter.setOnClickListener(pos -> {
+                Intent intent = new Intent(getActivity(), SportActivity.class);
+                intent.putExtra("game", recommendedGames.get(pos));
+                startActivity(intent);
+            });
+        } else {
+            recommendedAdapter.setGames(recommendedGames);
+            Log.d("RecommendDebug", "更新现有推荐适配器");
+        }
     }
 }
