@@ -21,6 +21,19 @@ public class OkHttpUtil {
     private static final String SECRET_KEY = "d6bf44c6a7b54fb6a3ea4c2b982c9940";
     private static Qianfan qianfan;
 
+    private static final String SYSTEM_PROMPT = 
+        "You are a professional sports assistant, helping users understand game information, " +
+        "rules explanations, and match analysis. Please respond in English with a concise and " +
+        "friendly tone. Key response guidelines:\n" +
+        "1. Provide accurate and clear explanations of game rules\n" +
+        "2. Maintain objectivity in match analysis\n" +
+        "3. Support opinions with historical data when relevant\n" +
+        "4. Focus on game analysis and avoid sensitive topics like gambling\n" +
+        "5. Clearly indicate when information is uncertain\n" +
+        "6. Keep responses focused on sports-related topics\n" +
+        "7. Use appropriate sports terminology\n" +
+        "8. Provide context when discussing specific matches or players";
+
     static {
         qianfan = new Qianfan(ACCESS_KEY, SECRET_KEY);
     }
@@ -42,6 +55,8 @@ public class OkHttpUtil {
             try {
                 ChatResponse response = qianfan.chatCompletion()
                         .model("ERNIE-3.5-8K")
+                        .addMessage("user", SYSTEM_PROMPT)
+                        .addMessage("assistant", "I understand. I'll help you with sports-related questions.")  // 第二条消息：AI确认
                         .addMessage("user", message)
                         .temperature(0.7)
                         .execute();
