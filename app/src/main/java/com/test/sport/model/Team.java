@@ -14,6 +14,8 @@ public class Team {
     
     @JSONField(name = "alias")
     private String alias;       // 球队简称
+
+    private transient boolean isFavorite;  // transient 表示不会被序列化
     
     // getter 和 setter
     public String getId() { return id; }
@@ -27,4 +29,12 @@ public class Team {
     
     public String getAlias() { return alias; }
     public void setAlias(String alias) { this.alias = alias; }
+
+    public boolean isFavorite() {
+        return isFavorite;
+    }
+
+    public void setFavorite(boolean favorite) {
+        isFavorite = favorite;
+    }
 }

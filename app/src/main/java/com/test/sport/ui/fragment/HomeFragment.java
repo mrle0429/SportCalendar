@@ -31,6 +31,7 @@ import com.test.sport.db.entity.Game;
 import com.test.sport.http.OkHttpUtil;
 import com.test.sport.http.bean.Sport;
 import com.test.sport.ui.activity.MainActivity;
+import com.test.sport.ui.activity.SettingActivity;
 import com.test.sport.ui.activity.SportActivity;
 import com.test.sport.ui.adapter.GameAdapter;
 import com.test.sport.utils.Constants;
@@ -119,11 +120,9 @@ public class HomeFragment extends BaseFragment<FragmentHomeBinding> implements V
                 break;
 
             case R.id.iv_setting:
-                if (getActivity() instanceof MainActivity) {
-                    MainActivity activity = (MainActivity) getActivity();
-                    activity.getBinding().viewPager.setCurrentItem(2);
-                    activity.getBinding().navigation.setSelectedItemId(R.id.navigation_setting);
-                }
+                 // 直接跳转到设置Activity
+                Intent intent = new Intent(getActivity(), SettingActivity.class);
+                startActivity(intent);
                 break;
         }
     }
@@ -223,34 +222,38 @@ public void onDestroyView() {
     }
 
     private void showSport() {
-        SharedPreferences prefs = getActivity().getSharedPreferences("SettingsPrefs", Context.MODE_PRIVATE);
-        String defaultSport = prefs.getString("default_sport", "Basketball");
+        //SharedPreferences prefs = getActivity().getSharedPreferences("SettingsPrefs", Context.MODE_PRIVATE);
+        //String defaultSport = prefs.getString("default_sport", "Basketball");
+        //Log.d("SportSync", "HomeFragment - 显示运动选择器，当前默认运动: " + defaultSport);
         // 运动选择弹窗
         new XPopup.Builder(getActivity())
                 .hasShadowBg(false)// 是否有半透明的背景，默认为true
                 .isViewMode(true)
                 .offsetY(50) //弹窗在y方向的偏移量
                 .atView(getBinding().tvSport)  // 依附于所点击的View，内部会自动判断在上方或者下方显示
-                .asAttachList(new String[]{"Basketball", "Football", "Icehockey", "Tennis", "Soccer", "Rugby"},
+                .asAttachList(SUPPORTED_SPORTS,
                         new int[]{},
                         (position, text) -> {
                             getBinding().tvSport.setText(text);
                             index = position;
                             search = false;
+                            // 通知MainActivity更新当前运动
+                            ((MainActivity) getActivity()).setCurrentSport(text);
+                            Log.d("SportSync", "HomeFragment - 设置新运动: " + text);
                             handler.sendEmptyMessage(0);
                         })
                 .show();
 
-        // 设置默认选中的运动
-        getBinding().tvSport.setText(defaultSport);
-        for (int i = 0; i < SUPPORTED_SPORTS.length; i++) {
-            if (SUPPORTED_SPORTS[i].equals(defaultSport)) {
-            index = i;
-            break;
-        }
-    }
-    search = false;
-    handler.sendEmptyMessage(0);
+    //     // 设置默认选中的运动
+    //     getBinding().tvSport.setText(defaultSport);
+    //     for (int i = 0; i < SUPPORTED_SPORTS.length; i++) {
+    //         if (SUPPORTED_SPORTS[i].equals(defaultSport)) {
+    //         index = i;
+    //         break;
+    //     }
+    // }
+    // search = false;
+    // handler.sendEmptyMessage(0);
     }
 
     private void initLocalData(int index) {

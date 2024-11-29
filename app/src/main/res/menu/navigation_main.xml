@@ -11,9 +11,9 @@
         android:title="Schedule" />
 
     <item
-        android:id="@+id/navigation_setting"
+        android:id="@+id/navigation_favourite"
         android:icon="@drawable/selector_setting"
-        android:title="Setting" />
+        android:title="Favourite" />
 
     <item
         android:id="@+id/navigation_chat"

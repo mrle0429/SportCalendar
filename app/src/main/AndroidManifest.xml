@@ -74,6 +74,10 @@
 
         </activity>
 
+        <activity
+    android:name="com.test.sport.ui.activity.SettingActivity"
+    android:screenOrientation="portrait"/>
+
         <activity android:name="com.test.sport.ui.activity.TimezoneActivity" />
 
 <activity
