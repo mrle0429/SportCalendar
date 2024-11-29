@@ -61,8 +61,6 @@ public class SettingFragment extends BaseFragment<FragmentSettingBinding> implem
 
 
 
-
-
     private final AMapLocationListener mLocationListener = new AMapLocationListener() {
         @Override
         public void onLocationChanged(AMapLocation aMapLocation) {
@@ -122,7 +120,6 @@ public class SettingFragment extends BaseFragment<FragmentSettingBinding> implem
     protected void initClick() {
         super.initClick();
         getBinding().rlPreferences.setOnClickListener(this);
-        getBinding().rlTime.setOnClickListener(this);
         getBinding().rlTimezone.setOnClickListener(this);
         getBinding().rlLocation.setOnClickListener(this);
         getBinding().rlNotification.setOnClickListener(this);
@@ -151,8 +148,7 @@ public class SettingFragment extends BaseFragment<FragmentSettingBinding> implem
                 Intent intent = new Intent(getActivity(), TimezoneActivity.class);
                 startActivityForResult(intent, REQUEST_CODE_TIMEZONE);
                 break;
-            case R.id.rl_time:
-                break;
+
             case R.id.rl_location:
                 getBinding().ivLocation.setSelected(!getBinding().ivLocation.isSelected());
                 checkLocationPermission();

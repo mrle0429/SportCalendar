@@ -30,6 +30,7 @@ import com.test.sport.base.BaseFragment;
 import com.test.sport.db.entity.Game;
 import com.test.sport.http.OkHttpUtil;
 import com.test.sport.http.bean.Sport;
+import com.test.sport.ui.activity.MainActivity;
 import com.test.sport.ui.activity.SportActivity;
 import com.test.sport.ui.adapter.GameAdapter;
 import com.test.sport.utils.Constants;
@@ -89,6 +90,10 @@ public class HomeFragment extends BaseFragment<FragmentHomeBinding> implements V
         super.initClick();
         getBinding().tvSport.setOnClickListener(this);
         getBinding().tvSearch.setOnClickListener(this);
+
+         // 添加设置图标点击事件
+         getBinding().ivSetting.setOnClickListener(this); // 添加设置图标的点击监听
+
     }
 
     @Override
@@ -111,6 +116,14 @@ public class HomeFragment extends BaseFragment<FragmentHomeBinding> implements V
             case R.id.tv_search:
                 // 显示搜索
                 search();
+                break;
+
+            case R.id.iv_setting:
+                if (getActivity() instanceof MainActivity) {
+                    MainActivity activity = (MainActivity) getActivity();
+                    activity.getBinding().viewPager.setCurrentItem(2);
+                    activity.getBinding().navigation.setSelectedItemId(R.id.navigation_setting);
+                }
                 break;
         }
     }
