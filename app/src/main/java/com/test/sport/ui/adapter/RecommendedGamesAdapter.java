@@ -80,8 +80,13 @@ public class RecommendedGamesAdapter extends RecyclerView.Adapter<RecommendedGam
 
     private String getRecommendReason(Game game) {
         if (game.getCompetitors() != null && game.getCompetitors().size() > 0) {
-            String homeTeam = game.getCompetitors().get(0).getAbbreviation();
-            String awayTeam = game.getCompetitors().get(1).getAbbreviation();
+            String homeTeam = game.getCompetitors().get(0).getCompetitors_name();
+            String awayTeam = game.getCompetitors().get(1).getCompetitors_name();
+
+            Log.d("RecommendDebug1", "检查球队是否在关注列表中:");
+            Log.d("RecommendDebug1", "喜欢的球队： " + favoriteTeams);
+            Log.d("RecommendDebug1", "主队: " + homeTeam + " 是否关注: " + favoriteTeams.contains(homeTeam));
+            Log.d("RecommendDebug1", "客队: " + awayTeam + " 是否关注: " + favoriteTeams.contains(awayTeam));
             
             if (favoriteTeams.contains(homeTeam) || favoriteTeams.contains(awayTeam)) {
                 return "关注球队";
@@ -97,7 +102,7 @@ public class RecommendedGamesAdapter extends RecyclerView.Adapter<RecommendedGam
             return "热门赛事";
         }
         
-        return "推荐赛事";
+        return "比赛时间符合偏好";
     }
 
     @Override

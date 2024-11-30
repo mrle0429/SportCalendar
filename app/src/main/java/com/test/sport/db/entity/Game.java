@@ -25,6 +25,7 @@ public class Game implements Serializable {
     private String status;//not_started live ended closed postponed
     private int away_score;//客场得分
     private int home_score;//主场得分
+    private int recommendScore;
 
     public static class Score implements Serializable{
         private int away_score;//客场得分
@@ -221,6 +222,14 @@ public class Game implements Serializable {
 
     public void setStage_type(String stage_type) {
         this.stage_type = stage_type;
+    }
+
+    public int getRecommendScore(){
+        return recommendScore;
+    }
+
+    public void setRecommendScore(int score) {
+        recommendScore = score;
     }
 
     @Override

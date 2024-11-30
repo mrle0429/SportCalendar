@@ -44,7 +44,9 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.sql.Time;
 import java.text.ParseException;
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.Date;
 import java.util.HashSet;
 import java.util.LinkedHashSet;
@@ -65,6 +67,7 @@ public class HomeFragment extends BaseFragment<FragmentHomeBinding> implements V
     private int index;  //当前选择的运动索引
     private boolean search; //是否搜索
     private String date; //当前选择的日期
+    private String previousDate;
     private String timeZoneId; //时区
     private static final String PREFS_NAME = "SettingsPrefs";
     private static final String PREF_SELECTED_TIMEZONE = "SelectedTimezone";
@@ -134,10 +137,10 @@ public class HomeFragment extends BaseFragment<FragmentHomeBinding> implements V
     }
 
     @Override
-public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
-    super.onViewCreated(view, savedInstanceState);
-    Log.d("HomeFragment1", "注册广播接收器");
-    IntentFilter filter = new IntentFilter("com.test.sport.TIMEZONE_CHANGED");
+    public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
+        super.onViewCreated(view, savedInstanceState);
+        Log.d("HomeFragment1", "注册广播接收器");
+        IntentFilter filter = new IntentFilter("com.test.sport.TIMEZONE_CHANGED");
     getActivity().registerReceiver(timezoneChangedReceiver, filter);
 
       // 注册默认运动变化广播
@@ -158,9 +161,9 @@ public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceStat
       request(index);
 }
 
-private final BroadcastReceiver timezoneChangedReceiver = new BroadcastReceiver() {
-    @Override
-    public void onReceive(Context context, Intent intent) {
+    private final BroadcastReceiver timezoneChangedReceiver = new BroadcastReceiver() {
+        @Override
+        public void onReceive(Context context, Intent intent) {
         if ("com.test.sport.TIMEZONE_CHANGED".equals(intent.getAction())) {
             // 重新加载时区
             SharedPreferences preferences = getActivity().getSharedPreferences(PREFS_NAME, Context.MODE_PRIVATE);
@@ -174,7 +177,7 @@ private final BroadcastReceiver timezoneChangedReceiver = new BroadcastReceiver(
     }
 };
 
-private final BroadcastReceiver sportChangedReceiver = new BroadcastReceiver() {
+    private final BroadcastReceiver sportChangedReceiver = new BroadcastReceiver() {
     @Override
     public void onReceive(Context context, Intent intent) {
         if ("com.test.sport.DEFAULT_SPORT_CHANGED".equals(intent.getAction())) {
@@ -194,8 +197,8 @@ private final BroadcastReceiver sportChangedReceiver = new BroadcastReceiver() {
     }
 };
 
-@Override
-public void onDestroyView() {
+    @Override
+    public void onDestroyView() {
     super.onDestroyView();
     if (timezoneChangedReceiver != null) {
         getActivity().unregisterReceiver(timezoneChangedReceiver);
@@ -345,22 +348,76 @@ public void onDestroyView() {
 
     private void request(int index) {
         WaitDialog.show("Please Wait!");
+        gameList.clear(); // 清空比赛列表
+        
+        // 添加计数器和锁来确保两个请求都完成
+        final int[] completedRequests = {0};
+        final Object lock = new Object();
+        
+        try {
+            Log.d("TimeDebug", "今天：" + date);
+            Log.d("TimeDebug", "昨天：" + previousDate);
+            // 请求两天的数据
 
+            
+            requestForDate(index, previousDate, new RequestCallback() {
+                @Override
+                public void onComplete() {
+                    synchronized (lock) {
+                        completedRequests[0]++;
+                        if (completedRequests[0] == 2) {
+                            // 两个请求都完成后才更新UI
+                            handler.sendEmptyMessage(1);
+                            WaitDialog.dismiss();
+                        }
+                    }
+                }
+            });
+
+            requestForDate(index, date, new RequestCallback() {
+                @Override
+                public void onComplete() {
+                    synchronized (lock) {
+                        completedRequests[0]++;
+                        if (completedRequests[0] == 2) {
+                            // 两个请求都完成后才更新UI
+                            handler.sendEmptyMessage(1);
+                            WaitDialog.dismiss();
+                        }
+                    }
+                }
+            });
+        } catch (Exception e) {
+            e.printStackTrace();
+            getActivity().runOnUiThread(() -> {
+                WaitDialog.dismiss();
+                showToast("Date parsing failed");
+            });
+        }
+    }
+
+    // 添加回调接口
+    interface RequestCallback {
+        void onComplete();
+    }
+
+    private void requestForDate(int index, String requestDate, RequestCallback callback) {
         switch (index) {
             case 0:
-                address = Constants.BASKET_BALL_URL + date + Constants.SUFFIX + "?api_key=" + Constants.BASKET_BALL_KEY;
+                address = Constants.BASKET_BALL_URL + requestDate + Constants.SUFFIX + "?api_key=" + Constants.BASKET_BALL_KEY;
                 break;
             case 1:
-                address = Constants.FOOT_BALL_URL + date + Constants.SUFFIX + "?api_key=" + Constants.FOOT_BALL_KEY;
+                address = Constants.FOOT_BALL_URL + requestDate + Constants.SUFFIX + "?api_key=" + Constants.FOOT_BALL_KEY;
                 break;
             case 2:
-                address = Constants.ICE_HOCKEY_URL + date + Constants.SUFFIX + "?api_key=" + Constants.ICE_HOCKEY_KEY;
+                address = Constants.SOCCER_URL + requestDate + Constants.SUFFIX + "?api_key=" + Constants.SOCCER_KEY;
                 break;
             case 3:
-                address = Constants.TENNIS_URL + date + Constants.SUFFIX + "?api_key=" + Constants.TENNIS_KEY;
+                address = Constants.ICE_HOCKEY_URL + requestDate + Constants.SUFFIX + "?api_key=" + Constants.ICE_HOCKEY_KEY;
+
                 break;
             case 4:
-                address = Constants.SOCCER_URL + date + Constants.SUFFIX + "?api_key=" + Constants.SOCCER_KEY;
+                address = Constants.TENNIS_URL + requestDate + Constants.SUFFIX + "?api_key=" + Constants.TENNIS_KEY;
                 break;
         }
 
@@ -368,30 +425,27 @@ public void onDestroyView() {
             @Override
             public void onResponse(@NonNull Call call, @NonNull Response response) throws IOException {
                 if (response.isSuccessful()) {
-                    // 解析响应请求
                     String responseBody = response.body().string();
                     Sport sport = JSON.parseObject(responseBody, Sport.class);
+                    String selectedDate = date;
                     if (sport.getSummaries() != null) {
-                        gameList.clear();
+                        synchronized (gameList) {  // 添加同步锁
+                            
+                            for (Sport.SummariesDTO summariesDTO : sport.getSummaries()) {
+                                String startTime = Tools.getTime(summariesDTO.getSportEvent().getStartTime(), timeZoneId);
+                                String gameDate = startTime.split(" ")[0];
 
-                        String selectedDate = date;
-
-                        for (Sport.SummariesDTO summariesDTO : sport.getSummaries()) {
-                            // 比赛开始日期转换为用户时区时间
-                            String startTime = Tools.getTime(summariesDTO.getSportEvent().getStartTime(), timeZoneId);
-                            String gameDate = startTime.split(" ")[0];
-
-                            if (gameDate.equals(selectedDate)) {
-                            Game game = new Game();
-                            game.setSport_name(summariesDTO.getSportEvent().getSportEventContext().getSport().getName());
-                            game.setStart_time(Tools.getTime(summariesDTO.getSportEvent().getStartTime(), timeZoneId));
-                            game.setStatus(summariesDTO.getSportEventStatus().getStatus());
-                            game.setCountry_name(summariesDTO.getSportEvent().getSportEventContext().getCategory().getName());
-                            game.setCompetition_name(summariesDTO.getSportEvent().getSportEventContext().getCompetition().getName());
-                            game.setStage_start_date(Tools.getLocalDate(summariesDTO.getSportEvent().getSportEventContext().getSeason().getStartDate()));
-                            game.setStage_end_date(Tools.getLocalDate(summariesDTO.getSportEvent().getSportEventContext().getSeason().getEndDate()));
-                            game.setStage_type(summariesDTO.getSportEvent().getSportEventContext().getStage().getType());
-                            game.setStage_phase(summariesDTO.getSportEvent().getSportEventContext().getStage().getPhase());
+                                if (gameDate.equals(selectedDate)) {
+                                    Game game = new Game();
+                                    game.setSport_name(summariesDTO.getSportEvent().getSportEventContext().getSport().getName());
+                                    game.setStart_time(Tools.getTime(summariesDTO.getSportEvent().getStartTime(), timeZoneId));
+                                    game.setStatus(summariesDTO.getSportEventStatus().getStatus());
+                                    game.setCountry_name(summariesDTO.getSportEvent().getSportEventContext().getCategory().getName());
+                                    game.setCompetition_name(summariesDTO.getSportEvent().getSportEventContext().getCompetition().getName());
+                                    game.setStage_start_date(Tools.getLocalDate(summariesDTO.getSportEvent().getSportEventContext().getSeason().getStartDate()));
+                                    game.setStage_end_date(Tools.getLocalDate(summariesDTO.getSportEvent().getSportEventContext().getSeason().getEndDate()));
+                                    game.setStage_type(summariesDTO.getSportEvent().getSportEventContext().getStage().getType());
+                                    game.setStage_phase(summariesDTO.getSportEvent().getSportEventContext().getStage().getPhase());
 
                             if (null != summariesDTO.getSportEvent().getVenue()) {
                                 game.setVenue_name(summariesDTO.getSportEvent().getVenue().getName());
@@ -419,41 +473,41 @@ public void onDestroyView() {
                             List<Game.Competitors> competitorsList = new ArrayList<>();
                             List<Sport.SummariesDTO.SportEventDTO.CompetitorsDTO> competitors = summariesDTO.getSportEvent().getCompetitors();
 
-                            if (competitors != null) {
-                                for (Sport.SummariesDTO.SportEventDTO.CompetitorsDTO competitorsDTO : competitors) {
-                                    Game.Competitors competitor = new Game.Competitors();
-                                    competitor.setCompetitors_name(competitorsDTO.getName());
-                                    competitor.setAbbreviation(competitorsDTO.getAbbreviation());
-                                    competitor.setQualifier(competitorsDTO.getQualifier());
-                                    competitor.setCountry_code(competitorsDTO.getCountryCode());
-                                    competitorsList.add(competitor);
-                                }
-                                game.setCompetitors(competitorsList);
-                            }
+                                    if (competitors != null) {
+                                        for (Sport.SummariesDTO.SportEventDTO.CompetitorsDTO competitorsDTO : competitors) {
+                                            Game.Competitors competitor = new Game.Competitors();
+                                            competitor.setCompetitors_name(competitorsDTO.getName());
+                                            competitor.setAbbreviation(competitorsDTO.getAbbreviation());
+                                            competitor.setQualifier(competitorsDTO.getQualifier());
+                                            competitor.setCountry_code(competitorsDTO.getCountryCode());
+                                            competitorsList.add(competitor);
+                                        }
+                                        game.setCompetitors(competitorsList);
+                                    }
 
-                            String status = summariesDTO.getSportEventStatus().getStatus();
-                            game.setStatus(status);
-                            if (status.equals("live") || status.equals("closed") || status.equals("ended") || status.equals("not_started")) {
-                                game.setAway_score(summariesDTO.getSportEventStatus().getAwayScore() == null ? 0 : summariesDTO.getSportEventStatus().getAwayScore());
-                                game.setHome_score(summariesDTO.getSportEventStatus().getHomeScore() == null ? 0 : summariesDTO.getSportEventStatus().getHomeScore());
-                            }
-                            gameList.add(game);
+                                    String status = summariesDTO.getSportEventStatus().getStatus();
+                                    game.setStatus(status);
+                                    if (status.equals("live") || status.equals("closed") || status.equals("ended") || status.equals("not_started")) {
+                                        game.setAway_score(summariesDTO.getSportEventStatus().getAwayScore() == null ? 0 : summariesDTO.getSportEventStatus().getAwayScore());
+                                        game.setHome_score(summariesDTO.getSportEventStatus().getHomeScore() == null ? 0 : summariesDTO.getSportEventStatus().getHomeScore());
+                                    }
+                                    gameList.add(game);
+                                }
                             }
                         }
-                        handler.sendEmptyMessage(1);
                     }
-                } else {
-                    getActivity().runOnUiThread(() -> {
-                        WaitDialog.dismiss();
-                    });
                 }
+                
+                getActivity().runOnUiThread(() -> {
+                    callback.onComplete();
+                });
             }
 
             @Override
             public void onFailure(@NonNull Call call, @NonNull IOException e) {
                 getActivity().runOnUiThread(() -> {
-                    WaitDialog.dismiss();
                     showToast("Network request failed");
+                    callback.onComplete();  // 即使失败也要调用回调
                 });
             }
         });
@@ -484,22 +538,33 @@ public void onDestroyView() {
     private GameAdapter gameAdapter;
 
     private void initAdapter() {
-
-        WaitDialog.dismiss();
         dataList.clear();
         if (search) {
             dataList.addAll(searchList);
         } else {
-            dataList.addAll(gameList);
+            synchronized (gameList) {  // 添加同步锁
+                Collections.sort(gameList, (game1, game2) -> {
+                    try {
+                        SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd HH:mm");
+                        Date date1 = sdf.parse(game1.getStart_time());
+                        Date date2 = sdf.parse(game2.getStart_time());
+                        return date1.compareTo(date2);
+                    } catch (ParseException e) {
+                        e.printStackTrace();
+                        return 0;
+                    }
+                });
+                dataList.addAll(gameList);
+            }
             updateRecommendedGames();
         }
-     //   LogUtils.showLog("dataList.size():" + dataList.size());
+        
         if (dataList.size() == 0) {
             getBinding().tvShow.setVisibility(View.VISIBLE);
         } else {
             getBinding().tvShow.setVisibility(View.GONE);
         }
-
+        
         if (gameAdapter == null) {
             gameAdapter = new GameAdapter(getActivity(), dataList);
             getBinding().rvData.setLayoutManager(new LinearLayoutManager(getActivity(),
@@ -540,9 +605,18 @@ public void onDestroyView() {
         int year = calendar.getYear();
         int month = calendar.getMonth();
         int day = calendar.getDay();
+
         date = year + "-" + month + "-" + day;
         try {
             date = Tools.StringToDate(date, "yyyy-M-d", "yyyy-MM-dd");
+
+            // 使用同样的Tools类计算前一天
+
+            SimpleDateFormat parser = new SimpleDateFormat("yyyy-MM-dd");
+            java.util.Calendar cal = java.util.Calendar.getInstance();
+            cal.setTime(parser.parse(date));
+            cal.add(java.util.Calendar.DAY_OF_MONTH, -1);
+            previousDate = parser.format(cal.getTime());
         } catch (ParseException e) {
             e.printStackTrace();
         }
@@ -555,18 +629,41 @@ public void onDestroyView() {
         // 获取收藏的球队
         SharedPreferences prefs = requireContext().getSharedPreferences(PREFS_NAME, Context.MODE_PRIVATE);
         Set<String> favoriteTeams = prefs.getStringSet(KEY_FAVORITE_TEAMS, new HashSet<>());
+        Set<String> preferredTimes = prefs.getStringSet(KEY_PREFERRED_TIMES, new HashSet<>());
 
         Log.d("RecommendDebug", "总比赛数量: " + gameList.size());
         
         // 临时：取前两场比赛作为推荐
-        if (gameList.size() > 0) {
-            recommendedGames.add(gameList.get(0));
-        }
-        if (gameList.size() > 1) {
-            recommendedGames.add(gameList.get(1));
+        List<Game> scoredGames = new ArrayList<>();
+        
+        for (Game game : gameList) {
+            int score = calculateGameScore(game, favoriteTeams, preferredTimes);
+            game.setRecommendScore(score);
+            if (score > 0) {
+                scoredGames.add(game);
+            }
         }
 
+        // 按推荐分数排序
+        Collections.shuffle(scoredGames);
+        Collections.sort(scoredGames, (g1, g2) -> {
+            int scoreCompare = Integer.compare(g2.getRecommendScore(), g1.getRecommendScore());
+            if (scoreCompare == 0) {
+                // 分数相同时保持随机顺序
+                return 0;
+            }
+            return scoreCompare;
+        });
+
+        // 取前5场推荐比赛
+        int recommendCount = Math.min(scoredGames.size(), 5);
+        recommendedGames.addAll(scoredGames.subList(0, recommendCount));
+
         Log.d("RecommendDebug", "推荐比赛数量: " + recommendedGames.size());
+        for (Game game : recommendedGames) {
+            Log.d("RecommendDebug", "推荐比赛: " + game.getCompetition_name() + 
+                  ", 分数: " + game.getRecommendScore());
+        }
         
         // 更新推荐赛事适配器
         if (recommendedAdapter == null) {
@@ -586,5 +683,61 @@ public void onDestroyView() {
             recommendedAdapter.setGames(recommendedGames);
             Log.d("RecommendDebug", "更新现有推荐适配器");
         }
+    }
+
+
+    private int calculateGameScore(Game game, Set<String> favoriteTeams, Set<String> preferredTimes) {
+        int score = 0;
+        
+        // 检查是否包含收藏的球队
+        if (game.getCompetitors() != null) {
+            for (Game.Competitors competitor : game.getCompetitors()) {
+                String teamName = competitor.getCompetitors_name();
+                if (favoriteTeams.contains(teamName)) {
+                    score += 50;  // 包含收藏球队加50分
+                    Log.d("RecommendDebug", "找到收藏球队: " + teamName);
+                    break;
+                }
+            }
+        }
+    
+        // 2. 检查比赛时间是否在偏好时间段内
+        try {
+            int hour = Integer.parseInt(game.getStart_time().substring(11, 13));
+            Log.d("RecommendDebug", "比赛时间： " + hour);
+
+            for (String timeRange : preferredTimes) {
+                if (timeRange.contains("早上") && hour >= 6 && hour < 12) {
+                    score += 30;
+                    Log.d("RecommendDebug", "符合早上时段偏好");
+                } else if (timeRange.contains("下午") && hour >= 12 && hour < 18) {
+                    score += 30;
+                    Log.d("RecommendDebug", "符合下午时段偏好");
+                } else if (timeRange.contains("晚上") && hour >= 18 && hour < 24) {
+                    score += 30;
+                    Log.d("RecommendDebug", "符合晚上时段偏好");
+                } else if (timeRange.contains("凌晨") && hour >= 0 && hour < 6) {
+                    score += 30;
+                    Log.d("RecommendDebug", "符合凌晨时段偏好");
+                }
+            }
+
+
+        } catch (Exception e) {
+            e.printStackTrace();
+            Log.e("RecommendDebug", "时间检查失败", e);
+        }
+    
+        // 3. 重要赛事加分
+        // String competition = game.getCompetition_name();
+        // if (competition != null) {
+        //     if (competition.contains("Champions League") || 
+        //         competition.contains("Premier League") || 
+        //         competition.contains("NBA")) {
+        //         score += 20;
+        //     }
+        // }
+    
+        return score;
     }
 }

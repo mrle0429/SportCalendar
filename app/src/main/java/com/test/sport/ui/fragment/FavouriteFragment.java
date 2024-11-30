@@ -81,6 +81,7 @@ public class FavouriteFragment extends BaseFragment<FragmentFavouriteBinding>
             // 获取已收藏的球队
             SharedPreferences prefs = requireContext().getSharedPreferences(PREFS_NAME, Context.MODE_PRIVATE);
             Set<String> savedTeams = prefs.getStringSet(KEY_FAVORITE_TEAMS, new HashSet<>());
+            Log.d("FavouriteTeams", "当前收藏的球队: " + savedTeams.toString());
 
             // 解析JSON数据
             JSONObject json = JSON.parseObject(jsonStr);
@@ -147,12 +148,15 @@ public class FavouriteFragment extends BaseFragment<FragmentFavouriteBinding>
         updateCurrentSport(newSport);
         loadTeams(newSport);
     }
+
     private void updateCurrentSport(String sport) {
         getBinding().tvCurrentSport.setText(sport);
     }
 
     @Override
     public void onDestroyView() {
+
+
         super.onDestroyView();
         // 取消注册
         ((MainActivity) getActivity()).setFavouriteFragment(null);
