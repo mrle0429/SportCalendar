@@ -95,12 +95,48 @@ public class RecommendedGamesAdapter extends RecyclerView.Adapter<RecommendedGam
         
         // 判断是否为重要联赛
         String competition = game.getCompetition_name();
-        if (competition != null && (
-            competition.contains("NBA") || 
-            competition.contains("Premier League") || 
-            competition.contains("Champions League"))) {
+        if (competition != null) {
+        // 篮球热门赛事
+        if (competition.contains("NBA") || 
+            competition.contains("CBA") ||
+            competition.contains("EuroLeague") ||
+            competition.contains("FIBA World Cup") ||
+            competition.contains("NCAA")) {
             return "热门赛事";
         }
+        
+        // 足球热门赛事
+        if (competition.contains("Premier League") || 
+            competition.contains("Champions League") ||
+            competition.contains("La Liga") ||
+            competition.contains("Bundesliga") ||
+            competition.contains("Serie A") ||
+            competition.contains("Ligue 1") ||
+            competition.contains("World Cup") ||
+            competition.contains("Euro") ||
+            competition.contains("Copa America")) {
+            return "热门赛事";
+        }
+        
+        // 冰球热门赛事
+        if (competition.contains("NHL") ||
+            competition.contains("KHL") ||
+            competition.contains("IIHF World Championship") ||
+            competition.contains("Champions Hockey League")) {
+            return "热门赛事";
+        }
+        
+        // 网球热门赛事
+        if (competition.contains("Australian Open") ||
+            competition.contains("French Open") ||
+            competition.contains("Wimbledon") ||
+            competition.contains("US Open") ||
+            competition.contains("ATP Finals") ||
+            competition.contains("Davis Cup") ||
+            competition.contains("WTA Finals")) {
+            return "热门赛事";
+        }
+    }
         
         return "比赛时间符合偏好";
     }

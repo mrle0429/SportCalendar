@@ -451,7 +451,7 @@ private final BroadcastReceiver favoritesChangedReceiver = new BroadcastReceiver
                 address = Constants.ICE_HOCKEY_URL + requestDate + Constants.SUFFIX + "?api_key=" + Constants.ICE_HOCKEY_KEY;
 
                 break;
-            case 4:
+            case 3:
                 address = Constants.TENNIS_URL + requestDate + Constants.SUFFIX + "?api_key=" + Constants.TENNIS_KEY;
                 break;
         }
@@ -753,16 +753,16 @@ private final BroadcastReceiver favoritesChangedReceiver = new BroadcastReceiver
 
             for (String timeRange : preferredTimes) {
                 if (timeRange.contains("早上") && hour >= 6 && hour < 12) {
-                    score += 30;
+                    score += 20;
                     Log.d("RecommendDebug", "符合早上时段偏好");
                 } else if (timeRange.contains("下午") && hour >= 12 && hour < 18) {
-                    score += 30;
+                    score += 20;
                     Log.d("RecommendDebug", "符合下午时段偏好");
                 } else if (timeRange.contains("晚上") && hour >= 18 && hour < 24) {
-                    score += 30;
+                    score += 20;
                     Log.d("RecommendDebug", "符合晚上时段偏好");
                 } else if (timeRange.contains("凌晨") && hour >= 0 && hour < 6) {
-                    score += 30;
+                    score += 20;
                     Log.d("RecommendDebug", "符合凌晨时段偏好");
                 }
             }
@@ -772,16 +772,54 @@ private final BroadcastReceiver favoritesChangedReceiver = new BroadcastReceiver
             e.printStackTrace();
             Log.e("RecommendDebug", "时间检查失败", e);
         }
+
+        // 重点赛事加分
+        String competition = game.getCompetition_name();
+        if (competition != null) {
+            // 篮球热门赛事
+            if (competition.contains("NBA") ||
+                    competition.contains("CBA") ||
+                    competition.contains("EuroLeague") ||
+                    competition.contains("FIBA World Cup") ||
+                    competition.contains("NCAA")) {
+                score += 20;
+
+            }
+
+            // 足球热门赛事
+            if (competition.contains("Premier League") ||
+                    competition.contains("Champions League") ||
+                    competition.contains("La Liga") ||
+                    competition.contains("Bundesliga") ||
+                    competition.contains("Serie A") ||
+                    competition.contains("Ligue 1") ||
+                    competition.contains("World Cup") ||
+                    competition.contains("Euro") ||
+                    competition.contains("Copa America")) {
+                score += 20;
+            }
+
+            // 冰球热门赛事
+            if (competition.contains("NHL") ||
+                    competition.contains("KHL") ||
+                    competition.contains("IIHF World Championship") ||
+                    competition.contains("Champions Hockey League")) {
+                score += 20;
+            }
+
+            // 网球热门赛事
+            if (competition.contains("Australian Open") ||
+                    competition.contains("French Open") ||
+                    competition.contains("Wimbledon") ||
+                    competition.contains("US Open") ||
+                    competition.contains("ATP Finals") ||
+                    competition.contains("Davis Cup") ||
+                    competition.contains("WTA Finals")) {
+                score += 20;
+            }
+        }
     
-        // 3. 重要赛事加分
-        // String competition = game.getCompetition_name();
-        // if (competition != null) {
-        //     if (competition.contains("Champions League") || 
-        //         competition.contains("Premier League") || 
-        //         competition.contains("NBA")) {
-        //         score += 20;
-        //     }
-        // }
+
     
         return score;
     }
