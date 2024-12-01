@@ -1,0 +1,377 @@
+{
+  "generated_at": "2024-12-01T03:43:08+00:00",
+  "season_competitors": [
+    {
+      "id": "sr:competitor:3409",
+      "name": "Chicago Bulls",
+      "short_name": "Chicago Bulls",
+      "abbreviation": "CHI"
+    },
+    {
+      "id": "sr:competitor:3410",
+      "name": "Milwaukee Bucks",
+      "short_name": "Milwaukee Bucks",
+      "abbreviation": "MIL"
+    },
+    {
+      "id": "sr:competitor:3411",
+      "name": "Dallas Mavericks",
+      "short_name": "Dallas",
+      "abbreviation": "DAL"
+    },
+    {
+      "id": "sr:competitor:3412",
+      "name": "Houston Rockets",
+      "short_name": "Houston",
+      "abbreviation": "HOU"
+    },
+    {
+      "id": "sr:competitor:3413",
+      "name": "Sacramento Kings",
+      "short_name": "Sacramento",
+      "abbreviation": "SAC"
+    },
+    {
+      "id": "sr:competitor:3414",
+      "name": "Portland Trail Blazers",
+      "short_name": "Portland",
+      "abbreviation": "POR"
+    },
+    {
+      "id": "sr:competitor:3415",
+      "name": "Memphis Grizzlies",
+      "short_name": "Memphis Grizzlies",
+      "abbreviation": "MEM"
+    },
+    {
+      "id": "sr:competitor:3416",
+      "name": "Phoenix Suns",
+      "short_name": "Phoenix Suns",
+      "abbreviation": "PHX"
+    },
+    {
+      "id": "sr:competitor:3417",
+      "name": "Denver Nuggets",
+      "short_name": "Denver",
+      "abbreviation": "DEN"
+    },
+    {
+      "id": "sr:competitor:3418",
+      "name": "Oklahoma City Thunder",
+      "short_name": "Oklahoma City",
+      "abbreviation": "OKC"
+    },
+    {
+      "id": "sr:competitor:3419",
+      "name": "Indiana Pacers",
+      "short_name": "Indiana Pacers",
+      "abbreviation": "IND"
+    },
+    {
+      "id": "sr:competitor:3420",
+      "name": "Philadelphia 76ers",
+      "short_name": "Philadelphia",
+      "abbreviation": "PHI"
+    },
+    {
+      "id": "sr:competitor:3421",
+      "name": "New York Knicks",
+      "short_name": "New York Knicks",
+      "abbreviation": "NYK"
+    },
+    {
+      "id": "sr:competitor:3422",
+      "name": "Boston Celtics",
+      "short_name": "Boston Celtics",
+      "abbreviation": "BOS"
+    },
+    {
+      "id": "sr:competitor:3423",
+      "name": "Atlanta Hawks",
+      "short_name": "Atlanta Hawks",
+      "abbreviation": "ATL"
+    },
+    {
+      "id": "sr:competitor:3424",
+      "name": "Detroit Pistons",
+      "short_name": "Detroit Pistons",
+      "abbreviation": "DET"
+    },
+    {
+      "id": "sr:competitor:3425",
+      "name": "LA Clippers",
+      "short_name": "LA Clippers",
+      "abbreviation": "LAC"
+    },
+    {
+      "id": "sr:competitor:3426",
+      "name": "Minnesota Timberwolves",
+      "short_name": "Minnesota",
+      "abbreviation": "MIN"
+    },
+    {
+      "id": "sr:competitor:3427",
+      "name": "Los Angeles Lakers",
+      "short_name": "LA Lakers",
+      "abbreviation": "LAL"
+    },
+    {
+      "id": "sr:competitor:3428",
+      "name": "Golden State Warriors",
+      "short_name": "Golden State",
+      "abbreviation": "GSW"
+    },
+    {
+      "id": "sr:competitor:3429",
+      "name": "San Antonio Spurs",
+      "short_name": "San Antonio",
+      "abbreviation": "SAS"
+    },
+    {
+      "id": "sr:competitor:3430",
+      "name": "Charlotte Hornets",
+      "short_name": "Charlotte",
+      "abbreviation": "CHA"
+    },
+    {
+      "id": "sr:competitor:3431",
+      "name": "Washington Wizards",
+      "short_name": "Washington Wizards",
+      "abbreviation": "WAS"
+    },
+    {
+      "id": "sr:competitor:3432",
+      "name": "Cleveland Cavaliers",
+      "short_name": "Cleveland Cavaliers",
+      "abbreviation": "CLE"
+    },
+    {
+      "id": "sr:competitor:3433",
+      "name": "Toronto Raptors",
+      "short_name": "Toronto",
+      "abbreviation": "TOR"
+    },
+    {
+      "id": "sr:competitor:3434",
+      "name": "Utah Jazz",
+      "short_name": "Utah Jazz",
+      "abbreviation": "UTA"
+    },
+    {
+      "id": "sr:competitor:3435",
+      "name": "Miami Heat",
+      "short_name": "Miami Heat",
+      "abbreviation": "MIA"
+    },
+    {
+      "id": "sr:competitor:3436",
+      "name": "Brooklyn Nets",
+      "short_name": "Brooklyn Nets",
+      "abbreviation": "BKN"
+    },
+    {
+      "id": "sr:competitor:3437",
+      "name": "Orlando Magic",
+      "short_name": "Orlando Magic",
+      "abbreviation": "ORL"
+    },
+    {
+      "id": "sr:competitor:5539",
+      "name": "New Orleans Pelicans",
+      "short_name": "New Orleans",
+      "abbreviation": "NOP"
+    },
+    {
+      "id": "sr:competitor:130094",
+      "name": "Sichuan Blue Whales",
+      "short_name": "Sichuan Blue Whales",
+      "abbreviation": "SBW"
+    },
+    {
+      "id": "sr:competitor:130096",
+      "name": "Zhejiang Golden Bulls",
+      "short_name": "Zhejiang Golden Bulls",
+      "abbreviation": "ZGB"
+    },
+    {
+      "id": "sr:competitor:130098",
+      "name": "Guangdong Southern Tigers",
+      "short_name": "Guangdong Southern Tigers",
+      "abbreviation": "GST"
+    },
+    {
+      "id": "sr:competitor:130100",
+      "name": "Guangzhou Loong Lions",
+      "short_name": "Guangzhou Loong Lions",
+      "abbreviation": "GLL"
+    },
+    {
+      "id": "sr:competitor:130102",
+      "name": "Fujian Sturgeons",
+      "short_name": "Fujian Sturgeons",
+      "abbreviation": "FST"
+    },
+    {
+      "id": "sr:competitor:130104",
+      "name": "Zhejiang Lions",
+      "short_name": "Zhejiang Guangsha Lions",
+      "abbreviation": "ZHE"
+    },
+    {
+      "id": "sr:competitor:130108",
+      "name": "Jiangsu Dragons",
+      "short_name": "Jiangsu Dragons",
+      "abbreviation": "JIA"
+    },
+    {
+      "id": "sr:competitor:130110",
+      "name": "Xinjiang Flying Tigers",
+      "short_name": "Xinjiang Flying Tigers",
+      "abbreviation": "XIN"
+    },
+    {
+      "id": "sr:competitor:130112",
+      "name": "Liaoning Flying Leopards",
+      "short_name": "Liaoning Flying Leopards",
+      "abbreviation": "LIA"
+    },
+    {
+      "id": "sr:competitor:130114",
+      "name": "Shenzhen Leopards",
+      "short_name": "Shenzhen Leopards",
+      "abbreviation": "LEO"
+    },
+    {
+      "id": "sr:competitor:130116",
+      "name": "Tianjin Pioneers",
+      "short_name": "Tianjin Pioneers",
+      "abbreviation": "TIA"
+    },
+    {
+      "id": "sr:competitor:130118",
+      "name": "Jilin Northeast Tigers",
+      "short_name": "Jilin Northeast Tigers",
+      "abbreviation": "JIL"
+    },
+    {
+      "id": "sr:competitor:130120",
+      "name": "Shandong Kirin",
+      "short_name": "Shandong Kirin",
+      "abbreviation": "SHA"
+    },
+    {
+      "id": "sr:competitor:130122",
+      "name": "Shanghai Sharks",
+      "short_name": "Shanghai Sharks",
+      "abbreviation": "SHA"
+    },
+    {
+      "id": "sr:competitor:130124",
+      "name": "Beijing Ducks",
+      "short_name": "Beijing Ducks",
+      "abbreviation": "BED"
+    },
+    {
+      "id": "sr:competitor:130126",
+      "name": "Shanxi Loongs",
+      "short_name": "Shanxi Loongs",
+      "abbreviation": "SHA"
+    },
+    {
+      "id": "sr:competitor:130128",
+      "name": "Qingdao Eagles",
+      "short_name": "Qingdao Eagles",
+      "abbreviation": "QIN"
+    },
+    {
+      "id": "sr:competitor:181738",
+      "name": "Beijing Royal Fighters",
+      "short_name": "Beijing Royal Fighters",
+      "abbreviation": "BRF"
+    },
+    {
+      "id": "sr:competitor:181740",
+      "name": "Nanjing Monkey Kings",
+      "short_name": "Nanjing Monkey Kings",
+      "abbreviation": "NAN"
+    },
+    {
+      "id": "sr:competitor:847454",
+      "name": "Ningbo Rockets",
+      "short_name": "Ningbo Rockets",
+      "abbreviation": "NIN"
+    },
+    {
+      "id": "sr:competitor:6125",
+      "name": "Australia",
+      "short_name": "Australia",
+      "abbreviation": "AUS"
+    },
+    {
+      "id": "sr:competitor:6126",
+      "name": "Brazil",
+      "short_name": "Brazil",
+      "abbreviation": "BRA"
+    },
+    {
+      "id": "sr:competitor:6128",
+      "name": "Greece",
+      "short_name": "Greece",
+      "abbreviation": "GRC"
+    },
+    {
+      "id": "sr:competitor:6130",
+      "name": "Japan",
+      "short_name": "Japan",
+      "abbreviation": "JPN"
+    },
+    {
+      "id": "sr:competitor:6136",
+      "name": "Puerto Rico",
+      "short_name": "Puerto Rico",
+      "abbreviation": "PRI"
+    },
+    {
+      "id": "sr:competitor:6139",
+      "name": "Serbia",
+      "short_name": "Serbia",
+      "abbreviation": "SRB"
+    },
+    {
+      "id": "sr:competitor:6141",
+      "name": "USA",
+      "short_name": "USA",
+      "abbreviation": "USA"
+    },
+    {
+      "id": "sr:competitor:6248",
+      "name": "France",
+      "short_name": "France",
+      "abbreviation": "FRA"
+    },
+    {
+      "id": "sr:competitor:6249",
+      "name": "Germany",
+      "short_name": "Germany",
+      "abbreviation": "DEU"
+    },
+    {
+      "id": "sr:competitor:6252",
+      "name": "Spain",
+      "short_name": "Spain",
+      "abbreviation": "ESP"
+    },
+    {
+      "id": "sr:competitor:22380",
+      "name": "Canada",
+      "short_name": "Canada",
+      "abbreviation": "CAN"
+    },
+    {
+      "id": "sr:competitor:599040",
+      "name": "South Sudan",
+      "short_name": "South Sudan",
+      "abbreviation": "SSD"
+    }
+  ]
+}

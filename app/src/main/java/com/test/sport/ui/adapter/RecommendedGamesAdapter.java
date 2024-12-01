@@ -135,4 +135,13 @@ public class RecommendedGamesAdapter extends RecyclerView.Adapter<RecommendedGam
             tvRecommendReason = itemView.findViewById(R.id.tv_recommend_reason);
         }
     }
+
+    public void updateFavoriteTeams(Set<String> newFavoriteTeams) {
+        Log.d("RecommendDebug", "更新收藏球队列表");
+        Log.d("RecommendDebug", "原收藏球队: " + this.favoriteTeams);
+        Log.d("RecommendDebug", "新收藏球队: " + newFavoriteTeams);
+        
+        this.favoriteTeams = newFavoriteTeams;
+        notifyDataSetChanged();
+    }
 }

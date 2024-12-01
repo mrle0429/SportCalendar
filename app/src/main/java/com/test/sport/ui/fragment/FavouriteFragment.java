@@ -1,6 +1,7 @@
 package com.test.sport.ui.fragment;
 
 import android.content.Context;
+import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.util.Log;
@@ -69,8 +70,18 @@ public class FavouriteFragment extends BaseFragment<FragmentFavouriteBinding>
 
     private void loadTeams(String sport) {
         try {
-            String jsonFileName =
-                "Soccer_UEFA_Champions_League_Teams_24_25.json" ;
+            String jsonFileName = "";
+            switch (sport) {
+                case "Soccer":
+                    jsonFileName = "Soccer_UEFA_Champions_League_Teams_24_25.json";
+                    break;
+                case "Basketball":
+                    jsonFileName = "Basketball_Teams.json";
+                    break;
+            
+
+            }
+
             
             String jsonStr = Tools.readAssetFile(getContext(), jsonFileName);
             if (jsonStr == null) {
@@ -86,7 +97,10 @@ public class FavouriteFragment extends BaseFragment<FragmentFavouriteBinding>
             // 解析JSON数据
             JSONObject json = JSON.parseObject(jsonStr);
             List<Team> teams;
+
             if ("Soccer".equals(sport)) {
+                teams = parseSoccerTeams(json, savedTeams);
+            } else if ("Basketball".equals(sport)) {
                 teams = parseSoccerTeams(json, savedTeams);
             } else {
                 teams = parseOtherTeams(json, savedTeams);
@@ -141,6 +155,12 @@ public class FavouriteFragment extends BaseFragment<FragmentFavouriteBinding>
         }
         
         prefs.edit().putStringSet(KEY_FAVORITE_TEAMS, favorites).apply();
+
+        // 发送广播通知收藏变化
+        Intent intent = new Intent("com.test.sport.FAVORITES_CHANGED");
+        requireContext().sendBroadcast(intent);
+        
+    Log.d("FavoriteDebug", "收藏状态更新 - 球队: " + team.getName() + ", 新状态: " + newState);
     }
 
     public void onSportChanged(String newSport) {

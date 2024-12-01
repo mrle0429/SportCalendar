@@ -141,11 +141,18 @@ public class HomeFragment extends BaseFragment<FragmentHomeBinding> implements V
         super.onViewCreated(view, savedInstanceState);
         Log.d("HomeFragment1", "注册广播接收器");
         IntentFilter filter = new IntentFilter("com.test.sport.TIMEZONE_CHANGED");
-    getActivity().registerReceiver(timezoneChangedReceiver, filter);
+        getActivity().registerReceiver(timezoneChangedReceiver, filter);
 
       // 注册默认运动变化广播
       IntentFilter sportFilter = new IntentFilter("com.test.sport.DEFAULT_SPORT_CHANGED");
       getActivity().registerReceiver(sportChangedReceiver, sportFilter);
+
+      // 注册收藏变化广播
+    IntentFilter favoritesFilter = new IntentFilter("com.test.sport.FAVORITES_CHANGED");
+    requireContext().registerReceiver(favoritesChangedReceiver, favoritesFilter);
+    
+    Log.d("HomeFragment", "注册收藏变化广播接收器");
+
       
       // 初始化默认运动
       SharedPreferences prefs = getActivity().getSharedPreferences(PREFS_NAME, Context.MODE_PRIVATE);
@@ -197,6 +204,28 @@ public class HomeFragment extends BaseFragment<FragmentHomeBinding> implements V
     }
 };
 
+// 添加广播接收器
+private final BroadcastReceiver favoritesChangedReceiver = new BroadcastReceiver() {
+    @Override
+    public void onReceive(Context context, Intent intent) {
+        if ("com.test.sport.FAVORITES_CHANGED".equals(intent.getAction())) {
+            Log.d("FavoriteDebug", "HomeFragment收到收藏变化广播");
+            
+            // 获取最新的收藏球队列表
+            SharedPreferences prefs = requireContext().getSharedPreferences(PREFS_NAME, Context.MODE_PRIVATE);
+            Set<String> newFavorites = prefs.getStringSet(KEY_FAVORITE_TEAMS, new HashSet<>());
+            
+            // 更新推荐适配器中的收藏球队集合
+            if (recommendedAdapter != null) {
+                Log.d("FavoriteDebug", "更新推荐适配器的收藏球队列表: " + newFavorites);
+                recommendedAdapter.updateFavoriteTeams(newFavorites);
+                // 重新请求数据以更新推荐列表
+                request(index);
+            }
+        }
+    }
+};
+
     @Override
     public void onDestroyView() {
     super.onDestroyView();
@@ -206,6 +235,11 @@ public class HomeFragment extends BaseFragment<FragmentHomeBinding> implements V
     if (sportChangedReceiver != null) {
         getActivity().unregisterReceiver(sportChangedReceiver);
     }
+    if (favoritesChangedReceiver != null) {
+        requireContext().unregisterReceiver(favoritesChangedReceiver);
+    }
+
+
 }
     // 搜索功能
     private void search() {
@@ -355,8 +389,8 @@ public class HomeFragment extends BaseFragment<FragmentHomeBinding> implements V
         final Object lock = new Object();
         
         try {
-            Log.d("TimeDebug", "今天：" + date);
-            Log.d("TimeDebug", "昨天：" + previousDate);
+            Log.d("DateDebug", "今天：" + date);
+            Log.d("DateDebug", "昨天：" + previousDate);
             // 请求两天的数据
 
             
@@ -365,6 +399,7 @@ public class HomeFragment extends BaseFragment<FragmentHomeBinding> implements V
                 public void onComplete() {
                     synchronized (lock) {
                         completedRequests[0]++;
+                        Log.d("DateDebug", "昨天(" + previousDate + ")请求完成，当前比赛列表大小: " + gameList.size());
                         if (completedRequests[0] == 2) {
                             // 两个请求都完成后才更新UI
                             handler.sendEmptyMessage(1);
@@ -379,6 +414,7 @@ public class HomeFragment extends BaseFragment<FragmentHomeBinding> implements V
                 public void onComplete() {
                     synchronized (lock) {
                         completedRequests[0]++;
+                        Log.d("DateDebug", "今天(" + date + ")请求完成，当前比赛列表大小: " + gameList.size());
                         if (completedRequests[0] == 2) {
                             // 两个请求都完成后才更新UI
                             handler.sendEmptyMessage(1);
@@ -402,6 +438,7 @@ public class HomeFragment extends BaseFragment<FragmentHomeBinding> implements V
     }
 
     private void requestForDate(int index, String requestDate, RequestCallback callback) {
+        Log.d("DateDebug", "准备请求日期: " + requestDate + ", 运动索引: " + index);
         switch (index) {
             case 0:
                 address = Constants.BASKET_BALL_URL + requestDate + Constants.SUFFIX + "?api_key=" + Constants.BASKET_BALL_KEY;
@@ -420,6 +457,7 @@ public class HomeFragment extends BaseFragment<FragmentHomeBinding> implements V
                 address = Constants.TENNIS_URL + requestDate + Constants.SUFFIX + "?api_key=" + Constants.TENNIS_KEY;
                 break;
         }
+        Log.d("DateDebug", "请求URL: " + address);
 
         OkHttpUtil.sendHttpRequest(address, new okhttp3.Callback() {
             @Override
@@ -430,12 +468,20 @@ public class HomeFragment extends BaseFragment<FragmentHomeBinding> implements V
                     String selectedDate = date;
                     if (sport.getSummaries() != null) {
                         synchronized (gameList) {  // 添加同步锁
+                            Log.d("DateDebug", "处理 " + requestDate + " 的响应数据");
+                            Log.d("DateDebug", "请求地址: " + call.request().url());
+                            Log.d("DateDebug", "API返回比赛总数: " + sport.getSummaries().size());
+
                             
                             for (Sport.SummariesDTO summariesDTO : sport.getSummaries()) {
                                 String startTime = Tools.getTime(summariesDTO.getSportEvent().getStartTime(), timeZoneId);
                                 String gameDate = startTime.split(" ")[0];
 
+                                Log.d("DateDebug", "比赛转换日期" + gameDate);
+
+
                                 if (gameDate.equals(selectedDate)) {
+
                                     Game game = new Game();
                                     game.setSport_name(summariesDTO.getSportEvent().getSportEventContext().getSport().getName());
                                     game.setStart_time(Tools.getTime(summariesDTO.getSportEvent().getStartTime(), timeZoneId));
@@ -506,6 +552,7 @@ public class HomeFragment extends BaseFragment<FragmentHomeBinding> implements V
             @Override
             public void onFailure(@NonNull Call call, @NonNull IOException e) {
                 getActivity().runOnUiThread(() -> {
+                    Log.d("DateDebug", "失败");
                     showToast("Network request failed");
                     callback.onComplete();  // 即使失败也要调用回调
                 });

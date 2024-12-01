@@ -1,0 +1,7053 @@
+{
+  "generated_at": "2024-12-01T03:40:05+00:00",
+  "seasons": [
+    {
+      "id": "sr:season:94573",
+      "name": "NBA 22/23",
+      "start_date": "2022-10-18",
+      "end_date": "2023-06-13",
+      "year": "22/23",
+      "competition_id": "sr:competition:132"
+    },
+    {
+      "id": "sr:season:106289",
+      "name": "NBA 23/24",
+      "start_date": "2023-10-24",
+      "end_date": "2024-06-18",
+      "year": "23/24",
+      "competition_id": "sr:competition:132"
+    },
+    {
+      "id": "sr:season:119257",
+      "name": "NBA 24/25",
+      "start_date": "2024-10-22",
+      "end_date": "2025-06-22",
+      "year": "24/25",
+      "competition_id": "sr:competition:132"
+    },
+    {
+      "id": "sr:season:94679",
+      "name": "Euroleague 22/23",
+      "start_date": "2022-09-01",
+      "end_date": "2023-05-31",
+      "year": "22/23",
+      "competition_id": "sr:competition:138"
+    },
+    {
+      "id": "sr:season:107209",
+      "name": "Euroleague 23/24",
+      "start_date": "2023-10-05",
+      "end_date": "2024-05-26",
+      "year": "23/24",
+      "competition_id": "sr:competition:138"
+    },
+    {
+      "id": "sr:season:119811",
+      "name": "Euroleague 24/25",
+      "start_date": "2024-10-03",
+      "end_date": "2025-05-25",
+      "year": "24/25",
+      "competition_id": "sr:competition:138"
+    },
+    {
+      "id": "sr:season:95517",
+      "name": "Eurocup 22/23",
+      "start_date": "2022-10-11",
+      "end_date": "2023-05-03",
+      "year": "22/23",
+      "competition_id": "sr:competition:141"
+    },
+    {
+      "id": "sr:season:107741",
+      "name": "Eurocup 23/24",
+      "start_date": "2023-10-03",
+      "end_date": "2024-04-12",
+      "year": "23/24",
+      "competition_id": "sr:competition:141"
+    },
+    {
+      "id": "sr:season:120713",
+      "name": "Eurocup 24/25",
+      "start_date": "2024-09-24",
+      "end_date": "2025-04-16",
+      "year": "24/25",
+      "competition_id": "sr:competition:141"
+    },
+    {
+      "id": "sr:season:95965",
+      "name": "Pro A 22/23",
+      "start_date": "2022-09-23",
+      "end_date": "2023-06-15",
+      "year": "22/23",
+      "competition_id": "sr:competition:156"
+    },
+    {
+      "id": "sr:season:108153",
+      "name": "Pro A 23/24",
+      "start_date": "2023-09-16",
+      "end_date": "2024-06-12",
+      "year": "23/24",
+      "competition_id": "sr:competition:156"
+    },
+    {
+      "id": "sr:season:121037",
+      "name": "Pro A 24/25",
+      "start_date": "2024-09-20",
+      "end_date": "2025-06-12",
+      "year": "24/25",
+      "competition_id": "sr:competition:156"
+    },
+    {
+      "id": "sr:season:97599",
+      "name": "Korisliiga 22/23",
+      "start_date": "2022-09-30",
+      "end_date": "2023-05-18",
+      "year": "22/23",
+      "competition_id": "sr:competition:226"
+    },
+    {
+      "id": "sr:season:109993",
+      "name": "Korisliiga 23/24",
+      "start_date": "2023-09-30",
+      "end_date": "2024-05-24",
+      "year": "23/24",
+      "competition_id": "sr:competition:226"
+    },
+    {
+      "id": "sr:season:120741",
+      "name": "Korisliiga 24/25",
+      "start_date": "2024-10-04",
+      "end_date": "2025-05-25",
+      "year": "24/25",
+      "competition_id": "sr:competition:226"
+    },
+    {
+      "id": "sr:season:96519",
+      "name": "BBL 22/23",
+      "start_date": "2022-09-28",
+      "end_date": "2023-06-16",
+      "year": "22/23",
+      "competition_id": "sr:competition:227"
+    },
+    {
+      "id": "sr:season:107755",
+      "name": "BBL 23/24",
+      "start_date": "2023-09-27",
+      "end_date": "2024-06-14",
+      "year": "23/24",
+      "competition_id": "sr:competition:227"
+    },
+    {
+      "id": "sr:season:122013",
+      "name": "BBL 24/25",
+      "start_date": "2024-09-20",
+      "end_date": "2025-06-14",
+      "year": "24/25",
+      "competition_id": "sr:competition:227"
+    },
+    {
+      "id": "sr:season:86158",
+      "name": "BBL 21/22",
+      "start_date": "2021-10-29",
+      "end_date": "2022-05-31",
+      "year": "21/22",
+      "competition_id": "sr:competition:230"
+    },
+    {
+      "id": "sr:season:96315",
+      "name": "BBL 22/23",
+      "start_date": "2022-09-23",
+      "end_date": "2023-05-15",
+      "year": "22/23",
+      "competition_id": "sr:competition:230"
+    },
+    {
+      "id": "sr:season:109621",
+      "name": "BBL 23/24",
+      "start_date": "2023-09-14",
+      "end_date": "2024-05-31",
+      "year": "23/24",
+      "competition_id": "sr:competition:230"
+    },
+    {
+      "id": "sr:season:96089",
+      "name": "Liga ABA 22/23",
+      "start_date": "2022-09-30",
+      "end_date": "2023-06-22",
+      "year": "22/23",
+      "competition_id": "sr:competition:235"
+    },
+    {
+      "id": "sr:season:108489",
+      "name": "Liga ABA 23/24",
+      "start_date": "2023-09-29",
+      "end_date": "2024-05-19",
+      "year": "23/24",
+      "competition_id": "sr:competition:235"
+    },
+    {
+      "id": "sr:season:120009",
+      "name": "Liga ABA 24/25",
+      "start_date": "2024-09-20",
+      "end_date": "2025-06-16",
+      "year": "24/25",
+      "competition_id": "sr:competition:235"
+    },
+    {
+      "id": "sr:season:96323",
+      "name": "NBL 22/23",
+      "start_date": "2022-10-01",
+      "end_date": "2023-06-03",
+      "year": "22/23",
+      "competition_id": "sr:competition:250"
+    },
+    {
+      "id": "sr:season:108015",
+      "name": "NBL 23/24",
+      "start_date": "2023-09-23",
+      "end_date": "2024-05-30",
+      "year": "23/24",
+      "competition_id": "sr:competition:250"
+    },
+    {
+      "id": "sr:season:120683",
+      "name": "NBL 24/25",
+      "start_date": "2024-09-21",
+      "end_date": "2025-05-30",
+      "year": "24/25",
+      "competition_id": "sr:competition:250"
+    },
+    {
+      "id": "sr:season:97399",
+      "name": "1. DBBL 22/23",
+      "start_date": "2022-10-14",
+      "end_date": "2023-04-25",
+      "year": "22/23",
+      "competition_id": "sr:competition:251"
+    },
+    {
+      "id": "sr:season:108513",
+      "name": "1. DBBL 23/24",
+      "start_date": "2023-09-30",
+      "end_date": "2024-05-04",
+      "year": "23/24",
+      "competition_id": "sr:competition:251"
+    },
+    {
+      "id": "sr:season:122915",
+      "name": "1. DBBL 24/25",
+      "start_date": "2024-09-28",
+      "end_date": "2025-05-01",
+      "year": "24/25",
+      "competition_id": "sr:competition:251"
+    },
+    {
+      "id": "sr:season:95207",
+      "name": "Serie A 22/23",
+      "start_date": "2022-10-01",
+      "end_date": "2023-06-23",
+      "year": "22/23",
+      "competition_id": "sr:competition:262"
+    },
+    {
+      "id": "sr:season:108573",
+      "name": "Serie A 23/24",
+      "start_date": "2023-09-30",
+      "end_date": "2024-06-13",
+      "year": "23/24",
+      "competition_id": "sr:competition:262"
+    },
+    {
+      "id": "sr:season:121763",
+      "name": "Serie A 24/25",
+      "start_date": "2024-09-28",
+      "end_date": "2025-06-30",
+      "year": "24/25",
+      "competition_id": "sr:competition:262"
+    },
+    {
+      "id": "sr:season:96869",
+      "name": "PLK 22/23",
+      "start_date": "2022-09-22",
+      "end_date": "2023-06-15",
+      "year": "22/23",
+      "competition_id": "sr:competition:263"
+    },
+    {
+      "id": "sr:season:109307",
+      "name": "Basket Liga 23/24",
+      "start_date": "2023-09-21",
+      "end_date": "2024-06-16",
+      "year": "23/24",
+      "competition_id": "sr:competition:263"
+    },
+    {
+      "id": "sr:season:122641",
+      "name": "PLK 24/25",
+      "start_date": "2024-10-03",
+      "end_date": "2025-06-22",
+      "year": "24/25",
+      "competition_id": "sr:competition:263"
+    },
+    {
+      "id": "sr:season:95247",
+      "name": "Liga ACB 22/23",
+      "start_date": "2022-09-28",
+      "end_date": "2023-06-20",
+      "year": "22/23",
+      "competition_id": "sr:competition:264"
+    },
+    {
+      "id": "sr:season:108577",
+      "name": "Liga ACB 23/24",
+      "start_date": "2023-09-23",
+      "end_date": "2024-06-12",
+      "year": "23/24",
+      "competition_id": "sr:competition:264"
+    },
+    {
+      "id": "sr:season:121753",
+      "name": "Liga ACB 24/25",
+      "start_date": "2024-09-28",
+      "end_date": "2025-06-30",
+      "year": "24/25",
+      "competition_id": "sr:competition:264"
+    },
+    {
+      "id": "sr:season:33387",
+      "name": "Olympic Games 2016",
+      "start_date": "2016-08-06",
+      "end_date": "2016-08-22",
+      "year": "2016",
+      "competition_id": "sr:competition:276"
+    },
+    {
+      "id": "sr:season:84828",
+      "name": "Olympic Games 2021",
+      "start_date": "2021-07-24",
+      "end_date": "2021-08-08",
+      "year": "2021",
+      "competition_id": "sr:competition:276"
+    },
+    {
+      "id": "sr:season:116851",
+      "name": "Olympic Games 2024",
+      "start_date": "2024-07-27",
+      "end_date": "2024-08-10",
+      "year": "2024",
+      "competition_id": "sr:competition:276"
+    },
+    {
+      "id": "sr:season:97079",
+      "name": "SBL 22/23",
+      "start_date": "2022-09-23",
+      "end_date": "2023-05-11",
+      "year": "22/23",
+      "competition_id": "sr:competition:277"
+    },
+    {
+      "id": "sr:season:108023",
+      "name": "SBL 23/24",
+      "start_date": "2023-09-21",
+      "end_date": "2024-05-20",
+      "year": "23/24",
+      "competition_id": "sr:competition:277"
+    },
+    {
+      "id": "sr:season:120703",
+      "name": "SBL 24/25",
+      "start_date": "2024-10-03",
+      "end_date": "2025-05-23",
+      "year": "24/25",
+      "competition_id": "sr:competition:277"
+    },
+    {
+      "id": "sr:season:9607",
+      "name": "European Championship 2015",
+      "start_date": "2015-09-05",
+      "end_date": "2015-09-21",
+      "year": "2015",
+      "competition_id": "sr:competition:285"
+    },
+    {
+      "id": "sr:season:36336",
+      "name": "European Championship 2017",
+      "start_date": "2017-08-31",
+      "end_date": "2017-09-18",
+      "year": "2017",
+      "competition_id": "sr:competition:285"
+    },
+    {
+      "id": "sr:season:85294",
+      "name": "European Championship 2022",
+      "start_date": "2022-09-01",
+      "end_date": "2022-09-18",
+      "year": "2022",
+      "competition_id": "sr:competition:285"
+    },
+    {
+      "id": "sr:season:96877",
+      "name": "Superliga 22/23",
+      "start_date": "2022-09-29",
+      "end_date": "2023-05-29",
+      "year": "22/23",
+      "competition_id": "sr:competition:297"
+    },
+    {
+      "id": "sr:season:110229",
+      "name": "Superliga 23/24",
+      "start_date": "2023-09-30",
+      "end_date": "2024-05-23",
+      "year": "23/24",
+      "competition_id": "sr:competition:297"
+    },
+    {
+      "id": "sr:season:123861",
+      "name": "Superliga 24/25",
+      "start_date": "2024-09-27",
+      "end_date": "2025-05-23",
+      "year": "24/25",
+      "competition_id": "sr:competition:297"
+    },
+    {
+      "id": "sr:season:98425",
+      "name": "Superliga, Women 22/23",
+      "start_date": "2022-10-01",
+      "end_date": "2023-05-31",
+      "year": "22/23",
+      "competition_id": "sr:competition:300"
+    },
+    {
+      "id": "sr:season:110427",
+      "name": "Superliga, Women 23/24",
+      "start_date": "2023-10-10",
+      "end_date": "2024-04-07",
+      "year": "23/24",
+      "competition_id": "sr:competition:300"
+    },
+    {
+      "id": "sr:season:123869",
+      "name": "Superliga, Women 24/25",
+      "start_date": "2024-09-28",
+      "end_date": "2025-04-07",
+      "year": "24/25",
+      "competition_id": "sr:competition:300"
+    },
+    {
+      "id": "sr:season:97423",
+      "name": "A1 22/23",
+      "start_date": "2022-10-08",
+      "end_date": "2023-06-18",
+      "year": "22/23",
+      "competition_id": "sr:competition:304"
+    },
+    {
+      "id": "sr:season:108683",
+      "name": "A1 23/24",
+      "start_date": "2023-10-06",
+      "end_date": "2024-06-14",
+      "year": "23/24",
+      "competition_id": "sr:competition:304"
+    },
+    {
+      "id": "sr:season:121387",
+      "name": "Greek Basketball League 24/25",
+      "start_date": "2024-10-05",
+      "end_date": "2025-05-31",
+      "year": "24/25",
+      "competition_id": "sr:competition:304"
+    },
+    {
+      "id": "sr:season:95825",
+      "name": "BBL-Pokal 22/23",
+      "start_date": "2022-10-15",
+      "end_date": "2023-02-19",
+      "year": "22/23",
+      "competition_id": "sr:competition:359"
+    },
+    {
+      "id": "sr:season:108063",
+      "name": "BBL-Pokal 23/24",
+      "start_date": "2023-09-22",
+      "end_date": "2024-02-18",
+      "year": "23/24",
+      "competition_id": "sr:competition:359"
+    },
+    {
+      "id": "sr:season:121465",
+      "name": "BBL-Pokal 24/25",
+      "start_date": "2024-09-14",
+      "end_date": "2025-02-18",
+      "year": "24/25",
+      "competition_id": "sr:competition:359"
+    },
+    {
+      "id": "sr:season:90783",
+      "name": "Copa del Rey 2022",
+      "start_date": "2022-02-17",
+      "end_date": "2022-02-20",
+      "year": "2022",
+      "competition_id": "sr:competition:396"
+    },
+    {
+      "id": "sr:season:102147",
+      "name": "Copa del Rey 2023",
+      "start_date": "2023-02-16",
+      "end_date": "2023-02-19",
+      "year": "2023",
+      "competition_id": "sr:competition:396"
+    },
+    {
+      "id": "sr:season:114863",
+      "name": "Copa del Rey 2024",
+      "start_date": "2024-02-15",
+      "end_date": "2024-02-18",
+      "year": "2024",
+      "competition_id": "sr:competition:396"
+    },
+    {
+      "id": "sr:season:75243",
+      "name": "Leaders Cup LNB 2020",
+      "start_date": "2020-02-14",
+      "end_date": "2020-02-17",
+      "year": "2020",
+      "competition_id": "sr:competition:405"
+    },
+    {
+      "id": "sr:season:102217",
+      "name": "Leaders Cup LNB 2023",
+      "start_date": "2023-02-17",
+      "end_date": "2023-02-19",
+      "year": "2023",
+      "competition_id": "sr:competition:405"
+    },
+    {
+      "id": "sr:season:114845",
+      "name": "Leaders Cup LNB 2024",
+      "start_date": "2024-02-16",
+      "end_date": "2024-02-18",
+      "year": "2024",
+      "competition_id": "sr:competition:405"
+    },
+    {
+      "id": "sr:season:33023",
+      "name": "Olympic Games, QF 2016",
+      "start_date": "2016-07-01",
+      "end_date": "2016-07-11",
+      "year": "2016",
+      "competition_id": "sr:competition:432"
+    },
+    {
+      "id": "sr:season:75141",
+      "name": "Olympic Games, QF 2020",
+      "start_date": "2021-06-22",
+      "end_date": "2021-07-04",
+      "year": "2021",
+      "competition_id": "sr:competition:432"
+    },
+    {
+      "id": "sr:season:106899",
+      "name": "Olympic Games, Qualification 2024",
+      "start_date": "2023-08-12",
+      "end_date": "2024-07-07",
+      "year": "23/24",
+      "competition_id": "sr:competition:432"
+    },
+    {
+      "id": "sr:season:33399",
+      "name": "Olympic Games Women 2016",
+      "start_date": "2016-08-06",
+      "end_date": "2016-08-22",
+      "year": "2016",
+      "competition_id": "sr:competition:440"
+    },
+    {
+      "id": "sr:season:82812",
+      "name": "Olympic Games Women 2021",
+      "start_date": "2021-07-26",
+      "end_date": "2021-08-09",
+      "year": "2021",
+      "competition_id": "sr:competition:440"
+    },
+    {
+      "id": "sr:season:116849",
+      "name": "Olympic Games Women 2024",
+      "start_date": "2024-07-28",
+      "end_date": "2024-08-11",
+      "year": "2024",
+      "competition_id": "sr:competition:440"
+    },
+    {
+      "id": "sr:season:7964",
+      "name": "FIBA World Cup 2014",
+      "start_date": "2014-08-29",
+      "end_date": "2014-09-15",
+      "year": "2014",
+      "competition_id": "sr:competition:441"
+    },
+    {
+      "id": "sr:season:64842",
+      "name": "FIBA World Cup 2019",
+      "start_date": "2019-08-31",
+      "end_date": "2019-09-16",
+      "year": "2019",
+      "competition_id": "sr:competition:441"
+    },
+    {
+      "id": "sr:season:104911",
+      "name": "FIBA World Cup 2023",
+      "start_date": "2023-08-25",
+      "end_date": "2023-09-10",
+      "year": "2023",
+      "competition_id": "sr:competition:441"
+    },
+    {
+      "id": "sr:season:8288",
+      "name": "Fiba World Championship Women 2014",
+      "start_date": "2014-09-27",
+      "end_date": "2014-10-06",
+      "year": "2014",
+      "competition_id": "sr:competition:442"
+    },
+    {
+      "id": "sr:season:55419",
+      "name": "FIBA World Championship Women 2018",
+      "start_date": "2018-09-22",
+      "end_date": "2018-10-01",
+      "year": "2018",
+      "competition_id": "sr:competition:442"
+    },
+    {
+      "id": "sr:season:92827",
+      "name": "FIBA World Cup Women 2022",
+      "start_date": "2022-09-21",
+      "end_date": "2022-10-01",
+      "year": "2022",
+      "competition_id": "sr:competition:442"
+    },
+    {
+      "id": "sr:season:98411",
+      "name": "WNBA 2023",
+      "start_date": "2023-05-19",
+      "end_date": "2023-10-19",
+      "year": "2023",
+      "competition_id": "sr:competition:486"
+    },
+    {
+      "id": "sr:season:112470",
+      "name": "WNBA 2024",
+      "start_date": "2024-05-13",
+      "end_date": "2024-10-21",
+      "year": "2024",
+      "competition_id": "sr:competition:486"
+    },
+    {
+      "id": "sr:season:97425",
+      "name": "Super Lig 22/23",
+      "start_date": "2022-09-30",
+      "end_date": "2023-06-30",
+      "year": "22/23",
+      "competition_id": "sr:competition:519"
+    },
+    {
+      "id": "sr:season:108579",
+      "name": "Super Lig 23/24",
+      "start_date": "2023-09-29",
+      "end_date": "2024-06-12",
+      "year": "23/24",
+      "competition_id": "sr:competition:519"
+    },
+    {
+      "id": "sr:season:122381",
+      "name": "Super Lig 24/25",
+      "start_date": "2024-10-04",
+      "end_date": "2025-06-12",
+      "year": "24/25",
+      "competition_id": "sr:competition:519"
+    },
+    {
+      "id": "sr:season:3064",
+      "name": "Lega Due 10/11",
+      "start_date": "2010-10-01",
+      "end_date": "2011-06-24",
+      "year": "10/11",
+      "competition_id": "sr:competition:555"
+    },
+    {
+      "id": "sr:season:3833",
+      "name": "Lega Due 11/12",
+      "start_date": "2011-10-02",
+      "end_date": "2012-06-17",
+      "year": "11/12",
+      "competition_id": "sr:competition:555"
+    },
+    {
+      "id": "sr:season:5417",
+      "name": "Lega Due 12/13",
+      "start_date": "2012-10-05",
+      "end_date": "2013-06-22",
+      "year": "12/13",
+      "competition_id": "sr:competition:555"
+    },
+    {
+      "id": "sr:season:96859",
+      "name": "A1 Women 22/23",
+      "start_date": "2022-10-01",
+      "end_date": "2023-05-02",
+      "year": "22/23",
+      "competition_id": "sr:competition:556"
+    },
+    {
+      "id": "sr:season:108915",
+      "name": "A1 Women 23/24",
+      "start_date": "2023-09-30",
+      "end_date": "2024-05-21",
+      "year": "23/24",
+      "competition_id": "sr:competition:556"
+    },
+    {
+      "id": "sr:season:122021",
+      "name": "A1 Women 24/25",
+      "start_date": "2024-09-28",
+      "end_date": "2025-05-21",
+      "year": "24/25",
+      "competition_id": "sr:competition:556"
+    },
+    {
+      "id": "sr:season:6975",
+      "name": "Champions Cup 2013",
+      "start_date": "2013-09-28",
+      "end_date": "2013-09-29",
+      "year": "2013",
+      "competition_id": "sr:competition:575"
+    },
+    {
+      "id": "sr:season:9108",
+      "name": "Champions Cup 2014",
+      "start_date": "2014-09-27",
+      "end_date": "2014-09-28",
+      "year": "2014",
+      "competition_id": "sr:competition:575"
+    },
+    {
+      "id": "sr:season:11150",
+      "name": "Champions Cup 2015",
+      "start_date": "2015-09-27",
+      "end_date": "2015-09-28",
+      "year": "2015",
+      "competition_id": "sr:competition:575"
+    },
+    {
+      "id": "sr:season:97215",
+      "name": "Premijer liga 22/23",
+      "start_date": "2022-10-01",
+      "end_date": "2023-06-30",
+      "year": "22/23",
+      "competition_id": "sr:competition:579"
+    },
+    {
+      "id": "sr:season:109501",
+      "name": "Premijer liga 23/24",
+      "start_date": "2023-09-28",
+      "end_date": "2024-06-03",
+      "year": "23/24",
+      "competition_id": "sr:competition:579"
+    },
+    {
+      "id": "sr:season:122717",
+      "name": "Premijer liga 24/25",
+      "start_date": "2024-09-26",
+      "end_date": "2025-06-14",
+      "year": "24/25",
+      "competition_id": "sr:competition:579"
+    },
+    {
+      "id": "sr:season:97217",
+      "name": "A1 Liga Women 22/23",
+      "start_date": "2022-10-01",
+      "end_date": "2023-06-30",
+      "year": "22/23",
+      "competition_id": "sr:competition:580"
+    },
+    {
+      "id": "sr:season:109987",
+      "name": "A1 Liga Women 23/24",
+      "start_date": "2023-09-30",
+      "end_date": "2024-05-28",
+      "year": "23/24",
+      "competition_id": "sr:competition:580"
+    },
+    {
+      "id": "sr:season:122867",
+      "name": "A1 Liga Women 24/25",
+      "start_date": "2024-09-28",
+      "end_date": "2025-05-28",
+      "year": "24/25",
+      "competition_id": "sr:competition:580"
+    },
+    {
+      "id": "sr:season:97371",
+      "name": "Supercopa 2022",
+      "start_date": "2022-09-24",
+      "end_date": "2022-09-25",
+      "year": "2022",
+      "competition_id": "sr:competition:581"
+    },
+    {
+      "id": "sr:season:109893",
+      "name": "Supercopa 2023",
+      "start_date": "2023-09-16",
+      "end_date": "2023-09-17",
+      "year": "2023",
+      "competition_id": "sr:competition:581"
+    },
+    {
+      "id": "sr:season:123175",
+      "name": "Supercopa 2024",
+      "start_date": "2024-09-21",
+      "end_date": "2024-09-22",
+      "year": "2024",
+      "competition_id": "sr:competition:581"
+    },
+    {
+      "id": "sr:season:11594",
+      "name": "Baltic Basketball League 15/16",
+      "start_date": "2015-10-09",
+      "end_date": "2016-04-18",
+      "year": "15/16",
+      "competition_id": "sr:competition:582"
+    },
+    {
+      "id": "sr:season:35297",
+      "name": "Baltic Basketball League 16/17",
+      "start_date": "2016-10-10",
+      "end_date": "2017-04-16",
+      "year": "16/17",
+      "competition_id": "sr:competition:582"
+    },
+    {
+      "id": "sr:season:46642",
+      "name": "Baltic Basketball League 17/18",
+      "start_date": "2017-10-24",
+      "end_date": "2018-04-05",
+      "year": "17/18",
+      "competition_id": "sr:competition:582"
+    },
+    {
+      "id": "sr:season:3086",
+      "name": "PBL 10/11",
+      "start_date": "2010-10-09",
+      "end_date": "2011-06-30",
+      "year": "10/11",
+      "competition_id": "sr:competition:607"
+    },
+    {
+      "id": "sr:season:3999",
+      "name": "PBL 11/12",
+      "start_date": "2011-10-06",
+      "end_date": "2012-05-27",
+      "year": "11/12",
+      "competition_id": "sr:competition:607"
+    },
+    {
+      "id": "sr:season:5551",
+      "name": "PBL 12/13",
+      "start_date": "2012-10-03",
+      "end_date": "2013-05-17",
+      "year": "12/13",
+      "competition_id": "sr:competition:607"
+    },
+    {
+      "id": "sr:season:87284",
+      "name": "Greece Cup 21/22",
+      "start_date": "2021-09-18",
+      "end_date": "2022-02-21",
+      "year": "21/22",
+      "competition_id": "sr:competition:608"
+    },
+    {
+      "id": "sr:season:100145",
+      "name": "Greece Cup 22/23",
+      "start_date": "2022-11-09",
+      "end_date": "2023-02-19",
+      "year": "22/23",
+      "competition_id": "sr:competition:608"
+    },
+    {
+      "id": "sr:season:114191",
+      "name": "Greece Cup 2024",
+      "start_date": "2024-01-05",
+      "end_date": "2024-05-31",
+      "year": "2024",
+      "competition_id": "sr:competition:608"
+    },
+    {
+      "id": "sr:season:92849",
+      "name": "NCAA, Regular Season 22/23",
+      "start_date": "2022-11-07",
+      "end_date": "2023-03-12",
+      "year": "22/23",
+      "competition_id": "sr:competition:648"
+    },
+    {
+      "id": "sr:season:104319",
+      "name": "NCAA, Regular Season 23/24",
+      "start_date": "2023-11-03",
+      "end_date": "2024-03-17",
+      "year": "23/24",
+      "competition_id": "sr:competition:648"
+    },
+    {
+      "id": "sr:season:117435",
+      "name": "NCAA, Regular Season 24/25",
+      "start_date": "2024-11-01",
+      "end_date": "2025-03-17",
+      "year": "24/25",
+      "competition_id": "sr:competition:648"
+    },
+    {
+      "id": "sr:season:4999",
+      "name": "Eurochallenge 12/13",
+      "start_date": "2012-09-25",
+      "end_date": "2013-04-28",
+      "year": "12/13",
+      "competition_id": "sr:competition:653"
+    },
+    {
+      "id": "sr:season:6717",
+      "name": "Eurochallenge 13/14",
+      "start_date": "2013-11-05",
+      "end_date": "2014-04-28",
+      "year": "13/14",
+      "competition_id": "sr:competition:653"
+    },
+    {
+      "id": "sr:season:8702",
+      "name": "Eurochallenge 14/15",
+      "start_date": "2014-11-04",
+      "end_date": "2015-04-27",
+      "year": "14/15",
+      "competition_id": "sr:competition:653"
+    },
+    {
+      "id": "sr:season:62093",
+      "name": "European Ch.ship Women 2019",
+      "start_date": "2019-06-27",
+      "end_date": "2019-07-08",
+      "year": "2019",
+      "competition_id": "sr:competition:659"
+    },
+    {
+      "id": "sr:season:82946",
+      "name": "European Ch.ship Women 2021",
+      "start_date": "2021-06-17",
+      "end_date": "2021-07-25",
+      "year": "2021",
+      "competition_id": "sr:competition:659"
+    },
+    {
+      "id": "sr:season:103819",
+      "name": "European Ch.ship Women 2023",
+      "start_date": "2023-06-15",
+      "end_date": "2023-06-25",
+      "year": "2023",
+      "competition_id": "sr:competition:659"
+    },
+    {
+      "id": "sr:season:12476",
+      "name": "European Ch.ship QF 2017",
+      "start_date": "2016-08-29",
+      "end_date": "2016-09-19",
+      "year": "2016",
+      "competition_id": "sr:competition:662"
+    },
+    {
+      "id": "sr:season:57954",
+      "name": "European Championship 2021, Qualification",
+      "start_date": "2017-11-23",
+      "end_date": "2021-02-23",
+      "year": "17-21",
+      "competition_id": "sr:competition:662"
+    },
+    {
+      "id": "sr:season:88987",
+      "name": "European Championship Qualification 2025",
+      "start_date": "2021-11-25",
+      "end_date": "2025-03-01",
+      "year": "21-25",
+      "competition_id": "sr:competition:662"
+    },
+    {
+      "id": "sr:season:32527",
+      "name": "Olympic Games Women, QF 2016",
+      "start_date": "2016-06-13",
+      "end_date": "2016-06-28",
+      "year": "2016",
+      "competition_id": "sr:competition:663"
+    },
+    {
+      "id": "sr:season:73235",
+      "name": "Olympic Games Qualification, Women 2020",
+      "start_date": "2019-11-14",
+      "end_date": "2020-02-10",
+      "year": "2020",
+      "competition_id": "sr:competition:663"
+    },
+    {
+      "id": "sr:season:112440",
+      "name": "Olympic Games, Women, Qualification 2024",
+      "start_date": "2023-11-09",
+      "end_date": "2024-02-11",
+      "year": "23/24",
+      "competition_id": "sr:competition:663"
+    },
+    {
+      "id": "sr:season:10360",
+      "name": "American Championship 2015",
+      "start_date": "2015-08-31",
+      "end_date": "2015-09-13",
+      "year": "2015",
+      "competition_id": "sr:competition:681"
+    },
+    {
+      "id": "sr:season:42598",
+      "name": "American Championship 2017",
+      "start_date": "2017-08-25",
+      "end_date": "2017-09-04",
+      "year": "2017",
+      "competition_id": "sr:competition:681"
+    },
+    {
+      "id": "sr:season:92829",
+      "name": "American Championship 2022",
+      "start_date": "2022-09-02",
+      "end_date": "2022-09-12",
+      "year": "2022",
+      "competition_id": "sr:competition:681"
+    },
+    {
+      "id": "sr:season:71884",
+      "name": "Americup 2019",
+      "start_date": "2019-09-22",
+      "end_date": "2019-09-30",
+      "year": "2019",
+      "competition_id": "sr:competition:730"
+    },
+    {
+      "id": "sr:season:83888",
+      "name": "American Ch.ship Women 2021",
+      "start_date": "2021-06-11",
+      "end_date": "2021-06-20",
+      "year": "2021",
+      "competition_id": "sr:competition:730"
+    },
+    {
+      "id": "sr:season:105387",
+      "name": "FIBA AmeriCup, Women 2023",
+      "start_date": "2023-07-01",
+      "end_date": "2023-07-10",
+      "year": "2023",
+      "competition_id": "sr:competition:730"
+    },
+    {
+      "id": "sr:season:97847",
+      "name": "1. A SKL 22/23",
+      "start_date": "2022-09-30",
+      "end_date": "2023-06-10",
+      "year": "22/23",
+      "competition_id": "sr:competition:745"
+    },
+    {
+      "id": "sr:season:110207",
+      "name": "1. SKL 23/24",
+      "start_date": "2023-09-27",
+      "end_date": "2024-05-29",
+      "year": "23/24",
+      "competition_id": "sr:competition:745"
+    },
+    {
+      "id": "sr:season:122551",
+      "name": "1. A SKL 24/25",
+      "start_date": "2024-09-25",
+      "end_date": "2025-05-29",
+      "year": "24/25",
+      "competition_id": "sr:competition:745"
+    },
+    {
+      "id": "sr:season:97467",
+      "name": "KLS 22/23",
+      "start_date": "2022-10-01",
+      "end_date": "2023-06-11",
+      "year": "22/23",
+      "competition_id": "sr:competition:754"
+    },
+    {
+      "id": "sr:season:109947",
+      "name": "KLS 23/24",
+      "start_date": "2023-09-29",
+      "end_date": "2024-06-15",
+      "year": "23/24",
+      "competition_id": "sr:competition:754"
+    },
+    {
+      "id": "sr:season:122643",
+      "name": "KLS 24/25",
+      "start_date": "2024-10-05",
+      "end_date": "2025-06-15",
+      "year": "24/25",
+      "competition_id": "sr:competition:754"
+    },
+    {
+      "id": "sr:season:97055",
+      "name": "Basketligaen 22/23",
+      "start_date": "2022-09-17",
+      "end_date": "2023-05-31",
+      "year": "22/23",
+      "competition_id": "sr:competition:843"
+    },
+    {
+      "id": "sr:season:108029",
+      "name": "Basketligaen 23/24",
+      "start_date": "2023-09-14",
+      "end_date": "2024-05-20",
+      "year": "23/24",
+      "competition_id": "sr:competition:843"
+    },
+    {
+      "id": "sr:season:120803",
+      "name": "Basketligaen 24/25",
+      "start_date": "2024-09-19",
+      "end_date": "2025-05-29",
+      "year": "24/25",
+      "competition_id": "sr:competition:843"
+    },
+    {
+      "id": "sr:season:89665",
+      "name": "Int. Friendly Games 2022",
+      "start_date": "2022-01-01",
+      "end_date": "2022-12-31",
+      "year": "2022",
+      "competition_id": "sr:competition:871"
+    },
+    {
+      "id": "sr:season:100959",
+      "name": "Int. Friendly Games 2023",
+      "start_date": "2023-01-01",
+      "end_date": "2023-12-31",
+      "year": "2023",
+      "competition_id": "sr:competition:871"
+    },
+    {
+      "id": "sr:season:113865",
+      "name": "Int. Friendly Games 2024",
+      "start_date": "2024-01-01",
+      "end_date": "2024-12-31",
+      "year": "2024",
+      "competition_id": "sr:competition:871"
+    },
+    {
+      "id": "sr:season:90857",
+      "name": "NBA All Star Game 2022",
+      "start_date": "2022-02-20",
+      "end_date": "2022-02-21",
+      "year": "2022",
+      "competition_id": "sr:competition:875"
+    },
+    {
+      "id": "sr:season:102373",
+      "name": "NBA All Star Game 2023",
+      "start_date": "2023-02-19",
+      "end_date": "2023-02-20",
+      "year": "2023",
+      "competition_id": "sr:competition:875"
+    },
+    {
+      "id": "sr:season:115043",
+      "name": "NBA All Star Game 2024",
+      "start_date": "2024-02-18",
+      "end_date": "2024-02-19",
+      "year": "2024",
+      "competition_id": "sr:competition:875"
+    },
+    {
+      "id": "sr:season:90789",
+      "name": "Final Eight 2022",
+      "start_date": "2022-02-16",
+      "end_date": "2022-02-21",
+      "year": "2022",
+      "competition_id": "sr:competition:877"
+    },
+    {
+      "id": "sr:season:101997",
+      "name": "Final Eight 2023",
+      "start_date": "2023-02-15",
+      "end_date": "2023-02-19",
+      "year": "2023",
+      "competition_id": "sr:competition:877"
+    },
+    {
+      "id": "sr:season:114563",
+      "name": "Final Eight 2024",
+      "start_date": "2024-02-14",
+      "end_date": "2024-02-18",
+      "year": "2024",
+      "competition_id": "sr:competition:877"
+    },
+    {
+      "id": "sr:season:67997",
+      "name": "U19 World Ch.ship 2019",
+      "start_date": "2019-06-29",
+      "end_date": "2019-07-08",
+      "year": "2019",
+      "competition_id": "sr:competition:887"
+    },
+    {
+      "id": "sr:season:83452",
+      "name": "U19 World Championship 2021",
+      "start_date": "2021-07-03",
+      "end_date": "2021-07-12",
+      "year": "2021",
+      "competition_id": "sr:competition:887"
+    },
+    {
+      "id": "sr:season:104247",
+      "name": "U19 World Championship 2023",
+      "start_date": "2023-06-24",
+      "end_date": "2023-07-02",
+      "year": "2023",
+      "competition_id": "sr:competition:887"
+    },
+    {
+      "id": "sr:season:94943",
+      "name": "U20 EC Div. A Women 2022",
+      "start_date": "2022-07-08",
+      "end_date": "2022-07-16",
+      "year": "2022",
+      "competition_id": "sr:competition:888"
+    },
+    {
+      "id": "sr:season:106485",
+      "name": "U20 EC Div. A Women 2023",
+      "start_date": "2023-07-29",
+      "end_date": "2023-08-06",
+      "year": "2023",
+      "competition_id": "sr:competition:888"
+    },
+    {
+      "id": "sr:season:119051",
+      "name": "U20 EuroBasket, Div. A, Women 2024",
+      "start_date": "2024-07-06",
+      "end_date": "2024-07-14",
+      "year": "2024",
+      "competition_id": "sr:competition:888"
+    },
+    {
+      "id": "sr:season:94949",
+      "name": "U20 EC Div. B Women 2022",
+      "start_date": "2022-07-09",
+      "end_date": "2022-07-17",
+      "year": "2022",
+      "competition_id": "sr:competition:891"
+    },
+    {
+      "id": "sr:season:106525",
+      "name": "U20 EC Div. B Women 2023",
+      "start_date": "2023-07-28",
+      "end_date": "2023-08-06",
+      "year": "2023",
+      "competition_id": "sr:competition:891"
+    },
+    {
+      "id": "sr:season:119179",
+      "name": "U20 EuroBasket, Div. B, Women 2024",
+      "start_date": "2024-07-06",
+      "end_date": "2024-07-14",
+      "year": "2024",
+      "competition_id": "sr:competition:891"
+    },
+    {
+      "id": "sr:season:94895",
+      "name": "U20 EC Div. A 2022",
+      "start_date": "2022-07-16",
+      "end_date": "2022-07-24",
+      "year": "2022",
+      "competition_id": "sr:competition:893"
+    },
+    {
+      "id": "sr:season:106195",
+      "name": "U20 EC Div. A 2023",
+      "start_date": "2023-07-08",
+      "end_date": "2023-07-16",
+      "year": "2023",
+      "competition_id": "sr:competition:893"
+    },
+    {
+      "id": "sr:season:118357",
+      "name": "U20 EuroBasket, Div. A 2024",
+      "start_date": "2024-07-13",
+      "end_date": "2024-07-21",
+      "year": "2024",
+      "competition_id": "sr:competition:893"
+    },
+    {
+      "id": "sr:season:94925",
+      "name": "U20 EC Div. B 2022",
+      "start_date": "2022-07-15",
+      "end_date": "2022-07-25",
+      "year": "2022",
+      "competition_id": "sr:competition:894"
+    },
+    {
+      "id": "sr:season:106197",
+      "name": "U20 EC Div. B 2023",
+      "start_date": "2023-07-07",
+      "end_date": "2023-07-16",
+      "year": "2023",
+      "competition_id": "sr:competition:894"
+    },
+    {
+      "id": "sr:season:119175",
+      "name": "U20 Eurobasket, Div. B 2024",
+      "start_date": "2024-07-12",
+      "end_date": "2024-07-21",
+      "year": "2024",
+      "competition_id": "sr:competition:894"
+    },
+    {
+      "id": "sr:season:94937",
+      "name": "U18 EC Div. A 2022",
+      "start_date": "2022-07-30",
+      "end_date": "2022-08-07",
+      "year": "2022",
+      "competition_id": "sr:competition:895"
+    },
+    {
+      "id": "sr:season:106199",
+      "name": "U18 European Championship, Div. A 2023",
+      "start_date": "2023-07-22",
+      "end_date": "2023-07-30",
+      "year": "2023",
+      "competition_id": "sr:competition:895"
+    },
+    {
+      "id": "sr:season:119083",
+      "name": "U18 EuroBasket, Div. A 2024",
+      "start_date": "2024-07-27",
+      "end_date": "2024-08-05",
+      "year": "2024",
+      "competition_id": "sr:competition:895"
+    },
+    {
+      "id": "sr:season:94941",
+      "name": "U18 EC Div. B 2022",
+      "start_date": "2022-07-29",
+      "end_date": "2022-08-07",
+      "year": "2022",
+      "competition_id": "sr:competition:896"
+    },
+    {
+      "id": "sr:season:106201",
+      "name": "U18 EC Div. B 2023",
+      "start_date": "2023-07-21",
+      "end_date": "2023-07-30",
+      "year": "2023",
+      "competition_id": "sr:competition:896"
+    },
+    {
+      "id": "sr:season:119181",
+      "name": "U18 EuroBasket, Div. B 2024",
+      "start_date": "2024-07-26",
+      "end_date": "2024-08-04",
+      "year": "2024",
+      "competition_id": "sr:competition:896"
+    },
+    {
+      "id": "sr:season:67999",
+      "name": "U19 World Ch.ship Women 2019",
+      "start_date": "2019-07-20",
+      "end_date": "2019-07-29",
+      "year": "2019",
+      "competition_id": "sr:competition:897"
+    },
+    {
+      "id": "sr:season:83450",
+      "name": "U19 World Championship Women 2021",
+      "start_date": "2021-08-07",
+      "end_date": "2021-08-16",
+      "year": "2021",
+      "competition_id": "sr:competition:897"
+    },
+    {
+      "id": "sr:season:104249",
+      "name": "U19 World Championship Women 2023",
+      "start_date": "2023-07-15",
+      "end_date": "2023-08-23",
+      "year": "2023",
+      "competition_id": "sr:competition:897"
+    },
+    {
+      "id": "sr:season:94969",
+      "name": "U18 EC Div. A Women 2022",
+      "start_date": "2022-08-06",
+      "end_date": "2022-08-14",
+      "year": "2022",
+      "competition_id": "sr:competition:898"
+    },
+    {
+      "id": "sr:season:106523",
+      "name": "U18 EC Div. A Women 2023",
+      "start_date": "2023-07-01",
+      "end_date": "2023-07-09",
+      "year": "2023",
+      "competition_id": "sr:competition:898"
+    },
+    {
+      "id": "sr:season:119049",
+      "name": "U18 EuroBasket, Div. A, Women 2024",
+      "start_date": "2024-08-03",
+      "end_date": "2024-08-12",
+      "year": "2024",
+      "competition_id": "sr:competition:898"
+    },
+    {
+      "id": "sr:season:94961",
+      "name": "U18 EC Div. B Women 2022",
+      "start_date": "2022-07-30",
+      "end_date": "2022-08-07",
+      "year": "2022",
+      "competition_id": "sr:competition:899"
+    },
+    {
+      "id": "sr:season:106521",
+      "name": "U18 EC Div. B Women 2023",
+      "start_date": "2023-06-30",
+      "end_date": "2023-07-09",
+      "year": "2023",
+      "competition_id": "sr:competition:899"
+    },
+    {
+      "id": "sr:season:119177",
+      "name": "U18 EuroBasket, Div. B, Women 2024",
+      "start_date": "2024-08-02",
+      "end_date": "2024-08-11",
+      "year": "2024",
+      "competition_id": "sr:competition:899"
+    },
+    {
+      "id": "sr:season:11200",
+      "name": "FIBA Africa Championship 2015",
+      "start_date": "2015-08-19",
+      "end_date": "2015-08-31",
+      "year": "2015",
+      "competition_id": "sr:competition:931"
+    },
+    {
+      "id": "sr:season:42740",
+      "name": "FIBA Africa Championship 2017",
+      "start_date": "2017-09-08",
+      "end_date": "2017-09-17",
+      "year": "2017",
+      "competition_id": "sr:competition:931"
+    },
+    {
+      "id": "sr:season:86086",
+      "name": "FIBA Africa Championship 2021",
+      "start_date": "2021-08-24",
+      "end_date": "2021-09-06",
+      "year": "2021",
+      "competition_id": "sr:competition:931"
+    },
+    {
+      "id": "sr:season:7332",
+      "name": "Asia Ch.ship W, Level I 2013",
+      "start_date": "2013-10-27",
+      "end_date": "2013-11-03",
+      "year": "2013",
+      "competition_id": "sr:competition:933"
+    },
+    {
+      "id": "sr:season:11160",
+      "name": "Asia Ch.ship W, Level I 2015",
+      "start_date": "2015-08-28",
+      "end_date": "2015-09-06",
+      "year": "2015",
+      "competition_id": "sr:competition:933"
+    },
+    {
+      "id": "sr:season:41854",
+      "name": "Asia Ch.ship Women, Level I 2017",
+      "start_date": "2017-07-22",
+      "end_date": "2017-07-31",
+      "year": "2017",
+      "competition_id": "sr:competition:933"
+    },
+    {
+      "id": "sr:season:7334",
+      "name": "Asia Ch.ship W, Level II 2013",
+      "start_date": "2013-10-27",
+      "end_date": "2013-11-03",
+      "year": "2013",
+      "competition_id": "sr:competition:935"
+    },
+    {
+      "id": "sr:season:11162",
+      "name": "Asia Ch.ship W, Level II 2015",
+      "start_date": "2015-08-28",
+      "end_date": "2015-09-06",
+      "year": "2015",
+      "competition_id": "sr:competition:935"
+    },
+    {
+      "id": "sr:season:41864",
+      "name": "Asia Ch.ship Women, Level II 2017",
+      "start_date": "2017-07-22",
+      "end_date": "2017-07-31",
+      "year": "2017",
+      "competition_id": "sr:competition:935"
+    },
+    {
+      "id": "sr:season:11136",
+      "name": "Basketball Super Cup 2014",
+      "start_date": "2014-08-01",
+      "end_date": "2014-08-03",
+      "year": "2014",
+      "competition_id": "sr:competition:941"
+    },
+    {
+      "id": "sr:season:11138",
+      "name": "Basketball Super Cup 2015",
+      "start_date": "2015-08-21",
+      "end_date": "2015-08-23",
+      "year": "2015",
+      "competition_id": "sr:competition:941"
+    },
+    {
+      "id": "sr:season:70198",
+      "name": "Basketball Super Cup 2019",
+      "start_date": "2019-08-16",
+      "end_date": "2019-08-19",
+      "year": "2019",
+      "competition_id": "sr:competition:941"
+    },
+    {
+      "id": "sr:season:11456",
+      "name": "Asia Ch.ship 2015",
+      "start_date": "2015-09-23",
+      "end_date": "2015-10-03",
+      "year": "2015",
+      "competition_id": "sr:competition:943"
+    },
+    {
+      "id": "sr:season:42576",
+      "name": "Asia Ch.ship 2017",
+      "start_date": "2017-08-08",
+      "end_date": "2017-08-21",
+      "year": "2017",
+      "competition_id": "sr:competition:943"
+    },
+    {
+      "id": "sr:season:93551",
+      "name": "Asia Ch.ship 2022",
+      "start_date": "2022-07-12",
+      "end_date": "2022-07-24",
+      "year": "2022",
+      "competition_id": "sr:competition:943"
+    },
+    {
+      "id": "sr:season:3869",
+      "name": "Oceania Championship 2011",
+      "start_date": "2011-09-07",
+      "end_date": "2011-09-12",
+      "year": "2011",
+      "competition_id": "sr:competition:949"
+    },
+    {
+      "id": "sr:season:6461",
+      "name": "FIBA Oceania Championship 2013",
+      "start_date": "2013-08-14",
+      "end_date": "2013-08-18",
+      "year": "2013",
+      "competition_id": "sr:competition:949"
+    },
+    {
+      "id": "sr:season:11020",
+      "name": "FIBA Oceania Championship 2015",
+      "start_date": "2015-08-15",
+      "end_date": "2015-08-18",
+      "year": "2015",
+      "competition_id": "sr:competition:949"
+    },
+    {
+      "id": "sr:season:3871",
+      "name": "Oceania Championship Women 2011",
+      "start_date": "2011-09-07",
+      "end_date": "2011-09-12",
+      "year": "2011",
+      "competition_id": "sr:competition:951"
+    },
+    {
+      "id": "sr:season:6463",
+      "name": "FIBA Oceania Championship Women 2013",
+      "start_date": "2013-08-14",
+      "end_date": "2013-08-18",
+      "year": "2013",
+      "competition_id": "sr:competition:951"
+    },
+    {
+      "id": "sr:season:11022",
+      "name": "FIBA Oceania Championship Women 2015",
+      "start_date": "2015-08-15",
+      "end_date": "2015-08-18",
+      "year": "2015",
+      "competition_id": "sr:competition:951"
+    },
+    {
+      "id": "sr:season:91867",
+      "name": "KML 2022",
+      "start_date": "2022-03-11",
+      "end_date": "2022-05-31",
+      "year": "2022",
+      "competition_id": "sr:competition:973"
+    },
+    {
+      "id": "sr:season:104299",
+      "name": "KML 2023",
+      "start_date": "2023-04-12",
+      "end_date": "2023-05-31",
+      "year": "2023",
+      "competition_id": "sr:competition:973"
+    },
+    {
+      "id": "sr:season:117579",
+      "name": "KML 2024",
+      "start_date": "2024-04-23",
+      "end_date": "2024-05-31",
+      "year": "2024",
+      "competition_id": "sr:competition:973"
+    },
+    {
+      "id": "sr:season:96689",
+      "name": "LKL 22/23",
+      "start_date": "2022-09-24",
+      "end_date": "2023-06-10",
+      "year": "22/23",
+      "competition_id": "sr:competition:975"
+    },
+    {
+      "id": "sr:season:108575",
+      "name": "LKL 23/24",
+      "start_date": "2023-09-16",
+      "end_date": "2024-06-12",
+      "year": "23/24",
+      "competition_id": "sr:competition:975"
+    },
+    {
+      "id": "sr:season:122355",
+      "name": "LKL 24/25",
+      "start_date": "2024-09-21",
+      "end_date": "2025-06-12",
+      "year": "24/25",
+      "competition_id": "sr:competition:975"
+    },
+    {
+      "id": "sr:season:92683",
+      "name": "LBL 2022",
+      "start_date": "2022-04-13",
+      "end_date": "2022-06-30",
+      "year": "2022",
+      "competition_id": "sr:competition:982"
+    },
+    {
+      "id": "sr:season:104155",
+      "name": "LBL 2023",
+      "start_date": "2023-04-05",
+      "end_date": "2023-06-30",
+      "year": "2023",
+      "competition_id": "sr:competition:982"
+    },
+    {
+      "id": "sr:season:117355",
+      "name": "LBL 2024",
+      "start_date": "2024-04-08",
+      "end_date": "2024-05-22",
+      "year": "2024",
+      "competition_id": "sr:competition:982"
+    },
+    {
+      "id": "sr:season:72635",
+      "name": "European Championship Qualification Women 2021",
+      "start_date": "2019-11-14",
+      "end_date": "2021-02-09",
+      "year": "19-21",
+      "competition_id": "sr:competition:1070"
+    },
+    {
+      "id": "sr:season:88713",
+      "name": "European Championship Qualification, Women 2023",
+      "start_date": "2021-11-11",
+      "end_date": "2023-02-12",
+      "year": "21-23",
+      "competition_id": "sr:competition:1070"
+    },
+    {
+      "id": "sr:season:112154",
+      "name": "European Championship Qualification, Women 2025",
+      "start_date": "2023-11-08",
+      "end_date": "2025-02-09",
+      "year": "23-25",
+      "competition_id": "sr:competition:1070"
+    },
+    {
+      "id": "sr:season:10922",
+      "name": "Match des Champions 2015",
+      "start_date": "2015-09-28",
+      "end_date": "2015-09-29",
+      "year": "2015",
+      "competition_id": "sr:competition:1155"
+    },
+    {
+      "id": "sr:season:35119",
+      "name": "Match des Champions 2016",
+      "start_date": "2016-09-20",
+      "end_date": "2016-09-21",
+      "year": "2016",
+      "competition_id": "sr:competition:1155"
+    },
+    {
+      "id": "sr:season:45322",
+      "name": "Match des Champions 2017",
+      "start_date": "2017-09-19",
+      "end_date": "2017-09-20",
+      "year": "2017",
+      "competition_id": "sr:competition:1155"
+    },
+    {
+      "id": "sr:season:96849",
+      "name": "Supercoppa 2022",
+      "start_date": "2022-09-28",
+      "end_date": "2022-09-29",
+      "year": "2022",
+      "competition_id": "sr:competition:1157"
+    },
+    {
+      "id": "sr:season:108735",
+      "name": "Supercoppa 2023",
+      "start_date": "2023-09-23",
+      "end_date": "2023-09-24",
+      "year": "2023",
+      "competition_id": "sr:competition:1157"
+    },
+    {
+      "id": "sr:season:122017",
+      "name": "Supercoppa 2024",
+      "start_date": "2024-09-21",
+      "end_date": "2024-09-22",
+      "year": "2024",
+      "competition_id": "sr:competition:1157"
+    },
+    {
+      "id": "sr:season:96851",
+      "name": "Pro A 22/23",
+      "start_date": "2022-09-30",
+      "end_date": "2023-06-04",
+      "year": "22/23",
+      "competition_id": "sr:competition:1165"
+    },
+    {
+      "id": "sr:season:108053",
+      "name": "Pro A 23/24",
+      "start_date": "2023-09-29",
+      "end_date": "2024-06-02",
+      "year": "23/24",
+      "competition_id": "sr:competition:1165"
+    },
+    {
+      "id": "sr:season:122019",
+      "name": "Pro A 24/25",
+      "start_date": "2024-09-20",
+      "end_date": "2025-06-02",
+      "year": "24/25",
+      "competition_id": "sr:competition:1165"
+    },
+    {
+      "id": "sr:season:96153",
+      "name": "Euroleague Women 22/23",
+      "start_date": "2022-10-11",
+      "end_date": "2023-04-16",
+      "year": "22/23",
+      "competition_id": "sr:competition:1167"
+    },
+    {
+      "id": "sr:season:109219",
+      "name": "Euroleague Women 23/24",
+      "start_date": "2023-09-20",
+      "end_date": "2024-04-14",
+      "year": "23/24",
+      "competition_id": "sr:competition:1167"
+    },
+    {
+      "id": "sr:season:121275",
+      "name": "Euroleague Women 24/25",
+      "start_date": "2024-09-17",
+      "end_date": "2025-04-13",
+      "year": "24/25",
+      "competition_id": "sr:competition:1167"
+    },
+    {
+      "id": "sr:season:91011",
+      "name": "Türkiye Kupasi 2022",
+      "start_date": "2022-02-15",
+      "end_date": "2022-02-20",
+      "year": "2022",
+      "competition_id": "sr:competition:1179"
+    },
+    {
+      "id": "sr:season:102163",
+      "name": "Türkiye Kupasi 2023",
+      "start_date": "2023-02-14",
+      "end_date": "2023-03-31",
+      "year": "2023",
+      "competition_id": "sr:competition:1179"
+    },
+    {
+      "id": "sr:season:114867",
+      "name": "Türkiye Kupasi 2024",
+      "start_date": "2024-02-13",
+      "end_date": "2024-02-18",
+      "year": "2024",
+      "competition_id": "sr:competition:1179"
+    },
+    {
+      "id": "sr:season:97019",
+      "name": "Superpuchar 2022",
+      "start_date": "2022-09-21",
+      "end_date": "2022-09-22",
+      "year": "2022",
+      "competition_id": "sr:competition:1183"
+    },
+    {
+      "id": "sr:season:107805",
+      "name": "Superpuchar 2023",
+      "start_date": "2023-09-20",
+      "end_date": "2023-09-21",
+      "year": "2023",
+      "competition_id": "sr:competition:1183"
+    },
+    {
+      "id": "sr:season:123169",
+      "name": "Superpuchar 2024",
+      "start_date": "2024-09-28",
+      "end_date": "2024-09-29",
+      "year": "2024",
+      "competition_id": "sr:competition:1183"
+    },
+    {
+      "id": "sr:season:96041",
+      "name": "Pro B 22/23",
+      "start_date": "2022-10-14",
+      "end_date": "2023-06-13",
+      "year": "22/23",
+      "competition_id": "sr:competition:1189"
+    },
+    {
+      "id": "sr:season:108205",
+      "name": "Pro B 23/24",
+      "start_date": "2023-10-13",
+      "end_date": "2024-06-06",
+      "year": "23/24",
+      "competition_id": "sr:competition:1189"
+    },
+    {
+      "id": "sr:season:121105",
+      "name": "Pro B 24/25",
+      "start_date": "2024-09-13",
+      "end_date": "2025-06-14",
+      "year": "24/25",
+      "competition_id": "sr:competition:1189"
+    },
+    {
+      "id": "sr:season:96871",
+      "name": "League Cup 2022",
+      "start_date": "2022-09-19",
+      "end_date": "2022-12-31",
+      "year": "2022",
+      "competition_id": "sr:competition:1193"
+    },
+    {
+      "id": "sr:season:108349",
+      "name": "League Cup 2023",
+      "start_date": "2023-09-13",
+      "end_date": "2023-10-01",
+      "year": "2023",
+      "competition_id": "sr:competition:1193"
+    },
+    {
+      "id": "sr:season:121989",
+      "name": "League Cup 2024",
+      "start_date": "2024-09-08",
+      "end_date": "2024-11-17",
+      "year": "2024",
+      "competition_id": "sr:competition:1193"
+    },
+    {
+      "id": "sr:season:89667",
+      "name": "Club Friendly Games 2022",
+      "start_date": "2022-01-01",
+      "end_date": "2022-12-31",
+      "year": "2022",
+      "competition_id": "sr:competition:1195"
+    },
+    {
+      "id": "sr:season:100953",
+      "name": "Club Friendly Games 2023",
+      "start_date": "2023-01-01",
+      "end_date": "2023-12-31",
+      "year": "2023",
+      "competition_id": "sr:competition:1195"
+    },
+    {
+      "id": "sr:season:113863",
+      "name": "Club Friendly Games 2024",
+      "start_date": "2024-01-01",
+      "end_date": "2024-12-31",
+      "year": "2024",
+      "competition_id": "sr:competition:1195"
+    },
+    {
+      "id": "sr:season:97849",
+      "name": "Super League 22/23",
+      "start_date": "2022-10-07",
+      "end_date": "2023-06-13",
+      "year": "22/23",
+      "competition_id": "sr:competition:1197"
+    },
+    {
+      "id": "sr:season:109939",
+      "name": "Super League 23/24",
+      "start_date": "2023-10-06",
+      "end_date": "2024-06-17",
+      "year": "23/24",
+      "competition_id": "sr:competition:1197"
+    },
+    {
+      "id": "sr:season:123025",
+      "name": "Super League 24/25",
+      "start_date": "2024-10-05",
+      "end_date": "2025-06-17",
+      "year": "24/25",
+      "competition_id": "sr:competition:1197"
+    },
+    {
+      "id": "sr:season:97629",
+      "name": "Premier League Women 22/23",
+      "start_date": "2022-10-01",
+      "end_date": "2023-05-01",
+      "year": "22/23",
+      "competition_id": "sr:competition:1201"
+    },
+    {
+      "id": "sr:season:110661",
+      "name": "Premier League Women 23/24",
+      "start_date": "2023-10-04",
+      "end_date": "2024-05-01",
+      "year": "23/24",
+      "competition_id": "sr:competition:1201"
+    },
+    {
+      "id": "sr:season:123467",
+      "name": "Premier League Women 24/25",
+      "start_date": "2024-10-03",
+      "end_date": "2025-05-31",
+      "year": "24/25",
+      "competition_id": "sr:competition:1201"
+    },
+    {
+      "id": "sr:season:38248",
+      "name": "FIBA Americas League 2017",
+      "start_date": "2017-01-20",
+      "end_date": "2017-03-20",
+      "year": "2017",
+      "competition_id": "sr:competition:1242"
+    },
+    {
+      "id": "sr:season:50433",
+      "name": "FIBA Americas League 2018",
+      "start_date": "2018-01-19",
+      "end_date": "2018-03-26",
+      "year": "2018",
+      "competition_id": "sr:competition:1242"
+    },
+    {
+      "id": "sr:season:62785",
+      "name": "FIBA Americas League 2019",
+      "start_date": "2019-01-18",
+      "end_date": "2019-04-02",
+      "year": "2019",
+      "competition_id": "sr:competition:1242"
+    },
+    {
+      "id": "sr:season:94963",
+      "name": "WNBA All Star Game 2022",
+      "start_date": "2022-07-10",
+      "end_date": "2022-07-11",
+      "year": "2022",
+      "competition_id": "sr:competition:1329"
+    },
+    {
+      "id": "sr:season:107495",
+      "name": "WNBA All Star Game 2023",
+      "start_date": "2023-07-15",
+      "end_date": "2023-07-16",
+      "year": "2023",
+      "competition_id": "sr:competition:1329"
+    },
+    {
+      "id": "sr:season:117607",
+      "name": "WNBA All Star Game 2024",
+      "start_date": "2024-07-20",
+      "end_date": "2024-07-21",
+      "year": "2024",
+      "competition_id": "sr:competition:1329"
+    },
+    {
+      "id": "sr:season:97133",
+      "name": "Extraliga 22/23",
+      "start_date": "2022-09-30",
+      "end_date": "2023-05-29",
+      "year": "22/23",
+      "competition_id": "sr:competition:1410"
+    },
+    {
+      "id": "sr:season:109147",
+      "name": "Extraliga 23/24",
+      "start_date": "2023-09-21",
+      "end_date": "2024-05-22",
+      "year": "23/24",
+      "competition_id": "sr:competition:1410"
+    },
+    {
+      "id": "sr:season:120701",
+      "name": "Extraliga 24/25",
+      "start_date": "2024-09-21",
+      "end_date": "2025-05-22",
+      "year": "24/25",
+      "competition_id": "sr:competition:1410"
+    },
+    {
+      "id": "sr:season:97163",
+      "name": "Extraliga, Women 22/23",
+      "start_date": "2022-10-01",
+      "end_date": "2023-04-22",
+      "year": "22/23",
+      "competition_id": "sr:competition:1412"
+    },
+    {
+      "id": "sr:season:109251",
+      "name": "Extraliga, Women 23/24",
+      "start_date": "2023-09-30",
+      "end_date": "2024-04-27",
+      "year": "23/24",
+      "competition_id": "sr:competition:1412"
+    },
+    {
+      "id": "sr:season:121053",
+      "name": "Extraliga, Women 24/25",
+      "start_date": "2024-09-23",
+      "end_date": "2025-05-25",
+      "year": "24/25",
+      "competition_id": "sr:competition:1412"
+    },
+    {
+      "id": "sr:season:96097",
+      "name": "United League 22/23",
+      "start_date": "2022-10-02",
+      "end_date": "2023-06-17",
+      "year": "22/23",
+      "competition_id": "sr:competition:1438"
+    },
+    {
+      "id": "sr:season:107985",
+      "name": "United League 23/24",
+      "start_date": "2023-09-30",
+      "end_date": "2024-06-05",
+      "year": "23/24",
+      "competition_id": "sr:competition:1438"
+    },
+    {
+      "id": "sr:season:121473",
+      "name": "United League 24/25",
+      "start_date": "2024-09-21",
+      "end_date": "2025-06-05",
+      "year": "24/25",
+      "competition_id": "sr:competition:1438"
+    },
+    {
+      "id": "sr:season:87134",
+      "name": "Cup 21/22",
+      "start_date": "2021-09-25",
+      "end_date": "2022-02-15",
+      "year": "21/22",
+      "competition_id": "sr:competition:1470"
+    },
+    {
+      "id": "sr:season:98169",
+      "name": "Cup 22/23",
+      "start_date": "2022-09-24",
+      "end_date": "2023-01-25",
+      "year": "22/23",
+      "competition_id": "sr:competition:1470"
+    },
+    {
+      "id": "sr:season:110459",
+      "name": "Cup 23/24",
+      "start_date": "2023-09-23",
+      "end_date": "2024-01-31",
+      "year": "23/24",
+      "competition_id": "sr:competition:1470"
+    },
+    {
+      "id": "sr:season:95803",
+      "name": "LNBP 2022",
+      "start_date": "2022-07-21",
+      "end_date": "2022-11-04",
+      "year": "2022",
+      "competition_id": "sr:competition:1472"
+    },
+    {
+      "id": "sr:season:106547",
+      "name": "LNBP 2023",
+      "start_date": "2023-08-18",
+      "end_date": "2023-12-15",
+      "year": "2023",
+      "competition_id": "sr:competition:1472"
+    },
+    {
+      "id": "sr:season:119503",
+      "name": "LNBP 2024",
+      "start_date": "2024-07-11",
+      "end_date": "2024-12-04",
+      "year": "2024",
+      "competition_id": "sr:competition:1472"
+    },
+    {
+      "id": "sr:season:96319",
+      "name": "1. Liga 22/23",
+      "start_date": "2022-09-16",
+      "end_date": "2023-04-23",
+      "year": "22/23",
+      "competition_id": "sr:competition:1482"
+    },
+    {
+      "id": "sr:season:108025",
+      "name": "1. Liga 23/24",
+      "start_date": "2023-09-15",
+      "end_date": "2024-04-24",
+      "year": "23/24",
+      "competition_id": "sr:competition:1482"
+    },
+    {
+      "id": "sr:season:124043",
+      "name": "1. Liga 24/25",
+      "start_date": "2024-09-20",
+      "end_date": "2025-04-24",
+      "year": "24/25",
+      "competition_id": "sr:competition:1482"
+    },
+    {
+      "id": "sr:season:96317",
+      "name": "ZBL 22/23",
+      "start_date": "2022-09-30",
+      "end_date": "2023-05-18",
+      "year": "22/23",
+      "competition_id": "sr:competition:1484"
+    },
+    {
+      "id": "sr:season:108033",
+      "name": "ZBL 23/24",
+      "start_date": "2023-09-26",
+      "end_date": "2024-04-30",
+      "year": "23/24",
+      "competition_id": "sr:competition:1484"
+    },
+    {
+      "id": "sr:season:122369",
+      "name": "ZBL 24/25",
+      "start_date": "2024-09-24",
+      "end_date": "2025-04-30",
+      "year": "24/25",
+      "competition_id": "sr:competition:1484"
+    },
+    {
+      "id": "sr:season:87280",
+      "name": "BNXT Belgian League 21/22",
+      "start_date": "2021-09-24",
+      "end_date": "2022-05-31",
+      "year": "21/22",
+      "competition_id": "sr:competition:1492"
+    },
+    {
+      "id": "sr:season:97589",
+      "name": "BNXT Belgian League 22/23",
+      "start_date": "2022-09-30",
+      "end_date": "2023-05-31",
+      "year": "22/23",
+      "competition_id": "sr:competition:1492"
+    },
+    {
+      "id": "sr:season:110513",
+      "name": "BNXT Belgian League 23/24",
+      "start_date": "2023-09-22",
+      "end_date": "2024-06-03",
+      "year": "23/24",
+      "competition_id": "sr:competition:1492"
+    },
+    {
+      "id": "sr:season:98587",
+      "name": "Super Cup 2022",
+      "start_date": "2022-09-29",
+      "end_date": "2022-09-30",
+      "year": "2022",
+      "competition_id": "sr:competition:1498"
+    },
+    {
+      "id": "sr:season:110213",
+      "name": "Super Cup 2023",
+      "start_date": "2023-10-01",
+      "end_date": "2023-10-02",
+      "year": "2023",
+      "competition_id": "sr:competition:1498"
+    },
+    {
+      "id": "sr:season:124725",
+      "name": "Super Cup 2024",
+      "start_date": "2024-09-28",
+      "end_date": "2024-09-29",
+      "year": "2024",
+      "competition_id": "sr:competition:1498"
+    },
+    {
+      "id": "sr:season:71820",
+      "name": "Super Cup 2019",
+      "start_date": "2019-09-26",
+      "end_date": "2019-09-27",
+      "year": "2019",
+      "competition_id": "sr:competition:1500"
+    },
+    {
+      "id": "sr:season:98055",
+      "name": "Super Cup 2022",
+      "start_date": "2022-09-28",
+      "end_date": "2022-09-29",
+      "year": "2022",
+      "competition_id": "sr:competition:1500"
+    },
+    {
+      "id": "sr:season:123873",
+      "name": "Super Cup 2024",
+      "start_date": "2024-09-29",
+      "end_date": "2024-09-29",
+      "year": "2024",
+      "competition_id": "sr:competition:1500"
+    },
+    {
+      "id": "sr:season:97401",
+      "name": "B.League 22/23",
+      "start_date": "2022-09-29",
+      "end_date": "2023-05-31",
+      "year": "22/23",
+      "competition_id": "sr:competition:1502"
+    },
+    {
+      "id": "sr:season:109789",
+      "name": "B1 League 23/24",
+      "start_date": "2023-10-05",
+      "end_date": "2024-05-31",
+      "year": "23/24",
+      "competition_id": "sr:competition:1502"
+    },
+    {
+      "id": "sr:season:121101",
+      "name": "B1 League 24/25",
+      "start_date": "2024-10-03",
+      "end_date": "2025-05-31",
+      "year": "24/25",
+      "competition_id": "sr:competition:1502"
+    },
+    {
+      "id": "sr:season:87282",
+      "name": "BNXT Dutch League 21/22",
+      "start_date": "2021-09-24",
+      "end_date": "2022-05-31",
+      "year": "21/22",
+      "competition_id": "sr:competition:1504"
+    },
+    {
+      "id": "sr:season:97591",
+      "name": "BNXT Dutch League 22/23",
+      "start_date": "2022-09-30",
+      "end_date": "2023-05-31",
+      "year": "22/23",
+      "competition_id": "sr:competition:1504"
+    },
+    {
+      "id": "sr:season:110521",
+      "name": "BNXT Dutch League 23/24",
+      "start_date": "2023-09-22",
+      "end_date": "2024-06-05",
+      "year": "23/24",
+      "competition_id": "sr:competition:1504"
+    },
+    {
+      "id": "sr:season:97675",
+      "name": "WNBL 22/23",
+      "start_date": "2022-11-02",
+      "end_date": "2023-03-25",
+      "year": "22/23",
+      "competition_id": "sr:competition:1506"
+    },
+    {
+      "id": "sr:season:107887",
+      "name": "WNBL 23/24",
+      "start_date": "2023-11-01",
+      "end_date": "2024-03-17",
+      "year": "23/24",
+      "competition_id": "sr:competition:1506"
+    },
+    {
+      "id": "sr:season:123339",
+      "name": "WNBL 24/25",
+      "start_date": "2024-10-30",
+      "end_date": "2025-03-12",
+      "year": "24/25",
+      "competition_id": "sr:competition:1506"
+    },
+    {
+      "id": "sr:season:102011",
+      "name": "Intercontinental Cup 2023",
+      "start_date": "2023-02-10",
+      "end_date": "2023-02-12",
+      "year": "2023",
+      "competition_id": "sr:competition:1512"
+    },
+    {
+      "id": "sr:season:110281",
+      "name": "Intercontinental Cup 2023",
+      "start_date": "2023-09-21",
+      "end_date": "2023-09-24",
+      "year": "2023",
+      "competition_id": "sr:competition:1512"
+    },
+    {
+      "id": "sr:season:122471",
+      "name": "Intercontinental Cup 2024",
+      "start_date": "2024-09-12",
+      "end_date": "2024-09-15",
+      "year": "2024",
+      "competition_id": "sr:competition:1512"
+    },
+    {
+      "id": "sr:season:96911",
+      "name": "LEB Oro 22/23",
+      "start_date": "2022-10-07",
+      "end_date": "2023-06-18",
+      "year": "22/23",
+      "competition_id": "sr:competition:1514"
+    },
+    {
+      "id": "sr:season:108763",
+      "name": "LEB Oro 23/24",
+      "start_date": "2023-10-06",
+      "end_date": "2024-06-09",
+      "year": "23/24",
+      "competition_id": "sr:competition:1514"
+    },
+    {
+      "id": "sr:season:121877",
+      "name": "LEB Oro 24/25",
+      "start_date": "2024-09-27",
+      "end_date": "2025-06-08",
+      "year": "24/25",
+      "competition_id": "sr:competition:1514"
+    },
+    {
+      "id": "sr:season:97421",
+      "name": "B2.League 22/23",
+      "start_date": "2022-09-30",
+      "end_date": "2023-06-30",
+      "year": "22/23",
+      "competition_id": "sr:competition:1516"
+    },
+    {
+      "id": "sr:season:109791",
+      "name": "B2 League 23/24",
+      "start_date": "2023-10-05",
+      "end_date": "2024-05-19",
+      "year": "23/24",
+      "competition_id": "sr:competition:1516"
+    },
+    {
+      "id": "sr:season:121103",
+      "name": "B2 League 24/25",
+      "start_date": "2024-10-05",
+      "end_date": "2025-05-19",
+      "year": "24/25",
+      "competition_id": "sr:competition:1516"
+    },
+    {
+      "id": "sr:season:96847",
+      "name": "Serie A2 22/23",
+      "start_date": "2022-10-01",
+      "end_date": "2023-07-15",
+      "year": "22/23",
+      "competition_id": "sr:competition:1520"
+    },
+    {
+      "id": "sr:season:108765",
+      "name": "Serie A2 23/24",
+      "start_date": "2023-09-30",
+      "end_date": "2024-06-12",
+      "year": "23/24",
+      "competition_id": "sr:competition:1520"
+    },
+    {
+      "id": "sr:season:121987",
+      "name": "Serie A2 24/25",
+      "start_date": "2024-09-28",
+      "end_date": "2025-06-18",
+      "year": "24/25",
+      "competition_id": "sr:competition:1520"
+    },
+    {
+      "id": "sr:season:7354",
+      "name": "LNP Silver 13/14",
+      "start_date": "2013-10-06",
+      "end_date": "2014-06-15",
+      "year": "13/14",
+      "competition_id": "sr:competition:1522"
+    },
+    {
+      "id": "sr:season:9164",
+      "name": "LNP Silver 14/15",
+      "start_date": "2014-10-03",
+      "end_date": "2015-06-15",
+      "year": "14/15",
+      "competition_id": "sr:competition:1522"
+    },
+    {
+      "id": "sr:season:96325",
+      "name": "NBL 22/23",
+      "start_date": "2022-10-01",
+      "end_date": "2023-05-17",
+      "year": "22/23",
+      "competition_id": "sr:competition:1524"
+    },
+    {
+      "id": "sr:season:106229",
+      "name": "NBL 23/24",
+      "start_date": "2023-09-28",
+      "end_date": "2024-03-31",
+      "year": "23/24",
+      "competition_id": "sr:competition:1524"
+    },
+    {
+      "id": "sr:season:120065",
+      "name": "NBL 24/25",
+      "start_date": "2024-09-19",
+      "end_date": "2025-03-31",
+      "year": "24/25",
+      "competition_id": "sr:competition:1524"
+    },
+    {
+      "id": "sr:season:7366",
+      "name": "Superleague 13/14",
+      "start_date": "2013-10-09",
+      "end_date": "2014-05-19",
+      "year": "13/14",
+      "competition_id": "sr:competition:1528"
+    },
+    {
+      "id": "sr:season:9318",
+      "name": "Superleague 14/15",
+      "start_date": "2014-10-04",
+      "end_date": "2015-05-25",
+      "year": "14/15",
+      "competition_id": "sr:competition:1528"
+    },
+    {
+      "id": "sr:season:97633",
+      "name": "Super Lig, Women 22/23",
+      "start_date": "2022-10-08",
+      "end_date": "2023-04-25",
+      "year": "22/23",
+      "competition_id": "sr:competition:1532"
+    },
+    {
+      "id": "sr:season:109989",
+      "name": "Super Lig, Women 23/24",
+      "start_date": "2023-09-13",
+      "end_date": "2024-04-17",
+      "year": "23/24",
+      "competition_id": "sr:competition:1532"
+    },
+    {
+      "id": "sr:season:122865",
+      "name": "Super Lig, Women 24/25",
+      "start_date": "2024-09-28",
+      "end_date": "2025-04-17",
+      "year": "24/25",
+      "competition_id": "sr:competition:1532"
+    },
+    {
+      "id": "sr:season:9348",
+      "name": "ASWBL 14/15",
+      "start_date": "2014-09-27",
+      "end_date": "2015-03-30",
+      "year": "14/15",
+      "competition_id": "sr:competition:1534"
+    },
+    {
+      "id": "sr:season:11934",
+      "name": "ASWBL 15/16",
+      "start_date": "2015-10-02",
+      "end_date": "2016-03-28",
+      "year": "15/16",
+      "competition_id": "sr:competition:1534"
+    },
+    {
+      "id": "sr:season:46384",
+      "name": "ASWBL 17/18",
+      "start_date": "2017-10-08",
+      "end_date": "2018-06-20",
+      "year": "17/18",
+      "competition_id": "sr:competition:1534"
+    },
+    {
+      "id": "sr:season:97161",
+      "name": "Liga Femenina 22/23",
+      "start_date": "2022-10-04",
+      "end_date": "2023-05-11",
+      "year": "22/23",
+      "competition_id": "sr:competition:1538"
+    },
+    {
+      "id": "sr:season:108737",
+      "name": "Liga Femenina 23/24",
+      "start_date": "2023-09-22",
+      "end_date": "2024-05-13",
+      "year": "23/24",
+      "competition_id": "sr:competition:1538"
+    },
+    {
+      "id": "sr:season:121887",
+      "name": "Liga Femenina 24/25",
+      "start_date": "2024-10-04",
+      "end_date": "2025-05-17",
+      "year": "24/25",
+      "competition_id": "sr:competition:1538"
+    },
+    {
+      "id": "sr:season:97403",
+      "name": "KBL 22/23",
+      "start_date": "2022-10-15",
+      "end_date": "2023-05-31",
+      "year": "22/23",
+      "competition_id": "sr:competition:1540"
+    },
+    {
+      "id": "sr:season:111002",
+      "name": "KBL 23/24",
+      "start_date": "2023-10-21",
+      "end_date": "2024-05-05",
+      "year": "23/24",
+      "competition_id": "sr:competition:1540"
+    },
+    {
+      "id": "sr:season:121277",
+      "name": "KBL 24/25",
+      "start_date": "2024-10-19",
+      "end_date": "2025-05-05",
+      "year": "24/25",
+      "competition_id": "sr:competition:1540"
+    },
+    {
+      "id": "sr:season:97669",
+      "name": "NBB 22/23",
+      "start_date": "2022-10-15",
+      "end_date": "2023-06-30",
+      "year": "22/23",
+      "competition_id": "sr:competition:1562"
+    },
+    {
+      "id": "sr:season:110908",
+      "name": "NBB 23/24",
+      "start_date": "2023-10-13",
+      "end_date": "2024-06-14",
+      "year": "23/24",
+      "competition_id": "sr:competition:1562"
+    },
+    {
+      "id": "sr:season:123507",
+      "name": "NBB 24/25",
+      "start_date": "2024-10-12",
+      "end_date": "2025-06-14",
+      "year": "24/25",
+      "competition_id": "sr:competition:1562"
+    },
+    {
+      "id": "sr:season:98389",
+      "name": "CBA 22/23",
+      "start_date": "2022-10-10",
+      "end_date": "2023-06-01",
+      "year": "22/23",
+      "competition_id": "sr:competition:1566"
+    },
+    {
+      "id": "sr:season:111470",
+      "name": "CBA 23/24",
+      "start_date": "2023-10-17",
+      "end_date": "2024-05-22",
+      "year": "23/24",
+      "competition_id": "sr:competition:1566"
+    },
+    {
+      "id": "sr:season:124255",
+      "name": "CBA 24/25",
+      "start_date": "2024-10-12",
+      "end_date": "2025-05-31",
+      "year": "24/25",
+      "competition_id": "sr:competition:1566"
+    },
+    {
+      "id": "sr:season:97671",
+      "name": "NBA G League 22/23",
+      "start_date": "2022-12-27",
+      "end_date": "2023-05-31",
+      "year": "22/23",
+      "competition_id": "sr:competition:1580"
+    },
+    {
+      "id": "sr:season:111026",
+      "name": "NBA G League 23/24",
+      "start_date": "2023-12-27",
+      "end_date": "2024-04-16",
+      "year": "23/24",
+      "competition_id": "sr:competition:1580"
+    },
+    {
+      "id": "sr:season:123607",
+      "name": "NBA G League 24/25",
+      "start_date": "2024-12-27",
+      "end_date": "2025-04-16",
+      "year": "24/25",
+      "competition_id": "sr:competition:1580"
+    },
+    {
+      "id": "sr:season:82028",
+      "name": "Cup 2021",
+      "start_date": "2021-02-27",
+      "end_date": "2021-03-20",
+      "year": "2021",
+      "competition_id": "sr:competition:1636"
+    },
+    {
+      "id": "sr:season:90001",
+      "name": "Cup 2022",
+      "start_date": "2022-01-19",
+      "end_date": "2022-02-06",
+      "year": "2022",
+      "competition_id": "sr:competition:1636"
+    },
+    {
+      "id": "sr:season:99639",
+      "name": "Cup 22/23",
+      "start_date": "2022-11-23",
+      "end_date": "2023-02-19",
+      "year": "22/23",
+      "competition_id": "sr:competition:1636"
+    },
+    {
+      "id": "sr:season:97909",
+      "name": "PBA, Commissioner Cup 22/23",
+      "start_date": "2022-09-21",
+      "end_date": "2023-05-31",
+      "year": "22/23",
+      "competition_id": "sr:competition:1656"
+    },
+    {
+      "id": "sr:season:112208",
+      "name": "PBA, Commissioner Cup 23/24",
+      "start_date": "2023-11-05",
+      "end_date": "2024-05-31",
+      "year": "23/24",
+      "competition_id": "sr:competition:1656"
+    },
+    {
+      "id": "sr:season:126403",
+      "name": "PBA, Commissioner Cup 24/25",
+      "start_date": "2024-11-27",
+      "end_date": "2025-05-31",
+      "year": "24/25",
+      "competition_id": "sr:competition:1656"
+    },
+    {
+      "id": "sr:season:98553",
+      "name": "Coupe de France 22/23",
+      "start_date": "2022-10-04",
+      "end_date": "2023-04-23",
+      "year": "22/23",
+      "competition_id": "sr:competition:1666"
+    },
+    {
+      "id": "sr:season:109245",
+      "name": "Coupe de France 23/24",
+      "start_date": "2023-09-17",
+      "end_date": "2024-04-30",
+      "year": "23/24",
+      "competition_id": "sr:competition:1666"
+    },
+    {
+      "id": "sr:season:122367",
+      "name": "Coupe de France 24/25",
+      "start_date": "2024-09-23",
+      "end_date": "2025-04-30",
+      "year": "24/25",
+      "competition_id": "sr:competition:1666"
+    },
+    {
+      "id": "sr:season:97891",
+      "name": "LNB 22/23",
+      "start_date": "2022-10-05",
+      "end_date": "2023-06-30",
+      "year": "22/23",
+      "competition_id": "sr:competition:1680"
+    },
+    {
+      "id": "sr:season:111008",
+      "name": "LNB 23/24",
+      "start_date": "2023-10-03",
+      "end_date": "2024-07-20",
+      "year": "23/24",
+      "competition_id": "sr:competition:1680"
+    },
+    {
+      "id": "sr:season:124053",
+      "name": "LNB 24/25",
+      "start_date": "2024-10-07",
+      "end_date": "2025-07-20",
+      "year": "24/25",
+      "competition_id": "sr:competition:1680"
+    },
+    {
+      "id": "sr:season:89383",
+      "name": "PBA, Governors Cup 21/22",
+      "start_date": "2021-12-08",
+      "end_date": "2022-05-31",
+      "year": "21/22",
+      "competition_id": "sr:competition:1712"
+    },
+    {
+      "id": "sr:season:102013",
+      "name": "PBA, Governors Cup 2023",
+      "start_date": "2023-01-22",
+      "end_date": "2023-05-31",
+      "year": "2023",
+      "competition_id": "sr:competition:1712"
+    },
+    {
+      "id": "sr:season:122377",
+      "name": "PBA, Governors Cup 2024",
+      "start_date": "2024-08-18",
+      "end_date": "2024-12-31",
+      "year": "2024",
+      "competition_id": "sr:competition:1712"
+    },
+    {
+      "id": "sr:season:60188",
+      "name": "ASEAN Basketball League 18/19",
+      "start_date": "2018-11-16",
+      "end_date": "2019-05-31",
+      "year": "18/19",
+      "competition_id": "sr:competition:1756"
+    },
+    {
+      "id": "sr:season:72647",
+      "name": "ASEAN Basketball League 19/20",
+      "start_date": "2019-11-16",
+      "end_date": "2020-05-31",
+      "year": "19/20",
+      "competition_id": "sr:competition:1756"
+    },
+    {
+      "id": "sr:season:101369",
+      "name": "ASEAN Basketball League 2023",
+      "start_date": "2023-01-02",
+      "end_date": "2023-03-25",
+      "year": "2023",
+      "competition_id": "sr:competition:1756"
+    },
+    {
+      "id": "sr:season:8486",
+      "name": "FIBA S. American Ch.sh. 2014",
+      "start_date": "2014-07-24",
+      "end_date": "2014-07-30",
+      "year": "2014",
+      "competition_id": "sr:competition:1796"
+    },
+    {
+      "id": "sr:season:32753",
+      "name": "FIBA S. American Ch.sh. 2016",
+      "start_date": "2016-06-26",
+      "end_date": "2016-07-04",
+      "year": "2016",
+      "competition_id": "sr:competition:1796"
+    },
+    {
+      "id": "sr:season:8488",
+      "name": "FIBA Centrobasket Ch.sh. 2014",
+      "start_date": "2014-08-01",
+      "end_date": "2014-08-09",
+      "year": "2014",
+      "competition_id": "sr:competition:1798"
+    },
+    {
+      "id": "sr:season:32529",
+      "name": "FIBA Centrobasket Ch.sh. 2016",
+      "start_date": "2016-06-19",
+      "end_date": "2016-06-26",
+      "year": "2016",
+      "competition_id": "sr:competition:1798"
+    },
+    {
+      "id": "sr:season:82362",
+      "name": "FIBA Centrob. Ch.sh. W 2021",
+      "start_date": "2021-03-24",
+      "end_date": "2021-03-29",
+      "year": "2021",
+      "competition_id": "sr:competition:1814"
+    },
+    {
+      "id": "sr:season:100661",
+      "name": "FIBA Centrob. Ch.sh. W 2022",
+      "start_date": "2022-11-23",
+      "end_date": "2022-11-27",
+      "year": "2022",
+      "competition_id": "sr:competition:1814"
+    },
+    {
+      "id": "sr:season:125415",
+      "name": "Centrobasket Championship, Women 2024",
+      "start_date": "2024-11-05",
+      "end_date": "2024-11-11",
+      "year": "2024",
+      "competition_id": "sr:competition:1814"
+    },
+    {
+      "id": "sr:season:57164",
+      "name": "FIBA S. American Ch.sh.W 2018",
+      "start_date": "2018-08-30",
+      "end_date": "2018-09-05",
+      "year": "2018",
+      "competition_id": "sr:competition:1816"
+    },
+    {
+      "id": "sr:season:96083",
+      "name": "FIBA S. American Ch.sh.W 2022",
+      "start_date": "2022-08-01",
+      "end_date": "2022-08-07",
+      "year": "2022",
+      "competition_id": "sr:competition:1816"
+    },
+    {
+      "id": "sr:season:121777",
+      "name": "FIBA S. American Ch.sh.W 2024",
+      "start_date": "2024-08-31",
+      "end_date": "2024-09-08",
+      "year": "2024",
+      "competition_id": "sr:competition:1816"
+    },
+    {
+      "id": "sr:season:96873",
+      "name": "LFB, Women 22/23",
+      "start_date": "2022-10-29",
+      "end_date": "2023-06-30",
+      "year": "22/23",
+      "competition_id": "sr:competition:1854"
+    },
+    {
+      "id": "sr:season:109519",
+      "name": "LFB, Women 23/24",
+      "start_date": "2023-09-23",
+      "end_date": "2024-05-19",
+      "year": "23/24",
+      "competition_id": "sr:competition:1854"
+    },
+    {
+      "id": "sr:season:122527",
+      "name": "LFB, Women 24/25",
+      "start_date": "2024-09-28",
+      "end_date": "2025-05-16",
+      "year": "24/25",
+      "competition_id": "sr:competition:1854"
+    },
+    {
+      "id": "sr:season:96867",
+      "name": "Basket Liga, Women 22/23",
+      "start_date": "2022-10-08",
+      "end_date": "2023-05-31",
+      "year": "22/23",
+      "competition_id": "sr:competition:1916"
+    },
+    {
+      "id": "sr:season:109627",
+      "name": "Basket Liga, Women 23/24",
+      "start_date": "2023-10-07",
+      "end_date": "2024-03-17",
+      "year": "23/24",
+      "competition_id": "sr:competition:1916"
+    },
+    {
+      "id": "sr:season:122539",
+      "name": "Basket Liga, Women 24/25",
+      "start_date": "2024-10-05",
+      "end_date": "2025-04-16",
+      "year": "24/25",
+      "competition_id": "sr:competition:1916"
+    },
+    {
+      "id": "sr:season:56508",
+      "name": "Asian Games 2018",
+      "start_date": "2018-08-14",
+      "end_date": "2018-09-02",
+      "year": "2018",
+      "competition_id": "sr:competition:1918"
+    },
+    {
+      "id": "sr:season:110467",
+      "name": "Asian Games 2022",
+      "start_date": "2023-09-26",
+      "end_date": "2023-10-06",
+      "year": "2023",
+      "competition_id": "sr:competition:1918"
+    },
+    {
+      "id": "sr:season:98549",
+      "name": "NBL 22/23",
+      "start_date": "2022-10-08",
+      "end_date": "2023-05-31",
+      "year": "22/23",
+      "competition_id": "sr:competition:1920"
+    },
+    {
+      "id": "sr:season:110747",
+      "name": "NBL 23/24",
+      "start_date": "2023-10-07",
+      "end_date": "2024-06-02",
+      "year": "23/24",
+      "competition_id": "sr:competition:1920"
+    },
+    {
+      "id": "sr:season:123827",
+      "name": "NBL 24/25",
+      "start_date": "2024-10-03",
+      "end_date": "2025-06-01",
+      "year": "24/25",
+      "competition_id": "sr:competition:1920"
+    },
+    {
+      "id": "sr:season:97125",
+      "name": "LPB 22/23",
+      "start_date": "2022-09-24",
+      "end_date": "2023-06-30",
+      "year": "22/23",
+      "competition_id": "sr:competition:1926"
+    },
+    {
+      "id": "sr:season:108469",
+      "name": "LPB 23/24",
+      "start_date": "2023-09-23",
+      "end_date": "2024-06-10",
+      "year": "23/24",
+      "competition_id": "sr:competition:1926"
+    },
+    {
+      "id": "sr:season:120769",
+      "name": "LPB 24/25",
+      "start_date": "2024-10-05",
+      "end_date": "2025-06-10",
+      "year": "24/25",
+      "competition_id": "sr:competition:1926"
+    },
+    {
+      "id": "sr:season:97117",
+      "name": "Top Division 1 22/23",
+      "start_date": "2022-09-16",
+      "end_date": "2023-05-31",
+      "year": "22/23",
+      "competition_id": "sr:competition:1934"
+    },
+    {
+      "id": "sr:season:110545",
+      "name": "Top Division 1 23/24",
+      "start_date": "2023-09-22",
+      "end_date": "2024-04-28",
+      "year": "23/24",
+      "competition_id": "sr:competition:1934"
+    },
+    {
+      "id": "sr:season:122561",
+      "name": "Top Division 1 24/25",
+      "start_date": "2024-09-06",
+      "end_date": "2025-04-28",
+      "year": "24/25",
+      "competition_id": "sr:competition:1934"
+    },
+    {
+      "id": "sr:season:98077",
+      "name": "FIBA Liga Sudamericana 2022",
+      "start_date": "2022-09-30",
+      "end_date": "2022-12-05",
+      "year": "2022",
+      "competition_id": "sr:competition:1936"
+    },
+    {
+      "id": "sr:season:111898",
+      "name": "FIBA Liga Sudamericana 2023",
+      "start_date": "2023-10-13",
+      "end_date": "2023-12-31",
+      "year": "2023",
+      "competition_id": "sr:competition:1936"
+    },
+    {
+      "id": "sr:season:124975",
+      "name": "Liga Sudamericana 2024",
+      "start_date": "2024-10-15",
+      "end_date": "2024-12-02",
+      "year": "2024",
+      "competition_id": "sr:competition:1936"
+    },
+    {
+      "id": "sr:season:97651",
+      "name": "LNA 22/23",
+      "start_date": "2022-10-01",
+      "end_date": "2023-06-15",
+      "year": "22/23",
+      "competition_id": "sr:competition:1938"
+    },
+    {
+      "id": "sr:season:110791",
+      "name": "SB League 23/24",
+      "start_date": "2023-09-30",
+      "end_date": "2024-05-07",
+      "year": "23/24",
+      "competition_id": "sr:competition:1938"
+    },
+    {
+      "id": "sr:season:123557",
+      "name": "SB League 24/25",
+      "start_date": "2024-09-28",
+      "end_date": "2025-05-07",
+      "year": "24/25",
+      "competition_id": "sr:competition:1938"
+    },
+    {
+      "id": "sr:season:98165",
+      "name": "Liga Nationala 22/23",
+      "start_date": "2022-09-28",
+      "end_date": "2023-05-31",
+      "year": "22/23",
+      "competition_id": "sr:competition:1948"
+    },
+    {
+      "id": "sr:season:110890",
+      "name": "Liga Nationala 23/24",
+      "start_date": "2023-09-22",
+      "end_date": "2024-05-29",
+      "year": "23/24",
+      "competition_id": "sr:competition:1948"
+    },
+    {
+      "id": "sr:season:123857",
+      "name": "Liga Nationala 24/25",
+      "start_date": "2024-09-20",
+      "end_date": "2025-05-29",
+      "year": "24/25",
+      "competition_id": "sr:competition:1948"
+    },
+    {
+      "id": "sr:season:85222",
+      "name": "PBA, Philippine Cup 2021",
+      "start_date": "2021-07-16",
+      "end_date": "2021-10-30",
+      "year": "2021",
+      "competition_id": "sr:competition:1956"
+    },
+    {
+      "id": "sr:season:94039",
+      "name": "PBA, Philippine Cup 2022",
+      "start_date": "2022-06-05",
+      "end_date": "2022-10-31",
+      "year": "2022",
+      "competition_id": "sr:competition:1956"
+    },
+    {
+      "id": "sr:season:116085",
+      "name": "PBA, Philippine Cup 2024",
+      "start_date": "2024-02-28",
+      "end_date": "2024-06-16",
+      "year": "2024",
+      "competition_id": "sr:competition:1956"
+    },
+    {
+      "id": "sr:season:79515",
+      "name": "Cup 20/21",
+      "start_date": "2020-10-31",
+      "end_date": "2021-01-25",
+      "year": "20/21",
+      "competition_id": "sr:competition:1984"
+    },
+    {
+      "id": "sr:season:86092",
+      "name": "BBL Cup 21/22",
+      "start_date": "2021-09-24",
+      "end_date": "2022-01-30",
+      "year": "21/22",
+      "competition_id": "sr:competition:1984"
+    },
+    {
+      "id": "sr:season:96313",
+      "name": "Cup 22/23",
+      "start_date": "2022-10-02",
+      "end_date": "2023-01-29",
+      "year": "22/23",
+      "competition_id": "sr:competition:1984"
+    },
+    {
+      "id": "sr:season:87652",
+      "name": "Balkan League 21/22",
+      "start_date": "2021-10-12",
+      "end_date": "2022-05-02",
+      "year": "21/22",
+      "competition_id": "sr:competition:2003"
+    },
+    {
+      "id": "sr:season:99621",
+      "name": "Balkan League 22/23",
+      "start_date": "2022-10-27",
+      "end_date": "2023-05-31",
+      "year": "22/23",
+      "competition_id": "sr:competition:2003"
+    },
+    {
+      "id": "sr:season:112942",
+      "name": "Balkan League 23/24",
+      "start_date": "2023-11-15",
+      "end_date": "2024-12-31",
+      "year": "23/24",
+      "competition_id": "sr:competition:2003"
+    },
+    {
+      "id": "sr:season:38722",
+      "name": "All Star Game 2017",
+      "start_date": "2017-01-14",
+      "end_date": "2017-01-15",
+      "year": "2017",
+      "competition_id": "sr:competition:2063"
+    },
+    {
+      "id": "sr:season:50523",
+      "name": "All Star Game 2018",
+      "start_date": "2018-01-13",
+      "end_date": "2018-01-14",
+      "year": "2018",
+      "competition_id": "sr:competition:2063"
+    },
+    {
+      "id": "sr:season:63861",
+      "name": "All Star Game 2019",
+      "start_date": "2019-03-23",
+      "end_date": "2019-03-24",
+      "year": "2019",
+      "competition_id": "sr:competition:2063"
+    },
+    {
+      "id": "sr:season:101373",
+      "name": "BBL Trophy 2023",
+      "start_date": "2023-01-07",
+      "end_date": "2023-03-26",
+      "year": "2023",
+      "competition_id": "sr:competition:2079"
+    },
+    {
+      "id": "sr:season:109623",
+      "name": "Cup 2024",
+      "start_date": "2024-01-04",
+      "end_date": "2024-01-28",
+      "year": "23/24",
+      "competition_id": "sr:competition:2079"
+    },
+    {
+      "id": "sr:season:100791",
+      "name": "CBA, All Star Game 2022",
+      "start_date": "2022-12-03",
+      "end_date": "2022-12-04",
+      "year": "2022",
+      "competition_id": "sr:competition:2080"
+    },
+    {
+      "id": "sr:season:103867",
+      "name": "CBA, All Star Game 2023",
+      "start_date": "2023-03-25",
+      "end_date": "2023-03-26",
+      "year": "2023",
+      "competition_id": "sr:competition:2080"
+    },
+    {
+      "id": "sr:season:116143",
+      "name": "CBA, All Star Game 2024",
+      "start_date": "2024-03-03",
+      "end_date": "2024-03-03",
+      "year": "2024",
+      "competition_id": "sr:competition:2080"
+    },
+    {
+      "id": "sr:season:89751",
+      "name": "Belgium Cup 21/22",
+      "start_date": "2022-01-21",
+      "end_date": "2022-04-30",
+      "year": "2022",
+      "competition_id": "sr:competition:2098"
+    },
+    {
+      "id": "sr:season:100883",
+      "name": "Belgium Cup 22/23",
+      "start_date": "2022-12-09",
+      "end_date": "2023-03-12",
+      "year": "22/23",
+      "competition_id": "sr:competition:2098"
+    },
+    {
+      "id": "sr:season:112590",
+      "name": "Belgium Cup 23/24",
+      "start_date": "2023-12-08",
+      "end_date": "2024-03-10",
+      "year": "23/24",
+      "competition_id": "sr:competition:2098"
+    },
+    {
+      "id": "sr:season:12701",
+      "name": "LNP Cup 2016",
+      "start_date": "2016-03-04",
+      "end_date": "2016-03-07",
+      "year": "2016",
+      "competition_id": "sr:competition:2138"
+    },
+    {
+      "id": "sr:season:89669",
+      "name": "International Friendly Games, Women 2022",
+      "start_date": "2022-01-01",
+      "end_date": "2022-12-31",
+      "year": "2022",
+      "competition_id": "sr:competition:2197"
+    },
+    {
+      "id": "sr:season:100957",
+      "name": "International Friendly Games, Women 2023",
+      "start_date": "2023-01-01",
+      "end_date": "2023-12-31",
+      "year": "2023",
+      "competition_id": "sr:competition:2197"
+    },
+    {
+      "id": "sr:season:113867",
+      "name": "International Friendly Games, Women 2024",
+      "start_date": "2024-01-01",
+      "end_date": "2024-12-31",
+      "year": "2024",
+      "competition_id": "sr:competition:2197"
+    },
+    {
+      "id": "sr:season:97447",
+      "name": "Super Cup 2022",
+      "start_date": "2022-09-23",
+      "end_date": "2022-09-24",
+      "year": "2022",
+      "competition_id": "sr:competition:2314"
+    },
+    {
+      "id": "sr:season:109883",
+      "name": "Super Cup 2023",
+      "start_date": "2023-09-22",
+      "end_date": "2023-09-23",
+      "year": "2023",
+      "competition_id": "sr:competition:2314"
+    },
+    {
+      "id": "sr:season:122629",
+      "name": "Superpokal 2024",
+      "start_date": "2024-09-17",
+      "end_date": "2024-09-18",
+      "year": "2024",
+      "competition_id": "sr:competition:2314"
+    },
+    {
+      "id": "sr:season:42982",
+      "name": "FIBA Africa Championship, Women 2017",
+      "start_date": "2017-08-18",
+      "end_date": "2017-08-28",
+      "year": "2017",
+      "competition_id": "sr:competition:2358"
+    },
+    {
+      "id": "sr:season:87116",
+      "name": "FIBA Africa Championship, Women 2021",
+      "start_date": "2021-09-18",
+      "end_date": "2021-10-02",
+      "year": "2021",
+      "competition_id": "sr:competition:2358"
+    },
+    {
+      "id": "sr:season:107775",
+      "name": "FIBA Afrobasket, Women 2023",
+      "start_date": "2023-07-28",
+      "end_date": "2023-08-05",
+      "year": "2023",
+      "competition_id": "sr:competition:2358"
+    },
+    {
+      "id": "sr:season:87586",
+      "name": "Alpe Adria Cup 21/22",
+      "start_date": "2020-09-23",
+      "end_date": "2022-05-31",
+      "year": "2022",
+      "competition_id": "sr:competition:2370"
+    },
+    {
+      "id": "sr:season:98161",
+      "name": "Alpe Adria Cup 22/23",
+      "start_date": "2022-09-22",
+      "end_date": "2023-05-31",
+      "year": "22/23",
+      "competition_id": "sr:competition:2370"
+    },
+    {
+      "id": "sr:season:109733",
+      "name": "Alpe Adria Cup 23/24",
+      "start_date": "2023-10-18",
+      "end_date": "2024-03-13",
+      "year": "23/24",
+      "competition_id": "sr:competition:2370"
+    },
+    {
+      "id": "sr:season:96495",
+      "name": "NBA Preseason 2022",
+      "start_date": "2022-09-30",
+      "end_date": "2022-10-15",
+      "year": "2022",
+      "competition_id": "sr:competition:2382"
+    },
+    {
+      "id": "sr:season:109375",
+      "name": "NBA Preseason 2023",
+      "start_date": "2023-10-05",
+      "end_date": "2023-10-21",
+      "year": "2023",
+      "competition_id": "sr:competition:2382"
+    },
+    {
+      "id": "sr:season:122855",
+      "name": "NBA Preseason 24/25",
+      "start_date": "2024-09-26",
+      "end_date": "2024-10-20",
+      "year": "2024",
+      "competition_id": "sr:competition:2382"
+    },
+    {
+      "id": "sr:season:99341",
+      "name": "FBU Superleague 22/23",
+      "start_date": "2022-10-22",
+      "end_date": "2023-05-31",
+      "year": "22/23",
+      "competition_id": "sr:competition:2384"
+    },
+    {
+      "id": "sr:season:110894",
+      "name": "FBU Superleague 23/24",
+      "start_date": "2023-10-03",
+      "end_date": "2024-04-25",
+      "year": "23/24",
+      "competition_id": "sr:competition:2384"
+    },
+    {
+      "id": "sr:season:124297",
+      "name": "FBU Superleague 24/25",
+      "start_date": "2024-10-03",
+      "end_date": "2025-04-25",
+      "year": "24/25",
+      "competition_id": "sr:competition:2384"
+    },
+    {
+      "id": "sr:season:96057",
+      "name": "Europe Cup 22/23",
+      "start_date": "2022-09-27",
+      "end_date": "2023-04-26",
+      "year": "22/23",
+      "competition_id": "sr:competition:2388"
+    },
+    {
+      "id": "sr:season:109213",
+      "name": "Europe Cup 23/24",
+      "start_date": "2023-10-02",
+      "end_date": "2024-04-26",
+      "year": "23/24",
+      "competition_id": "sr:competition:2388"
+    },
+    {
+      "id": "sr:season:121641",
+      "name": "Europe Cup 24/25",
+      "start_date": "2024-08-24",
+      "end_date": "2025-04-23",
+      "year": "24/25",
+      "competition_id": "sr:competition:2388"
+    },
+    {
+      "id": "sr:season:11922",
+      "name": "ACBU Superleague 15/16",
+      "start_date": "2015-10-30",
+      "end_date": "2016-05-22",
+      "year": "15/16",
+      "competition_id": "sr:competition:2400"
+    },
+    {
+      "id": "sr:season:99251",
+      "name": "WKBL 22/23",
+      "start_date": "2022-10-30",
+      "end_date": "2023-05-31",
+      "year": "22/23",
+      "competition_id": "sr:competition:2402"
+    },
+    {
+      "id": "sr:season:112196",
+      "name": "WKBL 23/24",
+      "start_date": "2023-11-05",
+      "end_date": "2024-03-30",
+      "year": "23/24",
+      "competition_id": "sr:competition:2402"
+    },
+    {
+      "id": "sr:season:121281",
+      "name": "WKBL 24/25",
+      "start_date": "2024-10-27",
+      "end_date": "2025-03-24",
+      "year": "24/25",
+      "competition_id": "sr:competition:2402"
+    },
+    {
+      "id": "sr:season:100651",
+      "name": "WCBA 22/23",
+      "start_date": "2022-11-30",
+      "end_date": "2023-03-15",
+      "year": "22/23",
+      "competition_id": "sr:competition:2408"
+    },
+    {
+      "id": "sr:season:112088",
+      "name": "WCBA 23/24",
+      "start_date": "2023-10-17",
+      "end_date": "2024-04-22",
+      "year": "23/24",
+      "competition_id": "sr:competition:2408"
+    },
+    {
+      "id": "sr:season:126181",
+      "name": "WCBA 24/25",
+      "start_date": "2024-11-15",
+      "end_date": "2025-04-16",
+      "year": "24/25",
+      "competition_id": "sr:competition:2408"
+    },
+    {
+      "id": "sr:season:89743",
+      "name": "Cup 21/22",
+      "start_date": "2022-01-05",
+      "end_date": "2022-02-19",
+      "year": "2022",
+      "competition_id": "sr:competition:2500"
+    },
+    {
+      "id": "sr:season:101381",
+      "name": "Cup 22/23",
+      "start_date": "2023-01-04",
+      "end_date": "2023-02-17",
+      "year": "22/23",
+      "competition_id": "sr:competition:2500"
+    },
+    {
+      "id": "sr:season:114205",
+      "name": "Cup 2024",
+      "start_date": "2024-01-03",
+      "end_date": "2024-02-16",
+      "year": "2024",
+      "competition_id": "sr:competition:2500"
+    },
+    {
+      "id": "sr:season:92041",
+      "name": "Big V 2022",
+      "start_date": "2022-03-19",
+      "end_date": "2022-09-04",
+      "year": "2022",
+      "competition_id": "sr:competition:2525"
+    },
+    {
+      "id": "sr:season:102827",
+      "name": "Big V 2023",
+      "start_date": "2023-03-18",
+      "end_date": "2023-08-27",
+      "year": "2023",
+      "competition_id": "sr:competition:2525"
+    },
+    {
+      "id": "sr:season:116347",
+      "name": "Big V 2024",
+      "start_date": "2024-04-05",
+      "end_date": "2024-09-01",
+      "year": "2024",
+      "competition_id": "sr:competition:2525"
+    },
+    {
+      "id": "sr:season:12787",
+      "name": "SEABL 2016",
+      "start_date": "2016-03-31",
+      "end_date": "2016-09-30",
+      "year": "2016",
+      "competition_id": "sr:competition:2533"
+    },
+    {
+      "id": "sr:season:39683",
+      "name": "SEABL 2017",
+      "start_date": "2017-03-24",
+      "end_date": "2017-09-30",
+      "year": "2017",
+      "competition_id": "sr:competition:2533"
+    },
+    {
+      "id": "sr:season:51155",
+      "name": "SEABL 2018",
+      "start_date": "2018-04-06",
+      "end_date": "2018-08-18",
+      "year": "2018",
+      "competition_id": "sr:competition:2533"
+    },
+    {
+      "id": "sr:season:12789",
+      "name": "SEABL, Women 2016",
+      "start_date": "2016-03-31",
+      "end_date": "2016-09-30",
+      "year": "2016",
+      "competition_id": "sr:competition:2535"
+    },
+    {
+      "id": "sr:season:39685",
+      "name": "SEABL, Women 2017",
+      "start_date": "2017-03-25",
+      "end_date": "2017-09-30",
+      "year": "2017",
+      "competition_id": "sr:competition:2535"
+    },
+    {
+      "id": "sr:season:51157",
+      "name": "SEABL, Women 2018",
+      "start_date": "2018-04-06",
+      "end_date": "2018-08-19",
+      "year": "2018",
+      "competition_id": "sr:competition:2535"
+    },
+    {
+      "id": "sr:season:55891",
+      "name": "U18 FIBA Asia Championship 2018",
+      "start_date": "2017-08-05",
+      "end_date": "2018-08-11",
+      "year": "2018",
+      "competition_id": "sr:competition:14003"
+    },
+    {
+      "id": "sr:season:96833",
+      "name": "U18 FIBA Asia Championship 2022",
+      "start_date": "2022-08-21",
+      "end_date": "2022-08-28",
+      "year": "2022",
+      "competition_id": "sr:competition:14003"
+    },
+    {
+      "id": "sr:season:122663",
+      "name": "U18 FIBA Asia Championship 2024",
+      "start_date": "2024-09-02",
+      "end_date": "2024-09-09",
+      "year": "2024",
+      "competition_id": "sr:competition:14003"
+    },
+    {
+      "id": "sr:season:95425",
+      "name": "Champions League 22/23",
+      "start_date": "2022-09-21",
+      "end_date": "2023-05-15",
+      "year": "22/23",
+      "competition_id": "sr:competition:14051"
+    },
+    {
+      "id": "sr:season:107965",
+      "name": "Champions League 23/24",
+      "start_date": "2023-09-25",
+      "end_date": "2024-05-15",
+      "year": "23/24",
+      "competition_id": "sr:competition:14051"
+    },
+    {
+      "id": "sr:season:120203",
+      "name": "Champions League 24/25",
+      "start_date": "2024-09-16",
+      "end_date": "2025-05-11",
+      "year": "24/25",
+      "competition_id": "sr:competition:14051"
+    },
+    {
+      "id": "sr:season:98155",
+      "name": "Supercoppa LNP 2022",
+      "start_date": "2022-09-20",
+      "end_date": "2022-09-25",
+      "year": "2022",
+      "competition_id": "sr:competition:14339"
+    },
+    {
+      "id": "sr:season:110859",
+      "name": "Supercoppa LNP 2023",
+      "start_date": "2023-09-19",
+      "end_date": "2023-09-24",
+      "year": "2023",
+      "competition_id": "sr:competition:14339"
+    },
+    {
+      "id": "sr:season:123167",
+      "name": "Supercoppa LNP 2024",
+      "start_date": "2024-09-21",
+      "end_date": "2024-09-22",
+      "year": "2024",
+      "competition_id": "sr:competition:14339"
+    },
+    {
+      "id": "sr:season:97017",
+      "name": "Super Cup 2022",
+      "start_date": "2022-09-17",
+      "end_date": "2022-09-18",
+      "year": "2022",
+      "competition_id": "sr:competition:14449"
+    },
+    {
+      "id": "sr:season:109367",
+      "name": "Super Cup 2023",
+      "start_date": "2023-09-16",
+      "end_date": "2023-09-17",
+      "year": "2023",
+      "competition_id": "sr:competition:14449"
+    },
+    {
+      "id": "sr:season:122627",
+      "name": "Super Cup 2024",
+      "start_date": "2024-09-28",
+      "end_date": "2024-09-29",
+      "year": "2024",
+      "competition_id": "sr:competition:14449"
+    },
+    {
+      "id": "sr:season:97121",
+      "name": "Urvalsdeild, Women 22/23",
+      "start_date": "2022-09-21",
+      "end_date": "2023-05-31",
+      "year": "22/23",
+      "competition_id": "sr:competition:14453"
+    },
+    {
+      "id": "sr:season:111074",
+      "name": "Urvalsdeild, Women 23/24",
+      "start_date": "2023-09-26",
+      "end_date": "2024-05-22",
+      "year": "23/24",
+      "competition_id": "sr:competition:14453"
+    },
+    {
+      "id": "sr:season:121063",
+      "name": "Urvalsdeild, Women 24/25",
+      "start_date": "2024-10-01",
+      "end_date": "2025-05-22",
+      "year": "24/25",
+      "competition_id": "sr:competition:14453"
+    },
+    {
+      "id": "sr:season:97119",
+      "name": "Urvalsdeild 22/23",
+      "start_date": "2022-10-05",
+      "end_date": "2023-05-31",
+      "year": "22/23",
+      "competition_id": "sr:competition:14455"
+    },
+    {
+      "id": "sr:season:111078",
+      "name": "Urvalsdeild 23/24",
+      "start_date": "2023-10-05",
+      "end_date": "2024-05-31",
+      "year": "23/24",
+      "competition_id": "sr:competition:14455"
+    },
+    {
+      "id": "sr:season:121061",
+      "name": "Urvalsdeild 24/25",
+      "start_date": "2024-10-03",
+      "end_date": "2025-05-30",
+      "year": "24/25",
+      "competition_id": "sr:competition:14455"
+    },
+    {
+      "id": "sr:season:90169",
+      "name": "Liga Nacional 2022",
+      "start_date": "2022-01-08",
+      "end_date": "2022-09-30",
+      "year": "2022",
+      "competition_id": "sr:competition:14457"
+    },
+    {
+      "id": "sr:season:101445",
+      "name": "Liga Nacional 2023",
+      "start_date": "2023-01-13",
+      "end_date": "2023-07-23",
+      "year": "2023",
+      "competition_id": "sr:competition:14457"
+    },
+    {
+      "id": "sr:season:114483",
+      "name": "Liga Nacional 2024",
+      "start_date": "2024-01-12",
+      "end_date": "2024-07-31",
+      "year": "2024",
+      "competition_id": "sr:competition:14457"
+    },
+    {
+      "id": "sr:season:95889",
+      "name": "WNBA Preseason 2022",
+      "start_date": "2022-04-24",
+      "end_date": "2022-05-02",
+      "year": "2022",
+      "competition_id": "sr:competition:14458"
+    },
+    {
+      "id": "sr:season:101103",
+      "name": "WNBA Preseason 2023",
+      "start_date": "2023-05-01",
+      "end_date": "2023-05-14",
+      "year": "2023",
+      "competition_id": "sr:competition:14458"
+    },
+    {
+      "id": "sr:season:117605",
+      "name": "WNBA Preseason 2024",
+      "start_date": "2024-05-03",
+      "end_date": "2024-05-12",
+      "year": "2024",
+      "competition_id": "sr:competition:14458"
+    },
+    {
+      "id": "sr:season:97113",
+      "name": "A1, Women 22/23",
+      "start_date": "2022-10-08",
+      "end_date": "2023-05-31",
+      "year": "22/23",
+      "competition_id": "sr:competition:14554"
+    },
+    {
+      "id": "sr:season:109363",
+      "name": "A1, Women 23/24",
+      "start_date": "2023-10-07",
+      "end_date": "2024-05-31",
+      "year": "23/24",
+      "competition_id": "sr:competition:14554"
+    },
+    {
+      "id": "sr:season:121419",
+      "name": "A1, Women 24/25",
+      "start_date": "2024-10-05",
+      "end_date": "2025-05-31",
+      "year": "24/25",
+      "competition_id": "sr:competition:14554"
+    },
+    {
+      "id": "sr:season:98585",
+      "name": "Division A 22/23",
+      "start_date": "2022-10-07",
+      "end_date": "2023-05-31",
+      "year": "22/23",
+      "competition_id": "sr:competition:14588"
+    },
+    {
+      "id": "sr:season:110896",
+      "name": "Division A 23/24",
+      "start_date": "2023-10-06",
+      "end_date": "2024-05-31",
+      "year": "23/24",
+      "competition_id": "sr:competition:14588"
+    },
+    {
+      "id": "sr:season:124041",
+      "name": "Division A 24/25",
+      "start_date": "2024-10-11",
+      "end_date": "2025-05-31",
+      "year": "24/25",
+      "competition_id": "sr:competition:14588"
+    },
+    {
+      "id": "sr:season:90251",
+      "name": "IBL 2022",
+      "start_date": "2022-01-14",
+      "end_date": "2022-08-31",
+      "year": "2022",
+      "competition_id": "sr:competition:14862"
+    },
+    {
+      "id": "sr:season:101839",
+      "name": "IBL 2023",
+      "start_date": "2023-01-14",
+      "end_date": "2023-07-22",
+      "year": "2023",
+      "competition_id": "sr:competition:14862"
+    },
+    {
+      "id": "sr:season:114737",
+      "name": "IBL 2024",
+      "start_date": "2024-01-13",
+      "end_date": "2024-08-04",
+      "year": "2024",
+      "competition_id": "sr:competition:14862"
+    },
+    {
+      "id": "sr:season:89569",
+      "name": "Coupe de France, Women 21/22",
+      "start_date": "2022-01-21",
+      "end_date": "2022-04-23",
+      "year": "2022",
+      "competition_id": "sr:competition:14895"
+    },
+    {
+      "id": "sr:season:101069",
+      "name": "Coupe de France, Women 2023",
+      "start_date": "2023-02-16",
+      "end_date": "2023-04-23",
+      "year": "2023",
+      "competition_id": "sr:competition:14895"
+    },
+    {
+      "id": "sr:season:113935",
+      "name": "Coupe de France, Women 2024",
+      "start_date": "2024-01-20",
+      "end_date": "2024-04-27",
+      "year": "2024",
+      "competition_id": "sr:competition:14895"
+    },
+    {
+      "id": "sr:season:90781",
+      "name": "Cup 2022",
+      "start_date": "2022-02-17",
+      "end_date": "2022-02-20",
+      "year": "2022",
+      "competition_id": "sr:competition:14961"
+    },
+    {
+      "id": "sr:season:102215",
+      "name": "Cup 2023",
+      "start_date": "2023-02-15",
+      "end_date": "2023-02-18",
+      "year": "2023",
+      "competition_id": "sr:competition:14961"
+    },
+    {
+      "id": "sr:season:115095",
+      "name": "Cup 2024",
+      "start_date": "2024-02-14",
+      "end_date": "2024-02-17",
+      "year": "2024",
+      "competition_id": "sr:competition:14961"
+    },
+    {
+      "id": "sr:season:100873",
+      "name": "Croatia Cup 2023",
+      "start_date": "2022-12-07",
+      "end_date": "2023-02-20",
+      "year": "2023",
+      "competition_id": "sr:competition:14963"
+    },
+    {
+      "id": "sr:season:112834",
+      "name": "Croatia Cup 23/24",
+      "start_date": "2023-11-29",
+      "end_date": "2024-02-17",
+      "year": "23/24",
+      "competition_id": "sr:competition:14963"
+    },
+    {
+      "id": "sr:season:125969",
+      "name": "Croatian Cup 24/25",
+      "start_date": "2024-11-27",
+      "end_date": "2025-02-17",
+      "year": "24/25",
+      "competition_id": "sr:competition:14963"
+    },
+    {
+      "id": "sr:season:92221",
+      "name": "Cup, Women 2022",
+      "start_date": "2022-03-24",
+      "end_date": "2022-03-27",
+      "year": "2022",
+      "competition_id": "sr:competition:14985"
+    },
+    {
+      "id": "sr:season:102515",
+      "name": "Cup, Women 2023",
+      "start_date": "2023-03-30",
+      "end_date": "2023-04-02",
+      "year": "2023",
+      "competition_id": "sr:competition:14985"
+    },
+    {
+      "id": "sr:season:114325",
+      "name": "Cup, Women 2024",
+      "start_date": "2024-01-04",
+      "end_date": "2024-02-18",
+      "year": "2024",
+      "competition_id": "sr:competition:14985"
+    },
+    {
+      "id": "sr:season:91695",
+      "name": "Serie A2, LNP Cup 2022",
+      "start_date": "2022-03-11",
+      "end_date": "2022-03-13",
+      "year": "2022",
+      "competition_id": "sr:competition:15011"
+    },
+    {
+      "id": "sr:season:101431",
+      "name": "Serie A2, LNP Cup 2023",
+      "start_date": "2022-12-28",
+      "end_date": "2023-03-12",
+      "year": "2023",
+      "competition_id": "sr:competition:15011"
+    },
+    {
+      "id": "sr:season:115619",
+      "name": "Coppa Italia LNP, Serie A2 2024",
+      "start_date": "2024-03-16",
+      "end_date": "2024-03-17",
+      "year": "2024",
+      "competition_id": "sr:competition:15011"
+    },
+    {
+      "id": "sr:season:96103",
+      "name": "Eurocup, Women 22/23",
+      "start_date": "2022-10-05",
+      "end_date": "2023-04-12",
+      "year": "22/23",
+      "competition_id": "sr:competition:15037"
+    },
+    {
+      "id": "sr:season:109419",
+      "name": "Eurocup, Women 23/24",
+      "start_date": "2023-09-20",
+      "end_date": "2024-04-10",
+      "year": "23/24",
+      "competition_id": "sr:competition:15037"
+    },
+    {
+      "id": "sr:season:121305",
+      "name": "Eurocup, Women 24/25",
+      "start_date": "2024-09-18",
+      "end_date": "2025-04-10",
+      "year": "24/25",
+      "competition_id": "sr:competition:15037"
+    },
+    {
+      "id": "sr:season:92043",
+      "name": "Big V, Women 2022",
+      "start_date": "2022-03-19",
+      "end_date": "2022-09-04",
+      "year": "2022",
+      "competition_id": "sr:competition:15121"
+    },
+    {
+      "id": "sr:season:102835",
+      "name": "Big V, Women 2023",
+      "start_date": "2023-03-18",
+      "end_date": "2023-08-27",
+      "year": "2023",
+      "competition_id": "sr:competition:15121"
+    },
+    {
+      "id": "sr:season:116349",
+      "name": "Big V, Women 2024",
+      "start_date": "2024-04-05",
+      "end_date": "2024-09-01",
+      "year": "2024",
+      "competition_id": "sr:competition:15121"
+    },
+    {
+      "id": "sr:season:95025",
+      "name": "NBA Summer League 2022",
+      "start_date": "2022-07-02",
+      "end_date": "2022-07-20",
+      "year": "2022",
+      "competition_id": "sr:competition:15822"
+    },
+    {
+      "id": "sr:season:107001",
+      "name": "NBA Summer League 2023",
+      "start_date": "2023-07-03",
+      "end_date": "2023-07-18",
+      "year": "2023",
+      "competition_id": "sr:competition:15822"
+    },
+    {
+      "id": "sr:season:119923",
+      "name": "NBA Summer League 2024",
+      "start_date": "2024-07-06",
+      "end_date": "2024-07-23",
+      "year": "2024",
+      "competition_id": "sr:competition:15822"
+    },
+    {
+      "id": "sr:season:42874",
+      "name": "World Cup Qualification 2019, Europe",
+      "start_date": "2017-08-02",
+      "end_date": "2019-02-26",
+      "year": "17-19",
+      "competition_id": "sr:competition:16882"
+    },
+    {
+      "id": "sr:season:76037",
+      "name": "World Cup Qualification 2023, Europe",
+      "start_date": "2020-02-20",
+      "end_date": "2023-02-28",
+      "year": "20-23",
+      "competition_id": "sr:competition:16882"
+    },
+    {
+      "id": "sr:season:109975",
+      "name": "World Cup Qualification, Europe 2025",
+      "start_date": "2024-02-22",
+      "end_date": "2026-06-30",
+      "year": "24-26",
+      "competition_id": "sr:competition:16882"
+    },
+    {
+      "id": "sr:season:43334",
+      "name": "World Cup Qualification 2019, Africa",
+      "start_date": "2017-11-24",
+      "end_date": "2019-03-31",
+      "year": "17-19",
+      "competition_id": "sr:competition:17304"
+    },
+    {
+      "id": "sr:season:88733",
+      "name": "World Cup Qualification, Africa 2023",
+      "start_date": "2021-11-26",
+      "end_date": "2023-02-27",
+      "year": "21-23",
+      "competition_id": "sr:competition:17304"
+    },
+    {
+      "id": "sr:season:43362",
+      "name": "World Cup Qualification 2019, Americas",
+      "start_date": "2017-11-23",
+      "end_date": "2019-02-26",
+      "year": "17-19",
+      "competition_id": "sr:competition:17324"
+    },
+    {
+      "id": "sr:season:84806",
+      "name": "World Cup Qualification 2023, Americas",
+      "start_date": "2021-07-02",
+      "end_date": "2023-02-28",
+      "year": "21-23",
+      "competition_id": "sr:competition:17324"
+    },
+    {
+      "id": "sr:season:120795",
+      "name": "World Cup Qualification, Americas 2026",
+      "start_date": "2024-07-10",
+      "end_date": "2026-02-28",
+      "year": "24-26",
+      "competition_id": "sr:competition:17324"
+    },
+    {
+      "id": "sr:season:43844",
+      "name": "World Cup Qualification 2019, Asia & Oceania",
+      "start_date": "2017-11-23",
+      "end_date": "2019-02-26",
+      "year": "17-19",
+      "competition_id": "sr:competition:17788"
+    },
+    {
+      "id": "sr:season:88735",
+      "name": "World Cup Qualification, Asia & Oceania 2023",
+      "start_date": "2021-11-22",
+      "end_date": "2023-02-27",
+      "year": "21-23",
+      "competition_id": "sr:competition:17788"
+    },
+    {
+      "id": "sr:season:99193",
+      "name": "LUB 22/23",
+      "start_date": "2022-10-20",
+      "end_date": "2023-06-14",
+      "year": "22/23",
+      "competition_id": "sr:competition:19980"
+    },
+    {
+      "id": "sr:season:112028",
+      "name": "LUB 23/24",
+      "start_date": "2023-10-24",
+      "end_date": "2024-06-19",
+      "year": "23/24",
+      "competition_id": "sr:competition:19980"
+    },
+    {
+      "id": "sr:season:124983",
+      "name": "LUB 24/25",
+      "start_date": "2024-10-24",
+      "end_date": "2025-06-19",
+      "year": "24/25",
+      "competition_id": "sr:competition:19980"
+    },
+    {
+      "id": "sr:season:96875",
+      "name": "Match des Champions, Women 2022",
+      "start_date": "2022-10-20",
+      "end_date": "2022-10-21",
+      "year": "2022",
+      "competition_id": "sr:competition:20098"
+    },
+    {
+      "id": "sr:season:107811",
+      "name": "Match des Champions, Women 2023",
+      "start_date": "2023-09-15",
+      "end_date": "2023-09-16",
+      "year": "2023",
+      "competition_id": "sr:competition:20098"
+    },
+    {
+      "id": "sr:season:122625",
+      "name": "Match des Champions, Women 2024",
+      "start_date": "2024-09-21",
+      "end_date": "2024-09-22",
+      "year": "2024",
+      "competition_id": "sr:competition:20098"
+    },
+    {
+      "id": "sr:season:97111",
+      "name": "NB I. A 22/23",
+      "start_date": "2022-10-01",
+      "end_date": "2023-06-30",
+      "year": "22/23",
+      "competition_id": "sr:competition:20132"
+    },
+    {
+      "id": "sr:season:110551",
+      "name": "NB I. A 23/24",
+      "start_date": "2023-09-29",
+      "end_date": "2024-05-20",
+      "year": "23/24",
+      "competition_id": "sr:competition:20132"
+    },
+    {
+      "id": "sr:season:123347",
+      "name": "NB I. A 24/25",
+      "start_date": "2024-09-27",
+      "end_date": "2025-05-31",
+      "year": "24/25",
+      "competition_id": "sr:competition:20132"
+    },
+    {
+      "id": "sr:season:97115",
+      "name": "Elite League 22/23",
+      "start_date": "2022-10-08",
+      "end_date": "2023-05-28",
+      "year": "22/23",
+      "competition_id": "sr:competition:20154"
+    },
+    {
+      "id": "sr:season:109347",
+      "name": "Elite League 23/24",
+      "start_date": "2023-10-07",
+      "end_date": "2024-05-20",
+      "year": "23/24",
+      "competition_id": "sr:competition:20154"
+    },
+    {
+      "id": "sr:season:121439",
+      "name": "Elite League 24/25",
+      "start_date": "2024-10-05",
+      "end_date": "2025-05-20",
+      "year": "24/25",
+      "competition_id": "sr:competition:20154"
+    },
+    {
+      "id": "sr:season:98407",
+      "name": "NCAA Women, Regular Season 22/23",
+      "start_date": "2022-11-07",
+      "end_date": "2023-03-12",
+      "year": "22/23",
+      "competition_id": "sr:competition:21384"
+    },
+    {
+      "id": "sr:season:105255",
+      "name": "NCAA Women, Regular Season 23/24",
+      "start_date": "2023-11-01",
+      "end_date": "2024-03-21",
+      "year": "23/24",
+      "competition_id": "sr:competition:21384"
+    },
+    {
+      "id": "sr:season:117441",
+      "name": "NCAA Women, Regular Season 24/25",
+      "start_date": "2024-11-04",
+      "end_date": "2025-03-16",
+      "year": "24/25",
+      "competition_id": "sr:competition:21384"
+    },
+    {
+      "id": "sr:season:87136",
+      "name": "Super 20 2021",
+      "start_date": "2021-09-24",
+      "end_date": "2021-10-30",
+      "year": "2021",
+      "competition_id": "sr:competition:22350"
+    },
+    {
+      "id": "sr:season:102519",
+      "name": "Super 20 2023",
+      "start_date": "2023-02-11",
+      "end_date": "2023-02-13",
+      "year": "2023",
+      "competition_id": "sr:competition:22350"
+    },
+    {
+      "id": "sr:season:116397",
+      "name": "Super 20 2024",
+      "start_date": "2024-03-13",
+      "end_date": "2024-03-15",
+      "year": "2024",
+      "competition_id": "sr:competition:22350"
+    },
+    {
+      "id": "sr:season:75107",
+      "name": "All Star Game 2020",
+      "start_date": "2020-01-19",
+      "end_date": "2020-01-20",
+      "year": "2020",
+      "competition_id": "sr:competition:23555"
+    },
+    {
+      "id": "sr:season:99455",
+      "name": "Cup 22/23",
+      "start_date": "2022-09-19",
+      "end_date": "2023-02-19",
+      "year": "22/23",
+      "competition_id": "sr:competition:23877"
+    },
+    {
+      "id": "sr:season:111738",
+      "name": "King Mindaugas Cup 23/24",
+      "start_date": "2023-10-10",
+      "end_date": "2024-02-18",
+      "year": "23/24",
+      "competition_id": "sr:competition:23877"
+    },
+    {
+      "id": "sr:season:124735",
+      "name": "King Mindaugas Cup 24/25",
+      "start_date": "2024-10-02",
+      "end_date": "2025-02-16",
+      "year": "24/25",
+      "competition_id": "sr:competition:23877"
+    },
+    {
+      "id": "sr:season:91061",
+      "name": "NBA Rising Stars Challenge 2022",
+      "start_date": "2022-02-18",
+      "end_date": "2022-02-20",
+      "year": "2022",
+      "competition_id": "sr:competition:23881"
+    },
+    {
+      "id": "sr:season:102821",
+      "name": "NBA Rising Stars Challenge 2023",
+      "start_date": "2023-02-17",
+      "end_date": "2023-02-18",
+      "year": "2023",
+      "competition_id": "sr:competition:23881"
+    },
+    {
+      "id": "sr:season:115793",
+      "name": "NBA Rising Stars 2024",
+      "start_date": "2024-02-16",
+      "end_date": "2024-02-17",
+      "year": "2024",
+      "competition_id": "sr:competition:23881"
+    },
+    {
+      "id": "sr:season:90005",
+      "name": "State Cup 2022",
+      "start_date": "2022-01-15",
+      "end_date": "2022-02-17",
+      "year": "2022",
+      "competition_id": "sr:competition:23977"
+    },
+    {
+      "id": "sr:season:101557",
+      "name": "State Cup 2023",
+      "start_date": "2023-01-14",
+      "end_date": "2023-02-28",
+      "year": "2023",
+      "competition_id": "sr:competition:23977"
+    },
+    {
+      "id": "sr:season:116625",
+      "name": "State Cup 2024",
+      "start_date": "2024-03-27",
+      "end_date": "2024-05-16",
+      "year": "2024",
+      "competition_id": "sr:competition:23977"
+    },
+    {
+      "id": "sr:season:76751",
+      "name": "NCAA Division II, National Championship 19/20",
+      "start_date": "2020-03-13",
+      "end_date": "2020-04-08",
+      "year": "2020",
+      "competition_id": "sr:competition:24127"
+    },
+    {
+      "id": "sr:season:103485",
+      "name": "NCAA Division II National Championship 2023",
+      "start_date": "2023-03-11",
+      "end_date": "2023-04-30",
+      "year": "22/23",
+      "competition_id": "sr:competition:24127"
+    },
+    {
+      "id": "sr:season:116127",
+      "name": "NCAA Division II National Championship 2024",
+      "start_date": "2024-03-15",
+      "end_date": "2024-03-30",
+      "year": "2024",
+      "competition_id": "sr:competition:24127"
+    },
+    {
+      "id": "sr:season:92031",
+      "name": "NCAA Division III, National Championship 21/22",
+      "start_date": "2022-03-19",
+      "end_date": "2022-04-30",
+      "year": "21/22",
+      "competition_id": "sr:competition:24129"
+    },
+    {
+      "id": "sr:season:103319",
+      "name": "NCAA Division III, National Championship 22/23",
+      "start_date": "2023-03-03",
+      "end_date": "2023-04-30",
+      "year": "22/23",
+      "competition_id": "sr:competition:24129"
+    },
+    {
+      "id": "sr:season:116119",
+      "name": "NCAA Division III, National Championship 23/24",
+      "start_date": "2024-03-01",
+      "end_date": "2024-04-30",
+      "year": "2024",
+      "competition_id": "sr:competition:24129"
+    },
+    {
+      "id": "sr:season:92017",
+      "name": "National Invitation Tournament 2022",
+      "start_date": "2022-03-15",
+      "end_date": "2022-03-31",
+      "year": "21/22",
+      "competition_id": "sr:competition:24135"
+    },
+    {
+      "id": "sr:season:103689",
+      "name": "National Invitation Tournament 2023",
+      "start_date": "2023-03-14",
+      "end_date": "2023-03-31",
+      "year": "22/23",
+      "competition_id": "sr:competition:24135"
+    },
+    {
+      "id": "sr:season:116809",
+      "name": "National Invitation Tournament 2024",
+      "start_date": "2024-03-19",
+      "end_date": "2024-04-05",
+      "year": "23/24",
+      "competition_id": "sr:competition:24135"
+    },
+    {
+      "id": "sr:season:51953",
+      "name": "Commonwealth Games 2018",
+      "start_date": "2018-04-05",
+      "end_date": "2018-04-16",
+      "year": "2018",
+      "competition_id": "sr:competition:24217"
+    },
+    {
+      "id": "sr:season:51955",
+      "name": "Commonwealth Games Women 2018",
+      "start_date": "2018-04-05",
+      "end_date": "2018-04-15",
+      "year": "2018",
+      "competition_id": "sr:competition:24219"
+    },
+    {
+      "id": "sr:season:53140",
+      "name": "U18 FIBA Americas Championship 2018",
+      "start_date": "2018-06-10",
+      "end_date": "2018-06-17",
+      "year": "2018",
+      "competition_id": "sr:competition:24722"
+    },
+    {
+      "id": "sr:season:94165",
+      "name": "U18 FIBA Americas Championship 2022",
+      "start_date": "2022-06-06",
+      "end_date": "2022-06-13",
+      "year": "2022",
+      "competition_id": "sr:competition:24722"
+    },
+    {
+      "id": "sr:season:119003",
+      "name": "U18 FIBA Americas Championship 2024",
+      "start_date": "2024-06-03",
+      "end_date": "2024-06-10",
+      "year": "2024",
+      "competition_id": "sr:competition:24722"
+    },
+    {
+      "id": "sr:season:55211",
+      "name": "NBA Africa Game 2018",
+      "start_date": "2018-08-04",
+      "end_date": "2018-08-06",
+      "year": "2018",
+      "competition_id": "sr:competition:25467"
+    },
+    {
+      "id": "sr:season:55779",
+      "name": "Central American and Caribbean Games, Women 2018",
+      "start_date": "2018-07-20",
+      "end_date": "2018-07-26",
+      "year": "2018",
+      "competition_id": "sr:competition:25733"
+    },
+    {
+      "id": "sr:season:106955",
+      "name": "Central American and Caribbean Games, Women 2023",
+      "start_date": "2023-06-24",
+      "end_date": "2023-06-29",
+      "year": "2023",
+      "competition_id": "sr:competition:25733"
+    },
+    {
+      "id": "sr:season:55785",
+      "name": "Central American and Caribbean Games, 2018",
+      "start_date": "2018-07-29",
+      "end_date": "2018-08-04",
+      "year": "2018",
+      "competition_id": "sr:competition:25739"
+    },
+    {
+      "id": "sr:season:106957",
+      "name": "Central American and Caribbean Games 2023",
+      "start_date": "2023-07-01",
+      "end_date": "2023-07-06",
+      "year": "2023",
+      "competition_id": "sr:competition:25739"
+    },
+    {
+      "id": "sr:season:56510",
+      "name": "Asian Games 2018,Women",
+      "start_date": "2018-08-15",
+      "end_date": "2018-09-02",
+      "year": "2018",
+      "competition_id": "sr:competition:26078"
+    },
+    {
+      "id": "sr:season:110469",
+      "name": "Asian Games, Women 2022",
+      "start_date": "2023-09-26",
+      "end_date": "2023-10-06",
+      "year": "2023",
+      "competition_id": "sr:competition:26078"
+    },
+    {
+      "id": "sr:season:98183",
+      "name": "NKL 22/23",
+      "start_date": "2022-10-06",
+      "end_date": "2023-05-31",
+      "year": "22/23",
+      "competition_id": "sr:competition:26450"
+    },
+    {
+      "id": "sr:season:110667",
+      "name": "NKL 23/24",
+      "start_date": "2023-10-03",
+      "end_date": "2024-05-31",
+      "year": "23/24",
+      "competition_id": "sr:competition:26450"
+    },
+    {
+      "id": "sr:season:123751",
+      "name": "NKL 24/25",
+      "start_date": "2024-10-03",
+      "end_date": "2025-05-31",
+      "year": "24/25",
+      "competition_id": "sr:competition:26450"
+    },
+    {
+      "id": "sr:season:97123",
+      "name": "BLNO 22/23",
+      "start_date": "2022-09-23",
+      "end_date": "2023-05-31",
+      "year": "22/23",
+      "competition_id": "sr:competition:26586"
+    },
+    {
+      "id": "sr:season:108027",
+      "name": "BLNO 23/24",
+      "start_date": "2023-09-22",
+      "end_date": "2024-04-18",
+      "year": "23/24",
+      "competition_id": "sr:competition:26586"
+    },
+    {
+      "id": "sr:season:120737",
+      "name": "BLNO 24/25",
+      "start_date": "2024-09-20",
+      "end_date": "2025-04-18",
+      "year": "24/25",
+      "competition_id": "sr:competition:26586"
+    },
+    {
+      "id": "sr:season:58206",
+      "name": "Liga ABA Super Cup 2018",
+      "start_date": "2018-09-20",
+      "end_date": "2018-09-24",
+      "year": "2018",
+      "competition_id": "sr:competition:26656"
+    },
+    {
+      "id": "sr:season:69356",
+      "name": "Liga ABA Super Cup 2019",
+      "start_date": "2019-09-26",
+      "end_date": "2019-09-30",
+      "year": "2019",
+      "competition_id": "sr:competition:26656"
+    },
+    {
+      "id": "sr:season:110857",
+      "name": "Liga ABA Super Cup 2023",
+      "start_date": "2023-09-18",
+      "end_date": "2023-09-20",
+      "year": "2023",
+      "competition_id": "sr:competition:26656"
+    },
+    {
+      "id": "sr:season:98655",
+      "name": "ABA Liga 2 22/23",
+      "start_date": "2022-10-17",
+      "end_date": "2023-04-16",
+      "year": "22/23",
+      "competition_id": "sr:competition:26658"
+    },
+    {
+      "id": "sr:season:108547",
+      "name": "ABA Liga 2 23/24",
+      "start_date": "2023-09-22",
+      "end_date": "2024-05-16",
+      "year": "23/24",
+      "competition_id": "sr:competition:26658"
+    },
+    {
+      "id": "sr:season:121097",
+      "name": "ABA Liga 2 24/25",
+      "start_date": "2024-09-24",
+      "end_date": "2025-05-13",
+      "year": "24/25",
+      "competition_id": "sr:competition:26658"
+    },
+    {
+      "id": "sr:season:97223",
+      "name": "1 Liga 22/23",
+      "start_date": "2022-09-24",
+      "end_date": "2023-05-28",
+      "year": "22/23",
+      "competition_id": "sr:competition:26662"
+    },
+    {
+      "id": "sr:season:109625",
+      "name": "1 Liga 23/24",
+      "start_date": "2023-09-22",
+      "end_date": "2024-05-26",
+      "year": "23/24",
+      "competition_id": "sr:competition:26662"
+    },
+    {
+      "id": "sr:season:122553",
+      "name": "1. Liga 24/25",
+      "start_date": "2024-09-25",
+      "end_date": "2025-05-24",
+      "year": "24/25",
+      "competition_id": "sr:competition:26662"
+    },
+    {
+      "id": "sr:season:97901",
+      "name": "Estonian-Latvian League 22/23",
+      "start_date": "2022-09-30",
+      "end_date": "2023-05-31",
+      "year": "22/23",
+      "competition_id": "sr:competition:26696"
+    },
+    {
+      "id": "sr:season:110539",
+      "name": "Estonian-Latvian League 23/24",
+      "start_date": "2023-09-20",
+      "end_date": "2024-05-31",
+      "year": "23/24",
+      "competition_id": "sr:competition:26696"
+    },
+    {
+      "id": "sr:season:123505",
+      "name": "Estonian-Latvian League 24/25",
+      "start_date": "2024-09-20",
+      "end_date": "2025-05-31",
+      "year": "24/25",
+      "competition_id": "sr:competition:26696"
+    },
+    {
+      "id": "sr:season:98557",
+      "name": "National League 22/23",
+      "start_date": "2022-10-11",
+      "end_date": "2023-06-30",
+      "year": "22/23",
+      "competition_id": "sr:competition:26864"
+    },
+    {
+      "id": "sr:season:113398",
+      "name": "National League 23/24",
+      "start_date": "2023-11-27",
+      "end_date": "2024-05-31",
+      "year": "23/24",
+      "competition_id": "sr:competition:26864"
+    },
+    {
+      "id": "sr:season:125277",
+      "name": "National League 24/25",
+      "start_date": "2024-10-22",
+      "end_date": "2025-06-02",
+      "year": "24/25",
+      "competition_id": "sr:competition:26864"
+    },
+    {
+      "id": "sr:season:97603",
+      "name": "Super League 22/23",
+      "start_date": "2022-09-29",
+      "end_date": "2023-06-30",
+      "year": "22/23",
+      "competition_id": "sr:competition:26882"
+    },
+    {
+      "id": "sr:season:112130",
+      "name": "Super League 23/24",
+      "start_date": "2023-10-25",
+      "end_date": "2024-06-30",
+      "year": "23/24",
+      "competition_id": "sr:competition:26882"
+    },
+    {
+      "id": "sr:season:124743",
+      "name": "Super League 24/25",
+      "start_date": "2024-10-03",
+      "end_date": "2025-06-30",
+      "year": "24/25",
+      "competition_id": "sr:competition:26882"
+    },
+    {
+      "id": "sr:season:72264",
+      "name": "NBL 19/20",
+      "start_date": "2019-11-26",
+      "end_date": "2020-06-01",
+      "year": "19/20",
+      "competition_id": "sr:competition:27108"
+    },
+    {
+      "id": "sr:season:89771",
+      "name": "NBL 2022",
+      "start_date": "2022-02-05",
+      "end_date": "2022-06-30",
+      "year": "2022",
+      "competition_id": "sr:competition:27108"
+    },
+    {
+      "id": "sr:season:101047",
+      "name": "NBL 2023",
+      "start_date": "2023-01-07",
+      "end_date": "2023-06-30",
+      "year": "2023",
+      "competition_id": "sr:competition:27108"
+    },
+    {
+      "id": "sr:season:98001",
+      "name": "NCAA Division I, National Championship 22/23",
+      "start_date": "2023-03-14",
+      "end_date": "2023-04-04",
+      "year": "22/23",
+      "competition_id": "sr:competition:28370"
+    },
+    {
+      "id": "sr:season:104315",
+      "name": "NCAA Division I, National Championship 23/24",
+      "start_date": "2024-03-19",
+      "end_date": "2024-04-09",
+      "year": "23/24",
+      "competition_id": "sr:competition:28370"
+    },
+    {
+      "id": "sr:season:92015",
+      "name": "College Basketball Invitational 2022",
+      "start_date": "2022-03-19",
+      "end_date": "2022-03-24",
+      "year": "21/22",
+      "competition_id": "sr:competition:28372"
+    },
+    {
+      "id": "sr:season:103691",
+      "name": "College Basketball Invitational 2023",
+      "start_date": "2023-03-18",
+      "end_date": "2023-03-23",
+      "year": "22/23",
+      "competition_id": "sr:competition:28372"
+    },
+    {
+      "id": "sr:season:116811",
+      "name": "College Basketball Invitational 2024",
+      "start_date": "2024-03-23",
+      "end_date": "2024-03-27",
+      "year": "23/24",
+      "competition_id": "sr:competition:28372"
+    },
+    {
+      "id": "sr:season:71306",
+      "name": "College Insider Tournament 17/18",
+      "start_date": "2018-03-12",
+      "end_date": "2018-03-31",
+      "year": "17/18",
+      "competition_id": "sr:competition:28374"
+    },
+    {
+      "id": "sr:season:64856",
+      "name": "College Insider Tournament 18/19",
+      "start_date": "2019-03-18",
+      "end_date": "2019-04-06",
+      "year": "18/19",
+      "competition_id": "sr:competition:28374"
+    },
+    {
+      "id": "sr:season:116831",
+      "name": "College Insider Tournament 23/24",
+      "start_date": "2024-03-19",
+      "end_date": "2024-03-29",
+      "year": "23/24",
+      "competition_id": "sr:competition:28374"
+    },
+    {
+      "id": "sr:season:89737",
+      "name": "NBL 2022",
+      "start_date": "2022-04-28",
+      "end_date": "2022-08-13",
+      "year": "2022",
+      "competition_id": "sr:competition:28543"
+    },
+    {
+      "id": "sr:season:101081",
+      "name": "NBL 2023",
+      "start_date": "2023-04-06",
+      "end_date": "2023-07-23",
+      "year": "2023",
+      "competition_id": "sr:competition:28543"
+    },
+    {
+      "id": "sr:season:114445",
+      "name": "NBL 2024",
+      "start_date": "2024-03-27",
+      "end_date": "2024-07-28",
+      "year": "2024",
+      "competition_id": "sr:competition:28543"
+    },
+    {
+      "id": "sr:season:65539",
+      "name": "NBL1 2019",
+      "start_date": "2019-03-29",
+      "end_date": "2019-08-18",
+      "year": "2019",
+      "competition_id": "sr:competition:28567"
+    },
+    {
+      "id": "sr:season:97635",
+      "name": "NBL1 2022",
+      "start_date": "2022-09-09",
+      "end_date": "2022-09-11",
+      "year": "2022",
+      "competition_id": "sr:competition:28567"
+    },
+    {
+      "id": "sr:season:109703",
+      "name": "NBL1 2023",
+      "start_date": "2023-08-18",
+      "end_date": "2023-09-15",
+      "year": "2023",
+      "competition_id": "sr:competition:28567"
+    },
+    {
+      "id": "sr:season:65541",
+      "name": "NBL1, Women 2019",
+      "start_date": "2019-03-29",
+      "end_date": "2019-08-18",
+      "year": "2019",
+      "competition_id": "sr:competition:28569"
+    },
+    {
+      "id": "sr:season:97637",
+      "name": "NBL1, Women 2022",
+      "start_date": "2022-09-09",
+      "end_date": "2022-09-11",
+      "year": "2022",
+      "competition_id": "sr:competition:28569"
+    },
+    {
+      "id": "sr:season:109701",
+      "name": "NBL1, Women 2023",
+      "start_date": "2023-08-18",
+      "end_date": "2023-09-15",
+      "year": "2023",
+      "competition_id": "sr:competition:28569"
+    },
+    {
+      "id": "sr:season:94743",
+      "name": "El Metro 2022",
+      "start_date": "2022-06-23",
+      "end_date": "2022-09-30",
+      "year": "2022",
+      "competition_id": "sr:competition:29075"
+    },
+    {
+      "id": "sr:season:106231",
+      "name": "El Metro 2023",
+      "start_date": "2023-06-08",
+      "end_date": "2023-10-30",
+      "year": "2023",
+      "competition_id": "sr:competition:29075"
+    },
+    {
+      "id": "sr:season:118405",
+      "name": "Liga de Ascenso 2024",
+      "start_date": "2024-05-15",
+      "end_date": "2024-10-30",
+      "year": "2024",
+      "competition_id": "sr:competition:29075"
+    },
+    {
+      "id": "sr:season:94171",
+      "name": "Libobasquet 2022",
+      "start_date": "2022-06-07",
+      "end_date": "2022-09-30",
+      "year": "2022",
+      "competition_id": "sr:competition:29170"
+    },
+    {
+      "id": "sr:season:103723",
+      "name": "Libobasquet 2023",
+      "start_date": "2023-03-14",
+      "end_date": "2023-09-03",
+      "year": "2023",
+      "competition_id": "sr:competition:29170"
+    },
+    {
+      "id": "sr:season:116951",
+      "name": "Libobasquet 2024",
+      "start_date": "2024-03-26",
+      "end_date": "2024-08-13",
+      "year": "2024",
+      "competition_id": "sr:competition:29170"
+    },
+    {
+      "id": "sr:season:94585",
+      "name": "TBL 2022",
+      "start_date": "2022-06-25",
+      "end_date": "2022-09-30",
+      "year": "2022",
+      "competition_id": "sr:competition:29184"
+    },
+    {
+      "id": "sr:season:106757",
+      "name": "TBL 2023",
+      "start_date": "2023-07-01",
+      "end_date": "2023-10-09",
+      "year": "2023",
+      "competition_id": "sr:competition:29184"
+    },
+    {
+      "id": "sr:season:121767",
+      "name": "TBL 2024",
+      "start_date": "2024-07-31",
+      "end_date": "2024-09-15",
+      "year": "2024",
+      "competition_id": "sr:competition:29184"
+    },
+    {
+      "id": "sr:season:120529",
+      "name": "William Jones Cup 2024",
+      "start_date": "2024-07-13",
+      "end_date": "2024-07-21",
+      "year": "2024",
+      "competition_id": "sr:competition:29450"
+    },
+    {
+      "id": "sr:season:69402",
+      "name": "Fiba Afrocan 2019",
+      "start_date": "2019-07-23",
+      "end_date": "2019-07-28",
+      "year": "2019",
+      "competition_id": "sr:competition:29628"
+    },
+    {
+      "id": "sr:season:107567",
+      "name": "Fiba Afrocan 2023",
+      "start_date": "2023-07-08",
+      "end_date": "2023-07-16",
+      "year": "2023",
+      "competition_id": "sr:competition:29628"
+    },
+    {
+      "id": "sr:season:92843",
+      "name": "NCAA 22/23",
+      "start_date": "2022-11-07",
+      "end_date": "2023-04-05",
+      "year": "22/23",
+      "competition_id": "sr:competition:29630"
+    },
+    {
+      "id": "sr:season:104307",
+      "name": "NCAA 23/24",
+      "start_date": "2023-11-05",
+      "end_date": "2024-04-08",
+      "year": "23/24",
+      "competition_id": "sr:competition:29630"
+    },
+    {
+      "id": "sr:season:117429",
+      "name": "NCAA 24/25",
+      "start_date": "2024-11-01",
+      "end_date": "2025-04-08",
+      "year": "24/25",
+      "competition_id": "sr:competition:29630"
+    },
+    {
+      "id": "sr:season:69624",
+      "name": "Pan American Games 2019",
+      "start_date": "2019-07-31",
+      "end_date": "2019-08-05",
+      "year": "2019",
+      "competition_id": "sr:competition:29650"
+    },
+    {
+      "id": "sr:season:111978",
+      "name": "Pan American Games 2023",
+      "start_date": "2023-10-31",
+      "end_date": "2024-11-05",
+      "year": "2023",
+      "competition_id": "sr:competition:29650"
+    },
+    {
+      "id": "sr:season:69626",
+      "name": "Pan American Games Women 2019",
+      "start_date": "2019-08-06",
+      "end_date": "2019-08-12",
+      "year": "2019",
+      "competition_id": "sr:competition:29652"
+    },
+    {
+      "id": "sr:season:111980",
+      "name": "Pan American Games, Women 2023",
+      "start_date": "2023-10-25",
+      "end_date": "2023-10-30",
+      "year": "2023",
+      "competition_id": "sr:competition:29652"
+    },
+    {
+      "id": "sr:season:93777",
+      "name": "LNB 2022",
+      "start_date": "2022-05-24",
+      "end_date": "2022-08-31",
+      "year": "2022",
+      "competition_id": "sr:competition:30142"
+    },
+    {
+      "id": "sr:season:104631",
+      "name": "LNB 2023",
+      "start_date": "2023-05-09",
+      "end_date": "2023-08-05",
+      "year": "2023",
+      "competition_id": "sr:competition:30142"
+    },
+    {
+      "id": "sr:season:119555",
+      "name": "LNB 2024",
+      "start_date": "2024-06-18",
+      "end_date": "2024-09-05",
+      "year": "2024",
+      "competition_id": "sr:competition:30142"
+    },
+    {
+      "id": "sr:season:70894",
+      "name": "Torneo Interligas 2019",
+      "start_date": "2019-09-05",
+      "end_date": "2019-09-16",
+      "year": "2019",
+      "competition_id": "sr:competition:30150"
+    },
+    {
+      "id": "sr:season:110557",
+      "name": "Torneo Interligas 2023",
+      "start_date": "2023-09-15",
+      "end_date": "2023-09-26",
+      "year": "2023",
+      "competition_id": "sr:competition:30150"
+    },
+    {
+      "id": "sr:season:124031",
+      "name": "Torneo Interligas 2024",
+      "start_date": "2024-09-25",
+      "end_date": "2024-09-30",
+      "year": "2024",
+      "competition_id": "sr:competition:30150"
+    },
+    {
+      "id": "sr:season:97999",
+      "name": "NCAA Postseason 2023",
+      "start_date": "2023-03-14",
+      "end_date": "2023-04-05",
+      "year": "22/23",
+      "competition_id": "sr:competition:30190"
+    },
+    {
+      "id": "sr:season:104317",
+      "name": "NCAA Postseason 2024",
+      "start_date": "2024-03-17",
+      "end_date": "2024-04-08",
+      "year": "23/24",
+      "competition_id": "sr:competition:30190"
+    },
+    {
+      "id": "sr:season:97893",
+      "name": "Supercup, Women 2022",
+      "start_date": "2022-10-08",
+      "end_date": "2022-10-09",
+      "year": "2022",
+      "competition_id": "sr:competition:30394"
+    },
+    {
+      "id": "sr:season:110489",
+      "name": "Supercup, Women 2023",
+      "start_date": "2023-09-30",
+      "end_date": "2023-10-01",
+      "year": "2023",
+      "competition_id": "sr:competition:30394"
+    },
+    {
+      "id": "sr:season:121985",
+      "name": "Supercopa, Women 2024",
+      "start_date": "2024-09-28",
+      "end_date": "2024-09-29",
+      "year": "2024",
+      "competition_id": "sr:competition:30394"
+    },
+    {
+      "id": "sr:season:97109",
+      "name": "NB I. A, Women 22/23",
+      "start_date": "2022-09-24",
+      "end_date": "2023-05-31",
+      "year": "22/23",
+      "competition_id": "sr:competition:30396"
+    },
+    {
+      "id": "sr:season:110223",
+      "name": "NB I. A, Women 23/24",
+      "start_date": "2023-09-30",
+      "end_date": "2024-05-08",
+      "year": "23/24",
+      "competition_id": "sr:competition:30396"
+    },
+    {
+      "id": "sr:season:123341",
+      "name": "NB I. A, Women 24/25",
+      "start_date": "2024-09-27",
+      "end_date": "2025-05-31",
+      "year": "24/25",
+      "competition_id": "sr:competition:30396"
+    },
+    {
+      "id": "sr:season:97101",
+      "name": "SBL, Women 22/23",
+      "start_date": "2022-10-08",
+      "end_date": "2023-04-28",
+      "year": "22/23",
+      "competition_id": "sr:competition:30438"
+    },
+    {
+      "id": "sr:season:109521",
+      "name": "SBL, Women 23/24",
+      "start_date": "2023-10-07",
+      "end_date": "2024-04-28",
+      "year": "23/24",
+      "competition_id": "sr:competition:30438"
+    },
+    {
+      "id": "sr:season:122945",
+      "name": "SBL, Women 24/25",
+      "start_date": "2024-09-28",
+      "end_date": "2025-08-01",
+      "year": "24/25",
+      "competition_id": "sr:competition:30438"
+    },
+    {
+      "id": "sr:season:71886",
+      "name": "Asia Cup Women 2019",
+      "start_date": "2019-09-24",
+      "end_date": "2019-09-30",
+      "year": "2019",
+      "competition_id": "sr:competition:30532"
+    },
+    {
+      "id": "sr:season:87138",
+      "name": "Asia Cup Women 2021",
+      "start_date": "2021-09-27",
+      "end_date": "2021-10-03",
+      "year": "2021",
+      "competition_id": "sr:competition:30532"
+    },
+    {
+      "id": "sr:season:105123",
+      "name": "Asia Cup Women 2023",
+      "start_date": "2023-06-26",
+      "end_date": "2023-07-02",
+      "year": "2023",
+      "competition_id": "sr:competition:30532"
+    },
+    {
+      "id": "sr:season:96855",
+      "name": "Serie B 22/23",
+      "start_date": "2022-09-30",
+      "end_date": "2023-06-30",
+      "year": "22/23",
+      "competition_id": "sr:competition:30574"
+    },
+    {
+      "id": "sr:season:108753",
+      "name": "Serie B 23/24",
+      "start_date": "2023-09-30",
+      "end_date": "2024-06-12",
+      "year": "23/24",
+      "competition_id": "sr:competition:30574"
+    },
+    {
+      "id": "sr:season:121983",
+      "name": "Serie B 24/25",
+      "start_date": "2024-09-28",
+      "end_date": "2025-06-22",
+      "year": "24/25",
+      "competition_id": "sr:competition:30574"
+    },
+    {
+      "id": "sr:season:88126",
+      "name": "First Division 21/22",
+      "start_date": "2021-10-15",
+      "end_date": "2022-06-30",
+      "year": "2022",
+      "competition_id": "sr:competition:30580"
+    },
+    {
+      "id": "sr:season:98657",
+      "name": "First Division 22/23",
+      "start_date": "2022-10-02",
+      "end_date": "2023-05-31",
+      "year": "22/23",
+      "competition_id": "sr:competition:30580"
+    },
+    {
+      "id": "sr:season:111884",
+      "name": "First Division 23/24",
+      "start_date": "2023-10-18",
+      "end_date": "2024-05-20",
+      "year": "23/24",
+      "competition_id": "sr:competition:30580"
+    },
+    {
+      "id": "sr:season:99597",
+      "name": "1st Division 22/23",
+      "start_date": "2022-10-29",
+      "end_date": "2023-05-31",
+      "year": "22/23",
+      "competition_id": "sr:competition:30616"
+    },
+    {
+      "id": "sr:season:111012",
+      "name": "1st Division 23/24",
+      "start_date": "2023-10-04",
+      "end_date": "2024-06-03",
+      "year": "23/24",
+      "competition_id": "sr:competition:30616"
+    },
+    {
+      "id": "sr:season:123121",
+      "name": "1st Division 24/25",
+      "start_date": "2024-10-05",
+      "end_date": "2025-06-30",
+      "year": "24/25",
+      "competition_id": "sr:competition:30616"
+    },
+    {
+      "id": "sr:season:99793",
+      "name": "Champions League Americas 22/23",
+      "start_date": "2022-12-09",
+      "end_date": "2023-04-16",
+      "year": "22/23",
+      "competition_id": "sr:competition:30754"
+    },
+    {
+      "id": "sr:season:113002",
+      "name": "Champions League Americas 23/24",
+      "start_date": "2023-12-13",
+      "end_date": "2024-04-15",
+      "year": "23/24",
+      "competition_id": "sr:competition:30754"
+    },
+    {
+      "id": "sr:season:126685",
+      "name": "Champions League Americas 24/25",
+      "start_date": "2024-12-11",
+      "end_date": "2025-04-20",
+      "year": "24/25",
+      "competition_id": "sr:competition:30754"
+    },
+    {
+      "id": "sr:season:98079",
+      "name": "National A League 22/23",
+      "start_date": "2022-09-24",
+      "end_date": "2023-06-11",
+      "year": "22/23",
+      "competition_id": "sr:competition:30881"
+    },
+    {
+      "id": "sr:season:112008",
+      "name": "National A League 23/24",
+      "start_date": "2023-10-21",
+      "end_date": "2024-06-30",
+      "year": "23/24",
+      "competition_id": "sr:competition:30881"
+    },
+    {
+      "id": "sr:season:122639",
+      "name": "National A League 24/25",
+      "start_date": "2024-09-14",
+      "end_date": "2025-05-25",
+      "year": "24/25",
+      "competition_id": "sr:competition:30881"
+    },
+    {
+      "id": "sr:season:73469",
+      "name": "SEA Games 2019",
+      "start_date": "2019-12-04",
+      "end_date": "2019-12-11",
+      "year": "2019",
+      "competition_id": "sr:competition:31309"
+    },
+    {
+      "id": "sr:season:93509",
+      "name": "SEA Games 2022",
+      "start_date": "2022-05-16",
+      "end_date": "2022-05-31",
+      "year": "2022",
+      "competition_id": "sr:competition:31309"
+    },
+    {
+      "id": "sr:season:105069",
+      "name": "SEA Games 2023",
+      "start_date": "2023-05-09",
+      "end_date": "2023-05-18",
+      "year": "2023",
+      "competition_id": "sr:competition:31309"
+    },
+    {
+      "id": "sr:season:73803",
+      "name": "SEA Games, Women 2019",
+      "start_date": "2019-12-04",
+      "end_date": "2019-12-11",
+      "year": "2019",
+      "competition_id": "sr:competition:31453"
+    },
+    {
+      "id": "sr:season:93511",
+      "name": "SEA Games, Women 2022",
+      "start_date": "2022-05-16",
+      "end_date": "2022-05-31",
+      "year": "2022",
+      "competition_id": "sr:competition:31453"
+    },
+    {
+      "id": "sr:season:105073",
+      "name": "SEA Games, Women 2023",
+      "start_date": "2023-05-09",
+      "end_date": "2023-05-15",
+      "year": "2023",
+      "competition_id": "sr:competition:31453"
+    },
+    {
+      "id": "sr:season:89789",
+      "name": "SBL 21/22",
+      "start_date": "2021-12-24",
+      "end_date": "2022-05-31",
+      "year": "21/22",
+      "competition_id": "sr:competition:31613"
+    },
+    {
+      "id": "sr:season:101443",
+      "name": "SBL 2023",
+      "start_date": "2023-01-07",
+      "end_date": "2023-05-21",
+      "year": "2023",
+      "competition_id": "sr:competition:31613"
+    },
+    {
+      "id": "sr:season:114949",
+      "name": "SBL 23/24",
+      "start_date": "2024-01-19",
+      "end_date": "2024-05-12",
+      "year": "2024",
+      "competition_id": "sr:competition:31613"
+    },
+    {
+      "id": "sr:season:92241",
+      "name": "Superior Nacional 2022",
+      "start_date": "2022-04-09",
+      "end_date": "2022-12-31",
+      "year": "2022",
+      "competition_id": "sr:competition:31943"
+    },
+    {
+      "id": "sr:season:103011",
+      "name": "Superior Nacional 2023",
+      "start_date": "2023-03-22",
+      "end_date": "2023-07-28",
+      "year": "2023",
+      "competition_id": "sr:competition:31943"
+    },
+    {
+      "id": "sr:season:116081",
+      "name": "BSN 2024",
+      "start_date": "2024-04-03",
+      "end_date": "2024-09-01",
+      "year": "2024",
+      "competition_id": "sr:competition:31943"
+    },
+    {
+      "id": "sr:season:90611",
+      "name": "Cup 2022",
+      "start_date": "2022-02-17",
+      "end_date": "2022-02-21",
+      "year": "2022",
+      "competition_id": "sr:competition:31979"
+    },
+    {
+      "id": "sr:season:101941",
+      "name": "Cup 2023",
+      "start_date": "2023-02-16",
+      "end_date": "2023-02-19",
+      "year": "2023",
+      "competition_id": "sr:competition:31979"
+    },
+    {
+      "id": "sr:season:114679",
+      "name": "Cup 2024",
+      "start_date": "2024-02-15",
+      "end_date": "2024-02-18",
+      "year": "2024",
+      "competition_id": "sr:competition:31979"
+    },
+    {
+      "id": "sr:season:76129",
+      "name": "Americup 2021, Qualification",
+      "start_date": "2020-02-19",
+      "end_date": "2021-02-23",
+      "year": "20/21",
+      "competition_id": "sr:competition:31999"
+    },
+    {
+      "id": "sr:season:97395",
+      "name": "FIBA Americup 2025, Qualifiers",
+      "start_date": "2023-02-22",
+      "end_date": "2025-03-31",
+      "year": "23-25",
+      "competition_id": "sr:competition:31999"
+    },
+    {
+      "id": "sr:season:76135",
+      "name": "Asia Cup 2021, Qualification",
+      "start_date": "2020-02-19",
+      "end_date": "2021-08-29",
+      "year": "20/21",
+      "competition_id": "sr:competition:32001"
+    },
+    {
+      "id": "sr:season:113314",
+      "name": "Asia Cup Qualification 2025",
+      "start_date": "2024-02-22",
+      "end_date": "2025-02-24",
+      "year": "24/25",
+      "competition_id": "sr:competition:32001"
+    },
+    {
+      "id": "sr:season:76853",
+      "name": "NBA2K Players Tournament 2020",
+      "start_date": "2020-04-03",
+      "end_date": "2020-04-13",
+      "year": "2020",
+      "competition_id": "sr:competition:32195"
+    },
+    {
+      "id": "sr:season:114947",
+      "name": "SBL, Women 2024",
+      "start_date": "2024-01-19",
+      "end_date": "2024-05-12",
+      "year": "2024",
+      "competition_id": "sr:competition:32231"
+    },
+    {
+      "id": "sr:season:112200",
+      "name": "Leaders Cup Pro B 23/24",
+      "start_date": "2023-10-24",
+      "end_date": "2024-02-18",
+      "year": "23/24",
+      "competition_id": "sr:competition:33153"
+    },
+    {
+      "id": "sr:season:123591",
+      "name": "CBA Preseason 2024",
+      "start_date": "2024-09-20",
+      "end_date": "2024-10-05",
+      "year": "2024",
+      "competition_id": "sr:competition:33285"
+    },
+    {
+      "id": "sr:season:103687",
+      "name": "NCAA Division I National Championship, Women 2023",
+      "start_date": "2023-03-15",
+      "end_date": "2023-04-02",
+      "year": "22/23",
+      "competition_id": "sr:competition:33946"
+    },
+    {
+      "id": "sr:season:105257",
+      "name": "NCAA Division I National Championship, Women 23/24",
+      "start_date": "2024-03-15",
+      "end_date": "2024-04-07",
+      "year": "23/24",
+      "competition_id": "sr:competition:33946"
+    },
+    {
+      "id": "sr:season:98409",
+      "name": "NCAA Women 22/23",
+      "start_date": "2022-11-07",
+      "end_date": "2023-04-04",
+      "year": "22/23",
+      "competition_id": "sr:competition:33948"
+    },
+    {
+      "id": "sr:season:105253",
+      "name": "NCAA Women 23/24",
+      "start_date": "2023-11-01",
+      "end_date": "2024-04-07",
+      "year": "23/24",
+      "competition_id": "sr:competition:33948"
+    },
+    {
+      "id": "sr:season:117437",
+      "name": "NCAA Women 24/25",
+      "start_date": "2024-11-04",
+      "end_date": "2025-04-30",
+      "year": "24/25",
+      "competition_id": "sr:competition:33948"
+    },
+    {
+      "id": "sr:season:92165",
+      "name": "NBL1, Central 2022",
+      "start_date": "2022-04-09",
+      "end_date": "2022-09-30",
+      "year": "2022",
+      "competition_id": "sr:competition:33984"
+    },
+    {
+      "id": "sr:season:101111",
+      "name": "NBL1, Central 2023",
+      "start_date": "2023-03-25",
+      "end_date": "2023-08-15",
+      "year": "2023",
+      "competition_id": "sr:competition:33984"
+    },
+    {
+      "id": "sr:season:114503",
+      "name": "NBL1, Central 2024",
+      "start_date": "2024-03-23",
+      "end_date": "2024-08-10",
+      "year": "2024",
+      "competition_id": "sr:competition:33984"
+    },
+    {
+      "id": "sr:season:92167",
+      "name": "NBL1, West 2022",
+      "start_date": "2022-04-08",
+      "end_date": "2022-09-30",
+      "year": "2022",
+      "competition_id": "sr:competition:33986"
+    },
+    {
+      "id": "sr:season:101115",
+      "name": "NBL1, West 2023",
+      "start_date": "2023-03-31",
+      "end_date": "2023-08-15",
+      "year": "2023",
+      "competition_id": "sr:competition:33986"
+    },
+    {
+      "id": "sr:season:114507",
+      "name": "NBL1, West 2024",
+      "start_date": "2024-03-28",
+      "end_date": "2024-08-10",
+      "year": "2024",
+      "competition_id": "sr:competition:33986"
+    },
+    {
+      "id": "sr:season:92179",
+      "name": "NBL1 Women, Central 2022",
+      "start_date": "2022-04-09",
+      "end_date": "2022-09-30",
+      "year": "2022",
+      "competition_id": "sr:competition:33988"
+    },
+    {
+      "id": "sr:season:101121",
+      "name": "NBL1 Central, Women 2023",
+      "start_date": "2023-03-25",
+      "end_date": "2023-08-15",
+      "year": "2023",
+      "competition_id": "sr:competition:33988"
+    },
+    {
+      "id": "sr:season:114493",
+      "name": "NBL1 Central, Women 2024",
+      "start_date": "2024-03-23",
+      "end_date": "2024-08-10",
+      "year": "2024",
+      "competition_id": "sr:competition:33988"
+    },
+    {
+      "id": "sr:season:92181",
+      "name": "NBL1 Women, West 2022",
+      "start_date": "2022-04-08",
+      "end_date": "2022-09-30",
+      "year": "2022",
+      "competition_id": "sr:competition:33990"
+    },
+    {
+      "id": "sr:season:101125",
+      "name": "NBL1 West, Women 2023",
+      "start_date": "2023-03-31",
+      "end_date": "2023-08-15",
+      "year": "2023",
+      "competition_id": "sr:competition:33990"
+    },
+    {
+      "id": "sr:season:114497",
+      "name": "NBL1 West, Women 2024",
+      "start_date": "2024-03-28",
+      "end_date": "2024-08-10",
+      "year": "2024",
+      "competition_id": "sr:competition:33990"
+    },
+    {
+      "id": "sr:season:82194",
+      "name": "Womens Basketball Invitational 2021",
+      "start_date": "2021-03-19",
+      "end_date": "2021-03-23",
+      "year": "2021",
+      "competition_id": "sr:competition:34006"
+    },
+    {
+      "id": "sr:season:92019",
+      "name": "Womens Basketball Invitational 2022",
+      "start_date": "2022-03-18",
+      "end_date": "2022-03-21",
+      "year": "21/22",
+      "competition_id": "sr:competition:34006"
+    },
+    {
+      "id": "sr:season:103693",
+      "name": "Womens Basketball Invitational 2023",
+      "start_date": "2023-03-17",
+      "end_date": "2023-03-20",
+      "year": "2023",
+      "competition_id": "sr:competition:34006"
+    },
+    {
+      "id": "sr:season:92023",
+      "name": "Womens National Invitation Tournament 21/22",
+      "start_date": "2022-03-16",
+      "end_date": "2022-04-03",
+      "year": "21/22",
+      "competition_id": "sr:competition:34008"
+    },
+    {
+      "id": "sr:season:103711",
+      "name": "Womens National Invitation Tournament 2023",
+      "start_date": "2023-03-15",
+      "end_date": "2023-04-02",
+      "year": "2023",
+      "competition_id": "sr:competition:34008"
+    },
+    {
+      "id": "sr:season:116833",
+      "name": "Womens National Invitation Tournament 2024",
+      "start_date": "2024-03-20",
+      "end_date": "2024-04-30",
+      "year": "2024",
+      "competition_id": "sr:competition:34008"
+    },
+    {
+      "id": "sr:season:95183",
+      "name": "SuperLiga 2022",
+      "start_date": "2022-07-08",
+      "end_date": "2022-10-31",
+      "year": "2022",
+      "competition_id": "sr:competition:34024"
+    },
+    {
+      "id": "sr:season:103743",
+      "name": "SuperLiga 2023",
+      "start_date": "2023-03-18",
+      "end_date": "2023-10-31",
+      "year": "2023",
+      "competition_id": "sr:competition:34024"
+    },
+    {
+      "id": "sr:season:117761",
+      "name": "SuperLiga 2024",
+      "start_date": "2024-05-01",
+      "end_date": "2024-09-12",
+      "year": "2024",
+      "competition_id": "sr:competition:34024"
+    },
+    {
+      "id": "sr:season:92163",
+      "name": "NBL1, South 2022",
+      "start_date": "2022-04-21",
+      "end_date": "2022-09-30",
+      "year": "2022",
+      "competition_id": "sr:competition:34056"
+    },
+    {
+      "id": "sr:season:101109",
+      "name": "NBL1, South 2023",
+      "start_date": "2023-04-01",
+      "end_date": "2023-08-15",
+      "year": "2023",
+      "competition_id": "sr:competition:34056"
+    },
+    {
+      "id": "sr:season:114501",
+      "name": "NBL1, South 2024",
+      "start_date": "2024-04-03",
+      "end_date": "2024-08-10",
+      "year": "2024",
+      "competition_id": "sr:competition:34056"
+    },
+    {
+      "id": "sr:season:92161",
+      "name": "NBL1, North 2022",
+      "start_date": "2022-04-29",
+      "end_date": "2022-09-30",
+      "year": "2022",
+      "competition_id": "sr:competition:34098"
+    },
+    {
+      "id": "sr:season:101107",
+      "name": "NBL1, North 2023",
+      "start_date": "2023-03-24",
+      "end_date": "2023-08-31",
+      "year": "2023",
+      "competition_id": "sr:competition:34098"
+    },
+    {
+      "id": "sr:season:114499",
+      "name": "NBL1, North 2024",
+      "start_date": "2024-04-11",
+      "end_date": "2024-08-03",
+      "year": "2024",
+      "competition_id": "sr:competition:34098"
+    },
+    {
+      "id": "sr:season:92175",
+      "name": "NBL1 North, Women 2022",
+      "start_date": "2022-04-29",
+      "end_date": "2022-09-30",
+      "year": "2022",
+      "competition_id": "sr:competition:34102"
+    },
+    {
+      "id": "sr:season:101117",
+      "name": "NBL1 North, Women 2023",
+      "start_date": "2023-03-24",
+      "end_date": "2023-08-31",
+      "year": "2023",
+      "competition_id": "sr:competition:34102"
+    },
+    {
+      "id": "sr:season:114487",
+      "name": "NBL1 North, Women 2024",
+      "start_date": "2024-04-11",
+      "end_date": "2024-08-04",
+      "year": "2024",
+      "competition_id": "sr:competition:34102"
+    },
+    {
+      "id": "sr:season:92177",
+      "name": "NBL1 Women, South 2022",
+      "start_date": "2022-04-21",
+      "end_date": "2022-09-30",
+      "year": "2022",
+      "competition_id": "sr:competition:34104"
+    },
+    {
+      "id": "sr:season:101119",
+      "name": "NBL1 South, Women 2023",
+      "start_date": "2023-04-01",
+      "end_date": "2023-08-15",
+      "year": "2023",
+      "competition_id": "sr:competition:34104"
+    },
+    {
+      "id": "sr:season:114489",
+      "name": "NBL1 South, Women 2024",
+      "start_date": "2024-04-03",
+      "end_date": "2024-08-10",
+      "year": "2024",
+      "competition_id": "sr:competition:34104"
+    },
+    {
+      "id": "sr:season:91135",
+      "name": "Basketball Africa League 2022",
+      "start_date": "2022-03-05",
+      "end_date": "2022-05-29",
+      "year": "2022",
+      "competition_id": "sr:competition:34360"
+    },
+    {
+      "id": "sr:season:102825",
+      "name": "Basketball Africa League 2023",
+      "start_date": "2023-03-11",
+      "end_date": "2023-05-27",
+      "year": "2023",
+      "competition_id": "sr:competition:34360"
+    },
+    {
+      "id": "sr:season:115909",
+      "name": "Basketball Africa League 2024",
+      "start_date": "2024-03-09",
+      "end_date": "2024-06-02",
+      "year": "2024",
+      "competition_id": "sr:competition:34360"
+    },
+    {
+      "id": "sr:season:91945",
+      "name": "LMB 2022",
+      "start_date": "2022-03-12",
+      "end_date": "2022-12-31",
+      "year": "2022",
+      "competition_id": "sr:competition:34472"
+    },
+    {
+      "id": "sr:season:103603",
+      "name": "Liga Mayor de Baloncesto 2023",
+      "start_date": "2023-03-11",
+      "end_date": "2023-12-31",
+      "year": "2023",
+      "competition_id": "sr:competition:34472"
+    },
+    {
+      "id": "sr:season:116573",
+      "name": "Liga Mayor de Baloncesto 2024",
+      "start_date": "2024-03-12",
+      "end_date": "2024-12-31",
+      "year": "2024",
+      "competition_id": "sr:competition:34472"
+    },
+    {
+      "id": "sr:season:117923",
+      "name": "LPB 2024",
+      "start_date": "2024-04-28",
+      "end_date": "2024-07-26",
+      "year": "2024",
+      "competition_id": "sr:competition:34474"
+    },
+    {
+      "id": "sr:season:124923",
+      "name": "LBP 2024 II",
+      "start_date": "2024-10-05",
+      "end_date": "2024-12-30",
+      "year": "2024",
+      "competition_id": "sr:competition:34474"
+    },
+    {
+      "id": "sr:season:125845",
+      "name": "Prva Liga 24/25",
+      "start_date": "2024-10-05",
+      "end_date": "2025-06-11",
+      "year": "24/25",
+      "competition_id": "sr:competition:34476"
+    },
+    {
+      "id": "sr:season:111914",
+      "name": "Liga Argentina 23/24",
+      "start_date": "2023-10-14",
+      "end_date": "2024-06-30",
+      "year": "23/24",
+      "competition_id": "sr:competition:34496"
+    },
+    {
+      "id": "sr:season:123345",
+      "name": "Liga Argentina 24/25",
+      "start_date": "2024-10-12",
+      "end_date": "2025-06-30",
+      "year": "24/25",
+      "competition_id": "sr:competition:34496"
+    },
+    {
+      "id": "sr:season:115791",
+      "name": "CEBL 2024",
+      "start_date": "2024-05-21",
+      "end_date": "2024-08-12",
+      "year": "2024",
+      "competition_id": "sr:competition:34582"
+    },
+    {
+      "id": "sr:season:106555",
+      "name": "VBA 2023",
+      "start_date": "2023-06-10",
+      "end_date": "2023-09-30",
+      "year": "2023",
+      "competition_id": "sr:competition:34618"
+    },
+    {
+      "id": "sr:season:119817",
+      "name": "VBA 2024",
+      "start_date": "2024-06-19",
+      "end_date": "2024-09-29",
+      "year": "2024",
+      "competition_id": "sr:competition:34618"
+    },
+    {
+      "id": "sr:season:84950",
+      "name": "U18 European Challengers, Women 2021",
+      "start_date": "2021-07-27",
+      "end_date": "2021-08-01",
+      "year": "2021",
+      "competition_id": "sr:competition:34738"
+    },
+    {
+      "id": "sr:season:84954",
+      "name": "U20 European Challengers, Women 2021",
+      "start_date": "2021-07-12",
+      "end_date": "2021-07-18",
+      "year": "2021",
+      "competition_id": "sr:competition:34740"
+    },
+    {
+      "id": "sr:season:84956",
+      "name": "U20 European Challengers 2021",
+      "start_date": "2021-07-19",
+      "end_date": "2021-07-25",
+      "year": "2021",
+      "competition_id": "sr:competition:34742"
+    },
+    {
+      "id": "sr:season:85100",
+      "name": "U18 European Challengers 2021",
+      "start_date": "2021-08-03",
+      "end_date": "2021-08-08",
+      "year": "2021",
+      "competition_id": "sr:competition:34754"
+    },
+    {
+      "id": "sr:season:96053",
+      "name": "WNBA Commissioner’s Cup 2022",
+      "start_date": "2022-07-26",
+      "end_date": "2022-07-27",
+      "year": "2022",
+      "competition_id": "sr:competition:34992"
+    },
+    {
+      "id": "sr:season:105259",
+      "name": "WNBA Commissioner’s Cup 2023",
+      "start_date": "2023-08-15",
+      "end_date": "2023-08-16",
+      "year": "2023",
+      "competition_id": "sr:competition:34992"
+    },
+    {
+      "id": "sr:season:119265",
+      "name": "WNBA Commissioner’s Cup 2024",
+      "start_date": "2024-06-25",
+      "end_date": "2024-06-26",
+      "year": "2024",
+      "competition_id": "sr:competition:34992"
+    },
+    {
+      "id": "sr:season:87006",
+      "name": "BNXT Super Cup 2021",
+      "start_date": "2021-09-10",
+      "end_date": "2021-09-11",
+      "year": "2021",
+      "competition_id": "sr:competition:35260"
+    },
+    {
+      "id": "sr:season:97021",
+      "name": "BNXT Super Cup 2022",
+      "start_date": "2022-09-17",
+      "end_date": "2022-09-18",
+      "year": "2022",
+      "competition_id": "sr:competition:35260"
+    },
+    {
+      "id": "sr:season:110165",
+      "name": "BNXT Super Cup 2023",
+      "start_date": "2023-09-09",
+      "end_date": "2023-09-10",
+      "year": "2023",
+      "competition_id": "sr:competition:35260"
+    },
+    {
+      "id": "sr:season:97851",
+      "name": "United League Super Cup 2022",
+      "start_date": "2022-09-22",
+      "end_date": "2022-09-25",
+      "year": "2022",
+      "competition_id": "sr:competition:35262"
+    },
+    {
+      "id": "sr:season:108493",
+      "name": "United League Super Cup 2023",
+      "start_date": "2023-09-21",
+      "end_date": "2023-09-24",
+      "year": "2023",
+      "competition_id": "sr:competition:35262"
+    },
+    {
+      "id": "sr:season:121475",
+      "name": "United League Super Cup 2024",
+      "start_date": "2024-09-11",
+      "end_date": "2024-09-14",
+      "year": "2024",
+      "competition_id": "sr:competition:35262"
+    },
+    {
+      "id": "sr:season:97389",
+      "name": "Super Cup 2022",
+      "start_date": "2022-10-01",
+      "end_date": "2022-10-03",
+      "year": "2022",
+      "competition_id": "sr:competition:35266"
+    },
+    {
+      "id": "sr:season:110173",
+      "name": "Super Cup 2023",
+      "start_date": "2023-09-29",
+      "end_date": "2023-09-30",
+      "year": "2023",
+      "competition_id": "sr:competition:35266"
+    },
+    {
+      "id": "sr:season:121403",
+      "name": "Super Cup 2024",
+      "start_date": "2024-09-28",
+      "end_date": "2024-09-29",
+      "year": "2024",
+      "competition_id": "sr:competition:35266"
+    },
+    {
+      "id": "sr:season:89563",
+      "name": "Cup 21/22",
+      "start_date": "2021-12-12",
+      "end_date": "2022-03-19",
+      "year": "21/22",
+      "competition_id": "sr:competition:35268"
+    },
+    {
+      "id": "sr:season:100999",
+      "name": "Cup 22/23",
+      "start_date": "2022-12-11",
+      "end_date": "2023-05-31",
+      "year": "22/23",
+      "competition_id": "sr:competition:35268"
+    },
+    {
+      "id": "sr:season:114075",
+      "name": "Cup 2024",
+      "start_date": "2024-01-21",
+      "end_date": "2024-03-23",
+      "year": "2024",
+      "competition_id": "sr:competition:35268"
+    },
+    {
+      "id": "sr:season:89567",
+      "name": "Cup, Women 21/22",
+      "start_date": "2021-12-11",
+      "end_date": "2022-03-20",
+      "year": "21/22",
+      "competition_id": "sr:competition:35270"
+    },
+    {
+      "id": "sr:season:100989",
+      "name": "Cup, Women 22/23",
+      "start_date": "2022-12-10",
+      "end_date": "2023-03-31",
+      "year": "22/23",
+      "competition_id": "sr:competition:35270"
+    },
+    {
+      "id": "sr:season:114077",
+      "name": "Cup, Women 2024",
+      "start_date": "2024-01-20",
+      "end_date": "2024-03-23",
+      "year": "2024",
+      "competition_id": "sr:competition:35270"
+    },
+    {
+      "id": "sr:season:104163",
+      "name": "Superettan 22/23",
+      "start_date": "2022-09-24",
+      "end_date": "2023-04-29",
+      "year": "22/23",
+      "competition_id": "sr:competition:35330"
+    },
+    {
+      "id": "sr:season:109775",
+      "name": "Superettan 23/24",
+      "start_date": "2023-09-16",
+      "end_date": "2024-05-07",
+      "year": "23/24",
+      "competition_id": "sr:competition:35330"
+    },
+    {
+      "id": "sr:season:122931",
+      "name": "Superettan 24/25",
+      "start_date": "2024-09-21",
+      "end_date": "2025-05-07",
+      "year": "24/25",
+      "competition_id": "sr:competition:35330"
+    },
+    {
+      "id": "sr:season:125867",
+      "name": "NBL 24/25",
+      "start_date": "2024-10-01",
+      "end_date": "2025-05-31",
+      "year": "24/25",
+      "competition_id": "sr:competition:35338"
+    },
+    {
+      "id": "sr:season:98321",
+      "name": "Federation Cup 2022",
+      "start_date": "2022-09-23",
+      "end_date": "2022-09-30",
+      "year": "2022",
+      "competition_id": "sr:competition:35344"
+    },
+    {
+      "id": "sr:season:122697",
+      "name": "Supertaca, Women 2024",
+      "start_date": "2024-09-28",
+      "end_date": "2024-09-28",
+      "year": "2024",
+      "competition_id": "sr:competition:35390"
+    },
+    {
+      "id": "sr:season:102377",
+      "name": "Cupa Romaniei 2023",
+      "start_date": "2023-02-11",
+      "end_date": "2023-10-15",
+      "year": "2023",
+      "competition_id": "sr:competition:35394"
+    },
+    {
+      "id": "sr:season:110543",
+      "name": "Cupa Romaniei        23/24",
+      "start_date": "2023-09-15",
+      "end_date": "2024-02-18",
+      "year": "23/24",
+      "competition_id": "sr:competition:35394"
+    },
+    {
+      "id": "sr:season:122857",
+      "name": "Cupa Romaniei        24/25",
+      "start_date": "2024-09-07",
+      "end_date": "2025-02-18",
+      "year": "24/25",
+      "competition_id": "sr:competition:35394"
+    },
+    {
+      "id": "sr:season:102375",
+      "name": "Cupa Romaniei, Women 22/23",
+      "start_date": "2023-02-25",
+      "end_date": "2023-02-27",
+      "year": "2023",
+      "competition_id": "sr:competition:35396"
+    },
+    {
+      "id": "sr:season:110882",
+      "name": "Cup, Women 23/24",
+      "start_date": "2023-09-23",
+      "end_date": "2024-03-12",
+      "year": "23/24",
+      "competition_id": "sr:competition:35396"
+    },
+    {
+      "id": "sr:season:122861",
+      "name": "Cup, Women 24/25",
+      "start_date": "2024-09-18",
+      "end_date": "2025-03-12",
+      "year": "24/25",
+      "competition_id": "sr:competition:35396"
+    },
+    {
+      "id": "sr:season:102211",
+      "name": "Korisliiga, Women 22/23",
+      "start_date": "2022-09-30",
+      "end_date": "2023-04-21",
+      "year": "22/23",
+      "competition_id": "sr:competition:35406"
+    },
+    {
+      "id": "sr:season:110553",
+      "name": "Korisliiga, Women 23/24",
+      "start_date": "2023-09-29",
+      "end_date": "2024-04-23",
+      "year": "23/24",
+      "competition_id": "sr:competition:35406"
+    },
+    {
+      "id": "sr:season:122967",
+      "name": "Korisliiga, Women 24/25",
+      "start_date": "2024-10-02",
+      "end_date": "2025-04-29",
+      "year": "24/25",
+      "competition_id": "sr:competition:35406"
+    },
+    {
+      "id": "sr:season:104031",
+      "name": "Campeonato Nacional Liga Feminina 22/23",
+      "start_date": "2022-10-01",
+      "end_date": "2023-05-31",
+      "year": "22/23",
+      "competition_id": "sr:competition:35412"
+    },
+    {
+      "id": "sr:season:108463",
+      "name": "Campeonato Nacional Liga Feminina 23/24",
+      "start_date": "2023-09-30",
+      "end_date": "2024-05-05",
+      "year": "23/24",
+      "competition_id": "sr:competition:35412"
+    },
+    {
+      "id": "sr:season:120765",
+      "name": "Campeonato Nacional Liga Feminina 24/25",
+      "start_date": "2024-10-06",
+      "end_date": "2025-05-05",
+      "year": "24/25",
+      "competition_id": "sr:competition:35412"
+    },
+    {
+      "id": "sr:season:103873",
+      "name": "1 Division 2023",
+      "start_date": "2022-10-07",
+      "end_date": "2023-04-25",
+      "year": "2023",
+      "competition_id": "sr:competition:35416"
+    },
+    {
+      "id": "sr:season:110713",
+      "name": "1 Division 23/24",
+      "start_date": "2023-10-06",
+      "end_date": "2024-04-25",
+      "year": "23/24",
+      "competition_id": "sr:competition:35416"
+    },
+    {
+      "id": "sr:season:123645",
+      "name": "1 Division 24/25",
+      "start_date": "2024-10-10",
+      "end_date": "2025-04-30",
+      "year": "24/25",
+      "competition_id": "sr:competition:35416"
+    },
+    {
+      "id": "sr:season:98323",
+      "name": "1. Lig 22/23",
+      "start_date": "2022-10-07",
+      "end_date": "2023-06-22",
+      "year": "22/23",
+      "competition_id": "sr:competition:35430"
+    },
+    {
+      "id": "sr:season:109991",
+      "name": "1. Lig 23/24",
+      "start_date": "2023-09-15",
+      "end_date": "2024-06-01",
+      "year": "23/24",
+      "competition_id": "sr:competition:35430"
+    },
+    {
+      "id": "sr:season:122859",
+      "name": "TBL 24/25",
+      "start_date": "2024-09-13",
+      "end_date": "2025-06-01",
+      "year": "24/25",
+      "competition_id": "sr:competition:35430"
+    },
+    {
+      "id": "sr:season:110733",
+      "name": "1. Division, Women 23/24",
+      "start_date": "2023-10-08",
+      "end_date": "2024-04-09",
+      "year": "23/24",
+      "competition_id": "sr:competition:35438"
+    },
+    {
+      "id": "sr:season:123647",
+      "name": "1. Division, Women 24/25",
+      "start_date": "2024-10-09",
+      "end_date": "2025-04-30",
+      "year": "24/25",
+      "competition_id": "sr:competition:35438"
+    },
+    {
+      "id": "sr:season:103627",
+      "name": "Zweite Liga 22/23",
+      "start_date": "2022-10-07",
+      "end_date": "2023-04-29",
+      "year": "22/23",
+      "competition_id": "sr:competition:35466"
+    },
+    {
+      "id": "sr:season:110671",
+      "name": "Zweite Liga 23/24",
+      "start_date": "2023-10-07",
+      "end_date": "2024-04-27",
+      "year": "23/24",
+      "competition_id": "sr:competition:35466"
+    },
+    {
+      "id": "sr:season:123871",
+      "name": "Zweite Liga 24/25",
+      "start_date": "2024-09-28",
+      "end_date": "2025-04-27",
+      "year": "24/25",
+      "competition_id": "sr:competition:35466"
+    },
+    {
+      "id": "sr:season:110753",
+      "name": "SB League, Women 23/24",
+      "start_date": "2023-09-30",
+      "end_date": "2024-05-31",
+      "year": "23/24",
+      "competition_id": "sr:competition:35468"
+    },
+    {
+      "id": "sr:season:123565",
+      "name": "SB League, Women 24/25",
+      "start_date": "2024-09-28",
+      "end_date": "2025-05-31",
+      "year": "24/25",
+      "competition_id": "sr:competition:35468"
+    },
+    {
+      "id": "sr:season:98421",
+      "name": "LNB, Women 22/23",
+      "start_date": "2022-10-01",
+      "end_date": "2023-04-21",
+      "year": "22/23",
+      "competition_id": "sr:competition:35476"
+    },
+    {
+      "id": "sr:season:111756",
+      "name": "LNB, Women 23/24",
+      "start_date": "2023-10-14",
+      "end_date": "2024-04-30",
+      "year": "23/24",
+      "competition_id": "sr:competition:35476"
+    },
+    {
+      "id": "sr:season:124935",
+      "name": "LNB, Women 24/25",
+      "start_date": "2024-10-11",
+      "end_date": "2025-04-30",
+      "year": "24/25",
+      "competition_id": "sr:competition:35476"
+    },
+    {
+      "id": "sr:season:115921",
+      "name": "Taca de Portugal 2024",
+      "start_date": "2024-03-16",
+      "end_date": "2024-03-17",
+      "year": "2024",
+      "competition_id": "sr:competition:35647"
+    },
+    {
+      "id": "sr:season:99249",
+      "name": "P League 22/23",
+      "start_date": "2022-11-05",
+      "end_date": "2023-06-14",
+      "year": "22/23",
+      "competition_id": "sr:competition:35817"
+    },
+    {
+      "id": "sr:season:112158",
+      "name": "P League 23/24",
+      "start_date": "2023-11-11",
+      "end_date": "2024-06-20",
+      "year": "23/24",
+      "competition_id": "sr:competition:35817"
+    },
+    {
+      "id": "sr:season:125405",
+      "name": "P League 24/25",
+      "start_date": "2024-10-26",
+      "end_date": "2025-06-20",
+      "year": "24/25",
+      "competition_id": "sr:competition:35817"
+    },
+    {
+      "id": "sr:season:90759",
+      "name": "World Cup Women, Qualification 2022",
+      "start_date": "2022-02-10",
+      "end_date": "2022-02-13",
+      "year": "2022",
+      "competition_id": "sr:competition:36153"
+    },
+    {
+      "id": "sr:season:122573",
+      "name": "World Cup Women, Qualification 2024",
+      "start_date": "2024-08-19",
+      "end_date": "2024-12-31",
+      "year": "2024",
+      "competition_id": "sr:competition:36153"
+    },
+    {
+      "id": "sr:season:92185",
+      "name": "NBL 1, Wildcard, Women 2022",
+      "start_date": "2022-04-10",
+      "end_date": "2022-08-07",
+      "year": "2022",
+      "competition_id": "sr:competition:36291"
+    },
+    {
+      "id": "sr:season:103013",
+      "name": "BNXT League 2023",
+      "start_date": "2023-03-03",
+      "end_date": "2023-06-30",
+      "year": "2023",
+      "competition_id": "sr:competition:36321"
+    },
+    {
+      "id": "sr:season:116073",
+      "name": "BNXT League 2024",
+      "start_date": "2024-03-01",
+      "end_date": "2024-06-30",
+      "year": "2024",
+      "competition_id": "sr:competition:36321"
+    },
+    {
+      "id": "sr:season:121099",
+      "name": "BNXT League 24/25",
+      "start_date": "2024-09-13",
+      "end_date": "2025-06-30",
+      "year": "24/25",
+      "competition_id": "sr:competition:36321"
+    },
+    {
+      "id": "sr:season:92025",
+      "name": "The Basketball CLassic 21/22",
+      "start_date": "2022-03-15",
+      "end_date": "2022-03-31",
+      "year": "21/22",
+      "competition_id": "sr:competition:36427"
+    },
+    {
+      "id": "sr:season:92169",
+      "name": "NBL1, East 2022",
+      "start_date": "2022-04-02",
+      "end_date": "2022-09-30",
+      "year": "2022",
+      "competition_id": "sr:competition:36457"
+    },
+    {
+      "id": "sr:season:101113",
+      "name": "NBL1, East 2023",
+      "start_date": "2023-03-11",
+      "end_date": "2023-08-15",
+      "year": "2023",
+      "competition_id": "sr:competition:36457"
+    },
+    {
+      "id": "sr:season:114505",
+      "name": "NBL1, East 2024",
+      "start_date": "2024-04-06",
+      "end_date": "2024-08-10",
+      "year": "2024",
+      "competition_id": "sr:competition:36457"
+    },
+    {
+      "id": "sr:season:92173",
+      "name": "NBL1, Wildcard 2022",
+      "start_date": "2022-04-10",
+      "end_date": "2022-08-14",
+      "year": "2022",
+      "competition_id": "sr:competition:36459"
+    },
+    {
+      "id": "sr:season:92183",
+      "name": "NBL1, East, Women 2022",
+      "start_date": "2022-04-02",
+      "end_date": "2022-09-30",
+      "year": "2022",
+      "competition_id": "sr:competition:36461"
+    },
+    {
+      "id": "sr:season:101123",
+      "name": "NBL1 East, Women 2023",
+      "start_date": "2023-03-11",
+      "end_date": "2023-08-15",
+      "year": "2023",
+      "competition_id": "sr:competition:36461"
+    },
+    {
+      "id": "sr:season:114495",
+      "name": "NBL1 East, Women 2024",
+      "start_date": "2024-04-06",
+      "end_date": "2024-08-10",
+      "year": "2024",
+      "competition_id": "sr:competition:36461"
+    },
+    {
+      "id": "sr:season:102161",
+      "name": "Cup, Women 2023",
+      "start_date": "2023-03-06",
+      "end_date": "2023-06-30",
+      "year": "2023",
+      "competition_id": "sr:competition:36473"
+    },
+    {
+      "id": "sr:season:114209",
+      "name": "Cup, Women 2024",
+      "start_date": "2024-01-02",
+      "end_date": "2024-01-05",
+      "year": "2024",
+      "competition_id": "sr:competition:36473"
+    },
+    {
+      "id": "sr:season:103641",
+      "name": "Cup 2023",
+      "start_date": "2023-03-21",
+      "end_date": "2023-03-24",
+      "year": "2023",
+      "competition_id": "sr:competition:36477"
+    },
+    {
+      "id": "sr:season:116305",
+      "name": "Cup 2024",
+      "start_date": "2024-03-15",
+      "end_date": "2024-03-17",
+      "year": "2024",
+      "competition_id": "sr:competition:36477"
+    },
+    {
+      "id": "sr:season:105667",
+      "name": "LNBP, Women 2023",
+      "start_date": "2023-05-05",
+      "end_date": "2023-08-21",
+      "year": "2023",
+      "competition_id": "sr:competition:37003"
+    },
+    {
+      "id": "sr:season:117165",
+      "name": "LNBP, Women 2024",
+      "start_date": "2024-05-02",
+      "end_date": "2024-08-06",
+      "year": "2024",
+      "competition_id": "sr:competition:37003"
+    },
+    {
+      "id": "sr:season:95795",
+      "name": "The Basketball Tournament 2022",
+      "start_date": "2022-07-16",
+      "end_date": "2022-08-03",
+      "year": "2022",
+      "competition_id": "sr:competition:37425"
+    },
+    {
+      "id": "sr:season:107727",
+      "name": "The Basketball Tournament 2023",
+      "start_date": "2023-07-19",
+      "end_date": "2023-08-04",
+      "year": "2023",
+      "competition_id": "sr:competition:37425"
+    },
+    {
+      "id": "sr:season:120489",
+      "name": "The Basketball Tournament 2024",
+      "start_date": "2024-07-19",
+      "end_date": "2024-08-04",
+      "year": "2024",
+      "competition_id": "sr:competition:37425"
+    },
+    {
+      "id": "sr:season:101229",
+      "name": "Super Cup, Women 2022",
+      "start_date": "2022-12-28",
+      "end_date": "2022-12-29",
+      "year": "2022",
+      "competition_id": "sr:competition:37895"
+    },
+    {
+      "id": "sr:season:123497",
+      "name": "Super Cup, Women 2024",
+      "start_date": "2024-12-04",
+      "end_date": "2024-12-04",
+      "year": "2024",
+      "competition_id": "sr:competition:37895"
+    },
+    {
+      "id": "sr:season:99345",
+      "name": "W League 22/23",
+      "start_date": "2022-10-19",
+      "end_date": "2023-04-17",
+      "year": "22/23",
+      "competition_id": "sr:competition:38213"
+    },
+    {
+      "id": "sr:season:109741",
+      "name": "W League 23/24",
+      "start_date": "2023-10-14",
+      "end_date": "2024-04-15",
+      "year": "23/24",
+      "competition_id": "sr:competition:38213"
+    },
+    {
+      "id": "sr:season:124937",
+      "name": "W League 24/25",
+      "start_date": "2024-10-11",
+      "end_date": "2025-04-30",
+      "year": "24/25",
+      "competition_id": "sr:competition:38213"
+    },
+    {
+      "id": "sr:season:100455",
+      "name": "Cesky Pohar 22/23",
+      "start_date": "2022-11-22",
+      "end_date": "2023-05-31",
+      "year": "22/23",
+      "competition_id": "sr:competition:38287"
+    },
+    {
+      "id": "sr:season:112842",
+      "name": "Cesky Pohar 23/24",
+      "start_date": "2023-11-28",
+      "end_date": "2024-05-31",
+      "year": "23/24",
+      "competition_id": "sr:competition:38287"
+    },
+    {
+      "id": "sr:season:126013",
+      "name": "Cesky Pohar 24/25",
+      "start_date": "2024-11-12",
+      "end_date": "2025-05-31",
+      "year": "24/25",
+      "competition_id": "sr:competition:38287"
+    },
+    {
+      "id": "sr:season:101491",
+      "name": "TB2L 2023",
+      "start_date": "2022-11-11",
+      "end_date": "2023-05-31",
+      "year": "2023",
+      "competition_id": "sr:competition:38919"
+    },
+    {
+      "id": "sr:season:112198",
+      "name": "TB2L 23/24",
+      "start_date": "2023-11-03",
+      "end_date": "2024-05-09",
+      "year": "23/24",
+      "competition_id": "sr:competition:38919"
+    },
+    {
+      "id": "sr:season:122929",
+      "name": "TB2L 24/25",
+      "start_date": "2024-10-25",
+      "end_date": "2025-05-09",
+      "year": "24/25",
+      "competition_id": "sr:competition:38919"
+    },
+    {
+      "id": "sr:season:102003",
+      "name": "Copa Super 8 2023",
+      "start_date": "2023-01-21",
+      "end_date": "2023-01-28",
+      "year": "2023",
+      "competition_id": "sr:competition:39035"
+    },
+    {
+      "id": "sr:season:114573",
+      "name": "Copa Super 8 2024",
+      "start_date": "2024-01-27",
+      "end_date": "2024-02-03",
+      "year": "2024",
+      "competition_id": "sr:competition:39035"
+    },
+    {
+      "id": "sr:season:102771",
+      "name": "LBF, Women 2023",
+      "start_date": "2023-03-08",
+      "end_date": "2023-09-05",
+      "year": "2023",
+      "competition_id": "sr:competition:39171"
+    },
+    {
+      "id": "sr:season:115553",
+      "name": "LBF, Women 2024",
+      "start_date": "2024-03-01",
+      "end_date": "2024-09-05",
+      "year": "2024",
+      "competition_id": "sr:competition:39171"
+    },
+    {
+      "id": "sr:season:111374",
+      "name": "East Asia Super League 23/24",
+      "start_date": "2023-10-11",
+      "end_date": "2024-03-15",
+      "year": "23/24",
+      "competition_id": "sr:competition:39287"
+    },
+    {
+      "id": "sr:season:122965",
+      "name": "East Asia Super League 24/25",
+      "start_date": "2024-10-02",
+      "end_date": "2025-03-09",
+      "year": "24/25",
+      "competition_id": "sr:competition:39287"
+    },
+    {
+      "id": "sr:season:103321",
+      "name": "Magyar Kupa 2023",
+      "start_date": "2023-04-05",
+      "end_date": "2023-04-09",
+      "year": "2023",
+      "competition_id": "sr:competition:39305"
+    },
+    {
+      "id": "sr:season:114775",
+      "name": "Magyar Kupa 2024",
+      "start_date": "2024-01-24",
+      "end_date": "2024-04-07",
+      "year": "2024",
+      "competition_id": "sr:competition:39305"
+    },
+    {
+      "id": "sr:season:103479",
+      "name": "WBL, Women 22/23",
+      "start_date": "2022-10-20",
+      "end_date": "2023-04-27",
+      "year": "22/23",
+      "competition_id": "sr:competition:39351"
+    },
+    {
+      "id": "sr:season:109781",
+      "name": "WBL, Women 23/24",
+      "start_date": "2023-10-16",
+      "end_date": "2024-04-15",
+      "year": "23/24",
+      "competition_id": "sr:competition:39351"
+    },
+    {
+      "id": "sr:season:122657",
+      "name": "WBL, Women 24/25",
+      "start_date": "2024-10-13",
+      "end_date": "2025-05-31",
+      "year": "24/25",
+      "competition_id": "sr:competition:39351"
+    },
+    {
+      "id": "sr:season:103407",
+      "name": "NBB All Star 2023",
+      "start_date": "2023-03-18",
+      "end_date": "2023-03-20",
+      "year": "2023",
+      "competition_id": "sr:competition:39359"
+    },
+    {
+      "id": "sr:season:116737",
+      "name": "NBB All Star 2024",
+      "start_date": "2024-03-16",
+      "end_date": "2024-03-17",
+      "year": "2024",
+      "competition_id": "sr:competition:39359"
+    },
+    {
+      "id": "sr:season:106527",
+      "name": "PBA on Tour 2023",
+      "start_date": "2023-05-21",
+      "end_date": "2023-07-30",
+      "year": "2023",
+      "competition_id": "sr:competition:40131"
+    },
+    {
+      "id": "sr:season:108083",
+      "name": "NBA In-Season Tournament 2023",
+      "start_date": "2023-11-03",
+      "end_date": "2023-12-10",
+      "year": "2023",
+      "competition_id": "sr:competition:40401"
+    },
+    {
+      "id": "sr:season:122371",
+      "name": "NBA Cup 2024",
+      "start_date": "2024-11-12",
+      "end_date": "2024-12-18",
+      "year": "2024",
+      "competition_id": "sr:competition:40401"
+    },
+    {
+      "id": "sr:season:117065",
+      "name": "Women's Basketball Invitation Tournament 2024",
+      "start_date": "2024-03-21",
+      "end_date": "2024-04-04",
+      "year": "2024",
+      "competition_id": "sr:competition:40443"
+    },
+    {
+      "id": "sr:season:110199",
+      "name": "Supercoppa A1, Women 2024",
+      "start_date": "2023-09-22",
+      "end_date": "2023-09-23",
+      "year": "2023",
+      "competition_id": "sr:competition:40987"
+    },
+    {
+      "id": "sr:season:123495",
+      "name": "Supercoppa A1, Women 2024",
+      "start_date": "2024-09-20",
+      "end_date": "2024-09-20",
+      "year": "2024",
+      "competition_id": "sr:competition:40987"
+    },
+    {
+      "id": "sr:season:110996",
+      "name": "Proliga 23/24",
+      "start_date": "2023-10-14",
+      "end_date": "2024-05-10",
+      "year": "23/24",
+      "competition_id": "sr:competition:41115"
+    },
+    {
+      "id": "sr:season:121117",
+      "name": "Proliga 24/25",
+      "start_date": "2024-10-05",
+      "end_date": "2025-05-10",
+      "year": "24/25",
+      "competition_id": "sr:competition:41115"
+    },
+    {
+      "id": "sr:season:110900",
+      "name": "KBL Cup 2023",
+      "start_date": "2023-10-08",
+      "end_date": "2023-10-15",
+      "year": "2023",
+      "competition_id": "sr:competition:41117"
+    },
+    {
+      "id": "sr:season:124445",
+      "name": "KBL Cup 2024",
+      "start_date": "2024-10-05",
+      "end_date": "2024-10-13",
+      "year": "2024",
+      "competition_id": "sr:competition:41117"
+    },
+    {
+      "id": "sr:season:110874",
+      "name": "European North Basketball League 23/24",
+      "start_date": "2023-09-19",
+      "end_date": "2024-04-10",
+      "year": "23/24",
+      "competition_id": "sr:competition:41118"
+    },
+    {
+      "id": "sr:season:122917",
+      "name": "European North Basketball League 24/25",
+      "start_date": "2024-09-17",
+      "end_date": "2025-04-09",
+      "year": "24/25",
+      "competition_id": "sr:competition:41118"
+    },
+    {
+      "id": "sr:season:111030",
+      "name": "NBA G League Showcase Cup 2023",
+      "start_date": "2023-11-10",
+      "end_date": "2023-12-23",
+      "year": "2023",
+      "competition_id": "sr:competition:41126"
+    },
+    {
+      "id": "sr:season:123605",
+      "name": "NBA G League Showcase Cup 2024",
+      "start_date": "2024-11-08",
+      "end_date": "2024-12-23",
+      "year": "2024",
+      "competition_id": "sr:competition:41126"
+    },
+    {
+      "id": "sr:season:111102",
+      "name": "SuperCup, Women 2023",
+      "start_date": "2023-09-28",
+      "end_date": "2023-09-29",
+      "year": "2023",
+      "competition_id": "sr:competition:41182"
+    },
+    {
+      "id": "sr:season:123307",
+      "name": "SuperCup, Women 2024",
+      "start_date": "2024-10-02",
+      "end_date": "2024-10-03",
+      "year": "2024",
+      "competition_id": "sr:competition:41182"
+    },
+    {
+      "id": "sr:season:112150",
+      "name": "T1 League 23/24",
+      "start_date": "2023-10-28",
+      "end_date": "2024-06-01",
+      "year": "23/24",
+      "competition_id": "sr:competition:41368"
+    },
+    {
+      "id": "sr:season:112650",
+      "name": "Taca da Liga 23/24",
+      "start_date": "2023-10-13",
+      "end_date": "2024-05-05",
+      "year": "23/24",
+      "competition_id": "sr:competition:41564"
+    },
+    {
+      "id": "sr:season:121123",
+      "name": "Taca da Liga 24/25",
+      "start_date": "2024-12-04",
+      "end_date": "2025-05-05",
+      "year": "24/25",
+      "competition_id": "sr:competition:41564"
+    },
+    {
+      "id": "sr:season:113342",
+      "name": "WASL West Asia 23/24",
+      "start_date": "2023-11-15",
+      "end_date": "2024-05-08",
+      "year": "23/24",
+      "competition_id": "sr:competition:41772"
+    },
+    {
+      "id": "sr:season:113340",
+      "name": "WASL Gulf League 23/24",
+      "start_date": "2023-11-13",
+      "end_date": "2024-05-06",
+      "year": "23/24",
+      "competition_id": "sr:competition:41774"
+    },
+    {
+      "id": "sr:season:125281",
+      "name": "WASL Gulf League 24/25",
+      "start_date": "2024-10-21",
+      "end_date": "2025-05-06",
+      "year": "24/25",
+      "competition_id": "sr:competition:41774"
+    },
+    {
+      "id": "sr:season:118765",
+      "name": "WASL Final 8 2024",
+      "start_date": "2024-05-25",
+      "end_date": "2024-06-01",
+      "year": "2024",
+      "competition_id": "sr:competition:41776"
+    },
+    {
+      "id": "sr:season:115551",
+      "name": "Czech-Slovak Cup 2024",
+      "start_date": "2024-02-14",
+      "end_date": "2024-02-16",
+      "year": "2024",
+      "competition_id": "sr:competition:42203"
+    },
+    {
+      "id": "sr:season:121125",
+      "name": "Taca da Liga, Women 24/25",
+      "start_date": "2024-09-20",
+      "end_date": "2024-09-22",
+      "year": "2024",
+      "competition_id": "sr:competition:42293"
+    },
+    {
+      "id": "sr:season:115923",
+      "name": "Copa de la Reina, Women 2024",
+      "start_date": "2024-03-21",
+      "end_date": "2024-03-24",
+      "year": "2024",
+      "competition_id": "sr:competition:42295"
+    },
+    {
+      "id": "sr:season:118211",
+      "name": "U18 Next Generation Tournament 2024",
+      "start_date": "2024-05-23",
+      "end_date": "2024-05-26",
+      "year": "2024",
+      "competition_id": "sr:competition:42743"
+    },
+    {
+      "id": "sr:season:120421",
+      "name": "BNL 2024",
+      "start_date": "2024-06-22",
+      "end_date": "2024-10-20",
+      "year": "2024",
+      "competition_id": "sr:competition:43191"
+    },
+    {
+      "id": "sr:season:120733",
+      "name": "U20 International Friendly Games 2024",
+      "start_date": "2024-01-01",
+      "end_date": "2024-12-31",
+      "year": "2024",
+      "competition_id": "sr:competition:43223"
+    },
+    {
+      "id": "sr:season:122155",
+      "name": "Club Friendly Games, Women 2024",
+      "start_date": "2024-01-01",
+      "end_date": "2024-12-31",
+      "year": "2024",
+      "competition_id": "sr:competition:43641"
+    },
+    {
+      "id": "sr:season:95535",
+      "name": "Torneo Interligas 2022",
+      "start_date": "2022-07-15",
+      "end_date": "2022-09-30",
+      "year": "2022",
+      "competition_id": "sr:competition:44097"
+    },
+    {
+      "id": "sr:season:120523",
+      "name": "U22 Torneo Interligas 2024",
+      "start_date": "2024-07-03",
+      "end_date": "2024-07-06",
+      "year": "2024",
+      "competition_id": "sr:competition:44097"
+    },
+    {
+      "id": "sr:season:124697",
+      "name": "SBL 24/25",
+      "start_date": "2024-11-01",
+      "end_date": "2025-05-18",
+      "year": "24/25",
+      "competition_id": "sr:competition:44375"
+    },
+    {
+      "id": "sr:season:124695",
+      "name": "SLB Trophy 24/25",
+      "start_date": "2024-09-27",
+      "end_date": "2025-01-26",
+      "year": "24/25",
+      "competition_id": "sr:competition:44379"
+    },
+    {
+      "id": "sr:season:125337",
+      "name": "TPBL 24/25",
+      "start_date": "2024-10-19",
+      "end_date": "2025-06-30",
+      "year": "24/25",
+      "competition_id": "sr:competition:44675"
+    },
+    {
+      "id": "sr:season:125739",
+      "name": "Serie A2, Women 24/25",
+      "start_date": "2024-10-05",
+      "end_date": "2025-06-30",
+      "year": "24/25",
+      "competition_id": "sr:competition:44855"
+    },
+    {
+      "id": "sr:season:125843",
+      "name": "I A MCKL 24/25",
+      "start_date": "2024-10-03",
+      "end_date": "2025-06-30",
+      "year": "24/25",
+      "competition_id": "sr:competition:44945"
+    },
+    {
+      "id": "sr:season:125871",
+      "name": "Superleague 24/25",
+      "start_date": "2024-10-11",
+      "end_date": "2025-05-31",
+      "year": "24/25",
+      "competition_id": "sr:competition:44947"
+    },
+    {
+      "id": "sr:season:125957",
+      "name": "Segunda FEB 24/25",
+      "start_date": "2024-10-05",
+      "end_date": "2025-06-01",
+      "year": "24/25",
+      "competition_id": "sr:competition:44949"
+    },
+    {
+      "id": "sr:season:125863",
+      "name": "CBA Club Cup 24/25",
+      "start_date": "2024-11-12",
+      "end_date": "2025-01-31",
+      "year": "24/25",
+      "competition_id": "sr:competition:44965"
+    }
+  ]
+}

@@ -5,7 +5,7 @@ public class Constants {
 
     // TODO:全球篮球API-每日摘要
     public static final String BASKET_BALL_URL = "https://api.sportradar.com/basketball/trial/v2/en/schedules/";
-    public static final String BASKET_BALL_KEY = "b6qtVtA9ZIoTeXhVQp2FnENvG7pAbEbamCBkQ4bc";
+    public static final String BASKET_BALL_KEY = "XcLiGwSgTFJTA5XV5uqxzvmHzQ9qhRcHY11R9gbG";
 
     // TODO:全球美式足球 API-每日摘要
     public static final String FOOT_BALL_URL = "https://api.sportradar.com/americanfootball/trial/v2/en/schedules/";
