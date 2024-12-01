@@ -78,6 +78,9 @@ public class FavouriteFragment extends BaseFragment<FragmentFavouriteBinding>
                 case "Basketball":
                     jsonFileName = "Basketball_Teams.json";
                     break;
+                case "Icehockey":
+                    jsonFileName = "Icehockey_Teams.json";
+                    break;
             
 
             }
@@ -103,7 +106,7 @@ public class FavouriteFragment extends BaseFragment<FragmentFavouriteBinding>
             } else if ("Basketball".equals(sport)) {
                 teams = parseSoccerTeams(json, savedTeams);
             } else {
-                teams = parseOtherTeams(json, savedTeams);
+                teams = parseSoccerTeams(json, savedTeams);
             }
 
             teamList.clear();

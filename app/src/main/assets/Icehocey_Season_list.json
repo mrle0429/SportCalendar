@@ -1,0 +1,2349 @@
+{
+    "generated_at": "2024-12-01T05:45:11+00:00",
+    "seasons": [
+        {
+            "id": "sr:season:94533",
+            "name": "World Championship 2023",
+            "start_date": "2023-05-12",
+            "end_date": "2023-05-28",
+            "year": "2023",
+            "competition_id": "sr:competition:3"
+        },
+        {
+            "id": "sr:season:106083",
+            "name": "World Championship 2024",
+            "start_date": "2024-05-10",
+            "end_date": "2024-05-26",
+            "year": "2024",
+            "competition_id": "sr:competition:3"
+        },
+        {
+            "id": "sr:season:119183",
+            "name": "World Championship 2025",
+            "start_date": "2025-05-09",
+            "end_date": "2025-05-25",
+            "year": "2025",
+            "competition_id": "sr:competition:3"
+        },
+        {
+            "id": "sr:season:94899",
+            "name": "National League 22/23",
+            "start_date": "2022-09-14",
+            "end_date": "2023-04-27",
+            "year": "22/23",
+            "competition_id": "sr:competition:128"
+        },
+        {
+            "id": "sr:season:106481",
+            "name": "National League 23/24",
+            "start_date": "2023-09-13",
+            "end_date": "2024-04-30",
+            "year": "23/24",
+            "competition_id": "sr:competition:128"
+        },
+        {
+            "id": "sr:season:119005",
+            "name": "National League 24/25",
+            "start_date": "2024-09-17",
+            "end_date": "2025-04-29",
+            "year": "24/25",
+            "competition_id": "sr:competition:128"
+        },
+        {
+            "id": "sr:season:94909",
+            "name": "Swiss League 22/23",
+            "start_date": "2022-09-16",
+            "end_date": "2023-03-27",
+            "year": "22/23",
+            "competition_id": "sr:competition:129"
+        },
+        {
+            "id": "sr:season:106987",
+            "name": "Swiss League 23/24",
+            "start_date": "2023-09-14",
+            "end_date": "2024-03-29",
+            "year": "23/24",
+            "competition_id": "sr:competition:129"
+        },
+        {
+            "id": "sr:season:120787",
+            "name": "Swiss League 24/25",
+            "start_date": "2024-09-11",
+            "end_date": "2025-03-29",
+            "year": "24/25",
+            "competition_id": "sr:competition:129"
+        },
+        {
+            "id": "sr:season:94581",
+            "name": "Liiga 22/23",
+            "start_date": "2022-09-13",
+            "end_date": "2023-04-29",
+            "year": "22/23",
+            "competition_id": "sr:competition:134"
+        },
+        {
+            "id": "sr:season:105311",
+            "name": "Liiga 23/24",
+            "start_date": "2023-09-12",
+            "end_date": "2024-04-30",
+            "year": "23/24",
+            "competition_id": "sr:competition:134"
+        },
+        {
+            "id": "sr:season:118993",
+            "name": "Liiga 24/25",
+            "start_date": "2024-09-10",
+            "end_date": "2025-04-30",
+            "year": "24/25",
+            "competition_id": "sr:competition:134"
+        },
+        {
+            "id": "sr:season:95033",
+            "name": "DEL 22/23",
+            "start_date": "2022-09-15",
+            "end_date": "2023-04-23",
+            "year": "22/23",
+            "competition_id": "sr:competition:225"
+        },
+        {
+            "id": "sr:season:105327",
+            "name": "DEL 23/24",
+            "start_date": "2023-09-14",
+            "end_date": "2024-04-26",
+            "year": "23/24",
+            "competition_id": "sr:competition:225"
+        },
+        {
+            "id": "sr:season:118991",
+            "name": "DEL 24/25",
+            "start_date": "2024-09-19",
+            "end_date": "2025-04-25",
+            "year": "24/25",
+            "competition_id": "sr:competition:225"
+        },
+        {
+            "id": "sr:season:94839",
+            "name": "NHL 22/23",
+            "start_date": "2022-10-07",
+            "end_date": "2023-06-14",
+            "year": "22/23",
+            "competition_id": "sr:competition:234"
+        },
+        {
+            "id": "sr:season:106291",
+            "name": "NHL 23/24",
+            "start_date": "2023-10-10",
+            "end_date": "2024-06-25",
+            "year": "23/24",
+            "competition_id": "sr:competition:234"
+        },
+        {
+            "id": "sr:season:119985",
+            "name": "NHL 24/25",
+            "start_date": "2024-10-04",
+            "end_date": "2025-06-25",
+            "year": "24/25",
+            "competition_id": "sr:competition:234"
+        },
+        {
+            "id": "sr:season:97267",
+            "name": "Extraliga 22/23",
+            "start_date": "2022-09-16",
+            "end_date": "2023-04-23",
+            "year": "22/23",
+            "competition_id": "sr:competition:236"
+        },
+        {
+            "id": "sr:season:109575",
+            "name": "Extraliga 23/24",
+            "start_date": "2023-09-15",
+            "end_date": "2024-04-24",
+            "year": "23/24",
+            "competition_id": "sr:competition:236"
+        },
+        {
+            "id": "sr:season:119007",
+            "name": "Extraliga 24/25",
+            "start_date": "2024-09-20",
+            "end_date": "2025-04-30",
+            "year": "24/25",
+            "competition_id": "sr:competition:236"
+        },
+        {
+            "id": "sr:season:94897",
+            "name": "Extraliga 22/23",
+            "start_date": "2022-09-15",
+            "end_date": "2023-04-28",
+            "year": "22/23",
+            "competition_id": "sr:competition:237"
+        },
+        {
+            "id": "sr:season:105685",
+            "name": "Extraliga 23/24",
+            "start_date": "2023-09-14",
+            "end_date": "2024-04-28",
+            "year": "23/24",
+            "competition_id": "sr:competition:237"
+        },
+        {
+            "id": "sr:season:118987",
+            "name": "Extraliga 24/25",
+            "start_date": "2024-09-10",
+            "end_date": "2025-05-31",
+            "year": "24/25",
+            "competition_id": "sr:competition:237"
+        },
+        {
+            "id": "sr:season:96535",
+            "name": "Polska Hokej Liga 22/23",
+            "start_date": "2022-09-09",
+            "end_date": "2023-03-30",
+            "year": "22/23",
+            "competition_id": "sr:competition:243"
+        },
+        {
+            "id": "sr:season:109027",
+            "name": "Polska Hokej Liga 23/24",
+            "start_date": "2023-09-08",
+            "end_date": "2024-04-14",
+            "year": "23/24",
+            "competition_id": "sr:competition:243"
+        },
+        {
+            "id": "sr:season:122287",
+            "name": "Polska Hokej Liga 24/25",
+            "start_date": "2024-09-13",
+            "end_date": "2025-04-06",
+            "year": "24/25",
+            "competition_id": "sr:competition:243"
+        },
+        {
+            "id": "sr:season:95465",
+            "name": "ICE Hockey League 22/23",
+            "start_date": "2022-09-16",
+            "end_date": "2023-04-21",
+            "year": "22/23",
+            "competition_id": "sr:competition:256"
+        },
+        {
+            "id": "sr:season:106561",
+            "name": "ICE Hockey League 23/24",
+            "start_date": "2023-09-15",
+            "end_date": "2024-04-19",
+            "year": "23/24",
+            "competition_id": "sr:competition:256"
+        },
+        {
+            "id": "sr:season:118995",
+            "name": "ICE Hockey League 24/25",
+            "start_date": "2024-09-20",
+            "end_date": "2025-04-30",
+            "year": "24/25",
+            "competition_id": "sr:competition:256"
+        },
+        {
+            "id": "sr:season:94263",
+            "name": "Superisligaen 22/23",
+            "start_date": "2022-08-02",
+            "end_date": "2023-04-25",
+            "year": "22/23",
+            "competition_id": "sr:competition:257"
+        },
+        {
+            "id": "sr:season:105677",
+            "name": "Superisligaen 23/24",
+            "start_date": "2023-09-01",
+            "end_date": "2024-04-23",
+            "year": "23/24",
+            "competition_id": "sr:competition:257"
+        },
+        {
+            "id": "sr:season:118989",
+            "name": "Superisligaen 24/25",
+            "start_date": "2024-09-01",
+            "end_date": "2025-03-15",
+            "year": "24/25",
+            "competition_id": "sr:competition:257"
+        },
+        {
+            "id": "sr:season:96883",
+            "name": "Mestis 22/23",
+            "start_date": "2022-09-22",
+            "end_date": "2023-04-28",
+            "year": "22/23",
+            "competition_id": "sr:competition:259"
+        },
+        {
+            "id": "sr:season:106303",
+            "name": "Mestis 23/24",
+            "start_date": "2023-09-21",
+            "end_date": "2024-04-28",
+            "year": "23/24",
+            "competition_id": "sr:competition:259"
+        },
+        {
+            "id": "sr:season:119605",
+            "name": "Mestis 24/25",
+            "start_date": "2024-09-12",
+            "end_date": "2025-04-30",
+            "year": "24/25",
+            "competition_id": "sr:competition:259"
+        },
+        {
+            "id": "sr:season:94917",
+            "name": "Eliteserien 22/23",
+            "start_date": "2022-09-09",
+            "end_date": "2023-05-31",
+            "year": "22/23",
+            "competition_id": "sr:competition:260"
+        },
+        {
+            "id": "sr:season:106563",
+            "name": "Eliteserien 23/24",
+            "start_date": "2023-09-14",
+            "end_date": "2024-04-23",
+            "year": "23/24",
+            "competition_id": "sr:competition:260"
+        },
+        {
+            "id": "sr:season:118997",
+            "name": "Eliteserien 24/25",
+            "start_date": "2024-09-01",
+            "end_date": "2025-04-30",
+            "year": "24/25",
+            "competition_id": "sr:competition:260"
+        },
+        {
+            "id": "sr:season:94221",
+            "name": "SHL 22/23",
+            "start_date": "2022-09-17",
+            "end_date": "2023-04-24",
+            "year": "22/23",
+            "competition_id": "sr:competition:261"
+        },
+        {
+            "id": "sr:season:105309",
+            "name": "SHL 23/24",
+            "start_date": "2023-09-14",
+            "end_date": "2024-05-04",
+            "year": "23/24",
+            "competition_id": "sr:competition:261"
+        },
+        {
+            "id": "sr:season:118915",
+            "name": "SHL 24/25",
+            "start_date": "2024-09-21",
+            "end_date": "2025-05-04",
+            "year": "24/25",
+            "competition_id": "sr:competition:261"
+        },
+        {
+            "id": "sr:season:95463",
+            "name": "DEL 2 22/23",
+            "start_date": "2022-09-16",
+            "end_date": "2023-04-30",
+            "year": "22/23",
+            "competition_id": "sr:competition:267"
+        },
+        {
+            "id": "sr:season:108785",
+            "name": "DEL 2 23/24",
+            "start_date": "2023-09-15",
+            "end_date": "2024-04-23",
+            "year": "23/24",
+            "competition_id": "sr:competition:267"
+        },
+        {
+            "id": "sr:season:120745",
+            "name": "DEL 2 24/25",
+            "start_date": "2024-09-13",
+            "end_date": "2025-04-29",
+            "year": "24/25",
+            "competition_id": "sr:competition:267"
+        },
+        {
+            "id": "sr:season:95783",
+            "name": "KHL 22/23",
+            "start_date": "2022-09-01",
+            "end_date": "2023-04-30",
+            "year": "22/23",
+            "competition_id": "sr:competition:268"
+        },
+        {
+            "id": "sr:season:107003",
+            "name": "KHL 23/24",
+            "start_date": "2023-09-01",
+            "end_date": "2024-04-29",
+            "year": "23/24",
+            "competition_id": "sr:competition:268"
+        },
+        {
+            "id": "sr:season:119485",
+            "name": "KHL 24/25",
+            "start_date": "2024-09-03",
+            "end_date": "2025-05-25",
+            "year": "24/25",
+            "competition_id": "sr:competition:268"
+        },
+        {
+            "id": "sr:season:7398",
+            "name": "Olympic Games 2014",
+            "start_date": "2014-02-12",
+            "end_date": "2014-02-24",
+            "year": "2014",
+            "competition_id": "sr:competition:272"
+        },
+        {
+            "id": "sr:season:47690",
+            "name": "Olympic Games 2018",
+            "start_date": "2018-02-14",
+            "end_date": "2018-02-26",
+            "year": "2018",
+            "competition_id": "sr:competition:272"
+        },
+        {
+            "id": "sr:season:87894",
+            "name": "Olympic Games 2022",
+            "start_date": "2022-02-04",
+            "end_date": "2022-02-21",
+            "year": "2022",
+            "competition_id": "sr:competition:272"
+        },
+        {
+            "id": "sr:season:7400",
+            "name": "Olympic Games Women 2014",
+            "start_date": "2014-02-08",
+            "end_date": "2014-02-21",
+            "year": "2014",
+            "competition_id": "sr:competition:273"
+        },
+        {
+            "id": "sr:season:49997",
+            "name": "Olympic Games Women 2018",
+            "start_date": "2018-02-10",
+            "end_date": "2018-02-23",
+            "year": "2018",
+            "competition_id": "sr:competition:273"
+        },
+        {
+            "id": "sr:season:88855",
+            "name": "Olympic Games Women 2022",
+            "start_date": "2022-02-03",
+            "end_date": "2022-02-18",
+            "year": "2022",
+            "competition_id": "sr:competition:273"
+        },
+        {
+            "id": "sr:season:89733",
+            "name": "World Championship Division 1, Group A 2022",
+            "start_date": "2022-05-01",
+            "end_date": "2022-05-08",
+            "year": "2022",
+            "competition_id": "sr:competition:320"
+        },
+        {
+            "id": "sr:season:100329",
+            "name": "World Championship Division 1, Group A 2023",
+            "start_date": "2023-04-29",
+            "end_date": "2023-05-05",
+            "year": "2023",
+            "competition_id": "sr:competition:320"
+        },
+        {
+            "id": "sr:season:112378",
+            "name": "World Championship Division 1, Group A 2024",
+            "start_date": "2024-04-28",
+            "end_date": "2024-05-04",
+            "year": "2024",
+            "competition_id": "sr:competition:320"
+        },
+        {
+            "id": "sr:season:89735",
+            "name": "Continental Cup 2022",
+            "start_date": "2022-03-04",
+            "end_date": "2022-03-06",
+            "year": "2022",
+            "competition_id": "sr:competition:386"
+        },
+        {
+            "id": "sr:season:101199",
+            "name": "Continental Cup 2023",
+            "start_date": "2023-01-13",
+            "end_date": "2023-01-15",
+            "year": "2023",
+            "competition_id": "sr:competition:386"
+        },
+        {
+            "id": "sr:season:114567",
+            "name": "Continental Cup 2024",
+            "start_date": "2024-01-12",
+            "end_date": "2024-01-14",
+            "year": "2024",
+            "competition_id": "sr:competition:386"
+        },
+        {
+            "id": "sr:season:94737",
+            "name": "Allsvenskan 22/23",
+            "start_date": "2022-09-23",
+            "end_date": "2023-05-15",
+            "year": "22/23",
+            "competition_id": "sr:competition:416"
+        },
+        {
+            "id": "sr:season:105307",
+            "name": "Allsvenskan 23/24",
+            "start_date": "2023-09-22",
+            "end_date": "2024-04-24",
+            "year": "23/24",
+            "competition_id": "sr:competition:416"
+        },
+        {
+            "id": "sr:season:119025",
+            "name": "Allsvenskan 24/25",
+            "start_date": "2024-09-20",
+            "end_date": "2025-04-30",
+            "year": "24/25",
+            "competition_id": "sr:competition:416"
+        },
+        {
+            "id": "sr:season:102219",
+            "name": "World Championship, Women 2023",
+            "start_date": "2023-04-05",
+            "end_date": "2023-04-16",
+            "year": "2023",
+            "competition_id": "sr:competition:428"
+        },
+        {
+            "id": "sr:season:113004",
+            "name": "World Championship, Women 2024",
+            "start_date": "2024-04-03",
+            "end_date": "2024-04-15",
+            "year": "2024",
+            "competition_id": "sr:competition:428"
+        },
+        {
+            "id": "sr:season:126507",
+            "name": "World Championship, Women 2025",
+            "start_date": "2025-04-09",
+            "end_date": "2025-04-20",
+            "year": "2025",
+            "competition_id": "sr:competition:428"
+        },
+        {
+            "id": "sr:season:97619",
+            "name": "Euro Hockey Tour 22/23",
+            "start_date": "2022-11-10",
+            "end_date": "2023-05-07",
+            "year": "22/23",
+            "competition_id": "sr:competition:467"
+        },
+        {
+            "id": "sr:season:111062",
+            "name": "Euro Hockey Tour 23/24",
+            "start_date": "2023-11-09",
+            "end_date": "2024-05-05",
+            "year": "23/24",
+            "competition_id": "sr:competition:467"
+        },
+        {
+            "id": "sr:season:123023",
+            "name": "Euro Hockey Tour 24/25",
+            "start_date": "2024-11-07",
+            "end_date": "2025-05-05",
+            "year": "24/25",
+            "competition_id": "sr:competition:467"
+        },
+        {
+            "id": "sr:season:96179",
+            "name": "Spengler Cup 2022",
+            "start_date": "2022-12-26",
+            "end_date": "2022-12-31",
+            "year": "2022",
+            "competition_id": "sr:competition:481"
+        },
+        {
+            "id": "sr:season:109643",
+            "name": "Spengler Cup 2023",
+            "start_date": "2023-12-26",
+            "end_date": "2023-12-31",
+            "year": "2023",
+            "competition_id": "sr:competition:481"
+        },
+        {
+            "id": "sr:season:121273",
+            "name": "Spengler Cup 2024",
+            "start_date": "2024-12-26",
+            "end_date": "2024-12-31",
+            "year": "2024",
+            "competition_id": "sr:competition:481"
+        },
+        {
+            "id": "sr:season:94267",
+            "name": "Champions Hockey League 22/23",
+            "start_date": "2022-09-01",
+            "end_date": "2023-02-18",
+            "year": "22/23",
+            "competition_id": "sr:competition:494"
+        },
+        {
+            "id": "sr:season:106507",
+            "name": "Champions Hockey League 23/24",
+            "start_date": "2023-08-31",
+            "end_date": "2024-02-20",
+            "year": "23/24",
+            "competition_id": "sr:competition:494"
+        },
+        {
+            "id": "sr:season:119185",
+            "name": "Champions Hockey League 24/25",
+            "start_date": "2024-09-05",
+            "end_date": "2025-02-18",
+            "year": "24/25",
+            "competition_id": "sr:competition:494"
+        },
+        {
+            "id": "sr:season:7158",
+            "name": "Elite A 13/14",
+            "start_date": "2013-09-21",
+            "end_date": "2014-04-27",
+            "year": "13/14",
+            "competition_id": "sr:competition:518"
+        },
+        {
+            "id": "sr:season:8988",
+            "name": "Elite A 14/15",
+            "start_date": "2014-09-19",
+            "end_date": "2015-04-12",
+            "year": "14/15",
+            "competition_id": "sr:competition:518"
+        },
+        {
+            "id": "sr:season:11526",
+            "name": "Serie A 15/16",
+            "start_date": "2015-09-18",
+            "end_date": "2016-04-20",
+            "year": "15/16",
+            "competition_id": "sr:competition:518"
+        },
+        {
+            "id": "sr:season:95191",
+            "name": "Ligue Magnus 22/23",
+            "start_date": "2022-09-09",
+            "end_date": "2023-04-14",
+            "year": "22/23",
+            "competition_id": "sr:competition:599"
+        },
+        {
+            "id": "sr:season:106977",
+            "name": "Ligue Magnus 23/24",
+            "start_date": "2023-09-09",
+            "end_date": "2024-04-15",
+            "year": "23/24",
+            "competition_id": "sr:competition:599"
+        },
+        {
+            "id": "sr:season:119647",
+            "name": "Ligue Magnus 24/25",
+            "start_date": "2024-09-13",
+            "end_date": "2025-04-30",
+            "year": "24/25",
+            "competition_id": "sr:competition:599"
+        },
+        {
+            "id": "sr:season:12552",
+            "name": "Olympic Games, QF 16/17",
+            "start_date": "2016-02-05",
+            "end_date": "2016-09-11",
+            "year": "16/17",
+            "competition_id": "sr:competition:664"
+        },
+        {
+            "id": "sr:season:74245",
+            "name": "Olympic Tournament 2022, Qualification",
+            "start_date": "2019-12-12",
+            "end_date": "2021-08-31",
+            "year": "2022",
+            "competition_id": "sr:competition:664"
+        },
+        {
+            "id": "sr:season:113897",
+            "name": "Olympic Tournament, Qualification 2024",
+            "start_date": "2023-12-14",
+            "end_date": "2024-09-02",
+            "year": "23/24",
+            "competition_id": "sr:competition:664"
+        },
+        {
+            "id": "sr:season:97075",
+            "name": "HockeyEttan 22/23",
+            "start_date": "2022-09-30",
+            "end_date": "2023-04-22",
+            "year": "22/23",
+            "competition_id": "sr:competition:714"
+        },
+        {
+            "id": "sr:season:107553",
+            "name": "HockeyEttan 23/24",
+            "start_date": "2023-09-29",
+            "end_date": "2024-04-22",
+            "year": "23/24",
+            "competition_id": "sr:competition:714"
+        },
+        {
+            "id": "sr:season:122923",
+            "name": "HockeyEttan 24/25",
+            "start_date": "2024-09-20",
+            "end_date": "2025-04-16",
+            "year": "24/25",
+            "competition_id": "sr:competition:714"
+        },
+        {
+            "id": "sr:season:94901",
+            "name": "1. Liga 22/23",
+            "start_date": "2022-09-14",
+            "end_date": "2023-04-12",
+            "year": "22/23",
+            "competition_id": "sr:competition:735"
+        },
+        {
+            "id": "sr:season:106209",
+            "name": "1. Liga 23/24",
+            "start_date": "2023-09-13",
+            "end_date": "2024-04-14",
+            "year": "23/24",
+            "competition_id": "sr:competition:735"
+        },
+        {
+            "id": "sr:season:119603",
+            "name": "1. Liga 24/25",
+            "start_date": "2024-09-14",
+            "end_date": "2025-04-30",
+            "year": "24/25",
+            "competition_id": "sr:competition:735"
+        },
+        {
+            "id": "sr:season:94481",
+            "name": "U20 World Championship 2023",
+            "start_date": "2022-12-26",
+            "end_date": "2023-01-05",
+            "year": "2022",
+            "competition_id": "sr:competition:769"
+        },
+        {
+            "id": "sr:season:106223",
+            "name": "U20 World Championship 23/24",
+            "start_date": "2023-12-26",
+            "end_date": "2024-01-05",
+            "year": "23/24",
+            "competition_id": "sr:competition:769"
+        },
+        {
+            "id": "sr:season:124761",
+            "name": "U20 World Championship 2025",
+            "start_date": "2024-12-26",
+            "end_date": "2025-01-05",
+            "year": "24/25",
+            "competition_id": "sr:competition:769"
+        },
+        {
+            "id": "sr:season:3569",
+            "name": "European Trophy 2011",
+            "start_date": "2011-08-11",
+            "end_date": "2011-12-19",
+            "year": "2011",
+            "competition_id": "sr:competition:792"
+        },
+        {
+            "id": "sr:season:4586",
+            "name": "European Trophy 2012",
+            "start_date": "2012-07-31",
+            "end_date": "2012-12-17",
+            "year": "2012",
+            "competition_id": "sr:competition:792"
+        },
+        {
+            "id": "sr:season:6229",
+            "name": "European Trophy 2013",
+            "start_date": "2013-08-06",
+            "end_date": "2013-12-23",
+            "year": "2013",
+            "competition_id": "sr:competition:792"
+        },
+        {
+            "id": "sr:season:7126",
+            "name": "Inter-National-League 13/14",
+            "start_date": "2013-09-21",
+            "end_date": "2014-04-07",
+            "year": "13/14",
+            "competition_id": "sr:competition:826"
+        },
+        {
+            "id": "sr:season:8958",
+            "name": "Inter-National-League 14/15",
+            "start_date": "2014-09-19",
+            "end_date": "2015-04-12",
+            "year": "14/15",
+            "competition_id": "sr:competition:826"
+        },
+        {
+            "id": "sr:season:11502",
+            "name": "Inter-National-League 15/16",
+            "start_date": "2015-09-18",
+            "end_date": "2016-04-18",
+            "year": "15/16",
+            "competition_id": "sr:competition:826"
+        },
+        {
+            "id": "sr:season:94919",
+            "name": "1st Division 22/23",
+            "start_date": "2022-09-17",
+            "end_date": "2023-05-31",
+            "year": "22/23",
+            "competition_id": "sr:competition:828"
+        },
+        {
+            "id": "sr:season:106979",
+            "name": "1st Division 23/24",
+            "start_date": "2023-09-22",
+            "end_date": "2024-03-11",
+            "year": "23/24",
+            "competition_id": "sr:competition:828"
+        },
+        {
+            "id": "sr:season:120399",
+            "name": "1st Division 24/25",
+            "start_date": "2024-09-20",
+            "end_date": "2025-03-11",
+            "year": "24/25",
+            "competition_id": "sr:competition:828"
+        },
+        {
+            "id": "sr:season:3050",
+            "name": "DEB-Pokal 10/11",
+            "start_date": "2010-09-09",
+            "end_date": "2011-01-13",
+            "year": "10/11",
+            "competition_id": "sr:competition:830"
+        },
+        {
+            "id": "sr:season:3570",
+            "name": "DEB-Pokal 11/12",
+            "start_date": "2011-09-17",
+            "end_date": "2012-03-07",
+            "year": "11/12",
+            "competition_id": "sr:competition:830"
+        },
+        {
+            "id": "sr:season:5361",
+            "name": "DEB Cup 12/13",
+            "start_date": "2012-09-15",
+            "end_date": "2013-02-28",
+            "year": "12/13",
+            "competition_id": "sr:competition:830"
+        },
+        {
+            "id": "sr:season:96047",
+            "name": "AHL 22/23",
+            "start_date": "2022-10-14",
+            "end_date": "2023-06-22",
+            "year": "22/23",
+            "competition_id": "sr:competition:844"
+        },
+        {
+            "id": "sr:season:107877",
+            "name": "AHL 23/24",
+            "start_date": "2023-10-13",
+            "end_date": "2024-06-30",
+            "year": "23/24",
+            "competition_id": "sr:competition:844"
+        },
+        {
+            "id": "sr:season:121049",
+            "name": "AHL 24/25",
+            "start_date": "2024-10-11",
+            "end_date": "2025-06-30",
+            "year": "24/25",
+            "competition_id": "sr:competition:844"
+        },
+        {
+            "id": "sr:season:7542",
+            "name": "Arosa Challenge 2013",
+            "start_date": "2013-12-20",
+            "end_date": "2013-12-21",
+            "year": "2013",
+            "competition_id": "sr:competition:862"
+        },
+        {
+            "id": "sr:season:9635",
+            "name": "Arosa Challenge 2014",
+            "start_date": "2014-12-19",
+            "end_date": "2014-12-20",
+            "year": "2014",
+            "competition_id": "sr:competition:862"
+        },
+        {
+            "id": "sr:season:12186",
+            "name": "Arosa Challenge 2015",
+            "start_date": "2015-12-18",
+            "end_date": "2015-12-20",
+            "year": "2015",
+            "competition_id": "sr:competition:862"
+        },
+        {
+            "id": "sr:season:98415",
+            "name": "Germany Cup 2022",
+            "start_date": "2022-11-10",
+            "end_date": "2022-11-13",
+            "year": "2022",
+            "competition_id": "sr:competition:863"
+        },
+        {
+            "id": "sr:season:109635",
+            "name": "Germany Cup 2023",
+            "start_date": "2023-11-08",
+            "end_date": "2023-11-12",
+            "year": "2023",
+            "competition_id": "sr:competition:863"
+        },
+        {
+            "id": "sr:season:121079",
+            "name": "Deutschland Cup 2024",
+            "start_date": "2024-11-07",
+            "end_date": "2024-11-10",
+            "year": "2024",
+            "competition_id": "sr:competition:863"
+        },
+        {
+            "id": "sr:season:11864",
+            "name": "Euro Ice Hockey Challenge 15/16",
+            "start_date": "2015-11-05",
+            "end_date": "2016-02-21",
+            "year": "15/16",
+            "competition_id": "sr:competition:864"
+        },
+        {
+            "id": "sr:season:35998",
+            "name": "Euro Ice Hockey Challenge 16/17",
+            "start_date": "2016-11-02",
+            "end_date": "2017-02-13",
+            "year": "16/17",
+            "competition_id": "sr:competition:864"
+        },
+        {
+            "id": "sr:season:47132",
+            "name": "Euro Ice Hockey Challenge 17/18",
+            "start_date": "2017-11-09",
+            "end_date": "2018-02-25",
+            "year": "17/18",
+            "competition_id": "sr:competition:864"
+        },
+        {
+            "id": "sr:season:75153",
+            "name": "KHL All Star Game 2020",
+            "start_date": "2020-01-19",
+            "end_date": "2020-01-20",
+            "year": "2020",
+            "competition_id": "sr:competition:869"
+        },
+        {
+            "id": "sr:season:100879",
+            "name": "KHL All Star Game 2022",
+            "start_date": "2022-12-10",
+            "end_date": "2022-12-11",
+            "year": "2022",
+            "competition_id": "sr:competition:869"
+        },
+        {
+            "id": "sr:season:113825",
+            "name": "KHL All Star Game 2023",
+            "start_date": "2023-12-09",
+            "end_date": "2023-12-11",
+            "year": "2023",
+            "competition_id": "sr:competition:869"
+        },
+        {
+            "id": "sr:season:90903",
+            "name": "NHL All Star Game 2022",
+            "start_date": "2022-02-05",
+            "end_date": "2022-02-06",
+            "year": "2022",
+            "competition_id": "sr:competition:870"
+        },
+        {
+            "id": "sr:season:102339",
+            "name": "NHL All Star Game 2023",
+            "start_date": "2023-02-04",
+            "end_date": "2023-02-05",
+            "year": "2023",
+            "competition_id": "sr:competition:870"
+        },
+        {
+            "id": "sr:season:115293",
+            "name": "NHL All Star Game 2024",
+            "start_date": "2024-02-02",
+            "end_date": "2024-02-04",
+            "year": "2024",
+            "competition_id": "sr:competition:870"
+        },
+        {
+            "id": "sr:season:89661",
+            "name": "Int. Friendly Games 2022",
+            "start_date": "2022-01-01",
+            "end_date": "2022-12-31",
+            "year": "2022",
+            "competition_id": "sr:competition:873"
+        },
+        {
+            "id": "sr:season:100949",
+            "name": "Int. Friendly Games 2023",
+            "start_date": "2023-01-01",
+            "end_date": "2023-12-31",
+            "year": "2023",
+            "competition_id": "sr:competition:873"
+        },
+        {
+            "id": "sr:season:113861",
+            "name": "Int. Friendly Games 2024",
+            "start_date": "2024-01-01",
+            "end_date": "2024-12-31",
+            "year": "2024",
+            "competition_id": "sr:competition:873"
+        },
+        {
+            "id": "sr:season:4506",
+            "name": "Slovakia Cup 2012",
+            "start_date": "2012-04-27",
+            "end_date": "2012-04-29",
+            "year": "2012",
+            "competition_id": "sr:competition:874"
+        },
+        {
+            "id": "sr:season:6147",
+            "name": "Slovakia Cup 2013",
+            "start_date": "2013-04-25",
+            "end_date": "2013-04-28",
+            "year": "2013",
+            "competition_id": "sr:competition:874"
+        },
+        {
+            "id": "sr:season:38999",
+            "name": "Slovakia Cup 2017",
+            "start_date": "2017-02-09",
+            "end_date": "2017-02-14",
+            "year": "2017",
+            "competition_id": "sr:competition:874"
+        },
+        {
+            "id": "sr:season:89663",
+            "name": "Club Friendly Games 2022",
+            "start_date": "2022-01-01",
+            "end_date": "2022-12-31",
+            "year": "2022",
+            "competition_id": "sr:competition:919"
+        },
+        {
+            "id": "sr:season:100951",
+            "name": "Club Friendly Games 2023",
+            "start_date": "2023-01-01",
+            "end_date": "2023-12-31",
+            "year": "2023",
+            "competition_id": "sr:competition:919"
+        },
+        {
+            "id": "sr:season:113859",
+            "name": "Club Friendly Games 2024",
+            "start_date": "2024-01-01",
+            "end_date": "2024-12-31",
+            "year": "2024",
+            "competition_id": "sr:competition:919"
+        },
+        {
+            "id": "sr:season:95763",
+            "name": "NHL Preseason 2022",
+            "start_date": "2022-09-24",
+            "end_date": "2022-10-09",
+            "year": "2022",
+            "competition_id": "sr:competition:957"
+        },
+        {
+            "id": "sr:season:107073",
+            "name": "NHL Preseason 2023",
+            "start_date": "2023-09-23",
+            "end_date": "2023-10-08",
+            "year": "2023",
+            "competition_id": "sr:competition:957"
+        },
+        {
+            "id": "sr:season:120519",
+            "name": "NHL Preseason 2024",
+            "start_date": "2024-09-21",
+            "end_date": "2024-10-06",
+            "year": "2024",
+            "competition_id": "sr:competition:957"
+        },
+        {
+            "id": "sr:season:89875",
+            "name": "World Championship Division 1, Group B 2022",
+            "start_date": "2022-04-25",
+            "end_date": "2022-05-01",
+            "year": "2022",
+            "competition_id": "sr:competition:1022"
+        },
+        {
+            "id": "sr:season:100331",
+            "name": "World Championship Division 1, Group B 2023",
+            "start_date": "2023-04-23",
+            "end_date": "2023-04-29",
+            "year": "2023",
+            "competition_id": "sr:competition:1022"
+        },
+        {
+            "id": "sr:season:111092",
+            "name": "World Championship Division 1, Group B 2024",
+            "start_date": "2024-04-27",
+            "end_date": "2024-05-03",
+            "year": "2024",
+            "competition_id": "sr:competition:1022"
+        },
+        {
+            "id": "sr:season:88723",
+            "name": "U18 World Championship Division 1, Group A 2022",
+            "start_date": "2022-04-11",
+            "end_date": "2022-04-17",
+            "year": "2022",
+            "competition_id": "sr:competition:1038"
+        },
+        {
+            "id": "sr:season:100337",
+            "name": "U18 World Championship 2023, Division I, A",
+            "start_date": "2023-04-23",
+            "end_date": "2023-04-29",
+            "year": "2023",
+            "competition_id": "sr:competition:1038"
+        },
+        {
+            "id": "sr:season:116391",
+            "name": "U18 World Championship, Division I, A 2024",
+            "start_date": "2024-04-12",
+            "end_date": "2024-04-22",
+            "year": "2024",
+            "competition_id": "sr:competition:1038"
+        },
+        {
+            "id": "sr:season:92403",
+            "name": "U18 World Championship Division 1, Group B 2022",
+            "start_date": "2022-04-25",
+            "end_date": "2022-05-01",
+            "year": "2022",
+            "competition_id": "sr:competition:1040"
+        },
+        {
+            "id": "sr:season:100339",
+            "name": "U18 World Championship Division 1, Group B 2023",
+            "start_date": "2023-04-10",
+            "end_date": "2023-04-16",
+            "year": "2023",
+            "competition_id": "sr:competition:1040"
+        },
+        {
+            "id": "sr:season:112388",
+            "name": "U18 World Championship Division 1, Group B 2024",
+            "start_date": "2024-04-14",
+            "end_date": "2024-04-20",
+            "year": "2024",
+            "competition_id": "sr:competition:1040"
+        },
+        {
+            "id": "sr:season:101231",
+            "name": "U18 World Championship 2023",
+            "start_date": "2023-04-20",
+            "end_date": "2023-04-30",
+            "year": "2023",
+            "competition_id": "sr:competition:1042"
+        },
+        {
+            "id": "sr:season:114175",
+            "name": "U18 World Championship 2024",
+            "start_date": "2024-04-25",
+            "end_date": "2024-05-25",
+            "year": "2024",
+            "competition_id": "sr:competition:1042"
+        },
+        {
+            "id": "sr:season:126519",
+            "name": "U18 World Championship 2025",
+            "start_date": "2025-04-23",
+            "end_date": "2025-05-03",
+            "year": "2025",
+            "competition_id": "sr:competition:1042"
+        },
+        {
+            "id": "sr:season:96177",
+            "name": "VHL 22/23",
+            "start_date": "2022-09-03",
+            "end_date": "2023-04-21",
+            "year": "22/23",
+            "competition_id": "sr:competition:1141"
+        },
+        {
+            "id": "sr:season:108533",
+            "name": "VHL 23/24",
+            "start_date": "2023-09-01",
+            "end_date": "2024-04-30",
+            "year": "23/24",
+            "competition_id": "sr:competition:1141"
+        },
+        {
+            "id": "sr:season:121055",
+            "name": "VHL 24/25",
+            "start_date": "2024-09-02",
+            "end_date": "2025-05-29",
+            "year": "24/25",
+            "competition_id": "sr:competition:1141"
+        },
+        {
+            "id": "sr:season:96369",
+            "name": "MHL 22/23",
+            "start_date": "2022-09-03",
+            "end_date": "2023-04-25",
+            "year": "22/23",
+            "competition_id": "sr:competition:1159"
+        },
+        {
+            "id": "sr:season:109303",
+            "name": "MHL 23/24",
+            "start_date": "2023-09-03",
+            "end_date": "2024-04-28",
+            "year": "23/24",
+            "competition_id": "sr:competition:1159"
+        },
+        {
+            "id": "sr:season:122053",
+            "name": "MHL 24/25",
+            "start_date": "2024-08-31",
+            "end_date": "2025-04-28",
+            "year": "24/25",
+            "competition_id": "sr:competition:1159"
+        },
+        {
+            "id": "sr:season:98781",
+            "name": "U20 World Championship, Division I, Group A 2022",
+            "start_date": "2022-12-11",
+            "end_date": "2022-12-17",
+            "year": "2022",
+            "competition_id": "sr:competition:1213"
+        },
+        {
+            "id": "sr:season:113471",
+            "name": "U20 World Championship, Division I, Group A 2023",
+            "start_date": "2023-12-10",
+            "end_date": "2023-12-16",
+            "year": "2023",
+            "competition_id": "sr:competition:1213"
+        },
+        {
+            "id": "sr:season:126033",
+            "name": "U20 World Championship, Division I, Group A 2024",
+            "start_date": "2024-12-09",
+            "end_date": "2024-12-15",
+            "year": "2024",
+            "competition_id": "sr:competition:1213"
+        },
+        {
+            "id": "sr:season:98783",
+            "name": "U20 World Championship, Division I, Group B 2022",
+            "start_date": "2022-12-11",
+            "end_date": "2022-12-17",
+            "year": "2022",
+            "competition_id": "sr:competition:1215"
+        },
+        {
+            "id": "sr:season:113475",
+            "name": "U20 World Championship, Division I, Group B 2023",
+            "start_date": "2023-12-11",
+            "end_date": "2023-12-17",
+            "year": "2023",
+            "competition_id": "sr:competition:1215"
+        },
+        {
+            "id": "sr:season:125637",
+            "name": "U20 World Championship, Division I, Group B 2025",
+            "start_date": "2025-01-11",
+            "end_date": "2025-01-17",
+            "year": "2025",
+            "competition_id": "sr:competition:1215"
+        },
+        {
+            "id": "sr:season:86036",
+            "name": "Presidents Cup 2021",
+            "start_date": "2021-08-11",
+            "end_date": "2021-08-16",
+            "year": "2021",
+            "competition_id": "sr:competition:1359"
+        },
+        {
+            "id": "sr:season:96159",
+            "name": "Presidents Cup 2022",
+            "start_date": "2022-08-16",
+            "end_date": "2022-08-20",
+            "year": "2022",
+            "competition_id": "sr:competition:1359"
+        },
+        {
+            "id": "sr:season:121401",
+            "name": "Presidents Cup 2024",
+            "start_date": "2024-08-14",
+            "end_date": "2024-08-18",
+            "year": "2024",
+            "competition_id": "sr:competition:1359"
+        },
+        {
+            "id": "sr:season:97081",
+            "name": "Extraliga 22/23",
+            "start_date": "2022-08-31",
+            "end_date": "2023-04-24",
+            "year": "22/23",
+            "competition_id": "sr:competition:1370"
+        },
+        {
+            "id": "sr:season:109077",
+            "name": "Extraliga 23/24",
+            "start_date": "2023-08-30",
+            "end_date": "2024-04-22",
+            "year": "23/24",
+            "competition_id": "sr:competition:1370"
+        },
+        {
+            "id": "sr:season:122273",
+            "name": "Extraliga 24/25",
+            "start_date": "2024-09-07",
+            "end_date": "2025-04-22",
+            "year": "24/25",
+            "competition_id": "sr:competition:1370"
+        },
+        {
+            "id": "sr:season:95187",
+            "name": "Elite League 22/23",
+            "start_date": "2022-09-10",
+            "end_date": "2023-04-16",
+            "year": "22/23",
+            "competition_id": "sr:competition:1442"
+        },
+        {
+            "id": "sr:season:107273",
+            "name": "Elite League 23/24",
+            "start_date": "2023-09-23",
+            "end_date": "2024-04-21",
+            "year": "23/24",
+            "competition_id": "sr:competition:1442"
+        },
+        {
+            "id": "sr:season:120847",
+            "name": "Elite League 24/25",
+            "start_date": "2024-09-14",
+            "end_date": "2025-04-20",
+            "year": "24/25",
+            "competition_id": "sr:competition:1442"
+        },
+        {
+            "id": "sr:season:95467",
+            "name": "OHL 22/23",
+            "start_date": "2022-09-29",
+            "end_date": "2023-05-31",
+            "year": "22/23",
+            "competition_id": "sr:competition:1454"
+        },
+        {
+            "id": "sr:season:107143",
+            "name": "OHL 23/24",
+            "start_date": "2023-09-28",
+            "end_date": "2024-05-16",
+            "year": "23/24",
+            "competition_id": "sr:competition:1454"
+        },
+        {
+            "id": "sr:season:120419",
+            "name": "OHL 24/25",
+            "start_date": "2024-09-25",
+            "end_date": "2025-05-16",
+            "year": "24/25",
+            "competition_id": "sr:competition:1454"
+        },
+        {
+            "id": "sr:season:97405",
+            "name": "SHL 22/23",
+            "start_date": "2022-09-15",
+            "end_date": "2023-04-26",
+            "year": "22/23",
+            "competition_id": "sr:competition:1490"
+        },
+        {
+            "id": "sr:season:110605",
+            "name": "SHL 23/24",
+            "start_date": "2023-09-14",
+            "end_date": "2024-04-25",
+            "year": "23/24",
+            "competition_id": "sr:competition:1490"
+        },
+        {
+            "id": "sr:season:123227",
+            "name": "SHL 24/25",
+            "start_date": "2024-09-19",
+            "end_date": "2025-04-30",
+            "year": "24/25",
+            "competition_id": "sr:competition:1490"
+        },
+        {
+            "id": "sr:season:88891",
+            "name": "Coupe de France 21/22",
+            "start_date": "2021-11-30",
+            "end_date": "2022-01-30",
+            "year": "21/22",
+            "competition_id": "sr:competition:1550"
+        },
+        {
+            "id": "sr:season:100663",
+            "name": "Coupe de France 22/23",
+            "start_date": "2022-11-28",
+            "end_date": "2023-01-30",
+            "year": "22/23",
+            "competition_id": "sr:competition:1550"
+        },
+        {
+            "id": "sr:season:113282",
+            "name": "Coupe de France 23/24",
+            "start_date": "2023-11-28",
+            "end_date": "2024-01-21",
+            "year": "23/24",
+            "competition_id": "sr:competition:1550"
+        },
+        {
+            "id": "sr:season:12775",
+            "name": "Euro Hockey Challenge 2016",
+            "start_date": "2016-04-04",
+            "end_date": "2016-05-02",
+            "year": "2016",
+            "competition_id": "sr:competition:1678"
+        },
+        {
+            "id": "sr:season:39793",
+            "name": "Euro Hockey Challenge 2017",
+            "start_date": "2017-02-12",
+            "end_date": "2017-05-02",
+            "year": "2017",
+            "competition_id": "sr:competition:1678"
+        },
+        {
+            "id": "sr:season:65685",
+            "name": "Euro Hockey Challenge 2019",
+            "start_date": "2019-04-10",
+            "end_date": "2019-05-06",
+            "year": "2019",
+            "competition_id": "sr:competition:1678"
+        },
+        {
+            "id": "sr:season:56444",
+            "name": "Swiss Ice Hockey Cup 18/19",
+            "start_date": "2018-09-18",
+            "end_date": "2019-02-26",
+            "year": "18/19",
+            "competition_id": "sr:competition:1788"
+        },
+        {
+            "id": "sr:season:68434",
+            "name": "Cup 19/20",
+            "start_date": "2019-09-10",
+            "end_date": "2020-02-29",
+            "year": "19/20",
+            "competition_id": "sr:competition:1788"
+        },
+        {
+            "id": "sr:season:77279",
+            "name": "Swiss Ice Hockey Cup 20/21",
+            "start_date": "2020-09-15",
+            "end_date": "2021-03-01",
+            "year": "20/21",
+            "competition_id": "sr:competition:1788"
+        },
+        {
+            "id": "sr:season:103381",
+            "name": "Suomi Sarja 22/23",
+            "start_date": "2022-09-16",
+            "end_date": "2023-03-31",
+            "year": "22/23",
+            "competition_id": "sr:competition:1878"
+        },
+        {
+            "id": "sr:season:107685",
+            "name": "Suomi Sarja 23/24",
+            "start_date": "2023-09-15",
+            "end_date": "2024-05-31",
+            "year": "23/24",
+            "competition_id": "sr:competition:1878"
+        },
+        {
+            "id": "sr:season:120397",
+            "name": "Suomi Sarja 24/25",
+            "start_date": "2024-09-13",
+            "end_date": "2025-05-31",
+            "year": "24/25",
+            "competition_id": "sr:competition:1878"
+        },
+        {
+            "id": "sr:season:94739",
+            "name": "SDHL 22/23",
+            "start_date": "2022-09-16",
+            "end_date": "2023-04-30",
+            "year": "22/23",
+            "competition_id": "sr:competition:1880"
+        },
+        {
+            "id": "sr:season:106437",
+            "name": "SDHL 23/24",
+            "start_date": "2023-09-24",
+            "end_date": "2024-03-20",
+            "year": "23/24",
+            "competition_id": "sr:competition:1880"
+        },
+        {
+            "id": "sr:season:119281",
+            "name": "SDHL 24/25",
+            "start_date": "2024-09-13",
+            "end_date": "2025-03-20",
+            "year": "24/25",
+            "competition_id": "sr:competition:1880"
+        },
+        {
+            "id": "sr:season:102571",
+            "name": "AHL All Star Game Challenge 2023",
+            "start_date": "2023-02-06",
+            "end_date": "2023-02-08",
+            "year": "2023",
+            "competition_id": "sr:competition:2077"
+        },
+        {
+            "id": "sr:season:115277",
+            "name": "AHL All Star Game 2024",
+            "start_date": "2024-02-05",
+            "end_date": "2024-02-06",
+            "year": "2024",
+            "competition_id": "sr:competition:2077"
+        },
+        {
+            "id": "sr:season:97701",
+            "name": "Young Stars League 22/23",
+            "start_date": "2022-09-09",
+            "end_date": "2023-03-28",
+            "year": "22/23",
+            "competition_id": "sr:competition:2118"
+        },
+        {
+            "id": "sr:season:109197",
+            "name": "Young Stars League 23/24",
+            "start_date": "2023-09-02",
+            "end_date": "2024-03-30",
+            "year": "23/24",
+            "competition_id": "sr:competition:2118"
+        },
+        {
+            "id": "sr:season:123225",
+            "name": "U20i League 24/25",
+            "start_date": "2024-09-06",
+            "end_date": "2025-03-30",
+            "year": "24/25",
+            "competition_id": "sr:competition:2118"
+        },
+        {
+            "id": "sr:season:33059",
+            "name": "World Cup of Hockey 2016",
+            "start_date": "2016-09-16",
+            "end_date": "2016-10-03",
+            "year": "2016",
+            "competition_id": "sr:competition:13907"
+        },
+        {
+            "id": "sr:season:96841",
+            "name": "Alps Hockey League 22/23",
+            "start_date": "2022-09-10",
+            "end_date": "2023-04-22",
+            "year": "22/23",
+            "competition_id": "sr:competition:14005"
+        },
+        {
+            "id": "sr:season:107767",
+            "name": "Alps Hockey League 23/24",
+            "start_date": "2023-09-16",
+            "end_date": "2024-04-12",
+            "year": "23/24",
+            "competition_id": "sr:competition:14005"
+        },
+        {
+            "id": "sr:season:121289",
+            "name": "Alps Hockey League 24/25",
+            "start_date": "2024-09-21",
+            "end_date": "2025-04-12",
+            "year": "24/25",
+            "competition_id": "sr:competition:14005"
+        },
+        {
+            "id": "sr:season:96885",
+            "name": "Erste Liga 22/23",
+            "start_date": "2022-09-16",
+            "end_date": "2023-03-31",
+            "year": "22/23",
+            "competition_id": "sr:competition:14335"
+        },
+        {
+            "id": "sr:season:109313",
+            "name": "Erste Liga 23/24",
+            "start_date": "2023-09-29",
+            "end_date": "2024-04-30",
+            "year": "23/24",
+            "competition_id": "sr:competition:14335"
+        },
+        {
+            "id": "sr:season:122633",
+            "name": "Erste Liga 24/25",
+            "start_date": "2024-09-13",
+            "end_date": "2025-04-19",
+            "year": "24/25",
+            "competition_id": "sr:competition:14335"
+        },
+        {
+            "id": "sr:season:95489",
+            "name": "WHL 22/23",
+            "start_date": "2022-09-23",
+            "end_date": "2023-06-18",
+            "year": "22/23",
+            "competition_id": "sr:competition:14361"
+        },
+        {
+            "id": "sr:season:107153",
+            "name": "WHL 23/24",
+            "start_date": "2023-09-22",
+            "end_date": "2024-06-17",
+            "year": "23/24",
+            "competition_id": "sr:competition:14361"
+        },
+        {
+            "id": "sr:season:120463",
+            "name": "WHL 24/25",
+            "start_date": "2024-09-20",
+            "end_date": "2025-06-17",
+            "year": "24/25",
+            "competition_id": "sr:competition:14361"
+        },
+        {
+            "id": "sr:season:96339",
+            "name": "Asia League 2023",
+            "start_date": "2022-09-03",
+            "end_date": "2023-04-15",
+            "year": "2023",
+            "competition_id": "sr:competition:19200"
+        },
+        {
+            "id": "sr:season:105355",
+            "name": "Asia League 23/24",
+            "start_date": "2023-09-16",
+            "end_date": "2024-04-24",
+            "year": "23/24",
+            "competition_id": "sr:competition:19200"
+        },
+        {
+            "id": "sr:season:120685",
+            "name": "Asia League 24/25",
+            "start_date": "2024-09-07",
+            "end_date": "2025-04-06",
+            "year": "24/25",
+            "competition_id": "sr:competition:19200"
+        },
+        {
+            "id": "sr:season:97391",
+            "name": "Latvian Hockey League 22/23",
+            "start_date": "2022-09-02",
+            "end_date": "2023-05-31",
+            "year": "22/23",
+            "competition_id": "sr:competition:19452"
+        },
+        {
+            "id": "sr:season:110205",
+            "name": "Latvian Hockey League 23/24",
+            "start_date": "2023-09-08",
+            "end_date": "2024-04-04",
+            "year": "23/24",
+            "competition_id": "sr:competition:19452"
+        },
+        {
+            "id": "sr:season:123461",
+            "name": "Latvian Hockey League 24/25",
+            "start_date": "2024-09-07",
+            "end_date": "2025-04-04",
+            "year": "24/25",
+            "competition_id": "sr:competition:19452"
+        },
+        {
+            "id": "sr:season:98063",
+            "name": "NCAA Women 22/23",
+            "start_date": "2022-09-20",
+            "end_date": "2023-05-31",
+            "year": "22/23",
+            "competition_id": "sr:competition:24131"
+        },
+        {
+            "id": "sr:season:110994",
+            "name": "NCAA Women 23/24",
+            "start_date": "2023-09-23",
+            "end_date": "2024-03-15",
+            "year": "23/24",
+            "competition_id": "sr:competition:24131"
+        },
+        {
+            "id": "sr:season:124033",
+            "name": "NCAA Women, Regular Season 24/25",
+            "start_date": "2024-09-21",
+            "end_date": "2025-03-31",
+            "year": "24/25",
+            "competition_id": "sr:competition:24131"
+        },
+        {
+            "id": "sr:season:92821",
+            "name": "Australian Ice Hockey League 2022",
+            "start_date": "2020-04-30",
+            "end_date": "2022-09-30",
+            "year": "2022",
+            "competition_id": "sr:competition:24337"
+        },
+        {
+            "id": "sr:season:101089",
+            "name": "Australian Ice Hockey League 2023",
+            "start_date": "2023-04-15",
+            "end_date": "2023-08-31",
+            "year": "2023",
+            "competition_id": "sr:competition:24337"
+        },
+        {
+            "id": "sr:season:116667",
+            "name": "Australian Ice Hockey League 2024",
+            "start_date": "2024-04-06",
+            "end_date": "2024-08-26",
+            "year": "2024",
+            "competition_id": "sr:competition:24337"
+        },
+        {
+            "id": "sr:season:92823",
+            "name": "NZIHL 2022",
+            "start_date": "2022-06-24",
+            "end_date": "2022-10-02",
+            "year": "2022",
+            "competition_id": "sr:competition:24866"
+        },
+        {
+            "id": "sr:season:102833",
+            "name": "NZIHL 2023",
+            "start_date": "2023-05-06",
+            "end_date": "2023-09-03",
+            "year": "2023",
+            "competition_id": "sr:competition:24866"
+        },
+        {
+            "id": "sr:season:116681",
+            "name": "NZIHL 2024",
+            "start_date": "2024-05-04",
+            "end_date": "2024-09-09",
+            "year": "2024",
+            "competition_id": "sr:competition:24866"
+        },
+        {
+            "id": "sr:season:99191",
+            "name": "U20 World Championship, Division II, Group A 2022",
+            "start_date": "2022-12-11",
+            "end_date": "2022-12-17",
+            "year": "2022",
+            "competition_id": "sr:competition:27801"
+        },
+        {
+            "id": "sr:season:111090",
+            "name": "U20 World Championship, Division II, Group A 2023",
+            "start_date": "2023-12-11",
+            "end_date": "2023-12-17",
+            "year": "2023",
+            "competition_id": "sr:competition:27801"
+        },
+        {
+            "id": "sr:season:126153",
+            "name": "U20 World Championship 2025, Division II, Group A",
+            "start_date": "2025-01-06",
+            "end_date": "2025-01-12",
+            "year": "2025",
+            "competition_id": "sr:competition:27801"
+        },
+        {
+            "id": "sr:season:100759",
+            "name": "U20 World Championship, Division II, Group B 2023",
+            "start_date": "2023-01-16",
+            "end_date": "2023-01-22",
+            "year": "2023",
+            "competition_id": "sr:competition:27803"
+        },
+        {
+            "id": "sr:season:112386",
+            "name": "U20 World Championship, Division II, Group B 2024",
+            "start_date": "2024-01-14",
+            "end_date": "2024-01-20",
+            "year": "2024",
+            "competition_id": "sr:competition:27803"
+        },
+        {
+            "id": "sr:season:125747",
+            "name": "U20 World Championship, Division II, Group B 2025",
+            "start_date": "2025-01-19",
+            "end_date": "2025-01-25",
+            "year": "2025",
+            "competition_id": "sr:competition:27803"
+        },
+        {
+            "id": "sr:season:101469",
+            "name": "U20 World Championship, Division III 2023",
+            "start_date": "2023-01-26",
+            "end_date": "2023-02-02",
+            "year": "2023",
+            "competition_id": "sr:competition:27805"
+        },
+        {
+            "id": "sr:season:115033",
+            "name": "U20 World Championship, Division III, Group A 2024",
+            "start_date": "2024-01-22",
+            "end_date": "2024-01-31",
+            "year": "2024",
+            "competition_id": "sr:competition:27805"
+        },
+        {
+            "id": "sr:season:126155",
+            "name": "U20 World Championship, Division III, A 2025",
+            "start_date": "2025-01-27",
+            "end_date": "2025-02-02",
+            "year": "2025",
+            "competition_id": "sr:competition:27805"
+        },
+        {
+            "id": "sr:season:89755",
+            "name": "World Championship, Women, Div I, Group B 2022",
+            "start_date": "2022-04-08",
+            "end_date": "2022-04-14",
+            "year": "2022",
+            "competition_id": "sr:competition:28398"
+        },
+        {
+            "id": "sr:season:100335",
+            "name": "World Championship, Women, Div I, Group B 2023",
+            "start_date": "2023-04-17",
+            "end_date": "2023-04-23",
+            "year": "2023",
+            "competition_id": "sr:competition:28398"
+        },
+        {
+            "id": "sr:season:116075",
+            "name": "World Championship, Women, Div I, Group B 2024",
+            "start_date": "2024-03-31",
+            "end_date": "2024-04-06",
+            "year": "2024",
+            "competition_id": "sr:competition:28398"
+        },
+        {
+            "id": "sr:season:104049",
+            "name": "World Championship, Women, Div I, Group A 2023",
+            "start_date": "2023-08-20",
+            "end_date": "2023-08-26",
+            "year": "2023",
+            "competition_id": "sr:competition:28400"
+        },
+        {
+            "id": "sr:season:114841",
+            "name": "World Championship, Women, Div I, Group A 2024",
+            "start_date": "2024-04-21",
+            "end_date": "2024-04-27",
+            "year": "2024",
+            "competition_id": "sr:competition:28400"
+        },
+        {
+            "id": "sr:season:126521",
+            "name": "World Championship, Women, Div I, Group A 2025",
+            "start_date": "2025-04-13",
+            "end_date": "2025-04-19",
+            "year": "2025",
+            "competition_id": "sr:competition:28400"
+        },
+        {
+            "id": "sr:season:100333",
+            "name": "World Championship, Division II, A 2023",
+            "start_date": "2023-04-16",
+            "end_date": "2023-04-22",
+            "year": "2023",
+            "competition_id": "sr:competition:28402"
+        },
+        {
+            "id": "sr:season:116393",
+            "name": "World Championship, Div II, Group A 2024",
+            "start_date": "2024-04-19",
+            "end_date": "2024-04-29",
+            "year": "2024",
+            "competition_id": "sr:competition:28402"
+        },
+        {
+            "id": "sr:season:126481",
+            "name": "World Championship, Division II, A 2025",
+            "start_date": "2025-04-27",
+            "end_date": "2025-05-03",
+            "year": "2025",
+            "competition_id": "sr:competition:28402"
+        },
+        {
+            "id": "sr:season:100757",
+            "name": "World Championship, Div II, Group B 2023",
+            "start_date": "2023-04-17",
+            "end_date": "2023-04-23",
+            "year": "2023",
+            "competition_id": "sr:competition:28420"
+        },
+        {
+            "id": "sr:season:112380",
+            "name": "World Championship, Division II, Group B 2024",
+            "start_date": "2024-04-22",
+            "end_date": "2024-04-28",
+            "year": "2024",
+            "competition_id": "sr:competition:28420"
+        },
+        {
+            "id": "sr:season:126491",
+            "name": "World Championship, Division II, Group B 2025",
+            "start_date": "2025-04-27",
+            "end_date": "2025-05-03",
+            "year": "2025",
+            "competition_id": "sr:competition:28420"
+        },
+        {
+            "id": "sr:season:94559",
+            "name": "CHL Memorial Cup 2022",
+            "start_date": "2022-06-20",
+            "end_date": "2022-06-30",
+            "year": "2022",
+            "competition_id": "sr:competition:28661"
+        },
+        {
+            "id": "sr:season:105669",
+            "name": "CHL Memorial Cup 2023",
+            "start_date": "2023-05-26",
+            "end_date": "2023-06-05",
+            "year": "2023",
+            "competition_id": "sr:competition:28661"
+        },
+        {
+            "id": "sr:season:118631",
+            "name": "CHL Memorial Cup 2024",
+            "start_date": "2024-05-24",
+            "end_date": "2024-06-03",
+            "year": "2024",
+            "competition_id": "sr:competition:28661"
+        },
+        {
+            "id": "sr:season:95493",
+            "name": "ECHL 22/23",
+            "start_date": "2022-10-21",
+            "end_date": "2023-06-10",
+            "year": "22/23",
+            "competition_id": "sr:competition:29898"
+        },
+        {
+            "id": "sr:season:106735",
+            "name": "ECHL 23/24",
+            "start_date": "2023-10-19",
+            "end_date": "2024-06-08",
+            "year": "23/24",
+            "competition_id": "sr:competition:29898"
+        },
+        {
+            "id": "sr:season:119795",
+            "name": "ECHL 24/25",
+            "start_date": "2024-10-18",
+            "end_date": "2025-07-22",
+            "year": "24/25",
+            "competition_id": "sr:competition:29898"
+        },
+        {
+            "id": "sr:season:96065",
+            "name": "SPHL 22/23",
+            "start_date": "2022-10-20",
+            "end_date": "2023-05-31",
+            "year": "22/23",
+            "competition_id": "sr:competition:30074"
+        },
+        {
+            "id": "sr:season:107763",
+            "name": "SPHL 23/24",
+            "start_date": "2023-10-20",
+            "end_date": "2024-04-28",
+            "year": "23/24",
+            "competition_id": "sr:competition:30074"
+        },
+        {
+            "id": "sr:season:121699",
+            "name": "SPHL 24/25",
+            "start_date": "2024-10-18",
+            "end_date": "2025-04-28",
+            "year": "24/25",
+            "competition_id": "sr:competition:30074"
+        },
+        {
+            "id": "sr:season:97015",
+            "name": "Pro Hockey League 22/23",
+            "start_date": "2022-09-10",
+            "end_date": "2023-04-30",
+            "year": "22/23",
+            "competition_id": "sr:competition:30156"
+        },
+        {
+            "id": "sr:season:110203",
+            "name": "Pro Hockey League 23/24",
+            "start_date": "2023-09-09",
+            "end_date": "2024-04-17",
+            "year": "23/24",
+            "competition_id": "sr:competition:30156"
+        },
+        {
+            "id": "sr:season:123555",
+            "name": "Pro Hockey League 24/25",
+            "start_date": "2024-09-14",
+            "end_date": "2025-04-17",
+            "year": "24/25",
+            "competition_id": "sr:competition:30156"
+        },
+        {
+            "id": "sr:season:95487",
+            "name": "Quebec Major Junior Hockey League 22/23",
+            "start_date": "2022-09-22",
+            "end_date": "2023-05-21",
+            "year": "22/23",
+            "competition_id": "sr:competition:30398"
+        },
+        {
+            "id": "sr:season:106221",
+            "name": "Quebec Major Junior Hockey League 23/24",
+            "start_date": "2023-09-22",
+            "end_date": "2024-05-15",
+            "year": "23/24",
+            "competition_id": "sr:competition:30398"
+        },
+        {
+            "id": "sr:season:119487",
+            "name": "Quebec Major Junior Hockey League 24/25",
+            "start_date": "2024-09-20",
+            "end_date": "2025-05-15",
+            "year": "24/25",
+            "competition_id": "sr:competition:30398"
+        },
+        {
+            "id": "sr:season:96649",
+            "name": "NCAA, Regular Season 22/23",
+            "start_date": "2022-10-01",
+            "end_date": "2023-04-30",
+            "year": "22/23",
+            "competition_id": "sr:competition:30570"
+        },
+        {
+            "id": "sr:season:111104",
+            "name": "NCAA, Regular Season 23/24",
+            "start_date": "2023-10-06",
+            "end_date": "2024-04-08",
+            "year": "23/24",
+            "competition_id": "sr:competition:30570"
+        },
+        {
+            "id": "sr:season:124257",
+            "name": "NCAA, Regular Season 24/25",
+            "start_date": "2024-10-05",
+            "end_date": "2025-04-11",
+            "year": "24/25",
+            "competition_id": "sr:competition:30570"
+        },
+        {
+            "id": "sr:season:72436",
+            "name": "Southeast Asian Games 2019",
+            "start_date": "2019-12-01",
+            "end_date": "2019-12-09",
+            "year": "2019",
+            "competition_id": "sr:competition:30750"
+        },
+        {
+            "id": "sr:season:95491",
+            "name": "Salei Cup 2022",
+            "start_date": "2022-08-03",
+            "end_date": "2022-08-29",
+            "year": "2022",
+            "competition_id": "sr:competition:32961"
+        },
+        {
+            "id": "sr:season:107881",
+            "name": "Salei Cup 2023",
+            "start_date": "2023-08-02",
+            "end_date": "2023-08-27",
+            "year": "2023",
+            "competition_id": "sr:competition:32961"
+        },
+        {
+            "id": "sr:season:120845",
+            "name": "Salei Cup 2024",
+            "start_date": "2024-07-30",
+            "end_date": "2024-09-01",
+            "year": "2024",
+            "competition_id": "sr:competition:32961"
+        },
+        {
+            "id": "sr:season:79481",
+            "name": "MagentaSport Cup 2020",
+            "start_date": "2020-11-11",
+            "end_date": "2020-12-14",
+            "year": "2020",
+            "competition_id": "sr:competition:33335"
+        },
+        {
+            "id": "sr:season:79928",
+            "name": "Baltic Hockey League 2020",
+            "start_date": "2020-11-27",
+            "end_date": "2020-12-21",
+            "year": "2020",
+            "competition_id": "sr:competition:33448"
+        },
+        {
+            "id": "sr:season:103865",
+            "name": "NCAA Division I National Championship 2023",
+            "start_date": "2023-03-23",
+            "end_date": "2023-04-09",
+            "year": "2023",
+            "competition_id": "sr:competition:33992"
+        },
+        {
+            "id": "sr:season:111216",
+            "name": "NCAA Division I National Championship 2024",
+            "start_date": "2024-03-11",
+            "end_date": "2024-04-13",
+            "year": "2024",
+            "competition_id": "sr:competition:33992"
+        },
+        {
+            "id": "sr:season:112434",
+            "name": "NCAA Division I National Championship, Women 2024",
+            "start_date": "2024-03-01",
+            "end_date": "2024-03-24",
+            "year": "2024",
+            "competition_id": "sr:competition:34026"
+        },
+        {
+            "id": "sr:season:96353",
+            "name": "Naisten Liiga, Women 22/23",
+            "start_date": "2022-09-10",
+            "end_date": "2023-05-31",
+            "year": "22/23",
+            "competition_id": "sr:competition:34596"
+        },
+        {
+            "id": "sr:season:107155",
+            "name": "Naisten Liiga, Women 23/24",
+            "start_date": "2023-09-09",
+            "end_date": "2024-03-21",
+            "year": "23/24",
+            "competition_id": "sr:competition:34596"
+        },
+        {
+            "id": "sr:season:119677",
+            "name": "Auroraliiga 24/25",
+            "start_date": "2024-09-06",
+            "end_date": "2025-03-31",
+            "year": "24/25",
+            "competition_id": "sr:competition:34596"
+        },
+        {
+            "id": "sr:season:88066",
+            "name": "Olympic Tournament Qualifying, Women 2021",
+            "start_date": "2021-11-11",
+            "end_date": "2021-11-14",
+            "year": "2021",
+            "competition_id": "sr:competition:35514"
+        },
+        {
+            "id": "sr:season:113831",
+            "name": "International Friendly Games, Women 2023",
+            "start_date": "2023-01-01",
+            "end_date": "2023-12-31",
+            "year": "2023",
+            "competition_id": "sr:competition:35691"
+        },
+        {
+            "id": "sr:season:122979",
+            "name": "International Friendly Games, Women 2024",
+            "start_date": "2024-01-01",
+            "end_date": "2024-12-31",
+            "year": "2024",
+            "competition_id": "sr:competition:35691"
+        },
+        {
+            "id": "sr:season:97131",
+            "name": "WHL 22/23",
+            "start_date": "2022-09-17",
+            "end_date": "2023-04-02",
+            "year": "22/23",
+            "competition_id": "sr:competition:35769"
+        },
+        {
+            "id": "sr:season:109075",
+            "name": "WHL, Women 23/24",
+            "start_date": "2023-09-17",
+            "end_date": "2024-04-14",
+            "year": "23/24",
+            "competition_id": "sr:competition:35769"
+        },
+        {
+            "id": "sr:season:123109",
+            "name": "WHL, Women 24/25",
+            "start_date": "2024-09-14",
+            "end_date": "2025-04-30",
+            "year": "24/25",
+            "competition_id": "sr:competition:35769"
+        },
+        {
+            "id": "sr:season:103009",
+            "name": "World Championship, Division III, Group A 2023",
+            "start_date": "2023-04-17",
+            "end_date": "2023-04-23",
+            "year": "2023",
+            "competition_id": "sr:competition:38927"
+        },
+        {
+            "id": "sr:season:112384",
+            "name": "World Championship, Division III, Group A 2024",
+            "start_date": "2024-03-10",
+            "end_date": "2024-03-16",
+            "year": "2024",
+            "competition_id": "sr:competition:38927"
+        },
+        {
+            "id": "sr:season:126501",
+            "name": "World Championship, Division III, Group A 2025",
+            "start_date": "2025-04-21",
+            "end_date": "2025-04-27",
+            "year": "2025",
+            "competition_id": "sr:competition:38927"
+        },
+        {
+            "id": "sr:season:101475",
+            "name": "World Championship, Division III, Group B 2023",
+            "start_date": "2023-02-27",
+            "end_date": "2023-03-05",
+            "year": "2023",
+            "competition_id": "sr:competition:38929"
+        },
+        {
+            "id": "sr:season:115911",
+            "name": "World Championship, Division III, Group B 2024",
+            "start_date": "2024-02-23",
+            "end_date": "2024-02-29",
+            "year": "2024",
+            "competition_id": "sr:competition:38929"
+        },
+        {
+            "id": "sr:season:126503",
+            "name": "World Championship, Division III, Group B 2025",
+            "start_date": "2025-04-27",
+            "end_date": "2025-05-04",
+            "year": "2025",
+            "competition_id": "sr:competition:38929"
+        },
+        {
+            "id": "sr:season:103379",
+            "name": "Oberliga 22/23",
+            "start_date": "2022-09-22",
+            "end_date": "2023-04-30",
+            "year": "22/23",
+            "competition_id": "sr:competition:39345"
+        },
+        {
+            "id": "sr:season:109629",
+            "name": "Oberliga 23/24",
+            "start_date": "2023-09-21",
+            "end_date": "2024-04-28",
+            "year": "23/24",
+            "competition_id": "sr:competition:39345"
+        },
+        {
+            "id": "sr:season:122033",
+            "name": "Oberliga 24/25",
+            "start_date": "2024-09-19",
+            "end_date": "2025-04-28",
+            "year": "24/25",
+            "competition_id": "sr:competition:39345"
+        },
+        {
+            "id": "sr:season:111878",
+            "name": "Deutschland Cup, Women 2023",
+            "start_date": "2023-11-08",
+            "end_date": "2023-11-11",
+            "year": "2023",
+            "competition_id": "sr:competition:41290"
+        },
+        {
+            "id": "sr:season:121081",
+            "name": "Deutschland Cup, Women 2024",
+            "start_date": "2024-11-06",
+            "end_date": "2024-11-09",
+            "year": "2024",
+            "competition_id": "sr:competition:41290"
+        },
+        {
+            "id": "sr:season:113681",
+            "name": "PWHL, Women 2024",
+            "start_date": "2024-01-01",
+            "end_date": "2024-05-30",
+            "year": "2024",
+            "competition_id": "sr:competition:41857"
+        },
+        {
+            "id": "sr:season:122567",
+            "name": "PWHL, Women 24/25",
+            "start_date": "2024-11-30",
+            "end_date": "2025-05-30",
+            "year": "24/25",
+            "competition_id": "sr:competition:41857"
+        },
+        {
+            "id": "sr:season:122903",
+            "name": "4 Nations Face-Off 2025",
+            "start_date": "2025-02-12",
+            "end_date": "2025-02-21",
+            "year": "2025",
+            "competition_id": "sr:competition:43909"
+        },
+        {
+            "id": "sr:season:124757",
+            "name": "AHL Preseason 2024",
+            "start_date": "2024-10-01",
+            "end_date": "2024-10-07",
+            "year": "2024",
+            "competition_id": "sr:competition:44421"
+        },
+        {
+            "id": "sr:season:125837",
+            "name": "Euro Hockey Tour, Women 24/25",
+            "start_date": "2024-08-29",
+            "end_date": "2025-01-09",
+            "year": "24/25",
+            "competition_id": "sr:competition:44925"
+        },
+        {
+            "id": "sr:season:125869",
+            "name": "FPHL 24/25",
+            "start_date": "2024-10-11",
+            "end_date": "2025-05-31",
+            "year": "24/25",
+            "competition_id": "sr:competition:44953"
+        }
+    ]
+}

@@ -75,7 +75,7 @@ public class HomeFragment extends BaseFragment<FragmentHomeBinding> implements V
     private List<Game> recommendedGames = new ArrayList<>();
     private static final String KEY_FAVORITE_TEAMS = "favorite_teams";
     private static final String KEY_PREFERRED_TIMES = "preferred_times";
-    private static final String[] SUPPORTED_SPORTS = new String[]{"Basketball", "Football", "Soccer", "Icehockey", "Tennis", "Rugby"};
+    private static final String[] SUPPORTED_SPORTS = new String[]{"Basketball", "Soccer", "Icehockey", "Tennis"};
 
     @Override
     protected void initData() {
@@ -440,16 +440,14 @@ private final BroadcastReceiver favoritesChangedReceiver = new BroadcastReceiver
     private void requestForDate(int index, String requestDate, RequestCallback callback) {
         Log.d("DateDebug", "准备请求日期: " + requestDate + ", 运动索引: " + index);
         switch (index) {
-            case 0:
+            case 0: 
                 address = Constants.BASKET_BALL_URL + requestDate + Constants.SUFFIX + "?api_key=" + Constants.BASKET_BALL_KEY;
                 break;
+
             case 1:
-                address = Constants.FOOT_BALL_URL + requestDate + Constants.SUFFIX + "?api_key=" + Constants.FOOT_BALL_KEY;
-                break;
-            case 2:
                 address = Constants.SOCCER_URL + requestDate + Constants.SUFFIX + "?api_key=" + Constants.SOCCER_KEY;
                 break;
-            case 3:
+            case 2:
                 address = Constants.ICE_HOCKEY_URL + requestDate + Constants.SUFFIX + "?api_key=" + Constants.ICE_HOCKEY_KEY;
 
                 break;

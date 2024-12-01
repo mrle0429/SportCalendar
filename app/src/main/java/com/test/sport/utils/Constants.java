@@ -13,11 +13,11 @@ public class Constants {
 
     // TODO:全球冰球 API冰球-每日摘要
     public static final String ICE_HOCKEY_URL = "https://api.sportradar.com/icehockey/trial/v2/en/schedules/";
-    public static final String ICE_HOCKEY_KEY = "b6qtVtA9ZIoTeXhVQp2FnENvG7pAbEbamCBkQ4bc";
+    public static final String ICE_HOCKEY_KEY = "XcLiGwSgTFJTA5XV5uqxzvmHzQ9qhRcHY11R9gbG";
 
     // TODO:网球 API网球-每日摘要
     public static final String TENNIS_URL = "https://api.sportradar.com/tennis/trial/v3/en/schedules/";
-    public static final String TENNIS_KEY = "b6qtVtA9ZIoTeXhVQp2FnENvG7pAbEbamCBkQ4bc";
+    public static final String TENNIS_KEY = "XcLiGwSgTFJTA5XV5uqxzvmHzQ9qhRcHY11R9gbG";
 
     public static final String SUFFIX="/summaries.json";
 
