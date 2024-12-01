@@ -32,7 +32,7 @@ public class TimezoneActivity extends AppCompatActivity {
         ListView listView = findViewById(R.id.listView);
         String[] timezones = TimeZone.getAvailableIDs();
         String[] displayTimezones = new String[timezones.length + 1];
-        displayTimezones[0] = "自动选择时区 (" + TimeZone.getDefault().getID() + ")";
+        displayTimezones[0] = "Default time zone (" + TimeZone.getDefault().getID() + ")";
         System.arraycopy(timezones, 0, displayTimezones, 1, timezones.length);
 
         ArrayAdapter<String> adapter = new ArrayAdapter<>(this, android.R.layout.simple_list_item_1, displayTimezones);
@@ -42,10 +42,10 @@ public class TimezoneActivity extends AppCompatActivity {
             String selectedTimezone;
             if (position == 0) {
                 selectedTimezone = TimeZone.getDefault().getID();
-                Toast.makeText(TimezoneActivity.this, "默认时区: " + selectedTimezone, Toast.LENGTH_SHORT).show();
+                Toast.makeText(TimezoneActivity.this, "Default time zone: " + selectedTimezone, Toast.LENGTH_SHORT).show();
             } else {
                 selectedTimezone = timezones[position - 1];
-                Toast.makeText(TimezoneActivity.this, "选择时区: " + selectedTimezone, Toast.LENGTH_SHORT).show();
+                Toast.makeText(TimezoneActivity.this, "Selected time zone: " + selectedTimezone, Toast.LENGTH_SHORT).show();
             }
 
             // 保存时区到 SharedPreferences
