@@ -30,17 +30,17 @@ import java.util.List;
 import java.util.Set;
 import java.util.stream.Collectors;
 
-public class FavouriteFragment extends BaseFragment<FragmentFavouriteBinding> 
+public class FavouriteFragment extends BaseFragment<FragmentFavouriteBinding>
         implements TeamAdapter.OnTeamFavoriteClickListener {
-    
+
     private static final String PREFS_NAME = "SettingsPrefs";
     private static final String KEY_FAVORITE_TEAMS = "favorite_teams";
     private TeamAdapter adapter;
     private List<Team> teamList = new ArrayList<>();
-    
+
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
-        
+
         super.onViewCreated(view, savedInstanceState);
         // 注册到 MainActivity
         ((MainActivity) getActivity()).setFavouriteFragment(this);
@@ -83,12 +83,12 @@ public class FavouriteFragment extends BaseFragment<FragmentFavouriteBinding>
                     jsonFileName = "Icehockey_Teams.json";
                     break;
                 case "Tennis":
-                    jsonFileName="Tennis_Teams.json";
-            
+                    jsonFileName = "Tennis_Teams.json";
+
 
             }
 
-            
+
             String jsonStr = Tools.readAssetFile(getContext(), jsonFileName);
             if (jsonStr == null) {
                 showToast("暂不支持该运动");
@@ -129,56 +129,56 @@ public class FavouriteFragment extends BaseFragment<FragmentFavouriteBinding>
 
         Set<Team> uniqueTeams = new LinkedHashSet<>();
         json.getJSONArray("season_competitors").stream()
-            .map(obj -> {
-                JSONObject teamObj = (JSONObject) obj;
-                Team team = new Team();
-                team.setId(teamObj.getString("id"));
-                team.setName(teamObj.getString("name"));
-                team.setAlias(teamObj.getString("short_name"));
-                team.setFavorite(savedTeams.contains(team.getName()));
-                return team;
-            })
-            .forEach(team -> {
-                // 如果已存在相同ID的球队，则不添加
-                boolean added = uniqueTeams.add(team);
-                if (!added) {
-                    Log.d("TeamDebug", "发现重复球队ID: " + team.getId() + ", 名称: " + team.getName());
-                }
-            });
-        
+                .map(obj -> {
+                    JSONObject teamObj = (JSONObject) obj;
+                    Team team = new Team();
+                    team.setId(teamObj.getString("id"));
+                    team.setName(teamObj.getString("name"));
+                    team.setAlias(teamObj.getString("short_name"));
+                    team.setFavorite(savedTeams.contains(team.getName()));
+                    return team;
+                })
+                .forEach(team -> {
+                    // 如果已存在相同ID的球队，则不添加
+                    boolean added = uniqueTeams.add(team);
+                    if (!added) {
+                        Log.d("TeamDebug", "发现重复球队ID: " + team.getId() + ", 名称: " + team.getName());
+                    }
+                });
+
         // 转换为List并排序
         return uniqueTeams.stream()
-            .sorted((t1, t2) -> t1.getName().compareTo(t2.getName()))
-            .collect(Collectors.toList());
+                .sorted((t1, t2) -> t1.getName().compareTo(t2.getName()))
+                .collect(Collectors.toList());
     }
 
     private List<Team> parseOtherTeams(JSONObject json, Set<String> savedTeams) {
         List<Team> teams = JSON.parseArray(json.getString("teams"), Team.class);
         return teams.stream()
-            .filter(team -> team.getAlias() != null && !team.getAlias().isEmpty())
-            .peek(team -> team.setFavorite(savedTeams.contains(team.getName())))
-            .sorted((t1, t2) -> t1.getName().compareTo(t2.getName()))
-            .collect(Collectors.toList());
+                .filter(team -> team.getAlias() != null && !team.getAlias().isEmpty())
+                .peek(team -> team.setFavorite(savedTeams.contains(team.getName())))
+                .sorted((t1, t2) -> t1.getName().compareTo(t2.getName()))
+                .collect(Collectors.toList());
     }
 
     @Override
     public void onFavoriteClick(Team team, boolean newState) {
         SharedPreferences prefs = requireContext().getSharedPreferences(PREFS_NAME, Context.MODE_PRIVATE);
         Set<String> favorites = new HashSet<>(prefs.getStringSet(KEY_FAVORITE_TEAMS, new HashSet<>()));
-        
+
         if (newState) {
             favorites.add(team.getName());
         } else {
             favorites.remove(team.getName());
         }
-        
+
         prefs.edit().putStringSet(KEY_FAVORITE_TEAMS, favorites).apply();
 
         // 发送广播通知收藏变化
         Intent intent = new Intent("com.test.sport.FAVORITES_CHANGED");
         requireContext().sendBroadcast(intent);
-        
-    Log.d("FavoriteDebug", "收藏状态更新 - 球队: " + team.getName() + ", 新状态: " + newState);
+
+        Log.d("FavoriteDebug", "收藏状态更新 - 球队: " + team.getName() + ", 新状态: " + newState);
     }
 
     public void onSportChanged(String newSport) {

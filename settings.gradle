@@ -1,2 +1,2 @@
-rootProject.name = "Sport2.0"
+rootProject.name = "SportCalendar"
 include ':app'

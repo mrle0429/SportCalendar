@@ -1,7 +1,10 @@
 package com.test.sport.ui.fragment;
 
+import static android.app.Activity.RESULT_OK;
+
 import android.app.NotificationChannel;
 import android.app.NotificationManager;
+import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.icu.util.TimeZone;
@@ -12,23 +15,18 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-
-import static android.app.Activity.RESULT_OK;
+import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AlertDialog;
 import androidx.core.app.NotificationCompat;
 import androidx.core.app.NotificationManagerCompat;
-// Android 相关
-import android.content.Context;
-import android.widget.TextView;
-import android.widget.Toast;
 
+import com.amap.api.location.AMapLocation;
 import com.amap.api.location.AMapLocationClient;
 import com.amap.api.location.AMapLocationClientOption;
 import com.amap.api.location.AMapLocationListener;
-import com.amap.api.location.AMapLocation;
 import com.hjq.permissions.OnPermissionCallback;
 import com.hjq.permissions.Permission;
 import com.hjq.permissions.XXPermissions;
@@ -38,7 +36,6 @@ import com.test.sport.base.BaseFragment;
 import com.test.sport.ui.activity.PreferenceActivity;
 import com.test.sport.ui.activity.TimezoneActivity;
 
-import java.sql.Time;
 import java.util.List;
 
 // TODO:设置
@@ -56,9 +53,6 @@ public class SettingFragment extends BaseFragment<FragmentSettingBinding> implem
 
     private static final String KEY_DEFAULT_SPORT = "default_sport";
     private static final String[] SUPPORTED_SPORTS = new String[]{"Basketball", "Football", "Soccer", "Icehockey", "Tennis", "Rugby"};
-
-
-
 
 
     private final AMapLocationListener mLocationListener = new AMapLocationListener() {
@@ -141,7 +135,7 @@ public class SettingFragment extends BaseFragment<FragmentSettingBinding> implem
         switch (view.getId()) {
             case R.id.rl_preferences:
                 Intent intent1 = new Intent(getActivity(), PreferenceActivity.class);
-                
+
                 startActivity(intent1);
                 break;
             case R.id.rl_timezone:
@@ -185,8 +179,6 @@ public class SettingFragment extends BaseFragment<FragmentSettingBinding> implem
         getBinding().tvSelectedTimezone.setText(selectedTimezone);
         Log.d(TAG, "加载偏好设置: SelectedTimeZone=" + selectedTimezone);
     }
-
-
 
 
     // 初始化定位

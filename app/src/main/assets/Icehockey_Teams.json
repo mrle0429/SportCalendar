@@ -1,275 +1,275 @@
 {
-    "generated_at": "2024-12-01T05:47:04+00:00",
-    "season_competitors": [
-        {
-            "id": "sr:competitor:3675",
-            "name": "Anaheim Ducks",
-            "short_name": "Anaheim",
-            "abbreviation": "ANA"
-        },
-        {
-            "id": "sr:competitor:3676",
-            "name": "Winnipeg Jets",
-            "short_name": "Winnipeg",
-            "abbreviation": "WPG"
-        },
-        {
-            "id": "sr:competitor:3677",
-            "name": "Boston Bruins",
-            "short_name": "Boston",
-            "abbreviation": "BOS"
-        },
-        {
-            "id": "sr:competitor:3678",
-            "name": "Buffalo Sabres",
-            "short_name": "Buffalo",
-            "abbreviation": "BUF"
-        },
-        {
-            "id": "sr:competitor:3679",
-            "name": "Calgary Flames",
-            "short_name": "Calgary",
-            "abbreviation": "CGY"
-        },
-        {
-            "id": "sr:competitor:3680",
-            "name": "Carolina Hurricanes",
-            "short_name": "Carolina",
-            "abbreviation": "CAR"
-        },
-        {
-            "id": "sr:competitor:3681",
-            "name": "Chicago Blackhawks",
-            "short_name": "Chicago",
-            "abbreviation": "CHI"
-        },
-        {
-            "id": "sr:competitor:3682",
-            "name": "Colorado Avalanche",
-            "short_name": "Colorado",
-            "abbreviation": "COL"
-        },
-        {
-            "id": "sr:competitor:3683",
-            "name": "Columbus Blue Jackets",
-            "short_name": "Columbus",
-            "abbreviation": "CBJ"
-        },
-        {
-            "id": "sr:competitor:3684",
-            "name": "Dallas Stars",
-            "short_name": "Dallas",
-            "abbreviation": "DAL"
-        },
-        {
-            "id": "sr:competitor:3685",
-            "name": "Detroit Red Wings",
-            "short_name": "Detroit",
-            "abbreviation": "DET"
-        },
-        {
-            "id": "sr:competitor:3686",
-            "name": "Edmonton Oilers",
-            "short_name": "Edmonton",
-            "abbreviation": "EDM"
-        },
-        {
-            "id": "sr:competitor:3687",
-            "name": "Florida Panthers",
-            "short_name": "Florida",
-            "abbreviation": "FLA"
-        },
-        {
-            "id": "sr:competitor:3688",
-            "name": "Los Angeles Kings",
-            "short_name": "Los Angeles",
-            "abbreviation": "LA"
-        },
-        {
-            "id": "sr:competitor:3689",
-            "name": "Minnesota Wild",
-            "short_name": "Minnesota",
-            "abbreviation": "MIN"
-        },
-        {
-            "id": "sr:competitor:3690",
-            "name": "Montreal Canadiens",
-            "short_name": "Montreal",
-            "abbreviation": "MTL"
-        },
-        {
-            "id": "sr:competitor:3691",
-            "name": "Washington Capitals",
-            "short_name": "Washington",
-            "abbreviation": "WSH"
-        },
-        {
-            "id": "sr:competitor:3692",
-            "name": "Vancouver Canucks",
-            "short_name": "Vancouver",
-            "abbreviation": "VAN"
-        },
-        {
-            "id": "sr:competitor:3693",
-            "name": "Toronto Maple Leafs",
-            "short_name": "Toronto",
-            "abbreviation": "TOR"
-        },
-        {
-            "id": "sr:competitor:3694",
-            "name": "Tampa Bay Lightning",
-            "short_name": "Tampa Bay",
-            "abbreviation": "TB"
-        },
-        {
-            "id": "sr:competitor:3695",
-            "name": "St. Louis Blues",
-            "short_name": "St. Louis",
-            "abbreviation": "STL"
-        },
-        {
-            "id": "sr:competitor:3696",
-            "name": "San Jose Sharks",
-            "short_name": "San Jose",
-            "abbreviation": "SJ"
-        },
-        {
-            "id": "sr:competitor:3697",
-            "name": "Pittsburgh Penguins",
-            "short_name": "Pittsburgh",
-            "abbreviation": "PIT"
-        },
-        {
-            "id": "sr:competitor:3699",
-            "name": "Philadelphia Flyers",
-            "short_name": "Philadelphia",
-            "abbreviation": "PHI"
-        },
-        {
-            "id": "sr:competitor:3700",
-            "name": "Ottawa Senators",
-            "short_name": "Ottawa",
-            "abbreviation": "OTT"
-        },
-        {
-            "id": "sr:competitor:3701",
-            "name": "New York Rangers",
-            "short_name": "NY Rangers",
-            "abbreviation": "NYR"
-        },
-        {
-            "id": "sr:competitor:3703",
-            "name": "New York Islanders",
-            "short_name": "NY Islanders",
-            "abbreviation": "NYI"
-        },
-        {
-            "id": "sr:competitor:3704",
-            "name": "New Jersey Devils",
-            "short_name": "New Jersey",
-            "abbreviation": "NJ"
-        },
-        {
-            "id": "sr:competitor:3705",
-            "name": "Nashville Predators",
-            "short_name": "Nashville",
-            "abbreviation": "NSH"
-        },
-        {
-            "id": "sr:competitor:344158",
-            "name": "Vegas Golden Knights",
-            "short_name": "Vegas",
-            "abbreviation": "VGK"
-        },
-        {
-            "id": "sr:competitor:794340",
-            "name": "Seattle Kraken",
-            "short_name": "Seattle",
-            "abbreviation": "SEA"
-        },
-        {
-            "id": "sr:competitor:1148725",
-            "name": "Utah Hockey Club",
-            "short_name": "Utah",
-            "abbreviation": "UTA"
-        },
-        {
-            "id": "sr:competitor:3916",
-            "name": "EK Zeller Eisbaren",
-            "short_name": "EK Zeller Eisbaren",
-            "abbreviation": "EKZ"
-        },
-        {
-            "id": "sr:competitor:24951",
-            "name": "Ritten Sport",
-            "short_name": "Ritten Sport",
-            "abbreviation": "RIT"
-        },
-        {
-            "id": "sr:competitor:24952",
-            "name": "SG Cortina",
-            "short_name": "SG Cortina",
-            "abbreviation": "COR"
-        },
-        {
-            "id": "sr:competitor:44501",
-            "name": "EC Bregenzerwald",
-            "short_name": "EHC Bregenzerwald",
-            "abbreviation": "BRE"
-        },
-        {
-            "id": "sr:competitor:56123",
-            "name": "WSV Broncos",
-            "short_name": "WSV Broncos",
-            "abbreviation": "WSV"
-        },
-        {
-            "id": "sr:competitor:118794",
-            "name": "HC Merano",
-            "short_name": "HC Merano",
-            "abbreviation": "MER"
-        },
-        {
-            "id": "sr:competitor:118798",
-            "name": "HC Gherdeina",
-            "short_name": "HC Gherdeina",
-            "abbreviation": "GHE"
-        },
-        {
-            "id": "sr:competitor:118800",
-            "name": "Jesenice",
-            "short_name": "Jesenice",
-            "abbreviation": "JES"
-        },
-        {
-            "id": "sr:competitor:118802",
-            "name": "Celje",
-            "short_name": "Celje",
-            "abbreviation": "CEL"
-        },
-        {
-            "id": "sr:competitor:171908",
-            "name": "EC Die Adler Kitzbuhel",
-            "short_name": "EC Die Adler Kitzbuhel",
-            "abbreviation": "DIE"
-        },
-        {
-            "id": "sr:competitor:271055",
-            "name": "Red Bull Hockey Juniors",
-            "short_name": "Red Bull Hockey Juniors",
-            "abbreviation": "RBH"
-        },
-        {
-            "id": "sr:competitor:303466",
-            "name": "Khl Sisak",
-            "short_name": "Khl Sisak",
-            "abbreviation": "SIS"
-        },
-        {
-            "id": "sr:competitor:632554",
-            "name": "Hockey Unterland Cavaliers",
-            "short_name": "Hockey Unterland Cavaliers",
-            "abbreviation": "HOC"
-        }
-    ]
+  "generated_at": "2024-12-01T05:47:04+00:00",
+  "season_competitors": [
+    {
+      "id": "sr:competitor:3675",
+      "name": "Anaheim Ducks",
+      "short_name": "Anaheim",
+      "abbreviation": "ANA"
+    },
+    {
+      "id": "sr:competitor:3676",
+      "name": "Winnipeg Jets",
+      "short_name": "Winnipeg",
+      "abbreviation": "WPG"
+    },
+    {
+      "id": "sr:competitor:3677",
+      "name": "Boston Bruins",
+      "short_name": "Boston",
+      "abbreviation": "BOS"
+    },
+    {
+      "id": "sr:competitor:3678",
+      "name": "Buffalo Sabres",
+      "short_name": "Buffalo",
+      "abbreviation": "BUF"
+    },
+    {
+      "id": "sr:competitor:3679",
+      "name": "Calgary Flames",
+      "short_name": "Calgary",
+      "abbreviation": "CGY"
+    },
+    {
+      "id": "sr:competitor:3680",
+      "name": "Carolina Hurricanes",
+      "short_name": "Carolina",
+      "abbreviation": "CAR"
+    },
+    {
+      "id": "sr:competitor:3681",
+      "name": "Chicago Blackhawks",
+      "short_name": "Chicago",
+      "abbreviation": "CHI"
+    },
+    {
+      "id": "sr:competitor:3682",
+      "name": "Colorado Avalanche",
+      "short_name": "Colorado",
+      "abbreviation": "COL"
+    },
+    {
+      "id": "sr:competitor:3683",
+      "name": "Columbus Blue Jackets",
+      "short_name": "Columbus",
+      "abbreviation": "CBJ"
+    },
+    {
+      "id": "sr:competitor:3684",
+      "name": "Dallas Stars",
+      "short_name": "Dallas",
+      "abbreviation": "DAL"
+    },
+    {
+      "id": "sr:competitor:3685",
+      "name": "Detroit Red Wings",
+      "short_name": "Detroit",
+      "abbreviation": "DET"
+    },
+    {
+      "id": "sr:competitor:3686",
+      "name": "Edmonton Oilers",
+      "short_name": "Edmonton",
+      "abbreviation": "EDM"
+    },
+    {
+      "id": "sr:competitor:3687",
+      "name": "Florida Panthers",
+      "short_name": "Florida",
+      "abbreviation": "FLA"
+    },
+    {
+      "id": "sr:competitor:3688",
+      "name": "Los Angeles Kings",
+      "short_name": "Los Angeles",
+      "abbreviation": "LA"
+    },
+    {
+      "id": "sr:competitor:3689",
+      "name": "Minnesota Wild",
+      "short_name": "Minnesota",
+      "abbreviation": "MIN"
+    },
+    {
+      "id": "sr:competitor:3690",
+      "name": "Montreal Canadiens",
+      "short_name": "Montreal",
+      "abbreviation": "MTL"
+    },
+    {
+      "id": "sr:competitor:3691",
+      "name": "Washington Capitals",
+      "short_name": "Washington",
+      "abbreviation": "WSH"
+    },
+    {
+      "id": "sr:competitor:3692",
+      "name": "Vancouver Canucks",
+      "short_name": "Vancouver",
+      "abbreviation": "VAN"
+    },
+    {
+      "id": "sr:competitor:3693",
+      "name": "Toronto Maple Leafs",
+      "short_name": "Toronto",
+      "abbreviation": "TOR"
+    },
+    {
+      "id": "sr:competitor:3694",
+      "name": "Tampa Bay Lightning",
+      "short_name": "Tampa Bay",
+      "abbreviation": "TB"
+    },
+    {
+      "id": "sr:competitor:3695",
+      "name": "St. Louis Blues",
+      "short_name": "St. Louis",
+      "abbreviation": "STL"
+    },
+    {
+      "id": "sr:competitor:3696",
+      "name": "San Jose Sharks",
+      "short_name": "San Jose",
+      "abbreviation": "SJ"
+    },
+    {
+      "id": "sr:competitor:3697",
+      "name": "Pittsburgh Penguins",
+      "short_name": "Pittsburgh",
+      "abbreviation": "PIT"
+    },
+    {
+      "id": "sr:competitor:3699",
+      "name": "Philadelphia Flyers",
+      "short_name": "Philadelphia",
+      "abbreviation": "PHI"
+    },
+    {
+      "id": "sr:competitor:3700",
+      "name": "Ottawa Senators",
+      "short_name": "Ottawa",
+      "abbreviation": "OTT"
+    },
+    {
+      "id": "sr:competitor:3701",
+      "name": "New York Rangers",
+      "short_name": "NY Rangers",
+      "abbreviation": "NYR"
+    },
+    {
+      "id": "sr:competitor:3703",
+      "name": "New York Islanders",
+      "short_name": "NY Islanders",
+      "abbreviation": "NYI"
+    },
+    {
+      "id": "sr:competitor:3704",
+      "name": "New Jersey Devils",
+      "short_name": "New Jersey",
+      "abbreviation": "NJ"
+    },
+    {
+      "id": "sr:competitor:3705",
+      "name": "Nashville Predators",
+      "short_name": "Nashville",
+      "abbreviation": "NSH"
+    },
+    {
+      "id": "sr:competitor:344158",
+      "name": "Vegas Golden Knights",
+      "short_name": "Vegas",
+      "abbreviation": "VGK"
+    },
+    {
+      "id": "sr:competitor:794340",
+      "name": "Seattle Kraken",
+      "short_name": "Seattle",
+      "abbreviation": "SEA"
+    },
+    {
+      "id": "sr:competitor:1148725",
+      "name": "Utah Hockey Club",
+      "short_name": "Utah",
+      "abbreviation": "UTA"
+    },
+    {
+      "id": "sr:competitor:3916",
+      "name": "EK Zeller Eisbaren",
+      "short_name": "EK Zeller Eisbaren",
+      "abbreviation": "EKZ"
+    },
+    {
+      "id": "sr:competitor:24951",
+      "name": "Ritten Sport",
+      "short_name": "Ritten Sport",
+      "abbreviation": "RIT"
+    },
+    {
+      "id": "sr:competitor:24952",
+      "name": "SG Cortina",
+      "short_name": "SG Cortina",
+      "abbreviation": "COR"
+    },
+    {
+      "id": "sr:competitor:44501",
+      "name": "EC Bregenzerwald",
+      "short_name": "EHC Bregenzerwald",
+      "abbreviation": "BRE"
+    },
+    {
+      "id": "sr:competitor:56123",
+      "name": "WSV Broncos",
+      "short_name": "WSV Broncos",
+      "abbreviation": "WSV"
+    },
+    {
+      "id": "sr:competitor:118794",
+      "name": "HC Merano",
+      "short_name": "HC Merano",
+      "abbreviation": "MER"
+    },
+    {
+      "id": "sr:competitor:118798",
+      "name": "HC Gherdeina",
+      "short_name": "HC Gherdeina",
+      "abbreviation": "GHE"
+    },
+    {
+      "id": "sr:competitor:118800",
+      "name": "Jesenice",
+      "short_name": "Jesenice",
+      "abbreviation": "JES"
+    },
+    {
+      "id": "sr:competitor:118802",
+      "name": "Celje",
+      "short_name": "Celje",
+      "abbreviation": "CEL"
+    },
+    {
+      "id": "sr:competitor:171908",
+      "name": "EC Die Adler Kitzbuhel",
+      "short_name": "EC Die Adler Kitzbuhel",
+      "abbreviation": "DIE"
+    },
+    {
+      "id": "sr:competitor:271055",
+      "name": "Red Bull Hockey Juniors",
+      "short_name": "Red Bull Hockey Juniors",
+      "abbreviation": "RBH"
+    },
+    {
+      "id": "sr:competitor:303466",
+      "name": "Khl Sisak",
+      "short_name": "Khl Sisak",
+      "abbreviation": "SIS"
+    },
+    {
+      "id": "sr:competitor:632554",
+      "name": "Hockey Unterland Cavaliers",
+      "short_name": "Hockey Unterland Cavaliers",
+      "abbreviation": "HOC"
+    }
+  ]
 }

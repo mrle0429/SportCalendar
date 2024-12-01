@@ -9,7 +9,6 @@ import android.view.ViewGroup;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
-import androidx.core.content.ContextCompat;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.test.nba.R;
@@ -17,7 +16,6 @@ import com.test.sport.db.entity.Game;
 import com.test.sport.utils.Tools;
 
 import java.util.ArrayList;
-import java.util.Collections;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
@@ -45,7 +43,7 @@ public class RecommendedGamesAdapter extends RecyclerView.Adapter<RecommendedGam
     public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
         Game game = dataList.get(position);
         Log.d("RecommendDebug", "绑定推荐比赛视图 position: " + position);
-        
+
         // 设置球队名称
         if (game.getCompetitors() != null && game.getCompetitors().size() > 0) {
             if (game.getCompetitors().get(0).getQualifier().equals("home")) {
@@ -57,7 +55,7 @@ public class RecommendedGamesAdapter extends RecyclerView.Adapter<RecommendedGam
             }
         }
         Log.d("RecommendDebug", "设置球队名称: " + game.getCompetitors().get(0).getAbbreviation() + " vs " + game.getCompetitors().get(1).getAbbreviation());
-        
+
         // 设置比赛时间
         try {
             String time = game.getStart_time();
@@ -65,14 +63,14 @@ public class RecommendedGamesAdapter extends RecyclerView.Adapter<RecommendedGam
         } catch (Exception e) {
             e.printStackTrace();
         }
-        
+
         // 设置联赛名称
         holder.tvLeague.setText(game.getCompetition_name());
 
         // 设置推荐原因
         String reason = getRecommendReason(game);
         holder.tvRecommendReason.setText(reason);
-        
+
         // 设置点击事件
         holder.itemView.setOnClickListener(v -> {
             if (listener != null) {
@@ -92,51 +90,50 @@ public class RecommendedGamesAdapter extends RecyclerView.Adapter<RecommendedGam
             Log.d("RecommendDebug1", "喜欢的球队： " + favoriteTeams);
             Log.d("RecommendDebug1", "主队: " + homeTeam + " 是否关注: " + favoriteTeams.contains(homeTeam));
             Log.d("RecommendDebug1", "客队: " + awayTeam + " 是否关注: " + favoriteTeams.contains(awayTeam));
-            
+
             if (favoriteTeams.contains(homeTeam) || favoriteTeams.contains(awayTeam)) {
                 reasons.add("Followed Team");
             }
         }
-        
+
         // 判断是否为重要联赛
         String competition = game.getCompetition_name();
         if (competition != null) {
 
-        
-        // 热门赛事
-        if (Tools.isPopularFootballEvent(competition) || Tools.isPopularBasketballEvent(competition)||Tools.isPopularHockeyEvent(competition)||Tools.isPopularTennisEvent(competition)) {
-            reasons.add("Popular Event");
-        }
-        
 
-
-    }
-        
-        // 检查是否在偏好时间段
-    try {
-        int hour = Integer.parseInt(game.getStart_time().substring(11, 13));
-        SharedPreferences prefs = context.getSharedPreferences("SettingsPrefs", Context.MODE_PRIVATE);
-        Set<String> preferredTimes = prefs.getStringSet("preferred_times", new HashSet<>());
-        
-        for (String timeRange : preferredTimes) {
-            if (timeRange.contains("Morning") && hour >= 6 && hour < 12 ||
-                timeRange.contains("Afternoon") && hour >= 12 && hour < 18 ||
-                timeRange.contains("Evening") && hour >= 18 && hour < 24 ||
-                timeRange.contains("Dawn") && hour >= 0 && hour < 6) {
-                reasons.add("Preferred Time");
-                break;
+            // 热门赛事
+            if (Tools.isPopularFootballEvent(competition) || Tools.isPopularBasketballEvent(competition) || Tools.isPopularHockeyEvent(competition) || Tools.isPopularTennisEvent(competition)) {
+                reasons.add("Popular Event");
             }
+
+
         }
-    } catch (Exception e) {
-        e.printStackTrace();
-    }
-    
-    // 如果没有任何推荐原因,返回默认文本
-    if (reasons.isEmpty()) {
-        return "Recommended Event";
-    }
-    
-    // 将所有原因用 "·" 连接
+
+        // 检查是否在偏好时间段
+        try {
+            int hour = Integer.parseInt(game.getStart_time().substring(11, 13));
+            SharedPreferences prefs = context.getSharedPreferences("SettingsPrefs", Context.MODE_PRIVATE);
+            Set<String> preferredTimes = prefs.getStringSet("preferred_times", new HashSet<>());
+
+            for (String timeRange : preferredTimes) {
+                if (timeRange.contains("Morning") && hour >= 6 && hour < 12 ||
+                        timeRange.contains("Afternoon") && hour >= 12 && hour < 18 ||
+                        timeRange.contains("Evening") && hour >= 18 && hour < 24 ||
+                        timeRange.contains("Dawn") && hour >= 0 && hour < 6) {
+                    reasons.add("Preferred Time");
+                    break;
+                }
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+
+        // 如果没有任何推荐原因,返回默认文本
+        if (reasons.isEmpty()) {
+            return "Recommended Event";
+        }
+
+        // 将所有原因用 "·" 连接
         return (String.join(" · ", reasons));
     }
 
@@ -175,7 +172,7 @@ public class RecommendedGamesAdapter extends RecyclerView.Adapter<RecommendedGam
         Log.d("RecommendDebug", "更新收藏球队列表");
         Log.d("RecommendDebug", "原收藏球队: " + this.favoriteTeams);
         Log.d("RecommendDebug", "新收藏球队: " + newFavoriteTeams);
-        
+
         this.favoriteTeams = newFavoriteTeams;
         notifyDataSetChanged();
     }

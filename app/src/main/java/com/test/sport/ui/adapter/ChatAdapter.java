@@ -17,7 +17,7 @@ import java.util.List;
 
 public class ChatAdapter extends RecyclerView.Adapter<ChatAdapter.MessageViewHolder> {
 
-    
+
     private List<Message> messages = new ArrayList<>();
 
     @Override
@@ -36,7 +36,7 @@ public class ChatAdapter extends RecyclerView.Adapter<ChatAdapter.MessageViewHol
     @Override
     public void onBindViewHolder(@NonNull MessageViewHolder holder, int position) {
         Message message = messages.get(position);
-        
+
         // 根据消息类型显示对应的布局
         if (message.getType() == Message.TYPE_USER) {
             holder.aiContainer.setVisibility(View.GONE);

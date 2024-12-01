@@ -2,26 +2,18 @@ package com.test.sport.ui.adapter;
 
 import android.content.Context;
 import android.content.Intent;
-import android.text.SpannableString;
-import android.text.Spanned;
-import android.text.style.StrikethroughSpan;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
-import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
-import androidx.core.content.ContextCompat;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.hjq.shape.view.ShapeCheckBox;
-import com.hjq.shape.view.ShapeTextView;
 import com.test.nba.R;
 import com.test.sport.db.entity.Schedule;
 
-import java.text.ParseException;
 import java.util.List;
 
 // TODO:日程适配器
@@ -57,7 +49,7 @@ public class ScheduleAdapter extends RecyclerView.Adapter<ScheduleAdapter.ViewHo
 
         Schedule schedule = scheduleList.get(position);
         holder.tvTitle.setText(schedule.getTitle());
-        holder.tvTime.setText(schedule.getTime()+" "+schedule.getLocation());
+        holder.tvTime.setText(schedule.getTime() + " " + schedule.getLocation());
 
         holder.ivMore.setOnClickListener(view -> {
             if (listener != null) {
@@ -100,6 +92,7 @@ public class ScheduleAdapter extends RecyclerView.Adapter<ScheduleAdapter.ViewHo
 
     public interface OnClickListener {
         void onDelete(int pos, View view);
+
         void onClick(int pos);
     }
 

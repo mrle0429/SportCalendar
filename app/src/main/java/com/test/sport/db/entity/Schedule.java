@@ -1,14 +1,12 @@
 package com.test.sport.db.entity;
 
-import android.print.PageRange;
-
 import com.test.sport.db.coverter.GameConverter;
 
 import org.greenrobot.greendao.annotation.Convert;
 import org.greenrobot.greendao.annotation.Entity;
+import org.greenrobot.greendao.annotation.Generated;
 import org.greenrobot.greendao.annotation.Id;
 import org.greenrobot.greendao.annotation.Index;
-import org.greenrobot.greendao.annotation.Generated;
 
 import java.util.List;
 
@@ -25,12 +23,12 @@ public class Schedule {
     private String location;//位置
     private String remindTime;//提醒时间
 
-    @Convert(columnType = String.class,converter = GameConverter.class)
+    @Convert(columnType = String.class, converter = GameConverter.class)
     private List<Game> gameList;
 
     @Generated(hash = 1013265494)
     public Schedule(Long id, String date, String time, String title,
-            String location, String remindTime, List<Game> gameList) {
+                    String location, String remindTime, List<Game> gameList) {
         this.id = id;
         this.date = date;
         this.time = time;
@@ -39,42 +37,55 @@ public class Schedule {
         this.remindTime = remindTime;
         this.gameList = gameList;
     }
+
     @Generated(hash = 729319394)
     public Schedule() {
     }
+
     public Long getId() {
         return this.id;
     }
+
     public void setId(Long id) {
         this.id = id;
     }
+
     public String getTitle() {
         return this.title;
     }
+
     public void setTitle(String title) {
         this.title = title;
     }
+
     public String getRemindTime() {
         return this.remindTime;
     }
+
     public void setRemindTime(String remindTime) {
         this.remindTime = remindTime;
     }
+
     public String getDate() {
         return this.date;
     }
+
     public void setDate(String date) {
         this.date = date;
     }
+
     public String getTime() {
         return this.time;
     }
+
     public void setTime(String time) {
         this.time = time;
     }
+
     public String getLocation() {
         return this.location;
     }
+
     public void setLocation(String location) {
         this.location = location;
     }
@@ -82,6 +93,7 @@ public class Schedule {
     public List<Game> getGameList() {
         return this.gameList;
     }
+
     public void setGameList(List<Game> gameList) {
         this.gameList = gameList;
     }

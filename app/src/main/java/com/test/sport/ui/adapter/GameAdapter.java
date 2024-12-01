@@ -47,17 +47,17 @@ public class GameAdapter extends RecyclerView.Adapter<GameAdapter.ViewHolder> {
     public void onBindViewHolder(ViewHolder holder, final int position) {
 
         Game game = dataList.get(position);
-        if (game.getCompetitors()!=null&&game.getCompetitors().size()>0){
+        if (game.getCompetitors() != null && game.getCompetitors().size() > 0) {
             holder.tvTeam1.setText(game.getCompetitors().get(0).getAbbreviation());
             holder.tvTeam2.setText(game.getCompetitors().get(1).getAbbreviation());
         }
 
-      String status=game.getStatus();
-        if (status.equals("live")||status.equals("closed")|| status.equals("ended")||
-                status.equals("not_started")){
+        String status = game.getStatus();
+        if (status.equals("live") || status.equals("closed") || status.equals("ended") ||
+                status.equals("not_started")) {
             int home = game.getHome_score();
             int away = game.getAway_score();
-            if (game.getCompetitors()!=null&&game.getCompetitors().size()>0) {
+            if (game.getCompetitors() != null && game.getCompetitors().size() > 0) {
                 if (game.getCompetitors().get(0).getQualifier().equals("home")) {
                     holder.tvScore1.setText(home + "".trim());
                     holder.tvScore2.setText(away + "".trim());
@@ -83,7 +83,7 @@ public class GameAdapter extends RecyclerView.Adapter<GameAdapter.ViewHolder> {
         }
         holder.tvType.setText(game.getCompetition_name());
         try {
-            String time=game.getStart_time();
+            String time = game.getStart_time();
             holder.tvTime.setText(Tools.StringToDate(time, "yyyy-MM-dd HH:mm", " HH:mm"));
         } catch (Exception e) {
             e.printStackTrace();
@@ -123,7 +123,7 @@ public class GameAdapter extends RecyclerView.Adapter<GameAdapter.ViewHolder> {
             tvScore2 = itemView.findViewById(R.id.tv_score2);
             tvTime = itemView.findViewById(R.id.tv_time);
             tvStatus = itemView.findViewById(R.id.tv_status);
-            tvType=itemView.findViewById(R.id.tv_type);
+            tvType = itemView.findViewById(R.id.tv_type);
         }
     }
 

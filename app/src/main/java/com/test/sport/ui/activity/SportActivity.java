@@ -1,7 +1,5 @@
 package com.test.sport.ui.activity;
 
-import android.content.Context;
-import android.content.SharedPreferences;
 import android.os.Handler;
 import android.view.LayoutInflater;
 import android.widget.ArrayAdapter;
@@ -20,7 +18,6 @@ import com.test.sport.db.entity.Game;
 import com.test.sport.db.entity.Schedule;
 import com.test.sport.event.ScheduleEvent;
 import com.test.sport.utils.CalendarReminderUtils;
-import com.test.sport.utils.LogUtils;
 import com.test.sport.utils.Tools;
 
 import org.greenrobot.eventbus.EventBus;
@@ -28,13 +25,12 @@ import org.greenrobot.eventbus.EventBus;
 import java.text.ParseException;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.TimeZone;
 
 // TODO:体育 
 public class SportActivity extends BaseActivity<ActivitySportBinding> {
 
     private List<String> dataList = new ArrayList<>();
-    private List<Game> gameList=new ArrayList<>();
+    private List<Game> gameList = new ArrayList<>();
     private String remind;
     private Game game;
     private String timeZoneId; //时区
@@ -71,8 +67,8 @@ public class SportActivity extends BaseActivity<ActivitySportBinding> {
         getBinding().tvTime.setText(game.getStart_time().substring(5));
 
         String status = game.getStatus();
-        if (status.equals("live") || status.equals("closed") || status.equals("ended")|| status.equals("not_started")) {
-          //  LogUtils.showLog("game: " + game.getHome_score()+" " + game.getAway_score());
+        if (status.equals("live") || status.equals("closed") || status.equals("ended") || status.equals("not_started")) {
+            //  LogUtils.showLog("game: " + game.getHome_score()+" " + game.getAway_score());
             if (game.getCompetitors().get(0).getQualifier().equals("home")) {
                 getBinding().tvScore.setText(game.getHome_score() + " - " + game.getAway_score());
             } else {
@@ -153,20 +149,20 @@ public class SportActivity extends BaseActivity<ActivitySportBinding> {
         schedule.setTitle(getBinding().tvType.getText().toString());
         schedule.setRemindTime(remind);
         schedule.setLocation(getBinding().tvVenue.getText().toString());
-        String date=game.getStart_time();//2024-06-01 00:00
+        String date = game.getStart_time();//2024-06-01 00:00
         try {
-            date=Tools.StringToDate(date, "yyyy-MM-dd HH:mm", "yyyy-M-d HH:mm");
+            date = Tools.StringToDate(date, "yyyy-MM-dd HH:mm", "yyyy-M-d HH:mm");
         } catch (ParseException e) {
             e.printStackTrace();
         }
-        String dates[]=date.split(" ");
+        String dates[] = date.split(" ");
         schedule.setDate(dates[0]);
         schedule.setTime(dates[1]);
         gameList.add(game);
         schedule.setGameList(gameList);
         DbScheduleController.getInstance(this).insert(schedule);
         showToast("Successfully added");
-        CalendarReminderUtils.addCalendarEvent(this, getBinding().tvType.getText().toString(),"ss",
+        CalendarReminderUtils.addCalendarEvent(this, getBinding().tvType.getText().toString(), "ss",
                 Tools.strToLong(date, "yyyy-M-d HH:mm"), remind);
         EventBus.getDefault().post(new ScheduleEvent());
         finish();

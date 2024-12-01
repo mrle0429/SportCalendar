@@ -118,7 +118,7 @@ public class CustomWeekView extends WeekView {
         isSelected = isSelected(calendar);
         if (isSelected) {
             mPointPaint.setColor(Color.WHITE);
-        }else {
+        } else {
             mPointPaint.setColor(calendar.getSchemeColor());
         }
         canvas.drawCircle(x + mItemWidth / 2, mItemHeight - 2 * mPadding, mPointRadius, mPointPaint);
@@ -161,20 +161,20 @@ public class CustomWeekView extends WeekView {
         if (isSelected) {
             canvas.drawText(String.valueOf(calendar.getDay()), cx, mTextBaseLine + top,
                     mSelectTextPaint);
-             canvas.drawText(calendar.getLunar(), cx, mTextBaseLine + mItemHeight / 8, mSelectedLunarTextPaint);
+            canvas.drawText(calendar.getLunar(), cx, mTextBaseLine + mItemHeight / 8, mSelectedLunarTextPaint);
         } else if (hasScheme && !calendar.isCurrentDay()) {
 
             canvas.drawText(String.valueOf(calendar.getDay()), cx, mTextBaseLine + top,
                     calendar.isCurrentMonth() ? mSchemeTextPaint : mOtherMonthTextPaint);
 
-              canvas.drawText(calendar.getLunar(), cx, mTextBaseLine + mItemHeight / 8,
-            !TextUtils.isEmpty(calendar.getSolarTerm()) ? mSolarTermTextPaint : mSchemeLunarTextPaint);
+            canvas.drawText(calendar.getLunar(), cx, mTextBaseLine + mItemHeight / 8,
+                    !TextUtils.isEmpty(calendar.getSolarTerm()) ? mSolarTermTextPaint : mSchemeLunarTextPaint);
         } else {
             canvas.drawText(String.valueOf(calendar.getDay()), cx, mTextBaseLine + top,
                     calendar.isCurrentDay() ? mCurDayTextPaint :
                             calendar.isCurrentMonth() ? mCurMonthTextPaint : mOtherMonthTextPaint);
 
-           canvas.drawText(calendar.getLunar(), cx, mTextBaseLine + mItemHeight / 8,
+            canvas.drawText(calendar.getLunar(), cx, mTextBaseLine + mItemHeight / 8,
                     calendar.isCurrentDay() ? mCurDayLunarTextPaint :
                             !TextUtils.isEmpty(calendar.getSolarTerm()) ? mSolarTermTextPaint :
                                     calendar.isCurrentMonth() ?

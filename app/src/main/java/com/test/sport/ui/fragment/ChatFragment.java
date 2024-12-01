@@ -1,6 +1,5 @@
 package com.test.sport.ui.fragment;
 
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -19,15 +18,13 @@ import com.test.sport.ui.adapter.ChatAdapter;
 import org.json.JSONObject;
 
 import java.io.IOException;
-import java.io.PrintWriter;
-import java.io.StringWriter;
 import java.util.ArrayList;
 import java.util.List;
 
 import okhttp3.Call;
 import okhttp3.Response;
 
-public class ChatFragment extends BaseFragment<FragmentChatBinding> implements View.OnClickListener{
+public class ChatFragment extends BaseFragment<FragmentChatBinding> implements View.OnClickListener {
     private ChatAdapter chatAdapter;
     private List<Message> messages = new ArrayList<>();
 
@@ -55,18 +52,16 @@ public class ChatFragment extends BaseFragment<FragmentChatBinding> implements V
     }
 
 
-
-
     @Override
     protected FragmentChatBinding onCreateViewBinding(@NonNull LayoutInflater inflater, @Nullable ViewGroup parent) {
-        return FragmentChatBinding.inflate(inflater,parent,false);
+        return FragmentChatBinding.inflate(inflater, parent, false);
     }
 
     @Override
     public void onClick(View view) {
-        if (view.getId() == R.id.btn_send){
+        if (view.getId() == R.id.btn_send) {
             String message = getBinding().etMessage.getText().toString();
-            
+
             sendMessage(message);
             getBinding().etMessage.setText("");
         }
@@ -75,7 +70,7 @@ public class ChatFragment extends BaseFragment<FragmentChatBinding> implements V
 
     private void sendMessage(String message) {
         if (message.trim().isEmpty()) return;
-        
+
         // 添加用户消息
         addMessage(message, Message.TYPE_USER);
 
@@ -111,8 +106,6 @@ public class ChatFragment extends BaseFragment<FragmentChatBinding> implements V
             }
         });
     }
-
-    
 
 
     private void addMessage(String content, int type) {

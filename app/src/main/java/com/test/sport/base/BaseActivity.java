@@ -44,8 +44,8 @@ public abstract class BaseActivity<T extends ViewBinding> extends AppCompatActiv
         return mBinding;
     }
 
-    public void showToast(String msg){
-        ToastUtils.getInstance().show(this,msg);
+    public void showToast(String msg) {
+        ToastUtils.getInstance().show(this, msg);
     }
 
     @Override

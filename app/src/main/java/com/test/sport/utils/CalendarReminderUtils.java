@@ -99,7 +99,7 @@ public class CalendarReminderUtils {
      * 添加日历事件
      */
     public static void addCalendarEvent(Context context, String title, String description, long startTime, String remindSetting) {
-       deleteCalendarEvent(context,title);
+        deleteCalendarEvent(context, title);
         if (context == null) {
             return;
         }
@@ -109,7 +109,7 @@ public class CalendarReminderUtils {
         }
         boolean repeat = false;
         String rule = "";
-        String repeatSetting="";
+        String repeatSetting = "";
         switch (repeatSetting) {
             case "不重复":
                 repeat = false;
@@ -132,7 +132,7 @@ public class CalendarReminderUtils {
         Calendar mCalendar = Calendar.getInstance();
         mCalendar.setTimeInMillis(startTime);//设置开始时间
         long start = mCalendar.getTime().getTime();
-        mCalendar.setTimeInMillis(startTime+10*60*1000);//设置终止时间，开始时间加10分钟
+        mCalendar.setTimeInMillis(startTime + 10 * 60 * 1000);//设置终止时间，开始时间加10分钟
         long end = mCalendar.getTime().getTime();
         ContentValues event = new ContentValues();
         event.put("title", title);
@@ -143,7 +143,7 @@ public class CalendarReminderUtils {
         event.put(CalendarContract.Events.HAS_ALARM, 1);//设置有闹钟提醒
         event.put(CalendarContract.Events.EVENT_TIMEZONE, TimeZone.getDefault().getID());//这个是时区，必须有
         if (repeat) {
-            event.put(CalendarContract.Events.RRULE, "FREQ=" + rule+";INTERVAL=1");//重复
+            event.put(CalendarContract.Events.RRULE, "FREQ=" + rule + ";INTERVAL=1");//重复
         }
         Uri newEvent = context.getContentResolver().insert(Uri.parse(CALENDER_EVENT_URL), event); //添加事件
         if (newEvent == null) { //添加日历事件失败直接返回
@@ -182,9 +182,9 @@ public class CalendarReminderUtils {
         ContentValues values = new ContentValues();
         values.put(CalendarContract.Reminders.EVENT_ID, ContentUris.parseId(newEvent));
         values.put(CalendarContract.Reminders.MINUTES, previousDate);// 提前previousDate有提醒
-        if (remind){
+        if (remind) {
             values.put(CalendarContract.Reminders.METHOD, CalendarContract.Reminders.METHOD_ALERT);
-        }else {//不提醒
+        } else {//不提醒
             values.put(CalendarContract.Reminders.METHOD, CalendarContract.Reminders.METHOD_ALARM);
         }
         Uri uri = context.getContentResolver().insert(Uri.parse(CALENDER_REMINDER_URL), values);

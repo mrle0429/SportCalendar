@@ -4,27 +4,18 @@ import android.content.Intent;
 import android.content.SharedPreferences;
 import android.util.Log;
 import android.view.LayoutInflater;
-import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AlertDialog;
 
-import com.alibaba.fastjson.JSON;
-import com.alibaba.fastjson.JSONObject;
 import com.test.nba.R;
 import com.test.nba.databinding.ActivityPreferenceBinding;
 import com.test.sport.base.BaseActivity;
-import com.test.sport.model.Team;
 import com.test.sport.utils.Tools;
 
-import org.json.JSONArray;
-
-import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.HashSet;
-import java.util.List;
 import java.util.Set;
-import java.util.stream.Collectors;
 
 public class PreferenceActivity extends BaseActivity<ActivityPreferenceBinding> {
     private static final String PREFS_NAME = "SettingsPrefs";

@@ -21,13 +21,14 @@ public class Game implements Serializable {
     private String venue_name;//场馆名称
     private int venue_capacity;//场馆容量
     private String city_name;//城市
-    private List<Score> Score;;//分场得分
+    private List<Score> Score;
+    ;//分场得分
     private String status;//not_started live ended closed postponed
     private int away_score;//客场得分
     private int home_score;//主场得分
     private int recommendScore;
 
-    public static class Score implements Serializable{
+    public static class Score implements Serializable {
         private int away_score;//客场得分
         private int home_score;//主场得分
         private int number;//1
@@ -57,7 +58,7 @@ public class Game implements Serializable {
         }
     }
 
-    public static class Competitors implements Serializable{
+    public static class Competitors implements Serializable {
         private String competitors_name;
         private String abbreviation;//缩写
         private String country_code;
@@ -224,7 +225,7 @@ public class Game implements Serializable {
         this.stage_type = stage_type;
     }
 
-    public int getRecommendScore(){
+    public int getRecommendScore() {
         return recommendScore;
     }
 

@@ -10,7 +10,6 @@ import okhttp3.MediaType;
 import okhttp3.OkHttpClient;
 import okhttp3.Protocol;
 import okhttp3.Request;
-import okhttp3.RequestBody;
 import okhttp3.Response;
 import okhttp3.ResponseBody;
 
@@ -21,24 +20,24 @@ public class OkHttpUtil {
     private static final String SECRET_KEY = "d6bf44c6a7b54fb6a3ea4c2b982c9940";
     private static Qianfan qianfan;
 
-    private static final String SYSTEM_PROMPT = 
-        "You are a professional sports assistant, helping users understand game information, " +
-        "rules explanations, and match analysis. Please respond in English with a concise and " +
-        "friendly tone. Key response guidelines:\n" +
-        "1. Provide accurate and clear explanations of game rules\n" +
-        "2. Maintain objectivity in match analysis\n" +
-        "3. Support opinions with historical data when relevant\n" +
-        "4. Focus on game analysis and avoid sensitive topics like gambling\n" +
-        "5. Clearly indicate when information is uncertain\n" +
-        "6. Keep responses focused on sports-related topics\n" +
-        "7. Use appropriate sports terminology\n" +
-        "8. Provide context when discussing specific matches or players";
+    private static final String SYSTEM_PROMPT =
+            "You are a professional sports assistant, helping users understand game information, " +
+                    "rules explanations, and match analysis. Please respond in English with a concise and " +
+                    "friendly tone. Key response guidelines:\n" +
+                    "1. Provide accurate and clear explanations of game rules\n" +
+                    "2. Maintain objectivity in match analysis\n" +
+                    "3. Support opinions with historical data when relevant\n" +
+                    "4. Focus on game analysis and avoid sensitive topics like gambling\n" +
+                    "5. Clearly indicate when information is uncertain\n" +
+                    "6. Keep responses focused on sports-related topics\n" +
+                    "7. Use appropriate sports terminology\n" +
+                    "8. Provide context when discussing specific matches or players";
 
     static {
         qianfan = new Qianfan(ACCESS_KEY, SECRET_KEY);
     }
 
-    public static void sendHttpRequest(String address,okhttp3.Callback callback) {
+    public static void sendHttpRequest(String address, okhttp3.Callback callback) {
         OkHttpClient client = new OkHttpClient();
         Request request = new Request.Builder()
                 .url(address)
@@ -68,7 +67,7 @@ public class OkHttpUtil {
                 }
 
                 // 构造OkHttp响应
-                String jsonResponse = "{\"choices\":[{\"message\":{\"content\":\"" + 
+                String jsonResponse = "{\"choices\":[{\"message\":{\"content\":\"" +
                         response.getResult() + "\"}}]}";
 
                 Response okResponse = new Response.Builder()

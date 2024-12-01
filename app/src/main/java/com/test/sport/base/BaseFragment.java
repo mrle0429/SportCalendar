@@ -21,7 +21,7 @@ public abstract class BaseFragment<T extends ViewBinding> extends Fragment {
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        mBinding = onCreateViewBinding(inflater,container);
+        mBinding = onCreateViewBinding(inflater, container);
         return mBinding.getRoot();
     }
 
@@ -48,14 +48,14 @@ public abstract class BaseFragment<T extends ViewBinding> extends Fragment {
         return mBinding;
     }
 
-    public void showToast(String msg){
-        ToastUtils.getInstance().show(getActivity(),msg);
+    public void showToast(String msg) {
+        ToastUtils.getInstance().show(getActivity(), msg);
     }
 
     @Override
     public void onDestroyView() {
         super.onDestroyView();
-        mBinding=null;
+        mBinding = null;
     }
 
 }

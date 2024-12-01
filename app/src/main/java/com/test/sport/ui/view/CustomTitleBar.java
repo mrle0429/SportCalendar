@@ -8,6 +8,7 @@ import android.view.View;
 import android.widget.ImageView;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
+
 import androidx.core.content.ContextCompat;
 
 import com.test.nba.R;
@@ -70,7 +71,7 @@ public class CustomTitleBar extends RelativeLayout {
             ivBack.setVisibility(INVISIBLE);
             tvFinish.setVisibility(View.VISIBLE);
             ivSave.setVisibility(View.INVISIBLE);
-        }else if (titleBarType == 5) {//左侧图标不显示，右侧显示图片
+        } else if (titleBarType == 5) {//左侧图标不显示，右侧显示图片
             ivBack.setVisibility(INVISIBLE);
             tvFinish.setVisibility(View.GONE);
             ivSave.setVisibility(View.VISIBLE);
@@ -83,7 +84,7 @@ public class CustomTitleBar extends RelativeLayout {
     }
 
     public void setBgColor(Context context, int colorId) {
-        rlTitle.setBackgroundColor(ContextCompat.getColor(context,colorId));
+        rlTitle.setBackgroundColor(ContextCompat.getColor(context, colorId));
     }
 
     public void setBgImg(Context context, int imgId) {
@@ -91,8 +92,8 @@ public class CustomTitleBar extends RelativeLayout {
     }
 
     public void setTitleColor(Context context, int colorId) {
-        tvTitle.setTextColor(ContextCompat.getColor(context,colorId));
-        tvFinish.setTextColor(ContextCompat.getColor(context,colorId));
+        tvTitle.setTextColor(ContextCompat.getColor(context, colorId));
+        tvFinish.setTextColor(ContextCompat.getColor(context, colorId));
     }
 
     public void setRightIconVisibility(boolean show) {

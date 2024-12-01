@@ -23,7 +23,6 @@ import com.test.sport.event.ScheduleEvent;
 import com.test.sport.ui.activity.SportActivity;
 import com.test.sport.ui.adapter.ScheduleAdapter;
 import com.test.sport.utils.CalendarReminderUtils;
-import com.test.sport.utils.LogUtils;
 
 import org.greenrobot.eventbus.EventBus;
 import org.greenrobot.eventbus.Subscribe;

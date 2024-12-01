@@ -52,8 +52,8 @@ public class TeamAdapter extends RecyclerView.Adapter<TeamAdapter.TeamViewHolder
     }
 
     private void updateFavoriteState(ImageView imageView, boolean isFavorite) {
-        imageView.setImageResource(isFavorite ? 
-            android.R.drawable.star_big_on : android.R.drawable.star_big_off);
+        imageView.setImageResource(isFavorite ?
+                android.R.drawable.star_big_on : android.R.drawable.star_big_off);
     }
 
     @Override

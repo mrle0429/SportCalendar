@@ -8,7 +8,6 @@ import com.test.sport.db.gen.DaoMaster;
 import com.test.sport.db.gen.DaoSession;
 import com.test.sport.db.gen.ScheduleDao;
 
-
 import java.util.List;
 
 // TODO:日程管理类 

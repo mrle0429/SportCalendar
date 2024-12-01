@@ -2,6 +2,7 @@ package com.test.sport.ui.activity;
 
 import android.app.NotificationChannel;
 import android.app.NotificationManager;
+import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.icu.util.TimeZone;
@@ -19,12 +20,10 @@ import androidx.appcompat.app.AlertDialog;
 import androidx.core.app.NotificationCompat;
 import androidx.core.app.NotificationManagerCompat;
 
-import android.content.Context;
-
+import com.amap.api.location.AMapLocation;
 import com.amap.api.location.AMapLocationClient;
 import com.amap.api.location.AMapLocationClientOption;
 import com.amap.api.location.AMapLocationListener;
-import com.amap.api.location.AMapLocation;
 import com.hjq.permissions.OnPermissionCallback;
 import com.hjq.permissions.Permission;
 import com.hjq.permissions.XXPermissions;
@@ -93,7 +92,7 @@ public class SettingActivity extends BaseActivity<ActivitySettingBinding> implem
         getBinding().titleBar.setTitle("Setting");
         // 设置返回按钮点击事件
         getBinding().titleBar.setLeftIconOnClickListener(v -> finish());
-        
+
         initLocation();
         loadPreferences();
 

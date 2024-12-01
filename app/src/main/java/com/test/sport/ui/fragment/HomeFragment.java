@@ -1,7 +1,6 @@
 package com.test.sport.ui.fragment;
 
 
-
 import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
@@ -36,24 +35,19 @@ import com.test.sport.ui.activity.SportActivity;
 import com.test.sport.ui.adapter.GameAdapter;
 import com.test.sport.ui.adapter.RecommendedGamesAdapter;
 import com.test.sport.utils.Constants;
-import com.test.sport.utils.LogUtils;
 import com.test.sport.utils.Tools;
 
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
-import java.sql.Time;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Date;
 import java.util.HashSet;
-import java.util.LinkedHashSet;
 import java.util.List;
 import java.util.Set;
-import java.util.TimeZone;
-import java.util.stream.Collectors;
 
 import okhttp3.Call;
 import okhttp3.Response;
@@ -91,13 +85,13 @@ public class HomeFragment extends BaseFragment<FragmentHomeBinding> implements V
         getBinding().tvSport.setText(defaultSport);
 
         // 设置对应的index
-    for (int i = 0; i < SUPPORTED_SPORTS.length; i++) {
-        if (SUPPORTED_SPORTS[i].equals(defaultSport)) {
-            index = i;
-            break;
+        for (int i = 0; i < SUPPORTED_SPORTS.length; i++) {
+            if (SUPPORTED_SPORTS[i].equals(defaultSport)) {
+                index = i;
+                break;
+            }
         }
-    }
-        
+
         getBinding().calendarView.setOnCalendarSelectListener(this);
         // 隐藏月视图，显示周视图
         getBinding().calendarView.getMonthViewPager().setVisibility(View.GONE);
@@ -119,7 +113,6 @@ public class HomeFragment extends BaseFragment<FragmentHomeBinding> implements V
         }
 
 
-
         //initLocalData(0);//本地json数据
         request(index);//网络请求
     }
@@ -130,8 +123,8 @@ public class HomeFragment extends BaseFragment<FragmentHomeBinding> implements V
         getBinding().tvSport.setOnClickListener(this);
         getBinding().tvSearch.setOnClickListener(this);
 
-         // 添加设置图标点击事件
-         getBinding().ivSetting.setOnClickListener(this); // 添加设置图标的点击监听
+        // 添加设置图标点击事件
+        getBinding().ivSetting.setOnClickListener(this); // 添加设置图标的点击监听
 
     }
 
@@ -158,7 +151,7 @@ public class HomeFragment extends BaseFragment<FragmentHomeBinding> implements V
                 break;
 
             case R.id.iv_setting:
-                 // 直接跳转到设置Activity
+                // 直接跳转到设置Activity
                 Intent intent = new Intent(getActivity(), SettingActivity.class);
                 startActivity(intent);
                 break;
@@ -172,104 +165,105 @@ public class HomeFragment extends BaseFragment<FragmentHomeBinding> implements V
         IntentFilter filter = new IntentFilter("com.test.sport.TIMEZONE_CHANGED");
         getActivity().registerReceiver(timezoneChangedReceiver, filter);
 
-      // 注册默认运动变化广播
-      IntentFilter sportFilter = new IntentFilter("com.test.sport.DEFAULT_SPORT_CHANGED");
-      getActivity().registerReceiver(sportChangedReceiver, sportFilter);
+        // 注册默认运动变化广播
+        IntentFilter sportFilter = new IntentFilter("com.test.sport.DEFAULT_SPORT_CHANGED");
+        getActivity().registerReceiver(sportChangedReceiver, sportFilter);
 
-      // 注册收藏变化广播
-    IntentFilter favoritesFilter = new IntentFilter("com.test.sport.FAVORITES_CHANGED");
-    requireContext().registerReceiver(favoritesChangedReceiver, favoritesFilter);
-    
-    Log.d("HomeFragment", "注册收藏变化广播接收器");
+        // 注册收藏变化广播
+        IntentFilter favoritesFilter = new IntentFilter("com.test.sport.FAVORITES_CHANGED");
+        requireContext().registerReceiver(favoritesChangedReceiver, favoritesFilter);
 
-      
-      // 初始化默认运动
-      SharedPreferences prefs = getActivity().getSharedPreferences(PREFS_NAME, Context.MODE_PRIVATE);
-      String defaultSport = prefs.getString("default_sport", "Soccer");
-      getBinding().tvSport.setText(defaultSport);
-      // 设置对应的index
-      for (int i = 0; i < SUPPORTED_SPORTS.length; i++) {
-          if (SUPPORTED_SPORTS[i].equals(defaultSport)) {
-              index = i;
-              break;
-          }
-      }
-      request(index);
-}
+        Log.d("HomeFragment", "注册收藏变化广播接收器");
+
+
+        // 初始化默认运动
+        SharedPreferences prefs = getActivity().getSharedPreferences(PREFS_NAME, Context.MODE_PRIVATE);
+        String defaultSport = prefs.getString("default_sport", "Soccer");
+        getBinding().tvSport.setText(defaultSport);
+        // 设置对应的index
+        for (int i = 0; i < SUPPORTED_SPORTS.length; i++) {
+            if (SUPPORTED_SPORTS[i].equals(defaultSport)) {
+                index = i;
+                break;
+            }
+        }
+        request(index);
+    }
 
     private final BroadcastReceiver timezoneChangedReceiver = new BroadcastReceiver() {
         @Override
         public void onReceive(Context context, Intent intent) {
-        if ("com.test.sport.TIMEZONE_CHANGED".equals(intent.getAction())) {
-            // 重新加载时区
-            SharedPreferences preferences = getActivity().getSharedPreferences(PREFS_NAME, Context.MODE_PRIVATE);
-            timeZoneId = preferences.getString(PREF_SELECTED_TIMEZONE, android.icu.util.TimeZone.getDefault().getID());
-            Log.d("HomeFragment1", "时区已更改，重新加载: " + timeZoneId);
+            if ("com.test.sport.TIMEZONE_CHANGED".equals(intent.getAction())) {
+                // 重新加载时区
+                SharedPreferences preferences = getActivity().getSharedPreferences(PREFS_NAME, Context.MODE_PRIVATE);
+                timeZoneId = preferences.getString(PREF_SELECTED_TIMEZONE, android.icu.util.TimeZone.getDefault().getID());
+                Log.d("HomeFragment1", "时区已更改，重新加载: " + timeZoneId);
 
-            // 重新请求数据
-            request(index);
-            //initLocalData(index);
+                // 重新请求数据
+                request(index);
+                //initLocalData(index);
+            }
         }
-    }
-};
+    };
 
     private final BroadcastReceiver sportChangedReceiver = new BroadcastReceiver() {
-    @Override
-    public void onReceive(Context context, Intent intent) {
-        if ("com.test.sport.DEFAULT_SPORT_CHANGED".equals(intent.getAction())) {
-            String newDefaultSport = intent.getStringExtra("sport");
-            // 更新显示
-            getBinding().tvSport.setText(newDefaultSport);
-            // 更新index并重新请求数据
-            for (int i = 0; i < SUPPORTED_SPORTS.length; i++) {
-                if (SUPPORTED_SPORTS[i].equals(newDefaultSport)) {
-                    index = i;
-                    break;
+        @Override
+        public void onReceive(Context context, Intent intent) {
+            if ("com.test.sport.DEFAULT_SPORT_CHANGED".equals(intent.getAction())) {
+                String newDefaultSport = intent.getStringExtra("sport");
+                // 更新显示
+                getBinding().tvSport.setText(newDefaultSport);
+                // 更新index并重新请求数据
+                for (int i = 0; i < SUPPORTED_SPORTS.length; i++) {
+                    if (SUPPORTED_SPORTS[i].equals(newDefaultSport)) {
+                        index = i;
+                        break;
+                    }
                 }
-            }
-            search = false;
-            request(index);
-        }
-    }
-};
-
-// 添加广播接收器
-private final BroadcastReceiver favoritesChangedReceiver = new BroadcastReceiver() {
-    @Override
-    public void onReceive(Context context, Intent intent) {
-        if ("com.test.sport.FAVORITES_CHANGED".equals(intent.getAction())) {
-            Log.d("FavoriteDebug", "HomeFragment收到收藏变化广播");
-            
-            // 获取最新的收藏球队列表
-            SharedPreferences prefs = requireContext().getSharedPreferences(PREFS_NAME, Context.MODE_PRIVATE);
-            Set<String> newFavorites = prefs.getStringSet(KEY_FAVORITE_TEAMS, new HashSet<>());
-            
-            // 更新推荐适配器中的收藏球队集合
-            if (recommendedAdapter != null) {
-                Log.d("FavoriteDebug", "更新推荐适配器的收藏球队列表: " + newFavorites);
-                recommendedAdapter.updateFavoriteTeams(newFavorites);
-                // 重新请求数据以更新推荐列表
+                search = false;
                 request(index);
             }
         }
-    }
-};
+    };
+
+    // 添加广播接收器
+    private final BroadcastReceiver favoritesChangedReceiver = new BroadcastReceiver() {
+        @Override
+        public void onReceive(Context context, Intent intent) {
+            if ("com.test.sport.FAVORITES_CHANGED".equals(intent.getAction())) {
+                Log.d("FavoriteDebug", "HomeFragment收到收藏变化广播");
+
+                // 获取最新的收藏球队列表
+                SharedPreferences prefs = requireContext().getSharedPreferences(PREFS_NAME, Context.MODE_PRIVATE);
+                Set<String> newFavorites = prefs.getStringSet(KEY_FAVORITE_TEAMS, new HashSet<>());
+
+                // 更新推荐适配器中的收藏球队集合
+                if (recommendedAdapter != null) {
+                    Log.d("FavoriteDebug", "更新推荐适配器的收藏球队列表: " + newFavorites);
+                    recommendedAdapter.updateFavoriteTeams(newFavorites);
+                    // 重新请求数据以更新推荐列表
+                    request(index);
+                }
+            }
+        }
+    };
 
     @Override
     public void onDestroyView() {
-    super.onDestroyView();
-    if (timezoneChangedReceiver != null) {
-        getActivity().unregisterReceiver(timezoneChangedReceiver);
-    }
-    if (sportChangedReceiver != null) {
-        getActivity().unregisterReceiver(sportChangedReceiver);
-    }
-    if (favoritesChangedReceiver != null) {
-        requireContext().unregisterReceiver(favoritesChangedReceiver);
-    }
+        super.onDestroyView();
+        if (timezoneChangedReceiver != null) {
+            getActivity().unregisterReceiver(timezoneChangedReceiver);
+        }
+        if (sportChangedReceiver != null) {
+            getActivity().unregisterReceiver(sportChangedReceiver);
+        }
+        if (favoritesChangedReceiver != null) {
+            requireContext().unregisterReceiver(favoritesChangedReceiver);
+        }
 
 
-}
+    }
+
     // 搜索功能
     private void search() {
 
@@ -316,16 +310,16 @@ private final BroadcastReceiver favoritesChangedReceiver = new BroadcastReceiver
                         })
                 .show();
 
-    //     // 设置默认选中的运动
-    //     getBinding().tvSport.setText(defaultSport);
-    //     for (int i = 0; i < SUPPORTED_SPORTS.length; i++) {
-    //         if (SUPPORTED_SPORTS[i].equals(defaultSport)) {
-    //         index = i;
-    //         break;
-    //     }
-    // }
-    // search = false;
-    // handler.sendEmptyMessage(0);
+        //     // 设置默认选中的运动
+        //     getBinding().tvSport.setText(defaultSport);
+        //     for (int i = 0; i < SUPPORTED_SPORTS.length; i++) {
+        //         if (SUPPORTED_SPORTS[i].equals(defaultSport)) {
+        //         index = i;
+        //         break;
+        //     }
+        // }
+        // search = false;
+        // handler.sendEmptyMessage(0);
     }
 
     private void initLocalData(int index) {
@@ -412,17 +406,17 @@ private final BroadcastReceiver favoritesChangedReceiver = new BroadcastReceiver
     private void request(int index) {
         WaitDialog.show("Please Wait!");
         gameList.clear(); // 清空比赛列表
-        
+
         // 添加计数器和锁来确保两个请求都完成
         final int[] completedRequests = {0};
         final Object lock = new Object();
-        
+
         try {
             Log.d("DateDebug", "今天：" + date);
             Log.d("DateDebug", "昨天：" + previousDate);
             // 请求两天的数据
 
-            
+
             requestForDate(index, previousDate, new RequestCallback() {
                 @Override
                 public void onComplete() {
@@ -469,7 +463,7 @@ private final BroadcastReceiver favoritesChangedReceiver = new BroadcastReceiver
     private void requestForDate(int index, String requestDate, RequestCallback callback) {
         Log.d("DateDebug", "准备请求日期: " + requestDate + ", 运动索引: " + index);
         switch (index) {
-            case 0: 
+            case 0:
                 address = Constants.BASKET_BALL_URL + requestDate + Constants.SUFFIX + "?api_key=" + Constants.BASKET_BALL_KEY;
                 break;
 
@@ -499,7 +493,7 @@ private final BroadcastReceiver favoritesChangedReceiver = new BroadcastReceiver
                             Log.d("DateDebug", "请求地址: " + call.request().url());
                             Log.d("DateDebug", "API返回比赛总数: " + sport.getSummaries().size());
 
-                            
+
                             for (Sport.SummariesDTO summariesDTO : sport.getSummaries()) {
                                 String startTime = Tools.getTime(summariesDTO.getSportEvent().getStartTime(), timeZoneId);
                                 String gameDate = startTime.split(" ")[0];
@@ -520,31 +514,31 @@ private final BroadcastReceiver favoritesChangedReceiver = new BroadcastReceiver
                                     game.setStage_type(summariesDTO.getSportEvent().getSportEventContext().getStage().getType());
                                     game.setStage_phase(summariesDTO.getSportEvent().getSportEventContext().getStage().getPhase());
 
-                            if (null != summariesDTO.getSportEvent().getVenue()) {
-                                game.setVenue_name(summariesDTO.getSportEvent().getVenue().getName());
-                                if (null != summariesDTO.getSportEvent().getVenue().getCapacity()) {
-                                    game.setVenue_capacity(summariesDTO.getSportEvent().getVenue().getCapacity());
-                                }
-                                game.setCity_name(summariesDTO.getSportEvent().getVenue().getCityName());
-                            }
+                                    if (null != summariesDTO.getSportEvent().getVenue()) {
+                                        game.setVenue_name(summariesDTO.getSportEvent().getVenue().getName());
+                                        if (null != summariesDTO.getSportEvent().getVenue().getCapacity()) {
+                                            game.setVenue_capacity(summariesDTO.getSportEvent().getVenue().getCapacity());
+                                        }
+                                        game.setCity_name(summariesDTO.getSportEvent().getVenue().getCityName());
+                                    }
 
-                            List<Sport.SummariesDTO.SportEventStatusDTO.PeriodScoresDTO> periodScores = summariesDTO.getSportEventStatus().getPeriodScores();
+                                    List<Sport.SummariesDTO.SportEventStatusDTO.PeriodScoresDTO> periodScores = summariesDTO.getSportEventStatus().getPeriodScores();
 
-                            if (periodScores != null) {
-                                List<Game.Score> scoreList = new ArrayList<>();
-                                for (Sport.SummariesDTO.SportEventStatusDTO.PeriodScoresDTO periodScoresDTO : periodScores) {
-                                    Game.Score score = new Game.Score();
-                                    score.setAway_score(periodScoresDTO.getAwayScore());
-                                    score.setHome_score(periodScoresDTO.getHomeScore());
-                                    score.setNumber(periodScoresDTO.getNumber() == null ? 0 : periodScoresDTO.getNumber());
-                                    scoreList.add(score);
-                                }
-                                game.setScore(scoreList);
-                            }
+                                    if (periodScores != null) {
+                                        List<Game.Score> scoreList = new ArrayList<>();
+                                        for (Sport.SummariesDTO.SportEventStatusDTO.PeriodScoresDTO periodScoresDTO : periodScores) {
+                                            Game.Score score = new Game.Score();
+                                            score.setAway_score(periodScoresDTO.getAwayScore());
+                                            score.setHome_score(periodScoresDTO.getHomeScore());
+                                            score.setNumber(periodScoresDTO.getNumber() == null ? 0 : periodScoresDTO.getNumber());
+                                            scoreList.add(score);
+                                        }
+                                        game.setScore(scoreList);
+                                    }
 
-                            // 为每场比赛创建新的队伍列表
-                            List<Game.Competitors> competitorsList = new ArrayList<>();
-                            List<Sport.SummariesDTO.SportEventDTO.CompetitorsDTO> competitors = summariesDTO.getSportEvent().getCompetitors();
+                                    // 为每场比赛创建新的队伍列表
+                                    List<Game.Competitors> competitorsList = new ArrayList<>();
+                                    List<Sport.SummariesDTO.SportEventDTO.CompetitorsDTO> competitors = summariesDTO.getSportEvent().getCompetitors();
 
                                     if (competitors != null) {
                                         for (Sport.SummariesDTO.SportEventDTO.CompetitorsDTO competitorsDTO : competitors) {
@@ -570,7 +564,7 @@ private final BroadcastReceiver favoritesChangedReceiver = new BroadcastReceiver
                         }
                     }
                 }
-                
+
                 getActivity().runOnUiThread(() -> {
                     callback.onComplete();
                 });
@@ -632,13 +626,13 @@ private final BroadcastReceiver favoritesChangedReceiver = new BroadcastReceiver
             }
             updateRecommendedGames();
         }
-        
+
         if (dataList.size() == 0) {
             getBinding().tvShow.setVisibility(View.VISIBLE);
         } else {
             getBinding().tvShow.setVisibility(View.GONE);
         }
-        
+
         if (gameAdapter == null) {
             gameAdapter = new GameAdapter(getActivity(), dataList);
             getBinding().rvData.setLayoutManager(new LinearLayoutManager(getActivity(),
@@ -706,10 +700,10 @@ private final BroadcastReceiver favoritesChangedReceiver = new BroadcastReceiver
         Set<String> preferredTimes = prefs.getStringSet(KEY_PREFERRED_TIMES, new HashSet<>());
 
         Log.d("RecommendDebug", "总比赛数量: " + gameList.size());
-        
+
         // 临时：取前两场比赛作为推荐
         List<Game> scoredGames = new ArrayList<>();
-        
+
         for (Game game : gameList) {
             int score = calculateGameScore(game, favoriteTeams, preferredTimes);
             game.setRecommendScore(score);
@@ -735,19 +729,19 @@ private final BroadcastReceiver favoritesChangedReceiver = new BroadcastReceiver
 
         Log.d("RecommendDebug", "推荐比赛数量: " + recommendedGames.size());
         for (Game game : recommendedGames) {
-            Log.d("RecommendDebug", "推荐比赛: " + game.getCompetition_name() + 
-                  ", 分数: " + game.getRecommendScore());
+            Log.d("RecommendDebug", "推荐比赛: " + game.getCompetition_name() +
+                    ", 分数: " + game.getRecommendScore());
         }
-        
+
         // 更新推荐赛事适配器
         if (recommendedAdapter == null) {
             Log.d("RecommendDebug", "创建新的推荐适配器");
             recommendedAdapter = new RecommendedGamesAdapter(getActivity(), recommendedGames, favoriteTeams);
-            LinearLayoutManager layoutManager = new LinearLayoutManager(getActivity(), 
+            LinearLayoutManager layoutManager = new LinearLayoutManager(getActivity(),
                     LinearLayoutManager.HORIZONTAL, false);
             getBinding().rvRecommendedGames.setLayoutManager(layoutManager);
             getBinding().rvRecommendedGames.setAdapter(recommendedAdapter);
-            
+
             recommendedAdapter.setOnClickListener(pos -> {
                 Intent intent = new Intent(getActivity(), SportActivity.class);
                 intent.putExtra("game", recommendedGames.get(pos));
@@ -762,7 +756,7 @@ private final BroadcastReceiver favoritesChangedReceiver = new BroadcastReceiver
 
     private int calculateGameScore(Game game, Set<String> favoriteTeams, Set<String> preferredTimes) {
         int score = 0;
-        
+
         // 检查是否包含收藏的球队
         if (game.getCompetitors() != null) {
             for (Game.Competitors competitor : game.getCompetitors()) {
@@ -774,7 +768,7 @@ private final BroadcastReceiver favoritesChangedReceiver = new BroadcastReceiver
                 }
             }
         }
-    
+
         // 2. 检查比赛时间是否在偏好时间段内
         try {
             int hour = Integer.parseInt(game.getStart_time().substring(11, 13));
@@ -808,17 +802,16 @@ private final BroadcastReceiver favoritesChangedReceiver = new BroadcastReceiver
             // 篮球热门赛事
             if (competition != null) {
                 if (Tools.isPopularBasketballEvent(competition) ||
-                    Tools.isPopularFootballEvent(competition) ||
-                    Tools.isPopularHockeyEvent(competition) ||
-                    Tools.isPopularTennisEvent(competition)) {
+                        Tools.isPopularFootballEvent(competition) ||
+                        Tools.isPopularHockeyEvent(competition) ||
+                        Tools.isPopularTennisEvent(competition)) {
                     score += 20;
                     Log.d("RecommendDebug", "热门赛事: " + competition);
                 }
             }
         }
-    
 
-    
+
         return score;
     }
 }
