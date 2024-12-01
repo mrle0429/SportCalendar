@@ -149,4 +149,120 @@ public class Tools {
         }
     }
 
+    //判断热门赛事
+        // 足球热门赛事判断
+        public static boolean isPopularFootballEvent(String competition) {
+            // 定义精确的热门赛事名称列表
+            final String[] POPULAR_FOOTBALL_EVENTS = {
+                "Premier League",    // 英超
+                "UEFA Champions League",     // 欧冠
+                "LaLiga Santander",         // 西甲
+                "Bundesliga",               // 德甲
+                "Serie A",                  // 意甲
+                "Ligue 1",                  // 法甲
+                "FIFA World Cup",           // 世界杯
+                "UEFA European Championship",// 欧洲杯
+                "Copa América"              // 美洲杯
+            };
+    
+            // 精确匹配完整赛事名称
+            for (String event : POPULAR_FOOTBALL_EVENTS) {
+                if (competition.equals(event)) {
+                    return true;
+                }
+            }
+    
+            // 特殊情况处理（如世界杯相关赛事）
+            if (competition.startsWith("FIFA World Cup") && 
+                !competition.toLowerCase().contains("qualification") && 
+                !competition.toLowerCase().contains("u20") && 
+                !competition.toLowerCase().contains("u21") && 
+                !competition.toLowerCase().contains("u23")) {
+                return true;
+            }
+    
+            return false;
+        }
+
+
+        // 篮球热门赛事判断
+        public static boolean isPopularBasketballEvent(String competition) {
+        final String[] POPULAR_BASKETBALL_EVENTS = {
+            "NBA",                          // NBA
+            "NBA Regular Season",           // NBA常规赛
+            "NBA Playoffs",                 // NBA季后赛
+            "NBA Finals",                   // NBA总决赛
+            "CBA",                          // CBA
+            "EuroLeague",                   // 欧洲联赛
+            "FIBA Basketball World Cup",    // 世界杯
+            "NCAA Division I"               // NCAA一级联赛
+        };
+        
+        for (String event : POPULAR_BASKETBALL_EVENTS) {
+            if (competition.equals(event)) {
+                return true;
+            }
+        }
+        return false;
+    }
+
+     // 冰球热门赛事判断
+     public static boolean isPopularHockeyEvent(String competition) {
+        final String[] POPULAR_HOCKEY_EVENTS = {
+            "NHL",                          // NHL
+            "NHL Regular Season",           // NHL常规赛
+            "NHL Playoffs",                 // NHL季后赛
+            "NHL Stanley Cup",              // NHL斯坦利杯
+            "KHL",                          // KHL
+            "IIHF World Championship",      // 世界锦标赛
+            "Champions Hockey League"        // 欧洲冠军联赛
+        };
+        
+        for (String event : POPULAR_HOCKEY_EVENTS) {
+            if (competition.equals(event)) {
+                return true;
+            }
+        }
+        return false;
+    }
+
+     // 网球热门赛事判断
+     public static boolean isPopularTennisEvent(String competition) {
+        final String[] POPULAR_TENNIS_EVENTS = {
+            "Australian Open",              // 澳网
+            "French Open",                  // 法网
+            "Wimbledon",                    // 温网
+            "US Open",                      // 美网
+            "ATP Finals",                   // ATP年终总决赛
+            "WTA Finals",                   // WTA年终总决赛
+            "Davis Cup",                    // 戴维斯杯
+            "ATP Masters 1000"              // ATP大师赛
+        };
+        
+        for (String event : POPULAR_TENNIS_EVENTS) {
+            if (competition.equals(event)) {
+                return true;
+            }
+        }
+        
+        // 特殊情况处理：大师赛系列
+        if (competition.contains("Masters 1000") && 
+            !competition.toLowerCase().contains("qualification")) {
+            return true;
+        }
+        
+        return false;
+    }
+
+    //计算前一天
+    public static String toPreviousDate(String date) throws ParseException {
+        String previousDate;
+        SimpleDateFormat parser = new SimpleDateFormat("yyyy-MM-dd");
+        java.util.Calendar cal = java.util.Calendar.getInstance();
+        cal.setTime(parser.parse(date));
+        cal.add(java.util.Calendar.DAY_OF_MONTH, -1);
+        previousDate = parser.format(cal.getTime());
+        return previousDate;
+    }
+
 }

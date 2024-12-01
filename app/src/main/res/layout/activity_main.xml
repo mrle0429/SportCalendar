@@ -4,8 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
     android:background="@color/bg_search"
+    android:orientation="vertical"
     tools:context="com.test.sport.ui.activity.MainActivity">
 
     <androidx.viewpager2.widget.ViewPager2
@@ -24,8 +24,8 @@
         android:layout_width="match_parent"
         android:layout_height="58dp"
         app:itemBackground="@color/white"
-        app:itemTextColor="@color/tab_color"
         app:itemPaddingTop="5dp"
+        app:itemTextColor="@color/tab_color"
         app:labelVisibilityMode="labeled"
         app:menu="@menu/navigation_main" />
 

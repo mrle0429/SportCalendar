@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    xmlns:tools="http://schemas.android.com/tools"
     tools:viewBindingIgnore="true">
 
     <!--标题栏-->
@@ -15,10 +15,10 @@
             android:id="@+id/iv_back"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
             android:padding="13dp"
             android:scaleType="centerInside"
-            android:layout_centerVertical="true"
-            android:src="@drawable/bt_back_black"/>
+            android:src="@drawable/bt_back_black" />
 
         <TextView
             android:id="@+id/tv_title"
@@ -37,15 +37,15 @@
             android:layout_alignParentEnd="true"
             android:layout_centerVertical="true"
             android:padding="13dp"
-            android:textSize="13sp"
-            android:textColor="@color/white" />
+            android:textColor="@color/white"
+            android:textSize="13sp" />
 
         <ImageView
             android:id="@+id/iv_save"
-            android:layout_alignParentEnd="true"
-            android:layout_centerVertical="true"
             android:layout_width="50dp"
             android:layout_height="50dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
             android:padding="13dp"
             android:scaleType="centerInside" />
 

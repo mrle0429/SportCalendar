@@ -106,8 +106,7 @@ public class SportActivity extends BaseActivity<ActivitySportBinding> {
                 .isViewMode(true)
                 .offsetY(50) //弹窗在y方向的偏移量
                 .atView(getBinding().tvSchedule)  // 依附于所点击的View，内部会自动判断在上方或者下方显示
-                .asAttachList(new String[]{"不提醒", "准点提醒", "提前10分钟", "提前30分钟",
-                                "提前1小时", "提前2小时"},
+                .asAttachList(new String[]{"No Reminder", "On Time", "10 Minutes Before", "30 Minutes Before", "1 Hour Before", "2 Hours Before"},
                         new int[]{},
                         (position, text) -> {
                             remind = text;

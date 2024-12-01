@@ -109,7 +109,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="今日推荐赛事"
+                android:text="Today's Recommended Events"
                 android:textSize="16sp"
                 android:textStyle="bold"
                 android:textColor="@color/black"
@@ -136,7 +136,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="所有赛事"
+                android:text="Today's Events"
                 android:textSize="16sp"
                 android:textStyle="bold"
                 android:textColor="@color/black"

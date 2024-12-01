@@ -54,6 +54,7 @@
             android:value="wJrSDQcTm8QvMu7AwoBprzeSlpjWbljc" >
         </meta-data>
         <service android:name="com.baidu.location.f" android:enabled="true" android:process=":remote"> </service>
+        <service android:name="com.amap.api.location.APSService"></service>
 
 
 

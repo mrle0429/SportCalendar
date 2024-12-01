@@ -85,14 +85,43 @@ public class HomeFragment extends BaseFragment<FragmentHomeBinding> implements V
         SharedPreferences preferences = getActivity().getSharedPreferences(PREFS_NAME, Context.MODE_PRIVATE);
         timeZoneId = preferences.getString(PREF_SELECTED_TIMEZONE, android.icu.util.TimeZone.getDefault().getID());
         Log.d("HomeFragment1", "加载的时区: " + timeZoneId);
+
+        // 获取默认运动设置
+        String defaultSport = preferences.getString("default_sport", "Soccer");
+        getBinding().tvSport.setText(defaultSport);
+
+        // 设置对应的index
+    for (int i = 0; i < SUPPORTED_SPORTS.length; i++) {
+        if (SUPPORTED_SPORTS[i].equals(defaultSport)) {
+            index = i;
+            break;
+        }
+    }
         
         getBinding().calendarView.setOnCalendarSelectListener(this);
         // 隐藏月视图，显示周视图
         getBinding().calendarView.getMonthViewPager().setVisibility(View.GONE);
         getBinding().calendarView.getWeekViewPager().setVisibility(View.VISIBLE);
         date = Tools.customFormat(new Date(), "yyyy-MM-dd");
+
+        try {
+
+
+            // 使用同样的Tools类计算前一天
+
+            SimpleDateFormat parser = new SimpleDateFormat("yyyy-MM-dd");
+            java.util.Calendar cal = java.util.Calendar.getInstance();
+            cal.setTime(parser.parse(date));
+            cal.add(java.util.Calendar.DAY_OF_MONTH, -1);
+            previousDate = parser.format(cal.getTime());
+        } catch (ParseException e) {
+            e.printStackTrace();
+        }
+
+
+
         //initLocalData(0);//本地json数据
-        request(0);//网络请求
+        request(index);//网络请求
     }
 
     @Override
@@ -156,7 +185,7 @@ public class HomeFragment extends BaseFragment<FragmentHomeBinding> implements V
       
       // 初始化默认运动
       SharedPreferences prefs = getActivity().getSharedPreferences(PREFS_NAME, Context.MODE_PRIVATE);
-      String defaultSport = prefs.getString("default_sport", "Basketball");
+      String defaultSport = prefs.getString("default_sport", "Soccer");
       getBinding().tvSport.setText(defaultSport);
       // 设置对应的index
       for (int i = 0; i < SUPPORTED_SPORTS.length; i++) {
@@ -752,16 +781,16 @@ private final BroadcastReceiver favoritesChangedReceiver = new BroadcastReceiver
             Log.d("RecommendDebug", "比赛时间： " + hour);
 
             for (String timeRange : preferredTimes) {
-                if (timeRange.contains("早上") && hour >= 6 && hour < 12) {
+                if (timeRange.contains("Morning") && hour >= 6 && hour < 12) {
                     score += 20;
                     Log.d("RecommendDebug", "符合早上时段偏好");
-                } else if (timeRange.contains("下午") && hour >= 12 && hour < 18) {
+                } else if (timeRange.contains("Afternoon") && hour >= 12 && hour < 18) {
                     score += 20;
                     Log.d("RecommendDebug", "符合下午时段偏好");
-                } else if (timeRange.contains("晚上") && hour >= 18 && hour < 24) {
+                } else if (timeRange.contains("Evening") && hour >= 18 && hour < 24) {
                     score += 20;
                     Log.d("RecommendDebug", "符合晚上时段偏好");
-                } else if (timeRange.contains("凌晨") && hour >= 0 && hour < 6) {
+                } else if (timeRange.contains("Dawn") && hour >= 0 && hour < 6) {
                     score += 20;
                     Log.d("RecommendDebug", "符合凌晨时段偏好");
                 }
@@ -777,45 +806,14 @@ private final BroadcastReceiver favoritesChangedReceiver = new BroadcastReceiver
         String competition = game.getCompetition_name();
         if (competition != null) {
             // 篮球热门赛事
-            if (competition.contains("NBA") ||
-                    competition.contains("CBA") ||
-                    competition.contains("EuroLeague") ||
-                    competition.contains("FIBA World Cup") ||
-                    competition.contains("NCAA")) {
-                score += 20;
-
-            }
-
-            // 足球热门赛事
-            if (competition.contains("Premier League") ||
-                    competition.contains("Champions League") ||
-                    competition.contains("La Liga") ||
-                    competition.contains("Bundesliga") ||
-                    competition.contains("Serie A") ||
-                    competition.contains("Ligue 1") ||
-                    competition.contains("World Cup") ||
-                    competition.contains("Euro") ||
-                    competition.contains("Copa America")) {
-                score += 20;
-            }
-
-            // 冰球热门赛事
-            if (competition.contains("NHL") ||
-                    competition.contains("KHL") ||
-                    competition.contains("IIHF World Championship") ||
-                    competition.contains("Champions Hockey League")) {
-                score += 20;
-            }
-
-            // 网球热门赛事
-            if (competition.contains("Australian Open") ||
-                    competition.contains("French Open") ||
-                    competition.contains("Wimbledon") ||
-                    competition.contains("US Open") ||
-                    competition.contains("ATP Finals") ||
-                    competition.contains("Davis Cup") ||
-                    competition.contains("WTA Finals")) {
-                score += 20;
+            if (competition != null) {
+                if (Tools.isPopularBasketballEvent(competition) ||
+                    Tools.isPopularFootballEvent(competition) ||
+                    Tools.isPopularHockeyEvent(competition) ||
+                    Tools.isPopularTennisEvent(competition)) {
+                    score += 20;
+                    Log.d("RecommendDebug", "热门赛事: " + competition);
+                }
             }
         }
     

@@ -45,7 +45,7 @@ public class FavouriteFragment extends BaseFragment<FragmentFavouriteBinding>
         // 注册到 MainActivity
         ((MainActivity) getActivity()).setFavouriteFragment(this);
 
-        getBinding().titleBar.setTitle("收藏球队");
+        getBinding().titleBar.setTitle("Favorite Teams");
         initRecyclerView();
         String currentSport = ((MainActivity) getActivity()).getCurrentSport();
         Log.d("SportSync", "FavouriteFragment - 当前运动: " + currentSport);

@@ -94,53 +94,22 @@ public class RecommendedGamesAdapter extends RecyclerView.Adapter<RecommendedGam
             Log.d("RecommendDebug1", "客队: " + awayTeam + " 是否关注: " + favoriteTeams.contains(awayTeam));
             
             if (favoriteTeams.contains(homeTeam) || favoriteTeams.contains(awayTeam)) {
-                reasons.add("关注球队");
+                reasons.add("Followed Team");
             }
         }
         
         // 判断是否为重要联赛
         String competition = game.getCompetition_name();
         if (competition != null) {
-        // 篮球热门赛事
-        if (competition.contains("NBA") || 
-            competition.contains("CBA") ||
-            competition.contains("EuroLeague") ||
-            competition.contains("FIBA World Cup") ||
-            competition.contains("NCAA")) {
-            reasons.add("热门赛事");
+
+        
+        // 热门赛事
+        if (Tools.isPopularFootballEvent(competition) || Tools.isPopularBasketballEvent(competition)||Tools.isPopularHockeyEvent(competition)||Tools.isPopularTennisEvent(competition)) {
+            reasons.add("Popular Event");
         }
         
-        // 足球热门赛事
-        if (competition.contains("Premier League") || 
-            competition.contains("Champions League") ||
-            competition.contains("La Liga") ||
-            competition.contains("Bundesliga") ||
-            competition.contains("Serie A") ||
-            competition.contains("Ligue 1") ||
-            competition.contains("World Cup") ||
-            competition.contains("Euro") ||
-            competition.contains("Copa America")) {
-            reasons.add("热门赛事");
-        }
-        
-        // 冰球热门赛事
-        if (competition.contains("NHL") ||
-            competition.contains("KHL") ||
-            competition.contains("IIHF World Championship") ||
-            competition.contains("Champions Hockey League")) {
-            reasons.add("热门赛事");
-        }
-        
-        // 网球热门赛事
-        if (competition.contains("Australian Open") ||
-            competition.contains("French Open") ||
-            competition.contains("Wimbledon") ||
-            competition.contains("US Open") ||
-            competition.contains("ATP Finals") ||
-            competition.contains("Davis Cup") ||
-            competition.contains("WTA Finals")) {
-            reasons.add("热门赛事");
-        }
+
+
     }
         
         // 检查是否在偏好时间段
@@ -150,11 +119,11 @@ public class RecommendedGamesAdapter extends RecyclerView.Adapter<RecommendedGam
         Set<String> preferredTimes = prefs.getStringSet("preferred_times", new HashSet<>());
         
         for (String timeRange : preferredTimes) {
-            if (timeRange.contains("早上") && hour >= 6 && hour < 12 ||
-                timeRange.contains("下午") && hour >= 12 && hour < 18 ||
-                timeRange.contains("晚上") && hour >= 18 && hour < 24 ||
-                timeRange.contains("凌晨") && hour >= 0 && hour < 6) {
-                reasons.add("偏好时段");
+            if (timeRange.contains("Morning") && hour >= 6 && hour < 12 ||
+                timeRange.contains("Afternoon") && hour >= 12 && hour < 18 ||
+                timeRange.contains("Evening") && hour >= 18 && hour < 24 ||
+                timeRange.contains("Dawn") && hour >= 0 && hour < 6) {
+                reasons.add("Preferred Time");
                 break;
             }
         }
@@ -164,7 +133,7 @@ public class RecommendedGamesAdapter extends RecyclerView.Adapter<RecommendedGam
     
     // 如果没有任何推荐原因,返回默认文本
     if (reasons.isEmpty()) {
-        return "推荐赛事";
+        return "Recommended Event";
     }
     
     // 将所有原因用 "·" 连接

@@ -91,7 +91,7 @@ public class MainActivity extends BaseActivity<ActivityMainBinding> {
             favouriteFragment.onSportChanged(sport);
         }
     }
-    
+
     public String getCurrentSport() {
         if (currentSport == null) {
             // 从 SharedPreferences 获取默认运动
@@ -101,7 +101,7 @@ public class MainActivity extends BaseActivity<ActivityMainBinding> {
         }
         return currentSport;
     }
-    
+
     public void setFavouriteFragment(FavouriteFragment fragment) {
         this.favouriteFragment = fragment;
     }
