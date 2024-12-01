@@ -1,6 +1,7 @@
 package com.test.sport.ui.adapter;
 
 import android.content.Context;
+import android.content.SharedPreferences;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -16,6 +17,8 @@ import com.test.sport.db.entity.Game;
 import com.test.sport.utils.Tools;
 
 import java.util.ArrayList;
+import java.util.Collections;
+import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
 
@@ -79,6 +82,8 @@ public class RecommendedGamesAdapter extends RecyclerView.Adapter<RecommendedGam
     }
 
     private String getRecommendReason(Game game) {
+        List<String> reasons = new ArrayList<>();
+
         if (game.getCompetitors() != null && game.getCompetitors().size() > 0) {
             String homeTeam = game.getCompetitors().get(0).getCompetitors_name();
             String awayTeam = game.getCompetitors().get(1).getCompetitors_name();
@@ -89,7 +94,7 @@ public class RecommendedGamesAdapter extends RecyclerView.Adapter<RecommendedGam
             Log.d("RecommendDebug1", "客队: " + awayTeam + " 是否关注: " + favoriteTeams.contains(awayTeam));
             
             if (favoriteTeams.contains(homeTeam) || favoriteTeams.contains(awayTeam)) {
-                return "关注球队";
+                reasons.add("关注球队");
             }
         }
         
@@ -102,7 +107,7 @@ public class RecommendedGamesAdapter extends RecyclerView.Adapter<RecommendedGam
             competition.contains("EuroLeague") ||
             competition.contains("FIBA World Cup") ||
             competition.contains("NCAA")) {
-            return "热门赛事";
+            reasons.add("热门赛事");
         }
         
         // 足球热门赛事
@@ -115,7 +120,7 @@ public class RecommendedGamesAdapter extends RecyclerView.Adapter<RecommendedGam
             competition.contains("World Cup") ||
             competition.contains("Euro") ||
             competition.contains("Copa America")) {
-            return "热门赛事";
+            reasons.add("热门赛事");
         }
         
         // 冰球热门赛事
@@ -123,7 +128,7 @@ public class RecommendedGamesAdapter extends RecyclerView.Adapter<RecommendedGam
             competition.contains("KHL") ||
             competition.contains("IIHF World Championship") ||
             competition.contains("Champions Hockey League")) {
-            return "热门赛事";
+            reasons.add("热门赛事");
         }
         
         // 网球热门赛事
@@ -134,11 +139,36 @@ public class RecommendedGamesAdapter extends RecyclerView.Adapter<RecommendedGam
             competition.contains("ATP Finals") ||
             competition.contains("Davis Cup") ||
             competition.contains("WTA Finals")) {
-            return "热门赛事";
+            reasons.add("热门赛事");
         }
     }
         
-        return "比赛时间符合偏好";
+        // 检查是否在偏好时间段
+    try {
+        int hour = Integer.parseInt(game.getStart_time().substring(11, 13));
+        SharedPreferences prefs = context.getSharedPreferences("SettingsPrefs", Context.MODE_PRIVATE);
+        Set<String> preferredTimes = prefs.getStringSet("preferred_times", new HashSet<>());
+        
+        for (String timeRange : preferredTimes) {
+            if (timeRange.contains("早上") && hour >= 6 && hour < 12 ||
+                timeRange.contains("下午") && hour >= 12 && hour < 18 ||
+                timeRange.contains("晚上") && hour >= 18 && hour < 24 ||
+                timeRange.contains("凌晨") && hour >= 0 && hour < 6) {
+                reasons.add("偏好时段");
+                break;
+            }
+        }
+    } catch (Exception e) {
+        e.printStackTrace();
+    }
+    
+    // 如果没有任何推荐原因,返回默认文本
+    if (reasons.isEmpty()) {
+        return "推荐赛事";
+    }
+    
+    // 将所有原因用 "·" 连接
+        return (String.join(" · ", reasons));
     }
 
     @Override
