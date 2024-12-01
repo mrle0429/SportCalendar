@@ -25,6 +25,7 @@ import com.test.sport.utils.Tools;
 
 import java.util.ArrayList;
 import java.util.HashSet;
+import java.util.LinkedHashSet;
 import java.util.List;
 import java.util.Set;
 import java.util.stream.Collectors;
@@ -81,6 +82,8 @@ public class FavouriteFragment extends BaseFragment<FragmentFavouriteBinding>
                 case "Icehockey":
                     jsonFileName = "Icehockey_Teams.json";
                     break;
+                case "Tennis":
+                    jsonFileName="Tennis_Teams.json";
             
 
             }
@@ -123,7 +126,9 @@ public class FavouriteFragment extends BaseFragment<FragmentFavouriteBinding>
     }
 
     private List<Team> parseSoccerTeams(JSONObject json, Set<String> savedTeams) {
-        return json.getJSONArray("season_competitors").stream()
+
+        Set<Team> uniqueTeams = new LinkedHashSet<>();
+        json.getJSONArray("season_competitors").stream()
             .map(obj -> {
                 JSONObject teamObj = (JSONObject) obj;
                 Team team = new Team();
@@ -133,6 +138,16 @@ public class FavouriteFragment extends BaseFragment<FragmentFavouriteBinding>
                 team.setFavorite(savedTeams.contains(team.getName()));
                 return team;
             })
+            .forEach(team -> {
+                // 如果已存在相同ID的球队，则不添加
+                boolean added = uniqueTeams.add(team);
+                if (!added) {
+                    Log.d("TeamDebug", "发现重复球队ID: " + team.getId() + ", 名称: " + team.getName());
+                }
+            });
+        
+        // 转换为List并排序
+        return uniqueTeams.stream()
             .sorted((t1, t2) -> t1.getName().compareTo(t2.getName()))
             .collect(Collectors.toList());
     }

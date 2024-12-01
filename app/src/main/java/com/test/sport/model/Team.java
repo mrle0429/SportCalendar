@@ -2,6 +2,8 @@ package com.test.sport.model;
 
 import com.alibaba.fastjson.annotation.JSONField;
 
+import java.util.Objects;
+
 public class Team {
     @JSONField(name = "id")
     private String id;          // 球队ID
@@ -36,5 +38,18 @@ public class Team {
 
     public void setFavorite(boolean favorite) {
         isFavorite = favorite;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Team team = (Team) o;
+        return Objects.equals(id, team.id);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(id);
     }
 }

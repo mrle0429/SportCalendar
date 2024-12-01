@@ -1,0 +1,4289 @@
+{
+  "generated_at": "2024-12-01T07:10:22+00:00",
+  "season_competitors": [
+    {
+      "id": "sr:competitor:14414",
+      "name": "Gasquet, Richard",
+      "short_name": "Gasquet, Richard",
+      "abbreviation": "GAS"
+    },
+    {
+      "id": "sr:competitor:14548",
+      "name": "Wawrinka, Stan",
+      "short_name": "Wawrinka, Stan",
+      "abbreviation": "WAW"
+    },
+    {
+      "id": "sr:competitor:14844",
+      "name": "Monfils, Gael",
+      "short_name": "Monfils, Gael",
+      "abbreviation": "MON"
+    },
+    {
+      "id": "sr:competitor:14882",
+      "name": "Djokovic, Novak",
+      "short_name": "Djokovic, Novak",
+      "abbreviation": "DJO"
+    },
+    {
+      "id": "sr:competitor:15434",
+      "name": "Fognini, Fabio",
+      "short_name": "Fognini, Fabio",
+      "abbreviation": "FOG"
+    },
+    {
+      "id": "sr:competitor:15733",
+      "name": "Nishikori, Kei",
+      "short_name": "Nishikori, Kei",
+      "abbreviation": "NIS"
+    },
+    {
+      "id": "sr:competitor:15894",
+      "name": "Mannarino, Adrian",
+      "short_name": "Mannarino, Adrian",
+      "abbreviation": "MAN"
+    },
+    {
+      "id": "sr:competitor:16192",
+      "name": "Marchenko, Illya",
+      "short_name": "Marchenko, Illya",
+      "abbreviation": "MAR"
+    },
+    {
+      "id": "sr:competitor:16375",
+      "name": "Evans, Daniel",
+      "short_name": "Evans, Daniel",
+      "abbreviation": "EVA"
+    },
+    {
+      "id": "sr:competitor:16683",
+      "name": "Kukushkin, Mikhail",
+      "short_name": "Kukushkin, Mikhail",
+      "abbreviation": "KUK"
+    },
+    {
+      "id": "sr:competitor:16720",
+      "name": "Bautista Agut, Roberto",
+      "short_name": "Bautista Agut, Roberto",
+      "abbreviation": "BAU"
+    },
+    {
+      "id": "sr:competitor:22218",
+      "name": "Paire, Benoit",
+      "short_name": "Paire, Benoit",
+      "abbreviation": "PAI"
+    },
+    {
+      "id": "sr:competitor:23581",
+      "name": "Dimitrov, Grigor",
+      "short_name": "Dimitrov, Grigor",
+      "abbreviation": "DIM"
+    },
+    {
+      "id": "sr:competitor:25838",
+      "name": "Goffin, David",
+      "short_name": "Goffin, David",
+      "abbreviation": "GOF"
+    },
+    {
+      "id": "sr:competitor:36300",
+      "name": "Travaglia, Stefano",
+      "short_name": "Travaglia, Stefano",
+      "abbreviation": "TRA"
+    },
+    {
+      "id": "sr:competitor:36595",
+      "name": "Kudla, Denis",
+      "short_name": "Kudla, Denis",
+      "abbreviation": "KUD"
+    },
+    {
+      "id": "sr:competitor:38183",
+      "name": "Bagnis, Facundo",
+      "short_name": "Bagnis, Facundo",
+      "abbreviation": "BAG"
+    },
+    {
+      "id": "sr:competitor:38517",
+      "name": "Trungelliti, Marco",
+      "short_name": "Trungelliti, Marco",
+      "abbreviation": "TRU"
+    },
+    {
+      "id": "sr:competitor:39234",
+      "name": "Lajovic, Dusan",
+      "short_name": "Lajovic, Dusan",
+      "abbreviation": "LAJ"
+    },
+    {
+      "id": "sr:competitor:39711",
+      "name": "Duckworth, James",
+      "short_name": "Duckworth, James",
+      "abbreviation": "DUC"
+    },
+    {
+      "id": "sr:competitor:41857",
+      "name": "Vesely, Jiri",
+      "short_name": "Vesely, Jiri",
+      "abbreviation": "VES"
+    },
+    {
+      "id": "sr:competitor:42152",
+      "name": "Napolitano, Stefano",
+      "short_name": "Napolitano, Stefano",
+      "abbreviation": "NAP"
+    },
+    {
+      "id": "sr:competitor:42379",
+      "name": "Giron, Marcos",
+      "short_name": "Giron, Marcos",
+      "abbreviation": "GIR"
+    },
+    {
+      "id": "sr:competitor:44547",
+      "name": "Albot, Radu",
+      "short_name": "Albot, Radu",
+      "abbreviation": "ALB"
+    },
+    {
+      "id": "sr:competitor:44553",
+      "name": "Herbert, Pierre-Hugues",
+      "short_name": "Herbert, Pierre-Hugues",
+      "abbreviation": "HER"
+    },
+    {
+      "id": "sr:competitor:45258",
+      "name": "de Loore, Joris",
+      "short_name": "de Loore, Joris",
+      "abbreviation": "DE"
+    },
+    {
+      "id": "sr:competitor:46390",
+      "name": "Uchiyama, Yasutaka",
+      "short_name": "Uchiyama, Yasutaka",
+      "abbreviation": "UCH"
+    },
+    {
+      "id": "sr:competitor:46391",
+      "name": "Struff, Jan-Lennard",
+      "short_name": "Struff, Jan-Lennard",
+      "abbreviation": "STR"
+    },
+    {
+      "id": "sr:competitor:47603",
+      "name": "Monteiro, Thiago",
+      "short_name": "Monteiro, Thiago",
+      "abbreviation": "MON"
+    },
+    {
+      "id": "sr:competitor:47764",
+      "name": "Broady, Liam",
+      "short_name": "Broady, Liam",
+      "abbreviation": "BRO"
+    },
+    {
+      "id": "sr:competitor:47770",
+      "name": "Fucsovics, Marton",
+      "short_name": "Fucsovics, Marton",
+      "abbreviation": "FUC"
+    },
+    {
+      "id": "sr:competitor:47975",
+      "name": "Hanfmann, Yannick",
+      "short_name": "Hanfmann, Yannick",
+      "abbreviation": "HAN"
+    },
+    {
+      "id": "sr:competitor:48599",
+      "name": "Schwartzman, Diego",
+      "short_name": "Schwartzman, Diego",
+      "abbreviation": "SWM"
+    },
+    {
+      "id": "sr:competitor:48632",
+      "name": "Daniel, Taro",
+      "short_name": "Daniel, Taro",
+      "abbreviation": "DAN"
+    },
+    {
+      "id": "sr:competitor:49172",
+      "name": "Dzumhur, Damir",
+      "short_name": "Dzumhur, Damir",
+      "abbreviation": "DZU"
+    },
+    {
+      "id": "sr:competitor:49417",
+      "name": "Tu, Li",
+      "short_name": "Tu, Li",
+      "abbreviation": "TUL"
+    },
+    {
+      "id": "sr:competitor:49663",
+      "name": "Escoffier, Antoine",
+      "short_name": "Escoffier, Antoine",
+      "abbreviation": "ESC"
+    },
+    {
+      "id": "sr:competitor:50847",
+      "name": "Yevseyev, Denis",
+      "short_name": "Yevseyev, Denis",
+      "abbreviation": "YEV"
+    },
+    {
+      "id": "sr:competitor:51100",
+      "name": "Roca Batalla, Oriol",
+      "short_name": "Roca Batalla, Oriol",
+      "abbreviation": "ROC"
+    },
+    {
+      "id": "sr:competitor:51141",
+      "name": "Carballes Baena, Roberto",
+      "short_name": "Carballes Baena, Roberto",
+      "abbreviation": "CAR"
+    },
+    {
+      "id": "sr:competitor:54573",
+      "name": "Coria, Federico",
+      "short_name": "Coria, Federico",
+      "abbreviation": "COR"
+    },
+    {
+      "id": "sr:competitor:55067",
+      "name": "Marie, Jules",
+      "short_name": "Marie, Jules",
+      "abbreviation": "MAR"
+    },
+    {
+      "id": "sr:competitor:56017",
+      "name": "Ritschard, Alexander",
+      "short_name": "Ritschard, Alexander",
+      "abbreviation": "RIT"
+    },
+    {
+      "id": "sr:competitor:57021",
+      "name": "Kovalik, Jozef",
+      "short_name": "Kovalik, Jozef",
+      "abbreviation": "KOV"
+    },
+    {
+      "id": "sr:competitor:57163",
+      "name": "Zverev, Alexander",
+      "short_name": "Zverev, Alexander",
+      "abbreviation": "ZVE"
+    },
+    {
+      "id": "sr:competitor:57289",
+      "name": "Dellien, Hugo",
+      "short_name": "Dellien, Hugo",
+      "abbreviation": "DEL"
+    },
+    {
+      "id": "sr:competitor:57703",
+      "name": "Pouille, Lucas",
+      "short_name": "Pouille, Lucas",
+      "abbreviation": "POU"
+    },
+    {
+      "id": "sr:competitor:58221",
+      "name": "O'Connell, Christopher",
+      "short_name": "O'Connell, Christopher",
+      "abbreviation": "OCO"
+    },
+    {
+      "id": "sr:competitor:58369",
+      "name": "Bolt, Alex",
+      "short_name": "Bolt, Alex",
+      "abbreviation": "BOL"
+    },
+    {
+      "id": "sr:competitor:59281",
+      "name": "Nishioka, Yoshihito",
+      "short_name": "Nishioka, Yoshihito",
+      "abbreviation": "NIS"
+    },
+    {
+      "id": "sr:competitor:59304",
+      "name": "Novak, Dennis",
+      "short_name": "Novak, Dennis",
+      "abbreviation": "NOV"
+    },
+    {
+      "id": "sr:competitor:60502",
+      "name": "Karatsev, Aslan",
+      "short_name": "Karatsev, Aslan",
+      "abbreviation": "KAR"
+    },
+    {
+      "id": "sr:competitor:62790",
+      "name": "Lestienne, Constant",
+      "short_name": "Lestienne, Constant",
+      "abbreviation": "LES"
+    },
+    {
+      "id": "sr:competitor:63090",
+      "name": "Fatic, Nerman",
+      "short_name": "Fatic, Nerman",
+      "abbreviation": "FAT"
+    },
+    {
+      "id": "sr:competitor:63438",
+      "name": "McDonald, Mackenzie",
+      "short_name": "McDonald, Mackenzie",
+      "abbreviation": "MCD"
+    },
+    {
+      "id": "sr:competitor:63606",
+      "name": "Rinderknech, Arthur",
+      "short_name": "Rinderknech, Arthur",
+      "abbreviation": "RIN"
+    },
+    {
+      "id": "sr:competitor:64570",
+      "name": "Garin, Cristian",
+      "short_name": "Garin, Cristian",
+      "abbreviation": "GAR"
+    },
+    {
+      "id": "sr:competitor:64580",
+      "name": "Coric, Borna",
+      "short_name": "Coric, Borna",
+      "abbreviation": "COR"
+    },
+    {
+      "id": "sr:competitor:65606",
+      "name": "Agamenone, Franco",
+      "short_name": "Agamenone, Franco",
+      "abbreviation": "AGA"
+    },
+    {
+      "id": "sr:competitor:66086",
+      "name": "Kicker, Nicolas",
+      "short_name": "Kicker, Nicolas",
+      "abbreviation": "KIC"
+    },
+    {
+      "id": "sr:competitor:67154",
+      "name": "Barrere, Gregoire",
+      "short_name": "Barrere, Gregoire",
+      "abbreviation": "BAR"
+    },
+    {
+      "id": "sr:competitor:71280",
+      "name": "Kokkinakis, Thanasi",
+      "short_name": "Kokkinakis, Thanasi",
+      "abbreviation": "KOK"
+    },
+    {
+      "id": "sr:competitor:71660",
+      "name": "Marterer, Maximilian",
+      "short_name": "Marterer, Maximilian",
+      "abbreviation": "MAR"
+    },
+    {
+      "id": "sr:competitor:73987",
+      "name": "Cachin, Pedro",
+      "short_name": "Cachin, Pedro",
+      "abbreviation": "CAC"
+    },
+    {
+      "id": "sr:competitor:74441",
+      "name": "Couacaud, Enzo",
+      "short_name": "Couacaud, Enzo",
+      "abbreviation": "COU"
+    },
+    {
+      "id": "sr:competitor:75813",
+      "name": "Zhang, Zhizhen",
+      "short_name": "Zhang, Zhizhen",
+      "abbreviation": "ZHA"
+    },
+    {
+      "id": "sr:competitor:77223",
+      "name": "Martinez, Pedro",
+      "short_name": "Martinez, Pedro",
+      "abbreviation": "MAR"
+    },
+    {
+      "id": "sr:competitor:79467",
+      "name": "Jasika, Omar",
+      "short_name": "Jasika, Omar",
+      "abbreviation": "JAS"
+    },
+    {
+      "id": "sr:competitor:80665",
+      "name": "Polmans, Marc",
+      "short_name": "Polmans, Marc",
+      "abbreviation": "POL"
+    },
+    {
+      "id": "sr:competitor:82133",
+      "name": "Dellien, Murkel",
+      "short_name": "Dellien, Murkel",
+      "abbreviation": "DEV"
+    },
+    {
+      "id": "sr:competitor:83397",
+      "name": "Ofner, Sebastian",
+      "short_name": "Ofner, Sebastian",
+      "abbreviation": "OFN"
+    },
+    {
+      "id": "sr:competitor:83661",
+      "name": "Ymer, Elias",
+      "short_name": "Ymer, Elias",
+      "abbreviation": "YME"
+    },
+    {
+      "id": "sr:competitor:87690",
+      "name": "Thompson, Jordan",
+      "short_name": "Thompson, Jordan",
+      "abbreviation": "THO"
+    },
+    {
+      "id": "sr:competitor:88992",
+      "name": "Muller, Alexandre",
+      "short_name": "Muller, Alexandre",
+      "abbreviation": "MUL"
+    },
+    {
+      "id": "sr:competitor:89632",
+      "name": "Jarry, Nicolas",
+      "short_name": "Jarry, Nicolas",
+      "abbreviation": "JAR"
+    },
+    {
+      "id": "sr:competitor:90080",
+      "name": "Khachanov, Karen",
+      "short_name": "Khachanov, Karen",
+      "abbreviation": "KHA"
+    },
+    {
+      "id": "sr:competitor:90798",
+      "name": "Halys, Quentin",
+      "short_name": "Halys, Quentin",
+      "abbreviation": "HAL"
+    },
+    {
+      "id": "sr:competitor:91240",
+      "name": "Peniston, Ryan",
+      "short_name": "Peniston, Ryan",
+      "abbreviation": "PEN"
+    },
+    {
+      "id": "sr:competitor:92074",
+      "name": "Galan, Daniel Elahi",
+      "short_name": "Galan, Daniel Elahi",
+      "abbreviation": "GAL"
+    },
+    {
+      "id": "sr:competitor:93597",
+      "name": "Pellegrino, Andrea",
+      "short_name": "Pellegrino, Andrea",
+      "abbreviation": "PEL"
+    },
+    {
+      "id": "sr:competitor:94485",
+      "name": "Bonzi, Benjamin",
+      "short_name": "Bonzi, Benjamin",
+      "abbreviation": "BON"
+    },
+    {
+      "id": "sr:competitor:95801",
+      "name": "Vavassori, Andrea",
+      "short_name": "Vavassori, Andrea",
+      "abbreviation": "VAV"
+    },
+    {
+      "id": "sr:competitor:95935",
+      "name": "Norrie, Cameron",
+      "short_name": "Norrie, Cameron",
+      "abbreviation": "NOR"
+    },
+    {
+      "id": "sr:competitor:97231",
+      "name": "Djere, Laslo",
+      "short_name": "Djere, Laslo",
+      "abbreviation": "DJE"
+    },
+    {
+      "id": "sr:competitor:97647",
+      "name": "Kwon, Soonwoo",
+      "short_name": "Kwon, Soonwoo",
+      "abbreviation": "KWON"
+    },
+    {
+      "id": "sr:competitor:97977",
+      "name": "Hong, Seongchan",
+      "short_name": "Hong, Seong Chan",
+      "abbreviation": "HON"
+    },
+    {
+      "id": "sr:competitor:100069",
+      "name": "Sachko, Vitaliy",
+      "short_name": "Sachko, Vitaliy",
+      "abbreviation": "SAC"
+    },
+    {
+      "id": "sr:competitor:101101",
+      "name": "Tiafoe, Frances",
+      "short_name": "Tiafoe, Frances",
+      "abbreviation": "TIA"
+    },
+    {
+      "id": "sr:competitor:102151",
+      "name": "Tabilo, Alejandro",
+      "short_name": "Tabilo, Alejandro",
+      "abbreviation": "TAB"
+    },
+    {
+      "id": "sr:competitor:102339",
+      "name": "Van de Zandschulp, Botic",
+      "short_name": "Van de Zandschulp, Botic",
+      "abbreviation": "VAN"
+    },
+    {
+      "id": "sr:competitor:102411",
+      "name": "van Rijthoven, Tim",
+      "short_name": "van Rijthoven, Tim",
+      "abbreviation": "VAN"
+    },
+    {
+      "id": "sr:competitor:104847",
+      "name": "Sonego, Lorenzo",
+      "short_name": "Sonego, Lorenzo",
+      "abbreviation": "SON"
+    },
+    {
+      "id": "sr:competitor:105607",
+      "name": "Choinski, Jan",
+      "short_name": "Choinski, Jan",
+      "abbreviation": "CHO"
+    },
+    {
+      "id": "sr:competitor:106755",
+      "name": "Rublev, Andrey",
+      "short_name": "Rublev, Andrey",
+      "abbreviation": "RUB"
+    },
+    {
+      "id": "sr:competitor:107357",
+      "name": "Grenier, Hugo",
+      "short_name": "Grenier, Hugo",
+      "abbreviation": "GRE"
+    },
+    {
+      "id": "sr:competitor:107625",
+      "name": "Janvier, Maxime",
+      "short_name": "Janvier, Maxime",
+      "abbreviation": "JAN"
+    },
+    {
+      "id": "sr:competitor:108565",
+      "name": "Zapata Miralles, Bernabe",
+      "short_name": "Zapata Miralles, Bernabe",
+      "abbreviation": "ZAP"
+    },
+    {
+      "id": "sr:competitor:108767",
+      "name": "Hassan, Benjamin",
+      "short_name": "Hassan, Benjamin",
+      "abbreviation": "HAS"
+    },
+    {
+      "id": "sr:competitor:111837",
+      "name": "Harris, Billy",
+      "short_name": "Harris, Billy",
+      "abbreviation": "HAR"
+    },
+    {
+      "id": "sr:competitor:112783",
+      "name": "Berrettini, Matteo",
+      "short_name": "Berrettini, Matteo",
+      "abbreviation": "BER"
+    },
+    {
+      "id": "sr:competitor:113905",
+      "name": "Moreno de Alboran, Nicolas",
+      "short_name": "Moreno de Alboran, Nicolas",
+      "abbreviation": "MAN"
+    },
+    {
+      "id": "sr:competitor:113979",
+      "name": "Ficovich, Juan Pablo",
+      "short_name": "Ficovich, Juan Pablo",
+      "abbreviation": "FIC"
+    },
+    {
+      "id": "sr:competitor:116616",
+      "name": "Clarke, Jay",
+      "short_name": "Clarke, Jay",
+      "abbreviation": "CLA"
+    },
+    {
+      "id": "sr:competitor:117916",
+      "name": "Shapovalov, Denis",
+      "short_name": "Shapovalov, Denis",
+      "abbreviation": "SHA"
+    },
+    {
+      "id": "sr:competitor:119248",
+      "name": "Ruud, Casper",
+      "short_name": "Ruud, Casper",
+      "abbreviation": "RUU"
+    },
+    {
+      "id": "sr:competitor:121182",
+      "name": "Guinard, Manuel",
+      "short_name": "Guinard, Manuel",
+      "abbreviation": "GUI"
+    },
+    {
+      "id": "sr:competitor:121668",
+      "name": "Meligeni Alves, Felipe",
+      "short_name": "Alves, Felipe",
+      "abbreviation": "MEL"
+    },
+    {
+      "id": "sr:competitor:122366",
+      "name": "Tsitsipas, Stefanos",
+      "short_name": "Tsitsipas, Stefanos",
+      "abbreviation": "TSI"
+    },
+    {
+      "id": "sr:competitor:122368",
+      "name": "Griekspoor, Tallon",
+      "short_name": "Griekspoor, Tallon",
+      "abbreviation": "GRI"
+    },
+    {
+      "id": "sr:competitor:124656",
+      "name": "Vukic, Aleksandar",
+      "short_name": "Vukic, Aleksandar",
+      "abbreviation": "VUK"
+    },
+    {
+      "id": "sr:competitor:124658",
+      "name": "Purcell, Max",
+      "short_name": "Purcell, Max",
+      "abbreviation": "PUR"
+    },
+    {
+      "id": "sr:competitor:124930",
+      "name": "Safiullin, Roman",
+      "short_name": "Safiullin, Roman",
+      "abbreviation": "SAF"
+    },
+    {
+      "id": "sr:competitor:125006",
+      "name": "Borges, Nuno",
+      "short_name": "Borges, Nuno",
+      "abbreviation": "BOR"
+    },
+    {
+      "id": "sr:competitor:126356",
+      "name": "Munar, Jaume",
+      "short_name": "Munar, Jaume",
+      "abbreviation": "MUN"
+    },
+    {
+      "id": "sr:competitor:127208",
+      "name": "Altmaier, Daniel",
+      "short_name": "Altmaier, Daniel",
+      "abbreviation": "ALT"
+    },
+    {
+      "id": "sr:competitor:128552",
+      "name": "Popyrin, Alexei",
+      "short_name": "Popyrin, Alexei",
+      "abbreviation": "POP"
+    },
+    {
+      "id": "sr:competitor:130398",
+      "name": "Kecmanovic, Miomir",
+      "short_name": "Kecmanovic, Miomir",
+      "abbreviation": "KEC"
+    },
+    {
+      "id": "sr:competitor:131566",
+      "name": "Nagal, Sumit",
+      "short_name": "Nagal, Sumit",
+      "abbreviation": "NAG"
+    },
+    {
+      "id": "sr:competitor:132834",
+      "name": "Barrios Vera, Marcelo Tomas",
+      "short_name": "Barrios Vera, Tomas",
+      "abbreviation": "BAR"
+    },
+    {
+      "id": "sr:competitor:136042",
+      "name": "Fritz, Taylor",
+      "short_name": "Fritz, Taylor",
+      "abbreviation": "FRI"
+    },
+    {
+      "id": "sr:competitor:138546",
+      "name": "Paul, Tommy",
+      "short_name": "Paul, Tommy",
+      "abbreviation": "PAU"
+    },
+    {
+      "id": "sr:competitor:145112",
+      "name": "Huesler, Marc-Andrea",
+      "short_name": "Huesler, Marc-Andrea",
+      "abbreviation": "HUE"
+    },
+    {
+      "id": "sr:competitor:145122",
+      "name": "Martineau, Matteo",
+      "short_name": "Martineau, Matteo",
+      "abbreviation": "MAR"
+    },
+    {
+      "id": "sr:competitor:157808",
+      "name": "Harris, Lloyd",
+      "short_name": "Harris, Lloyd",
+      "abbreviation": "HAR"
+    },
+    {
+      "id": "sr:competitor:158896",
+      "name": "Hurkacz, Hubert",
+      "short_name": "Hurkacz, Hubert",
+      "abbreviation": "HUR"
+    },
+    {
+      "id": "sr:competitor:161262",
+      "name": "Seyboth Wild, Thiago",
+      "short_name": "Seyboth Wild, Thiago",
+      "abbreviation": "SEY"
+    },
+    {
+      "id": "sr:competitor:163480",
+      "name": "Bublik, Alexander",
+      "short_name": "Bublik, Alexander",
+      "abbreviation": "BUB"
+    },
+    {
+      "id": "sr:competitor:163504",
+      "name": "Medvedev, Daniil",
+      "short_name": "Medvedev, Daniil",
+      "abbreviation": "MED"
+    },
+    {
+      "id": "sr:competitor:163636",
+      "name": "Klein, Lukas",
+      "short_name": "Klein, Lukas",
+      "abbreviation": "KLE"
+    },
+    {
+      "id": "sr:competitor:167370",
+      "name": "Ruusuvuori, Emil",
+      "short_name": "Ruusuvuori, Emil",
+      "abbreviation": "RUU"
+    },
+    {
+      "id": "sr:competitor:169486",
+      "name": "Olivieri, Genaro Alberto",
+      "short_name": "Olivieri, Genaro Alberto",
+      "abbreviation": "OLI"
+    },
+    {
+      "id": "sr:competitor:169496",
+      "name": "Etcheverry, Tomas Martin",
+      "short_name": "Etcheverry, Tomas Martin",
+      "abbreviation": "ETC"
+    },
+    {
+      "id": "sr:competitor:170946",
+      "name": "Bergs, Zizou",
+      "short_name": "Bergs, Zizou",
+      "abbreviation": "BER"
+    },
+    {
+      "id": "sr:competitor:172482",
+      "name": "Dougaz, Aziz",
+      "short_name": "Dougaz, Aziz",
+      "abbreviation": "DOU"
+    },
+    {
+      "id": "sr:competitor:185388",
+      "name": "Humbert, Ugo",
+      "short_name": "Humbert, Ugo",
+      "abbreviation": "HUM"
+    },
+    {
+      "id": "sr:competitor:186885",
+      "name": "Hardt, Nick",
+      "short_name": "Hardt, Nick",
+      "abbreviation": "HAR"
+    },
+    {
+      "id": "sr:competitor:187689",
+      "name": "Galarneau, Alexis",
+      "short_name": "Galarneau, Alexis",
+      "abbreviation": "GAL"
+    },
+    {
+      "id": "sr:competitor:188321",
+      "name": "Kovacevic, Aleksandar",
+      "short_name": "Kovacevic, Aleksandar",
+      "abbreviation": "KOV"
+    },
+    {
+      "id": "sr:competitor:195800",
+      "name": "Auger-Aliassime, Felix",
+      "short_name": "Auger-Aliassime, Felix",
+      "abbreviation": "AUG"
+    },
+    {
+      "id": "sr:competitor:203681",
+      "name": "Korda, Sebastian",
+      "short_name": "Korda, Sebastian",
+      "abbreviation": "KOR"
+    },
+    {
+      "id": "sr:competitor:204117",
+      "name": "Ugo Carabelli, Camilo",
+      "short_name": "Ugo Carabelli, Camilo",
+      "abbreviation": "UGO"
+    },
+    {
+      "id": "sr:competitor:206879",
+      "name": "Eubanks, Christopher",
+      "short_name": "Eubanks, Christopher",
+      "abbreviation": "EUB"
+    },
+    {
+      "id": "sr:competitor:210526",
+      "name": "Kopriva, Vit",
+      "short_name": "Kopriva, Vit",
+      "abbreviation": "KOP"
+    },
+    {
+      "id": "sr:competitor:212004",
+      "name": "Rodionov, Jurij",
+      "short_name": "Rodionov, Jurij",
+      "abbreviation": "ROD"
+    },
+    {
+      "id": "sr:competitor:213170",
+      "name": "Blanchet, Ugo",
+      "short_name": "Blanchet, Ugo",
+      "abbreviation": "BLA"
+    },
+    {
+      "id": "sr:competitor:214182",
+      "name": "de Minaur, Alex",
+      "short_name": "de Minaur, Alex",
+      "abbreviation": "DE"
+    },
+    {
+      "id": "sr:competitor:216502",
+      "name": "Broom, Charles",
+      "short_name": "Broom, Charles",
+      "abbreviation": "BRO"
+    },
+    {
+      "id": "sr:competitor:218538",
+      "name": "Kotov, Pavel",
+      "short_name": "Kotov, Pavel",
+      "abbreviation": "KOT"
+    },
+    {
+      "id": "sr:competitor:220588",
+      "name": "Hsu, Yu Hsiou",
+      "short_name": "Hsu, Yu Hsiou",
+      "abbreviation": "HSU"
+    },
+    {
+      "id": "sr:competitor:223714",
+      "name": "Piros, Zsombor",
+      "short_name": "Piros, Zsombor",
+      "abbreviation": "PIR"
+    },
+    {
+      "id": "sr:competitor:223874",
+      "name": "Gaston, Hugo",
+      "short_name": "Gaston, Hugo",
+      "abbreviation": "GAS"
+    },
+    {
+      "id": "sr:competitor:225050",
+      "name": "Sinner, Jannik",
+      "short_name": "Sinner, Jannik",
+      "abbreviation": "SIN"
+    },
+    {
+      "id": "sr:competitor:225052",
+      "name": "Tabur, Clement",
+      "short_name": "Tabur, Clement",
+      "abbreviation": "TAB"
+    },
+    {
+      "id": "sr:competitor:226132",
+      "name": "Ajdukovic, Duje",
+      "short_name": "Ajdukovic, Duje",
+      "abbreviation": "AJD"
+    },
+    {
+      "id": "sr:competitor:227358",
+      "name": "Walton, Adam",
+      "short_name": "Walton, Adam",
+      "abbreviation": "WAL"
+    },
+    {
+      "id": "sr:competitor:229022",
+      "name": "Squire, Henri",
+      "short_name": "Squire, Henri",
+      "abbreviation": "SQU"
+    },
+    {
+      "id": "sr:competitor:230468",
+      "name": "Andreev, Adrian",
+      "short_name": "Andreev, Adrian",
+      "abbreviation": "AND"
+    },
+    {
+      "id": "sr:competitor:231192",
+      "name": "Molleker, Rudolf",
+      "short_name": "Molleker, Rudolf",
+      "abbreviation": "MOL"
+    },
+    {
+      "id": "sr:competitor:234046",
+      "name": "Kypson, Patrick",
+      "short_name": "Kypson, Patrick",
+      "abbreviation": "KYP"
+    },
+    {
+      "id": "sr:competitor:240320",
+      "name": "Parker, Stuart",
+      "short_name": "Parker, Stuart",
+      "abbreviation": "PAR"
+    },
+    {
+      "id": "sr:competitor:240876",
+      "name": "Crawford, Oliver",
+      "short_name": "Crawford, Oliver",
+      "abbreviation": "CRA"
+    },
+    {
+      "id": "sr:competitor:242548",
+      "name": "Jubb, Paul",
+      "short_name": "Jubb, Paul",
+      "abbreviation": "JUB"
+    },
+    {
+      "id": "sr:competitor:247607",
+      "name": "Shimabukuro, Sho",
+      "short_name": "Shimabukuro, Sho",
+      "abbreviation": "SHI"
+    },
+    {
+      "id": "sr:competitor:254383",
+      "name": "Marozsan, Fabian",
+      "short_name": "Marozsan, Fabian",
+      "abbreviation": "MAR"
+    },
+    {
+      "id": "sr:competitor:255595",
+      "name": "Cerundolo, Francisco",
+      "short_name": "Cerundolo, Francisco",
+      "abbreviation": "CER"
+    },
+    {
+      "id": "sr:competitor:256875",
+      "name": "Tirante, Thiago Agustin",
+      "short_name": "Tirante, Thiago Agustin",
+      "abbreviation": "TIR"
+    },
+    {
+      "id": "sr:competitor:257721",
+      "name": "Baez, Sebastian",
+      "short_name": "Baez, Sebastian",
+      "abbreviation": "BAE"
+    },
+    {
+      "id": "sr:competitor:269521",
+      "name": "Cressy, Maxime",
+      "short_name": "Cressy, Maxime",
+      "abbreviation": "CRE"
+    },
+    {
+      "id": "sr:competitor:276563",
+      "name": "Virtanen, Otto",
+      "short_name": "Virtanen, Otto",
+      "abbreviation": "VIR"
+    },
+    {
+      "id": "sr:competitor:276685",
+      "name": "Skatov, Timofey",
+      "short_name": "Skatov, Timofey",
+      "abbreviation": "SKA"
+    },
+    {
+      "id": "sr:competitor:284801",
+      "name": "Boyer, Tristan",
+      "short_name": "Boyer, Tristan",
+      "abbreviation": "BOY"
+    },
+    {
+      "id": "sr:competitor:284805",
+      "name": "Nava, Emilio",
+      "short_name": "Nava, Emilio",
+      "abbreviation": "NAV"
+    },
+    {
+      "id": "sr:competitor:286541",
+      "name": "Zhukayev, Beibit",
+      "short_name": "Zhukayev, Beibit",
+      "abbreviation": "ZHU"
+    },
+    {
+      "id": "sr:competitor:287541",
+      "name": "Sweeny, Dane",
+      "short_name": "Sweeny, Dane",
+      "abbreviation": "SWE"
+    },
+    {
+      "id": "sr:competitor:294300",
+      "name": "Nakashima, Brandon",
+      "short_name": "Nakashima, Brandon",
+      "abbreviation": "NAK"
+    },
+    {
+      "id": "sr:competitor:299130",
+      "name": "Hijikata, Rinky",
+      "short_name": "Hijikata, Rinky",
+      "abbreviation": "HIJ"
+    },
+    {
+      "id": "sr:competitor:300540",
+      "name": "Machac, Tomas",
+      "short_name": "Machac, Tomas",
+      "abbreviation": "MAC"
+    },
+    {
+      "id": "sr:competitor:309954",
+      "name": "Droguet, Titouan",
+      "short_name": "Droguet, Titouan",
+      "abbreviation": "DRO"
+    },
+    {
+      "id": "sr:competitor:310974",
+      "name": "De Jong, Jesper",
+      "short_name": "De Jong, Jesper",
+      "abbreviation": "DEJ"
+    },
+    {
+      "id": "sr:competitor:312438",
+      "name": "Matusevich, Anton",
+      "short_name": "Matusevich, Anton",
+      "abbreviation": "MAT"
+    },
+    {
+      "id": "sr:competitor:321667",
+      "name": "Mayot, Harold",
+      "short_name": "Mayot, Harold",
+      "abbreviation": "MAY"
+    },
+    {
+      "id": "sr:competitor:325737",
+      "name": "Moro Canas, Alejandro",
+      "short_name": "Moro Canas, Alejandro",
+      "abbreviation": "MOR"
+    },
+    {
+      "id": "sr:competitor:337601",
+      "name": "Bu, Yunchaokete",
+      "short_name": "Yunchaokete, Bu",
+      "abbreviation": "YUN"
+    },
+    {
+      "id": "sr:competitor:341192",
+      "name": "Comesana, Francisco",
+      "short_name": "Comesana, Francisco",
+      "abbreviation": "COM"
+    },
+    {
+      "id": "sr:competitor:341220",
+      "name": "Royer, Valentin",
+      "short_name": "Royer, Valentin",
+      "abbreviation": "ROY"
+    },
+    {
+      "id": "sr:competitor:352776",
+      "name": "Draper, Jack",
+      "short_name": "Draper, Jack",
+      "abbreviation": "DRA"
+    },
+    {
+      "id": "sr:competitor:353530",
+      "name": "Passaro, Francesco",
+      "short_name": "Passaro, Francesco",
+      "abbreviation": "PAS"
+    },
+    {
+      "id": "sr:competitor:353550",
+      "name": "Loffhagen, George",
+      "short_name": "Loffhagen, George",
+      "abbreviation": "LOF"
+    },
+    {
+      "id": "sr:competitor:355752",
+      "name": "Svrcina, Dalibor",
+      "short_name": "Svrcina, Dalibor",
+      "abbreviation": "SVR"
+    },
+    {
+      "id": "sr:competitor:359602",
+      "name": "Musetti, Lorenzo",
+      "short_name": "Musetti, Lorenzo",
+      "abbreviation": "MUS"
+    },
+    {
+      "id": "sr:competitor:359608",
+      "name": "Maestrelli, Francesco",
+      "short_name": "Maestrelli, Francesco",
+      "abbreviation": "MAE"
+    },
+    {
+      "id": "sr:competitor:371436",
+      "name": "Shevchenko, Alexander",
+      "short_name": "Shevchenko, Alexander",
+      "abbreviation": "SHE"
+    },
+    {
+      "id": "sr:competitor:371476",
+      "name": "Diaz Acosta, Facundo",
+      "short_name": "Diaz Acosta, Facundo",
+      "abbreviation": "DIA"
+    },
+    {
+      "id": "sr:competitor:382058",
+      "name": "Jacquet, Kyrian",
+      "short_name": "Jacquet, Kyrian",
+      "abbreviation": "JAC"
+    },
+    {
+      "id": "sr:competitor:392066",
+      "name": "Navone, Mariano",
+      "short_name": "Navone, Mariano",
+      "abbreviation": "NAV"
+    },
+    {
+      "id": "sr:competitor:399633",
+      "name": "Atmane, Terence",
+      "short_name": "Atmane, Terence",
+      "abbreviation": "ATM"
+    },
+    {
+      "id": "sr:competitor:399637",
+      "name": "Cobolli, Flavio",
+      "short_name": "Cobolli, Flavio",
+      "abbreviation": "COB"
+    },
+    {
+      "id": "sr:competitor:405977",
+      "name": "Schoolkate, Tristan",
+      "short_name": "Schoolkate, Tristan",
+      "abbreviation": "SCH"
+    },
+    {
+      "id": "sr:competitor:407573",
+      "name": "Alcaraz, Carlos",
+      "short_name": "Alcaraz, Carlos",
+      "abbreviation": "ALC"
+    },
+    {
+      "id": "sr:competitor:407783",
+      "name": "Fearnley, Jacob",
+      "short_name": "Fearnley, Jacob",
+      "abbreviation": "FEA"
+    },
+    {
+      "id": "sr:competitor:418213",
+      "name": "Diallo, Gabriel",
+      "short_name": "Diallo, Gabriel",
+      "abbreviation": "DIA"
+    },
+    {
+      "id": "sr:competitor:429603",
+      "name": "Rune, Holger",
+      "short_name": "Rune, Holger",
+      "abbreviation": "RUN"
+    },
+    {
+      "id": "sr:competitor:443702",
+      "name": "Burruchaga, Roman Andres",
+      "short_name": "Burruchaga, Roman Andres",
+      "abbreviation": "BUR"
+    },
+    {
+      "id": "sr:competitor:445419",
+      "name": "Cazaux, Arthur",
+      "short_name": "Cazaux, Arthur",
+      "abbreviation": "CAZ"
+    },
+    {
+      "id": "sr:competitor:449767",
+      "name": "Wong, Coleman",
+      "short_name": "Wong, Coleman",
+      "abbreviation": "WON"
+    },
+    {
+      "id": "sr:competitor:450283",
+      "name": "Mpetshi Perricard, Giovanni",
+      "short_name": "Mpetshi Perricard, Giovanni",
+      "abbreviation": "MPE"
+    },
+    {
+      "id": "sr:competitor:450477",
+      "name": "Nardi, Luca",
+      "short_name": "Nardi, Luca",
+      "abbreviation": "NAR"
+    },
+    {
+      "id": "sr:competitor:472975",
+      "name": "Bellucci, Mattia",
+      "short_name": "Bellucci, Mattia",
+      "abbreviation": "BEL"
+    },
+    {
+      "id": "sr:competitor:496346",
+      "name": "Stricker, Dominic",
+      "short_name": "Stricker, Dominic",
+      "abbreviation": "STR"
+    },
+    {
+      "id": "sr:competitor:501414",
+      "name": "Gill, Felix",
+      "short_name": "Gill, Felix",
+      "abbreviation": "GIL"
+    },
+    {
+      "id": "sr:competitor:501672",
+      "name": "Svajda, Zachary",
+      "short_name": "Svajda, Zachary",
+      "abbreviation": "SVA"
+    },
+    {
+      "id": "sr:competitor:503814",
+      "name": "Mochizuki, Shintaro",
+      "short_name": "Mochizuki, Shintaro",
+      "abbreviation": "MOC"
+    },
+    {
+      "id": "sr:competitor:505466",
+      "name": "Sekulic, Philip",
+      "short_name": "Sekulic, Philip",
+      "abbreviation": "SEK"
+    },
+    {
+      "id": "sr:competitor:505550",
+      "name": "Arnaldi, Matteo",
+      "short_name": "Arnaldi, Matteo",
+      "abbreviation": "ARN"
+    },
+    {
+      "id": "sr:competitor:515510",
+      "name": "Heide, Gustavo",
+      "short_name": "Heide, Gustavo",
+      "abbreviation": "HEI"
+    },
+    {
+      "id": "sr:competitor:530317",
+      "name": "Rincon, Daniel",
+      "short_name": "Rincon, Daniel",
+      "abbreviation": "RIN"
+    },
+    {
+      "id": "sr:competitor:534043",
+      "name": "Darderi, Luciano",
+      "short_name": "Darderi, Luciano",
+      "abbreviation": "DAR"
+    },
+    {
+      "id": "sr:competitor:601146",
+      "name": "Medjedovic, Hamad",
+      "short_name": "Medjedovic, Hamad",
+      "abbreviation": "MED"
+    },
+    {
+      "id": "sr:competitor:603096",
+      "name": "Riedi, Leandro",
+      "short_name": "Riedi, Leandro",
+      "abbreviation": "RIE"
+    },
+    {
+      "id": "sr:competitor:603098",
+      "name": "Fery, Arthur",
+      "short_name": "Fery, Arthur",
+      "abbreviation": "FER"
+    },
+    {
+      "id": "sr:competitor:603104",
+      "name": "Pinnington Jones, Jack",
+      "short_name": "Pinnington Jones, Jack",
+      "abbreviation": "PIN"
+    },
+    {
+      "id": "sr:competitor:619900",
+      "name": "Gigante, Matteo",
+      "short_name": "Gigante, Matteo",
+      "abbreviation": "GIG"
+    },
+    {
+      "id": "sr:competitor:658475",
+      "name": "van Assche, Luca",
+      "short_name": "van Assche, Luca",
+      "abbreviation": "VAN"
+    },
+    {
+      "id": "sr:competitor:671637",
+      "name": "Fils, Arthur",
+      "short_name": "Fils, Arthur",
+      "abbreviation": "FIL"
+    },
+    {
+      "id": "sr:competitor:675173",
+      "name": "Neumayer, Lukas",
+      "short_name": "Neumayer, Lukas",
+      "abbreviation": "NEU"
+    },
+    {
+      "id": "sr:competitor:682911",
+      "name": "Faria, Jaime",
+      "short_name": "Faria, Jaime",
+      "abbreviation": "FAR"
+    },
+    {
+      "id": "sr:competitor:682913",
+      "name": "Rocha, Henrique",
+      "short_name": "Rocha, Henrique",
+      "abbreviation": "ROC"
+    },
+    {
+      "id": "sr:competitor:721347",
+      "name": "Shang, Juncheng",
+      "short_name": "Shang, Juncheng",
+      "abbreviation": "SHA"
+    },
+    {
+      "id": "sr:competitor:722429",
+      "name": "Prizmic, Dino",
+      "short_name": "Prizmic, Dino",
+      "abbreviation": "PRI"
+    },
+    {
+      "id": "sr:competitor:763108",
+      "name": "Mensik, Jakub",
+      "short_name": "Mensik, Jakub",
+      "abbreviation": "MEN"
+    },
+    {
+      "id": "sr:competitor:801386",
+      "name": "Lajal, Mark",
+      "short_name": "Lajal, Mark",
+      "abbreviation": "LAJ"
+    },
+    {
+      "id": "sr:competitor:808628",
+      "name": "Shelton, Ben",
+      "short_name": "Shelton, Ben",
+      "abbreviation": "SHE"
+    },
+    {
+      "id": "sr:competitor:863319",
+      "name": "Fonseca, Joao",
+      "short_name": "Fonseca, Joao",
+      "abbreviation": "FON"
+    },
+    {
+      "id": "sr:competitor:871495",
+      "name": "Michelsen, Alex",
+      "short_name": "Michelsen, Alex",
+      "abbreviation": "MIC"
+    },
+    {
+      "id": "sr:competitor:871807",
+      "name": "Searle, Henry",
+      "short_name": "Searle, Henry",
+      "abbreviation": "SEA"
+    },
+    {
+      "id": "sr:competitor:14414",
+      "name": "Gasquet, Richard",
+      "short_name": "Gasquet, Richard",
+      "abbreviation": "GAS"
+    },
+    {
+      "id": "sr:competitor:14548",
+      "name": "Wawrinka, Stan",
+      "short_name": "Wawrinka, Stan",
+      "abbreviation": "WAW"
+    },
+    {
+      "id": "sr:competitor:14844",
+      "name": "Monfils, Gael",
+      "short_name": "Monfils, Gael",
+      "abbreviation": "MON"
+    },
+    {
+      "id": "sr:competitor:14882",
+      "name": "Djokovic, Novak",
+      "short_name": "Djokovic, Novak",
+      "abbreviation": "DJO"
+    },
+    {
+      "id": "sr:competitor:15434",
+      "name": "Fognini, Fabio",
+      "short_name": "Fognini, Fabio",
+      "abbreviation": "FOG"
+    },
+    {
+      "id": "sr:competitor:15789",
+      "name": "Cuevas, Pablo",
+      "short_name": "Cuevas, Pablo",
+      "abbreviation": "CUE"
+    },
+    {
+      "id": "sr:competitor:15894",
+      "name": "Mannarino, Adrian",
+      "short_name": "Mannarino, Adrian",
+      "abbreviation": "MAN"
+    },
+    {
+      "id": "sr:competitor:16375",
+      "name": "Evans, Daniel",
+      "short_name": "Evans, Daniel",
+      "abbreviation": "EVA"
+    },
+    {
+      "id": "sr:competitor:16683",
+      "name": "Kukushkin, Mikhail",
+      "short_name": "Kukushkin, Mikhail",
+      "abbreviation": "KUK"
+    },
+    {
+      "id": "sr:competitor:16720",
+      "name": "Bautista Agut, Roberto",
+      "short_name": "Bautista Agut, Roberto",
+      "abbreviation": "BAU"
+    },
+    {
+      "id": "sr:competitor:16822",
+      "name": "Ramos-Vinolas, Albert",
+      "short_name": "Ramos-Vinolas, Albert",
+      "abbreviation": "RAM"
+    },
+    {
+      "id": "sr:competitor:22218",
+      "name": "Paire, Benoit",
+      "short_name": "Paire, Benoit",
+      "abbreviation": "PAI"
+    },
+    {
+      "id": "sr:competitor:22970",
+      "name": "Krajinovic, Filip",
+      "short_name": "Krajinovic, Filip",
+      "abbreviation": "KRA"
+    },
+    {
+      "id": "sr:competitor:23581",
+      "name": "Dimitrov, Grigor",
+      "short_name": "Dimitrov, Grigor",
+      "abbreviation": "DIM"
+    },
+    {
+      "id": "sr:competitor:25838",
+      "name": "Goffin, David",
+      "short_name": "Goffin, David",
+      "abbreviation": "GOF"
+    },
+    {
+      "id": "sr:competitor:36595",
+      "name": "Kudla, Denis",
+      "short_name": "Kudla, Denis",
+      "abbreviation": "KUD"
+    },
+    {
+      "id": "sr:competitor:38183",
+      "name": "Bagnis, Facundo",
+      "short_name": "Bagnis, Facundo",
+      "abbreviation": "BAG"
+    },
+    {
+      "id": "sr:competitor:38517",
+      "name": "Trungelliti, Marco",
+      "short_name": "Trungelliti, Marco",
+      "abbreviation": "TRU"
+    },
+    {
+      "id": "sr:competitor:39234",
+      "name": "Lajovic, Dusan",
+      "short_name": "Lajovic, Dusan",
+      "abbreviation": "LAJ"
+    },
+    {
+      "id": "sr:competitor:39711",
+      "name": "Duckworth, James",
+      "short_name": "Duckworth, James",
+      "abbreviation": "DUC"
+    },
+    {
+      "id": "sr:competitor:40800",
+      "name": "Carreno Busta, Pablo",
+      "short_name": "Carreno Busta, Pablo",
+      "abbreviation": "CAR"
+    },
+    {
+      "id": "sr:competitor:42152",
+      "name": "Napolitano, Stefano",
+      "short_name": "Napolitano, Stefano",
+      "abbreviation": "NAP"
+    },
+    {
+      "id": "sr:competitor:42379",
+      "name": "Giron, Marcos",
+      "short_name": "Giron, Marcos",
+      "abbreviation": "GIR"
+    },
+    {
+      "id": "sr:competitor:43748",
+      "name": "Thiem, Dominic",
+      "short_name": "Thiem, Dominic",
+      "abbreviation": "THI"
+    },
+    {
+      "id": "sr:competitor:44547",
+      "name": "Albot, Radu",
+      "short_name": "Albot, Radu",
+      "abbreviation": "ALB"
+    },
+    {
+      "id": "sr:competitor:44553",
+      "name": "Herbert, Pierre-Hugues",
+      "short_name": "Herbert, Pierre-Hugues",
+      "abbreviation": "HER"
+    },
+    {
+      "id": "sr:competitor:45258",
+      "name": "de Loore, Joris",
+      "short_name": "de Loore, Joris",
+      "abbreviation": "DE"
+    },
+    {
+      "id": "sr:competitor:46390",
+      "name": "Uchiyama, Yasutaka",
+      "short_name": "Uchiyama, Yasutaka",
+      "abbreviation": "UCH"
+    },
+    {
+      "id": "sr:competitor:46391",
+      "name": "Struff, Jan-Lennard",
+      "short_name": "Struff, Jan-Lennard",
+      "abbreviation": "STR"
+    },
+    {
+      "id": "sr:competitor:47603",
+      "name": "Monteiro, Thiago",
+      "short_name": "Monteiro, Thiago",
+      "abbreviation": "MON"
+    },
+    {
+      "id": "sr:competitor:47764",
+      "name": "Broady, Liam",
+      "short_name": "Broady, Liam",
+      "abbreviation": "BRO"
+    },
+    {
+      "id": "sr:competitor:47770",
+      "name": "Fucsovics, Marton",
+      "short_name": "Fucsovics, Marton",
+      "abbreviation": "FUC"
+    },
+    {
+      "id": "sr:competitor:47975",
+      "name": "Hanfmann, Yannick",
+      "short_name": "Hanfmann, Yannick",
+      "abbreviation": "HAN"
+    },
+    {
+      "id": "sr:competitor:48599",
+      "name": "Schwartzman, Diego",
+      "short_name": "Schwartzman, Diego",
+      "abbreviation": "SWM"
+    },
+    {
+      "id": "sr:competitor:48632",
+      "name": "Daniel, Taro",
+      "short_name": "Daniel, Taro",
+      "abbreviation": "DAN"
+    },
+    {
+      "id": "sr:competitor:49172",
+      "name": "Dzumhur, Damir",
+      "short_name": "Dzumhur, Damir",
+      "abbreviation": "DZU"
+    },
+    {
+      "id": "sr:competitor:49417",
+      "name": "Tu, Li",
+      "short_name": "Tu, Li",
+      "abbreviation": "TUL"
+    },
+    {
+      "id": "sr:competitor:49663",
+      "name": "Escoffier, Antoine",
+      "short_name": "Escoffier, Antoine",
+      "abbreviation": "ESC"
+    },
+    {
+      "id": "sr:competitor:50847",
+      "name": "Yevseyev, Denis",
+      "short_name": "Yevseyev, Denis",
+      "abbreviation": "YEV"
+    },
+    {
+      "id": "sr:competitor:50901",
+      "name": "Popko, Dmitry",
+      "short_name": "Popko, Dmitry",
+      "abbreviation": "POP"
+    },
+    {
+      "id": "sr:competitor:51100",
+      "name": "Roca Batalla, Oriol",
+      "short_name": "Roca Batalla, Oriol",
+      "abbreviation": "ROC"
+    },
+    {
+      "id": "sr:competitor:51141",
+      "name": "Carballes Baena, Roberto",
+      "short_name": "Carballes Baena, Roberto",
+      "abbreviation": "CAR"
+    },
+    {
+      "id": "sr:competitor:51345",
+      "name": "Damm Jr, Martin",
+      "short_name": "Damm Jr, Martin",
+      "abbreviation": "DAMM"
+    },
+    {
+      "id": "sr:competitor:52276",
+      "name": "Krueger, Mitchell",
+      "short_name": "Krueger, Mitchell",
+      "abbreviation": "KRU"
+    },
+    {
+      "id": "sr:competitor:54573",
+      "name": "Coria, Federico",
+      "short_name": "Coria, Federico",
+      "abbreviation": "COR"
+    },
+    {
+      "id": "sr:competitor:54955",
+      "name": "Coppejans, Kimmer",
+      "short_name": "Coppejans, Kimmer",
+      "abbreviation": "COP"
+    },
+    {
+      "id": "sr:competitor:56017",
+      "name": "Ritschard, Alexander",
+      "short_name": "Ritschard, Alexander",
+      "abbreviation": "RIT"
+    },
+    {
+      "id": "sr:competitor:57021",
+      "name": "Kovalik, Jozef",
+      "short_name": "Kovalik, Jozef",
+      "abbreviation": "KOV"
+    },
+    {
+      "id": "sr:competitor:57163",
+      "name": "Zverev, Alexander",
+      "short_name": "Zverev, Alexander",
+      "abbreviation": "ZVE"
+    },
+    {
+      "id": "sr:competitor:57289",
+      "name": "Dellien, Hugo",
+      "short_name": "Dellien, Hugo",
+      "abbreviation": "DEL"
+    },
+    {
+      "id": "sr:competitor:57703",
+      "name": "Pouille, Lucas",
+      "short_name": "Pouille, Lucas",
+      "abbreviation": "POU"
+    },
+    {
+      "id": "sr:competitor:58221",
+      "name": "O'Connell, Christopher",
+      "short_name": "O'Connell, Christopher",
+      "abbreviation": "OCO"
+    },
+    {
+      "id": "sr:competitor:58369",
+      "name": "Bolt, Alex",
+      "short_name": "Bolt, Alex",
+      "abbreviation": "BOL"
+    },
+    {
+      "id": "sr:competitor:59281",
+      "name": "Nishioka, Yoshihito",
+      "short_name": "Nishioka, Yoshihito",
+      "abbreviation": "NIS"
+    },
+    {
+      "id": "sr:competitor:60502",
+      "name": "Karatsev, Aslan",
+      "short_name": "Karatsev, Aslan",
+      "abbreviation": "KAR"
+    },
+    {
+      "id": "sr:competitor:62790",
+      "name": "Lestienne, Constant",
+      "short_name": "Lestienne, Constant",
+      "abbreviation": "LES"
+    },
+    {
+      "id": "sr:competitor:63438",
+      "name": "McDonald, Mackenzie",
+      "short_name": "McDonald, Mackenzie",
+      "abbreviation": "MCD"
+    },
+    {
+      "id": "sr:competitor:63606",
+      "name": "Rinderknech, Arthur",
+      "short_name": "Rinderknech, Arthur",
+      "abbreviation": "RIN"
+    },
+    {
+      "id": "sr:competitor:64570",
+      "name": "Garin, Cristian",
+      "short_name": "Garin, Cristian",
+      "abbreviation": "GAR"
+    },
+    {
+      "id": "sr:competitor:64580",
+      "name": "Coric, Borna",
+      "short_name": "Coric, Borna",
+      "abbreviation": "COR"
+    },
+    {
+      "id": "sr:competitor:66086",
+      "name": "Kicker, Nicolas",
+      "short_name": "Kicker, Nicolas",
+      "abbreviation": "KIC"
+    },
+    {
+      "id": "sr:competitor:67154",
+      "name": "Barrere, Gregoire",
+      "short_name": "Barrere, Gregoire",
+      "abbreviation": "BAR"
+    },
+    {
+      "id": "sr:competitor:71280",
+      "name": "Kokkinakis, Thanasi",
+      "short_name": "Kokkinakis, Thanasi",
+      "abbreviation": "KOK"
+    },
+    {
+      "id": "sr:competitor:71660",
+      "name": "Marterer, Maximilian",
+      "short_name": "Marterer, Maximilian",
+      "abbreviation": "MAR"
+    },
+    {
+      "id": "sr:competitor:72248",
+      "name": "Varillas, Juan Pablo",
+      "short_name": "Varillas, Juan Pablo",
+      "abbreviation": "VAR"
+    },
+    {
+      "id": "sr:competitor:73987",
+      "name": "Cachin, Pedro",
+      "short_name": "Cachin, Pedro",
+      "abbreviation": "CAC"
+    },
+    {
+      "id": "sr:competitor:74441",
+      "name": "Couacaud, Enzo",
+      "short_name": "Couacaud, Enzo",
+      "abbreviation": "COU"
+    },
+    {
+      "id": "sr:competitor:75813",
+      "name": "Zhang, Zhizhen",
+      "short_name": "Zhang, Zhizhen",
+      "abbreviation": "ZHA"
+    },
+    {
+      "id": "sr:competitor:77223",
+      "name": "Martinez, Pedro",
+      "short_name": "Martinez, Pedro",
+      "abbreviation": "MAR"
+    },
+    {
+      "id": "sr:competitor:80665",
+      "name": "Polmans, Marc",
+      "short_name": "Polmans, Marc",
+      "abbreviation": "POL"
+    },
+    {
+      "id": "sr:competitor:81271",
+      "name": "Hemery, Calvin",
+      "short_name": "Hemery, Calvin",
+      "abbreviation": "HEM"
+    },
+    {
+      "id": "sr:competitor:82133",
+      "name": "Dellien, Murkel",
+      "short_name": "Dellien, Murkel",
+      "abbreviation": "DEV"
+    },
+    {
+      "id": "sr:competitor:83397",
+      "name": "Ofner, Sebastian",
+      "short_name": "Ofner, Sebastian",
+      "abbreviation": "OFN"
+    },
+    {
+      "id": "sr:competitor:83661",
+      "name": "Ymer, Elias",
+      "short_name": "Ymer, Elias",
+      "abbreviation": "YME"
+    },
+    {
+      "id": "sr:competitor:87690",
+      "name": "Thompson, Jordan",
+      "short_name": "Thompson, Jordan",
+      "abbreviation": "THO"
+    },
+    {
+      "id": "sr:competitor:88992",
+      "name": "Muller, Alexandre",
+      "short_name": "Muller, Alexandre",
+      "abbreviation": "MUL"
+    },
+    {
+      "id": "sr:competitor:89632",
+      "name": "Jarry, Nicolas",
+      "short_name": "Jarry, Nicolas",
+      "abbreviation": "JAR"
+    },
+    {
+      "id": "sr:competitor:90080",
+      "name": "Khachanov, Karen",
+      "short_name": "Khachanov, Karen",
+      "abbreviation": "KHA"
+    },
+    {
+      "id": "sr:competitor:90798",
+      "name": "Halys, Quentin",
+      "short_name": "Halys, Quentin",
+      "abbreviation": "HAL"
+    },
+    {
+      "id": "sr:competitor:92074",
+      "name": "Galan, Daniel Elahi",
+      "short_name": "Galan, Daniel Elahi",
+      "abbreviation": "GAL"
+    },
+    {
+      "id": "sr:competitor:93597",
+      "name": "Pellegrino, Andrea",
+      "short_name": "Pellegrino, Andrea",
+      "abbreviation": "PEL"
+    },
+    {
+      "id": "sr:competitor:94485",
+      "name": "Bonzi, Benjamin",
+      "short_name": "Bonzi, Benjamin",
+      "abbreviation": "BON"
+    },
+    {
+      "id": "sr:competitor:95801",
+      "name": "Vavassori, Andrea",
+      "short_name": "Vavassori, Andrea",
+      "abbreviation": "VAV"
+    },
+    {
+      "id": "sr:competitor:97231",
+      "name": "Djere, Laslo",
+      "short_name": "Djere, Laslo",
+      "abbreviation": "DJE"
+    },
+    {
+      "id": "sr:competitor:97647",
+      "name": "Kwon, Soonwoo",
+      "short_name": "Kwon, Soonwoo",
+      "abbreviation": "KWON"
+    },
+    {
+      "id": "sr:competitor:97977",
+      "name": "Hong, Seongchan",
+      "short_name": "Hong, Seong Chan",
+      "abbreviation": "HON"
+    },
+    {
+      "id": "sr:competitor:101101",
+      "name": "Tiafoe, Frances",
+      "short_name": "Tiafoe, Frances",
+      "abbreviation": "TIA"
+    },
+    {
+      "id": "sr:competitor:102151",
+      "name": "Tabilo, Alejandro",
+      "short_name": "Tabilo, Alejandro",
+      "abbreviation": "TAB"
+    },
+    {
+      "id": "sr:competitor:102339",
+      "name": "Van de Zandschulp, Botic",
+      "short_name": "Van de Zandschulp, Botic",
+      "abbreviation": "VAN"
+    },
+    {
+      "id": "sr:competitor:102411",
+      "name": "van Rijthoven, Tim",
+      "short_name": "van Rijthoven, Tim",
+      "abbreviation": "VAN"
+    },
+    {
+      "id": "sr:competitor:104847",
+      "name": "Sonego, Lorenzo",
+      "short_name": "Sonego, Lorenzo",
+      "abbreviation": "SON"
+    },
+    {
+      "id": "sr:competitor:104967",
+      "name": "Brouwer, Gijs",
+      "short_name": "Brouwer, Gijs",
+      "abbreviation": "BRO"
+    },
+    {
+      "id": "sr:competitor:105607",
+      "name": "Choinski, Jan",
+      "short_name": "Choinski, Jan",
+      "abbreviation": "CHO"
+    },
+    {
+      "id": "sr:competitor:106755",
+      "name": "Rublev, Andrey",
+      "short_name": "Rublev, Andrey",
+      "abbreviation": "RUB"
+    },
+    {
+      "id": "sr:competitor:107357",
+      "name": "Grenier, Hugo",
+      "short_name": "Grenier, Hugo",
+      "abbreviation": "GRE"
+    },
+    {
+      "id": "sr:competitor:107625",
+      "name": "Janvier, Maxime",
+      "short_name": "Janvier, Maxime",
+      "abbreviation": "JAN"
+    },
+    {
+      "id": "sr:competitor:108709",
+      "name": "Majchrzak, Kamil",
+      "short_name": "Majchrzak, Kamil",
+      "abbreviation": "MAJ"
+    },
+    {
+      "id": "sr:competitor:108767",
+      "name": "Hassan, Benjamin",
+      "short_name": "Hassan, Benjamin",
+      "abbreviation": "HAS"
+    },
+    {
+      "id": "sr:competitor:111837",
+      "name": "Harris, Billy",
+      "short_name": "Harris, Billy",
+      "abbreviation": "HAR"
+    },
+    {
+      "id": "sr:competitor:112783",
+      "name": "Berrettini, Matteo",
+      "short_name": "Berrettini, Matteo",
+      "abbreviation": "BER"
+    },
+    {
+      "id": "sr:competitor:113905",
+      "name": "Moreno de Alboran, Nicolas",
+      "short_name": "Moreno de Alboran, Nicolas",
+      "abbreviation": "MAN"
+    },
+    {
+      "id": "sr:competitor:117916",
+      "name": "Shapovalov, Denis",
+      "short_name": "Shapovalov, Denis",
+      "abbreviation": "SHA"
+    },
+    {
+      "id": "sr:competitor:119248",
+      "name": "Ruud, Casper",
+      "short_name": "Ruud, Casper",
+      "abbreviation": "RUU"
+    },
+    {
+      "id": "sr:competitor:121668",
+      "name": "Meligeni Alves, Felipe",
+      "short_name": "Alves, Felipe",
+      "abbreviation": "MEL"
+    },
+    {
+      "id": "sr:competitor:122366",
+      "name": "Tsitsipas, Stefanos",
+      "short_name": "Tsitsipas, Stefanos",
+      "abbreviation": "TSI"
+    },
+    {
+      "id": "sr:competitor:122368",
+      "name": "Griekspoor, Tallon",
+      "short_name": "Griekspoor, Tallon",
+      "abbreviation": "GRI"
+    },
+    {
+      "id": "sr:competitor:124656",
+      "name": "Vukic, Aleksandar",
+      "short_name": "Vukic, Aleksandar",
+      "abbreviation": "VUK"
+    },
+    {
+      "id": "sr:competitor:124658",
+      "name": "Purcell, Max",
+      "short_name": "Purcell, Max",
+      "abbreviation": "PUR"
+    },
+    {
+      "id": "sr:competitor:124916",
+      "name": "Gojo, Borna",
+      "short_name": "Gojo, Borna",
+      "abbreviation": "GOJ"
+    },
+    {
+      "id": "sr:competitor:124930",
+      "name": "Safiullin, Roman",
+      "short_name": "Safiullin, Roman",
+      "abbreviation": "SAF"
+    },
+    {
+      "id": "sr:competitor:125006",
+      "name": "Borges, Nuno",
+      "short_name": "Borges, Nuno",
+      "abbreviation": "BOR"
+    },
+    {
+      "id": "sr:competitor:126356",
+      "name": "Munar, Jaume",
+      "short_name": "Munar, Jaume",
+      "abbreviation": "MUN"
+    },
+    {
+      "id": "sr:competitor:127208",
+      "name": "Altmaier, Daniel",
+      "short_name": "Altmaier, Daniel",
+      "abbreviation": "ALT"
+    },
+    {
+      "id": "sr:competitor:128552",
+      "name": "Popyrin, Alexei",
+      "short_name": "Popyrin, Alexei",
+      "abbreviation": "POP"
+    },
+    {
+      "id": "sr:competitor:129368",
+      "name": "Koepfer, Dominik",
+      "short_name": "Koepfer, Dominik",
+      "abbreviation": "KOE"
+    },
+    {
+      "id": "sr:competitor:130398",
+      "name": "Kecmanovic, Miomir",
+      "short_name": "Kecmanovic, Miomir",
+      "abbreviation": "KEC"
+    },
+    {
+      "id": "sr:competitor:130400",
+      "name": "Opelka, Reilly",
+      "short_name": "Opelka, Reilly",
+      "abbreviation": "OPE"
+    },
+    {
+      "id": "sr:competitor:131566",
+      "name": "Nagal, Sumit",
+      "short_name": "Nagal, Sumit",
+      "abbreviation": "NAG"
+    },
+    {
+      "id": "sr:competitor:132834",
+      "name": "Barrios Vera, Marcelo Tomas",
+      "short_name": "Barrios Vera, Tomas",
+      "abbreviation": "BAR"
+    },
+    {
+      "id": "sr:competitor:136042",
+      "name": "Fritz, Taylor",
+      "short_name": "Fritz, Taylor",
+      "abbreviation": "FRI"
+    },
+    {
+      "id": "sr:competitor:138546",
+      "name": "Paul, Tommy",
+      "short_name": "Paul, Tommy",
+      "abbreviation": "PAU"
+    },
+    {
+      "id": "sr:competitor:145112",
+      "name": "Huesler, Marc-Andrea",
+      "short_name": "Huesler, Marc-Andrea",
+      "abbreviation": "HUE"
+    },
+    {
+      "id": "sr:competitor:145122",
+      "name": "Martineau, Matteo",
+      "short_name": "Martineau, Matteo",
+      "abbreviation": "MAR"
+    },
+    {
+      "id": "sr:competitor:146040",
+      "name": "Gomez, Federico Agustin",
+      "short_name": "Gomez, Federico Agustin",
+      "abbreviation": "GOM"
+    },
+    {
+      "id": "sr:competitor:157456",
+      "name": "Davidovich Fokina, Alejandro",
+      "short_name": "Davidovich Fokina, Alejandro",
+      "abbreviation": "DAV"
+    },
+    {
+      "id": "sr:competitor:158896",
+      "name": "Hurkacz, Hubert",
+      "short_name": "Hurkacz, Hubert",
+      "abbreviation": "HUR"
+    },
+    {
+      "id": "sr:competitor:158912",
+      "name": "Vacherot, Valentin",
+      "short_name": "Vacherot, Valentin",
+      "abbreviation": "VAC"
+    },
+    {
+      "id": "sr:competitor:161262",
+      "name": "Seyboth Wild, Thiago",
+      "short_name": "Seyboth Wild, Thiago",
+      "abbreviation": "SEY"
+    },
+    {
+      "id": "sr:competitor:163480",
+      "name": "Bublik, Alexander",
+      "short_name": "Bublik, Alexander",
+      "abbreviation": "BUB"
+    },
+    {
+      "id": "sr:competitor:163504",
+      "name": "Medvedev, Daniil",
+      "short_name": "Medvedev, Daniil",
+      "abbreviation": "MED"
+    },
+    {
+      "id": "sr:competitor:163636",
+      "name": "Klein, Lukas",
+      "short_name": "Klein, Lukas",
+      "abbreviation": "KLE"
+    },
+    {
+      "id": "sr:competitor:169496",
+      "name": "Etcheverry, Tomas Martin",
+      "short_name": "Etcheverry, Tomas Martin",
+      "abbreviation": "ETC"
+    },
+    {
+      "id": "sr:competitor:170946",
+      "name": "Bergs, Zizou",
+      "short_name": "Bergs, Zizou",
+      "abbreviation": "BER"
+    },
+    {
+      "id": "sr:competitor:175014",
+      "name": "Moutet, Corentin",
+      "short_name": "Moutet, Corentin",
+      "abbreviation": "MOU"
+    },
+    {
+      "id": "sr:competitor:177686",
+      "name": "Barranco Cosano, Javier",
+      "short_name": "Barranco Cosano, Javier",
+      "abbreviation": "BAR"
+    },
+    {
+      "id": "sr:competitor:185388",
+      "name": "Humbert, Ugo",
+      "short_name": "Humbert, Ugo",
+      "abbreviation": "HUM"
+    },
+    {
+      "id": "sr:competitor:186885",
+      "name": "Hardt, Nick",
+      "short_name": "Hardt, Nick",
+      "abbreviation": "HAR"
+    },
+    {
+      "id": "sr:competitor:188321",
+      "name": "Kovacevic, Aleksandar",
+      "short_name": "Kovacevic, Aleksandar",
+      "abbreviation": "KOV"
+    },
+    {
+      "id": "sr:competitor:195800",
+      "name": "Auger-Aliassime, Felix",
+      "short_name": "Auger-Aliassime, Felix",
+      "abbreviation": "AUG"
+    },
+    {
+      "id": "sr:competitor:203681",
+      "name": "Korda, Sebastian",
+      "short_name": "Korda, Sebastian",
+      "abbreviation": "KOR"
+    },
+    {
+      "id": "sr:competitor:204117",
+      "name": "Ugo Carabelli, Camilo",
+      "short_name": "Ugo Carabelli, Camilo",
+      "abbreviation": "UGO"
+    },
+    {
+      "id": "sr:competitor:206879",
+      "name": "Eubanks, Christopher",
+      "short_name": "Eubanks, Christopher",
+      "abbreviation": "EUB"
+    },
+    {
+      "id": "sr:competitor:210526",
+      "name": "Kopriva, Vit",
+      "short_name": "Kopriva, Vit",
+      "abbreviation": "KOP"
+    },
+    {
+      "id": "sr:competitor:212004",
+      "name": "Rodionov, Jurij",
+      "short_name": "Rodionov, Jurij",
+      "abbreviation": "ROD"
+    },
+    {
+      "id": "sr:competitor:213170",
+      "name": "Blanchet, Ugo",
+      "short_name": "Blanchet, Ugo",
+      "abbreviation": "BLA"
+    },
+    {
+      "id": "sr:competitor:214182",
+      "name": "de Minaur, Alex",
+      "short_name": "de Minaur, Alex",
+      "abbreviation": "DE"
+    },
+    {
+      "id": "sr:competitor:218538",
+      "name": "Kotov, Pavel",
+      "short_name": "Kotov, Pavel",
+      "abbreviation": "KOT"
+    },
+    {
+      "id": "sr:competitor:220588",
+      "name": "Hsu, Yu Hsiou",
+      "short_name": "Hsu, Yu Hsiou",
+      "abbreviation": "HSU"
+    },
+    {
+      "id": "sr:competitor:223714",
+      "name": "Piros, Zsombor",
+      "short_name": "Piros, Zsombor",
+      "abbreviation": "PIR"
+    },
+    {
+      "id": "sr:competitor:223874",
+      "name": "Gaston, Hugo",
+      "short_name": "Gaston, Hugo",
+      "abbreviation": "GAS"
+    },
+    {
+      "id": "sr:competitor:225050",
+      "name": "Sinner, Jannik",
+      "short_name": "Sinner, Jannik",
+      "abbreviation": "SIN"
+    },
+    {
+      "id": "sr:competitor:226036",
+      "name": "Tseng, Chun Hsin",
+      "short_name": "Tseng, Chun Hsin",
+      "abbreviation": "TSE"
+    },
+    {
+      "id": "sr:competitor:226050",
+      "name": "Holt, Brandon",
+      "short_name": "Holt, Brandon",
+      "abbreviation": "HOL"
+    },
+    {
+      "id": "sr:competitor:226132",
+      "name": "Ajdukovic, Duje",
+      "short_name": "Ajdukovic, Duje",
+      "abbreviation": "AJD"
+    },
+    {
+      "id": "sr:competitor:227358",
+      "name": "Walton, Adam",
+      "short_name": "Walton, Adam",
+      "abbreviation": "WAL"
+    },
+    {
+      "id": "sr:competitor:229022",
+      "name": "Squire, Henri",
+      "short_name": "Squire, Henri",
+      "abbreviation": "SQU"
+    },
+    {
+      "id": "sr:competitor:231192",
+      "name": "Molleker, Rudolf",
+      "short_name": "Molleker, Rudolf",
+      "abbreviation": "MOL"
+    },
+    {
+      "id": "sr:competitor:234046",
+      "name": "Kypson, Patrick",
+      "short_name": "Kypson, Patrick",
+      "abbreviation": "KYP"
+    },
+    {
+      "id": "sr:competitor:234048",
+      "name": "Wolf, Jeffrey John",
+      "short_name": "Wolf, Jeffrey John",
+      "abbreviation": "WOL"
+    },
+    {
+      "id": "sr:competitor:240876",
+      "name": "Crawford, Oliver",
+      "short_name": "Crawford, Oliver",
+      "abbreviation": "CRA"
+    },
+    {
+      "id": "sr:competitor:242548",
+      "name": "Jubb, Paul",
+      "short_name": "Jubb, Paul",
+      "abbreviation": "JUB"
+    },
+    {
+      "id": "sr:competitor:247607",
+      "name": "Shimabukuro, Sho",
+      "short_name": "Shimabukuro, Sho",
+      "abbreviation": "SHI"
+    },
+    {
+      "id": "sr:competitor:254383",
+      "name": "Marozsan, Fabian",
+      "short_name": "Marozsan, Fabian",
+      "abbreviation": "MAR"
+    },
+    {
+      "id": "sr:competitor:255595",
+      "name": "Cerundolo, Francisco",
+      "short_name": "Cerundolo, Francisco",
+      "abbreviation": "CER"
+    },
+    {
+      "id": "sr:competitor:256875",
+      "name": "Tirante, Thiago Agustin",
+      "short_name": "Tirante, Thiago Agustin",
+      "abbreviation": "TIR"
+    },
+    {
+      "id": "sr:competitor:257721",
+      "name": "Baez, Sebastian",
+      "short_name": "Baez, Sebastian",
+      "abbreviation": "BAE"
+    },
+    {
+      "id": "sr:competitor:258735",
+      "name": "Cerundolo, Juan Manuel",
+      "short_name": "Cerundolo, Juan Manuel",
+      "abbreviation": "CER"
+    },
+    {
+      "id": "sr:competitor:269521",
+      "name": "Cressy, Maxime",
+      "short_name": "Cressy, Maxime",
+      "abbreviation": "CRE"
+    },
+    {
+      "id": "sr:competitor:276563",
+      "name": "Virtanen, Otto",
+      "short_name": "Virtanen, Otto",
+      "abbreviation": "VIR"
+    },
+    {
+      "id": "sr:competitor:276685",
+      "name": "Skatov, Timofey",
+      "short_name": "Skatov, Timofey",
+      "abbreviation": "SKA"
+    },
+    {
+      "id": "sr:competitor:284801",
+      "name": "Boyer, Tristan",
+      "short_name": "Boyer, Tristan",
+      "abbreviation": "BOY"
+    },
+    {
+      "id": "sr:competitor:284805",
+      "name": "Nava, Emilio",
+      "short_name": "Nava, Emilio",
+      "abbreviation": "NAV"
+    },
+    {
+      "id": "sr:competitor:286541",
+      "name": "Zhukayev, Beibit",
+      "short_name": "Zhukayev, Beibit",
+      "abbreviation": "ZHU"
+    },
+    {
+      "id": "sr:competitor:294300",
+      "name": "Nakashima, Brandon",
+      "short_name": "Nakashima, Brandon",
+      "abbreviation": "NAK"
+    },
+    {
+      "id": "sr:competitor:299130",
+      "name": "Hijikata, Rinky",
+      "short_name": "Hijikata, Rinky",
+      "abbreviation": "HIJ"
+    },
+    {
+      "id": "sr:competitor:300540",
+      "name": "Machac, Tomas",
+      "short_name": "Machac, Tomas",
+      "abbreviation": "MAC"
+    },
+    {
+      "id": "sr:competitor:309954",
+      "name": "Droguet, Titouan",
+      "short_name": "Droguet, Titouan",
+      "abbreviation": "DRO"
+    },
+    {
+      "id": "sr:competitor:310974",
+      "name": "De Jong, Jesper",
+      "short_name": "De Jong, Jesper",
+      "abbreviation": "DEJ"
+    },
+    {
+      "id": "sr:competitor:321667",
+      "name": "Mayot, Harold",
+      "short_name": "Mayot, Harold",
+      "abbreviation": "MAY"
+    },
+    {
+      "id": "sr:competitor:325737",
+      "name": "Moro Canas, Alejandro",
+      "short_name": "Moro Canas, Alejandro",
+      "abbreviation": "MOR"
+    },
+    {
+      "id": "sr:competitor:337601",
+      "name": "Bu, Yunchaokete",
+      "short_name": "Yunchaokete, Bu",
+      "abbreviation": "YUN"
+    },
+    {
+      "id": "sr:competitor:339377",
+      "name": "Lehecka, Jiri",
+      "short_name": "Lehecka, Jiri",
+      "abbreviation": "LEH"
+    },
+    {
+      "id": "sr:competitor:341192",
+      "name": "Comesana, Francisco",
+      "short_name": "Comesana, Francisco",
+      "abbreviation": "COM"
+    },
+    {
+      "id": "sr:competitor:341220",
+      "name": "Royer, Valentin",
+      "short_name": "Royer, Valentin",
+      "abbreviation": "ROY"
+    },
+    {
+      "id": "sr:competitor:352776",
+      "name": "Draper, Jack",
+      "short_name": "Draper, Jack",
+      "abbreviation": "DRA"
+    },
+    {
+      "id": "sr:competitor:353530",
+      "name": "Passaro, Francesco",
+      "short_name": "Passaro, Francesco",
+      "abbreviation": "PAS"
+    },
+    {
+      "id": "sr:competitor:359602",
+      "name": "Musetti, Lorenzo",
+      "short_name": "Musetti, Lorenzo",
+      "abbreviation": "MUS"
+    },
+    {
+      "id": "sr:competitor:371436",
+      "name": "Shevchenko, Alexander",
+      "short_name": "Shevchenko, Alexander",
+      "abbreviation": "SHE"
+    },
+    {
+      "id": "sr:competitor:371476",
+      "name": "Diaz Acosta, Facundo",
+      "short_name": "Diaz Acosta, Facundo",
+      "abbreviation": "DIA"
+    },
+    {
+      "id": "sr:competitor:382058",
+      "name": "Jacquet, Kyrian",
+      "short_name": "Jacquet, Kyrian",
+      "abbreviation": "JAC"
+    },
+    {
+      "id": "sr:competitor:389114",
+      "name": "Guillen Meza, Alvaro",
+      "short_name": "Guillen Meza, Alvaro",
+      "abbreviation": "GUI"
+    },
+    {
+      "id": "sr:competitor:392066",
+      "name": "Navone, Mariano",
+      "short_name": "Navone, Mariano",
+      "abbreviation": "NAV"
+    },
+    {
+      "id": "sr:competitor:399633",
+      "name": "Atmane, Terence",
+      "short_name": "Atmane, Terence",
+      "abbreviation": "ATM"
+    },
+    {
+      "id": "sr:competitor:399637",
+      "name": "Cobolli, Flavio",
+      "short_name": "Cobolli, Flavio",
+      "abbreviation": "COB"
+    },
+    {
+      "id": "sr:competitor:405977",
+      "name": "Schoolkate, Tristan",
+      "short_name": "Schoolkate, Tristan",
+      "abbreviation": "SCH"
+    },
+    {
+      "id": "sr:competitor:407573",
+      "name": "Alcaraz, Carlos",
+      "short_name": "Alcaraz, Carlos",
+      "abbreviation": "ALC"
+    },
+    {
+      "id": "sr:competitor:407783",
+      "name": "Fearnley, Jacob",
+      "short_name": "Fearnley, Jacob",
+      "abbreviation": "FEA"
+    },
+    {
+      "id": "sr:competitor:418213",
+      "name": "Diallo, Gabriel",
+      "short_name": "Diallo, Gabriel",
+      "abbreviation": "DIA"
+    },
+    {
+      "id": "sr:competitor:428657",
+      "name": "Shelbayh, Abdullah",
+      "short_name": "Shelbayh, Abdullah",
+      "abbreviation": "SHE"
+    },
+    {
+      "id": "sr:competitor:429603",
+      "name": "Rune, Holger",
+      "short_name": "Rune, Holger",
+      "abbreviation": "RUN"
+    },
+    {
+      "id": "sr:competitor:443702",
+      "name": "Burruchaga, Roman Andres",
+      "short_name": "Burruchaga, Roman Andres",
+      "abbreviation": "BUR"
+    },
+    {
+      "id": "sr:competitor:445419",
+      "name": "Cazaux, Arthur",
+      "short_name": "Cazaux, Arthur",
+      "abbreviation": "CAZ"
+    },
+    {
+      "id": "sr:competitor:448357",
+      "name": "Spizzirri, Eliot",
+      "short_name": "Spizzirri, Eliot",
+      "abbreviation": "SPI"
+    },
+    {
+      "id": "sr:competitor:449767",
+      "name": "Wong, Coleman",
+      "short_name": "Wong, Coleman",
+      "abbreviation": "WON"
+    },
+    {
+      "id": "sr:competitor:450283",
+      "name": "Mpetshi Perricard, Giovanni",
+      "short_name": "Mpetshi Perricard, Giovanni",
+      "abbreviation": "MPE"
+    },
+    {
+      "id": "sr:competitor:450477",
+      "name": "Nardi, Luca",
+      "short_name": "Nardi, Luca",
+      "abbreviation": "NAR"
+    },
+    {
+      "id": "sr:competitor:472975",
+      "name": "Bellucci, Mattia",
+      "short_name": "Bellucci, Mattia",
+      "abbreviation": "BEL"
+    },
+    {
+      "id": "sr:competitor:496346",
+      "name": "Stricker, Dominic",
+      "short_name": "Stricker, Dominic",
+      "abbreviation": "STR"
+    },
+    {
+      "id": "sr:competitor:501672",
+      "name": "Svajda, Zachary",
+      "short_name": "Svajda, Zachary",
+      "abbreviation": "SVA"
+    },
+    {
+      "id": "sr:competitor:503814",
+      "name": "Mochizuki, Shintaro",
+      "short_name": "Mochizuki, Shintaro",
+      "abbreviation": "MOC"
+    },
+    {
+      "id": "sr:competitor:505550",
+      "name": "Arnaldi, Matteo",
+      "short_name": "Arnaldi, Matteo",
+      "abbreviation": "ARN"
+    },
+    {
+      "id": "sr:competitor:515510",
+      "name": "Heide, Gustavo",
+      "short_name": "Heide, Gustavo",
+      "abbreviation": "HEI"
+    },
+    {
+      "id": "sr:competitor:530317",
+      "name": "Rincon, Daniel",
+      "short_name": "Rincon, Daniel",
+      "abbreviation": "RIN"
+    },
+    {
+      "id": "sr:competitor:534043",
+      "name": "Darderi, Luciano",
+      "short_name": "Darderi, Luciano",
+      "abbreviation": "DAR"
+    },
+    {
+      "id": "sr:competitor:539343",
+      "name": "Kym, Jerome",
+      "short_name": "Kym, Jerome",
+      "abbreviation": "KYM"
+    },
+    {
+      "id": "sr:competitor:540271",
+      "name": "Mayo, Aidan",
+      "short_name": "Mayo, Aidan",
+      "abbreviation": "MAY"
+    },
+    {
+      "id": "sr:competitor:601146",
+      "name": "Medjedovic, Hamad",
+      "short_name": "Medjedovic, Hamad",
+      "abbreviation": "MED"
+    },
+    {
+      "id": "sr:competitor:603096",
+      "name": "Riedi, Leandro",
+      "short_name": "Riedi, Leandro",
+      "abbreviation": "RIE"
+    },
+    {
+      "id": "sr:competitor:604238",
+      "name": "Gaubas, Vilius",
+      "short_name": "Gaubas, Vilius",
+      "abbreviation": "GAU"
+    },
+    {
+      "id": "sr:competitor:619900",
+      "name": "Gigante, Matteo",
+      "short_name": "Gigante, Matteo",
+      "abbreviation": "GIG"
+    },
+    {
+      "id": "sr:competitor:628044",
+      "name": "Kuzuhara, Bruno",
+      "short_name": "Kuzuhara, Bruno",
+      "abbreviation": "KUZ"
+    },
+    {
+      "id": "sr:competitor:655845",
+      "name": "Quinn, Ethan",
+      "short_name": "Quinn, Ethan",
+      "abbreviation": "QUI"
+    },
+    {
+      "id": "sr:competitor:658475",
+      "name": "van Assche, Luca",
+      "short_name": "van Assche, Luca",
+      "abbreviation": "VAN"
+    },
+    {
+      "id": "sr:competitor:671637",
+      "name": "Fils, Arthur",
+      "short_name": "Fils, Arthur",
+      "abbreviation": "FIL"
+    },
+    {
+      "id": "sr:competitor:682911",
+      "name": "Faria, Jaime",
+      "short_name": "Faria, Jaime",
+      "abbreviation": "FAR"
+    },
+    {
+      "id": "sr:competitor:682913",
+      "name": "Rocha, Henrique",
+      "short_name": "Rocha, Henrique",
+      "abbreviation": "ROC"
+    },
+    {
+      "id": "sr:competitor:685469",
+      "name": "Kasnikowski, Maks",
+      "short_name": "Kasnikowski, Maks",
+      "abbreviation": "KAS"
+    },
+    {
+      "id": "sr:competitor:721347",
+      "name": "Shang, Juncheng",
+      "short_name": "Shang, Juncheng",
+      "abbreviation": "SHA"
+    },
+    {
+      "id": "sr:competitor:722429",
+      "name": "Prizmic, Dino",
+      "short_name": "Prizmic, Dino",
+      "abbreviation": "PRI"
+    },
+    {
+      "id": "sr:competitor:763108",
+      "name": "Mensik, Jakub",
+      "short_name": "Mensik, Jakub",
+      "abbreviation": "MEN"
+    },
+    {
+      "id": "sr:competitor:807574",
+      "name": "Zheng, Michael",
+      "short_name": "Zheng, Michael",
+      "abbreviation": "ZHE"
+    },
+    {
+      "id": "sr:competitor:808628",
+      "name": "Shelton, Ben",
+      "short_name": "Shelton, Ben",
+      "abbreviation": "SHE"
+    },
+    {
+      "id": "sr:competitor:863319",
+      "name": "Fonseca, Joao",
+      "short_name": "Fonseca, Joao",
+      "abbreviation": "FON"
+    },
+    {
+      "id": "sr:competitor:871495",
+      "name": "Michelsen, Alex",
+      "short_name": "Michelsen, Alex",
+      "abbreviation": "MIC"
+    },
+    {
+      "id": "sr:competitor:872497",
+      "name": "Basavareddy, Nishesh",
+      "short_name": "Basavareddy, Nishesh",
+      "abbreviation": "BAS"
+    },
+    {
+      "id": "sr:competitor:878709",
+      "name": "Bigun, Kaylan",
+      "short_name": "Bigun, Kaylan",
+      "abbreviation": "BIG"
+    },
+    {
+      "id": "sr:competitor:891669",
+      "name": "Tien, Learner",
+      "short_name": "Tien, Learner",
+      "abbreviation": "TIE"
+    },
+    {
+      "id": "sr:competitor:1052213",
+      "name": "Forbes, Matthew",
+      "short_name": "Forbes, Matthew",
+      "abbreviation": "FOR"
+    },
+    {
+      "id": "sr:competitor:1140995",
+      "name": "Kennedy, Jack",
+      "short_name": "Kennedy, Jack",
+      "abbreviation": "KEN"
+    },
+    {
+      "id": "sr:competitor:18808",
+      "name": "Cornet, Alize",
+      "short_name": "Cornet, Alize",
+      "abbreviation": "COR"
+    },
+    {
+      "id": "sr:competitor:18910",
+      "name": "Wozniacki, Caroline",
+      "short_name": "WOZNIACKI C.",
+      "abbreviation": "WOZ"
+    },
+    {
+      "id": "sr:competitor:18936",
+      "name": "Hsieh, Su-Wei",
+      "short_name": "Hsieh, Su-Wei",
+      "abbreviation": "HSI"
+    },
+    {
+      "id": "sr:competitor:18977",
+      "name": "Kanepi, Kaia",
+      "short_name": "Kanepi, Kaia",
+      "abbreviation": "KAN"
+    },
+    {
+      "id": "sr:competitor:19017",
+      "name": "Azarenka, Victoria",
+      "short_name": "Azarenka, Victoria",
+      "abbreviation": "AZA"
+    },
+    {
+      "id": "sr:competitor:19202",
+      "name": "Errani, Sara",
+      "short_name": "Errani, Sara",
+      "abbreviation": "ERR"
+    },
+    {
+      "id": "sr:competitor:19520",
+      "name": "Maria, Tatjana",
+      "short_name": "Maria, Tatjana",
+      "abbreviation": "MAR"
+    },
+    {
+      "id": "sr:competitor:19546",
+      "name": "Pavlyuchenkova, Anastasia",
+      "short_name": "Pavlyuchenkova, Anastasia",
+      "abbreviation": "PAV"
+    },
+    {
+      "id": "sr:competitor:19578",
+      "name": "Kerber, Angelique",
+      "short_name": "Kerber, Angelique",
+      "abbreviation": "KER"
+    },
+    {
+      "id": "sr:competitor:19704",
+      "name": "Martic, Petra",
+      "short_name": "Martic, Petra",
+      "abbreviation": "MAR"
+    },
+    {
+      "id": "sr:competitor:19728",
+      "name": "Cirstea, Sorana",
+      "short_name": "Cirstea, Sorana",
+      "abbreviation": "CIR"
+    },
+    {
+      "id": "sr:competitor:19847",
+      "name": "Rus, Arantxa",
+      "short_name": "Rus, Arantxa",
+      "abbreviation": "RUS"
+    },
+    {
+      "id": "sr:competitor:19876",
+      "name": "Wickmayer, Yanina",
+      "short_name": "Wickmayer, Yanina",
+      "abbreviation": "WIC"
+    },
+    {
+      "id": "sr:competitor:20732",
+      "name": "Pliskova, Karolina",
+      "short_name": "Pliskova, Karolina",
+      "abbreviation": "PLI"
+    },
+    {
+      "id": "sr:competitor:23082",
+      "name": "Rodionova, Arina",
+      "short_name": "Rodionova, Arina",
+      "abbreviation": "ROD"
+    },
+    {
+      "id": "sr:competitor:23158",
+      "name": "Stephens, Sloane",
+      "short_name": "Stephens, Sloane",
+      "abbreviation": "STE"
+    },
+    {
+      "id": "sr:competitor:25831",
+      "name": "Abduraimova, Nigina",
+      "short_name": "Abduraimova, Nigina",
+      "abbreviation": "ABD"
+    },
+    {
+      "id": "sr:competitor:26120",
+      "name": "Marino, Rebecca",
+      "short_name": "Marino, Rebecca",
+      "abbreviation": "MAR"
+    },
+    {
+      "id": "sr:competitor:34486",
+      "name": "Tomljanovic, Ajla",
+      "short_name": "Tomljanovic, Ajla",
+      "abbreviation": "TOM"
+    },
+    {
+      "id": "sr:competitor:36067",
+      "name": "Tsurenko, Lesia",
+      "short_name": "Tsurenko, Lesia",
+      "abbreviation": "TSU"
+    },
+    {
+      "id": "sr:competitor:37508",
+      "name": "Siegemund, Laura",
+      "short_name": "Siegemund, Laura",
+      "abbreviation": "SIE"
+    },
+    {
+      "id": "sr:competitor:39425",
+      "name": "Savinykh, Valeria",
+      "short_name": "Savinykh, Valeria",
+      "abbreviation": "SAV"
+    },
+    {
+      "id": "sr:competitor:40994",
+      "name": "Saville, Daria",
+      "short_name": "Saville, Daria",
+      "abbreviation": "SAV"
+    },
+    {
+      "id": "sr:competitor:41355",
+      "name": "Bogdan, Ana",
+      "short_name": "Bogdan, Ana",
+      "abbreviation": "BOG"
+    },
+    {
+      "id": "sr:competitor:41374",
+      "name": "Tomova, Viktoriya",
+      "short_name": "Tomova, Viktoriya",
+      "abbreviation": "TOM"
+    },
+    {
+      "id": "sr:competitor:41404",
+      "name": "Watson, Heather",
+      "short_name": "Watson, Heather",
+      "abbreviation": "WAT"
+    },
+    {
+      "id": "sr:competitor:41524",
+      "name": "Krunic, Aleksandra",
+      "short_name": "Krunic, Aleksandra",
+      "abbreviation": "KA"
+    },
+    {
+      "id": "sr:competitor:41737",
+      "name": "Jang, Su Jeong",
+      "short_name": "Jang, Su Jeong",
+      "abbreviation": "JAN"
+    },
+    {
+      "id": "sr:competitor:41877",
+      "name": "Yuan, Yue",
+      "short_name": "Yuan, Yue",
+      "abbreviation": "YUA"
+    },
+    {
+      "id": "sr:competitor:42289",
+      "name": "Linette, Magda",
+      "short_name": "Linette, Magda",
+      "abbreviation": "LIN"
+    },
+    {
+      "id": "sr:competitor:42339",
+      "name": "Garcia, Caroline",
+      "short_name": "Garcia, Caroline",
+      "abbreviation": "GAR"
+    },
+    {
+      "id": "sr:competitor:42459",
+      "name": "Rogers, Shelby",
+      "short_name": "Rogers, Shelby",
+      "abbreviation": "ROG"
+    },
+    {
+      "id": "sr:competitor:42492",
+      "name": "Kawa, Katarzyna",
+      "short_name": "Kawa, Katarzyna",
+      "abbreviation": "KAW"
+    },
+    {
+      "id": "sr:competitor:43102",
+      "name": "Babos, Timea",
+      "short_name": "Babos, Timea",
+      "abbreviation": "BAB"
+    },
+    {
+      "id": "sr:competitor:44309",
+      "name": "Giorgi, Camila",
+      "short_name": "Giorgi, Camila",
+      "abbreviation": "GIO"
+    },
+    {
+      "id": "sr:competitor:44834",
+      "name": "Pegula, Jessica",
+      "short_name": "Pegula, Jessica",
+      "abbreviation": "PEG"
+    },
+    {
+      "id": "sr:competitor:45139",
+      "name": "Papamichail, Despina",
+      "short_name": "Papamichail, Despina",
+      "abbreviation": "PAP"
+    },
+    {
+      "id": "sr:competitor:45545",
+      "name": "Putintseva, Yulia",
+      "short_name": "Putintseva, Yulia",
+      "abbreviation": "PUT"
+    },
+    {
+      "id": "sr:competitor:45584",
+      "name": "Zhu, Lin",
+      "short_name": "Zhu, Lin",
+      "abbreviation": "ZHU"
+    },
+    {
+      "id": "sr:competitor:45835",
+      "name": "Hunter, Storm",
+      "short_name": "Hunter, Storm",
+      "abbreviation": "HUN"
+    },
+    {
+      "id": "sr:competitor:45902",
+      "name": "Sasnovich, Aliaksandra",
+      "short_name": "Sasnovich, Aliaksandra",
+      "abbreviation": "SAS"
+    },
+    {
+      "id": "sr:competitor:46304",
+      "name": "Schmiedlova, Anna-Karolina",
+      "short_name": "Schmiedlova, Anna-Karolina",
+      "abbreviation": "SCH"
+    },
+    {
+      "id": "sr:competitor:46591",
+      "name": "Paquet, Chloe",
+      "short_name": "Paquet, Chloe",
+      "abbreviation": "PAQ"
+    },
+    {
+      "id": "sr:competitor:46625",
+      "name": "Raina, Ankita",
+      "short_name": "Raina, Ankita",
+      "abbreviation": "RAI"
+    },
+    {
+      "id": "sr:competitor:48318",
+      "name": "Martincova, Tereza",
+      "short_name": "Martincova, Tereza",
+      "abbreviation": "MAR"
+    },
+    {
+      "id": "sr:competitor:48455",
+      "name": "Golubic, Viktorija",
+      "short_name": "Golubic, Viktorija",
+      "abbreviation": "GOL"
+    },
+    {
+      "id": "sr:competitor:49171",
+      "name": "Parrizas Diaz, Nuria",
+      "short_name": "Parrizas Diaz, Nuria",
+      "abbreviation": "PAR"
+    },
+    {
+      "id": "sr:competitor:49358",
+      "name": "Pattinama Kerkhove, Lesley",
+      "short_name": "Pattinama Kerkhove, Lesley",
+      "abbreviation": "PAK"
+    },
+    {
+      "id": "sr:competitor:50641",
+      "name": "Vekic, Donna",
+      "short_name": "Vekic, Donna",
+      "abbreviation": "VEK"
+    },
+    {
+      "id": "sr:competitor:50643",
+      "name": "Lukas, Tena",
+      "short_name": "Lukas, Tena",
+      "abbreviation": "LUK"
+    },
+    {
+      "id": "sr:competitor:50655",
+      "name": "Friedsam, Anna-Lena",
+      "short_name": "Friedsam, Anna-Lena",
+      "abbreviation": "FRI"
+    },
+    {
+      "id": "sr:competitor:51293",
+      "name": "Svitolina, Elina",
+      "short_name": "Svitolina, Elina",
+      "abbreviation": "SVI"
+    },
+    {
+      "id": "sr:competitor:51387",
+      "name": "Townsend, Taylor",
+      "short_name": "Townsend, Taylor",
+      "abbreviation": "TOW"
+    },
+    {
+      "id": "sr:competitor:51392",
+      "name": "Vickery, Sachia",
+      "short_name": "Vickery, Sachia",
+      "abbreviation": "VIC"
+    },
+    {
+      "id": "sr:competitor:51477",
+      "name": "Mitu, Andreea",
+      "short_name": "Mitu, Cristina-Andreea",
+      "abbreviation": "MIT"
+    },
+    {
+      "id": "sr:competitor:52025",
+      "name": "Wang, Yafan",
+      "short_name": "Wang, Yafan",
+      "abbreviation": "WAN"
+    },
+    {
+      "id": "sr:competitor:52183",
+      "name": "Bara, Irina Maria",
+      "short_name": "Bara, Irina Maria",
+      "abbreviation": "BARA"
+    },
+    {
+      "id": "sr:competitor:52691",
+      "name": "Zhao, Carol",
+      "short_name": "Zhao, Carol",
+      "abbreviation": "ZHA"
+    },
+    {
+      "id": "sr:competitor:53789",
+      "name": "Dart, Harriet",
+      "short_name": "Dart, Harriet",
+      "abbreviation": "DAR"
+    },
+    {
+      "id": "sr:competitor:54259",
+      "name": "Bonaventure, Ysaline",
+      "short_name": "Bonaventure, Ysaline",
+      "abbreviation": "BON"
+    },
+    {
+      "id": "sr:competitor:55401",
+      "name": "Jabeur, Ons",
+      "short_name": "Jabeur, Ons",
+      "abbreviation": "JAB"
+    },
+    {
+      "id": "sr:competitor:58053",
+      "name": "Sharma, Astra",
+      "short_name": "Sharma, Astra",
+      "abbreviation": "SHA"
+    },
+    {
+      "id": "sr:competitor:58423",
+      "name": "Stevanovic, Natalija",
+      "short_name": "Stevanovic, Natalija",
+      "abbreviation": "STE"
+    },
+    {
+      "id": "sr:competitor:58515",
+      "name": "Collins, Danielle",
+      "short_name": "Collins, Danielle",
+      "abbreviation": "COL"
+    },
+    {
+      "id": "sr:competitor:59702",
+      "name": "Haddad Maia, Beatriz",
+      "short_name": "Haddad Maia, Beatriz",
+      "abbreviation": "HAD"
+    },
+    {
+      "id": "sr:competitor:60276",
+      "name": "Podoroska, Nadia",
+      "short_name": "Podoroska, Nadia",
+      "abbreviation": "POD"
+    },
+    {
+      "id": "sr:competitor:60392",
+      "name": "Sorribes Tormo, Sara",
+      "short_name": "Sorribes Tormo, Sara",
+      "abbreviation": "SOR"
+    },
+    {
+      "id": "sr:competitor:60398",
+      "name": "Krejcikova, Barbora",
+      "short_name": "Krejcikova, Barbora",
+      "abbreviation": "KRE"
+    },
+    {
+      "id": "sr:competitor:62924",
+      "name": "Boulter, Katie",
+      "short_name": "Boulter, Katie",
+      "abbreviation": "BOU"
+    },
+    {
+      "id": "sr:competitor:63220",
+      "name": "Ponchet, Jessika",
+      "short_name": "Ponchet, Jessika",
+      "abbreviation": "PON"
+    },
+    {
+      "id": "sr:competitor:64085",
+      "name": "Pigossi, Laura",
+      "short_name": "Pigossi, Laura",
+      "abbreviation": "PIG"
+    },
+    {
+      "id": "sr:competitor:64496",
+      "name": "Ostapenko, Jelena",
+      "short_name": "Ostapenko, Jelena",
+      "abbreviation": "OST"
+    },
+    {
+      "id": "sr:competitor:64968",
+      "name": "Dodin, Oceane",
+      "short_name": "Dodin, Oceane",
+      "abbreviation": "DOD"
+    },
+    {
+      "id": "sr:competitor:65656",
+      "name": "Ferro, Fiona",
+      "short_name": "Ferro, Fiona",
+      "abbreviation": "FER"
+    },
+    {
+      "id": "sr:competitor:65950",
+      "name": "Sakkari, Maria",
+      "short_name": "Sakkari, Maria",
+      "abbreviation": "SAK"
+    },
+    {
+      "id": "sr:competitor:66476",
+      "name": "Osaka, Naomi",
+      "short_name": "Osaka, Naomi",
+      "abbreviation": "OSA"
+    },
+    {
+      "id": "sr:competitor:66968",
+      "name": "Kudermetova, Veronika",
+      "short_name": "Kudermetova, Veronika",
+      "abbreviation": "KUD"
+    },
+    {
+      "id": "sr:competitor:67322",
+      "name": "Tan, Harmony",
+      "short_name": "Tan, Harmony",
+      "abbreviation": "TAN"
+    },
+    {
+      "id": "sr:competitor:67743",
+      "name": "Gjorcheska, Lina",
+      "short_name": "Gjorcheska, Lina",
+      "abbreviation": "GJO"
+    },
+    {
+      "id": "sr:competitor:67757",
+      "name": "Pera, Bernarda",
+      "short_name": "Pera, Bernarda",
+      "abbreviation": "PER"
+    },
+    {
+      "id": "sr:competitor:67759",
+      "name": "Alexandrova, Ekaterina",
+      "short_name": "Alexandrova, Ekaterina",
+      "abbreviation": "ALE"
+    },
+    {
+      "id": "sr:competitor:69208",
+      "name": "Paolini, Jasmine",
+      "short_name": "Paolini, Jasmine",
+      "abbreviation": "PAO"
+    },
+    {
+      "id": "sr:competitor:69988",
+      "name": "Korpatsch, Tamara",
+      "short_name": "Korpatsch, Tamara",
+      "abbreviation": "KOR"
+    },
+    {
+      "id": "sr:competitor:71034",
+      "name": "Sramkova, Rebecca",
+      "short_name": "Sramkova, Rebecca",
+      "abbreviation": "SRA"
+    },
+    {
+      "id": "sr:competitor:71250",
+      "name": "Frech, Magdalena",
+      "short_name": "Frech, Magdalena",
+      "abbreviation": "FRE"
+    },
+    {
+      "id": "sr:competitor:72376",
+      "name": "Siniakova, Katerina",
+      "short_name": "Siniakova, Katerina",
+      "abbreviation": "SIN"
+    },
+    {
+      "id": "sr:competitor:72450",
+      "name": "Hibino, Nao",
+      "short_name": "Hibino, Nao",
+      "abbreviation": "HIB"
+    },
+    {
+      "id": "sr:competitor:72758",
+      "name": "Cristian, Jaqueline Adina",
+      "short_name": "Cristian, Jaqueline Adina",
+      "abbreviation": "CRI"
+    },
+    {
+      "id": "sr:competitor:75281",
+      "name": "Peterson, Rebecca",
+      "short_name": "Peterson, Rebecca",
+      "abbreviation": "PET"
+    },
+    {
+      "id": "sr:competitor:75825",
+      "name": "Bektas, Emina",
+      "short_name": "Bektas, Emina",
+      "abbreviation": "BEK"
+    },
+    {
+      "id": "sr:competitor:78551",
+      "name": "Mertens, Elise",
+      "short_name": "Mertens, Elise",
+      "abbreviation": "MER"
+    },
+    {
+      "id": "sr:competitor:82609",
+      "name": "Grammatikopoulou, Valentini",
+      "short_name": "Grammatikopoulou, Valentini",
+      "abbreviation": "GRA"
+    },
+    {
+      "id": "sr:competitor:83607",
+      "name": "Capurro Taborda, Martina",
+      "short_name": "Capurro Taborda, Martina",
+      "abbreviation": "CAP"
+    },
+    {
+      "id": "sr:competitor:87834",
+      "name": "Hon, Priscilla",
+      "short_name": "Hon, Priscilla",
+      "abbreviation": "HON"
+    },
+    {
+      "id": "sr:competitor:88310",
+      "name": "Sherif Ahmed Abdelaziz, Maiar",
+      "short_name": "Sherif Ahmed Abdelaziz, Maiar",
+      "abbreviation": "SHE"
+    },
+    {
+      "id": "sr:competitor:90664",
+      "name": "Kalinina, Anhelina",
+      "short_name": "Kalinina, Anhelina",
+      "abbreviation": "KAL"
+    },
+    {
+      "id": "sr:competitor:90814",
+      "name": "Teichmann, Jil",
+      "short_name": "Teichmann, Jil",
+      "abbreviation": "TEI"
+    },
+    {
+      "id": "sr:competitor:91960",
+      "name": "Kenin, Sofia",
+      "short_name": "Kenin, Sofia",
+      "abbreviation": "KEN"
+    },
+    {
+      "id": "sr:competitor:92442",
+      "name": "Fett, Jana",
+      "short_name": "Fett, Jana",
+      "abbreviation": "FET"
+    },
+    {
+      "id": "sr:competitor:92879",
+      "name": "Shymanovich, Iryna",
+      "short_name": "Shymanovich, Iryna",
+      "abbreviation": "SHY"
+    },
+    {
+      "id": "sr:competitor:97995",
+      "name": "Galfi, Dalma",
+      "short_name": "Galfi, Dalma",
+      "abbreviation": "GAL"
+    },
+    {
+      "id": "sr:competitor:99131",
+      "name": "Bucsa, Cristina",
+      "short_name": "Bucsa, Cristina",
+      "abbreviation": "BUC"
+    },
+    {
+      "id": "sr:competitor:99405",
+      "name": "Inglis, Maddison",
+      "short_name": "Inglis, Maddison",
+      "abbreviation": "ING"
+    },
+    {
+      "id": "sr:competitor:99429",
+      "name": "Hule, Petra",
+      "short_name": "Hule, Petra",
+      "abbreviation": "HUL"
+    },
+    {
+      "id": "sr:competitor:103375",
+      "name": "Serban, Raluca Georgiana",
+      "short_name": "Serban, Raluca Georgiana",
+      "abbreviation": "SER"
+    },
+    {
+      "id": "sr:competitor:105099",
+      "name": "Birrell, Kimberly",
+      "short_name": "Birrell, Kimberly",
+      "abbreviation": "BIR"
+    },
+    {
+      "id": "sr:competitor:105463",
+      "name": "Bouzkova, Marie",
+      "short_name": "Bouzkova, Marie",
+      "abbreviation": "BOU"
+    },
+    {
+      "id": "sr:competitor:106341",
+      "name": "Knutson, Gabriela",
+      "short_name": "Knutson, Gabriela",
+      "abbreviation": "KNU"
+    },
+    {
+      "id": "sr:competitor:110055",
+      "name": "Bronzetti, Lucia",
+      "short_name": "Bronzetti, Lucia",
+      "abbreviation": "BRO"
+    },
+    {
+      "id": "sr:competitor:110299",
+      "name": "Zidansek, Tamara",
+      "short_name": "Zidansek, Tamara",
+      "abbreviation": "ZID"
+    },
+    {
+      "id": "sr:competitor:110803",
+      "name": "Minnen, Greet",
+      "short_name": "Minnen, Greet",
+      "abbreviation": "MIN"
+    },
+    {
+      "id": "sr:competitor:111189",
+      "name": "Zarazua, Renata",
+      "short_name": "Zarazua, Renata",
+      "abbreviation": "ZAR"
+    },
+    {
+      "id": "sr:competitor:111879",
+      "name": "Fung, Stacey",
+      "short_name": "Fung, Stacey",
+      "abbreviation": "FUN"
+    },
+    {
+      "id": "sr:competitor:112957",
+      "name": "Jeanjean, Leolia",
+      "short_name": "Jeanjean, Leolia",
+      "abbreviation": "JEA"
+    },
+    {
+      "id": "sr:competitor:115507",
+      "name": "Bolsova, Aliona",
+      "short_name": "Bolsova, Aliona",
+      "abbreviation": "BOL"
+    },
+    {
+      "id": "sr:competitor:119496",
+      "name": "McPhee, Kaylah",
+      "short_name": "McPhee, Kaylah",
+      "abbreviation": "MCP"
+    },
+    {
+      "id": "sr:competitor:123824",
+      "name": "Dolehide, Caroline",
+      "short_name": "Dolehide, Caroline",
+      "abbreviation": "DOL"
+    },
+    {
+      "id": "sr:competitor:124804",
+      "name": "Masarova, Rebeka",
+      "short_name": "Masarova, Rebeka",
+      "abbreviation": "MAS"
+    },
+    {
+      "id": "sr:competitor:128584",
+      "name": "Samsonova, Liudmila",
+      "short_name": "Samsonova, Liudmila",
+      "abbreviation": "SAM"
+    },
+    {
+      "id": "sr:competitor:128638",
+      "name": "Sebov, Katherine",
+      "short_name": "Sebov, Katherine",
+      "abbreviation": "SEB"
+    },
+    {
+      "id": "sr:competitor:129534",
+      "name": "Hruncakova, Viktoria",
+      "short_name": "Hruncakova, Viktoria",
+      "abbreviation": "HRU"
+    },
+    {
+      "id": "sr:competitor:132186",
+      "name": "Mendez, Seone",
+      "short_name": "Mendez, Seone",
+      "abbreviation": "MEN"
+    },
+    {
+      "id": "sr:competitor:132370",
+      "name": "Kasatkina, Daria",
+      "short_name": "Kasatkina, Daria",
+      "abbreviation": "KAS"
+    },
+    {
+      "id": "sr:competitor:132988",
+      "name": "MA, Yexin",
+      "short_name": "MA, Yexin",
+      "abbreviation": "YEX"
+    },
+    {
+      "id": "sr:competitor:133662",
+      "name": "Badosa, Paula",
+      "short_name": "Badosa, Paula",
+      "abbreviation": "BAD"
+    },
+    {
+      "id": "sr:competitor:134532",
+      "name": "You, Xiaodi",
+      "short_name": "You, Xiaodi",
+      "abbreviation": "YOU"
+    },
+    {
+      "id": "sr:competitor:137962",
+      "name": "Day, Kayla",
+      "short_name": "Day, Kayla",
+      "abbreviation": "DAY"
+    },
+    {
+      "id": "sr:competitor:147506",
+      "name": "Fourlis, Jaimee",
+      "short_name": "Fourlis, Jaimee",
+      "abbreviation": "FOU"
+    },
+    {
+      "id": "sr:competitor:150574",
+      "name": "Bondar, Anna",
+      "short_name": "Bondar, Anna",
+      "abbreviation": "BON"
+    },
+    {
+      "id": "sr:competitor:152804",
+      "name": "Vondrousova, Marketa",
+      "short_name": "Vondrousova, Marketa",
+      "abbreviation": "VON"
+    },
+    {
+      "id": "sr:competitor:153860",
+      "name": "Trevisan, Martina",
+      "short_name": "Trevisan, Martina",
+      "abbreviation": "TRE"
+    },
+    {
+      "id": "sr:competitor:155556",
+      "name": "Bulgaru, Miriam Bianca",
+      "short_name": "Bulgaru, Miriam Bianca",
+      "abbreviation": "BUL"
+    },
+    {
+      "id": "sr:competitor:155890",
+      "name": "Stefanini, Lucrezia",
+      "short_name": "Stefanini, Lucrezia",
+      "abbreviation": "STE"
+    },
+    {
+      "id": "sr:competitor:157150",
+      "name": "Boskovic, Lea",
+      "short_name": "Boskovic, Lea",
+      "abbreviation": "BOS"
+    },
+    {
+      "id": "sr:competitor:157754",
+      "name": "Sabalenka, Aryna",
+      "short_name": "Sabalenka, Aryna",
+      "abbreviation": "SAB"
+    },
+    {
+      "id": "sr:competitor:160190",
+      "name": "Hartono, Arianne",
+      "short_name": "Hartono, Arianne",
+      "abbreviation": "HAR"
+    },
+    {
+      "id": "sr:competitor:165866",
+      "name": "Miyazaki, Yuriko Lily",
+      "short_name": "Miyazaki, Yuriko Lily",
+      "abbreviation": "MIY"
+    },
+    {
+      "id": "sr:competitor:172590",
+      "name": "Burrage, Jodie Anna",
+      "short_name": "Burrage, Jodie Anna",
+      "abbreviation": "BUR"
+    },
+    {
+      "id": "sr:competitor:179146",
+      "name": "Kalinskaya, Anna",
+      "short_name": "Kalinskaya, Anna",
+      "abbreviation": "KAL"
+    },
+    {
+      "id": "sr:competitor:179300",
+      "name": "Liu, Claire",
+      "short_name": "Liu, Claire",
+      "abbreviation": "LIU"
+    },
+    {
+      "id": "sr:competitor:182056",
+      "name": "Robbe, Alice",
+      "short_name": "Robbe, Alice",
+      "abbreviation": "ROB"
+    },
+    {
+      "id": "sr:competitor:183861",
+      "name": "Bassols Ribera, Marina",
+      "short_name": "Bassols Ribera, Marina",
+      "abbreviation": "BAS"
+    },
+    {
+      "id": "sr:competitor:186312",
+      "name": "Rybakina, Elena",
+      "short_name": "Rybakina, Elena",
+      "abbreviation": "RYB"
+    },
+    {
+      "id": "sr:competitor:190882",
+      "name": "Aiava, Destanee",
+      "short_name": "Aiava, Destanee",
+      "abbreviation": "AIA"
+    },
+    {
+      "id": "sr:competitor:192108",
+      "name": "Yastremska, Dayana",
+      "short_name": "Yastremska, Dayana",
+      "abbreviation": "YAS"
+    },
+    {
+      "id": "sr:competitor:192130",
+      "name": "Blinkova, Anna",
+      "short_name": "Blinkova, Anna",
+      "abbreviation": "BLI"
+    },
+    {
+      "id": "sr:competitor:198488",
+      "name": "Jones, Francesca",
+      "short_name": "Jones, Francesca",
+      "abbreviation": "JON"
+    },
+    {
+      "id": "sr:competitor:202363",
+      "name": "Sun, Lulu",
+      "short_name": "Sun, Lulu",
+      "abbreviation": "SUN"
+    },
+    {
+      "id": "sr:competitor:202623",
+      "name": "Zavatska, Katarina",
+      "short_name": "Zavatska, Katarina",
+      "abbreviation": "ZAV"
+    },
+    {
+      "id": "sr:competitor:205633",
+      "name": "Juvan, Kaja",
+      "short_name": "Juvan, Kaja",
+      "abbreviation": "JUV"
+    },
+    {
+      "id": "sr:competitor:206949",
+      "name": "Hontama, Mai",
+      "short_name": "Hontama, Mai",
+      "abbreviation": "HON"
+    },
+    {
+      "id": "sr:competitor:208105",
+      "name": "Arango, Emiliana",
+      "short_name": "Arango, Emiliana",
+      "abbreviation": "ARA"
+    },
+    {
+      "id": "sr:competitor:208181",
+      "name": "Hatouka, Yuliya",
+      "short_name": "Hatouka, Yuliya",
+      "abbreviation": "HAT"
+    },
+    {
+      "id": "sr:competitor:210558",
+      "name": "Jorge, Francisca",
+      "short_name": "Jorge, Francisca",
+      "abbreviation": "JOR"
+    },
+    {
+      "id": "sr:competitor:210716",
+      "name": "Lamens, Suzan",
+      "short_name": "Lamens, Suzan",
+      "abbreviation": "LAM"
+    },
+    {
+      "id": "sr:competitor:211262",
+      "name": "Danilovic, Olga",
+      "short_name": "Danilovic, Olga",
+      "abbreviation": "DAN"
+    },
+    {
+      "id": "sr:competitor:225046",
+      "name": "Burel, Clara",
+      "short_name": "Burel, Clara",
+      "abbreviation": "BUR"
+    },
+    {
+      "id": "sr:competitor:225130",
+      "name": "Starodubtseva, Yuliia",
+      "short_name": "Starodubtseva, Yuliia",
+      "abbreviation": "STA"
+    },
+    {
+      "id": "sr:competitor:227390",
+      "name": "Brancaccio, Nuria",
+      "short_name": "Brancaccio, Nuria",
+      "abbreviation": "BRA"
+    },
+    {
+      "id": "sr:competitor:228418",
+      "name": "Navarro, Emma",
+      "short_name": "Navarro, Emma",
+      "abbreviation": "NAV"
+    },
+    {
+      "id": "sr:competitor:234150",
+      "name": "Potapova, Anastasia",
+      "short_name": "Potapova, Anastasia",
+      "abbreviation": "POT"
+    },
+    {
+      "id": "sr:competitor:242630",
+      "name": "Osorio, Camila",
+      "short_name": "Osorio, Camila",
+      "abbreviation": "OSO"
+    },
+    {
+      "id": "sr:competitor:245295",
+      "name": "Waltert, Simona",
+      "short_name": "Waltert, Simona",
+      "abbreviation": "WAL"
+    },
+    {
+      "id": "sr:competitor:246905",
+      "name": "Gracheva, Varvara",
+      "short_name": "Gracheva, Varvara",
+      "abbreviation": "GRA"
+    },
+    {
+      "id": "sr:competitor:246941",
+      "name": "Lys, Eva",
+      "short_name": "Lys, Eva",
+      "abbreviation": "LYS"
+    },
+    {
+      "id": "sr:competitor:247471",
+      "name": "Popovic, Ivana",
+      "short_name": "Popovic, Ivana",
+      "abbreviation": "POP"
+    },
+    {
+      "id": "sr:competitor:252223",
+      "name": "Rakhimova, Kamilla",
+      "short_name": "Rakhimova, Kamilla",
+      "abbreviation": "RAK"
+    },
+    {
+      "id": "sr:competitor:254551",
+      "name": "Udvardy, Panna",
+      "short_name": "Udvardy, Panna",
+      "abbreviation": "UDV"
+    },
+    {
+      "id": "sr:competitor:255031",
+      "name": "Niemeier, Jule",
+      "short_name": "Niemeier, Jule",
+      "abbreviation": "NIE"
+    },
+    {
+      "id": "sr:competitor:256447",
+      "name": "Monnet, Carole",
+      "short_name": "Monnet, Carole",
+      "abbreviation": "MON"
+    },
+    {
+      "id": "sr:competitor:256547",
+      "name": "Parks, Alycia",
+      "short_name": "Parks, Alycia",
+      "abbreviation": "PAR"
+    },
+    {
+      "id": "sr:competitor:261583",
+      "name": "Li, Ann",
+      "short_name": "Li, Ann",
+      "abbreviation": "ANN"
+    },
+    {
+      "id": "sr:competitor:262759",
+      "name": "Wang, Xiyu",
+      "short_name": "Wang, Xiyu",
+      "abbreviation": "WAN"
+    },
+    {
+      "id": "sr:competitor:272217",
+      "name": "Wang, Xinyu",
+      "short_name": "Wang, Xinyu",
+      "abbreviation": "WAN"
+    },
+    {
+      "id": "sr:competitor:273017",
+      "name": "Mandlik, Elizabeth",
+      "short_name": "Mandlik, Elizabeth",
+      "abbreviation": "MAN"
+    },
+    {
+      "id": "sr:competitor:274013",
+      "name": "Swiatek, Iga",
+      "short_name": "Swiatek, Iga",
+      "abbreviation": "SWI"
+    },
+    {
+      "id": "sr:competitor:278887",
+      "name": "Kostyuk, Marta",
+      "short_name": "Kostyuk, Marta",
+      "abbreviation": "KOS"
+    },
+    {
+      "id": "sr:competitor:278943",
+      "name": "Lansere, Sofya",
+      "short_name": "Lansere, Sofya",
+      "abbreviation": "LAN"
+    },
+    {
+      "id": "sr:competitor:281189",
+      "name": "Anisimova, Amanda",
+      "short_name": "Anisimova, Amanda",
+      "abbreviation": "ANI"
+    },
+    {
+      "id": "sr:competitor:282219",
+      "name": "Sakatsume, Himeno",
+      "short_name": "Sakatsume, Himeno",
+      "abbreviation": "SAK"
+    },
+    {
+      "id": "sr:competitor:286435",
+      "name": "Gadecki, Olivia",
+      "short_name": "Gadecki, Olivia",
+      "abbreviation": "GAD"
+    },
+    {
+      "id": "sr:competitor:287769",
+      "name": "Kessler, McCartney",
+      "short_name": "Kessler, McCartney",
+      "abbreviation": "KES"
+    },
+    {
+      "id": "sr:competitor:289507",
+      "name": "Fernandez, Leylah Annie",
+      "short_name": "Fernandez, Leylah Annie",
+      "abbreviation": "FER"
+    },
+    {
+      "id": "sr:competitor:299270",
+      "name": "Martinez Cirez, Carlota",
+      "short_name": "Martinez Cirez, Carlota",
+      "abbreviation": "MAR"
+    },
+    {
+      "id": "sr:competitor:299310",
+      "name": "Sonmez, Zeynep",
+      "short_name": "Sonmez, Zeynep",
+      "abbreviation": "SON"
+    },
+    {
+      "id": "sr:competitor:303814",
+      "name": "Tikhonova, Anastasia",
+      "short_name": "Tikhonova, Anastasia",
+      "abbreviation": "TIK"
+    },
+    {
+      "id": "sr:competitor:315609",
+      "name": "Kraus, Sinja",
+      "short_name": "Kraus, Sinja",
+      "abbreviation": "KRA"
+    },
+    {
+      "id": "sr:competitor:318195",
+      "name": "Parry, Diane",
+      "short_name": "Parry, Diane",
+      "abbreviation": "PAR"
+    },
+    {
+      "id": "sr:competitor:319349",
+      "name": "Rouvroy, Margaux",
+      "short_name": "Rouvroy, Margaux",
+      "abbreviation": "ROU"
+    },
+    {
+      "id": "sr:competitor:319455",
+      "name": "Baptiste, Hailey",
+      "short_name": "Baptiste, Hailey",
+      "abbreviation": "BAP"
+    },
+    {
+      "id": "sr:competitor:329535",
+      "name": "Tauson, Clara",
+      "short_name": "Tauson, Clara",
+      "abbreviation": "TAU"
+    },
+    {
+      "id": "sr:competitor:335171",
+      "name": "Uchijima, Moyuka",
+      "short_name": "Uchijima, Moyuka",
+      "abbreviation": "UCH"
+    },
+    {
+      "id": "sr:competitor:337813",
+      "name": "Riera, Julia",
+      "short_name": "Riera, Julia",
+      "abbreviation": "RIE"
+    },
+    {
+      "id": "sr:competitor:341112",
+      "name": "Zakharova, Anastasia",
+      "short_name": "Zakharova, Anastasia",
+      "abbreviation": "ZAK"
+    },
+    {
+      "id": "sr:competitor:343160",
+      "name": "Volynets, Katie",
+      "short_name": "Volynets, Katie",
+      "abbreviation": "VOL"
+    },
+    {
+      "id": "sr:competitor:348760",
+      "name": "Zheng, Qinwen",
+      "short_name": "Zheng, Qinwen",
+      "abbreviation": "ZHE"
+    },
+    {
+      "id": "sr:competitor:352782",
+      "name": "Raducanu, Emma",
+      "short_name": "Raducanu, Emma",
+      "abbreviation": "RAD"
+    },
+    {
+      "id": "sr:competitor:360038",
+      "name": "Stearns, Peyton",
+      "short_name": "Stearns, Peyton",
+      "abbreviation": "STE"
+    },
+    {
+      "id": "sr:competitor:366114",
+      "name": "Avanesyan, Elina",
+      "short_name": "Avanesyan, Elina",
+      "abbreviation": "AVA"
+    },
+    {
+      "id": "sr:competitor:369524",
+      "name": "Erjavec, Veronika",
+      "short_name": "Erjavec, Veronika",
+      "abbreviation": "ERJ"
+    },
+    {
+      "id": "sr:competitor:373352",
+      "name": "Gauff, Coco",
+      "short_name": "Gauff, Coco",
+      "abbreviation": "GAU"
+    },
+    {
+      "id": "sr:competitor:373354",
+      "name": "Cocciaretto, Elisabetta",
+      "short_name": "Cocciaretto, Elisabetta",
+      "abbreviation": "COC"
+    },
+    {
+      "id": "sr:competitor:380396",
+      "name": "Kalieva, Elvina",
+      "short_name": "Kalieva, Elvina",
+      "abbreviation": "KAL"
+    },
+    {
+      "id": "sr:competitor:380704",
+      "name": "Snigur, Daria",
+      "short_name": "Snigur, Daria",
+      "abbreviation": "SNI"
+    },
+    {
+      "id": "sr:competitor:401055",
+      "name": "Noskova, Linda",
+      "short_name": "Noskova, Linda",
+      "abbreviation": "NOS"
+    },
+    {
+      "id": "sr:competitor:405057",
+      "name": "Bouzas Maneiro, Jessica",
+      "short_name": "Bouzas Maneiro, Jessica",
+      "abbreviation": "BOU"
+    },
+    {
+      "id": "sr:competitor:406199",
+      "name": "Jacquemot, Elsa",
+      "short_name": "Jacquemot, Elsa",
+      "abbreviation": "JAC"
+    },
+    {
+      "id": "sr:competitor:432605",
+      "name": "Makarova, Ekaterina",
+      "short_name": "Makarova, Ekaterina",
+      "abbreviation": "MAK"
+    },
+    {
+      "id": "sr:competitor:433758",
+      "name": "Wei, Sijia",
+      "short_name": "Wei, Sijia",
+      "abbreviation": "WEI"
+    },
+    {
+      "id": "sr:competitor:445291",
+      "name": "Astakhova, Darya",
+      "short_name": "Astakhova, Darya",
+      "abbreviation": "AST"
+    },
+    {
+      "id": "sr:competitor:445651",
+      "name": "Kolodynska, Jana",
+      "short_name": "Kolodynska, Jana",
+      "abbreviation": "KOL"
+    },
+    {
+      "id": "sr:competitor:448081",
+      "name": "Noha Akugue, Noma",
+      "short_name": "Noha Akugue, Noma",
+      "abbreviation": "NOH"
+    },
+    {
+      "id": "sr:competitor:467035",
+      "name": "Timofeeva, Maria",
+      "short_name": "Timofeeva, Maria",
+      "abbreviation": "TIM"
+    },
+    {
+      "id": "sr:competitor:467037",
+      "name": "Kudermetova, Polina",
+      "short_name": "Kudermetova, Polina",
+      "abbreviation": "KUD"
+    },
+    {
+      "id": "sr:competitor:504238",
+      "name": "Sierra, Solana",
+      "short_name": "Sierra, Solana",
+      "abbreviation": "SIE"
+    },
+    {
+      "id": "sr:competitor:505970",
+      "name": "Janicijevic, Selena",
+      "short_name": "Janicijevic, Selena",
+      "abbreviation": "JAN"
+    },
+    {
+      "id": "sr:competitor:518838",
+      "name": "Yang, Ya Yi",
+      "short_name": "Yang, Ya-Yi",
+      "abbreviation": "YAN"
+    },
+    {
+      "id": "sr:competitor:526975",
+      "name": "Fruhvirtova, Linda",
+      "short_name": "Fruhvirtova, Linda",
+      "abbreviation": "FRU"
+    },
+    {
+      "id": "sr:competitor:534045",
+      "name": "Gibson, Talia",
+      "short_name": "Gibson, Talia",
+      "abbreviation": "GIB"
+    },
+    {
+      "id": "sr:competitor:549759",
+      "name": "Krueger, Ashlyn",
+      "short_name": "Krueger, Ashlyn",
+      "abbreviation": "KRU"
+    },
+    {
+      "id": "sr:competitor:568715",
+      "name": "Semenistaja, Darja",
+      "short_name": "Semenistaja, Darja",
+      "abbreviation": "SEM"
+    },
+    {
+      "id": "sr:competitor:588069",
+      "name": "Bai, Zhuoxuan",
+      "short_name": "Bai, Zhuoxuan",
+      "abbreviation": "BAI"
+    },
+    {
+      "id": "sr:competitor:588071",
+      "name": "Shnaider, Diana",
+      "short_name": "Shnaider, Diana",
+      "abbreviation": "SHN"
+    },
+    {
+      "id": "sr:competitor:604388",
+      "name": "Tararudee, Lanlana",
+      "short_name": "Tararudee, Lanlana",
+      "abbreviation": "TAR"
+    },
+    {
+      "id": "sr:competitor:627278",
+      "name": "Eala, Alexandra",
+      "short_name": "Eala, Alexandra",
+      "abbreviation": "EAL"
+    },
+    {
+      "id": "sr:competitor:653839",
+      "name": "Ercan, Melisa",
+      "short_name": "Ercan, Melisa",
+      "abbreviation": "ERC"
+    },
+    {
+      "id": "sr:competitor:662273",
+      "name": "Andreeva, Erika",
+      "short_name": "Andreeva, Erika",
+      "abbreviation": "AND"
+    },
+    {
+      "id": "sr:competitor:662615",
+      "name": "Salkova, Dominika",
+      "short_name": "Salkova, Dominika",
+      "abbreviation": "SAL"
+    },
+    {
+      "id": "sr:competitor:667155",
+      "name": "Fruhvirtova, Brenda",
+      "short_name": "Fruhvirtova, Brenda",
+      "abbreviation": "FRU"
+    },
+    {
+      "id": "sr:competitor:675189",
+      "name": "Preston, Taylah",
+      "short_name": "Preston, Taylah",
+      "abbreviation": "PRE"
+    },
+    {
+      "id": "sr:competitor:676251",
+      "name": "Wurth, Tara",
+      "short_name": "Wurth, Tara",
+      "abbreviation": "WUR"
+    },
+    {
+      "id": "sr:competitor:741433",
+      "name": "Bejlek, Sara",
+      "short_name": "Bejlek, Sara",
+      "abbreviation": "BEJ"
+    },
+    {
+      "id": "sr:competitor:762762",
+      "name": "Seidel, Ella",
+      "short_name": "Seidel, Ella",
+      "abbreviation": "SEI"
+    },
+    {
+      "id": "sr:competitor:771430",
+      "name": "Naef, Celine",
+      "short_name": "Naef, Celine",
+      "abbreviation": "NAE"
+    },
+    {
+      "id": "sr:competitor:776340",
+      "name": "Joint, Maya",
+      "short_name": "Joint, Maya",
+      "abbreviation": "JOI"
+    },
+    {
+      "id": "sr:competitor:784280",
+      "name": "Prozorova, Tatiana",
+      "short_name": "Barkova, Tatiana",
+      "abbreviation": "PRO"
+    },
+    {
+      "id": "sr:competitor:790640",
+      "name": "Marcinko, Petra",
+      "short_name": "Marcinko, Petra",
+      "abbreviation": "MAR"
+    },
+    {
+      "id": "sr:competitor:845268",
+      "name": "Korneeva, Alina",
+      "short_name": "Korneeva, Alina",
+      "abbreviation": "KOR"
+    },
+    {
+      "id": "sr:competitor:871583",
+      "name": "Andreeva, Mirra",
+      "short_name": "Andreeva, Mirra",
+      "abbreviation": "AND"
+    },
+    {
+      "id": "sr:competitor:978117",
+      "name": "Jones, Emerson",
+      "short_name": "Jones, Emerson",
+      "abbreviation": "JON"
+    }
+  ]
+}
