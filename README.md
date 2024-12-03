@@ -18,3 +18,4 @@ Eventbus：事件发布-订阅总线
 1. Publisher (发布者)：发送事件的组件   (sportActivity)
 2. Subscriber (订阅者)：接收事件的组件   (scheduleFragment)
 3. Event (事件)：传递的消息对象
+

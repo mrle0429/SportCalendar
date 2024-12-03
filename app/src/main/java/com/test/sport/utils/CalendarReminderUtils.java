@@ -12,6 +12,7 @@ import android.text.TextUtils;
 import java.util.Calendar;
 import java.util.TimeZone;
 
+// contentProvider
 public class CalendarReminderUtils {
 
     private static String CALENDER_URL = "content://com.android.calendar/calendars";
@@ -132,9 +133,10 @@ public class CalendarReminderUtils {
         Calendar mCalendar = Calendar.getInstance();
         mCalendar.setTimeInMillis(startTime);//设置开始时间
         long start = mCalendar.getTime().getTime();
-        mCalendar.setTimeInMillis(startTime + 10 * 60 * 1000);//设置终止时间，开始时间加10分钟
+        mCalendar.setTimeInMillis(startTime+90*60*1000);//设置终止时间，开始时间加90分钟
         long end = mCalendar.getTime().getTime();
-        ContentValues event = new ContentValues();
+
+        ContentValues event = new ContentValues();   // 创建事件
         event.put("title", title);
         event.put("description", description);
         event.put("calendar_id", calId); //插入账户的id
@@ -153,21 +155,21 @@ public class CalendarReminderUtils {
         int previousDate = 0;
         boolean remind = true;
         switch (remindSetting) {
-            case "不提醒":
+            case "No Reminder":
                 remind = false;
                 break;
-            case "准点提醒":
+            case "On Time":
                 break;
-            case "提前10分钟":
+            case "10 Minutes Before":
                 previousDate = 10;
                 break;
-            case "提前30分钟":
+            case "30 Minutes Before":
                 previousDate = 30;
                 break;
-            case "提前1小时":
+            case "1 Hour Before":
                 previousDate = 60;
                 break;
-            case "提前2小时":
+            case "2 Hours Before":
                 previousDate = 120;
                 break;
             case "提前1天":
