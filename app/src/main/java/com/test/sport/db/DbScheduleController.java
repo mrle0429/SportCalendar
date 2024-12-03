@@ -91,6 +91,7 @@ public class DbScheduleController {
     }
 
     /**
+     * 插入数据
      * 会自动判定是插入还是替换
      *
      * @param video
@@ -122,7 +123,7 @@ public class DbScheduleController {
 
 
     /**
-     * 按条件查询数
+     * 按日期条件查询数
      */
     public List<Schedule> searchByWhere(String date) {
         List<Schedule> schedules = scheduleDao.queryBuilder().

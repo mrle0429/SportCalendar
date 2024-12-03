@@ -1,6 +1,7 @@
 package com.test.sport.db.entity;
 
 import com.test.sport.db.coverter.GameConverter;
+import com.test.sport.model.Game;
 
 import org.greenrobot.greendao.annotation.Convert;
 import org.greenrobot.greendao.annotation.Entity;

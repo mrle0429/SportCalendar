@@ -11,7 +11,7 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import com.test.nba.R;
 import com.test.nba.databinding.FragmentChatBinding;
 import com.test.sport.base.BaseFragment;
-import com.test.sport.db.entity.Message;
+import com.test.sport.model.Message;
 import com.test.sport.http.OkHttpUtil;
 import com.test.sport.ui.adapter.ChatAdapter;
 

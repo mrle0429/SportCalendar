@@ -39,6 +39,7 @@ import com.test.sport.ui.activity.TimezoneActivity;
 import java.util.List;
 
 // TODO:设置
+// 弃用
 public class SettingFragment extends BaseFragment<FragmentSettingBinding> implements View.OnClickListener {
     String location;
     private static final String CHANNEL_ID = "match_notifications";

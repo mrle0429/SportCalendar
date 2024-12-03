@@ -26,9 +26,9 @@ import com.lxj.xpopup.XPopup;
 import com.test.nba.R;
 import com.test.nba.databinding.FragmentHomeBinding;
 import com.test.sport.base.BaseFragment;
-import com.test.sport.db.entity.Game;
 import com.test.sport.http.OkHttpUtil;
 import com.test.sport.http.bean.Sport;
+import com.test.sport.model.Game;
 import com.test.sport.ui.activity.MainActivity;
 import com.test.sport.ui.activity.SettingActivity;
 import com.test.sport.ui.activity.SportActivity;
@@ -52,144 +52,43 @@ import java.util.Set;
 import okhttp3.Call;
 import okhttp3.Response;
 
-// TODO:主页
+// 主页
 public class HomeFragment extends BaseFragment<FragmentHomeBinding> implements View.OnClickListener,
         CalendarView.OnCalendarSelectListener {
 
-    private String address;
-    private String jsonName;
+    // 常量定义
+    private static final String[] SUPPORTED_SPORTS = new String[]{"Basketball", "Soccer", "Icehockey", "Tennis"};
+    private static final String PREFS_NAME = "SettingsPrefs";
+    private static final String PREF_SELECTED_TIMEZONE = "SelectedTimezone";
+    private static final String KEY_FAVORITE_TEAMS = "favorite_teams";
+    private static final String KEY_PREFERRED_TIMES = "preferred_times";
+
+    // 数据集合
+    private List<Game> recommendedGames = new ArrayList<>();   // 推荐的比赛
+    private List<Game> gameList = new ArrayList<>();          // 当前显示的比赛列表
+    private List<Game> dataList = new ArrayList<>();         // 所有比赛
+    private List<Game> searchList = new ArrayList<>();        // 搜索结果
+
+    // 适配器
+    private RecommendedGamesAdapter recommendedAdapter;
+    private GameAdapter gameAdapter;
+
+    //状态记录
     private int index;  //当前选择的运动索引
     private boolean search; //是否搜索
+
+    private String address;
+    private String jsonName;
+
+
     private String date; //当前选择的日期
     private String previousDate;
     private String timeZoneId; //时区
-    private static final String PREFS_NAME = "SettingsPrefs";
-    private static final String PREF_SELECTED_TIMEZONE = "SelectedTimezone";
-    private RecommendedGamesAdapter recommendedAdapter;
-    private List<Game> recommendedGames = new ArrayList<>();
-    private static final String KEY_FAVORITE_TEAMS = "favorite_teams";
-    private static final String KEY_PREFERRED_TIMES = "preferred_times";
-    private static final String[] SUPPORTED_SPORTS = new String[]{"Basketball", "Soccer", "Icehockey", "Tennis"};
-
-    @Override
-    protected void initData() {
-        super.initData();
-        //SharedPreferences preferences = getActivity().getSharedPreferences("SettingsPrefs", Context.MODE_PRIVATE);
-        //timeZoneId = preferences.getString("SelectedTimeZone", TimeZone.getDefault().getID());
-        SharedPreferences preferences = getActivity().getSharedPreferences(PREFS_NAME, Context.MODE_PRIVATE);
-        timeZoneId = preferences.getString(PREF_SELECTED_TIMEZONE, android.icu.util.TimeZone.getDefault().getID());
-        Log.d("HomeFragment1", "加载的时区: " + timeZoneId);
-
-        // 获取默认运动设置
-        String defaultSport = preferences.getString("default_sport", "Soccer");
-        getBinding().tvSport.setText(defaultSport);
-
-        // 设置对应的index
-        for (int i = 0; i < SUPPORTED_SPORTS.length; i++) {
-            if (SUPPORTED_SPORTS[i].equals(defaultSport)) {
-                index = i;
-                break;
-            }
-        }
-
-        getBinding().calendarView.setOnCalendarSelectListener(this);
-        // 隐藏月视图，显示周视图
-        getBinding().calendarView.getMonthViewPager().setVisibility(View.GONE);
-        getBinding().calendarView.getWeekViewPager().setVisibility(View.VISIBLE);
-        date = Tools.customFormat(new Date(), "yyyy-MM-dd");
-
-        try {
 
 
-            // 使用同样的Tools类计算前一天
+   
 
-            SimpleDateFormat parser = new SimpleDateFormat("yyyy-MM-dd");
-            java.util.Calendar cal = java.util.Calendar.getInstance();
-            cal.setTime(parser.parse(date));
-            cal.add(java.util.Calendar.DAY_OF_MONTH, -1);
-            previousDate = parser.format(cal.getTime());
-        } catch (ParseException e) {
-            e.printStackTrace();
-        }
-
-
-        //initLocalData(0);//本地json数据
-        request(index);//网络请求
-    }
-
-    @Override
-    protected void initClick() {
-        super.initClick();
-        getBinding().tvSport.setOnClickListener(this);
-        getBinding().tvSearch.setOnClickListener(this);
-
-        // 添加设置图标点击事件
-        getBinding().ivSetting.setOnClickListener(this); // 添加设置图标的点击监听
-
-    }
-
-    @Override
-    protected int initLayout() {
-        return R.layout.fragment_home;
-    }
-
-    @Override
-    protected FragmentHomeBinding onCreateViewBinding(@NonNull LayoutInflater inflater, @Nullable ViewGroup parent) {
-        return FragmentHomeBinding.inflate(inflater);
-    }
-
-    @Override
-    public void onClick(View view) {
-        switch (view.getId()) {
-            case R.id.tv_sport:
-                // 显示体育类型选择
-                showSport();
-                break;
-            case R.id.tv_search:
-                // 显示搜索
-                search();
-                break;
-
-            case R.id.iv_setting:
-                // 直接跳转到设置Activity
-                Intent intent = new Intent(getActivity(), SettingActivity.class);
-                startActivity(intent);
-                break;
-        }
-    }
-
-    @Override
-    public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
-        super.onViewCreated(view, savedInstanceState);
-        Log.d("HomeFragment1", "注册广播接收器");
-        IntentFilter filter = new IntentFilter("com.test.sport.TIMEZONE_CHANGED");
-        getActivity().registerReceiver(timezoneChangedReceiver, filter);
-
-        // 注册默认运动变化广播
-        IntentFilter sportFilter = new IntentFilter("com.test.sport.DEFAULT_SPORT_CHANGED");
-        getActivity().registerReceiver(sportChangedReceiver, sportFilter);
-
-        // 注册收藏变化广播
-        IntentFilter favoritesFilter = new IntentFilter("com.test.sport.FAVORITES_CHANGED");
-        requireContext().registerReceiver(favoritesChangedReceiver, favoritesFilter);
-
-        Log.d("HomeFragment", "注册收藏变化广播接收器");
-
-
-        // 初始化默认运动
-        SharedPreferences prefs = getActivity().getSharedPreferences(PREFS_NAME, Context.MODE_PRIVATE);
-        String defaultSport = prefs.getString("default_sport", "Soccer");
-        getBinding().tvSport.setText(defaultSport);
-        // 设置对应的index
-        for (int i = 0; i < SUPPORTED_SPORTS.length; i++) {
-            if (SUPPORTED_SPORTS[i].equals(defaultSport)) {
-                index = i;
-                break;
-            }
-        }
-        request(index);
-    }
-
+    // 时区变化广播接收器
     private final BroadcastReceiver timezoneChangedReceiver = new BroadcastReceiver() {
         @Override
         public void onReceive(Context context, Intent intent) {
@@ -206,6 +105,7 @@ public class HomeFragment extends BaseFragment<FragmentHomeBinding> implements V
         }
     };
 
+    // 默认运动变化广播接收器
     private final BroadcastReceiver sportChangedReceiver = new BroadcastReceiver() {
         @Override
         public void onReceive(Context context, Intent intent) {
@@ -226,7 +126,7 @@ public class HomeFragment extends BaseFragment<FragmentHomeBinding> implements V
         }
     };
 
-    // 添加广播接收器
+    // 喜欢的队伍变化广播接收器
     private final BroadcastReceiver favoritesChangedReceiver = new BroadcastReceiver() {
         @Override
         public void onReceive(Context context, Intent intent) {
@@ -249,6 +149,126 @@ public class HomeFragment extends BaseFragment<FragmentHomeBinding> implements V
     };
 
     @Override
+    protected int initLayout() {
+        return R.layout.fragment_home;
+    }
+
+    @Override
+    protected FragmentHomeBinding onCreateViewBinding(@NonNull LayoutInflater inflater, @Nullable ViewGroup parent) {
+        return FragmentHomeBinding.inflate(inflater);
+    }
+
+    @Override
+    public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
+        super.onViewCreated(view, savedInstanceState);   // initData和initCLick在这里调用
+        registerReceivers();
+        initDefaultSport();
+        request(index);
+    }
+
+    @Override
+    protected void initData() {
+        super.initData();
+        initTimeZone();
+        initCalendarView();
+        initDefaultDate();
+
+    }
+
+    // 初始化时区
+    private void initTimeZone() {
+        SharedPreferences preferences = getActivity().getSharedPreferences(PREFS_NAME, Context.MODE_PRIVATE);
+        timeZoneId = preferences.getString(PREF_SELECTED_TIMEZONE, android.icu.util.TimeZone.getDefault().getID());
+        Log.d("HomeFragment1", "加载的时区: " + timeZoneId);
+    }
+
+    // 初始化日历视图
+    private void initCalendarView() {
+        getBinding().calendarView.setOnCalendarSelectListener(this);
+        // 隐藏月视图，显示周视图
+        getBinding().calendarView.getMonthViewPager().setVisibility(View.GONE);
+        getBinding().calendarView.getWeekViewPager().setVisibility(View.VISIBLE);
+    }
+
+    // 初始化日期
+    private void initDefaultDate() {
+        date = Tools.customFormat(new Date(), "yyyy-MM-dd");
+        try {
+            SimpleDateFormat parser = new SimpleDateFormat("yyyy-MM-dd");
+            java.util.Calendar cal = java.util.Calendar.getInstance();
+            cal.setTime(parser.parse(date));
+            cal.add(java.util.Calendar.DAY_OF_MONTH, -1);
+            previousDate = parser.format(cal.getTime());
+        } catch (ParseException e) {
+            e.printStackTrace();
+        }
+    }
+
+    @Override
+    protected void initClick() {
+        super.initClick();
+        getBinding().tvSport.setOnClickListener(this);
+        getBinding().tvSearch.setOnClickListener(this);
+        getBinding().ivSetting.setOnClickListener(this);
+
+    }
+
+
+    @Override
+    public void onClick(View view) {
+        switch (view.getId()) {
+            case R.id.tv_sport:
+                // 显示体育类型选择
+                showSport();
+                break;
+            case R.id.tv_search:
+                // 显示搜索
+                search();
+                break;
+
+            case R.id.iv_setting:
+                // 跳转到设置Activity
+                Intent intent = new Intent(getActivity(), SettingActivity.class);
+                startActivity(intent);
+                break;
+        }
+    }
+
+
+    // 注册广播接收器
+    private void registerReceivers() {
+        Log.d("HomeFragment1", "注册广播接收器");
+        // 时区变化广播
+        IntentFilter filter = new IntentFilter("com.test.sport.TIMEZONE_CHANGED");
+        getActivity().registerReceiver(timezoneChangedReceiver, filter);
+
+        // 默认运动变化广播
+        IntentFilter sportFilter = new IntentFilter("com.test.sport.DEFAULT_SPORT_CHANGED");
+        getActivity().registerReceiver(sportChangedReceiver, sportFilter);
+
+        // 收藏变化广播
+        IntentFilter favoritesFilter = new IntentFilter("com.test.sport.FAVORITES_CHANGED");
+        requireContext().registerReceiver(favoritesChangedReceiver, favoritesFilter);
+        Log.d("HomeFragment", "注册收藏变化广播接收器");
+    }
+
+    // 初始化默认运动
+    private void initDefaultSport() {
+        SharedPreferences prefs = getActivity().getSharedPreferences(PREFS_NAME, Context.MODE_PRIVATE);
+        String defaultSport = prefs.getString("default_sport", "Soccer");
+        getBinding().tvSport.setText(defaultSport);
+
+        // 设置对应的index
+        for (int i = 0; i < SUPPORTED_SPORTS.length; i++) {
+            if (SUPPORTED_SPORTS[i].equals(defaultSport)) {
+                index = i;
+                break;
+            }
+        }
+    }
+
+
+    @Override
     public void onDestroyView() {
         super.onDestroyView();
         if (timezoneChangedReceiver != null) {
@@ -265,6 +285,7 @@ public class HomeFragment extends BaseFragment<FragmentHomeBinding> implements V
     }
 
     // 搜索功能
+    // 实现补完整
     private void search() {
 
         String keyword = getBinding().etName.getText().toString();
@@ -600,10 +621,6 @@ public class HomeFragment extends BaseFragment<FragmentHomeBinding> implements V
         return stringBuilder.toString();
     }
 
-    private List<Game> gameList = new ArrayList<>();
-    private List<Game> dataList = new ArrayList<>();
-    private List<Game> searchList = new ArrayList<>();
-    private GameAdapter gameAdapter;
 
     private void initAdapter() {
         dataList.clear();
@@ -653,10 +670,10 @@ public class HomeFragment extends BaseFragment<FragmentHomeBinding> implements V
     Handler handler = new Handler(msg -> {
         switch (msg.what) {
             case 0:
-                request(index);
+                request(index);  //完整的数据重载流程（网络请求 -> 数据处理 -> UI更新）
                 //initLocalData(index);
                 break;
-            case 1:
+            case 1:      //仅执行UI更新（使用现有数据刷新显示）
                 initAdapter();
                 break;
         }
@@ -701,7 +718,6 @@ public class HomeFragment extends BaseFragment<FragmentHomeBinding> implements V
 
         Log.d("RecommendDebug", "总比赛数量: " + gameList.size());
 
-        // 临时：取前两场比赛作为推荐
         List<Game> scoredGames = new ArrayList<>();
 
         for (Game game : gameList) {

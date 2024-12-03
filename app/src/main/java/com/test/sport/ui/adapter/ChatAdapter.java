@@ -10,7 +10,7 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.test.nba.R;
-import com.test.sport.db.entity.Message;
+import com.test.sport.model.Message;
 
 import java.util.ArrayList;
 import java.util.List;

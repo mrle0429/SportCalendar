@@ -38,7 +38,7 @@ public class MainActivity extends BaseActivity<ActivityMainBinding> {
 
     private void initNavigation() {
         // 底部导航栏设置
-        getBinding().navigation.setItemIconTintList(null);
+        getBinding().navigation.setItemIconTintList(null);   
         getBinding().navigation.setItemIconSize(90);//控制底部导航栏图标大小
         getBinding().navigation.setSelectedItemId(getBinding().navigation.getMenu().getItem(0).getItemId());
 
@@ -96,7 +96,7 @@ public class MainActivity extends BaseActivity<ActivityMainBinding> {
         if (currentSport == null) {
             // 从 SharedPreferences 获取默认运动
             SharedPreferences prefs = getSharedPreferences("SettingsPrefs", Context.MODE_PRIVATE);
-            currentSport = prefs.getString("default_sport", "Basketball");
+            currentSport = prefs.getString("default_sport", "Soccer");
             Log.d("SportSync", "MainActivity - 从SharedPreferences获取默认运动: " + currentSport);
         }
         return currentSport;

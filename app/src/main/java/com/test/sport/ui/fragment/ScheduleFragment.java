@@ -37,7 +37,7 @@ import java.util.Map;
 public class ScheduleFragment extends BaseFragment<FragmentScheduleBinding> implements View.OnClickListener,
         CalendarView.OnCalendarSelectListener {
 
-    private DbScheduleController dbScheduleController;
+    private DbScheduleController dbScheduleController;    // 数据库控制器
     private List<Schedule> scheduleList = new ArrayList<>();//今日
     private ScheduleAdapter scheduleAdapter;
     private List<Schedule> allScheduleList = new ArrayList<>();//全部
@@ -47,8 +47,8 @@ public class ScheduleFragment extends BaseFragment<FragmentScheduleBinding> impl
     @Override
     protected void initData() {
         super.initData();
-        EventBus.getDefault().register(this);
-        dbScheduleController = DbScheduleController.getInstance(getActivity());
+        EventBus.getDefault().register(this);      // 注册EventBus
+        dbScheduleController = DbScheduleController.getInstance(getActivity());    // 获取数据库示例
         initCalendarTitle();
     }
 
@@ -83,17 +83,20 @@ public class ScheduleFragment extends BaseFragment<FragmentScheduleBinding> impl
 
     private void inAdapter() {
         scheduleList.clear();
-        scheduleList = dbScheduleController.searchByWhere(date);
+        scheduleList = dbScheduleController.searchByWhere(date);     // 查询当天的日程
         if (scheduleList.size() == 0) {
             getBinding().tvHint.setVisibility(View.VISIBLE);
         } else {
             getBinding().tvHint.setVisibility(View.GONE);
         }
+
         LinearLayoutManager manager = new LinearLayoutManager(getActivity());
         manager.setOrientation(RecyclerView.VERTICAL);
         scheduleAdapter = new ScheduleAdapter(getActivity(), scheduleList);
         getBinding().rvData.setLayoutManager(manager);
         getBinding().rvData.setAdapter(scheduleAdapter);
+
+        // 点击删除时间监听
         scheduleAdapter.setListener(new ScheduleAdapter.OnClickListener() {
             @Override
             public void onDelete(int pos, View view) {
@@ -119,10 +122,13 @@ public class ScheduleFragment extends BaseFragment<FragmentScheduleBinding> impl
         }
     }
 
+    // 初始化日程标记（有日程的日期上有标记）
     private void initSchedule() {
         allScheduleList.clear();
-        allScheduleList = dbScheduleController.searchAll();
+        allScheduleList = dbScheduleController.searchAll();    // 查询所有日程
         Map<String, Calendar> map = new HashMap<>();
+
+        //为有日程的日期添加标记
         for (Schedule schedule : allScheduleList) {
             String[] date = schedule.getDate().split("-");
             map.put(getSchemeCalendar(Integer.parseInt(date[0]), Integer.parseInt(date[1]), Integer.parseInt(date[2]),
@@ -165,7 +171,7 @@ public class ScheduleFragment extends BaseFragment<FragmentScheduleBinding> impl
     public void onClick(View view) {
         switch (view.getId()) {
             case R.id.iv_left:
-                getBinding().calendarView.scrollToPre(true);
+                getBinding().calendarView.scrollToPre(true);    // 滚动到前一月
                 break;
             case R.id.iv_right:
                 getBinding().calendarView.scrollToNext(true);
@@ -190,6 +196,7 @@ public class ScheduleFragment extends BaseFragment<FragmentScheduleBinding> impl
         refreshAdapter();
     }
 
+    // 接收日程变化事件(日程变化时刷新日程)(SportActivity中发送)
     @Subscribe(threadMode = ThreadMode.MAIN)
     public void onGetMessage(ScheduleEvent event) {
         scheduleList.clear();

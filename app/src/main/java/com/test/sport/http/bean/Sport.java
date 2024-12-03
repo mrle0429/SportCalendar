@@ -2,6 +2,26 @@ package com.test.sport.http.bean;
 
 import java.util.List;
 
+/**
+ * Sport
+├── SummariesDTO[]
+│   ├── SportEventDTO
+│   │   ├── SportEventContextDTO
+│   │   │   ├── SportDTO
+│   │   │   ├── CategoryDTO
+│   │   │   ├── CompetitionDTO
+│   │   │   ├── SeasonDTO
+│   │   │   ├── StageDTO
+│   │   │   ├── RoundDTO
+│   │   │   └── GroupsDTO[]
+│   │   ├── CoverageDTO
+│   │   ├── CompetitorsDTO[]
+│   │   ├── VenueDTO
+│   │   └── SportEventConditionsDTO
+│   ├── SportEventStatusDTO
+│   └── StatisticsDTO
+ */
+
 public class Sport {
 
     private String generatedAt;
@@ -24,9 +44,9 @@ public class Sport {
     }
 
     public static class SummariesDTO {
-        private SportEventDTO sportEvent;
-        private SportEventStatusDTO sportEventStatus;
-        private StatisticsDTO statistics;
+        private SportEventDTO sportEvent;                // 体育赛事
+        private SportEventStatusDTO sportEventStatus;    // 体育赛事状态
+        private StatisticsDTO statistics;                  // 统计数据
 
         public SportEventDTO getSportEvent() {
             return sportEvent;

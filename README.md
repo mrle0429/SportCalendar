@@ -11,3 +11,10 @@ Calendarview:Android上一个优雅、万能自定义UI、性能高效的日历�
 Eventbus：是用于Android开发的“事件发布—订阅总线”， 用来进行模块间通信、解藕。 它可以使用很少的代码，来实现多组件之间的通信。
 XXPermissions：Android权限请求框架，简化权限请求操作。
 
+ViewBinding：ViewBinding 是一种用于替代findViewById()的工具，它能够自动生成视图与代码之间的绑定关系，从而减少样板代码，提高开发效率。
+Fastjson
+
+Eventbus：事件发布-订阅总线
+1. Publisher (发布者)：发送事件的组件   (sportActivity)
+2. Subscriber (订阅者)：接收事件的组件   (scheduleFragment)
+3. Event (事件)：传递的消息对象

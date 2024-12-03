@@ -1,4 +1,4 @@
-package com.test.sport.db.entity;
+package com.test.sport.model;
 
 import java.io.Serializable;
 import java.util.List;
@@ -22,80 +22,11 @@ public class Game implements Serializable {
     private int venue_capacity;//场馆容量
     private String city_name;//城市
     private List<Score> Score;
-    ;//分场得分
+    //分场得分
     private String status;//not_started live ended closed postponed
     private int away_score;//客场得分
     private int home_score;//主场得分
     private int recommendScore;
-
-    public static class Score implements Serializable {
-        private int away_score;//客场得分
-        private int home_score;//主场得分
-        private int number;//1
-
-        public int getAway_score() {
-            return away_score;
-        }
-
-        public void setAway_score(int away_score) {
-            this.away_score = away_score;
-        }
-
-        public int getHome_score() {
-            return home_score;
-        }
-
-        public void setHome_score(int home_score) {
-            this.home_score = home_score;
-        }
-
-        public int getNumber() {
-            return number;
-        }
-
-        public void setNumber(int number) {
-            this.number = number;
-        }
-    }
-
-    public static class Competitors implements Serializable {
-        private String competitors_name;
-        private String abbreviation;//缩写
-        private String country_code;
-        private String qualifier;//主客场
-
-        public String getCompetitors_name() {
-            return competitors_name;
-        }
-
-        public void setCompetitors_name(String competitors_name) {
-            this.competitors_name = competitors_name;
-        }
-
-        public String getAbbreviation() {
-            return abbreviation;
-        }
-
-        public void setAbbreviation(String abbreviation) {
-            this.abbreviation = abbreviation;
-        }
-
-        public String getCountry_code() {
-            return country_code;
-        }
-
-        public void setCountry_code(String country_code) {
-            this.country_code = country_code;
-        }
-
-        public String getQualifier() {
-            return qualifier;
-        }
-
-        public void setQualifier(String qualifier) {
-            this.qualifier = qualifier;
-        }
-    }
 
     public int getVenue_capacity() {
         return venue_capacity;
@@ -244,5 +175,74 @@ public class Game implements Serializable {
     @Override
     public int hashCode() {
         return Objects.hash(getSport_name(), getStart_time(), getCountry_name(), getCompetition_name(), getStage_start_date(), getStage_end_date(), getStage_type(), getStage_phase(), getCompetitors(), getVenue_name(), getVenue_capacity(), getCity_name(), getScore(), getStatus(), getAway_score(), getHome_score());
+    }
+
+    public static class Score implements Serializable {
+        private int away_score;//客场得分
+        private int home_score;//主场得分
+        private int number;//1
+
+        public int getAway_score() {
+            return away_score;
+        }
+
+        public void setAway_score(int away_score) {
+            this.away_score = away_score;
+        }
+
+        public int getHome_score() {
+            return home_score;
+        }
+
+        public void setHome_score(int home_score) {
+            this.home_score = home_score;
+        }
+
+        public int getNumber() {
+            return number;
+        }
+
+        public void setNumber(int number) {
+            this.number = number;
+        }
+    }
+
+    public static class Competitors implements Serializable {
+        private String competitors_name;
+        private String abbreviation;//缩写
+        private String country_code;
+        private String qualifier;//主客场
+
+        public String getCompetitors_name() {
+            return competitors_name;
+        }
+
+        public void setCompetitors_name(String competitors_name) {
+            this.competitors_name = competitors_name;
+        }
+
+        public String getAbbreviation() {
+            return abbreviation;
+        }
+
+        public void setAbbreviation(String abbreviation) {
+            this.abbreviation = abbreviation;
+        }
+
+        public String getCountry_code() {
+            return country_code;
+        }
+
+        public void setCountry_code(String country_code) {
+            this.country_code = country_code;
+        }
+
+        public String getQualifier() {
+            return qualifier;
+        }
+
+        public void setQualifier(String qualifier) {
+            this.qualifier = qualifier;
+        }
     }
 }

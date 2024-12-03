@@ -10,7 +10,7 @@ import androidx.viewbinding.ViewBinding;
 
 import com.test.sport.utils.ToastUtils;
 
-// TODO: 基类
+
 public abstract class BaseActivity<T extends ViewBinding> extends AppCompatActivity {
 
     private T mBinding;
@@ -18,11 +18,11 @@ public abstract class BaseActivity<T extends ViewBinding> extends AppCompatActiv
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        initAnimationAndStatusBar();
-        mBinding = onCreateViewBinding(getLayoutInflater());
-        setContentView(mBinding.getRoot());
-        initData();
-        initClick();
+        initAnimationAndStatusBar();       // 初始化动画和状态栏
+        mBinding = onCreateViewBinding(getLayoutInflater());   // 初始化ViewBinding
+        setContentView(mBinding.getRoot());            // 设置根视图
+        initData();                                  // 初始化数据
+        initClick();                                 // 初始化点击事件
     }
 
     protected void initAnimationAndStatusBar() {

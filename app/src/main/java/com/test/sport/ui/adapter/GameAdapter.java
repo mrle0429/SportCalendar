@@ -11,7 +11,7 @@ import androidx.core.content.ContextCompat;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.test.nba.R;
-import com.test.sport.db.entity.Game;
+import com.test.sport.model.Game;
 import com.test.sport.utils.Tools;
 
 import java.util.ArrayList;

@@ -14,7 +14,7 @@ import com.test.nba.R;
 import com.test.nba.databinding.ActivitySportBinding;
 import com.test.sport.base.BaseActivity;
 import com.test.sport.db.DbScheduleController;
-import com.test.sport.db.entity.Game;
+import com.test.sport.model.Game;
 import com.test.sport.db.entity.Schedule;
 import com.test.sport.event.ScheduleEvent;
 import com.test.sport.utils.CalendarReminderUtils;

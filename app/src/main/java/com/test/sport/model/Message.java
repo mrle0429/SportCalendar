@@ -1,4 +1,4 @@
-package com.test.sport.db.entity;
+package com.test.sport.model;
 
 public class Message {
     public static final int TYPE_AI = 0;

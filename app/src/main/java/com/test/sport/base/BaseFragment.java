@@ -17,6 +17,7 @@ public abstract class BaseFragment<T extends ViewBinding> extends Fragment {
 
     private T mBinding;
 
+    // 创建视图
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
@@ -25,6 +26,7 @@ public abstract class BaseFragment<T extends ViewBinding> extends Fragment {
         return mBinding.getRoot();
     }
 
+    //创建视图后完成初始化
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);

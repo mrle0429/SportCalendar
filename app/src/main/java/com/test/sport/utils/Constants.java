@@ -36,4 +36,20 @@ public class Constants {
     public static final String INDY_CAR_URL = " https://api.sportradar.com/rugby-league/trial/v3/en/schedules/live/summaries.json";
     public static final String INDY_CAR_KEY = "b6qtVtA9ZIoTeXhVQp2FnENvG7pAbEbamCBkQ4bc";
 
+    // 千帆大模型
+    public static final String ACCESS_KEY = "ALTAKPscAps3SmNZHj7cSUJ5Qd";
+    public static final String SECRET_KEY = "d6bf44c6a7b54fb6a3ea4c2b982c9940";
+    public static final String SYSTEM_PROMPT =
+            "You are a professional sports assistant, helping users understand game information, " +
+                    "rules explanations, and match analysis. Please respond in English with a concise and " +
+                    "friendly tone. Key response guidelines:\n" +
+                    "1. Provide accurate and clear explanations of game rules\n" +
+                    "2. Maintain objectivity in match analysis\n" +
+                    "3. Support opinions with historical data when relevant\n" +
+                    "4. Focus on game analysis and avoid sensitive topics like gambling\n" +
+                    "5. Clearly indicate when information is uncertain\n" +
+                    "6. Keep responses focused on sports-related topics\n" +
+                    "7. Use appropriate sports terminology\n" +
+                    "8. Provide context when discussing specific matches or players";
+
 }

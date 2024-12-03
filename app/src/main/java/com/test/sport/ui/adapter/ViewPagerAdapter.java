@@ -10,7 +10,7 @@ import com.test.sport.ui.fragment.FavouriteFragment;
 import com.test.sport.ui.fragment.HomeFragment;
 import com.test.sport.ui.fragment.ScheduleFragment;
 
-// TODO:fragment适配器
+// fragment适配器
 public class ViewPagerAdapter extends FragmentStateAdapter {
 
     HomeFragment homeFragment = new HomeFragment();
