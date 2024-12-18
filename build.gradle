@@ -4,6 +4,7 @@ buildscript {
         maven { url 'https://maven.aliyun.com/repository/public' }
         maven { url 'https://maven.aliyun.com/repository/google' }
         maven { url "https://jitpack.io" }
+        maven { url "https://maven.baidu.com/repository/releases" }
         mavenCentral()
     }
 
@@ -18,6 +19,7 @@ allprojects {
         maven { url 'https://maven.aliyun.com/repository/public' }
         maven { url 'https://maven.aliyun.com/repository/google' }
         maven { url "https://jitpack.io" }
+        maven { url "https://maven.baidu.com/repository/releases" }
         mavenCentral()
     }
 }
