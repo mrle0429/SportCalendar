@@ -41,6 +41,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:targetApi="31">
+        
         <activity
             android:name="com.test.sport.ui.activity.SportActivity"
             android:exported="false">
@@ -51,13 +52,16 @@
 
         <meta-data
             android:name="com.baidu.lbsapi.API_KEY"
-            android:value="wJrSDQcTm8QvMu7AwoBprzeSlpjWbljc"></meta-data>
+            android:value="wJrSDQcTm8QvMu7AwoBprzeSlpjWbljc">
+
+        </meta-data>
 
         <service
             android:name="com.baidu.location.f"
             android:enabled="true"
-            android:process=":remote"></service>
-        <service android:name="com.amap.api.location.APSService"></service>
+            android:process=":remote">
+        </service>
+
 
 
         <activity
@@ -88,11 +92,6 @@
             android:screenOrientation="portrait"
             android:exported="false" />
 
-        <!--        <meta-data android:name="com.amap.api.v2.apikey" android:value="ef147f95a0f34e9d12f7b78b34bd978e">-->
-
-        <!--        </meta-data>-->
-
-        <!--        <service android:name="com.amap.api.location.APSService"></service>-->
 
     </application>
 
