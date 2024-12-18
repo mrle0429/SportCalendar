@@ -19,6 +19,12 @@
         android:id="@+id/navigation_chat"
         android:icon="@drawable/ic_chat_ai"
         android:title="Chat" />
+    <item
+        android:id="@+id/navigation_map"
+        android:icon="@drawable/ic_map"
+        android:title="Map" />
+
+
 
 
 </menu>

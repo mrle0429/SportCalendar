@@ -8,6 +8,7 @@ import androidx.viewpager2.adapter.FragmentStateAdapter;
 import com.test.sport.ui.fragment.ChatFragment;
 import com.test.sport.ui.fragment.FavouriteFragment;
 import com.test.sport.ui.fragment.HomeFragment;
+import com.test.sport.ui.fragment.MapFragment;
 import com.test.sport.ui.fragment.ScheduleFragment;
 
 // fragment适配器
@@ -17,6 +18,7 @@ public class ViewPagerAdapter extends FragmentStateAdapter {
     ScheduleFragment scheduleFragment = new ScheduleFragment();
     FavouriteFragment favouriteFragment = new FavouriteFragment();
     ChatFragment chatFragment = new ChatFragment();
+    MapFragment mapFragment = new MapFragment();
 
     public ViewPagerAdapter(@NonNull FragmentActivity fragmentActivity) {
         super(fragmentActivity);
@@ -34,12 +36,15 @@ public class ViewPagerAdapter extends FragmentStateAdapter {
                 return favouriteFragment;
             case 3:
                 return chatFragment;
+
+            case 4:
+                return mapFragment;
         }
         return null;
     }
 
     @Override
     public int getItemCount() {
-        return 4;
+        return 5;
     }
 }

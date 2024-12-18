@@ -57,6 +57,8 @@ public class MainActivity extends BaseActivity<ActivityMainBinding> {
                 case R.id.navigation_chat:
                     getBinding().viewPager.setCurrentItem(3);
                     break;
+                case R.id.navigation_map:
+                    getBinding().viewPager.setCurrentItem(4);
             }
             return false;
         });
