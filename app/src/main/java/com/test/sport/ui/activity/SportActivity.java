@@ -1,10 +1,19 @@
 package com.test.sport.ui.activity;
 
+import android.content.Intent;
+import android.graphics.Bitmap;
+import android.graphics.Canvas;
+import android.graphics.Color;
+import android.net.Uri;
 import android.os.Handler;
 import android.view.LayoutInflater;
+import android.view.View;
 import android.widget.ArrayAdapter;
+import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.annotation.NonNull;
+import androidx.core.content.FileProvider;
 
 import com.hjq.permissions.OnPermissionCallback;
 import com.hjq.permissions.Permission;
@@ -22,6 +31,10 @@ import com.test.sport.utils.Tools;
 
 import org.greenrobot.eventbus.EventBus;
 
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
+import java.io.IOException;
 import java.text.ParseException;
 import java.util.ArrayList;
 import java.util.List;
@@ -34,6 +47,8 @@ public class SportActivity extends BaseActivity<ActivitySportBinding> {
     private String remind;
     private Game game;
     private String timeZoneId; //时区
+
+    private static final String FILE_PROVIDER_AUTHORITY = "com.test.sport.fileprovider";
 
     @Override
     protected void initData() {
@@ -49,6 +64,66 @@ public class SportActivity extends BaseActivity<ActivitySportBinding> {
         super.initClick();
         getBinding().titleBar.setLeftIconOnClickListener(v -> finish());
         getBinding().tvSchedule.setOnClickListener(v -> requestRPermission());
+
+        getBinding().titleBar.setRightIcon(R.drawable.ic_share);
+        getBinding().titleBar.setRightIconOnClickListener(v -> shareGame());
+    }
+
+    private void shareGame() {
+        // 1. 创建分享视图
+        View shareView = LayoutInflater.from(this).inflate(R.layout.layout_share_game, null);
+        
+        // 2. 设置分享内容
+        TextView titleTv = shareView.findViewById(R.id.tv_game_title);
+        TextView timeTv = shareView.findViewById(R.id.tv_game_time);
+        TextView homeTv = shareView.findViewById(R.id.tv_home_team);
+        TextView awayTv = shareView.findViewById(R.id.tv_away_team);
+        
+        titleTv.setText(game.getCompetition_name() + " " + game.getStage_phase());
+        timeTv.setText(game.getStart_time());
+        
+        if (game.getCompetitors() != null && game.getCompetitors().size() >= 2) {
+            homeTv.setText(game.getCompetitors().get(0).getCompetitors_name());
+            awayTv.setText(game.getCompetitors().get(1).getCompetitors_name());
+        }
+    
+        // 3. 将视图转换为Bitmap
+        shareView.measure(
+            View.MeasureSpec.makeMeasureSpec(0, View.MeasureSpec.UNSPECIFIED),
+            View.MeasureSpec.makeMeasureSpec(0, View.MeasureSpec.UNSPECIFIED));
+        shareView.layout(0, 0, shareView.getMeasuredWidth(), shareView.getMeasuredHeight());
+    
+        Bitmap bitmap = Bitmap.createBitmap(
+            shareView.getMeasuredWidth(),
+            shareView.getMeasuredHeight(), 
+            Bitmap.Config.ARGB_8888);
+        Canvas canvas = new Canvas(bitmap);
+        canvas.drawColor(Color.WHITE);
+        shareView.draw(canvas);
+    
+        // 4. 分享图片
+        try {
+            String fileName = "game_share.jpg";
+            File file = new File(getExternalCacheDir(), fileName);
+            FileOutputStream fos = new FileOutputStream(file);
+            bitmap.compress(Bitmap.CompressFormat.JPEG, 100, fos);
+            fos.flush();
+            fos.close();
+    
+            Uri uri = FileProvider.getUriForFile(this,
+                getPackageName() + ".fileprovider", file);
+    
+            Intent shareIntent = new Intent();
+            shareIntent.setAction(Intent.ACTION_SEND);
+            shareIntent.putExtra(Intent.EXTRA_STREAM, uri);
+            shareIntent.setType("image/*");
+            shareIntent.addFlags(Intent.FLAG_GRANT_READ_URI_PERMISSION);
+            startActivity(Intent.createChooser(shareIntent, "分享比赛"));
+    
+        } catch (IOException e) {
+            e.printStackTrace();
+            Toast.makeText(this, "分享失败", Toast.LENGTH_SHORT).show();
+        }
     }
 
     @Override

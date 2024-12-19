@@ -12,7 +12,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@drawable/shape_btn_game"
-        android:paddingTop="20dp" />
+        android:paddingTop="20dp" 
+        app:titleBar_type="2"/>
 
     <com.hjq.shape.layout.ShapeRelativeLayout
         android:layout_below="@+id/title_bar"
