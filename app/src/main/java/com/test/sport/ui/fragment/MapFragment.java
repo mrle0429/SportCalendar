@@ -1,8 +1,12 @@
 package com.test.sport.ui.fragment;
 
+import android.os.Bundle;
 import android.util.Log;
 import android.view.LayoutInflater;
+import android.view.View;
 import android.view.ViewGroup;
+import android.widget.TextView;
+
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 
@@ -17,9 +21,11 @@ import com.baidu.mapapi.SDKInitializer;
 import com.baidu.mapapi.CoordType;
 import com.baidu.mapapi.map.BaiduMap;
 import com.baidu.mapapi.map.BitmapDescriptorFactory;
+import com.baidu.mapapi.map.InfoWindow;
 import com.baidu.mapapi.map.MapStatus;
 import com.baidu.mapapi.map.MapStatusUpdateFactory;
 import com.baidu.mapapi.map.MapView;
+import com.baidu.mapapi.map.Marker;
 import com.baidu.mapapi.map.MarkerOptions;
 import com.baidu.mapapi.map.MyLocationConfiguration;
 import com.baidu.mapapi.map.MyLocationData;
@@ -45,6 +51,14 @@ import com.test.nba.databinding.FragmentMapBinding;
 import com.test.sport.base.BaseFragment;
 
 import java.util.List;
+import java.net.HttpURLConnection;
+import java.net.URL;
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
+import java.net.URLEncoder;
+import java.security.MessageDigest;
+import org.json.JSONArray;
+import org.json.JSONObject;
 
 public class MapFragment extends BaseFragment<FragmentMapBinding> {
     private static final String TAG = "MapFragment";
@@ -53,6 +67,9 @@ public class MapFragment extends BaseFragment<FragmentMapBinding> {
     private LocationClient mLocationClient = null;
     private boolean isFirstLoc = true; // 是否首次定位
     private PoiSearch mPoiSearch = null;
+    private static final String TRANSLATE_URL = "https://fanyi-api.baidu.com/api/trans/vip/translate";
+    private static final String TRANSLATE_APP_ID = "20241220002233178";  // TODO: 替换为你的百度翻译APP ID
+    private static final String TRANSLATE_SECRET = "7iqOxqArqLrzggilj9A2";   // TODO: 替换为你的百度翻译密钥
 
     @Override
     protected int initLayout() {
@@ -195,6 +212,7 @@ public class MapFragment extends BaseFragment<FragmentMapBinding> {
                     if (poiResult.error == SearchResult.ERRORNO.NO_ERROR) {
                         List<PoiInfo> allPoi = poiResult.getAllPoi();
                         if (allPoi != null) {
+                            mBaiduMap.clear(); // 清除旧的标记
                             for (PoiInfo poi : allPoi) {
                                 Log.d(TAG, "POI: " + poi.name + 
                                           ", 地址: " + poi.address + 
@@ -204,8 +222,20 @@ public class MapFragment extends BaseFragment<FragmentMapBinding> {
                                 // 在地图上添加标记
                                 MarkerOptions markerOptions = new MarkerOptions()
                                     .position(poi.location)
-                                    .icon(BitmapDescriptorFactory.fromResource(R.drawable.img));
+                                    .icon(BitmapDescriptorFactory.fromResource(R.drawable.img))
+                                    .anchor(0.5f, 0.5f)
+                                    .scaleX(1.5f)
+                                    .scaleY(1.5f);
                                 mBaiduMap.addOverlay(markerOptions);
+
+                                Marker marker = (Marker) mBaiduMap.addOverlay(markerOptions);
+                                // 将POI信息与标记关联
+                                marker.setTitle(poi.name);
+                                Bundle bundle = new Bundle();
+                                bundle.putString("name", poi.name);
+                                bundle.putString("address", poi.address);
+                                bundle.putString("phone", poi.phoneNum);
+                                marker.setExtraInfo(bundle);
                             }
                         }
                     }
@@ -230,15 +260,140 @@ public class MapFragment extends BaseFragment<FragmentMapBinding> {
             // 设置检索监听器
             mPoiSearch.setOnGetPoiSearchResultListener(poiListener);
             
-            // 发起检索（例如：搜索北京的餐厅）
+
+            mBaiduMap.setOnMarkerClickListener(marker -> {
+                Bundle bundle = marker.getExtraInfo();
+                if (bundle != null) {
+                    showPoiInfoWindow(marker);
+                }
+                return true;
+            });
             
+
+            // 设置地图点击事件监听器
+            mBaiduMap.setOnMapClickListener(new BaiduMap.OnMapClickListener() {
+                @Override
+                public void onMapClick(LatLng latLng) {
+                    // 点击地图时隐藏信息窗口
+                    mBaiduMap.hideInfoWindow();
+                }
+
+                @Override
+                public void onMapPoiClick(MapPoi mapPoi) {
+                    // 点击地图POI点时也隐藏信息窗口
+                    mBaiduMap.hideInfoWindow();
+                }
+            });
 
         } catch (Exception e) {
             Log.e(TAG, "POI搜索初始化失败", e);
         }
     }
 
-    // 发起周边POI检索
+
+    private void showPoiInfoWindow(Marker marker) {
+        try {
+            Bundle bundle = marker.getExtraInfo();
+            if (bundle == null) return;
+            
+            String poiName = bundle.getString("name", "");
+            String poiAddress = bundle.getString("address", "暂无");
+            
+            // 翻译POI名称
+            translateText(poiName, translatedName -> {
+                // 翻译地址
+                translateText(poiAddress, translatedAddress -> {
+                    requireActivity().runOnUiThread(() -> {
+                        // 创建信息窗口视图
+                        View view = LayoutInflater.from(getActivity()).inflate(R.layout.layout_poi_info_window, null);
+                        TextView titleTv = view.findViewById(R.id.tv_title);
+                        TextView addressTv = view.findViewById(R.id.tv_address);
+                        TextView phoneTv = view.findViewById(R.id.tv_phone);
+                        
+                        // 设置信息内容
+                        titleTv.setText(translatedName);  // 使用翻译后的名称
+                        addressTv.setText("Address: " + translatedAddress);  // 使用翻译后的地址
+                        phoneTv.setText("Contact: " + bundle.getString("phone", "暂无"));
+                        
+                        // 创建InfoWindow
+                        InfoWindow infoWindow = new InfoWindow(
+                            view,
+                            marker.getPosition(),
+                            -47
+                        );
+                        
+                        // 显示InfoWindow
+                        mBaiduMap.showInfoWindow(infoWindow);
+                    });
+                });
+            });
+            
+        } catch (Exception e) {
+            Log.e(TAG, "显示POI信息窗口失败", e);
+        }
+    }
+
+    // 添加翻译方法
+    private void translateText(String text, TranslateCallback callback) {
+        new Thread(() -> {
+            try {
+                String salt = String.valueOf(System.currentTimeMillis());
+                String sign = generateMD5(TRANSLATE_APP_ID + text + salt + TRANSLATE_SECRET);
+                
+                String url = TRANSLATE_URL + "?q=" + URLEncoder.encode(text, "UTF-8") 
+                        + "&from=zh&to=en"
+                        + "&appid=" + TRANSLATE_APP_ID
+                        + "&salt=" + salt
+                        + "&sign=" + sign;
+
+                URL obj = new URL(url);
+                HttpURLConnection con = (HttpURLConnection) obj.openConnection();
+                con.setRequestMethod("GET");
+
+                BufferedReader in = new BufferedReader(new InputStreamReader(con.getInputStream()));
+                StringBuilder response = new StringBuilder();
+                String line;
+                while ((line = in.readLine()) != null) {
+                    response.append(line);
+                }
+                in.close();
+
+                JSONObject jsonResponse = new JSONObject(response.toString());
+                JSONArray transResult = jsonResponse.getJSONArray("trans_result");
+                String translatedText = transResult.getJSONObject(0).getString("dst");
+                
+                callback.onTranslate(translatedText);
+            } catch (Exception e) {
+                Log.e(TAG, "翻译失败", e);
+                callback.onTranslate(text); // 翻译失败时返回原文
+            }
+        }).start();
+    }
+
+    // 添加翻译回调接口
+    private interface TranslateCallback {
+        void onTranslate(String translatedText);
+    }
+
+    // 添加MD5加密方法
+    private String generateMD5(String input) {
+        try {
+            MessageDigest md = MessageDigest.getInstance("MD5");
+            byte[] messageDigest = md.digest(input.getBytes());
+            StringBuilder hexString = new StringBuilder();
+            for (byte b : messageDigest) {
+                String hex = Integer.toHexString(0xFF & b);
+                if (hex.length() == 1) hexString.append('0');
+                hexString.append(hex);
+            }
+            return hexString.toString();
+        } catch (Exception e) {
+            Log.e(TAG, "MD5加密失败", e);
+            return "";
+        }
+    }
+
+    // 起周边POI检索
     private void searchNearbyPoi(LatLng location) {
         if (mPoiSearch != null) {
             Log.d(TAG, "开始POI搜索，中心点：" + location.latitude + ", " + location.longitude);

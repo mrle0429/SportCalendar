@@ -1,0 +1,310 @@
+{
+  "generated_at": "2024-12-19T12:45:24+00:00",
+  "schema": "https://schemas.sportradar.com/sportsapi/formula1/v2/schemas/seasons.json",
+  "stages": [
+    {
+      "id": "sr:stage:1189123",
+      "description": "Formula 1 2025",
+      "scheduled": "2025-03-14T01:35:00+00:00",
+      "scheduled_end": "2025-12-07T15:00:00+00:00",
+      "type": "season",
+      "category": {
+        "id": "sr:category:36",
+        "name": "Formula 1"
+      },
+      "sport": {
+        "id": "sr:sport:40",
+        "name": "Formula 1"
+      },
+      "single_event": false
+    },
+    {
+      "id": "sr:stage:1107547",
+      "description": "Formula 1 2024",
+      "scheduled": "2024-02-29T11:30:00+00:00",
+      "scheduled_end": "2024-12-08T15:00:00+00:00",
+      "type": "season",
+      "category": {
+        "id": "sr:category:36",
+        "name": "Formula 1"
+      },
+      "sport": {
+        "id": "sr:sport:40",
+        "name": "Formula 1"
+      },
+      "single_event": false
+    },
+    {
+      "id": "sr:stage:1031201",
+      "description": "Formula 1 2023",
+      "scheduled": "2023-03-03T11:30:00+00:00",
+      "scheduled_end": "2023-11-26T15:00:00+00:00",
+      "type": "season",
+      "category": {
+        "id": "sr:category:36",
+        "name": "Formula 1"
+      },
+      "sport": {
+        "id": "sr:sport:40",
+        "name": "Formula 1"
+      },
+      "single_event": false
+    },
+    {
+      "id": "sr:stage:937183",
+      "description": "Formula 1 2022",
+      "scheduled": "2022-03-18T12:00:00+00:00",
+      "scheduled_end": "2022-11-20T15:00:00+00:00",
+      "type": "season",
+      "category": {
+        "id": "sr:category:36",
+        "name": "Formula 1"
+      },
+      "sport": {
+        "id": "sr:sport:40",
+        "name": "Formula 1"
+      },
+      "single_event": false
+    },
+    {
+      "id": "sr:stage:686252",
+      "description": "Formula 1 2021",
+      "scheduled": "2021-03-26T11:00:00+00:00",
+      "scheduled_end": "2021-12-12T15:10:00+00:00",
+      "type": "season",
+      "category": {
+        "id": "sr:category:36",
+        "name": "Formula 1"
+      },
+      "sport": {
+        "id": "sr:sport:40",
+        "name": "Formula 1"
+      },
+      "single_event": false
+    },
+    {
+      "id": "sr:stage:547803",
+      "description": "Formula 1 2020",
+      "scheduled": "2020-03-13T01:00:00+00:00",
+      "scheduled_end": "2020-12-13T16:00:00+00:00",
+      "type": "season",
+      "category": {
+        "id": "sr:category:36",
+        "name": "Formula 1"
+      },
+      "sport": {
+        "id": "sr:sport:40",
+        "name": "Formula 1"
+      },
+      "single_event": false
+    },
+    {
+      "id": "sr:stage:426678",
+      "description": "Formula 1 2019",
+      "scheduled": "2019-03-15T01:00:00+00:00",
+      "scheduled_end": "2019-12-01T18:10:00+00:00",
+      "type": "season",
+      "category": {
+        "id": "sr:category:36",
+        "name": "Formula 1"
+      },
+      "sport": {
+        "id": "sr:sport:40",
+        "name": "Formula 1"
+      },
+      "single_event": false
+    },
+    {
+      "id": "sr:stage:324771",
+      "description": "Formula 1 2018",
+      "scheduled": "2018-03-23T01:00:00+00:00",
+      "scheduled_end": "2018-11-25T15:10:00+00:00",
+      "type": "season",
+      "category": {
+        "id": "sr:category:36",
+        "name": "Formula 1"
+      },
+      "sport": {
+        "id": "sr:sport:40",
+        "name": "Formula 1"
+      },
+      "single_event": false
+    },
+    {
+      "id": "sr:stage:272058",
+      "description": "Formula 1 2017",
+      "scheduled": "2017-03-24T01:00:00+00:00",
+      "scheduled_end": "2017-11-26T15:00:00+00:00",
+      "type": "season",
+      "category": {
+        "id": "sr:category:36",
+        "name": "Formula 1"
+      },
+      "sport": {
+        "id": "sr:sport:40",
+        "name": "Formula 1"
+      },
+      "single_event": false
+    },
+    {
+      "id": "sr:stage:243236",
+      "description": "Formula 1 2016",
+      "scheduled": "2016-03-17T23:00:00+00:00",
+      "scheduled_end": "2016-11-27T19:00:00+00:00",
+      "type": "season",
+      "category": {
+        "id": "sr:category:36",
+        "name": "Formula 1"
+      },
+      "sport": {
+        "id": "sr:sport:40",
+        "name": "Formula 1"
+      },
+      "single_event": false
+    },
+    {
+      "id": "sr:stage:221417",
+      "description": "Formula 1 2015",
+      "scheduled": "2015-03-13T01:30:00+00:00",
+      "scheduled_end": "2015-11-29T18:00:00+00:00",
+      "type": "season",
+      "category": {
+        "id": "sr:category:36",
+        "name": "Formula 1"
+      },
+      "sport": {
+        "id": "sr:sport:40",
+        "name": "Formula 1"
+      },
+      "single_event": false
+    },
+    {
+      "id": "sr:stage:191268",
+      "description": "Formula 1 2014",
+      "scheduled": "2014-03-14T06:00:00+00:00",
+      "scheduled_end": "2014-11-23T16:00:00+00:00",
+      "type": "season",
+      "category": {
+        "id": "sr:category:36",
+        "name": "Formula 1"
+      },
+      "sport": {
+        "id": "sr:sport:40",
+        "name": "Formula 1"
+      },
+      "single_event": false
+    },
+    {
+      "id": "sr:stage:163476",
+      "description": "Formula 1 2013",
+      "scheduled": "2013-03-15T01:30:00+00:00",
+      "scheduled_end": "2013-11-24T21:00:00+00:00",
+      "type": "season",
+      "category": {
+        "id": "sr:category:36",
+        "name": "Formula 1"
+      },
+      "sport": {
+        "id": "sr:sport:40",
+        "name": "Formula 1"
+      },
+      "single_event": false
+    },
+    {
+      "id": "sr:stage:143846",
+      "description": "Formula 1 2012",
+      "scheduled": "2012-03-16T01:30:00+00:00",
+      "scheduled_end": "2012-11-25T20:00:00+00:00",
+      "type": "season",
+      "category": {
+        "id": "sr:category:36",
+        "name": "Formula 1"
+      },
+      "sport": {
+        "id": "sr:sport:40",
+        "name": "Formula 1"
+      },
+      "single_event": false
+    },
+    {
+      "id": "sr:stage:130751",
+      "description": "Formula 1 2011",
+      "scheduled": "2011-03-11T07:00:00+00:00",
+      "scheduled_end": "2011-12-11T18:00:00+00:00",
+      "type": "season",
+      "category": {
+        "id": "sr:category:36",
+        "name": "Formula 1"
+      },
+      "sport": {
+        "id": "sr:sport:40",
+        "name": "Formula 1"
+      },
+      "single_event": false
+    },
+    {
+      "id": "sr:stage:121558",
+      "description": "Formula 1 2010",
+      "scheduled": "2010-03-11T23:00:00+00:00",
+      "scheduled_end": "2010-11-13T23:00:00+00:00",
+      "type": "season",
+      "category": {
+        "id": "sr:category:36",
+        "name": "Formula 1"
+      },
+      "sport": {
+        "id": "sr:sport:40",
+        "name": "Formula 1"
+      },
+      "single_event": false
+    },
+    {
+      "id": "sr:stage:19144",
+      "description": "Formula 1 2009",
+      "scheduled": "2009-03-27T01:30:00+00:00",
+      "scheduled_end": "2009-11-02T22:00:00+00:00",
+      "type": "season",
+      "category": {
+        "id": "sr:category:36",
+        "name": "Formula 1"
+      },
+      "sport": {
+        "id": "sr:sport:40",
+        "name": "Formula 1"
+      },
+      "single_event": false
+    },
+    {
+      "id": "sr:stage:7222",
+      "description": "Formula 1 2008",
+      "scheduled": "2008-03-13T23:00:00+00:00",
+      "scheduled_end": "2008-11-02T22:00:00+00:00",
+      "type": "season",
+      "category": {
+        "id": "sr:category:36",
+        "name": "Formula 1"
+      },
+      "sport": {
+        "id": "sr:sport:40",
+        "name": "Formula 1"
+      },
+      "single_event": false
+    },
+    {
+      "id": "sr:stage:7558",
+      "description": "Formula 1 2007",
+      "scheduled": "2007-03-17T23:00:00+00:00",
+      "scheduled_end": "2007-10-23T22:00:00+00:00",
+      "type": "season",
+      "category": {
+        "id": "sr:category:36",
+        "name": "Formula 1"
+      },
+      "sport": {
+        "id": "sr:sport:40",
+        "name": "Formula 1"
+      },
+      "single_event": false
+    }
+  ]
+}
