@@ -327,7 +327,7 @@ public class SettingFragment extends BaseFragment<FragmentSettingBinding> implem
         }
 
         new AlertDialog.Builder(getActivity())
-                .setTitle("选择默认运动")
+                .setTitle("Select Default Sport")
                 .setSingleChoiceItems(SUPPORTED_SPORTS, checkedItem, (dialog, which) -> {
                     String selectedSport = SUPPORTED_SPORTS[which];
 
@@ -345,9 +345,9 @@ public class SettingFragment extends BaseFragment<FragmentSettingBinding> implem
                     getActivity().sendBroadcast(intent);
 
                     dialog.dismiss();
-                    Toast.makeText(getActivity(), "已设置默认运动：" + selectedSport, Toast.LENGTH_SHORT).show();
+                    Toast.makeText(getActivity(), "Default Sport have been set：" + selectedSport, Toast.LENGTH_SHORT).show();
                 })
-                .setNegativeButton("取消", null)
+                .setNegativeButton("Cancel", null)
                 .show();
     }
 }

@@ -118,7 +118,7 @@ public class SportActivity extends BaseActivity<ActivitySportBinding> {
             shareIntent.putExtra(Intent.EXTRA_STREAM, uri);
             shareIntent.setType("image/*");
             shareIntent.addFlags(Intent.FLAG_GRANT_READ_URI_PERMISSION);
-            startActivity(Intent.createChooser(shareIntent, "分享比赛"));
+            startActivity(Intent.createChooser(shareIntent, "Share Game"));
     
         } catch (IOException e) {
             e.printStackTrace();

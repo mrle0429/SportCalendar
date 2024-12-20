@@ -293,7 +293,7 @@ public class SettingActivity extends BaseActivity<ActivitySettingBinding> implem
         }
 
         new AlertDialog.Builder(this)
-                .setTitle("选择默认运动")
+                .setTitle("Select Default Sport")
                 .setSingleChoiceItems(SUPPORTED_SPORTS, checkedItem, (dialog, which) -> {
                     String selectedSport = SUPPORTED_SPORTS[which];
 
@@ -308,9 +308,9 @@ public class SettingActivity extends BaseActivity<ActivitySettingBinding> implem
                     sendBroadcast(intent);
 
                     dialog.dismiss();
-                    Toast.makeText(this, "已设置默认运动：" + selectedSport, Toast.LENGTH_SHORT).show();
+                    Toast.makeText(this, "Default Sport have been set：" + selectedSport, Toast.LENGTH_SHORT).show();
                 })
-                .setNegativeButton("取消", null)
+                .setNegativeButton("Cancel", null)
                 .show();
     }
 }

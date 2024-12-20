@@ -375,8 +375,17 @@ public class HomeFragment extends BaseFragment<FragmentHomeBinding> implements V
                     game.setCompetition_name(summariesDTO.getSportEvent().getSportEventContext().getCompetition().getName());
                     game.setStage_start_date(summariesDTO.getSportEvent().getSportEventContext().getSeason().getStartDate());
                     game.setStage_end_date(summariesDTO.getSportEvent().getSportEventContext().getSeason().getEndDate());
-                    game.setStage_type(summariesDTO.getSportEvent().getSportEventContext().getStage().getType());
-                    game.setStage_phase(summariesDTO.getSportEvent().getSportEventContext().getStage().getPhase());
+                    //game.setStage_type(summariesDTO.getSportEvent().getSportEventContext().getStage().getType());
+                    //game.setStage_phase(summariesDTO.getSportEvent().getSportEventContext().getStage().getPhase());
+                       // 添加空值检查
+                    if (summariesDTO.getSportEvent().getSportEventContext().getStage() != null) {
+                        game.setStage_type(summariesDTO.getSportEvent().getSportEventContext().getStage().getType());
+                        game.setStage_phase(summariesDTO.getSportEvent().getSportEventContext().getStage().getPhase());
+                    } else {
+                       // 设置默认值
+                    game.setStage_type("");
+                    game.setStage_phase("");
+                    }
 
                     if (null != summariesDTO.getSportEvent().getVenue()) {
                         game.setVenue_name(summariesDTO.getSportEvent().getVenue().getName());
@@ -486,6 +495,7 @@ public class HomeFragment extends BaseFragment<FragmentHomeBinding> implements V
         switch (index) {
             case 0:
                 address = Constants.BASKET_BALL_URL + requestDate + Constants.SUFFIX + "?api_key=" + Constants.BASKET_BALL_KEY;
+                Log.d("SportDebug", "篮球请求地址: " + address);
                 break;
 
             case 1:
@@ -532,9 +542,17 @@ public class HomeFragment extends BaseFragment<FragmentHomeBinding> implements V
                                     game.setCompetition_name(summariesDTO.getSportEvent().getSportEventContext().getCompetition().getName());
                                     game.setStage_start_date(Tools.getLocalDate(summariesDTO.getSportEvent().getSportEventContext().getSeason().getStartDate()));
                                     game.setStage_end_date(Tools.getLocalDate(summariesDTO.getSportEvent().getSportEventContext().getSeason().getEndDate()));
-                                    game.setStage_type(summariesDTO.getSportEvent().getSportEventContext().getStage().getType());
-                                    game.setStage_phase(summariesDTO.getSportEvent().getSportEventContext().getStage().getPhase());
+                                    //game.setStage_type(summariesDTO.getSportEvent().getSportEventContext().getStage().getType());
+                                    //game.setStage_phase(summariesDTO.getSportEvent().getSportEventContext().getStage().getPhase());
 
+                                    if (summariesDTO.getSportEvent().getSportEventContext().getStage() != null) {
+                                        game.setStage_type(summariesDTO.getSportEvent().getSportEventContext().getStage().getType());
+                                        game.setStage_phase(summariesDTO.getSportEvent().getSportEventContext().getStage().getPhase());
+                                    } else {
+                                       // 设置默认值
+                                    game.setStage_type("");
+                                    game.setStage_phase("");
+                                    }
                                     if (null != summariesDTO.getSportEvent().getVenue()) {
                                         game.setVenue_name(summariesDTO.getSportEvent().getVenue().getName());
                                         if (null != summariesDTO.getSportEvent().getVenue().getCapacity()) {
