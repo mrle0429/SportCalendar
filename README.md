@@ -1,21 +1,46 @@
-Sport:MVC架构
-主要功能:分类体育比赛信息展示，根据比赛时间添加日程提醒功能
-技术点：
-Viewbinding ：它会为该模块中存在的每个 XML 布局文件生成一个绑定类,代替findViewById()。
-ShapeView：允许开发者在布局中直接定义形状相关的属性，从而无需额外的 XML 配置。
-GreenDAO：是一款轻量且快速的 Android ORM，可以用面向对象的思维来和sqlite数据库进行交互。
-OKhttp：一个网络请求开源项目，Android网络请求轻量级框架,支持文件上传与下载，支持https。
-Fastjson：一个Java 库，可用于将Java对象转换为JSON表示形式。它还可用于将 JSON 字符串转换为等效的 Java
-对象。
-Calendarview:Android上一个优雅、万能自定义UI、性能高效的日历控件。
-Eventbus：是用于Android开发的“事件发布—订阅总线”， 用来进行模块间通信、解藕。 它可以使用很少的代码，来实现多组件之间的通信。
-XXPermissions：Android权限请求框架，简化权限请求操作。
+# Sport Calendar App Overview
 
-ViewBinding：ViewBinding 是一种用于替代findViewById()的工具，它能够自动生成视图与代码之间的绑定关系，从而减少样板代码，提高开发效率。
-Fastjson
+The **Sport Calendar** app is an innovative platform designed to enhance sports fans' experiences by seamlessly integrating sports events with personal schedules. The app offers a range of features that enable users to stay updated, plan effectively, and enjoy sports like never before.
+<img src="./Screenshot_20241219_230453.png" alt="Screenshot_20241219_230453" style="zoom:10%;" />
 
-Eventbus：事件发布-订阅总线
-1. Publisher (发布者)：发送事件的组件   (sportActivity)
-2. Subscriber (订阅者)：接收事件的组件   (scheduleFragment)
-3. Event (事件)：传递的消息对象
+## Feature Detailas
 
+**Event Calendar Integration**
+
+Supports adding the user's followed sports events to the system calendar. Automatically syncs event information, including match times and competing teams. Integrated with the system calendar, making it easier for users to manage both their sports events and work-life schedule.
+
+A XXPermissions framework to handle calendar permission requests, access the system calendar database via ContentProvider, and perform operations on the system calendar database. In particular, it also needs to handle the case of conflicting user event times to avoid users missing matches.
+
+**Event Reminder System**
+
+Flexible reminder time options (on-time reminder, 10 minutes in advance, 30 minutes in advance, or no reminder).
+
+Use ContentProvider to remind the user to watch the game using the reminder mechanism of the system calendar. App notifications use NotificationManager for in-app reminders.
+
+**User Preferences Settings**
+
+Users can set the default sport, preferred viewing time, favourite team/athlete, favourite league. Different sports have different characteristics and the preferences related to sports are accompanied by the type of sport. These preferences are used for match recommendations.
+
+A SharedPreferences to store preferences and use intents to notify the global when user preferences change.
+
+**Smart Recommendation System**
+
+Personalized event recommendations are made based on the user's followed teams, preferred viewing times, and key matches.
+
+The project designed a score weighting algorithm, focusing on team participation +50 points, preferred time period +20 points, popular events +20 points. At the same time add some weight perturbation mechanism, a small amount of recommended to the user has never been concerned about the tournament, to avoid falling into the information cocoon. In the future, I also consider combining my recent research interests (aspect graph conv recommendation algorithms for emotion perception) with this project.
+
+**Time zone switching**
+
+Users can set the time zone in the setting interface, using the Java standard library TimeZoneId to get the user's default time zone (determined by the user's system), and users can also manually select the time zone from all the time zones. Using Broadcast, any change will be notified to all components to achieve global time zone conversion.
+
+**AI Sports Assistant**
+
+An AI-powered sports assistant based on a large language model (Wenxin-Baidu). Predefined personalized sports event prompts, offering professional sports news and information consultations. It supports multi-domain sports knowledge Q&A.
+
+**Share Game**
+
+Users can share the details of any match with their friends and tell them to watch the match together. Use Bitmap to convert the layout to image format and use Intent to complete the Android native sharing function. User can share the race image to his friends via (WeiXin, Email).
+
+**Map of Sports Venues**
+
+Nearby sports venues will be displayed on the map to encourage users to be active in their favorite sports. The map component uses the Baidu SDK component to implement the map display, user positioning, and POI retrieval functions.
