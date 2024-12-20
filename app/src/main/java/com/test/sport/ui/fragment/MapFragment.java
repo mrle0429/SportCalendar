@@ -104,7 +104,7 @@ public class MapFragment extends BaseFragment<FragmentMapBinding> {
 
         initMapAndLocation();
 
-        initPoiSearch();
+        //initPoiSearch();
 
 
 
@@ -401,7 +401,7 @@ public class MapFragment extends BaseFragment<FragmentMapBinding> {
             // 发起周边检索
             mPoiSearch.searchNearby(new PoiNearbySearchOption()
                     .location(location)  // 使用传入的位置
-                    .radius(10000)  // 搜索半径，单位：米
+                    .radius(10000)  // 搜索半径，单位：��
                     .keyword("运动")  // 搜索关键字
                     .pageNum(0)
                     .pageCapacity(10));
@@ -422,7 +422,7 @@ public class MapFragment extends BaseFragment<FragmentMapBinding> {
             mMapView.onResume();
         }
 
-
+        // 确保定位服务正常运行
         if (mLocationClient != null && !mLocationClient.isStarted()) {
             mLocationClient.start();
         }
@@ -441,21 +441,53 @@ public class MapFragment extends BaseFragment<FragmentMapBinding> {
     public void onDestroyView() {
         super.onDestroyView();
         Log.d(TAG, "onDestroyView");
+        try {
+            // 先隐藏信息窗口
+            if (mBaiduMap != null) {
+                mBaiduMap.hideInfoWindow();
+           }
+            // 清理POI搜索
+           if (mPoiSearch != null) {
+               mPoiSearch.destroy();
+               mPoiSearch = null;
+           }
+           
+           // 停止定位
+           if (mLocationClient != null) {
+               mLocationClient.stop();
+               mLocationClient = null;
+           }
+           
+           // 关闭定位图层
+           if (mBaiduMap != null) {
+               mBaiduMap.setMyLocationEnabled(false);
+               mBaiduMap = null;
+           }
+           
+           // 销毁地图
+           if (mMapView != null) {
+               mMapView.onDestroy();
+               mMapView = null;
+           }
+            // 移除所有回调和监听器
+           if (mBaiduMap != null) {
+               mBaiduMap.setOnMarkerClickListener(null);
+               mBaiduMap.setOnMapClickListener(null);
+           }
+       } catch (Exception e) {
+           Log.e(TAG, "onDestroyView 清理资源失败", e);
+       }
+    }
 
-        if (mPoiSearch != null) {
-            mPoiSearch.destroy();
-        }
-        // 停止定位
-        if (mLocationClient != null) {
-            mLocationClient.stop();
-        }
-        // 关闭定位图层
+    @Override
+    public void onStop() {
+        super.onStop();
+        Log.d(TAG, "onStop");
+        // 隐藏信息窗口
         if (mBaiduMap != null) {
-            mBaiduMap.setMyLocationEnabled(false);
-        }
-        // 销毁地图
-        if (mMapView != null) {
-            mMapView.onDestroy();
+            mBaiduMap.hideInfoWindow();
         }
     }
+
+
 }
