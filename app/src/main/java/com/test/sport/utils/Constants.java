@@ -1,44 +1,44 @@
 package com.test.sport.utils;
-
+import com.test.nba.BuildConfig;
 // TODO:常量 
 public class Constants {
 
     // TODO:全球篮球API-每日摘要
     public static final String BASKET_BALL_URL = "https://api.sportradar.com/basketball/trial/v2/en/schedules/";
-    public static final String BASKET_BALL_KEY = "XcLiGwSgTFJTA5XV5uqxzvmHzQ9qhRcHY11R9gbG";
+    public static final String BASKET_BALL_KEY = BuildConfig.BASKET_BALL_KEY;
 
     // TODO:全球美式足球 API-每日摘要
     public static final String FOOT_BALL_URL = "https://api.sportradar.com/americanfootball/trial/v2/en/schedules/";
-    public static final String FOOT_BALL_KEY = "fgh3wnep3CbSG6gp9SCxQlVHTseft9swBPPbrl0O";
+    public static final String FOOT_BALL_KEY = BuildConfig.FOOT_BALL_KEY;
 
     // TODO:全球冰球 API冰球-每日摘要
     public static final String ICE_HOCKEY_URL = "https://api.sportradar.com/icehockey/trial/v2/en/schedules/";
-    public static final String ICE_HOCKEY_KEY = "XcLiGwSgTFJTA5XV5uqxzvmHzQ9qhRcHY11R9gbG";
+    public static final String ICE_HOCKEY_KEY = BuildConfig.ICE_HOCKEY_KEY;
 
     // TODO:网球 API网球-每日摘要
     public static final String TENNIS_URL = "https://api.sportradar.com/tennis/trial/v3/en/schedules/";
-    public static final String TENNIS_KEY = "XcLiGwSgTFJTA5XV5uqxzvmHzQ9qhRcHY11R9gbG";
+    public static final String TENNIS_KEY = BuildConfig.TENNIS_KEY;
 
     public static final String SUFFIX = "/summaries.json";
 
     // 足球
     public static final String SOCCER_URL = "https://api.sportradar.com/soccer/trial/v4/en/schedules/";
-    public static final String SOCCER_KEY = "XcLiGwSgTFJTA5XV5uqxzvmHzQ9qhRcHY11R9gbG";
+    public static final String SOCCER_KEY = BuildConfig.SOCCER_KEY;
     // TODO:棒球
     public static final String BASE_BALL_URL = "https://api.sportradar.us/baseball/trial/v2/en/schedules/live/summaries.json";
-    public static final String BASE_BALL_KEY = "b6qtVtA9ZIoTeXhVQp2FnENvG7pAbEbamCBkQ4bc";
+    public static final String BASE_BALL_KEY = BuildConfig.BASE_BALL_KEY;
 
     // TODO:橄榄球
     public static final String RUGBY_URL = "https://api.sportradar.com/rugby-league/trial/v3/en/schedules/live/summaries.json";
-    public static final String RUGBY_KEY = "b6qtVtA9ZIoTeXhVQp2FnENvG7pAbEbamCBkQ4bc";
+    public static final String RUGBY_KEY = BuildConfig.RUGBY_KEY;
 
     // TODO:印地赛车
     public static final String INDY_CAR_URL = " https://api.sportradar.com/rugby-league/trial/v3/en/schedules/live/summaries.json";
-    public static final String INDY_CAR_KEY = "b6qtVtA9ZIoTeXhVQp2FnENvG7pAbEbamCBkQ4bc";
+    public static final String INDY_CAR_KEY = BuildConfig.INDY_CAR_KEY;
 
     // 千帆大模型
-    public static final String ACCESS_KEY = "ALTAKPscAps3SmNZHj7cSUJ5Qd";
-    public static final String SECRET_KEY = "d6bf44c6a7b54fb6a3ea4c2b982c9940";
+    public static final String ACCESS_KEY = BuildConfig.QIANFAN_ACCESS_KEY;
+    public static final String SECRET_KEY = BuildConfig.QIANFAN_SECRET_KEY;
     public static final String SYSTEM_PROMPT =
             "You are a professional sports assistant, helping users understand game information, " +
                     "rules explanations, and match analysis. Please respond in English with a concise and " +

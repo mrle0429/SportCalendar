@@ -1,6 +1,18 @@
 plugins {
     id 'com.android.application'
 }
+
+def getApiKey(String key) {
+   Properties properties = new Properties()
+   File propertiesFile = new File(project.projectDir, 'src/main/assets/api_keys.properties')
+   if (propertiesFile.exists()) {
+       properties.load(new FileInputStream(propertiesFile))
+       return properties.getProperty(key)
+   } else {
+       return "dummy_key"
+   }
+}
+
 apply plugin: 'org.greenrobot.greendao'//greendao
 android {
     namespace 'com.test.nba'
@@ -12,6 +24,25 @@ android {
         targetSdk 32
         versionCode 1
         versionName "1.0"
+
+        manifestPlaceholders = [
+            BAIDU_MAP_KEY: getApiKey('BAIDU_MAP_KEY')
+        ]
+
+        buildConfigField "String", "BASKET_BALL_KEY", "\"${getApiKey('BASKET_BALL_KEY')}\""
+        buildConfigField "String", "FOOT_BALL_KEY", "\"${getApiKey('FOOT_BALL_KEY')}\""
+        buildConfigField "String", "ICE_HOCKEY_KEY", "\"${getApiKey('ICE_HOCKEY_KEY')}\""
+        buildConfigField "String", "TENNIS_KEY", "\"${getApiKey('TENNIS_KEY')}\""
+        buildConfigField "String", "SOCCER_KEY", "\"${getApiKey('SOCCER_KEY')}\""
+        buildConfigField "String", "BASE_BALL_KEY", "\"${getApiKey('BASE_BALL_KEY')}\""
+        buildConfigField "String", "RUGBY_KEY", "\"${getApiKey('RUGBY_KEY')}\""
+        buildConfigField "String", "INDY_CAR_KEY", "\"${getApiKey('INDY_CAR_KEY')}\""
+        buildConfigField "String", "QIANFAN_ACCESS_KEY", "\"${getApiKey('QIANFAN_ACCESS_KEY')}\""
+        buildConfigField "String", "QIANFAN_SECRET_KEY", "\"${getApiKey('QIANFAN_SECRET_KEY')}\""
+        buildConfigField "String", "BAIDU_TRANSLATE_APP_ID", "\"${getApiKey('BAIDU_TRANSLATE_APP_ID')}\""
+        buildConfigField "String", "BAIDU_TRANSLATE_SECRET", "\"${getApiKey('BAIDU_TRANSLATE_SECRET')}\""
+
+
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
         ndk {

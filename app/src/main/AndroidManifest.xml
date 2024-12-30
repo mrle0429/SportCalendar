@@ -52,7 +52,7 @@
 
         <meta-data
             android:name="com.baidu.lbsapi.API_KEY"
-            android:value="EcaGXBcGKifUfETSsqs0srqsOGwv3cda">
+            android:value="${BAIDU_MAP_KEY}">
 
         </meta-data>
 

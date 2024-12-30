@@ -1,7 +1,11 @@
+[English](#sport-calendar-app-overview)
+[中文](#运动日历)
+
 # Sport Calendar App Overview
 
+
 The **Sport Calendar** app is an innovative platform designed to enhance sports fans' experiences by seamlessly integrating sports events with personal schedules. The app offers a range of features that enable users to stay updated, plan effectively, and enjoy sports like never before.
-<img src="./Screenshot_20241219_230453.png" alt="Screenshot_20241219_230453" style="zoom:10%;" />
+![Screenshot_20241230_141347.png](img%2FScreenshot_20241230_141347.png)
 
 ## Feature Detailas
 
@@ -44,3 +48,40 @@ Users can share the details of any match with their friends and tell them to wat
 **Map of Sports Venues**
 
 Nearby sports venues will be displayed on the map to encourage users to be active in their favorite sports. The map component uses the Baidu SDK component to implement the map display, user positioning, and POI retrieval functions.
+
+
+# 运动日历
+
+一个集成了多种体育赛事信息的日历应用，支持篮球、足球、网球等多种运动的赛程查询和实时比分追踪。
+## 功能特点
+
+- 支持多种体育赛事：
+ - 篮球
+ - 美式足球
+ - 冰球
+ - 网球
+ - 足球
+ - 棒球
+ - 橄榄球
+ - 印地赛车
+ 实时比分更新
+ 赛程分享
+ 赛程提醒
+ 赛事日历视图
+ AI 助手解答体育相关问题
+ 地图显示周边运动场馆
+
+## 快速使用
+下载APP
+```
+app\release\app-release.apk
+```
+
+
+## 配置步骤
+
+1. 下载api_keys.properties.example文件，并将其重命名为api_keys.properties。
+2. 在api_keys.properties文件中，将每个API密钥替换为实际的API密钥。
+3. 保存api_keys.properties文件。
+
+

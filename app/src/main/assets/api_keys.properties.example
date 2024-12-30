@@ -1,0 +1,19 @@
+#运动数据
+#www.sportradar.com
+BASKET_BALL_KEY=your_basket_ball_key_here
+FOOT_BALL_KEY=your_foot_ball_key_here
+ICE_HOCKEY_KEY=your_ice_hockey_key_here
+TENNIS_KEY=your_tennis_key_here
+SOCCER_KEY=your_soccer_key_here
+BASE_BALL_KEY=your_base_ball_key_here
+RUGBY_KEY=your_rugby_key_here
+INDY_CAR_KEY=your_indy_car_key_here
+
+#千帆大模型
+QIANFAN_ACCESS_KEY=your_qianfan_access_key_here
+QIANFAN_SECRET_KEY=your_qianfan_secret_key_here
+
+# 百度地图
+BAIDU_MAP_KEY=your_baidu_map_key_here
+BAIDU_TRANSLATE_APP_ID=your_baidu_translate_app_id_here
+BAIDU_TRANSLATE_SECRET=your_baidu_translate_secret_here 

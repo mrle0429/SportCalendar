@@ -46,6 +46,7 @@ import com.baidu.mapapi.search.poi.PoiNearbySearchOption;
 import com.baidu.mapapi.search.poi.PoiResult;
 import com.baidu.mapapi.search.poi.PoiSearch;
 
+import com.test.nba.BuildConfig;
 import com.test.nba.R;
 import com.test.nba.databinding.FragmentMapBinding;
 import com.test.sport.base.BaseFragment;
@@ -68,8 +69,8 @@ public class MapFragment extends BaseFragment<FragmentMapBinding> {
     private boolean isFirstLoc = true; // 是否首次定位
     private PoiSearch mPoiSearch = null;
     private static final String TRANSLATE_URL = "https://fanyi-api.baidu.com/api/trans/vip/translate";
-    private static final String TRANSLATE_APP_ID = "20241220002233178";  // TODO: 替换为你的百度翻译APP ID
-    private static final String TRANSLATE_SECRET = "7iqOxqArqLrzggilj9A2";   // TODO: 替换为你的百度翻译密钥
+    private static final String TRANSLATE_APP_ID = BuildConfig.BAIDU_TRANSLATE_APP_ID;
+    private static final String TRANSLATE_SECRET = BuildConfig.BAIDU_TRANSLATE_SECRET;
 
     @Override
     protected int initLayout() {
